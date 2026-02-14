@@ -1,0 +1,431 @@
+{
+  "name": "Malachi Lawrence",
+  "slug": "malachi-lawrence",
+  "overview": {
+    "POS": "ED",
+    "College": "UCF",
+    "Height": "6' 4\"",
+    "Weight": "250",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": "41",
+    "Snaps": "1336",
+    "24/7 Sports": "86",
+    "ESPN": "77",
+    "Draft Buzz": "82.2 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "TBD",
+    "Gridiron": null
+  },
+  "position": "ED",
+  "college": "UCF",
+  "height": "6' 4\"",
+  "weight": "250",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": 41,
+  "snaps": 1336,
+  "site_ratings": {
+    "24/7 Sports": "86",
+    "ESPN": "77",
+    "Draft Buzz": "82.2 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "TBD",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "80.2",
+      "percentile": 0.45
+    },
+    "24 Grade": {
+      "value": "69.4",
+      "percentile": 0.2
+    },
+    "23 Grade": {
+      "value": "70.7",
+      "percentile": 0.55
+    },
+    "Pass Rush Grade": {
+      "value": "90",
+      "percentile": 0.6
+    },
+    "True Pass Rush": {
+      "value": "91.8",
+      "percentile": 0.842
+    },
+    "PR Win Rate": {
+      "value": "19.6",
+      "percentile": 0.632
+    },
+    "Run Def. Grade": {
+      "value": "65.7",
+      "percentile": 0.2
+    },
+    "Run Stop %": {
+      "value": "4.2",
+      "percentile": 0.1
+    },
+    "Sacks": {
+      "value": "7",
+      "percentile": 0.579
+    },
+    "Hits": {
+      "value": "2",
+      "percentile": 0.132
+    },
+    "Hurries": {
+      "value": "31",
+      "percentile": 0.789
+    },
+    "Batted Balls": {
+      "value": "2",
+      "percentile": 0.763
+    },
+    "Forced Fumbles": {
+      "value": "2",
+      "percentile": 0.605
+    },
+    "Tackling Grade": {
+      "value": "63.2",
+      "percentile": 0.425
+    },
+    "Missed Tackle Rate": {
+      "value": "23.3",
+      "percentile": 0.105
+    },
+    "Total Pressures": {
+      "value": "40",
+      "percentile": 0.421
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 147.83333333333334,
+      "positional_rank": "12"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 147.0,
+      "positional_rank": "19"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 81.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 93.0,
+      "positional_rank": "15"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "10"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 163.0,
+      "positional_rank": "31"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 363.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "TBD"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "0",
+    "Bleacher": "TBD",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.6,
+    "Pass Rush": 0.65,
+    "Run Defense": 0.86
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 0,
+      "career": 0
+    },
+    "B GAP": {
+      "2025": 30,
+      "career": 38
+    },
+    "Over Tackle": {
+      "2025": 46,
+      "career": 87
+    },
+    "Outside Tkl": {
+      "2025": 394,
+      "career": 1171
+    },
+    "Off Ball": {
+      "2025": 0,
+      "career": 10
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nMalachi Lawrence the three-star recruit arrived at UCF in 2021 after earning first-team all-district recognition as an outside linebacker for the Crimsons, where he also competed as a state medalist in shot put. His path to prominence required patience and development through two redshirt years before he ever saw meaningful action. Lawrence contributed sparingly in three games during his redshirt freshman campaign in 2022, but those limited reps laid the groundwork for what would become a steady climb up the depth chart.\n\nThe 2023 season marked Lawrence's arrival as a legitimate Big 12 threat. Starting all 13 games as a redshirt sophomore, he collected Honorable Mention All-Big 12 honors while recording 27 tackles and 10.5 tackles for loss. His 7.5 sacks ranked fifth in the conference at 0.58 per game, with multiple games featuring splash plays that caught the attention of conference coaches. Against Cincinnati, he notched 1.5 sacks in a five-tackle performance, while also delivering quality production against Oklahoma, West Virginia, and Houston. The breakout campaign established Lawrence as one of the Knights' premier defenders and set expectations for continued growth.\n\nLawrence maintained his production level as a redshirt junior in 2024, appearing in 11 games with 10 starts for the Knights. He recorded five sacks, which ranked second on the team and 11th in the Big 12 Conference, while adding 15 tackles and six tackles for loss. His four quarterback hurries and pass breakup demonstrated continued pressure ability, and his forced fumble on a strip sack at West Virginia resulted in a 13-yard loss.\n\nEverything came together for Lawrence in 2025 when he elevated his game to elite status as a senior. He earned All-Big 12 First Team recognition, becoming the lone UCF defender to reach that tier and maintaining the Knights' streak of placing at least one player on the first team since joining the conference. Lawrence finished tied for fifth in the Big 12 with seven sacks and tied for sixth with 11 tackles for loss, adding three pass breakups, three quarterback hurries, and two forced fumbles. His 83.1 overall grade from Pro Football Focus ranked highest on the team, and his 22.7% pressure rate matched that of potential top overall pick Rueben Bain Jr The dominant senior campaign made him an Honorable Mention candidate for Big 12 Defensive Lineman of the Year, and he accepted an invitation to the East-West Shrine Bowl.\n\nSCOUTING REPORT: SUMMARY\nLawrence brings the kind of size, length, and athletic profile that defensive coordinators want to work with on the edge. His 35-inch arms give him natural advantages in hand fighting, and when you combine that wingspan with legitimate get-off quickness and bend, you've got raw materials worth developing. The pass rush toolbox is diverse enough to suggest he won't be limited to one move at the pro level, and his pressure rate against Big 12 competition proves he knows how to get home when given opportunities. Teams looking for a designated pass rusher who can reduce inside on third down will find value in his versatility, and his motor ensures he won't take plays off when the opportunity for impact presents itself.\n\nThe challenge comes down to run defense and whether Lawrence can develop the play strength necessary to hold up as an every-down player. Right now, he's best utilized in a rotational role where he can attack in obvious passing situations without being exploited in the ground game. His listed 250 pounds feels light when you watch him get washed out of gaps, and while he shows enough athleticism to be a factor in pursuit, that's not the same as setting a physical tone at the point of attack. The learning curve will involve adding functional mass without sacrificing the speed-to-power conversion that makes him effective, and finding defensive coordinators who understand how to maximize his skill set in sub-packages where he can hunt quarterbacks rather than eating blocks.\n\nLooking at where Lawrence fits in this deep edge class, he profiles as a Day 3 selection with legitimate upside if he lands in the right system. Teams running multiple fronts that can move him around and create favorable matchups will get the most out of his athletic traits. He's not ready to start Week 1, but there's a pathway to becoming a quality rotational rusher who contributes on passing downs and develops into more as his body matures. The production against quality Big 12 competition wasn't a fluke, and his willingness to work through multiple coaching staffs while expanding his football IQ suggests he's coachable. For a team patient enough to develop his run defense while deploying him strategically as a pass rush specialist, Lawrence offers the kind of value you hunt for on Day 3, a player with one elite trait and the athletic foundation to potentially grow into more."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "injury_history": []
+}

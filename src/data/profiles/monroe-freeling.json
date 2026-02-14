@@ -1,0 +1,486 @@
+{
+  "name": "Monroe Freeling",
+  "slug": "monroe-freeling",
+  "overview": {
+    "POS": "OT",
+    "College": "Georgia",
+    "Height": "6' 7\"",
+    "Weight": "315",
+    "Age": "21.6",
+    "DOB": "38193",
+    "Year": "Jr",
+    "Prj. Rd": "Late 1st",
+    "Games": "37",
+    "Snaps": "1667",
+    "24/7 Sports": "97",
+    "ESPN": "88",
+    "Draft Buzz": "83.7 / 100",
+    "NFL.com": "6.31",
+    "BR": "7.4",
+    "Gridiron": null
+  },
+  "position": "OT",
+  "college": "Georgia",
+  "height": "6' 7\"",
+  "weight": "315",
+  "age": 21.6,
+  "dob": "38193",
+  "year": "Jr",
+  "projected_round": "Late 1st",
+  "games": 37,
+  "snaps": 1667,
+  "site_ratings": {
+    "24/7 Sports": "97",
+    "ESPN": "88",
+    "Draft Buzz": "83.7 / 100",
+    "NFL.com": "6.31",
+    "BR": "7.4",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "72.2",
+      "percentile": 0.3
+    },
+    "2024 Grade": {
+      "value": "70.1",
+      "percentile": 0.1
+    },
+    "2023 Grade": {
+      "value": "66.9",
+      "percentile": 0.444
+    },
+    "Run Block Grade": {
+      "value": "62.4",
+      "percentile": 0.2
+    },
+    "Pass Block Grade": {
+      "value": "84.5",
+      "percentile": 0.8
+    },
+    "True Pass Set Grade": {
+      "value": "74.1",
+      "percentile": 0.5
+    },
+    "Pass Block Efficiency": {
+      "value": "98.5",
+      "percentile": 0.6
+    },
+    "Zone Grade": {
+      "value": "64.7",
+      "percentile": 0.1
+    },
+    "Gap Grade": {
+      "value": "53.5",
+      "percentile": 0.1
+    },
+    "Sacks Allowed": {
+      "value": "3",
+      "percentile": 0.05
+    },
+    "Hits Allowed": {
+      "value": "0",
+      "percentile": 0.9
+    },
+    "Hurries Allowed": {
+      "value": "7",
+      "percentile": 0.45
+    },
+    "Pressures Allowed": {
+      "value": "10",
+      "percentile": 0.65
+    },
+    "Penalties": {
+      "value": "2",
+      "percentile": 0.9
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 41.7,
+      "positional_rank": "4.142857142857143"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 31.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 25.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 21.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 19.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 61.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 121.0,
+      "positional_rank": "19"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 70.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 24.0,
+      "positional_rank": "4"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 28.666666666666668,
+    "PFF": 29.0,
+    "ESPN": null,
+    "Brugler": 27.0,
+    "Kiper": 29.0,
+    "Miller": 29.0,
+    "Bleacher": 29.0,
+    "Walter": 29.0,
+    "TDN": 17.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "Broderick Jones",
+    "Miller": "TBD",
+    "DraftBuzz": "Jack NELSON",
+    "Bleacher": "Mike McGlinchey",
+    "WF": "TBD",
+    "NFL.com": "Broderick Jones"
+  },
+  "strengths": "• Ideal Length/Frame, High End Athlete\n• Redirects Feet Quickly\n• Functional Anchor for Bull Rush\n• Showed Steady Improvement Through the Year",
+  "weaknesses": "• Inconsistent Hand Placement\n• No Independent Hand Usage\n• Plays Upright, Lunges\n• Run Game Landmarks\n• Needs To Fill Out Frame",
+  "accolades": null,
+  "player_summary": "Freeling is a traits guy with a high ceiling and questionable floor. He doesn't bring day 1 starter ability, but could very well be a high end starter with coaching and added size. He's got an elite frame and high end athletic traits. His quickness allows him to make the first move most of the time and get into position and even without the desired mass he can hold a functional anchor against the bull rush. But he has a lot to work on. He doesn't use his hands independently, nor does he have a diverse approach to using them. He plays stiff/upright, which causes him to lunge and lean. Edges with a good PR plan confound him. He did show improvement throughout the year, but his lack of experience shows up on tape. With his traits, some team will be willing to use an early pick on him, and it may pay off big time, but they'll need to be patient. Mel Kiper is crazy high on him right now, but I don't see the reason yet. Slot him in at late 1st to early 2nd due to his upside and thin options at Tackle in the NFL.",
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.88,
+    "Run Blocking Grade": 0.68
+  },
+  "projected_role": "Development Tackle",
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 881,
+      "career": 1368
+    },
+    "LG": {
+      "2025": 0,
+      "career": 0
+    },
+    "C": {
+      "2025": 0,
+      "career": 0
+    },
+    "RG": {
+      "2025": 0,
+      "career": 0
+    },
+    "RT": {
+      "2025": 1,
+      "career": 103
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": "Shwoed improvement throughout the year (NFL)",
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": "Inconsistent hand placements cause him to slide off blocks (NFL)\nIndependent hand usage, indiverse approach (NFL)"
+    },
+    "Lower Body": {
+      "positives": "Redirects feet quickly to meet inside rush (NFL)\nFunctional anchor with mass and length to stymie the Bull rush (BR)",
+      "negatives": "Leans and lunges (NFL)"
+    },
+    "Technical Ability": {
+      "positives": "High end quickness (NFL)",
+      "negatives": "Needs to imrpove tech (NFL)\nInconsistent feel and execution for landmarks in run (NFL)\nUnable to prevent ends from working across him against his will (NFL)\nPlays too upright (NFL)"
+    },
+    "Physical Ability": {
+      "positives": "Ideal length and plus level athleticism (NFL)",
+      "negatives": "Needs to fill out frame (NFL)"
+    }
+  },
+  "media_links": [
+    {
+      "description": "Career Highlights",
+      "source": "YT - NFL Film Room",
+      "url": "https://www.youtube.com/watch?v=slJ5gKTPWAM"
+    },
+    {
+      "description": "Scouting Report",
+      "source": "YT - Scrambling Armchair",
+      "url": "https://www.youtube.com/watch?v=xwc5qW1Ebc4"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Freeling offers coveted length and athleticism at right tackle. With only 16 career starts, filling out his frame and improving his technique should be early priorities. His quickness brings first-phase positioning advantages, but he needs more play strength to carry that over to block sustain and finish. Lunging and deadening feet post-punch must be coached out of his muscle memory in pass protection so his athleticism and length can do their jobs. Independent hand usage and a reliable “snatch and trap” could instantly bolster his success rate. There is some buyer beware on tape, but if smoothed out, he has the ceiling of a quality NFL starter."
+        },
+        {
+          "title": "Strengths",
+          "text": "Long-limbed with a frame that can add mass. | Possesses plus athletic ability for the position. | Has the initial quickness to make all the move blocks asked of him. | Continues pressing forward to stay connected longer to blocks. | Protection improved noticeably as the season progressed. | Good fluidity when switching off and mirroring twisters. | Redirects feet quickly to meet inside moves at the B-gap. | Runs like a tight end as a lead blocker and to spring slip screens."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Inconsistent feel and execution for run-blocking landmarks. | Unable to prevent ends from working across him against his will. | Inconsistent hand placement/resets cause him to slide off blocks. | Leans and lunges at the corner instead of continuing to slide feet. | Stiff outside leg limits quickness to hit set points. | Protection is missing independent hands and a more diverse approach."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nMonroe Freeling built his reputation at Oceanside Collegiate Academy in Mount Pleasant, South Carolina, where he helped lead the Landsharks to a 12-2 record and the Class 2A championship game as a senior. The offensive line paved the way for nearly 3,000 rushing yards that season, with Freeling's combination of size and athletic ability catching the attention of major college programs. He also played basketball during high school, appearing in 56 games over his career.\n\nGeorgia landed Freeling as a four-star prospect in their 2023 recruiting class, with major services ranking him among the top offensive tackle prospects nationally and the consensus number one player in South Carolina. He enrolled early and participated in spring drills as a freshman. Freeling spent his 2023 season developing behind an experienced offensive line that ranked first in the SEC for sacks allowed. His 2024 sophomore campaign saw increased responsibility with four starts in 13 appearances, accumulating 776 snaps across 23 total college games.\n\nLate-season injuries to Georgia's established starters opened the door for Freeling to start the final five games at left tackle, including the Sugar Bowl against Notre Dame. The experience provided valuable reps in high-stakes situations while highlighting areas needing continued work. Now entering his junior season, Freeling is recovering from shoulder surgery while expected to anchor Georgia's retooled offensive line. With 776 college snaps under his belt and demonstrated growth in high-pressure moments, he positions himself as a legitimate prospect for the 2026 NFL Draft.\n\nThe athletic foundation is undeniably impressive, but Freeling's inconsistent technique creates legitimate concerns about his immediate NFL readiness. His speed and 84-inch wingspan represent elite physical tools, yet the struggles with upper body strength and tendency to reach for blocks suggest he'll need significant development time. His run blocking shows more natural ability than his pass protection skills, where patience and hand placement remain ongoing projects that could prove costly against pro level rushers.\n\n\n\nZone-blocking systems would benefit most from his mobility and pulling ability, though his inconsistent hip flexibility limits his effectiveness as a true mauler in gap schemes. The basketball background provides excellent body control and spatial awareness, but technical refinements in hand usage and leverage will determine whether he maximizes that athletic potential. His calm demeanor under pressure is encouraging, yet the Sugar Bowl performance exposed how quickly things can unravel when technique breaks down against quality competition.\n\n\n\nThe development timeline points toward a player who needs the right situation and coaching to reach his ceiling. His frame can easily add functional weight, and the athletic traits are rare enough to warrant patience from NFL organizations willing to invest in long-term potential. However, the technical inconsistencies and strength deficiencies mean he's unlikely to contribute immediately as a starter. The physical tools suggest franchise tackle upside, but the current limitations indicate he's better suited as a developmental project who could emerge as a quality starter with proper coaching and time."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Monroe Freeling, tackle, has all that upside so I have him in the late first... I do believe that Monroe Freeling, who the Mock for me drops next week and will he crack the top 10? We'll see. Will we correct the top 15? We shall see. I can promise you it'll be very high for Monroe Freeling."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Monroe Freeling is a broadly built, long and inexperienced tackle prospect with the solid quickness and good natural power to develop into a role player with starter upside down the road.\n\nFreeling is a 6'7\", 315—pound tackle prospect who entered the Georgia program as a 4—star recruit in the 2023 class.\n\nFreeling appeared in 13 games with four starts during the 2024 season as a sophomore."
+        },
+        {
+          "title": "Positives",
+          "text": "— Broad, thick and well—rounded build with good length.\n\n— Solid initial quickness puts him on the correct track to line up and cover up targets in the run game.\n\n— Good natural power to uproot and widen defenders off of their spot.\n\n— Functional anchor with the mass and length to stymie the bull—rush and die slowly against high—side rushes."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Upright play style leaves him lunging into overextension when the picture changes post—snap and vulnerable to whiffing on slippery targets.\n\n— Middling effectiveness latching onto targets on the move.\n\n— Will drift, overset and chase stutters, hesitations and feints in pass protection."
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.31,
+    "prospect_grade_indicator": "Will Eventually Be Plus Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Broderick Jones",
+    "eligibility": "Junior",
+    "nfl_rank": 24,
+    "nfl_pos_rank": 4
+  },
+  "bleacher_profile": {
+    "grade": 7.4,
+    "grade_indicator": null,
+    "overall_rank": 61,
+    "position_rank": null,
+    "pro_comparison": "Mike McGlinchey",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": [
+    {
+      "detail": "High Ankle Sprain",
+      "recovery_time": "Left Game",
+      "year": "2025"
+    },
+    {
+      "detail": "Shoulder Surgery",
+      "recovery_time": "Pre Season",
+      "year": "2025"
+    }
+  ]
+}

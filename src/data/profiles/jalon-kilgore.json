@@ -1,0 +1,430 @@
+{
+  "name": "Jalon Kilgore",
+  "slug": "jalon-kilgore",
+  "overview": {
+    "POS": "SAF",
+    "College": "South Carolina",
+    "Height": "6' 1\"",
+    "Weight": "211",
+    "Age": "20.9",
+    "DOB": "00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": null,
+    "Games": "36",
+    "Snaps": "2242",
+    "24/7 Sports": "92",
+    "ESPN": "72",
+    "Draft Buzz": "83.7 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.5",
+    "Gridiron": "TBD"
+  },
+  "position": "SAF",
+  "college": "South Carolina",
+  "height": "6' 1\"",
+  "weight": "211",
+  "age": 20.9,
+  "dob": "00:00:00",
+  "year": "Jr",
+  "projected_round": null,
+  "games": 36,
+  "snaps": 2242,
+  "site_ratings": {
+    "24/7 Sports": "92",
+    "ESPN": "72",
+    "Draft Buzz": "83.7 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.5",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "68.7",
+      "percentile": 0.0
+    },
+    "24 Grade": {
+      "value": "69.7",
+      "percentile": 0.1
+    },
+    "23 Grade": {
+      "value": "71",
+      "percentile": 0.5
+    },
+    "Coverage Grade": {
+      "value": "63.3",
+      "percentile": 0.0
+    },
+    "Interceptions": {
+      "value": "2",
+      "percentile": 0.545
+    },
+    "Forced Inc. Rate": {
+      "value": "16.9",
+      "percentile": 0.727
+    },
+    "Passer Rating Alwd": {
+      "value": "68.1",
+      "percentile": 0.364
+    },
+    "TD Allowed/Ints": {
+      "value": "0",
+      "percentile": null
+    },
+    "Coverage Stops": {
+      "value": "7",
+      "percentile": 0.318
+    },
+    "Run Def Grade": {
+      "value": "82.1",
+      "percentile": 0.727
+    },
+    "Run Stops": {
+      "value": "6",
+      "percentile": 0.182
+    },
+    "Tackling Grade": {
+      "value": "77.7",
+      "percentile": 0.455
+    },
+    "Tackles": {
+      "value": "44",
+      "percentile": 0.273
+    },
+    "Assisted Tackles": {
+      "value": "18",
+      "percentile": 0.364
+    },
+    "Missed Tackles": {
+      "value": "8",
+      "percentile": 0.636
+    },
+    "Missed Tackle Rate": {
+      "value": "11.4",
+      "percentile": 0.545
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 133.8,
+      "positional_rank": "10.333333333333334"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 130.0,
+      "positional_rank": "16"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 97.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 53.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 122.0,
+      "positional_rank": "26"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 267.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Jamel Dean",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Targeted": 69.2,
+    "Tackling": 0.0,
+    "Run Defense": 0.86,
+    "Coverage Grade": 0.72,
+    "Zone Coverage": 0.7,
+    "Man/Press": 0.68
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 497,
+      "career": 1382
+    },
+    "Box": {
+      "2025": 157,
+      "career": 541
+    },
+    "Corner": {
+      "2025": 4,
+      "career": 24
+    },
+    "Deep": {
+      "2025": 9,
+      "career": 238
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nThe small-town kid from Eatonton, Georgia arrived at South Carolina with modest recruiting rankings but quickly established himself as a defensive cornerstone. Kilgore was thrust into action during the 2023 season opener when Nick Emmanwori went down with an injury, responding with 12 tackles against North Carolina and never relinquishing his starting role. The versatile defensive back went on to amass 76 tackles as a true freshman, earning First-Team Freshman All-America honors from ESPN and 247Sports while starting 11 games and finishing second on the team in tackles.\n\nKilgore's sophomore campaign showcased his ball-hawking capabilities as he snagged five interceptions to lead the SEC and tie for fourth nationally. His nose for the football proved clutch as he sealed victories against both Old Dominion and Missouri with game-clinching interceptions. The 6'2\", 219-pound defender continued his consistent production with 48 tackles, including 3.0 tackles for loss, while starting 11 of 13 contests. His impactful play earned him Second-Team All-SEC recognition from College Football Nation and Third-Team All-SEC status from Phil Steele.\n\nBefore arriving in Columbia, Kilgore dominated on both sides of the ball at Putnam County High School, showcasing rare athleticism that translated across multiple sports. The Region 4-AA Athlete of the Year hauled in 34 passes for 921 yards and 11 touchdowns as a receiver while recording 88 tackles, eight pass breakups, and four forced fumbles on defense. His explosiveness extended to track and field, where he claimed the Georgia 2A long jump state championship as a sophomore with a personal best of 23-7.\n\nWith Kilgore you're watching a defensive back whose run support jumps off the screen while his coverage skills remain a work in progress. There's undeniable value in his versatility across the secondary, though his tendencies to gamble in zone coverage will need refinement against NFL-caliber quarterbacks. The size-speed combination creates matchup opportunities against bigger receiving targets, yet this same aggressiveness occasionally leaves him vulnerable to double moves from craftier route runners.\n\n\n\nHis transition from high school wide receiver to SEC ball hawk reveals itself in how naturally he tracks the ball in flight, snagging those five interceptions last season with the instincts of someone who understands offensive intentions. Despite this natural playmaking ability, his technique in man coverage still shows inconsistencies that better receivers will exploit if not addressed. The modern game demands defensive backs who can operate in multiple roles without substitution - a clear strength of his skill set - though developing more discipline in his assignments would elevate his overall effectiveness.\n\n\n\nThe junior season ahead represents a critical development period where technical refinement must catch up to his considerable physical gifts. Defensive schemes emphasizing physical nickel defenders who aren't liabilities against the run will maximize his contributions, particularly in early downs. The foundation exists for significant growth if his coverage skills can progress to match his tackling prowess."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Jalon Kilgore was built in a lab and explicitly designed to be an NFL defensive back. He has the size, athleticism, and speed to transition right away and make an impact while adding length to disrupt the catch point.\n\nKilgore is a true junior who has played his entire career at South Carolina, having been a former 4—star recruit with 22 starts in 25 games played entering 2025.\n\nHe's racked up tons of awards across his career and been an impact player at every level of the defense with his versatility between nickel corner and safety. Through two collegiate seasons, he's piled up 124 tackles (77 solo), four and a half tackles for loss, six interceptions, and 11 passes defensed."
+        },
+        {
+          "title": "Positives",
+          "text": "— Kilgore is a physically gifted athlete who excels in the short area. He triggers on quick routes and underneath plays fast and with intent.\n\n— He's a willing run defender who identifies the ball carrier quickly and attacks. He has the length and play strength to consistently make sure tackles.\n\n— A coverage versatile defender who sees route combinations in zone quickly and mirrors the quarterback. He gets proper depth and passes off routes out of his zone.\n\n— Flashes hand—usage in man coverage to throw off the timing and keep himself in phase. When combined with his burst, he can disrupt the catch point and find the football."
+        },
+        {
+          "title": "Negatives",
+          "text": "— At his size, Kilgore should play with more physicality in all aspects of his game and be more willing to take on blocks in the run game.\n\n— He gives receivers free releases too often and his deep recovery speed is a question mark. He should be square and more patient against releases to stay in phase.\n\n— His ball tracking down the field is hit or miss and receivers who play with strong hands and good timing can out work him at the catch point."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.5,
+    "grade_indicator": null,
+    "overall_rank": 53,
+    "position_rank": null,
+    "pro_comparison": "Jamel Dean",
+    "projected_round": null
+  },
+  "injury_history": []
+}

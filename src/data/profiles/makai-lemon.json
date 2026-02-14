@@ -1,0 +1,536 @@
+{
+  "name": "Makai Lemon",
+  "slug": "makai-lemon",
+  "overview": {
+    "POS": "WR",
+    "College": "USC",
+    "Height": "5' 11\"",
+    "Weight": "195",
+    "Age": "21.8",
+    "DOB": "2004-06-02 00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": "1st Rd",
+    "Games": "29",
+    "Snaps": "1175",
+    "24/7 Sports": "97",
+    "ESPN": "90",
+    "Draft Buzz": "88.6 / 100",
+    "NFL.com": "6.7",
+    "Bleacher": "8.1",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "USC",
+  "height": "5' 11\"",
+  "weight": "195",
+  "age": 21.8,
+  "dob": "2004-06-02 00:00:00",
+  "year": "Jr",
+  "projected_round": "1st Rd",
+  "games": 29,
+  "snaps": 1175,
+  "site_ratings": {
+    "24/7 Sports": "97",
+    "ESPN": "90",
+    "Draft Buzz": "88.6 / 100",
+    "NFL.com": "6.7",
+    "Bleacher": "8.1",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "90.8",
+      "percentile": 1.0
+    },
+    "2024 Grade": {
+      "value": "83.9",
+      "percentile": 1.0
+    },
+    "2023 Grade": {
+      "value": "67.6",
+      "percentile": 0.421
+    },
+    "Receiving Grade": {
+      "value": "91.4",
+      "percentile": 1.0
+    },
+    "Yards/ Routes Run": {
+      "value": "3.13",
+      "percentile": 0.974
+    },
+    "Drop %": {
+      "value": "2.5",
+      "percentile": 0.684
+    },
+    "Contested Catch": {
+      "value": "66.7",
+      "percentile": 0.816
+    },
+    "Grade vs Man": {
+      "value": "81",
+      "percentile": 0.711
+    },
+    "YAC/Reception": {
+      "value": "6.4",
+      "percentile": 0.684
+    },
+    "Missed Tkls Forced": {
+      "value": "21",
+      "percentile": 0.895
+    },
+    "ADOT": {
+      "value": "10.4",
+      "percentile": 0.447
+    },
+    "Deep Yards": {
+      "value": "522",
+      "percentile": 1.0
+    },
+    "Touchdowns": {
+      "value": "11",
+      "percentile": 0.816
+    },
+    "Elusiveness": {
+      "value": "33",
+      "percentile": 0.25
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 18.23076923076923,
+      "positional_rank": "2.7142857142857144"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 11.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 15.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 14.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 11.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 21.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 12.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 40.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 45.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 16.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 16.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 7.0,
+      "positional_rank": "1"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 15.692307692307692,
+    "PFF": 14.0,
+    "ESPN": null,
+    "Brugler": 16.0,
+    "Kiper": 14.0,
+    "Miller": 16.0,
+    "Bleacher": 16.0,
+    "Walter": 20.0,
+    "TDN": 19.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 6.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - MID",
+    "Bleacher": "1st Round"
+  },
+  "player_comps": {
+    "NFL": "Amon-Ra St. Brown",
+    "Miller": "TBD",
+    "DraftBuzz": "Jahan DOTSON",
+    "Bleacher": "Amon Ra—St. Brown",
+    "WF": "Jahan Dotson.",
+    "Ringer": "Doug Baldwin",
+    "NFL.com": "Amon-Ra St. Brown"
+  },
+  "strengths": "• Elite Grip Strength, Uber-Reliable\n• Instinctual Playmaker\n• Elite Ball Tracking, Timing, Focus\n• Ideal Competitive Mentality\n• High End Burst, Acceleration\n• Big Play Potential After The Catch\n• Very Polished Route Runner\n• True ST Contributor",
+  "weaknesses": "• Average Size, Largely Limited to Slot\n• More Quick Than Fast\n• Struggles Against Press\n• Limited Catch Radius",
+  "accolades": "• 2025 Biletnikoff Winner\n• 2024 All Big 10 HM",
+  "player_summary": "A Playmaking slot reciever with some ability to line up outside. He's got the short area burst to create seperation, combined with strong route running savvy to keep defenders guessing. His competitiveness, ball tracking, and high point ability maximize his otherwise limited catch radius. Despite his size, has extremely strong, sure hands that makes him an ideal 50-50 ball receiver. Some mixed feedback on YAC ability, likely that his burst, competitiveness, and open-space playmaking give him real big play potential every down, but size and lack of elite speed limit the opportunities. Overall, a true high end slot guy who can start day 1 and offer real value in the return game.",
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 125.4,
+    "Hands": 0.92,
+    "Short Receiving": 0.93,
+    "Med Routes": 0.94,
+    "Deep Threat": 0.96,
+    "Blocking": 0.65
+  },
+  "projected_role": "Slot",
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 283,
+      "career": 535
+    },
+    "Wide": {
+      "2025": 112,
+      "career": 161
+    }
+  },
+  "skills_traits": {
+    "Character/Mentality": {
+      "positives": "Fierce Player…tough (FD)\nConsistency, 7 games w/ 7 or more recs (FD)\nInstinctual Playmaking (Ringer)\nIntelligent, Confident, Polisbhed (NFL)\nLb for lb toughest WR in class (BR)",
+      "negatives": null
+    },
+    "Receiving Skills": {
+      "positives": "Remarkable Conested Catch (FD)\nSome of the strongest hands in the class (FD)\nExtraodinary ball skills (NFL)\nRidiculous grip strenght (NFL)\nDangerous after the catch (WF)",
+      "negatives": "Fairly average after the catch (NFL)"
+    },
+    "Technique": {
+      "positives": "He has RAC ability (FD)\nExceptional ball tracker, excellent timing, few focus drops (NFL)\nManipulates defenders with route acumen (NFL)\nIn-space playmaker, contact balance, spatial awareness (BR)\nUses burst, RR to create seperation consistently (WF)",
+      "negatives": "Needs to be slightly more patient (NFL)\nStruggles with press-man (BR)"
+    },
+    "Physical Traits": {
+      "positives": "shiftiness, jet power acceleration (FD)\nShort Area Quickness (Ringer)\nAcceleration, late burst (NFL)",
+      "negatives": "Small (FD)\nAverage Size (NFL)\nQuicker than fast (NFL)\nLimited catch radius (BR)"
+    },
+    "Blocking/Other": {
+      "positives": "PR/KR Ability (FD)\nWilling run blocker (NFL)\nBiletnikoff Winner",
+      "negatives": null
+    }
+  },
+  "media_links": [
+    {
+      "description": "Scouting Report",
+      "source": "YT - Football Scout 365",
+      "url": "https://www.youtube.com/watch?v=5EGQhAzLlyI"
+    },
+    {
+      "description": "2025 Highlights",
+      "source": "YT - CFB on FOX",
+      "url": "https://www.youtube.com/watch?v=s_wV_zk6Zs4"
+    },
+    {
+      "description": "Interview",
+      "source": "YT - USC Football",
+      "url": "https://www.youtube.com/watch?v=p7qYqA8oDs4"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "High-skill, high-volume slot receiver with average size but extraordinary ball skills. Lemon has room for refinement, but not much. He’s intelligent, confident and polished with the ability to make plays on all three levels. Tempo-driven route-runner who misdirects man coverage and separates out of turns but is fairly average after the catch. Quicker than fast, featuring early acceleration to open seam throws but flashes late burst when needed. More play strength is needed for NFL press and he needs to avoid rushing through multi-breaking routes. He’s an exceptional ball-tracker with excellent catch timing and few focus drops. He wins more combat catches than he loses. Lemon is a plug-and-play, quarterback-friendly talent with first-round value and Pro Bowl upside."
+        },
+        {
+          "title": "Strengths",
+          "text": "Efficient press release with early acceleration to bypass. | Manipulates defenders out of position with route acumen. | Snaps off out-breaking routes at crisp angles. | Displays above-average burst from turns to gain separation. | Ball-tracking adjustments and catch timing are elite. | Ridiculous grip strength once the football hits his hands. | Elevates his toughness and focus when catch is contested. | Good patience with late catch adjustment to save his catch space. | Already dropping two feet inbounds near the sideline. | Willing run blocker who gives legitimate effort."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Could use a hair more patience to prevent rushing the route. | Appears quicker than fast when working vertical routes. | Can be a little slow disengaging once captured underneath. | Competitive but relatively ordinary after the catch. | Needs runway to break off comebacks out of the drive phase."
+        },
+        {
+          "title": "Sources Tell Us",
+          "text": "“He could come in and be one of the top 10 slots in the league on Day 1 of camp, in my opinion. Great hands and fiercely competitive.” – AFC scouting director"
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Makai Lemon has the quickness, IQ, and overall toughness that project him to be a productive slot receiver in the NFL."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nMakai Lemon, first made waves at La Mirada High School before transferring to Los Alamitos High in California, where he terrorized Sunset League defenses from his sophomore year onward. The 5-11, 195-pound wideout piled up over 3,600 receiving yards and 41 touchdowns across his prep career while also moonlighting as a lockdown corner, recording 12 interceptions and 13 pass breakups on the defensive side. His senior campaign saw him haul in 69 catches for 1,044 yards and 12 scores, earning him MaxPreps All-America First Team honors, an Under Armour All-American selection, and a Polynesian Bowl invite.\n\nLemon arrived in Los Angeles as one of the crown jewels of USC's 2023 recruiting class, carrying a five-star ESPN rating (90) and a 247 composite grade of 0.97 that ranked him among the nation's elite prospects. His true freshman season offered a glimpse of the versatility to come: he appeared in nine games on both sides of the ball, logging six receptions for 88 yards while also recording a tackle at cornerback. The 2024 campaign established Lemon as a full-time offensive weapon and special teams dynamo. He led the Trojans with 52 catches for 764 yards and three touchdowns across 12 games, while his 19 kickoff returns for 514 yards (27.1 average) ranked sixth nationally. That performance earned him All-Big Ten Offensive Honorable Mention and All-Big Ten Return Specialist Third Team recognition.\n\nHis junior year in 2025 cemented Lemon's status as one of the premier receivers in college football. He exploded for 79 receptions, 1,156 yards, and 11 touchdowns, including a two-score outburst against Georgia Southern and five games with at least 127 receiving yards. The Biletnikoff Award winner and Paul Hornung Award candidate recorded only three drops on 175 targets over his final two seasons, showcasing the reliable hands that have NFL scouts circling his name in their draft notebooks. Lemon also proved he could contribute in unconventional ways: against UCLA in 2024, he went 1-for-1 through the air on a 39-yard completion that set up a Ja'Kobi Lane touchdown. His 1,460 all-purpose yards as a sophomore and his breakout junior season have positioned him as a top-tier receiver prospect entering the draft cycle.\n\nLemon operates in that slot-dominant archetype where intelligence and technique compensate for what he lacks in straight-line speed and prototype size. His ability to manipulate leverage at the top of routes, combined with catch point skills that exceed what his 5-11 frame suggests, gives offensive coordinators a reliable target they can deploy across formations from day one. The question is never whether Lemon will get open. The question is how teams want to maximize everything he brings to the table.\n\n\n\nSpread-heavy systems built around quick-game concepts and option routes will unlock his full potential immediately. His feel for coverage shells and ability to sit down in soft spots makes him a natural fit for timing-based passing attacks where receiver and quarterback operate on the same wavelength. That said, coaches who want to push the ball vertically will find uses for him too. His ball-tracking skills and contested catch ability translate to shots down the boundary, even if he projects more as a chain-mover than a pure field-stretcher. The kickoff return experience only sweetens the package for teams looking to maximize roster spots.\n\n\n\nHere's the deal: Lemon walks into an NFL facility ready to contribute. His three drops on 175 targets tell you everything about his hands. His Biletnikoff trophy tells you the college game couldn't contain him. The transition to pro speed and physicality will demand adjustments, particularly against the longer, more physical press corners waiting at the next level. But his technical foundation, competitive spirit, and quarterback-friendly reliability project him as a player who carves out significant offensive snaps early and grows into a consistent starter by year two. Some receivers need schemes built around them. Lemon fits into what you already run and makes it better."
+        },
+        {
+          "title": "Overview",
+          "text": "Dynamic, crafty receiver who punches way above his weight at the catch point and makes defenders miss in space.\n\nLemon makes up for his below-average height with outsize levels of dog at the catch point, combining body control, toughness, and concentration to bring down balls that he has no business corralling. A two-year starter for the Trojans, he won the Biletnikoff Award in 2025 after racking up 79 catches for 1,156 yards and 11 touchdowns, plus another two scores on the ground. He sports a compact, muscular frame and runs routes with lightning-quick feet to stop and cut on a dime. Lemon operates primarily out of the slot, showing a good feel for zone and when to take a route into the open space. He turns into a running back after the catch, flashing the top-tier acceleration and lateral juice to make tacklers miss in small areas. He broke 21 tackles in 2025, per PFF (tied for eighth most), and 502 of his 1,156 receiving yards last year came after the catch. He’s far more than just a short and intermediate threat, though; he is dangerous on vertical routes, reeling in 16 passes of 20-plus yards last season, per PFF, tied for third most nationally. He can separate off the line, leaves defenders in the dust on deep crossing routes, and is super tough when going over the middle, showing the courage to go up high to reel in a catch even when he knows a hit is coming. He has a good feel for getting his feet in bounds on routes to the sideline and brings reliable hands, with just two drops last year. He came down with 10 of 15 contested catch opportunities.\n\nLemon ran out of the slot on 75 percent of his routes in his college career, so there will be questions as to whether he can play outside at the next level. He’s undersized and lacks length. There are times when he gets rerouted and held up at the line when facing bigger, stronger corners. He shows good effort, but his lack of bulk limits his utility as a blocker."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "All these receivers, all three of them, whether it's Tate Tyson or Lemon, they're all gonna go way, way up there... Only true Ball watchers know that McKay Lemon is actually the best receiver in this draft class... You have been raving about McKay Lemon from the very beginning of the season... When you look at McKay Lemon Boy fierce player, I keep putting up that word...You look at the punt kickoff Returnability, you'll at the the consistency seven or more games with seven receptions. Okay you said seven games with seven or more receptions. He had 10 or more receptions in three games. He was out there just dominating. Nobody could handle this guy and you knew he was gonna be the guy at Jacob Lane's. Good player, right? But McKay Lemon was the guy that... You know my al went to early and often you talk about run after the catch ability he has that you're talking about ability in the return game, which is huge to be able to set a team up, set an offense up at the 40 plus... I think McKay Lemon doesn't get outta the middle of the first round... there's no chances getting to your Ravens at number 14. That's how good of a player he is... We have talked about all of the traits that he brings to the table. Contested catch situations. He is remarkable... McKay Lemon. Not that he is small and yet he is fierce... He is tough, you throw the football his ways, even if a linebacker is draped over him, a safety, a cornerback, doesn't matter. He's gonna find a way to come down with the football as some of the strongest hands in the entire class... McKay Lemon doing most of his damage from the slot this year, which is also an increasingly important piece of the, of the pro game... that kind of shiftiness jet power exhilaration, that punt kickoff returnability for both he and McKay Lemon and several others is gonna play a large part in just how valuable they are in the National Football League.\n\nMakai Lemon wide receiver from USC...Zay Flowers, your wide receiver, one who's a pints size, but explosive Playmaker... Even if he is also similarly short stature though plays a different kind of ball than Zay Flowers. He catches everything that comes this way. He's so tough. He's incredible after the catch as well... his game against Iowa in adverse weather conditions was one of the best single games I watch from any prospect this past season... Mackay's a warrior...\n\n\"if you Say a true wide receiver and you say slot receiver would be Mackay Lemon. Mackay Lemon is a dynamic player...Mackay Lemon is that slot receiver...And then the slot guy would be Mackay Lemon...all three are tough 15 picks...I don't have 15 players graded higher than those three...Carne Tate and Mackay Lemon are gonna fight to be my guy in this year's draft class...and the Mackay Lemon...it's the single best game I've watched from any prospect so far during the 2025 college football season. He made at least three jaw dropping catches in this game...nobody else can talk about Mackay Lemon. He's my guy...Those three guys...Mackay Lemon plays fierce...top 15 field. I'd be surprised if those three got outta the top 10 to 12...and you have Mackay Lemon and you talked about him and they come right behind Jeremiah Love at the top of this class...Lemon is the one that so many people love\""
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Makai Lemon is pound—for—pound the toughest receiver in the nation and terrorizes defenses after the catch.\n\nLemon plays both in the slot and outside as the Z—receiver but projects best as a predominant slot target. His toughness, spatial awareness, and tackle—breaking prowess enable him to consistently gain yards after the catch.\n\nLemon entered USC as a 4—star recruit in the 2023 recruit class. He has emerged as USC's top receiver and won this season's Biletnikoff Award for the Best Receiver in college football."
+        },
+        {
+          "title": "Positives",
+          "text": "— Lemon is an in—space playmaker and dangerous with the ball. He excels after the catch, where his play strength and contact balance take center stage. Lemon has great spatial awareness for where defenders are around him after the catch. He makes defenders miss with good lateral agility and cuts.\n\n— Lemon has a strong set of hands. He plucks the football out of the air and away from his frame. If the ball is in his area code/vicinity, he will be favored to bring it in. He is a savvy pass catcher who waits until the last second to attack the football as it descends.\n\n— His toughness shines when he's asked to work in the middle of the field. Lemon does the dirty work in the short and intermediate areas of the field. He is fearless between the hashes and fights through contact for every available yard. He plays bigger than his size. He's an adequate run blocker as well and does not back down at the point of attack.\n\n— He is a nuanced and savvy route—runner. Lemon attacks leverage aggressively, pushing the defender off their spot to create space for him to occupy. He sells routes with intentionally violent steps, plants, and cuts."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Developing answers for press—man cornerbacks. Lemon struggles to defeat handsy and Physical CBs at the line of scrimmage to quickly become available for his quarterback.\n\n— he has a limited catch radius. his length/wingspan causes issues winning contested catches against long NFL—caliber cornerbacks. on the sideline, inaccurate throws are more difficult for him to convert.\n\n— Lemon Lacks an explosive first step to threaten corners vertically on the outside. he possesses built—up speed rather than instantaneous acceleration."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "The Trojans have produced a lot of wide receiver talent for the NFL in their storied history, and after a bit of a lull, Makai Lemon came on to emerge as a quality prospect for the next level. In 2024, Lemon showed ability with 52 catches for 764 yards with three touchdowns. In 2025, Lemon made a lot of big plays for a Trojans team that went 9-3 as he caught 79 passes for 1,156 yards and 11 touchdowns.\nFor the NFL, Lemon looks like a potential No. 2 starting receiver who also could work mostly out of the slot. Lemon is quick through his route with a burst out of his breaks to consistently create separation. Lemon is dangerous on double moves, as his route-running and suddenness allow him to get open downfield while challenging defenses vertically. Lemon has strong hands and is a natural hand catcher who is very reliable at securing the ball.\nLemon shows an uncanny ability to make leaping grabs and routinely makes highlight reel acrobatic receptions. With excellent body control, leaping ability, and secure hands, he makes some incredible catches to bail out inaccurate passes. While Lemon is not a big wideout, his ability to make leaping grabs makes him dangerous on 50-50 passes while also giving his quarterback a larger catch radius than most small receivers. With a gritty and competitive style, Lemon is a feisty player who provides energy to his team with his dangerous run after the ability. Lemon can weave through the defense and shows some strength to fight with tacklers.\nLemon has some limitations for the NFL that could keep him from becoming a true No. 1 receiver. He could have problems with longer cornerbacks, and getting off jams and reroutes could be an issue for him. As a pro, Lemonâ€™s size might limit him to mainly being a slot receiver. Lemon may not have a defining trait to make him an elite receiver. He is not overly big or fast to dominate pro cornerbacks. Thus, Lemon could be more of a No. 2 or 3 receiver as a pro.\nLemon also helped the Trojans by being a core special teams contributor. He returned kicks, punts, and covered some punts as well. Depending on where he lands on the depth chart, his pro team may not want to use him as a returner, but he has the ability to contribute if called upon.\nIn the 2026 NFL Draft, Lemon has a shot to go in the back half of the first round and could go in the second round if he is not selected on the opening night of the draft."
+        },
+        {
+          "title": "Strengths",
+          "text": "Dangerous playmaker\nMakes amazing highlight reel catches\nThreat to score and rip off long gains on any touch\nGood hands\nNatural hands catcher\nSmooth route runner\nHas a burst out of his breaks\nConsistently generates separation\nSudden\nChallenges a defense downfield\nFinds soft spots in zone\nSuperb on double moves\nSpeed to go vertical\nTough and competitive\nTracks the ball well\nExcellent on 50-50 passes for a small receiver\nImpressive catch radius for a small receiver\nContributes as a returner on special teams"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Lacks elite speed\nUndersized\nLight\nShort\nWill have problems with long NFL corners\nCould be limited to being a slot receiver\nCould have a hard time getting off contact"
+        },
+        {
+          "title": "Player Comp",
+          "text": "Jahan Dotson. In terms of style of play, Lemon reminds me of Dotson. They are similar size/speed athletes, and I could see Lemon being a pro comparable to Dotson."
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Dynamic, crafty receiver who punches way above his weight at the catch point and makes defenders miss in space.\n\nLemon makes up for his below-average height with outsize levels of dog at the catch point, combining body control, toughness, and concentration to bring down balls that he has no business corralling. A two-year starter for the Trojans, he won the Biletnikoff Award in 2025 after racking up 79 catches for 1,156 yards and 11 touchdowns, plus another two scores on the ground. He sports a compact, muscular frame and runs routes with lightning-quick feet to stop and cut on a dime. Lemon operates primarily out of the slot, showing a good feel for zone and when to take a route into the open space. He turns into a running back after the catch, flashing the top-tier acceleration and lateral juice to make tacklers miss in small areas. He broke 21 tackles in 2025, per PFF (tied for eighth most), and 502 of his 1,156 receiving yards last year came after the catch. He’s far more than just a short and intermediate threat, though; he is dangerous on vertical routes, reeling in 16 passes of 20-plus yards last season, per PFF, tied for third most nationally. He can separate off the line, leaves defenders in the dust on deep crossing routes, and is super tough when going over the middle, showing the courage to go up high to reel in a catch even when he knows a hit is coming. He has a good feel for getting his feet in bounds on routes to the sideline and brings reliable hands, with just two drops last year. He came down with 10 of 15 contested catch opportunities.\n\nLemon ran out of the slot on 75 percent of his routes in his college career, so there will be questions as to whether he can play outside at the next level. He’s undersized and lacks length. There are times when he gets rerouted and held up at the line when facing bigger, stronger corners. He shows good effort, but his lack of bulk limits his utility as a blocker."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Dynamic, crafty receiver"
+        },
+        {
+          "title": "Traits",
+          "text": "Short-Area Quickness\nInstinctual Playmaking\nGot That Dog in Him"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former four-star recruit out of Los Alamitos, California. Was the no. 7 wide receiver and the no. 42 overall player in the 2023 class. Saw time at corner and receiver during his true freshman season in 2023. Returned kicks and punts for the Trojans across his three seasons. Averaged 27 yards per kick return in 2024 and 18 yards per return in 2025. Won the Biletnikoff Award this past season."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "His contested catch rate increased from 46.2 percent in 2024 to 66.7 percent in 2025.\nLemon’s Mount Rushmore of USC receivers is Marqise Lee, Amon-Ra St. Brown, Robert Woods, and Drake London.\nModels his game on St. Brown’s.\nOn playing defense early in his college career: “I’m a receiver at heart, but playing defensive back helped me understand what the other side is thinking and what they are going to do.”"
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF DOUG BALDWIN"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.7,
+    "prospect_grade_indicator": "Year 1 Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Amon-Ra St. Brown",
+    "eligibility": "Junior",
+    "nfl_rank": 7,
+    "nfl_pos_rank": 1
+  },
+  "bleacher_profile": {
+    "grade": 8.1,
+    "grade_indicator": null,
+    "overall_rank": 12,
+    "position_rank": null,
+    "pro_comparison": "Amon Ra—St. Brown",
+    "projected_round": "1st Round"
+  },
+  "walter_profile": {
+    "player_comp": "Jahan Dotson. In terms of style of play, Lemon reminds me of Dotson. They are similar size/speed athletes, and I could see Lemon being a pro comparable to Dotson."
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF DOUG BALDWIN",
+    "traits": "Short-Area Quickness\nInstinctual Playmaking\nGot That Dog in Him"
+  },
+  "injury_history": [
+    {
+      "detail": "Head",
+      "recovery_time": "1 Game",
+      "year": "2024"
+    },
+    {
+      "detail": "Hamstring",
+      "recovery_time": "Pre-Season",
+      "year": "2025"
+    }
+  ]
+}

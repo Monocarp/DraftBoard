@@ -1,0 +1,447 @@
+{
+  "name": "Darrell Jackson Jr",
+  "slug": "darrell-jackson-jr",
+  "overview": {
+    "POS": "DT",
+    "College": "Florida State",
+    "Height": "6' 5\"",
+    "Weight": "337",
+    "Age": "22.7",
+    "DOB": null,
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": null,
+    "Snaps": null,
+    "24/7 Sports": null,
+    "ESPN": "80",
+    "Draft Buzz": null,
+    "NFL.com": "TBD",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "position": "DT",
+  "college": "Florida State",
+  "height": "6' 5\"",
+  "weight": "337",
+  "age": 22.7,
+  "dob": null,
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": null,
+  "snaps": null,
+  "site_ratings": {
+    "24/7 Sports": null,
+    "ESPN": "80",
+    "Draft Buzz": null,
+    "NFL.com": "TBD",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "73.8",
+      "percentile": 0.667
+    },
+    "24 Grade": {
+      "value": "70.4",
+      "percentile": 0.083
+    },
+    "23 Grade": {
+      "value": "63.3",
+      "percentile": 0.111
+    },
+    "Pass Rush Grade": {
+      "value": "59.2",
+      "percentile": 0.111
+    },
+    "True Pass Rush": {
+      "value": "60.1",
+      "percentile": 0.111
+    },
+    "PR Win Rate": {
+      "value": "6.2",
+      "percentile": 0.389
+    },
+    "Run Def. Grade": {
+      "value": "81.8",
+      "percentile": 0.667
+    },
+    "Run Stop %": {
+      "value": "8.9",
+      "percentile": 0.667
+    },
+    "Sacks": {
+      "value": "1",
+      "percentile": 0.472
+    },
+    "Hits": {
+      "value": "0",
+      "percentile": 0.167
+    },
+    "Hurries": {
+      "value": "13",
+      "percentile": 0.639
+    },
+    "Batted Balls": {
+      "value": "0",
+      "percentile": 0.222
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.444
+    },
+    "Tackling Grade": {
+      "value": "70",
+      "percentile": 0.889
+    },
+    "Missed Tackle Rate": {
+      "value": "7.7",
+      "percentile": 0.861
+    },
+    "Total Pressures": {
+      "value": "14",
+      "percentile": 0.528
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 76.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 86.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 68.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 69.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 89.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 64.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 52.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 58.0,
+      "positional_rank": "20"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 94.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 67.5,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": 91.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "TBD",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Dalvin Tomlinson",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": null,
+    "Pass Rush": null,
+    "Run Defense": null
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 159,
+      "career": 211
+    },
+    "B GAP": {
+      "2025": 327,
+      "career": 761
+    },
+    "Over Tackle": {
+      "2025": 33,
+      "career": 74
+    },
+    "Outside Tkl": {
+      "2025": 1,
+      "career": 3
+    },
+    "Off Ball": {
+      "2025": 2,
+      "career": 3
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Darrell Jackson Jr has several physically dominant reps as a run defender on film to be a gap—filler in the middle of an NFL defensive line. His combination of size (6'5\", 337 pounds) and strength can help him be an immediate contributor on early downs at the next level.\n\nJackson began his college career as a 3—star recruit at Maryland, playing in a rotational role as a true freshman and recording 22 tackles. He transferred to Miami the following year and started for the Hurricanes, logging 27 tackles, 4.5 tackles for loss and three sacks.\n\nIn 2023, the Florida native transferred again but was forced to sit out all but one of Florida State's contests due to NCAA transfer rules. He earned All—ACC honorable mention honors as a redshirt junior by collecting 32 tackles, four TFLs and 3.5 sacks."
+        },
+        {
+          "title": "Positives",
+          "text": "— Jackson has great size, carries his frame well and appears to have long arms.\n\n— Strong and violent at the point of attack when taking on blocks against the run. Has plenty of knockback power and can stand up offensive linemen with his upper body strength.\n\n— Also, takes on blocks with a wide base. He's hard to move one—on—one and can effectively two—gap against base blocks from centers.\n\n— Has little to no issues stacking and shedding and has also shown a solid arm—over move to escape blocks.\n\n— Can make tackles with offensive linemen hanging onto him.\n\n— When he shoots his hands as a pass—rusher, he can overwhelm interior offensive linemen with a long—arm move by using his strength and length.\n\n— Hustle player who will factor into gang tackles down the field."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Jackson isn't very quick and lacks athleticism overall.\n\n— Often plays with his hands down when rushing the passer, doesn't have any counter moves or work the offensive lineman's hands well.\n\n— Slow off the ball and stands up out of his stance, impacting his ability to collapse the pocket when bull rushing. Offers very little as a pass—rusher at the next level.\n\n— High pad level and stopping his feet on contact can cause him to concede some ground against double teams/combo blocks.\n\n— Shows some stiffness in his knees and hips, impacting his ability to sink his hips and anchor against doubles."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.2,
+    "grade_indicator": null,
+    "overall_rank": 89,
+    "position_rank": null,
+    "pro_comparison": "Dalvin Tomlinson",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

@@ -1,0 +1,447 @@
+{
+  "name": "Dontay Corleone",
+  "slug": "dontay-corleone",
+  "overview": {
+    "POS": "DT",
+    "College": "Cincinnati",
+    "Height": "6' 1\"",
+    "Weight": "335",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": "44",
+    "Snaps": "1566",
+    "24/7 Sports": "84",
+    "ESPN": "TBD",
+    "Draft Buzz": "86.6 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "position": "DT",
+  "college": "Cincinnati",
+  "height": "6' 1\"",
+  "weight": "335",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": 44,
+  "snaps": 1566,
+  "site_ratings": {
+    "24/7 Sports": "84",
+    "ESPN": "TBD",
+    "Draft Buzz": "86.6 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "72.7",
+      "percentile": 0.444
+    },
+    "24 Grade": {
+      "value": "73.3",
+      "percentile": 0.389
+    },
+    "23 Grade": {
+      "value": "83.3",
+      "percentile": 0.944
+    },
+    "Pass Rush Grade": {
+      "value": "59.5",
+      "percentile": 0.167
+    },
+    "True Pass Rush": {
+      "value": "61.3",
+      "percentile": 0.25
+    },
+    "PR Win Rate": {
+      "value": "5",
+      "percentile": 0.278
+    },
+    "Run Def. Grade": {
+      "value": "81.1",
+      "percentile": 0.611
+    },
+    "Run Stop %": {
+      "value": "3.9",
+      "percentile": 0.056
+    },
+    "Sacks": {
+      "value": "0",
+      "percentile": 0.167
+    },
+    "Hits": {
+      "value": "1",
+      "percentile": 0.417
+    },
+    "Hurries": {
+      "value": "7",
+      "percentile": 0.167
+    },
+    "Batted Balls": {
+      "value": "0",
+      "percentile": 0.222
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.444
+    },
+    "Tackling Grade": {
+      "value": "67.8",
+      "percentile": 0.778
+    },
+    "Missed Tackle Rate": {
+      "value": "14.3",
+      "percentile": 0.389
+    },
+    "Total Pressures": {
+      "value": "8",
+      "percentile": 0.111
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 86.6,
+      "positional_rank": "9.333333333333334"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 58.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 148.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 38.0,
+      "positional_rank": "19"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 96.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - LATE",
+    "Bleacher": "4th Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "JJ PEGUES",
+    "Bleacher": "Andrew Billings",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.65,
+    "Pass Rush": 0.77,
+    "Run Defense": 0.62
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 271,
+      "career": 1059
+    },
+    "B GAP": {
+      "2025": 72,
+      "career": 153
+    },
+    "Over Tackle": {
+      "2025": 8,
+      "career": 17
+    },
+    "Outside Tkl": {
+      "2025": 1,
+      "career": 2
+    },
+    "Off Ball": {
+      "2025": 0,
+      "career": 6
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nDontay Corleone grew up in Cincinnati with dreams of playing for his hometown Bearcats. At Colerain High School, he terrorized opposing offenses under coach Sean Cutright, racking up 137 tackles and 19.5 sacks across his prep career. His senior season earned him Division I First-Team All-Ohio honors, the Greater Miami Conference Defensive Athlete of the Year award, and enough attention to land as a three-star recruit with 247 Sports and ESPN, though Rivals only gave him two stars. Standing 6'1\" and weighing 335 pounds with a February birth date, Corleone committed to Cincinnati and redshirted in 2021.\n\nHis redshirt freshman campaign in 2022 announced his arrival in emphatic fashion. Paired alongside Jowon Briggs to form one of college football's most dominant nose tackle tandems, Corleone posted 44 tackles, 5.5 tackles for loss, three sacks, two forced fumbles, and two fumble recoveries. PFF rated him their top defensive player in the country. He earned Associated Press Third-Team All-American honors, PFF Third-Team All-American recognition, AFCA Freshman All-American nods, and College Football News Freshman All-American status. His 11-tackle performance against Navy marked his first career start.\n\nThe 2023 season brought continued success with 39 tackles, 6.5 TFLs, three sacks, and a forced fumble, earning Second-Team All-Big 12 honors from both the AP and conference coaches. A blood clot scare in June 2024 sidelined him for three months, but he returned to start 11 games and collect First-Team All-Big 12 accolades with 26 tackles, five TFLs, and a career-high 3.5 sacks. His 2025 season saw production dip considerably with just 14 tackles and no sacks across 10 games due to another injury. Nicknamed \"The Godfather,\" Corleone earned his bachelor's degree in December 2024 and even cashed in on his NIL with \"The Godfather Burger\" at a local Cincinnati restaurant. His 109 career tackles, 17 TFLs, and 9.5 sacks across 44 games make him one of the most accomplished defenders in program history.\n\nSCOUTING REPORT: SUMMARY\nWatch the tape and you'reseeing a rare blend of size, strength, and movement skills at the nose tackle position. Corleone tested in college as a legitimate freak with a 485-pound bench, 615-pound squat, 1.71-second ten-yard split, and 7.44-second three-cone at 335 pounds. That combination of power and short-area quickness shows up constantly on film. He commands double teams, swallows running lanes, and keeps linebackers clean to flow to the football. His skill set translates well as a 0-technique in an odd front where he can anchor the middle of the defense, and he also profiles as a 1-technique in even fronts. He can two-gap with the strength to control blockers and read plays, or attack gaps in a penetrating scheme when coordinators turn him loose.\n\nThe concerns are narrower than they might appear. His pass rush repertoire lacks variety beyond the bull rush and gap shooting, which may limit his third-down value until he develops more counters. The medical history needs thorough evaluation at the combine, and his weight will require monitoring to keep that impressive athletic profile intact. But the tools are there for a player who can impact games against the run while growing as a pass rusher.\n\nCorleone projects as a quality rotational piece who can compete for starting snaps in the right system. He's the type of player who makes teammates better by commanding attention and doing thankless work in the trenches. The production dip in 2025 creates some questions, but four years of quality tape and three All-Conference selections show what he's capable of when healthy. A team looking to shore up their run defense gets a player with legitimate physical tools and the experience to contribute early.\nWRITTEN BY:\nANDREW MOORE (THE AMERICAN)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Teams in search of a nose tackle to plug the A—gaps should be interested in Dontay Corleone. The 6'1\", 335—pound defensive lineman is a strong and stout presence in the running game, with the ability to reset the line of scrimmage.\n\nCorleone began his college career as a 3—star recruit in the 2021 class and redshirted as a true freshman at Cincinnati. He had an excellent redshirt freshman campaign, collecting 45 tackles, 5.5 tackles for loss, three sacks and two forced fumbles to earn third—team All—American honors.\n\nIn 2023, \"The Godfather\" became a full—time starter and racked up 39 tackles, 6.5 TFLs, three sacks and a FF to earn a second—team All—Big 12 selection."
+        },
+        {
+          "title": "Positives",
+          "text": "— Corleone has impressive upper body strength and shoots his hands quickly, allowing him to generate knockback power and reset the line of scrimmage when taking on base blocks. These traits also allow him to disrupt offensive linemen's paths to the second level and free up linebackers.\n\n— Takes on blocks with a wide base to hold his gap consistently when left one—on—one and is solid against double—teams when he keeps his pads down.\n\n— Attacks and defeats the man he's lined up across from when taking on doubles.\n\n— Quick to recognize down blocks by shifting his eyes and hands to the linemen coming down on him to avoid getting washed inside.\n\n— Listed as the No. 14 player on Bruce Feldman's list of extraordinary athletes prior to the 2025 campaign by bench pressing 485 pounds, squatting 615 and sumo deadlifting 585 pounds, while clocking 1.71—second 10—yard split and 7.44—second three—cone times."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Corleone carries a good amount of bad weight, negatively impacting his quickness and athleticism. This issue shows up the most as a pass—rusher, limiting his ability to win, and projects him as a two—down player at the professional level.\n\n— Has a bad habit of standing up out of his stance, which makes his bull—rush ineffective and causes issues against double—teams.\n\n— Appears to have shorter arms, limiting his ability to extend and disengage from blocks.\n\n— Lacks some rotational strength to keep his shoulders square against scoop blocks.\n\n— Medical red flags will be a significant part of his overall evaluation after suffering a knee injury in 2022, a lower—body injury kept him out of two games in 2025 and the aforementioned case of blood clots could scare some NFL teams. His medical evaluations during the combine and pre—draft visits will play a large role in his overall standing."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.6,
+    "grade_indicator": null,
+    "overall_rank": 148,
+    "position_rank": null,
+    "pro_comparison": "Andrew Billings",
+    "projected_round": "4th Round"
+  },
+  "injury_history": []
+}

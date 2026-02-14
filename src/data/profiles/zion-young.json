@@ -1,0 +1,462 @@
+{
+  "name": "Zion Young",
+  "slug": "zion-young",
+  "overview": {
+    "POS": "ED",
+    "College": "Missouri",
+    "Height": "6' 5\"",
+    "Weight": "262",
+    "Age": "21.1",
+    "DOB": "2004-03-18 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "46",
+    "Snaps": "1794",
+    "24/7 Sports": "85",
+    "ESPN": "85",
+    "Draft Buzz": "85.6 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.7",
+    "Gridiron": null
+  },
+  "position": "ED",
+  "college": "Missouri",
+  "height": "6' 5\"",
+  "weight": "262",
+  "age": 21.1,
+  "dob": "2004-03-18 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 46,
+  "snaps": 1794,
+  "site_ratings": {
+    "24/7 Sports": "85",
+    "ESPN": "85",
+    "Draft Buzz": "85.6 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.7",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "86.3",
+      "percentile": 0.7
+    },
+    "24 Grade": {
+      "value": "79.6",
+      "percentile": 0.5
+    },
+    "23 Grade": {
+      "value": "64.7",
+      "percentile": 0.2
+    },
+    "Pass Rush Grade": {
+      "value": "82.8",
+      "percentile": 0.45
+    },
+    "True Pass Rush": {
+      "value": "78.7",
+      "percentile": 0.421
+    },
+    "PR Win Rate": {
+      "value": "17.9",
+      "percentile": 0.579
+    },
+    "Run Def. Grade": {
+      "value": "89.1",
+      "percentile": 0.9
+    },
+    "Run Stop %": {
+      "value": "9.3",
+      "percentile": 0.9
+    },
+    "Sacks": {
+      "value": "8",
+      "percentile": 0.658
+    },
+    "Hits": {
+      "value": "15",
+      "percentile": 1.0
+    },
+    "Hurries": {
+      "value": "30",
+      "percentile": 0.737
+    },
+    "Batted Balls": {
+      "value": "2",
+      "percentile": 0.763
+    },
+    "Forced Fumbles": {
+      "value": "2",
+      "percentile": 0.605
+    },
+    "Tackling Grade": {
+      "value": "69.1",
+      "percentile": 0.75
+    },
+    "Missed Tackle Rate": {
+      "value": "15.4",
+      "percentile": 0.526
+    },
+    "Total Pressures": {
+      "value": "53",
+      "percentile": 0.789
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 54.2,
+      "positional_rank": "7.166666666666667"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 47.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 45.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 39.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 22.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 38.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 14.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 46.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 82.0,
+      "positional_rank": "16"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 99.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 20.4,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 25.0,
+    "Bleacher": null,
+    "Walter": 15.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - MID",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Mykel WILLIAMS",
+    "Bleacher": "Tyree Wilson",
+    "WF": "Cam Jordan."
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.77,
+    "Pass Rush": 0.96,
+    "Run Defense": 0.88
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 0,
+      "career": 12
+    },
+    "B GAP": {
+      "2025": 19,
+      "career": 66
+    },
+    "Over Tackle": {
+      "2025": 34,
+      "career": 110
+    },
+    "Outside Tkl": {
+      "2025": 514,
+      "career": 1419
+    },
+    "Off Ball": {
+      "2025": 2,
+      "career": 4
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nBorn into a football family that valued toughness over flash, Zion Young brought his 6'5\", 262-pound frame to Michigan State where he cut his teeth in the Big Ten trenches, earning Academic All-Big Ten honors while starting eleven games across two seasons. After tallying 47 tackles, 6.5 tackles for loss, and 2.5 sacks for the Spartans, including a memorable seven-tackle performance against Michigan, Young transferred to Missouri where he's transformed into one of the SEC's most disruptive edge rushers.\n\nHis 2024 campaign served as the perfect appetizer for what we're seeing now - starting all thirteen games, Young racked up 42 tackles, 5.5 tackles for loss, and showed his athleticism with a 17-yard fumble return touchdown against Oklahoma that had Memorial Stadium rocking. The coaches saw enough to name him a team captain heading into 2025, and he's rewarded that faith by becoming the heartbeat of Missouri's pass rush. Through five games this season, Young has been an absolute menace off the edge with 13 total tackles, six tackles for loss, and two sacks, but those numbers barely scratch the surface of his impact.\n\nThe accolades keep rolling in for the former three-star recruit who ESPN rated at 73 and Rivals graded at 5.5 coming out of high school. PFF has him rated as the twentieth-best pass-rushing edge in college football with an 87.1 grade, and his pass rush productivity rating of 14.7 ranks second among all edge players nationally. His 25.6% win rate in pass rush situations sits sixth in the country, and after dismantling South Carolina with three solo tackles, two tackles for loss, and a sack, the SEC recognized him as Defensive Lineman of the Week. Young helped suffocate Massachusetts to just 124 total yards, including a measly 19 net rushing yards, showcasing the run-stopping ability that makes him more than just a one-trick pass rusher.\n\nSCOUTING REPORT: SUMMARY\nYoung's tape screams rotational edge rusher with starter upside if he can add another gear to his get-off. His combination of length, technique, and motor translates beautifully to the next level, where defensive coordinators will salivate over his ability to set the edge and collapse the pocket. The kid plays with controlled violence - he's not just trying to beat blocks, he's trying to demoralize the offensive tackle across from him. That mentality, combined with his proven production against SEC competition, suggests he'll hear his name called somewhere between rounds three and four.\n\nHis best fit comes in a 4-3 scheme where he can pin his ears back as a strong-side defensive end, though his versatility gives him value in multiple fronts. The path to early playing time runs through special teams and obvious passing situations where his refined hand usage and bend can exploit tired offensive tackles. Young reminds me of a poor man's Trey Hendrickson - not quite the athlete but possessing similar technical prowess and an understanding of how to win with leverage and timing rather than pure speed.\n\nThe ceiling here depends entirely on whether Young can unlock another level of explosiveness through NFL strength and conditioning programs. If he does, you're looking at a ten-sack guy who can anchor your edge. Even if the athleticism stays where it is, his floor as a reliable run defender who generates consistent pressure makes him a valuable piece for creative defensive coordinators. Smart organizations that value high-character guys who show up every day ready to work will fall in love with Young's tape and intangibles."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Zion Young looks like he was built in a lab to play defensive end in the NFL, possessing a good frame at 6'5\", 262 pounds with long arms and tools that a lot of teams will be willing to work with. He also has solid strength to push the pocket as a pass—rusher and set the edge against the run.\n\nA 3—star recruit in the 2022 class, Young began his college career at Michigan State, spending two seasons in East Lansing. He played in eight games as a true freshman, collecting 21 tackles, two for loss and a sack before posting 26 tackles, 4.5 TFLs and 1.5 sacks in 12 games in year two.\n\nThe former Spartan transferred to Missouri as a junior in 2024 and started every game for the Tigers, collecting 42 tackles, 5.5 TFLs, 2.5 sacks, three passes defended, a forced fumble and a fumble returned for a touchdown."
+        },
+        {
+          "title": "Positives",
+          "text": "— Young has a good frame and build, and appears to have good arm length.\n\n— Solid strength at the point of attack and the long arms help him get extension on blocks from offensive tackles.\n\n— Consistently resets the line of scrimmage against tight ends.\n\n— Decent at setting the edge and running his feet to avoid getting reached against the run.\n\n— Solid power and leg drive as a pass—rusher to occasionally collapse the pocket when bull rushing or turning speed to power.\n\n— Active hands as a pass—rusher and has shown improvement with his use of hands from 2024 to 2025.\n\n— Good pass—rusher motor to get coverage sacks."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Lacks burst/acceleration off the line of scrimmage to threaten offensive tackles with speed around the edge.\n\n— Not very twitchy and doesn't show high—level athleticism as a pass—rusher.\n\n— Use of hands when rushing the passer is still a work in progress, his timing is off which limits his ability to take advantage of his long arms.\n\n— Subpar bend and angles around the edge, impacting his ability to corner at the top of the rush and leading to inefficient paths to the quarterback.\n\n— Has a habit of occasionally working around blocks.\n\n— Turns his shoulders perpendicular to the line of scrimmage when setting the edge.\n\n— As a freshman at Michigan State, he was involved in a fight in the tunnel after the game against Michigan and pled guilty to misdemeanor assault charges while also serving a suspension. Also, he was arrested for DWI on Dec. 13, two weeks before Missouri's bowl game, per KOMU 8."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Young started out his college career at Michigan State. With the Spartans, he totaled 47 tackles and 2.5 sacks over two seasons. In 2024, Young transferred to Missouri and earned a starting spot. He recorded 42 tackles with 2.5 sacks in his debut with the Tigers. In his final season, Young was part of an excellent tandem with edge rusher Damon Wilson. Young was among the nationâ€™s leaders in pressures while totaling 6.5 sacks, 42 tackles, two forced fumbles, and two passes batted.\nIn the pass rush, Young has quickness off the ball and enough speed to turn the corner. He is an impressive power rusher who uses his length and strength to bullrush blockers backward into the pocket. Young uses his length and strength to shed blocks and push defenders away. Young also has quality vision, recognition, and the ability to adjust to quarterbacks as they scramble in the pocket. Young uses his hands and feet at the same time to battle blockers. Young has a burst to close and enough speed to get around the corner on tackles. He also has good speed to power rush. For the NFL, Young could stand to improve and expand his repertoire of moves.\nAs a run defender, Young is strong at the point of attack with physicality, and he is skilled at setting the edge. He is strong enough to hold his ground against downhill runs coming straight at him, and shows the ability to get off blocks. He can stuff running lanes and shed to pursue outside his gap. For the NFL, Young is a quality run defender who should be an asset to his pro defense.\nIn the 2026 NFL Draft, Young looks like a first- or second-round pick. However, his character evaluation could cause him to slide. Young has the skill set to be a pro starter."
+        },
+        {
+          "title": "Strengths",
+          "text": "Effective pass rusher\nEnough speed to get around the corner\nStrength to bull rush\nHas speed to power\nClosing burst\nHas power in his bull rush\nHas speed to power\nGood run defender, can set the edge\nDeveloped strength\nCan stack and hold his ground as a run defender\nActive hands\nAbility to use hands and feet at the same time\nAble to shed blocks\nPursues out of his gap\nCan hold his gap\nPlay recognition\nGood instincts\nExperienced and successful against good college programs"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Pass rush moves need refinement\nCould stand to get quicker off the ball\nCharacter issues"
+        },
+        {
+          "title": "Player Comp",
+          "text": "Cam Jordan. In terms of style of play, Young reminds me of Jordan coming out of Cal. Jordan worked himself into an excellent pro, and Young has the talent to have a good NFL career."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.7,
+    "grade_indicator": null,
+    "overall_rank": 38,
+    "position_rank": null,
+    "pro_comparison": "Tyree Wilson",
+    "projected_round": "2nd Round"
+  },
+  "walter_profile": {
+    "player_comp": "Cam Jordan. In terms of style of play, Young reminds me of Jordan coming out of Cal. Jordan worked himself into an excellent pro, and Young has the talent to have a good NFL career."
+  },
+  "injury_history": []
+}

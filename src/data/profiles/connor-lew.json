@@ -1,0 +1,438 @@
+{
+  "name": "Connor Lew",
+  "slug": "connor-lew",
+  "overview": {
+    "POS": "IOL",
+    "College": "Auburn",
+    "Height": "6' 3\"",
+    "Weight": "303",
+    "Age": "20.5",
+    "DOB": "2005-08-30 00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": null,
+    "Games": "29",
+    "Snaps": "1603",
+    "24/7 Sports": "90",
+    "ESPN": "81",
+    "Draft Buzz": "84.9 / 100",
+    "NFL.com": "TBD",
+    "BR": "7",
+    "Gridiron": null
+  },
+  "position": "IOL",
+  "college": "Auburn",
+  "height": "6' 3\"",
+  "weight": "303",
+  "age": 20.5,
+  "dob": "2005-08-30 00:00:00",
+  "year": "Jr",
+  "projected_round": null,
+  "games": 29,
+  "snaps": 1603,
+  "site_ratings": {
+    "24/7 Sports": "90",
+    "ESPN": "81",
+    "Draft Buzz": "84.9 / 100",
+    "NFL.com": "TBD",
+    "BR": "7",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "67.6",
+      "percentile": 0.1
+    },
+    "2024 Grade": {
+      "value": "75.7",
+      "percentile": 0.6
+    },
+    "2023 Grade": {
+      "value": "66.8",
+      "percentile": 0.7
+    },
+    "Run Block Grade": {
+      "value": "64.9",
+      "percentile": 0.2
+    },
+    "Pass Block Grade": {
+      "value": "71.9",
+      "percentile": 0.2
+    },
+    "True Pass Set Grade": {
+      "value": "76.6",
+      "percentile": 0.3
+    },
+    "Pass Block Efficiency": {
+      "value": "98.7",
+      "percentile": 0.4
+    },
+    "Zone Grade": {
+      "value": "63.8",
+      "percentile": 0.1
+    },
+    "Gap Grade": {
+      "value": "65.9",
+      "percentile": 0.7
+    },
+    "Sacks Allowed": {
+      "value": "2",
+      "percentile": 0.1
+    },
+    "Hits Allowed": {
+      "value": "0",
+      "percentile": 0.8
+    },
+    "Hurries Allowed": {
+      "value": "2",
+      "percentile": 0.75
+    },
+    "Pressures Allowed": {
+      "value": "4",
+      "percentile": 0.7
+    },
+    "Penalties": {
+      "value": "3",
+      "percentile": 0.6
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 61.375,
+      "positional_rank": "3.6"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 63.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 61.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 114.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 45.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 39.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 56.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 63.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 75.5,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": 63.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Drew KENDALL",
+    "Bleacher": "Matt Hennessy",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.85,
+    "Run Blocking Grade": 0.77
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 0,
+      "career": 0
+    },
+    "LG": {
+      "2025": 0,
+      "career": 0
+    },
+    "C": {
+      "2025": 420,
+      "career": 1603
+    },
+    "RG": {
+      "2025": 0,
+      "career": 0
+    },
+    "RT": {
+      "2025": 0,
+      "career": 0
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nConnor Lew arrived on The Plains as a four-star recruit with a perfect 4.0 GPA, but nobody expected him to crack the starting lineup as a true freshman in the meat grinder that is SEC football. After seeing extended action against Ole Miss following an injury to veteran Avery Jones, Lew seized his opportunity against Mississippi State and never looked back, earning SEC Freshman of the Week honors and landing on multiple Freshman All-America teams.\n\nThe junior pivot has started every game since claiming the job midway through his freshman campaign, anchoring a Tiger offensive front that's been in desperate need of stability. His sophomore season showed remarkable growth, earning PFF Team of the Week honors after a standout performance against Georgia and being named game captain against Vanderbilt - a testament to how quickly he's earned the respect of both teammates and coaches. What makes Lew's rapid ascension particularly impressive is that he's flourished despite Auburn's overall struggles, showing the mental fortitude to maintain excellence even when surrounded by inconsistency.\n\nNow entering his third season as the Tigers' starting center, Lew has already been pegged by head coach Hugh Freeze as \"an NFL center\" and is generating legitimate buzz as a potential first-team All-SEC performer. His development trajectory puts him in rare company - you simply don't see many centers start from day one in the SEC and improve at this rate. At 6'3\", 302 pounds with exceptional athleticism, Lew has the physical tools matched with technical proficiency that has NFL scouts already taking notice.\n\nWith Connor Lew, what jumps off the screen is a center with exceptional movement skills who can execute in space - the athleticism shows up consistently on pulls, screens and climbing blocks. The wrestling background translates directly to his leverage understanding and hand usage. Yet while his lateral quickness excels, he'll encounter problems against powerful NFL nose tackles who can overwhelm his average frame with pure strength - he'll need to add functional mass without sacrificing his mobility advantage. \n\n\n\nWatching Lew diagnose stunts and blitzes showcases football intelligence beyond his years, though his tendency to attack with predictable hand patterns will require diversification against savvy NFL defenders. His pass protection fundamentals are refined for a college prospect, but the film shows occasional lean-forward issues that could be exploited by quicker interior defenders on Sundays. The three-year starter experience against SEC competition has clearly accelerated his development curve and provides a solid foundation that many center prospects lack entering the draft process. \n\n\n\nUltimately, Lew profiles as a scheme-versatile pivot who will thrive most in systems emphasizing movement rather than raw power at the position. His ceiling remains intriguingly high given his athletic tools paired with proven production against elite competition. The technical flaws are correctable, and his demonstrated year-over-year improvement trajectory suggests he's nowhere near his development ceiling. The right offensive coordinator will maximize his exceptional second-level blocking and protection recognition while scheming around his relative mass limitations."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Connor Lew is a young prospect with a solid all—around skill—set who operates on time with good positional leverage. However, Lew has an underdeveloped frame and lacks an elite trait. Even so, the runway to improve and develop into a starter remains.\n\nLew is a 6'3\", 303—pound center prospect, who entered the Auburn program as a 4—star recruit in the 2023 class.\n\nLew is in his third—year as the Tigers' starting center. He took over as the starting pivot in Week 8 as a true freshman in 2023 and was named to the SEC All—Freshman team."
+        },
+        {
+          "title": "Positives",
+          "text": "— snaps out of his stance and plays with a flat—back posture, head out of blocks and active hands.\n\n— quick, accurate and independent striker in pass protection allow him to latch and control reps early in the down.\n\n— Alert, clear eyes to process movement and secondary threats before providing timely help to secure the a gaps against loopers and blitzes.\n\n— solid athletic Ability and movement skills allow him to timely negotiate combo blocks and intersect backers on climbs."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Adequate play strength results in regularly getting stalemated, flattened out on overtakes and pried open as the rep progresses.\n\n— average size, weight and mass leave him conceding ground more than owning it."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.0,
+    "grade_indicator": null,
+    "overall_rank": 114,
+    "position_rank": null,
+    "pro_comparison": "Matt Hennessy",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

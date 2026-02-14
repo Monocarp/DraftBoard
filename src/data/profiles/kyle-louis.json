@@ -1,0 +1,433 @@
+{
+  "name": "Kyle Louis",
+  "slug": "kyle-louis",
+  "overview": {
+    "POS": "LB",
+    "College": "Pittsburgh",
+    "Height": "6' 1\"",
+    "Weight": "220",
+    "Age": "0",
+    "DOB": "00:00:00",
+    "Year": null,
+    "Prj. Rd": null,
+    "Games": "32",
+    "Snaps": "1683",
+    "24/7 Sports": "84",
+    "ESPN": "80",
+    "Draft Buzz": "82.1 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.2",
+    "Gridiron": null
+  },
+  "position": "LB",
+  "college": "Pittsburgh",
+  "height": "6' 1\"",
+  "weight": "220",
+  "age": 0.0,
+  "dob": "00:00:00",
+  "year": null,
+  "projected_round": null,
+  "games": 32,
+  "snaps": 1683,
+  "site_ratings": {
+    "24/7 Sports": "84",
+    "ESPN": "80",
+    "Draft Buzz": "82.1 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.2",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "73.4",
+      "percentile": 0.2
+    },
+    "24 Grade": {
+      "value": "83.4",
+      "percentile": 1.0
+    },
+    "23 Grade": {
+      "value": "63.6",
+      "percentile": 0.125
+    },
+    "Pass Rush Grade": {
+      "value": "70.2",
+      "percentile": 0.7
+    },
+    "Run Def. Grade": {
+      "value": "76.2",
+      "percentile": 0.2
+    },
+    "Run Stop %": {
+      "value": "5.6",
+      "percentile": 0.1
+    },
+    "Tackles": {
+      "value": "60",
+      "percentile": 0.5
+    },
+    "Tackling Grade": {
+      "value": "74.7",
+      "percentile": 0.4
+    },
+    "Missed Tkl Rate": {
+      "value": "10.9",
+      "percentile": 0.4
+    },
+    "ADORT": {
+      "value": "6.7",
+      "percentile": 1.0
+    },
+    "Coverage": {
+      "value": "72.3",
+      "percentile": 0.6
+    },
+    "Coverage Stops": {
+      "value": "14",
+      "percentile": 0.35
+    },
+    "Recs/Tgts": {
+      "value": "0",
+      "percentile": 0.5
+    },
+    "Completion %": {
+      "value": "78.7",
+      "percentile": 0.7
+    },
+    "TD / INT": {
+      "value": "3 / 2",
+      "percentile": null
+    },
+    "Forced Inc Rate": {
+      "value": "4.9",
+      "percentile": 0.5
+    },
+    "Pass Rat. All.": {
+      "value": "99",
+      "percentile": 0.6
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 131.625,
+      "positional_rank": "9.833333333333334"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 180.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 67.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 70.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 179.0,
+      "positional_rank": "14"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 57.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 174.0,
+      "positional_rank": "19"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 219.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 60.5,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": 66.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "5TH",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Marte MAPU",
+    "Bleacher": "0",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.77,
+    "Pass Rush": 0.7,
+    "Run Defense": 0.8,
+    "Coverage": 0.79
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 105,
+      "career": 248
+    },
+    "Slot": {
+      "2025": 244,
+      "career": 559
+    },
+    "Corner": {
+      "2025": 0,
+      "career": 0
+    },
+    "Box": {
+      "2025": 319,
+      "career": 875
+    },
+    "Deep": {
+      "2025": 0,
+      "career": 0
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nThe 6-foot, 225-pound junior from East Orange, New Jersey didn't arrive at Pittsburgh with fanfare-just another three-star recruit in Pat Narduzzi's system that turns overlooked prospects into draft picks. Louis barely saw meaningful snaps his freshman year in 2023, contributing just 19 tackles while learning behind veterans. But something clicked during that offseason, and when Louis emerged for his sophomore campaign, he transformed into one of college football's most electric defensive playmakers.\n\nHis 2024 season reads like a defensive coordinator's fantasy: 101 tackles, 15.5 tackles for loss, seven sacks, and four interceptions that included a spectacular 59-yard pick-six against Syracuse. The accolades followed naturally-first-team All-American honors from The Sporting News made him Pitt's first sophomore defensive player to earn that recognition since Hugh Green in 1978. He swept through the awards circuit, earning second-team All-America nods from the Associated Press, CBS Sports, Phil Steele, and The Athletic while becoming the College Football Network's ACC Linebacker of the Year.\n\nThrough two games of his junior campaign in 2025, Louis has already reminded everyone why NFL scouts circle Pitt games on their calendars. His six tackles and consecutive sacks against Duquesne earned him ACC Linebacker of the Week honors right out of the gate, and he's tallied 11 tackles, 3.5 tackles for loss, two sacks, and a fumble recovery early in the season. Louis blazed a 4.65 forty at 225 pounds, putting him in the 67th percentile for linebacker speed-numbers that match the explosiveness you see on tape. The kid who led East Orange Campus to a 13-0 record and dominated with 118 tackles and 32 tackles for loss his senior year of high school has clearly found his ceiling is much higher than anyone anticipated.\n\nSCOUTING REPORT: SUMMARY\nWatch enough tape and you'll see Louis plays the game at a different frequency than most linebackers-his brain processes information like he's already seen the play three times before it happens. The film room obsession isn't some feel-good story for the media; it directly translates to him breaking on routes before receivers finish their stems and shooting gaps before pullers arrive. When he jumps a tight end route and takes it 59 yards to the house, that's not athletic ability alone-that's preparation meeting opportunity at full speed.\n\nHis NFL home needs to be a 4-3 Will spot where coordinators can unleash him as their joker card in sub-packages. Forget trying to turn him into a Mike linebacker eating up guards-that's coaching malpractice with his skill set. The league's shifting toward these positionless defenders who blur traditional responsibilities, and Louis fits that mold perfectly. He'll thrive in systems that rotate him from traditional linebacker depth to walked-up edge rusher to deep hole defender based on offensive personnel. Modern defensive coordinators who value versatility over prototypes will maximize his coverage skills while scheming around his limitations against power running games.\n\nReality check: this isn't some hidden first-round gem waiting to be discovered. The size deficiency at 225 pounds isn't getting solved overnight, and NFL backs will test him early and often between the tackles. But here's what smart evaluators understand-you're drafting ceiling and versatility in those middle rounds, not finished products. Louis brings legitimate starting potential as a weak-side linebacker who can stay on the field all three downs if protected properly. His tape transcends his testing numbers, and organizations that consistently find defensive contributors on Day Three will recognize the value. Give him two years in an NFL weight room and a defensive coordinator who maximizes matchups, and you've got yourself a long time starter who makes everyone forget where he was drafted."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "does everything... everywhere on the field... coverage player... physical... nasty... tone setter... rugged... fast to the football... diagnostic ability... ball hawk... fierce baller... versatile... 182 tackles last two years... 24 TFL... 10 sacks... six ints... late second, early third round... worth the risk... starting strong safety."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.2,
+    "grade_indicator": null,
+    "overall_rank": 179,
+    "position_rank": null,
+    "pro_comparison": null,
+    "projected_round": null
+  },
+  "injury_history": []
+}

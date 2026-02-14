@@ -1,0 +1,447 @@
+{
+  "name": "Anthony Lucas",
+  "slug": "anthony-lucas",
+  "overview": {
+    "POS": "ED",
+    "College": "USC",
+    "Height": "6' 5\"",
+    "Weight": "285",
+    "Age": "21.3",
+    "DOB": "2004-10-08 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "37",
+    "Snaps": "1147",
+    "24/7 Sports": "98",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.6 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.4",
+    "Gridiron": null
+  },
+  "position": "ED",
+  "college": "USC",
+  "height": "6' 5\"",
+  "weight": "285",
+  "age": 21.3,
+  "dob": "2004-10-08 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 37,
+  "snaps": 1147,
+  "site_ratings": {
+    "24/7 Sports": "98",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.6 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.4",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "71.4",
+      "percentile": 0.15
+    },
+    "24 Grade": {
+      "value": "65.7",
+      "percentile": 0.05
+    },
+    "23 Grade": {
+      "value": "60.4",
+      "percentile": 0.05
+    },
+    "Pass Rush Grade": {
+      "value": "76.9",
+      "percentile": 0.35
+    },
+    "True Pass Rush": {
+      "value": "73.8",
+      "percentile": 0.316
+    },
+    "PR Win Rate": {
+      "value": "12.4",
+      "percentile": 0.211
+    },
+    "Run Def. Grade": {
+      "value": "69.1",
+      "percentile": 0.3
+    },
+    "Run Stop %": {
+      "value": "5.5",
+      "percentile": 0.25
+    },
+    "Sacks": {
+      "value": "3",
+      "percentile": 0.211
+    },
+    "Hits": {
+      "value": "11",
+      "percentile": 0.789
+    },
+    "Hurries": {
+      "value": "9",
+      "percentile": 0.079
+    },
+    "Batted Balls": {
+      "value": "0",
+      "percentile": 0.158
+    },
+    "Forced Fumbles": {
+      "value": "1",
+      "percentile": 0.368
+    },
+    "Tackling Grade": {
+      "value": "78.5",
+      "percentile": 0.9
+    },
+    "Missed Tackle Rate": {
+      "value": "8.1",
+      "percentile": 0.947
+    },
+    "Total Pressures": {
+      "value": "23",
+      "percentile": 0.158
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 103.4,
+      "positional_rank": "11.666666666666666"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 68.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 167.0,
+      "positional_rank": "14"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 97.0,
+      "positional_rank": "23"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 98.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "3RD",
+    "Bleacher": "5th Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Tyler BATTY",
+    "Bleacher": "Chauncey Golston",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.83,
+    "Pass Rush": 0.72,
+    "Run Defense": 0.81
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 0,
+      "career": 1
+    },
+    "B GAP": {
+      "2025": 3,
+      "career": 31
+    },
+    "Over Tackle": {
+      "2025": 28,
+      "career": 79
+    },
+    "Outside Tkl": {
+      "2025": 489,
+      "career": 861
+    },
+    "Off Ball": {
+      "2025": 26,
+      "career": 32
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nAnthony Lucas turned heads early, racking up 29 tackles with 10 for loss and 6 sacks as a junior before exploding onto the national scene his senior year. That final high school campaign saw Lucas terrorize opposing backfields for 64 tackles, 22 tackles for loss, and 9.5 sacks while showcasing his freakish athleticism by hauling in 6 passes for 2 touchdowns on offense. Under Armour recognized what they saw on tape, naming him to their 2022 All-American team while recruiting services couldn't get their rankings high enough - 247 Sports slapped a five-star label on him with a 0.98 grade, Rivals gave him their coveted 6.0 rating, and ESPN wasn't far behind with an 83 rating and four stars.\n\nLucas initially took his talents to College Station, where he saw action in seven games for Texas A&M as a true freshman in 2022. The youngster showed flashes against quality competition, particularly his 4-tackle performance against Alabama that included a tackle for loss, while adding a quarterback hurry against Miami and solid outings against Arkansas and Mississippi State. After collecting 7 tackles with 1 for loss in limited action with the Aggies, Lucas made the decision to enter the transfer portal and landed at USC in spring 2023, reuniting with defensive coordinator Alex Grinch who'd been tracking his development since high school.\n\nThe transition to Southern California proved smooth as Lucas immediately carved out a role in the Trojans' defensive rotation, appearing in all 13 games with one start during his sophomore campaign. His 10 tackles included 3.5 for loss, with his best performance coming against San Jose State where he notched 3 tackles with 2 for loss. Junior year started with tremendous promise through six starts before a devastating lower leg injury against Penn State ended his season prematurely. Despite the shortened campaign, Lucas managed 16 tackles and a pass breakup, including a career-high 6-tackle effort in that final game against the Nittany Lions. Now healthy and entering his senior season under new defensive coordinator D'Anton Lynn, the 285-pound edge rusher has shown enough through five games in 2025 to generate serious first-round buzz from NFL evaluators who see a rare combination of size, athleticism, and technical refinement.\n\nSCOUTING REPORT: SUMMARY\nThe tape reveals a Day 2 edge rusher who should come off the board in the late third round, right where his skill set belongs. Lucas brings the kind of length and functional power that translates immediately to the NFL level, with enough polish to contribute as a rookie in sub-packages. His 285-pound frame and technical soundness make him an intriguing prospect who can spell starters on early downs while earning more snaps in passing situations. The violent hand usage and leverage he creates gives offensive tackles real problems, particularly when he catches them leaning or gets them isolated without help.\n\nWhere Lucas earns his draft stock is the combination of NFL-ready size and surprising flexibility for a bigger edge defender. Watching him work through his rush moves, you see a player who understands angles and timing - he's not just running around blocks hoping to make plays. The bend he shows at 285 pounds sets him apart from other power rushers in this class who tend to be stiff. His experience in multiple defensive schemes at Texas A&M and USC has given him a diverse skill set that should help him adapt quickly to whatever system drafts him. Teams valuing versatility along their front seven will appreciate his ability to kick inside on passing downs or hold the edge against heavy personnel.\n\nThe medical evaluation will influence exactly where Lucas lands, but assuming his lower leg injury checks out clean, he profiles as a pick somewhere between 95-110 - right in that late third to early fourth round sweet spot. His realistic projection is as a quality NFL backup who develops into a steady contributor, the kind of player who gives you 35-40 snaps per game by year two and produces 5-7 sacks annually. The concern about durability and his tendency to drift through some games keeps him from climbing higher, but the tools and production when healthy justify a third-round investment. In a league where edge depth wins championships, Lucas represents solid value on Day 2 - not a future All-Pro, but the type of rotational rusher every contender needs. Teams with established starters who want to develop Lucas behind them while keeping him fresh could find themselves with a valuable piece of their defensive puzzle for years to come."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Anthony Lucas has intriguing physical traits, standing at 6'5\", 267 pounds, with impressive quickness and movement skills. His frame and athleticism makes him an appealing developmental prospect among the class' edge—rushers.\n\nAs a 4—star recruit in the 2022 prep class, Lucas began his career with the Texas A&M Aggies. However, he only participated in seven games after being suspended for the second half of the season after a \"locker room incident\", according to The Houston Chronicle.\n\nThe former Aggie transferred to USC for the following season and served as a rotational player, who received limited reps during his first year with the Trojans. He played in 13 games but added just 10 tackles, 3.5 tackles for loss and no sacks before becoming a starter as a junior."
+        },
+        {
+          "title": "Positives",
+          "text": "— Lucas has great frame, with little to no bad weight. He also has decent length.\n\n— Solid athlete overall, showing good quickness and change of direction, with the chance to add a strong inside—counter as a pass—rusher if he can improve the accuracy/timing with his hands.\n\n— Good at turning speed—to—power as a pass—rusher and flashes of a solid long—arm move.\n\n— Active hands when rushing the passer.\n\n— Against the run, he's quick to get his hands up with decent upper—body strength to get extension on blocks, especially with his arm length.\n\n— Stays tight to the line of scrimmage and displays decent speed to occasionally make tackles when unblocked on the backside of zone runs."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Lucas had minimal collegiate production. He didn't record a sack until his fourth year and posted only three in 2025.\n\n— Lacks explosion off the line of scrimmage to threaten the edge.\n\n— Often late and inaccurate with his hands as a pass—rusher, limiting his arsenal.\n\n— Subpar bend to turn a tight corner at the top of the rush.\n\n— Doesn't have the lower—body strength to anchor and set the edge against good competition.\n\n— Lacks rotational strength to avoid getting his shoulders turned against scoop blocks, even against two tight ends.\n\n— Block recognition is below average, and he doesn't run his feet to avoid getting reached."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.4,
+    "grade_indicator": null,
+    "overall_rank": 167,
+    "position_rank": null,
+    "pro_comparison": "Chauncey Golston",
+    "projected_round": "5th Round"
+  },
+  "injury_history": []
+}

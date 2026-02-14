@@ -1,0 +1,436 @@
+{
+  "name": "Deontae Lawson",
+  "slug": "deontae-lawson",
+  "overview": {
+    "POS": "LB",
+    "College": "Alabama",
+    "Height": "6' 2\"",
+    "Weight": "228",
+    "Age": "22.9",
+    "DOB": "2003-02-11 00:00:00",
+    "Year": null,
+    "Prj. Rd": null,
+    "Games": "49",
+    "Snaps": "2408",
+    "24/7 Sports": "98",
+    "ESPN": "81",
+    "Draft Buzz": "85.2 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.5",
+    "Gridiron": null
+  },
+  "position": "LB",
+  "college": "Alabama",
+  "height": "6' 2\"",
+  "weight": "228",
+  "age": 22.9,
+  "dob": "2003-02-11 00:00:00",
+  "year": null,
+  "projected_round": null,
+  "games": 49,
+  "snaps": 2408,
+  "site_ratings": {
+    "24/7 Sports": "98",
+    "ESPN": "81",
+    "Draft Buzz": "85.2 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.5",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "77.6",
+      "percentile": 0.6
+    },
+    "24 Grade": {
+      "value": "78.1",
+      "percentile": 0.7
+    },
+    "23 Grade": {
+      "value": "69.2",
+      "percentile": 0.375
+    },
+    "Pass Rush Grade": {
+      "value": "57.7",
+      "percentile": 0.0
+    },
+    "Run Def. Grade": {
+      "value": "83.6",
+      "percentile": 0.4
+    },
+    "Run Stop %": {
+      "value": "8.5",
+      "percentile": 0.4
+    },
+    "Tackles": {
+      "value": "65",
+      "percentile": 0.6
+    },
+    "Tackling Grade": {
+      "value": "57.6",
+      "percentile": 0.0
+    },
+    "Missed Tkl Rate": {
+      "value": "16.3",
+      "percentile": 0.0
+    },
+    "ADORT": {
+      "value": "2.9",
+      "percentile": 0.5
+    },
+    "Coverage": {
+      "value": "69.3",
+      "percentile": 0.5
+    },
+    "Coverage Stops": {
+      "value": "17",
+      "percentile": 0.7
+    },
+    "Recs/Tgts": {
+      "value": "0",
+      "percentile": 0.5
+    },
+    "Completion %": {
+      "value": "84.8",
+      "percentile": 0.25
+    },
+    "TD / INT": {
+      "value": "2 / 0",
+      "percentile": null
+    },
+    "Forced Inc Rate": {
+      "value": "6.1",
+      "percentile": 0.6
+    },
+    "Pass Rat. All.": {
+      "value": "115",
+      "percentile": 0.1
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 56.0,
+      "positional_rank": "5.666666666666667"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 48.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 59.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 58.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 84.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 31.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 62.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 50.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 60.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": 60.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Chad MUMA",
+    "Bleacher": "Shaq Thompson",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.66,
+    "Pass Rush": 0.65,
+    "Run Defense": 0.92,
+    "Coverage": 0.75
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 63,
+      "career": 107
+    },
+    "Slot": {
+      "2025": 18,
+      "career": 87
+    },
+    "Corner": {
+      "2025": 0,
+      "career": 1
+    },
+    "Box": {
+      "2025": 616,
+      "career": 1802
+    },
+    "Deep": {
+      "2025": 5,
+      "career": 13
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Deontae Lawson is a scheme-versatile linebacker who is comfortable playing in the box but also has the speed to flow sideline-to-sideline."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nDeontae Lawson arrived at Tuscaloosa in 2021 as one of the nation's top linebacker prospects. The 6'2\", 239-pound defender established himself as a dominant force at Mobile Christian School, where he captained his team to a Class 3A Championship Game appearance in 2019 while collecting 134 tackles and earning Class 3A Lineman of the Year honors. His versatility was evident even in high school, taking snaps at running back and wide receiver while dominating defensively. A consensus four-star recruit with a five-star rating from 247Sports, Lawson chose the Crimson Tide over Georgia Tech and Texas A&M.\n\nAfter redshirting his 2021 season, Lawson's development accelerated through 2022 as he gained valuable experience on multiple special teams units while rotating into the linebacker corps. His breakthrough came in 2023 when he seized control of the middle linebacker position, starting 11 games while recording 67 tackles and 5.5 tackles for loss. Despite missing three games with ankle injuries, he earned semifinalist recognition for the Butkus Award. Lawson's 2024 campaign showcased his continued evolution as he was named a permanent team captain and defensive signal-caller, amassing 76 tackles (including 6.5 for loss) and two sacks in just ten games before suffering a season-ending lower-extremity injury against Oklahoma that required surgery.\n\nRather than entering the 2025 NFL Draft, Lawson made the pivotal decision to return for his fifth season at Alabama. During his Crimson Tide career, he's accumulated 194 tackles, 16 tackles for loss, 5 sacks, and 12 pass deflections across four seasons. Lawson enters the 2025 season as the emotional centerpiece of Alabama's defense under new head coach Kalen DeBoer, who has praised the linebacker's leadership qualities and work ethic during rehabilitation, setting up what could be a defining final chapter before transitioning to the NFL.\n\nSCOUTING REPORT: SUMMARY\nWhen I study Lawson's tape, I see a blue-chip linebacker prospect whose combination of instincts and physicality will make him an immediate impact player on Sundays. His exceptional run defense grade jumps off the screen - the Alabama captain consistently anticipates blocking schemes and triggers downhill with controlled violence. Teams running single-gap 4-3 schemes will covet his ability to stack, shed and flow to the football. First round linebackers need to be three-down players in today's NFL, and while Lawson isn't elite in man coverage, his zone awareness and ability to close passing lanes in the intermediate areas will keep him on the field in sub-packages where his communication skills shine.\n\nThe medical evaluation remains the final hurdle after the significant lower-body injury that ended his 2024 campaign, but assuming full clearance, we're looking at a Day 1 contributor with Pro Bowl upside. What separates Lawson from other linebacker prospects in this class is his rare diagnostic ability - he processes information faster than most veterans, allowing him to play a step ahead of blockers. When you combine those football instincts with his physical tackling style and leadership qualities, you get a defensive cornerstone who can transform the identity of a front seven. His fifth-year return to Alabama showed both competitive fire and professional maturity that will have defensive coordinators pounding the table in draft meetings.\n\nLawson reminds me of Jeremiah Owusu-Koramoah with better size - a rangy, instinctive linebacker who thrives in space while maintaining the physicality to hold up against interior run schemes. Teams picking in the mid-to-late first round looking for defensive leadership should have Lawson circled on their board. This is the kind of prospect who becomes the heartbeat of your defense from day one while developing into a defensive signal-caller who contributes 100+ tackle seasons for the next decade. Expect to hear his name called within the first 25 picks and don't be surprised when he's wearing a green dot as a rookie starter for a playoff-caliber defense.\nWRITTEN BY:\nBILL MILLER (SEC)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Deontae Lawson is a highly athletic linebacker who combines movement skills with an ability to read the quarterback's eyes to make plays on the ball in the air and projects as a good coverage defender in the NFL. The 6'2\", 228—pound backer could afford to add some size and strength to be better against the run, though.\n\nLawson went to Alabama as a 4—star recruit in the 2021 class and redshirted as a true freshman. He was a special teams contributor and rotational player/spot starter the following year, accumulating 51 tackles, 2.5 for loss and four passes defended.\n\nThe Mobile, Alabama native became a full—time starter as a redshirt sophomore and recorded 67 tackles, three tackles for loss, 5.5 sacks and four passes defended. He broke out in 2024 by logging 76 tackles, 6.5 TFLs, 2 sacks, an interception and four PDs to earn third—team All—SEC honors."
+        },
+        {
+          "title": "Positives",
+          "text": "— Impressive athlete overall who has springy legs to move laterally easily. Also, appears to have good arm length and room for growth on his frame to add some size.\n\n— Combines movement skills, quickness and a good ability to read the quarterback's eyes to tighten throwing windows and/or make plays on the ball. Good ball production for a linebacker with 14 career defended passes as of Oct. 22, 2025.\n\n— Plenty of speed to close against underneath routes when playing zone coverage.\n\n— While Lawson hasn't been used in man coverage much, he shows the athleticism to be able to match up with tight ends and running backs at the next level.\n\n— Eyes in zone coverage have significantly improved during the 2025 season. He's also done a much better job of getting depth.\n\n— Times up and disguises his blitzes well to get unblocked tackles for loss or find an open pass—rush lane to get pressure.\n\n— Quick and agile to occasionally make offensive linemen miss on the second level."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Questionable instincts against zone runs, Lawson often freezes and gets caught in the trash.\n\n— Subpar strength when taking on blocks as a run defender, he struggles to get extension and will get pushed around by offensive linemen. Will need some time in the weight room to add size and strength.\n\n— Doesn't have much pop behind his pads when coming downhill.\n\n— Angles in pursuit are often too shallow.\n\n— Has a habit of lunging or diving at a ball carrier's feet when tackling, leading to misses.\n\n— Concerning injury history that included a torn ACL at the end of the 2024 season and a quad injury that caused him to miss three games in 2023. He's also exited a handful of games early with more minor injuries."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.5,
+    "grade_indicator": null,
+    "overall_rank": 58,
+    "position_rank": null,
+    "pro_comparison": "Shaq Thompson",
+    "projected_round": "2nd Round"
+  },
+  "injury_history": []
+}

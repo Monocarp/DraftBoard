@@ -1,0 +1,474 @@
+{
+  "name": "Chris Brazzell II",
+  "slug": "chris-brazzell-ii",
+  "overview": {
+    "POS": "WR",
+    "College": "Tennessee",
+    "Height": "6' 5\"",
+    "Weight": "200",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "RS Jr",
+    "Prj. Rd": null,
+    "Games": "40",
+    "Snaps": "1938",
+    "24/7 Sports": "87",
+    "ESPN": "84",
+    "Draft Buzz": "86.8 / 100",
+    "NFL.com": "6.36",
+    "Bleacher": "7.7",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "Tennessee",
+  "height": "6' 5\"",
+  "weight": "200",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "RS Jr",
+  "projected_round": null,
+  "games": 40,
+  "snaps": 1938,
+  "site_ratings": {
+    "24/7 Sports": "87",
+    "ESPN": "84",
+    "Draft Buzz": "86.8 / 100",
+    "NFL.com": "6.36",
+    "Bleacher": "7.7",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "79.3",
+      "percentile": 0.421
+    },
+    "2024 Grade": {
+      "value": "56.6",
+      "percentile": 0.0
+    },
+    "2023 Grade": {
+      "value": "76.3",
+      "percentile": 0.789
+    },
+    "Receiving Grade": {
+      "value": "80.5",
+      "percentile": 0.421
+    },
+    "Yards/ Routes Run": {
+      "value": "2.57",
+      "percentile": 0.711
+    },
+    "Drop %": {
+      "value": "3.2",
+      "percentile": 0.474
+    },
+    "Contested Catch": {
+      "value": "43.8",
+      "percentile": 0.237
+    },
+    "Grade vs Man": {
+      "value": "68.5",
+      "percentile": 0.263
+    },
+    "YAC/Reception": {
+      "value": "4",
+      "percentile": 0.053
+    },
+    "Missed Tkls Forced": {
+      "value": "8",
+      "percentile": 0.316
+    },
+    "ADOT": {
+      "value": "15.7",
+      "percentile": 0.947
+    },
+    "Deep Yards": {
+      "value": "509",
+      "percentile": 0.947
+    },
+    "Touchdowns": {
+      "value": "9",
+      "percentile": 0.632
+    },
+    "Elusiveness": {
+      "value": null,
+      "percentile": null
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 50.44444444444444,
+      "positional_rank": "7.857142857142857"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 75.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 47.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 46.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 37.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 59.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 25.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 83.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 44.0,
+      "positional_rank": "7"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 66.66666666666667,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": 26.0,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": 87.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - LATE",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "Christian Watson",
+    "Miller": "TBD",
+    "DraftBuzz": "Tetairoa MCMILLAN",
+    "Bleacher": "Martavis Bryant",
+    "WF": "TBD",
+    "Ringer": "Brian Thomas Jr",
+    "NFL.com": "Christian Watson"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 120.0,
+    "Hands": 0.83,
+    "Short Receiving": 0.85,
+    "Med Routes": 0.89,
+    "Deep Threat": 0.9,
+    "Blocking": 0.61
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 24,
+      "career": 70
+    },
+    "Wide": {
+      "2025": 400,
+      "career": 979
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Long-limbed “Z” receiver with the ability to create downfield for an offense thirsty to make more explosive plays outside. Brazzell’s 2025 tape shows the game slowing down for him, allowing the production to catch up with the traits. He builds to speed with long strides and dominates above the rim. He’s adept at using length and body control to capture air space against cornerbacks. He’s a more competent route runner than most field-stretcher types, but he needs to become more physical on contested targets underneath. Brazzell didn’t see many in-your-face press challenges this past season, but he’s likely to get an early taste of it as a pro. Two-high shells and zone-heavy looks can shrink his snap-to-snap impact, but the quick-strike potential is real."
+        },
+        {
+          "title": "Strengths",
+          "text": "Tall target with big hands and a wide catch radius. | Able to stem and stride into separation on posts/over routes. | Intermediate breaks became more disguised and crisp in 2025. | Displays adequate hip drop and footwork for his tall center of gravity. | Overwhelms cornerbacks on downfield jump balls with size/body control. | Footwork on boundary catches is pro-ready. | Adds an immediate vertical dimension that can loosen defenses. | Posted six grabs for 177 yards and three TDs against Georgia in 2025."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Doesn’t often tilt coverage off-balance with route fakes. | Builds speed down the field but separation isn’t guaranteed. | Inconsistent catch finisher over the first two levels. | Not especially elusive or determined after the catch underneath. | Rarely saw press/tight coverage on short throws."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nChris Brazzell II grew up in Fort Worth, Texas before his family relocated to Midland, where football runs through the bloodlines. His father, Chris Sr, was a sixth-round pick of the New York Jets in 1998 and spent nine years playing professionally between the NFL and CFL. That pedigree shaped the younger Brazzell into a lanky, coordinated pass-catcher at Midland Legacy High School, where he finished his prep career with 52 receptions for 859 yards and 12 touchdowns as a senior. The major recruiting services tagged him as a consensus three-star prospect, ranking him among the top 200 players in talent-rich Texas. Brazzell originally committed to Tulane, where a shoulder injury limited him to just two games as a true freshman in 2022. He bounced back in a big way during his redshirt freshman campaign in 2023, leading the Green Wave with 44 catches for 711 yards and five touchdowns while averaging 16.2 yards per reception. That production earned him Freshman All-American recognition and All-AAC Third Team honors. After two seasons in New Orleans totaling 45 receptions for 722 yards, the allure of SEC competition and Tennessee's explosive offense proved too strong to resist. His transition to Knoxville started slowly in 2024, playing behind established receivers and contributing 29 catches for 333 yards and two scores in 13 games. One of those touchdowns came against seventh-ranked Alabama, a diving 16-yard grab in the corner of the end zone with under six minutes remaining that gave the Vols the lead in one of the program's biggest wins of the season. With the receiver room largely turned over heading into 2025, Brazzell seized the opportunity and became the unquestioned alpha. He finished the year with 62 receptions for 1,017 yards and nine touchdowns, leading the SEC in receiving yards and receiving yards per game while tying for the conference lead in touchdown catches. His six-catch, 177-yard, three-touchdown destruction of Georgia in the SEC opener stands as perhaps the signature performance of the entire college football season. The Biletnikoff Award semifinalist earned First Team All-SEC honors and Third Team All-America recognition, capping a career that saw him total 136 receptions for 2,072 yards and 16 touchdowns across stints at Tulane and Tennessee.\n\nBrazzell isn't a burner who's going to stack corners and run away from coverage, but a 4.5 forty at 6'5\" is plenty fast enough to threaten defenses vertically.  What makes him dangerous is how he pairs that athleticism with length, timing, and an understanding of how to manipulate cornerbacks that you rarely see from college receivers. Watch him work a safety's leverage on a post route or sell vertical before snapping off a dig, and you're watching a receiver who plays the position with his brain as much as his legs. Quarterbacks will love throwing to him because he makes the catch point predictable and the window larger than it actually is.\n\n\n\nThe jump-ball reputation is earned, but it undersells what he brings. Yes, he's going to win contested catches in the red zone and on back-shoulder fades along the boundary. That's the easy part. What separates him from the Laquon Treadwells and N'Keal Harrys of the world is his ability to create genuine separation at the intermediate level. His hip flexibility and route discipline at the break point are legitimately surprising for a 6'5\" target. Slot him into a system that uses play-action and shot plays off run-heavy formations, and he becomes a nightmare matchup. Corners have to respect the vertical, safeties have to stay honest, and suddenly that dig route is wide open fifteen yards downfield.\n\n\n\nThe concerns are real but not disqualifying. He needs to add weight, probably ten to fifteen pounds of functional muscle, to handle the kind of press coverage he'll see every week from NFL corners who will try to reroute him at the line. The concentration drops are correctable with better hand technique and discipline. And yes, he's not doing anything special after the catch, so do not expect him to turn a five-yard hitch into a twenty-yard gain. But when you can win downfield, win at the catch point, and threaten defenses vertically on every snap, you have real value. The ceiling is a legitimate number-one receiver who commands safety help. The floor is a productive Z receiver who stretches defenses and dominates in the red zone."
+        },
+        {
+          "title": "Overview",
+          "text": "Explosive, three-level playmaker with a rare combination of size, fluidity, and blazing speed on the outside.\n\nBrazzell is a big-play X receiver with a tall, long-levered frame and impressive foot quickness as a route runner. The son of former NFL/CFL receiver Chris Brazzell, he was a transfer to Tennessee in 2024 after playing two seasons at Tulane. He finished strong for the Volunteers in 2025, racking up 62 receptions for 1,017 yards and nine touchdowns in 12 games and averaging 16.4 yards per catch. Brazzell brings the type of quickness and body control you wouldn’t expect from a receiver of his height. He uses savvy footwork to escape the line of scrimmage and get open early in his route. He gets in and out of his breaks smoothly, showing the ability to create separation and get corners turned around in his routes. He’s really effective on in-breaking routes and can drop his hips and decelerate on a dime, excelling at comebacks, outs, and hook routes. He utilizes shoulder shimmies and jabs to get corners to open their hips before cutting the opposite way. He stacks opposing corners and then leaves them in the dust on vertical routes, showing build-up speed to attack deep. He racked up 13 receptions of 20-plus yards (tied for sixth most) last year, with 509 yards (sixth) and six touchdowns on those plays (tied for third), per PFF. Brazzell shows a natural feel for tracking the football. He flashes the body control to jump, spin, catch the ball, and keep on running. He brings a big catch radius and shows the ability to go up high and snag off-target throws. He showed reliable hands last year, with just two drops.\n\nBrazzell’s effort wanes when he knows the ball isn’t coming his way, and he regularly jogs on the backside of plays. He played primarily on the right side of the formation for Tennessee after lining up all over the formation at Tulane. He’s not much of a yards-after-the-catch creator."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Chris Brazzell... from the SEC... Tennessee... seventh best receiver in this class... best football is ahead... six five... go get the football, vertical stretch... down the field threat... size and... length... pretty consistent catching the ball... grow on people through the process... Mock in the first... vertical stretch guy... archetypes... LTP... freaky, freaky athlete... pops... generate some separation at the top of his route... all on the perimeter... super long, fast twitchy, athletic perimeter receivers... Route Tree... run far, run fast, run straight... day two, maybe round three or late round two... incredibly, incredibly gifted athlete... smooth and fluid... yards after the catch... put him at the running back spot... picking up yards... wear a lot of hats... valuable member... had a drop here and there... consistent catching the football... solid... day two... third round... productive... rely on in key moments... tough catches... underrated category... lost in the shuffle... guy that could take a play... 15 yards and go 75 yards."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Chris Brazzell II is a dangerous, explosive playmaking wide receiver who will be a major contributor in the NFL, if he lands with a great quarterback.\n\nBrazzell possesses the top—end speed to consistently win on vertical and downfield routes. He embodies the phrase, \"If he's even, he's leaving\". The combination of his long speed and long strides makes life difficult for opposing defensive backs.\n\nTennessee's explosive receiver is a former 3—star recruit in the 2022 class. He began his career at Tulane before transferring to the SEC. Brazzell has a professional pedigree in his bloodline; his father played in the NFL and CFL."
+        },
+        {
+          "title": "Positives",
+          "text": "— Explosive athlete with great length. Brazzell has the height of a traditional X—receiver with field—stretching top—end speed. He will take the top off the defense and force defensive backs to play off—ball with a cushion to lessen the chances he strides past them.\n\n— The former 3—star receiver has a solid release package against press—man coverage. He uses hard jab steps and well—timed punches/clubs to clear the defender's hands quickly. His club maneuver is effective in keeping defenders' hands off his frame mid—route.\n\n— He is proficient in attacking leverage and different defensive alignments. The Vols' leading receiver does a good job locating and working into the defender's blind spot. He is more than a vertical threat.\n\n— He plays with excellent body control to make difficult catches look routine. Whether on the sideline for toe—dragging receptions or highly contested targets down the field, he finds a way to reel them in. He tracks the ball with good vision and patience, never panicking when the ball arrives in contested catch situations.\n\n— He is a tall and leggy athlete, but it does not negatively impact his route running. He creates space and separation at the break point of his routes. The threat of his speed pushes defenders upfield and into turn/run mode, opening short and intermediate routes. He drops his weight to sink at the apex of his routes on hitches, curls, and comebacks."
+        },
+        {
+          "title": "Negatives",
+          "text": "— At 6'5\", 200 pounds, Brazzell's overall play strength can improve. Physical defenders will want to make contact and disrupt his timing mid—route. If his punches miss against press alignment, he can get hung up trying to free himself from handsy defenders.\n\n— Tennessee's WR1 must improve his timing on contested catches. He will benefit from developing late hands to avoid tipping off defenders that he is about to make a play on the football. He does not often drop the football, but he tends to let the ball enter his body during contested catches.\n\n— Developing more savviness with using his frame to create space will help him against NFL cornerbacks. Right now, he initiates contact and extends his arms on the push off, opening the door to Offensive Pass Interference penalties.\n\n— Do not expect a highly productive yard after catch receiver. He lacks the lateral agility and transitional fluidity to change directions suddenly after the catch to make defenders miss for maximum yardage."
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Explosive, three-level playmaker with a rare combination of size, fluidity, and blazing speed on the outside.\n\nBrazzell is a big-play X receiver with a tall, long-levered frame and impressive foot quickness as a route runner. The son of former NFL/CFL receiver Chris Brazzell, he was a transfer to Tennessee in 2024 after playing two seasons at Tulane. He finished strong for the Volunteers in 2025, racking up 62 receptions for 1,017 yards and nine touchdowns in 12 games and averaging 16.4 yards per catch. Brazzell brings the type of quickness and body control you wouldn’t expect from a receiver of his height. He uses savvy footwork to escape the line of scrimmage and get open early in his route. He gets in and out of his breaks smoothly, showing the ability to create separation and get corners turned around in his routes. He’s really effective on in-breaking routes and can drop his hips and decelerate on a dime, excelling at comebacks, outs, and hook routes. He utilizes shoulder shimmies and jabs to get corners to open their hips before cutting the opposite way. He stacks opposing corners and then leaves them in the dust on vertical routes, showing build-up speed to attack deep. He racked up 13 receptions of 20-plus yards (tied for sixth most) last year, with 509 yards (sixth) and six touchdowns on those plays (tied for third), per PFF. Brazzell shows a natural feel for tracking the football. He flashes the body control to jump, spin, catch the ball, and keep on running. He brings a big catch radius and shows the ability to go up high and snag off-target throws. He showed reliable hands last year, with just two drops.\n\nBrazzell’s effort wanes when he knows the ball isn’t coming his way, and he regularly jogs on the backside of plays. He played primarily on the right side of the formation for Tennessee after lining up all over the formation at Tulane. He’s not much of a yards-after-the-catch creator."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Explosive, three-level playmaker"
+        },
+        {
+          "title": "Traits",
+          "text": "Field-Tilting Speed\nSmooth Footwork"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former three-star recruit out of Midland, Texas. Was the no. 170 wide receiver and the no. 1,288 overall player in the 2022 class. Spent the first two seasons of his college career at Tulane before transferring to Tennessee, where he was named first-team All-SEC in 2025."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "His father, Chris Sr, was selected by the Jets in the sixth round of the 1998 NFL draft, and he also spent time with the Cowboys before beginning a career in the CFL.\nFavorite TV show is Rick and Morty.\nHis brother, Colin, plays DB for Tennessee."
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF BRIAN THOMAS Jr"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.36,
+    "prospect_grade_indicator": "Will Eventually Be Plus Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Christian Watson",
+    "eligibility": "Junior (RS)",
+    "nfl_rank": 44,
+    "nfl_pos_rank": 7
+  },
+  "bleacher_profile": {
+    "grade": 7.7,
+    "grade_indicator": null,
+    "overall_rank": 37,
+    "position_rank": null,
+    "pro_comparison": "Martavis Bryant",
+    "projected_round": "2nd Round"
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF BRIAN THOMAS Jr",
+    "traits": "Field-Tilting Speed\nSmooth Footwork"
+  },
+  "injury_history": []
+}

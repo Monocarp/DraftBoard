@@ -1,0 +1,525 @@
+{
+  "name": "Colton Hood",
+  "slug": "colton-hood",
+  "overview": {
+    "POS": "CB",
+    "College": "Tennessee",
+    "Height": "6' 0\"",
+    "Weight": "195",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "RS So.",
+    "Prj. Rd": "1st Round",
+    "Games": "29",
+    "Snaps": "1150",
+    "24/7 Sports": "89",
+    "ESPN": "87",
+    "Draft Buzz": "87.0 / 100",
+    "NFL.com": "6.42",
+    "Bleacher": "7.4",
+    "Gridiron": "TBD"
+  },
+  "position": "CB",
+  "college": "Tennessee",
+  "height": "6' 0\"",
+  "weight": "195",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "RS So.",
+  "projected_round": "1st Round",
+  "games": 29,
+  "snaps": 1150,
+  "site_ratings": {
+    "24/7 Sports": "89",
+    "ESPN": "87",
+    "Draft Buzz": "87.0 / 100",
+    "NFL.com": "6.42",
+    "Bleacher": "7.4",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "79.7",
+      "percentile": 0.529
+    },
+    "24 Grade": {
+      "value": "68.8",
+      "percentile": 0.333
+    },
+    "23 Grade": {
+      "value": "70.4",
+      "percentile": 0.444
+    },
+    "Coverage Grade": {
+      "value": "80.9",
+      "percentile": 0.556
+    },
+    "Passer Rating": {
+      "value": "69.8",
+      "percentile": 0.444
+    },
+    "Interceptions": {
+      "value": "1",
+      "percentile": 0.306
+    },
+    "Forced Incom.": {
+      "value": "8",
+      "percentile": 0.417
+    },
+    "Forced Inc. Rate": {
+      "value": "15.4",
+      "percentile": 0.389
+    },
+    "Dropped Picks": {
+      "value": "0",
+      "percentile": 0.194
+    },
+    "Completion %": {
+      "value": "51.9",
+      "percentile": 0.611
+    },
+    "Man Coverage": {
+      "value": "74.3",
+      "percentile": 0.667
+    },
+    "Zone Coverage": {
+      "value": "71",
+      "percentile": 0.222
+    },
+    "% In Man": {
+      "value": "24",
+      "percentile": 0.222
+    },
+    "% In Zone": {
+      "value": "61.3",
+      "percentile": 0.611
+    },
+    "Coverage Stops": {
+      "value": "13",
+      "percentile": 0.917
+    },
+    "Tackling": {
+      "value": "83",
+      "percentile": 0.833
+    },
+    "Missed Tackles": {
+      "value": "4",
+      "percentile": 0.611
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Arm Length": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Hand Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Speed": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Explosive": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Agility": {
+      "result": "TBD",
+      "grade": null
+    },
+    "10 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "20 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "40 Time": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Vertical": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Broad": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "3 Cone": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Bench": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Height": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Weight": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Gridiron": {
+      "result": "TBD",
+      "grade": "TBD"
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 42.77777777777778,
+      "positional_rank": "5.857142857142857"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 29.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 35.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 28.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 66.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 84.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 34.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 37.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 16.0,
+      "positional_rank": "3"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 25.636363636363637,
+    "PFF": 32.0,
+    "ESPN": null,
+    "Brugler": 32.0,
+    "Kiper": null,
+    "Miller": 13.0,
+    "Bleacher": null,
+    "Walter": 43.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 29.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - LATE",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "Carlton Davis III",
+    "Miller": "TBD",
+    "DraftBuzz": "Jarrian JONES",
+    "Bleacher": "Kamari Lassiter",
+    "WF": "TBD",
+    "Ringer": "Marlon Humphrey",
+    "NFL.com": "Carlton Davis III"
+  },
+  "strengths": "• Physical, Competitive, Instinctual\n• Excellent Press Skills, Leverage\n• Aggressive At The Catch Point\n• Good Size, Great Speed\n• Brings Good Tackling to Run Game",
+  "weaknesses": "• Off Coverage Instincts\n• Inconsistent Physicality in Run\n• Sticky Hips in Transition\n• Loses Ball Focusing on Receiver\n• Developing Instincts on Route Switches",
+  "accolades": null,
+  "player_summary": "Hood is a physical press-man CB, dominates with disruptive punches that suffocate outside releases, aggressive catch-point battles for top positioning, and box-safety run support—triggering downhill explosively to limit YAC, finish with stopping power against bigger backs, and force incompletions at an SEC-leading rate while turning his side into a no-fly zone. He maintains phase on verticals, erases in-breakers from press or off looks, and operates disciplined against high/low concepts in zone. Weaknesses include vulnerability to twitchy/shifty NFL releases, sticky hips on sudden transitions, grabby tendencies when out of phase, occasional ball-tracking lapses or zone-switch missteps, developing off-coverage instincts, and leggy open-field tackling. Despite a toe injury limiting Senior Bowl practice, his poise, patience, and ball plays in sessions cemented first-round status; Hood projects as a mentality-driven CB2 with upside in press-heavy schemes.",
+  "draftbuzz_grades": {
+    "QBR Allowed": 66.0,
+    "Tackling": 0.86,
+    "Run Defense": 0.73,
+    "Cov Grade": 0.89,
+    "Zone Coverage": 0.87,
+    "Man/Press": 0.84
+  },
+  "projected_role": "Outside",
+  "ideal_scheme": "Press Heavy",
+  "alignments": {
+    "D-Line": {
+      "2025": 1,
+      "career": 1
+    },
+    "Slot": {
+      "2025": 13,
+      "career": 77
+    },
+    "Corner": {
+      "2025": 722,
+      "career": 971
+    },
+    "Box": {
+      "2025": 37,
+      "career": 100
+    },
+    "Deep": {
+      "2025": 1,
+      "career": 1
+    }
+  },
+  "skills_traits": {
+    "Character/Mental/Discipline": {
+      "positives": "Press Man Bully (NFL)\nGreat Mentality, physical, competitive",
+      "negatives": "Needs to sharpen techniques/instinct (NFL)\nStill developing instincts for off coverage (NFL)"
+    },
+    "Tackling": {
+      "positives": "Phsyicality shows up in run support, triggers down hill with stopping power, finishes like an extra safety (NFL)",
+      "negatives": "Inconsistent phsyicality against the run (NFLDB)"
+    },
+    "Coverage Skills": {
+      "positives": "plays with a disruptive punch and gets his hands on most releases (NFL)\nDisciplined in Zone (NFL)\nPlays with aggression in catch space (NFL)\nThrows off timing with physical play (BR)\nExcellent Mirroring Skills (Ringer)\nLeverages his length well to disrupt passing lanes (Ringer)",
+      "negatives": "Route switches cause occasional missteps (NFL)\nHips can get sticky on sudden, aggressive transitions (NFL)\nGets too dialed in to WR and loses track of ball flight (NFL)"
+    },
+    "Athleticism": {
+      "positives": "Enough speed to stay phased on verticals, does a nice job erasing space on inbreakers (NFL)\nClosing and recovery speed is an asset (BR)",
+      "negatives": "Could struggle matching twitchy NFL Releases (NFL)"
+    },
+    "Phsyical Traits": {
+      "positives": "Good Sized (Ringer)",
+      "negatives": null
+    }
+  },
+  "media_links": [
+    {
+      "description": "Career Highlights",
+      "source": "YT - Prospects",
+      "url": "https://www.youtube.com/watch?v=IJelHBWtl30"
+    },
+    {
+      "description": "Senior Bowl Film",
+      "source": "YT - Post-Gazette Steelers",
+      "url": "https://www.youtube.com/watch?v=QMsZ5c78O5M"
+    },
+    {
+      "description": "Interview",
+      "source": "YT - Tennessee Athletics",
+      "url": "https://www.youtube.com/watch?v=5RirF4DaDIs"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Press-man bully with an ability to put his stamp on the first and last phases of the snap. Hood plays with a disruptive punch and gets his hands on most releases, but shifty NFL wideouts could create issues for him. He has enough speed to stay phased on verticals and does a nice job erasing space on in-breakers from tight press or off-man looks. He’s disciplined in zone but route switches still cause occasional missteps. Hood plays with aggression in the catch space, taking top positioning by force. Physicality also shows up in run support, where he triggers downhill with stopping power and finishes like an extra safety. Hood needs to sharpen his instincts/technique, but he has the mentality and upside to become a CB2 in a press-heavy scheme."
+        },
+        {
+          "title": "Strengths",
+          "text": "Plays with box-safety physicality in coverage and run support. | Punches and suffocates outside release against boundary. | Demands the catch space on jump-ball battles. | Gathers and triggers with adequate fluidity from depth. | Operates with discipline/leverage against high/low route concepts. | Explodes vertically with extended arms to capture high-point. | Run-defense wiring is exactly what coaches want to see. | Above-average stopping power when tackling bigger backs."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Could struggle matching twitchy NFL releases. | Hips can get sticky on sudden, aggressive transitions. | Grabby at break points or vertical routes when he’s out of phase. | Gets too dialed in to receiver and loses track of ball flight. | Still developing his instincts from off coverages. | Leggy with sluggish change of direction as open-field tackler."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nBorn into a football bloodline with uncle Roderick's eight NFL seasons setting the standard, Colton Hood spent his freshman year getting his feet wet at Auburn before catching Deion Sanders' eye and joining the Colorado revolution. His 2024 campaign in Boulder saw him rotating with Heisman winner Travis Hunter, where Hood carved out his own identity with 24 tackles and two interceptions, including a 59-yarder against Kansas State that showed the explosive playmaking ability bubbling beneath the surface.\n\nThe move to Tennessee for his redshirt sophomore season has unleashed something special. Through five games wearing orange, Hood has transformed into one of the SEC's most feared coverage specialists, allowing just four catches on 17 targets for 32 yards while scoring twice on defense - a pick-six at Mississippi State and a scoop-and-score against Syracuse that earned him SEC Co-Defensive Player of the Week honors. That Syracuse game announced his arrival in Knoxville with authority: four tackles, three pass breakups, and that 22-yard fumble return that shifted momentum late in the first quarter.\n\nThe former three-star recruit who was ranked 20th among cornerbacks nationally by On3 has validated those early projections and then some. At Eagles Landing Christian Academy, Hood showcased his versatility by lining up everywhere from quarterback to cornerback, accumulating over 1,100 yards of offense while recording 40 tackles and three interceptions on defense, plus returning three kicks to the house.\n\nSCOUTING REPORT: SUMMARY\nHood's the kind of corner who divides scouting departments. The tools are undeniable - 4.4 speed, fluid hips, ball production. Through five games at Tennessee, he's been as good as any corner in the SEC not named McCoy. The three-school thing matters to some teams. The inconsistent physicality against the run matters. The fact he's only started six college games matters. But when you turn on the tape, you see a corner who just makes plays.\n\nBest-case scenario, Hood goes late second or early third round to a team that values coverage over run support. His speed and instincts fit perfectly in a zone-heavy scheme where he can see everything develop. Think Tampa 2 or quarters coverage where he's reading the quarterback and driving on routes. The return ability means he's active on game day immediately, even if the defensive snaps need to be earned. Worst case, he's your fourth corner who becomes your nickel by December when injuries hit.\n\nThe league's full of corners who took winding paths to success. Hood reminds me of guys like Michael Davis or Fabian Moreau - late bloomers who needed the right system to unlock their potential. His coverage ability is real, the speed is real, the ball skills are real. If he lands with a defensive backs coach who can clean up the tackling and get him to buy into the dirty work, you're looking at a ten-year starter. That's worth a day-two pick even with the question marks."
+        },
+        {
+          "title": "Overview",
+          "text": "Feisty, instinctive cornerback who brings intensity and physicality to the secondary.\n\nHood is a good-sized cover corner who plays with a combination of anticipation, tenacity, and toughness. A transfer to Tennessee in 2025 after stops at Colorado and Auburn, he’s a speedy athlete with excellent mirroring skills in coverage. He’s happy to play in tight press coverage at the line, where he uses his length to jam and reroute receivers. He’s comfortable in bump-and-run coverage downfield and shows the ability to leverage his length to disrupt passing lanes and discourage throws. He has the makeup speed to close the gap when in a trailing position and shows a good feel for when to look back for the ball. In zone, he’s aggressive when he triggers downhill and breaks on the ball. Hood brings a physical presence to the cornerback position. He likes to lay big hits and is vicious at the catch point, using his long arms to punch and swipe at the ball or knock it down. He gave up just one touchdown in coverage over the past two seasons, per PFF, while tallying three picks, 10 pass breakups, and 26 stops.\n\nHood is an aggressive and physical tackler, but he doesn’t always put maximum effort into that part of the game. There are times when he fails to set the edge and position himself correctly against the run. And while he improved his missed tackle rate last season, it has been an issue at times in his career (he logged 11 missed tackles in 2024 at Colorado for a 37 percent missed tackle rate, per PFF). He is a little clunky in his transition from a backpedal to trailing coverage, and he can get a little grabby when he falls behind his receiver."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Hood plays with the confidence and man coverage tenacity that's seen him shut down some of the best receivers in college football.\n\nPracticing against future NFLers every day in practice while at Colorado prepared the 6'0\", 195—pound corner to enter 2025 as Tennessee's top corner with teammate Jermod McCoy rehabbing an injury. He makes plays on the football and comes downhill with explosiveness that limits yards after catch and lets him attack the catch point.\n\nThe former 3—star recruit and transfer from Colorado has already set career highs across the board for a Volunteers defense that needed him to step up in a big way. He's been turning his side of the field into a no—fly zone, and quarterbacks rarely challenge him, as he's among the SEC leaders in forced incompletions. He's going to have a big decision to make after the season because he's been one of the best corners in the country."
+        },
+        {
+          "title": "Positives",
+          "text": "— Hood showcases high—level understanding and a variety of man coverage techniques, making it difficult to separate from him. His patience and lateral explosion/agility let him thrive and recover against styles of play.\n\n— As a zone corner, Hood is most comfortable in Cover 2, where he can play closer to the line of scrimmage, carry receivers to different zones, and trigger quickly on underneath throws.\n\n— His closing and recovery speed is an asset to drive on throws downhill and deter quarterbacks from challenging him downfield. When trailing receivers, he focuses on playing the catch point and timing strikes to disrupt targets.\n\n— Physical playstyle helps throw off timing and keeps him in the receiver's hip pockets during route breaks. He does a nice job of sinking his hips and decelerating to match breakpoint comebacks."
+        },
+        {
+          "title": "Negatives",
+          "text": "— In off coverage or when asked to cover a zone downfield, Hood will open his hips to run downfield early, allowing easy access to inside route breaks. Needs to remain more patient and trust his speed.\n\n— As a hard press corner, he uses a physical two—hand jam technique. Learning to use one hand and not locking his hips will let him close the space even quicker. His physicality in routes can also lead to penalties.\n\n— As a tackler, Hood needs to be more consistent in his technique. He leads with his shoulder and lunges at the legs even if he's in a good position. Wrapping as a tackler will clean up some missed tackles."
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Feisty, instinctive cornerback who brings intensity and physicality to the secondary.\n\nHood is a good-sized cover corner who plays with a combination of anticipation, tenacity, and toughness. A transfer to Tennessee in 2025 after stops at Colorado and Auburn, he’s a speedy athlete with excellent mirroring skills in coverage. He’s happy to play in tight press coverage at the line, where he uses his length to jam and reroute receivers. He’s comfortable in bump-and-run coverage downfield and shows the ability to leverage his length to disrupt passing lanes and discourage throws. He has the makeup speed to close the gap when in a trailing position and shows a good feel for when to look back for the ball. In zone, he’s aggressive when he triggers downhill and breaks on the ball. Hood brings a physical presence to the cornerback position. He likes to lay big hits and is vicious at the catch point, using his long arms to punch and swipe at the ball or knock it down. He gave up just one touchdown in coverage over the past two seasons, per PFF, while tallying three picks, 10 pass breakups, and 26 stops.\n\nHood is an aggressive and physical tackler, but he doesn’t always put maximum effort into that part of the game. There are times when he fails to set the edge and position himself correctly against the run. And while he improved his missed tackle rate last season, it has been an issue at times in his career (he logged 11 missed tackles in 2024 at Colorado for a 37 percent missed tackle rate, per PFF). He is a little clunky in his transition from a backpedal to trailing coverage, and he can get a little grabby when he falls behind his receiver."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Feisty, instinctive cornerback"
+        },
+        {
+          "title": "Traits",
+          "text": "Instinctual Playmaking\nCoverage chops"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A redshirt sophomore and former four-star recruit out of McDonough, Georgia. Was the no. 38 cornerback and the no. 375 overall player in the 2023 class. Began his college career at Auburn before transferring to Colorado and then Tennessee, where he was named second-team All-SEC in 2025."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "Uncle Roderick Hood played college football at Auburn and eight seasons in the NFL. He led the league in passes defensed in 2007.\nPlayed quarterback, wide receiver, and running back in high school. “When you play all those positions on offense … you see their eyes as a cornerback. I know what a receiver is looking for or what he’s looking at. What tells he’s trying to get from me.”\nHis mentality at corner is to play to make plays, not “play not to get beat.”"
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF MARLON HUMPHREY"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.42,
+    "prospect_grade_indicator": "Will Become Good Starter Within Two Years",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Carlton Davis III",
+    "eligibility": "Sophomore (RS)",
+    "nfl_rank": 16,
+    "nfl_pos_rank": 3
+  },
+  "bleacher_profile": {
+    "grade": 7.4,
+    "grade_indicator": null,
+    "overall_rank": 66,
+    "position_rank": null,
+    "pro_comparison": "Kamari Lassiter",
+    "projected_round": "3rd Round"
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF MARLON HUMPHREY",
+    "traits": "Instinctual Playmaking\nCoverage chops"
+  },
+  "injury_history": []
+}

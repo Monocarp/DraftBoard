@@ -1,0 +1,447 @@
+{
+  "name": "Joshua Josephs",
+  "slug": "joshua-josephs",
+  "overview": {
+    "POS": "ED",
+    "College": "Tennessee",
+    "Height": "6' 3\"",
+    "Weight": "240",
+    "Age": "22.1",
+    "DOB": "2003-12-08 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "47",
+    "Snaps": "1141",
+    "24/7 Sports": "93",
+    "ESPN": "75",
+    "Draft Buzz": "86.8 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7",
+    "Gridiron": null
+  },
+  "position": "ED",
+  "college": "Tennessee",
+  "height": "6' 3\"",
+  "weight": "240",
+  "age": 22.1,
+  "dob": "2003-12-08 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 47,
+  "snaps": 1141,
+  "site_ratings": {
+    "24/7 Sports": "93",
+    "ESPN": "75",
+    "Draft Buzz": "86.8 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "87.3",
+      "percentile": 0.75
+    },
+    "24 Grade": {
+      "value": "89.7",
+      "percentile": 0.85
+    },
+    "23 Grade": {
+      "value": "79.2",
+      "percentile": 0.95
+    },
+    "Pass Rush Grade": {
+      "value": "90.5",
+      "percentile": 0.75
+    },
+    "True Pass Rush": {
+      "value": "91.2",
+      "percentile": 0.789
+    },
+    "PR Win Rate": {
+      "value": "20.6",
+      "percentile": 0.842
+    },
+    "Run Def. Grade": {
+      "value": "77",
+      "percentile": 0.45
+    },
+    "Run Stop %": {
+      "value": "8.2",
+      "percentile": 0.7
+    },
+    "Sacks": {
+      "value": "5",
+      "percentile": 0.342
+    },
+    "Hits": {
+      "value": "4",
+      "percentile": 0.395
+    },
+    "Hurries": {
+      "value": "22",
+      "percentile": 0.368
+    },
+    "Batted Balls": {
+      "value": "2",
+      "percentile": 0.763
+    },
+    "Forced Fumbles": {
+      "value": "3",
+      "percentile": 0.895
+    },
+    "Tackling Grade": {
+      "value": "50.9",
+      "percentile": 0.1
+    },
+    "Missed Tackle Rate": {
+      "value": "23.5",
+      "percentile": 0.053
+    },
+    "Total Pressures": {
+      "value": "31",
+      "percentile": 0.368
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 66.71428571428571,
+      "positional_rank": "9.8"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 62.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 91.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 107.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 50.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 33.0,
+      "positional_rank": "15"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 46.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 32.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 32.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - LATE",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Arnold EBIKETIE",
+    "Bleacher": "Uchenna Nwosu",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.62,
+    "Pass Rush": 0.93,
+    "Run Defense": 1.0
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 0,
+      "career": 0
+    },
+    "B GAP": {
+      "2025": 1,
+      "career": 3
+    },
+    "Over Tackle": {
+      "2025": 4,
+      "career": 15
+    },
+    "Outside Tkl": {
+      "2025": 345,
+      "career": 857
+    },
+    "Off Ball": {
+      "2025": 15,
+      "career": 52
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nJoshua Kalebe Josephs grew up in Kennesaw, Georgia, where he turned heads at North Cobb High School with a frame that screamed future NFL pass rusher. Standing 6'3\" with an absurd 82-inch wingspan that made offensive tackles nervous before he even moved, Josephs racked up 104 tackles and six sacks as a senior while leading his team to back-to-back Region 3 championships. Born on a date not widely publicized, the talented edge defender committed to Tennessee in November 2021, selecting the Volunteers over 26 other Division I programs including five SEC schools. His high school coach Shane Queen helped mold him into a four-star prospect ranked among the nation's top-15 edge rushers by 247Sports and On3.\n\nTennessee's coaching staff knew they had something special when Josephs arrived in Knoxville in June 2022, but patience would be required. As a true freshman, he flashed playmaking ability with 12 tackles, 2.5 for loss, and his first collegiate sack at LSU. The next two years saw him develop behind NFL-caliber talents Byron Young and James Pearce Jr, the latter becoming Atlanta's first-round selection in 2025. During that apprenticeship period from 2023-24, Josephs accumulated 59 tackles, 13.5 tackles for loss, 4.5 sacks, and six forced fumbles while gradually earning more responsibility. His 2024 campaign proved particularly impressive when PFF graded him as one of the nation's top-10 edge rushers at 90.0 overall, ranking fifth on the team in tackles despite limited starts.\n\nThe 2025 season finally gave Josephs the spotlight he had earned through years of patient development. Starting all 11 regular season games at the LEO position, he delivered dominant performances week after week. His 90.0 pass rush grade ranked third in the SEC and 19th nationally, while his game-changing plays mounted: a 41-yard fumble return touchdown at Mississippi State, a crucial strip-sack against Georgia that led to points, and three forced fumbles that tied him for 13th nationally. He crossed the 100-career tackle threshold at Kentucky and earned recognition on the 2025 Senior Bowl Top 300 list. Josephs graduated in December 2025 with a bachelor's degree in communication studies, capping a four-year journey from raw athletic specimen to one of the most disruptive defenders in the Southeastern Conference.\n\nSCOUTING REPORT: SUMMARY\nWatch him play and you see an edge defender whose athletic profile makes coordinators drool. The combination of 4.6ish speed, 34-plus inch arms, and an 80+ inch wingspan creates a physical package that should translate immediately as a situational pass rusher at the next level. He wins with quickness and length off the snap, and his hand timing has improved markedly over the past two seasons. Tennessee deployed him primarily as a designated pass rusher for good reason, and NFL teams would be wise to follow that blueprint initially.\n\nHere's the deal with Josephs: he's going to need time to develop into a complete three-down player. The tackling issues and anchor problems against power are real concerns that will show up against NFL offensive lines with better technique and more strength. His situational college usage, with only 17 career starts and 626 pass rush snaps over four years, means he hasn't been tested as an every-down defender against top competition. Teams with strong rotational philosophies will get more immediate value than those expecting a day-one starter who can handle 50-plus snaps.\n\nA 4-3 scheme that can deploy him as a designated speed rusher on third downs makes the most sense initially, though he possesses the versatility to kick inside on obvious passing situations. As he adds functional mass and refines his technique against the run, the ceiling expands considerably. Defensive coordinators who specialize in matchup-based game plans will appreciate his ability to threaten tackles with speed while possessing enough moves to win inside when opponents over-commit to taking away the edge. The projection here is a productive NFL pass rusher whose long-term value depends entirely on whether he can add 15-20 pounds of good weight without sacrificing the explosiveness that makes him dangerous."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Joshua Josephs combines high—level athleticism and quickness with a handful of effective pass—rush moves to become a significant contributor as a pass—rusher in the NFL. He's shown promise against the run but does need to add size and strength to develop into a complete player at the next level.\n\nThe 6'3\", 240—pound edge—defender was a 4—star recruit in the 2022 class and was a rotational player as a true freshman, collecting 12 tackles, 2.5 for loss, one sack and two passes defended in 12 games.\n\nJosephs spent the next two seasons playing behind James Pearce Jr (Atlanta Falcons' 2025 first—round pick), but still had decent production with 59 tackles, 13.5 TFLs, 4.5 sacks, four PDs and three force fumbles in 25 games during those campaigns."
+        },
+        {
+          "title": "Positives",
+          "text": "— Josephs has a solid frame with room to add weight and appears to have long arms.\n\n— Combines Good overall athleticism with quickness and twitch to win as a pass—rusher.\n\n— quick to react to the snap and Accelerates off the line of scrimmage well to win or at least threaten offensive tackles with speed around the edge.\n\n— decent at setting his pass—rush moves by getting to square on the offensive lineman and giving himself a two—way go.\n\n— has shown several moves he can win with, like a cross—chop, bull—to—rip and push—pull. Also, improved his Timing with his hands this season and has gotten better at working the hands after contact.\n\n— Good closing speed on the quarterback.\n\n— Physical and has shown solid strength at the point of attack as a run defender.\n\n— can create stalemates against pullers as the force player in run fits."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Could afford to add more size and strength to be more stout against the run.\n\n— Struggles to get extension and lock out offensive tackles when setting the edge/taking on blocks.\n\n— Will get collapsed inside by down blocks from tight ends and doesn't see/anticipate crack blocks against pin—and—pull concepts, even when wide receivers are in a reduced split.\n\n— Lacks the mass and strength to be effective when turning speed to power against NFL offensive tackles.\n\n— Ankles are a little stiff, hurting his ability to corner and consistently finish pass—rush wins with sacks."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.0,
+    "grade_indicator": null,
+    "overall_rank": 107,
+    "position_rank": null,
+    "pro_comparison": "Uchenna Nwosu",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

@@ -1,0 +1,450 @@
+{
+  "name": "Daylen Everette",
+  "slug": "daylen-everette",
+  "overview": {
+    "POS": "CB",
+    "College": "Georgia",
+    "Height": "6' 1\"",
+    "Weight": "190",
+    "Age": "21.7",
+    "DOB": "2004-05-06 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": "2nd Round",
+    "Games": "51",
+    "Snaps": "2407",
+    "24/7 Sports": "98",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.5 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.3",
+    "Gridiron": "TBD"
+  },
+  "position": "CB",
+  "college": "Georgia",
+  "height": "6' 1\"",
+  "weight": "190",
+  "age": 21.7,
+  "dob": "2004-05-06 00:00:00",
+  "year": "Sr",
+  "projected_round": "2nd Round",
+  "games": 51,
+  "snaps": 2407,
+  "site_ratings": {
+    "24/7 Sports": "98",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.5 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.3",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "69.6",
+      "percentile": 0.176
+    },
+    "24 Grade": {
+      "value": "73.4",
+      "percentile": 0.611
+    },
+    "23 Grade": {
+      "value": "65.3",
+      "percentile": 0.167
+    },
+    "Coverage Grade": {
+      "value": "65.7",
+      "percentile": 0.056
+    },
+    "Passer Rating": {
+      "value": "83.7",
+      "percentile": 0.278
+    },
+    "Interceptions": {
+      "value": "1",
+      "percentile": 0.306
+    },
+    "Forced Incom.": {
+      "value": "9",
+      "percentile": 0.611
+    },
+    "Forced Inc. Rate": {
+      "value": "13.4",
+      "percentile": 0.167
+    },
+    "Dropped Picks": {
+      "value": "1",
+      "percentile": 0.667
+    },
+    "Completion %": {
+      "value": "55.2",
+      "percentile": 0.417
+    },
+    "Man Coverage": {
+      "value": "52.1",
+      "percentile": 0.0
+    },
+    "Zone Coverage": {
+      "value": "73.8",
+      "percentile": 0.389
+    },
+    "% In Man": {
+      "value": "29.8",
+      "percentile": 0.556
+    },
+    "% In Zone": {
+      "value": "63.3",
+      "percentile": 0.667
+    },
+    "Coverage Stops": {
+      "value": "8",
+      "percentile": 0.389
+    },
+    "Tackling": {
+      "value": "78.5",
+      "percentile": 0.556
+    },
+    "Missed Tackles": {
+      "value": "5",
+      "percentile": 0.361
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Arm Length": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Hand Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Speed": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Explosive": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Agility": {
+      "result": "TBD",
+      "grade": null
+    },
+    "10 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "20 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "40 Time": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Vertical": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Broad": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "3 Cone": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Bench": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Height": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Weight": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Gridiron": {
+      "result": "TBD",
+      "grade": "TBD"
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 86.8,
+      "positional_rank": "13.666666666666666"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 72.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 84.0,
+      "positional_rank": "15"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 66.0,
+      "positional_rank": "21"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 73.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 89.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "3RD",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Aaron ROBINSON",
+    "Bleacher": "Deonte Banks",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR Allowed": 86.1,
+    "Tackling": 0.75,
+    "Run Defense": 0.87,
+    "Cov Grade": 0.73,
+    "Zone Coverage": 0.67,
+    "Man/Press": 0.76
+  },
+  "projected_role": "Outside",
+  "ideal_scheme": "Zone",
+  "alignments": {
+    "D-Line": {
+      "2025": 2,
+      "career": 5
+    },
+    "Slot": {
+      "2025": 42,
+      "career": 120
+    },
+    "Corner": {
+      "2025": 618,
+      "career": 1902
+    },
+    "Box": {
+      "2025": 89,
+      "career": 245
+    },
+    "Deep": {
+      "2025": 0,
+      "career": 2
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Coverage Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Mental/Discipline Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nDaylen Everette, the Virginia native, burst onto the scene as a sophomore at Norview High School, hauling in 11 interceptions before making the transition to IMG Academy where he refined his craft against elite national competition. His recruitment reflected that elite status - earning five-star recognition from PrepStar and ranking as the third-best cornerback prospect nationally by 247Sports.\n\nEverette's Georgia career unfolded methodically, transitioning from special-teams contributor as a true freshman in 2022 to becoming a defensive anchor by his junior season. His 2023 campaign featured 39 tackles with solid coverage metrics, but his senior year breakthrough in 2024 elevated his draft stock considerably. Recording 58 tackles, three interceptions, and earning SEC Championship MVP honors against Texas, Everette demonstrated the playmaking ability that had been brewing beneath the surface. His pair of picks in the SEC Championship game against the Longhorns represented the kind of clutch performance that separates good corners from great ones.\n\nThe decision to return for a fifth season in 2025 positions Everette as a rarity in Kirby Smart's program - a senior cornerback with extensive starting experience. While Georgia has produced a pipeline of NFL corners like Kelee Ringo and Kamari Lassiter, most departed after their junior seasons. Everette's extended development timeline and accumulated game reps against SEC competition provide a unique foundation for his eventual NFL transition. His 38 career games and 1,656 defensive snaps represent the kind of seasoning that can't be manufactured in combine drills or pro day workouts.\n\nSCOUTING REPORT: SUMMARY\nEverette's combination of size, speed, and SEC pedigree creates an intriguing developmental prospect for teams willing to invest in his technical refinement. His 4.34 speed isn't just impressive on paper - it translates to legitimate deep coverage ability that can erase intermediate mistakes through recovery speed. The way he disrupted Texas receivers in the SEC Championship game while collecting two interceptions demonstrates his ceiling when everything clicks together. His press technique and zone awareness suggest a corner who can contribute immediately in sub-packages while developing into a full-time starter.\n\nScheme-wise, Everette projects best in systems that emphasize his length and straight-line speed rather than demanding constant hip turns and mirror coverage. Teams running Cover 3 or quarters-heavy concepts can maximize his skill set by utilizing his press ability to disrupt timing while his speed handles vertical routes. His run support willingness makes him appealing to defensive coordinators who need corners capable of setting edges against modern spread offenses. The experience against elite SEC competition provides confidence that he won't be overwhelmed by the speed of the NFL game.\n\nDraft positioning likely falls in the Day 2 range where teams can afford to develop his technique while utilizing his athletic gifts on special teams and in specific packages. His extended college career provides both positives and negatives - the experience and maturity are valuable, but questions about his development curve remain."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Daylen Everette is a natural athlete with untapped potential to be unlocked in the right system.\n\nThe Georgia cornerback thrives in man coverage, where he can smartly use his hands to press or re—route receivers and mirror their movements. He does a great job of making contact without holding, and he uses the proper hand to avoid locking his hips during transitions to turn and run. In his senior season, the 6'1\" 190—pound athlete found himself around the football more, setting a career high in passes defensed with seven.\n\nThe former 5—star recruit has battled inconsistencies throughout his career, but has settled down in man coverage, relishes going up against the offense's best receiver, and raises his game in those situations."
+        },
+        {
+          "title": "Positives",
+          "text": "— With a prototypical NFL build, Everette has the size and length to contribute on the boundary with deep speed, foot quickness, and physicality to match. He uses his length to throw off timing and impact the catch point.\n\n— He's an effective press man cover corner who showcases patience and jam technique to stay in phase. His mirroring ability and hip fluidity keep him right in hip pockets on route breaks and down the field.\n\n— Closing speed shows up on route breaks and as a blitzer. He hides his intentions well and can cover ground in a hurry to impact the quarterback or at the catch point.\n\n— He can stay on top of receivers and play trail technique adequately while using his deceleration ability to come back on comeback routes. Shows a wide range of man coverage techniques."
+        },
+        {
+          "title": "Negatives",
+          "text": "—Everette's zone instincts are a work in progress, and keep him a second slow to the football. He needs to see route combinations better and match them to the quarterback to speed up his process.\n\n— In off coverage, his eyes wander and linger too long. Making him slower in reacting to plays, while looking far less comfortable in space with his movements.\n\n— Overall consistency needs to be cleaned up, and the effort in the run game comes into question. His length allows him to wrap up well, but his pursuit angles and being too patient leave him diving at feet and missing tackles."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.3,
+    "grade_indicator": null,
+    "overall_rank": 84,
+    "position_rank": null,
+    "pro_comparison": "Deonte Banks",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

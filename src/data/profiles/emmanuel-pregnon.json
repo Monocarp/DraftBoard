@@ -1,0 +1,472 @@
+{
+  "name": "Emmanuel Pregnon",
+  "slug": "emmanuel-pregnon",
+  "overview": {
+    "POS": "IOL",
+    "College": "Oregon",
+    "Height": "6' 5\"",
+    "Weight": "318",
+    "Age": "TBD",
+    "DOB": "0",
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": "51",
+    "Snaps": "3137",
+    "24/7 Sports": "0",
+    "ESPN": "88",
+    "Draft Buzz": "85.9 / 100",
+    "NFL.com": "TBD",
+    "BR": "7.4",
+    "Gridiron": null
+  },
+  "position": "IOL",
+  "college": "Oregon",
+  "height": "6' 5\"",
+  "weight": "318",
+  "age": null,
+  "dob": "0",
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": 51,
+  "snaps": 3137,
+  "site_ratings": {
+    "24/7 Sports": "0",
+    "ESPN": "88",
+    "Draft Buzz": "85.9 / 100",
+    "NFL.com": "TBD",
+    "BR": "7.4",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "87.3",
+      "percentile": 1.0
+    },
+    "2024 Grade": {
+      "value": "66.6",
+      "percentile": 0.1
+    },
+    "2023 Grade": {
+      "value": "65.2",
+      "percentile": 0.5
+    },
+    "Run Block Grade": {
+      "value": "87.3",
+      "percentile": 1.0
+    },
+    "Pass Block Grade": {
+      "value": "86.3",
+      "percentile": 0.7
+    },
+    "True Pass Set Grade": {
+      "value": "83.5",
+      "percentile": 0.9
+    },
+    "Pass Block Efficiency": {
+      "value": "99.3",
+      "percentile": 0.7
+    },
+    "Zone Grade": {
+      "value": "93.2",
+      "percentile": 1.0
+    },
+    "Gap Grade": {
+      "value": "70.4",
+      "percentile": 0.8
+    },
+    "Sacks Allowed": {
+      "value": "1",
+      "percentile": 0.5
+    },
+    "Hits Allowed": {
+      "value": "2",
+      "percentile": 0.3
+    },
+    "Hurries Allowed": {
+      "value": "2",
+      "percentile": 0.75
+    },
+    "Pressures Allowed": {
+      "value": "5",
+      "percentile": 0.5
+    },
+    "Penalties": {
+      "value": "1",
+      "percentile": 0.8
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 47.875,
+      "positional_rank": "2.5"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 42.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 32.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 79.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "0"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 72.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 42.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 32.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 56.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 70.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 55.0,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - EARLY",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "0",
+    "Bleacher": "Robert Hunt",
+    "WF": "TBD",
+    "Ringer": "John Simpson"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.9,
+    "Run Blocking Grade": 0.89
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 1,
+      "career": 1
+    },
+    "LG": {
+      "2025": 779,
+      "career": 2434
+    },
+    "C": {
+      "2025": 0,
+      "career": 0
+    },
+    "RG": {
+      "2025": 55,
+      "career": 64
+    },
+    "RT": {
+      "2025": 1,
+      "career": 1
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nOut of Thomas Jefferson High School in Denver, Emmanuel Pregnon arrived at Wyoming as an unranked two-star recruit who played both ways, recording 51 tackles and 12 pancake blocks as a senior. After redshirting his first two seasons in Laramie, he broke out as a redshirt sophomore in 2022 with 11 starts at guard, earning Second Team Freshman All-American honors from College Football News. That performance sparked a transfer to USC, where he started 12 games in 2023 before returning as the Trojans' left guard for all 13 games in 2024, posting 882 snaps without allowing a sack and recording a career-high 90.6 pass blocking grade against Minnesota.\n\nPregnon transferred to Oregon for 2025 and delivered a dominant final college season, earning first-team All-American recognition from both the Associated Press and The Sporting News along with first-team All-Big Ten honors. His consistency and power helped the Ducks finish 11-1 and reach the College Football Playoff. Across 49 career games at three programs, the 6'5\", 318-pound guard logged 2,985 offensive snaps while transforming from an unheralded Mountain West player into a consensus All-American.\n\nThe journey from obscure two-star prospect to national award winner reflects remarkable physical development and work ethic. Pregnon added functional strength without sacrificing mobility, while his stops at three programs exposed him to varied offensive systems and coaching philosophies. He enters the draft process as one of the most experienced guards available, bringing power, consistency, and proven production against elite Big Ten defensive fronts.\n\nPregnon's tape screams day-one contributor with the blend of power, hand technique, and consistent performance that franchises covet when constructing their interior offensive line for championship runs. Teams running gap or inside zone schemes will love his ability to generate movement and create running lanes, while his pass protection reliability provides the foundation to step into a starting role without needing the developmental patience most rookies require before seeing significant snaps. The adjustment to NFL speed and the power-finesse combination that league defensive tackles bring every down will test him early, but his anchor handles pure power beautifully and his hand usage provides legitimate counters when defenders try to speed rush his edges.\n\n\n\n        The best interior rushers in the world marry strength with suddenness that can exploit his hip stiffness on redirection moves, which will be the primary area requiring immediate refinement at the next level. His intelligence picking up games and stunts should translate once he adjusts to the heightened pace, though his lack of positional flexibility limits his versatility compared to guards who can swing to multiple spots. Still, pure guards who can anchor and move people carry premium value when they've proven it against top-shelf competition over nearly 3,000 career snaps like Pregnon has, and that experience matters when evaluating pro readiness.\n\n\n\n        This is a mauler who brings toughness, reliability, and legitimate starting ability at guard from the opening kickoff. His journey from unranked recruit to consensus All-American reflects both rare physical gifts and relentless development that should continue under NFL position coaches. He won't blow you away with athletic versatility or scheme flexibility across multiple spots, but he'll give you dependable, physical football that keeps your quarterback upright and your run game on schedule. That's the kind of foundational piece teams build their offensive line around, and why Pregnon will be a valuable addition to whichever franchise selects him."
+        },
+        {
+          "title": "Overview",
+          "text": "Rugged, wide-bodied guard with the power, length, and reliability to be a plug-and-play starter.\n\nPregnon is a stout, powerfully built, and highly experienced guard prospect who brings the potential to be a high-floor starter in the pros. A transfer to Oregon in 2025 after stops at USC and Wyoming, he is a four-year starter with over 3,000 career snaps—with the vast majority at left guard (and one season at right guard). Pregnon blocks with a wide, balanced base and keeps his feet moving to mirror and react to rushers. He brings a strong punch that shocks opponents and works his hands to counter pass rush moves and maintain his grip on a pass rusher’s chest. He drops a heavy anchor and knocks blitzers back as they try to scoot through his gap. He shows excellent awareness for stunts and reacts quickly, flashing a feel for helping out the center or tackle when he’s uncovered; he squeezes down and lends a hand in support until he needs to disengage to pick up someone in front of him. He surrendered just one sack on 1,536 pass block snaps over the past three seasons, per PFF. In the run game, he fires out of his stance with good leverage and plenty of pop. He drives opposing linemen off the line and plows out run lanes. He shows the ability to sustain blocks, using strong hands to latch on and control opponents at the point of attack.\n\nPregnon lacks top-tier foot speed; if he loses a step, he can recover, but he often starts to lean and fall off blocks. He’s an interior lineman only, with no experience at center; that lack of positional versatility could be a knock for some teams. He lumbers a bit and can be a beat slow on pull blocks and movement blocks."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Emmanuel Pregnon is a stoutly—built people—mover with a nasty demeanor, tools and tape to be a long—term starting NFL guard.\n\nPregnon is a 6'5\", 318—pound prospect, who entered the Wyoming program as an unranked recruit in the 2020 class before transferring to USC in 2023 and to Oregon for the '25 campaign.\n\nPregnon started 25 games at left guard during the 2023 and '24 seasons at USC. He started 11 games at guard for Wyoming in 2022."
+        },
+        {
+          "title": "Positives",
+          "text": "— Good arm length with large, heavy hands and good grip strength.\n\n— Reliable, stout presence in the run game. Pregnon can cover up, lift and uproot targets on base, double and combination blocks.\n\n— Efficient short setter in pass protection, with the length and strike—timing to establish first meaningful contact.\n\n— Firm anchor and presence to pass off and pick up defensive line movement effectively, with pocket—clearing power when uncovered.\n\n— Brings an enforcing mentality, with an affinity for contact, straining and finishing through the whistle."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Adequate athletic ability and redirect skills create soft edges against movement across his face.\n\n— Will lean and get heavy on his hands upon first contact, leaving him vulnerable to the push—pull and overextending against counter moves."
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Rugged, wide-bodied guard with the power, length, and reliability to be a plug-and-play starter.\n\nPregnon is a stout, powerfully built, and highly experienced guard prospect who brings the potential to be a high-floor starter in the pros. A transfer to Oregon in 2025 after stops at USC and Wyoming, he is a four-year starter with over 3,000 career snaps—with the vast majority at left guard (and one season at right guard). Pregnon blocks with a wide, balanced base and keeps his feet moving to mirror and react to rushers. He brings a strong punch that shocks opponents and works his hands to counter pass rush moves and maintain his grip on a pass rusher’s chest. He drops a heavy anchor and knocks blitzers back as they try to scoot through his gap. He shows excellent awareness for stunts and reacts quickly, flashing a feel for helping out the center or tackle when he’s uncovered; he squeezes down and lends a hand in support until he needs to disengage to pick up someone in front of him. He surrendered just one sack on 1,536 pass block snaps over the past three seasons, per PFF. In the run game, he fires out of his stance with good leverage and plenty of pop. He drives opposing linemen off the line and plows out run lanes. He shows the ability to sustain blocks, using strong hands to latch on and control opponents at the point of attack.\n\nPregnon lacks top-tier foot speed; if he loses a step, he can recover, but he often starts to lean and fall off blocks. He’s an interior lineman only, with no experience at center; that lack of positional versatility could be a knock for some teams. He lumbers a bit and can be a beat slow on pull blocks and movement blocks."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Rugged, wide-bodied guard"
+        },
+        {
+          "title": "Traits",
+          "text": "Bulldozer Power\nSmooth Footwork"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A redshirt senior out of Denver who was unranked as a recruit in the 2020 class. Spent three seasons at Wyoming before transferring to USC in 2023. Was USC’s starting left guard in 2024, when he earned second-team All–Big Ten honors. Transferred to Oregon in 2025, served as the Ducks’ starting left guard, and was named a first-team All-American and first-team All–Big Ten."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "Played on both sides of the line in high school.\nMajored in chemical engineering during his time at Wyoming.\nOn his transfer to Oregon from USC: “I’ve been playing for quite a while now, I would say I’m somewhat versed, but the game of football is ever-expanding. There’s always something new to learn whether it’s scheme or formation, just something new to pick up. In terms of just a pro-style offense, Oregon provided all of that and I feel like that will give me a really good start in time for becoming a pro.”"
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF JOHN SIMPSON"
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.4,
+    "grade_indicator": null,
+    "overall_rank": 72,
+    "position_rank": null,
+    "pro_comparison": "Robert Hunt",
+    "projected_round": null
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF JOHN SIMPSON",
+    "traits": "Bulldozer Power\nSmooth Footwork"
+  },
+  "injury_history": []
+}

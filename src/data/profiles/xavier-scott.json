@@ -1,0 +1,434 @@
+{
+  "name": "Xavier Scott",
+  "slug": "xavier-scott",
+  "overview": {
+    "POS": "CB",
+    "College": "LSU",
+    "Height": "6' 0\"",
+    "Weight": "190",
+    "Age": "22.1",
+    "DOB": "2003-12-15 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "43",
+    "Snaps": "2450",
+    "24/7 Sports": "87",
+    "ESPN": "90",
+    "Draft Buzz": "89.0 / 100",
+    "NFL.com": "6.8",
+    "Bleacher": "8.5",
+    "Gridiron": "TBD"
+  },
+  "position": "CB",
+  "college": "LSU",
+  "height": "6' 0\"",
+  "weight": "190",
+  "age": 22.1,
+  "dob": "2003-12-15 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 43,
+  "snaps": 2450,
+  "site_ratings": {
+    "24/7 Sports": "87",
+    "ESPN": "90",
+    "Draft Buzz": "89.0 / 100",
+    "NFL.com": "6.8",
+    "Bleacher": "8.5",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "90.7",
+      "percentile": 0.882
+    },
+    "24 Grade": {
+      "value": "69.5",
+      "percentile": 0.417
+    },
+    "23 Grade": {
+      "value": "67.6",
+      "percentile": 0.25
+    },
+    "Coverage Grade": {
+      "value": "90.9",
+      "percentile": 0.917
+    },
+    "Passer Rating": {
+      "value": "26.7",
+      "percentile": 0.917
+    },
+    "Interceptions": {
+      "value": "2",
+      "percentile": 0.667
+    },
+    "Forced Incom.": {
+      "value": "11",
+      "percentile": 0.917
+    },
+    "Forced Inc. Rate": {
+      "value": "31.4",
+      "percentile": 0.972
+    },
+    "Dropped Picks": {
+      "value": "0",
+      "percentile": 0.194
+    },
+    "Completion %": {
+      "value": "37.1",
+      "percentile": 0.972
+    },
+    "Man Coverage": {
+      "value": "89.1",
+      "percentile": 0.972
+    },
+    "Zone Coverage": {
+      "value": "76.8",
+      "percentile": 0.639
+    },
+    "% In Man": {
+      "value": "38.7",
+      "percentile": 0.806
+    },
+    "% In Zone": {
+      "value": "49.3",
+      "percentile": 0.083
+    },
+    "Coverage Stops": {
+      "value": "8",
+      "percentile": 0.389
+    },
+    "Tackling": {
+      "value": "76.4",
+      "percentile": 0.417
+    },
+    "Missed Tackles": {
+      "value": "5",
+      "percentile": 0.361
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Arm Length": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Hand Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Speed": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Explosive": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Agility": {
+      "result": "TBD",
+      "grade": null
+    },
+    "10 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "20 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "40 Time": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Vertical": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Broad": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "3 Cone": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Bench": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Height": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Weight": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Gridiron": {
+      "result": "TBD",
+      "grade": "TBD"
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 13.76923076923077,
+      "positional_rank": "1.5714285714285714"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 14.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 16.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 7.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 16.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 13.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 5.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Jeremiah",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 28.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 9.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 14.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Tankathon",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 9.538461538461538,
+    "PFF": 11.0,
+    "ESPN": null,
+    "Brugler": 13.0,
+    "Kiper": 18.0,
+    "Miller": 10.0,
+    "Bleacher": 10.0,
+    "Jeremiah": 5.0,
+    "TDN": 20.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "Tankathon": 10.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - TOP 10",
+    "Bleacher": "1st Round"
+  },
+  "player_comps": {
+    "NFL": "Quinyon Mitchell",
+    "Miller": "TBD",
+    "DraftBuzz": "Kool-Aid MCKINSTRY",
+    "Bleacher": "Quinyon Mitchell",
+    "WF": "Marshon Lattimore."
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR Allowed": 56.2,
+    "Tackling": 0.89,
+    "Run Defense": 0.85,
+    "Cov Grade": 0.95,
+    "Zone Coverage": 0.93,
+    "Man/Press": 0.9
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 8,
+      "career": 18
+    },
+    "Slot": {
+      "2025": 39,
+      "career": 112
+    },
+    "Corner": {
+      "2025": 516,
+      "career": 1616
+    },
+    "Box": {
+      "2025": 55,
+      "career": 223
+    },
+    "Deep": {
+      "2025": 6,
+      "career": 78
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Coverage Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Mental/Discipline Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "0"
+        },
+        {
+          "title": "Overview",
+          "text": "Delane is one of the top cornerbacks in a CB-rich draft. He excels in press coverage, altering release timing with punches and slides. Smooth hips and efficient footwork keep him connected in man coverage, while his processing allows for quick transitions in off-man and short zone looks. He has good top-end speed for vertical phasing but is inconsistent turning to find the football. While he locks in on the route at times, he’s rarely oblivious to the quarterback’s actions, allowing him to slam catch windows shut and play the football. He played through a core muscle injury for much of the 2025 season and still performed at an elite level. Delane’s emergence over the past two years might be indicative of what’s to come, as he’s shown lockdown potential."
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Mansoor Delane is a complete cornerback now playing in a defense where he can thrive.\n\nThe 6'0\", 190—pound defensive back has been a shutdown corner for the LSU Tigers, putting his top—tier skills on display in the national spotlight, which has improved his standing in Bleacher Report's rankings significantly.\n\nDelane is a former 3—star recruit. He originally committed to Virginia Tech, where he played three seasons for the Hokies and earned third—team All—ACC honors in 2024. After his junior season, he entered the transfer portal and committed to LSU as a 4—star transfer. He's well on his way to being one of the first corners selected in April."
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "During the Frank Beamer era, Virginia Tech was a factory for NFL cornerback talent. Year after year, the Hokies had good corners for the next level, but that has fallen off in the years since Beamer retired. However, Delane went about changing that. He had eight breakups with an interception in 2022 as a freshman. In 2023, he had one interception, one pass batted, and 54 tackles. As a junior, Delane had his best season with 54 tackles with four interceptions, seven passes broken up, and two forced fumbles. He could have been an early-round pick in the 2025 NFL Draft, but Delane decided to stay in school and transferred to LSU. It proved to be a wise decision as Delane had a very good season for the Tigers. He totaled 45 tackles with two interceptions and 11 passes broken up in 2025.\nWith his skill set, Delane definitely has the physical tools to play in the NFL. Delane has good size, strength, and length to match up against receivers. Along with having a pro frame, Delane can run with quality speed to stay with quick wideouts. Delane has a burst to close and is fast enough to carry verticals downfield. Between his speed, height, and length, Delane has nice recoverability to make up ground if he gives up some separation. With big cornerbacks, a natural issue is stiffness, and that can be seen with Delane. He has some stiffness in off-man and zone, but it is not a serious liability that will prevent him from being a good player.\nDelane has good ball skills and shows a nice knack for timing his breakups. If the ball is not well located, Delane shows a nice ability to adjust, and that leads to him being dangerous for interceptions. He is a physical corner and competes hard. He is adept at winning 50-50 passes and matching up against bit outside receivers.\nFor the NFL, Delane needs to improve on not grabbing. He has a tendency to grab receivers downfield when they go to make their break. He will also grab and push too much downfield when the ball is in the air. He gets away with it sometimes in college, but as a pro, he could be prone to pass interference penalties until he cleans that up.\nDelane looks like he is a future pro starter and could be a No. 1 corner for his NFL team. He looks like a safe pick to be at least be a solid player and a good contributor, even if he is never among the very top cornerbacks in the NFL. In the 2026 NFL Draft, Delane looks like a top-16 pick."
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nMansoor Delane spent his freshman year at the Landon School, a small college prep academy in Bethesda better known for lacrosse than Friday night lights. Games were played on Thursday afternoons. Film sessions were lonely affairs. The fire burned, but there was no oxygen to feed it. He transferred to Archbishop Spalding High School as a sophomore seeking competition, and the move delivered exactly what he wanted. Surrounded by future Division I talent like Zakee Wheatley and Lavain Scruggs, Delane was pushed daily in ways Landon never could. He was benched early that first year, a humbling experience that shaped his approach to preparation. The lesson stuck.\n\nThree years at Virginia Tech established Delane as one of the ACC's most reliable corners. He earned True Freshman All-America honors from 247Sports in 2022 after recording eight passes defended and an interception in just eight games. His sophomore campaign saw him start all 13 contests, adding 54 tackles and another pick. The junior season brought third-team All-ACC recognition after he finished third in the league with four interceptions and added 11 passes defended and a pair of forced fumbles. By the time his Blacksburg tenure ended, he had logged 29 consecutive starts and accumulated 146 tackles, 22 passes defended, and six interceptions across 33 games.\n\nRather than entering the 2025 draft as a projected mid-round selection, Delane made the calculated choice to transfer to LSU and test himself against SEC competition under defensive backs coach Corey Raymond. The gamble paid dividends immediately. In his Tigers debut against Clemson under the lights, he surrendered just one reception on eight targets with two pass breakups and a pick. Against Florida, six targets yielded only 11 receiving yards. By midseason, opposing quarterbacks had received the message loud and clear. Over his final four games, he was targeted just five times total. For the season, Delane posted 45 tackles, 11 passes defended, and two interceptions while allowing a completion percentage of just 26.1% on 200-plus coverage snaps. His younger brother Faheem signed with Ohio State in December 2024 as the nation's top-ranked safety prospect.\n\nSCOUTING REPORT: SUMMARY\nMansoor Delane is one of the most instinctive cornerbacks to come out of college football in recent years. Delane does not just cover receivers; he anticipates them. His ability to diagnose route combinations and position himself in passing lanes before the ball leaves the quarterback's hand is a rare trait that cannot be coached. The 27.5 passer rating he allowed in 2025 tells you everything you need to know about what happens when offenses challenge him. They stop challenging him. That is exactly what occurred in the back half of his LSU season when targets dried up almost completely.\n\nHere's the deal: this is a complete cornerback prospect outside of one question mark. His instincts are elite. His ball skills are elite. His coverage grades in both man and zone are elite. His competitive temperament is exactly what coaches want in their secondary. The only genuine concern is whether his long speed can hold up against the burners he will face every Sunday. That is a fair question, and it will determine whether Delane becomes a true lockdown corner or a very good starter who occasionally needs help over the top. Either outcome represents tremendous value.\n\nThe year-over-year improvement tells a compelling story about his trajectory. He went from allowing seven touchdowns in 2024 to zero in 2025 while facing significantly better competition in the SEC. That is not coincidence; that is a player who refined his technique, mastered his craft, and arrived at LSU ready to prove he belongs among the best in the country. He has the makeup of a long-term starter and the instincts to become something even more special."
+        },
+        {
+          "title": "Overview",
+          "text": "Versatile, playmaking defensive back with top-tier instincts in coverage.\n\nDelane is a big-impact defender with a knack for making plays on the ball. A transfer to LSU in 2025 after playing three seasons at Virginia Tech, he is a tough and physical cornerback who excels at several types of coverage looks. He loves crowding receivers at the line, and he mirrors effortlessly in press coverage. He’s very comfortable in off-coverage schemes, too, where he can utilize a half-turn technique and keep his eyes on the quarterback. He positions himself well, showing an understanding of spacing and reading route combinations. He flashes anticipation in coverage, frequently jumping routes to make a play. He stifles opponents at the catch point: He undercuts routes, rakes through opponents’ arms so they can’t finish the catch, and generally does all he can to make things very difficult for the receiver to complete the catch. That has translated to consistent production: He racked up two picks and 11 passes defensed for the Tigers in 2025, per PFF, with no touchdowns surrendered in coverage. And in three seasons at Virginia Tech, he picked off six passes, notched 16 passes defensed, and forced four fumbles. Delane’s versatility also stands out; he has seen snaps at outside corner, over the slot, in the box, and at free safety during his college career.\n\nDelane has a slim frame and lacks length. He can be a little too grabby down the field and will need to play with more discipline at the next level. His aggressive nature in coverage could make him susceptible to double moves. He needs to be more consistent about wrapping up and finishing tackles."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "injury_history": []
+}

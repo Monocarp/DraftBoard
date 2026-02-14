@@ -1,0 +1,447 @@
+{
+  "name": "LT Overton",
+  "slug": "lt-overton",
+  "overview": {
+    "POS": "ED",
+    "College": "Alabama",
+    "Height": "6' 5\"",
+    "Weight": "278",
+    "Age": "21.2",
+    "DOB": "2004-10-11 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "49",
+    "Snaps": "1528",
+    "24/7 Sports": "98",
+    "ESPN": "73",
+    "Draft Buzz": "85.1 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.4",
+    "Gridiron": null
+  },
+  "position": "ED",
+  "college": "Alabama",
+  "height": "6' 5\"",
+  "weight": "278",
+  "age": 21.2,
+  "dob": "2004-10-11 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 49,
+  "snaps": 1528,
+  "site_ratings": {
+    "24/7 Sports": "98",
+    "ESPN": "73",
+    "Draft Buzz": "85.1 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.4",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "64.6",
+      "percentile": 0.05
+    },
+    "24 Grade": {
+      "value": "82.2",
+      "percentile": 0.65
+    },
+    "23 Grade": {
+      "value": "60.3",
+      "percentile": 0.0
+    },
+    "Pass Rush Grade": {
+      "value": "65.5",
+      "percentile": 0.1
+    },
+    "True Pass Rush": {
+      "value": "68.9",
+      "percentile": 0.105
+    },
+    "PR Win Rate": {
+      "value": "9.2",
+      "percentile": 0.105
+    },
+    "Run Def. Grade": {
+      "value": "64.7",
+      "percentile": 0.1
+    },
+    "Run Stop %": {
+      "value": "9.7",
+      "percentile": 0.95
+    },
+    "Sacks": {
+      "value": "5",
+      "percentile": 0.342
+    },
+    "Hits": {
+      "value": "2",
+      "percentile": 0.132
+    },
+    "Hurries": {
+      "value": "18",
+      "percentile": 0.211
+    },
+    "Batted Balls": {
+      "value": "1",
+      "percentile": 0.5
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.132
+    },
+    "Tackling Grade": {
+      "value": "62.1",
+      "percentile": 0.25
+    },
+    "Missed Tackle Rate": {
+      "value": "14.6",
+      "percentile": 0.579
+    },
+    "Total Pressures": {
+      "value": "25",
+      "percentile": 0.211
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 57.333333333333336,
+      "positional_rank": "10.5"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 52.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 95.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 78.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 73.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 31.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 29.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 23.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 26.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 49.333333333333336,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 45.0,
+    "Bleacher": null,
+    "Walter": 51.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Patrick JONES II",
+    "Bleacher": "Mario Edwards Jr",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.64,
+    "Pass Rush": 0.75,
+    "Run Defense": 0.73
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 8,
+      "career": 12
+    },
+    "B GAP": {
+      "2025": 32,
+      "career": 73
+    },
+    "Over Tackle": {
+      "2025": 119,
+      "career": 245
+    },
+    "Outside Tkl": {
+      "2025": 322,
+      "career": 836
+    },
+    "Off Ball": {
+      "2025": 2,
+      "career": 40
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "LT Overton provides a unique combination of being the size of an IDL but has the movement skills and athleticism of an edge rusher, allowing him to be versatile and provide high-level reps against the run and the pass."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nLT Overton arrived in College Station as one of the most decorated recruits in Texas A&M history, part of the Aggies' legendary 2022 class that featured eight five-star prospects. The Georgia native earned unanimous five-star status from every major recruiting service, ranking as the No. 4 defensive lineman and No. 17 overall player nationally. Overton reclassified to graduate high school a year early, demonstrating the advanced maturity and drive that made him a 2022 Under Armour All-American selection.\n\nHis freshman campaign at Texas A&M showed flashes across 323 defensive snaps, generating 14 total pressures including three quarterback hits, though he failed to register a sack. His sophomore season in 2023 brought disappointment as his playing time cratered to just 220 snaps with a meager three total pressures, prompting his decision to enter the transfer portal. Alabama jumped at the opportunity, with defensive line coach Freddie Roach establishing contact the moment Overton's name hit the portal.\n\nThe move to Tuscaloosa unleashed the player everyone expected when he signed with Texas A&M. Overton exploded in 2024, logging 503 defensive snaps while generating 39 total pressures including three sacks and 32 hurries. His dominant performance against Wisconsin, featuring six tackles, a sack, a forced fumble, and a pass breakup, earned defensive player of the week honors and validated the coaching staff's faith in his abilities. However, his senior season in 2025 revealed some regression as his pressure total plummeted to 24 despite similar snap counts (483), though he did manage five sacks. The inconsistency between his breakout junior year and slightly disappointing senior campaign raises questions about his development trajectory and whether 2024 represented his ceiling or an outlier performance.\n\nSCOUTING REPORT: SUMMARY\nWatch the tape from 2024 and you see a legitimate NFL starter. Overton generated 39 pressures, dominated Wisconsin in prime time, and looked every bit the five-star recruit who should have been doing this all along. The 2025 regression stings, but let's be real about what happened: teams started gameplanning for him, chipping him more, and he didn't have the counter moves developed yet. That's fixable with good coaching.\n\nHere's my projection: Overton comes in as a day two pick who earns a rotational role immediately and develops into a quality starter by year two. His best fit is in a multiple front that kicks him inside on passing downs where his power and length create problems for guards. The positional versatility isn't just a buzzword here, it's legitimate value. He took 1,529 career snaps across multiple alignments without looking lost, and that flexibility matters when you're trying to confuse offensive coordinators with pre-snap movement. Teams running attacking 3-4 schemes will love what he brings as a base end who can threaten from multiple spots.\n\nThe Wisconsin and Michigan performances show his ceiling, and it's higher than people think. When his hands fire correctly and he maintains his pad level, he wins against quality SEC tackles. Yeah, the consistency needs work and the tackling regression in 2024 was concerning, but we're talking about a 22-year-old kid with 40 career games under his belt who posted an elite grade in his first year as a full-time contributor. The physical tools are real: legitimate bend for his size, functional power that translates to bull rush effectiveness, and a motor that runs clean through four quarters. NFL defensive line coaches will get their hands on him and clean up the technical issues that held him back.\n\nBottom line: Overton's floor is a quality rotational piece who gives you 400-500 snaps and 4-5 sacks as a complementary rusher. His ceiling is a 10-sack guy who becomes a matchup problem when you move him around the formation. The 2024 tape proves the ceiling exists, and that's what you're betting on in rounds 2-3. Not every prospect needs to be perfect, they just need to show you the upside is worth developing."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "LT Overton is the most versatile defensive lineman in the 2026 NFL draft class. He's an impressive run defender with the potential to be an impactful pass—rusher at the next level.\n\nOverton is listed at 6'5\" and 278 pounds and originally went to Texas A&M as a 5—star recruit in the 2022 class, per 247Sports, before transferring to Alabama in 2024.\n\nHe received immediate playing time as a true freshman for the Aggies, totaling 31 tackles, three tackles for loss and one sack before seeing a dip in production with just 17 tackles and no TFLs or sacks in 2023. He became a starter with the Crimson Tide in 2024 and logged 42 tackles, three TFLs and two sacks.\n\nMatt Holder has been a part of B/R's Scouting Department for four seasons. He also writes about the Las Vegas Raiders and NFL draft for SB Nation's Silver and Black Pride, and co—hosts a YouTube Channel, Tape Don't Lie, providing film breakdowns and more draft prospect analysis."
+        },
+        {
+          "title": "Positives",
+          "text": "— Has experience playing several alignments along the defensive line, lining up anywhere from a 2i— to a 7—technique.\n\n— Strong and physical at the point of attack to stand up offensive tackles and get extension on blocks. Good at shedding blocks, too.\n\n— Plays with a wide base and has a thick lower half to be solid at absorbing contact and staying his gap against combo blocks from offensive tackles and tight ends.\n\n— Solid bull rush to collapse the pocket when he keeps his pads down.\n\n— Has decent change—of—direction movements and agility to be an effective looper on stunts and develop a finesse move if his hand usage improves/becomes more consistent.\n\n— Decent bend for his size."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Has a bit of a tweener body type; a little bulky for a defensive end and too light for a 3—technique.\n\n— Not explosive off the line of scrimmage and has a habit of doing too much dancing as a pass—rusher.\n\n— Accuracy with his hands as a pass—rusher is below average, Overton often misses and exposes his chest. Also, isn't good at working the hands after contact.\n\n— Can get caught playing with subpar pad level against the run."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.4,
+    "grade_indicator": null,
+    "overall_rank": 73,
+    "position_rank": null,
+    "pro_comparison": "Mario Edwards Jr",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

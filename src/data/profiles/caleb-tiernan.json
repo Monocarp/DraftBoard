@@ -1,0 +1,438 @@
+{
+  "name": "Caleb Tiernan",
+  "slug": "caleb-tiernan",
+  "overview": {
+    "POS": "OT",
+    "College": "Northwestern",
+    "Height": "6' 7\"",
+    "Weight": "325",
+    "Age": "23",
+    "DOB": "2003-01-23 00:00:00",
+    "Year": "G",
+    "Prj. Rd": null,
+    "Games": "47",
+    "Snaps": "2960",
+    "24/7 Sports": "90",
+    "ESPN": "83",
+    "Draft Buzz": "85.1 / 100",
+    "NFL.com": "TBD",
+    "BR": "7.1",
+    "Gridiron": null
+  },
+  "position": "OT",
+  "college": "Northwestern",
+  "height": "6' 7\"",
+  "weight": "325",
+  "age": 23.0,
+  "dob": "2003-01-23 00:00:00",
+  "year": "G",
+  "projected_round": null,
+  "games": 47,
+  "snaps": 2960,
+  "site_ratings": {
+    "24/7 Sports": "90",
+    "ESPN": "83",
+    "Draft Buzz": "85.1 / 100",
+    "NFL.com": "TBD",
+    "BR": "7.1",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "71.8",
+      "percentile": 0.2
+    },
+    "2024 Grade": {
+      "value": "82.3",
+      "percentile": 0.8
+    },
+    "2023 Grade": {
+      "value": "64.6",
+      "percentile": 0.222
+    },
+    "Run Block Grade": {
+      "value": "61.5",
+      "percentile": 0.0
+    },
+    "Pass Block Grade": {
+      "value": "84.3",
+      "percentile": 0.7
+    },
+    "True Pass Set Grade": {
+      "value": "80.3",
+      "percentile": 0.7
+    },
+    "Pass Block Efficiency": {
+      "value": "98",
+      "percentile": 0.2
+    },
+    "Zone Grade": {
+      "value": "67.1",
+      "percentile": 0.3
+    },
+    "Gap Grade": {
+      "value": "53.3",
+      "percentile": 0.0
+    },
+    "Sacks Allowed": {
+      "value": "3",
+      "percentile": 0.05
+    },
+    "Hits Allowed": {
+      "value": "4",
+      "percentile": 0.1
+    },
+    "Hurries Allowed": {
+      "value": "6",
+      "percentile": 0.75
+    },
+    "Pressures Allowed": {
+      "value": "13",
+      "percentile": 0.4
+    },
+    "Penalties": {
+      "value": "4",
+      "percentile": 0.55
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 66.28571428571429,
+      "positional_rank": "7.5"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 45.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 53.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 63.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 98.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 84.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 72.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 67.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Patrick PAUL",
+    "Bleacher": "Jaylon Moore",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.96,
+    "Run Blocking Grade": 0.72
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 830,
+      "career": 2431
+    },
+    "LG": {
+      "2025": 0,
+      "career": 0
+    },
+    "C": {
+      "2025": 0,
+      "career": 0
+    },
+    "RG": {
+      "2025": 0,
+      "career": 0
+    },
+    "RT": {
+      "2025": 1,
+      "career": 1
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nGrowing up at Detroit Country Day School, Caleb Tiernan wasn't just another big body - he was a dual-sport athlete who captained both the football and basketball teams his senior year. That athleticism caught the attention of the Big Ten's elite programs, with Michigan, Ohio State, and Penn State all vying for his services before he pledged to Northwestern in March 2020.\n\nTiernan's college journey began with patience and development. After redshirting in 2021 with just three game appearances, he burst onto the scene in 2022, starting five games at right tackle as a redshirt freshman. His breakout performance against Ohio State that season, where he stonewalled the Buckeyes' pass rush without allowing a single pressure, signaled bigger things ahead. The following year brought a position switch to left tackle and iron man status - starting all 13 games while logging 846 snaps, second-most on the team. He surrendered just one sack the entire 2023 campaign and went eight straight games without allowing a quarterback hit.\n\nHis 2024 season cemented his status as one of college football's premier blindside protectors. Through 34 career games with 30 consecutive starts, Tiernan has become Northwestern's anchor while earning Academic All-Big Ten honors along the way. The former four-star recruit who ranked as the 14th highest-rated signee in Northwestern history has transformed from raw potential into polished production. His high school credentials - 59 tackles, 22 for loss, and 8.5 sacks as a senior defensive end - seem like ancient history now, but they hint at the competitive fire that drives this mountain of a man who's been protecting quarterbacks at an elite level for the Wildcats.\n\nThe tape shows a fascinating dichotomy - Tiernan dances through pass sets like he's been doing it for a decade, yet sometimes looks like he's learning the run game on the fly. Watch him mirror elite edge rushers and you'll see a tackle who understands angles, timing, and hand placement at a veteran level. His ability to absorb power rushes without giving ground makes you forget he's still developing physically. But then the next series starts and he'll get walked back by a 270-pound defensive end on a power run, leaving you scratching your head about his functional strength.\n\n\n    \n    His basketball background jumps off the screen in space - the lateral agility and body control allow him to handle stunts and late blitzers with ease. Northwestern asked him to handle an island role against the Big Ten's best, and he rarely needed help. Yet that same movement skill hasn't translated to consistent displacement in the run game. He'll seal the edge beautifully on outside zone one play, then fail to generate any push on a simple down block the next. The technique is there, but the violence and leg drive remain inconsistent. His frame suggests more bad weight could be added, though his current mobility might suffer.\n\n\n    \n    Sunday readiness depends on scheme and expectations. The pass protection translates immediately - he'll handle NFL speed rushers from day one with his patient sets and active hands. Run game development becomes the swing factor for his ceiling. He won't embarrass himself between the tackles, but opposing defenses won't fear his run blocking either. The modern NFL values blindside protection above all else at tackle, and Tiernan delivers that in spades. Whether he evolves into a complete player or remains a passing-down specialist will determine if he becomes a perennial Pro Bowler or just a solid starter. Either way, somebody's getting a tackle who keeps their quarterback upright."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Caleb Tiernan lacks an elite physical trait, but he wins as a technically refined tackle, with an advanced understanding of leverage. As a result, Tiernan looks like a high—floor, quality swing backup at tackle or guard who can start in a pinch.\n\nTiernan is a 6'7\", 325—pound prospect, who entered the Northwestern program as a 4—star recruit in the 2021 class. In addition to being a two—way starter as left tackle and defensive tackle, Tiernan also became a four—year starting varsity basketball player.\n\nTiernan started 12 games at left tackle during the 2024 campaign. He started 18 games at tackle—13 at left and five on the right—in 2022 and '23."
+        },
+        {
+          "title": "Positives",
+          "text": "— Excellent hand—placement and strike—timing to bait rushers, establish quick leverage and reset when needed.\n\n— Efficient footwork, with balanced weight distribution, which consistently keeps him in—phase and in position to control blocks.\n\n— Smooth transition into his anchor by getting his hips back, bracing and cutting grass to withstand power.\n\n— Fluidly navigates space to intersect targets as a featured part of the screen game."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Looks to have a sawed—off frame for an offensive tackle of his stature\n\n— Can step under himself when moving laterally and leave him late when forced to redirect to inside counters.\n\n— Inside hand can drift up high on the near shoulder pad of rushers as he's carrying them up the arc, thus creating some leakage at the top of the quarterback's drop."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.1,
+    "grade_indicator": null,
+    "overall_rank": 98,
+    "position_rank": null,
+    "pro_comparison": "Jaylon Moore",
+    "projected_round": null
+  },
+  "injury_history": []
+}

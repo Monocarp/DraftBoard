@@ -1,0 +1,447 @@
+{
+  "name": "Tyreak Sapp",
+  "slug": "tyreak-sapp",
+  "overview": {
+    "POS": "ED",
+    "College": "Florida",
+    "Height": "6' 2\"",
+    "Weight": "274",
+    "Age": "23.4",
+    "DOB": "2002-10-05 00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": "48",
+    "Snaps": "1402",
+    "24/7 Sports": "92",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.3 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.8",
+    "Gridiron": null
+  },
+  "position": "ED",
+  "college": "Florida",
+  "height": "6' 2\"",
+  "weight": "274",
+  "age": 23.4,
+  "dob": "2002-10-05 00:00:00",
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": 48,
+  "snaps": 1402,
+  "site_ratings": {
+    "24/7 Sports": "92",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.3 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.8",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "64",
+      "percentile": 0.0
+    },
+    "24 Grade": {
+      "value": "90.4",
+      "percentile": 0.95
+    },
+    "23 Grade": {
+      "value": "74.4",
+      "percentile": 0.65
+    },
+    "Pass Rush Grade": {
+      "value": "57.7",
+      "percentile": 0.0
+    },
+    "True Pass Rush": {
+      "value": "58",
+      "percentile": 0.0
+    },
+    "PR Win Rate": {
+      "value": "6.7",
+      "percentile": 0.0
+    },
+    "Run Def. Grade": {
+      "value": "68.8",
+      "percentile": 0.25
+    },
+    "Run Stop %": {
+      "value": "7.5",
+      "percentile": 0.6
+    },
+    "Sacks": {
+      "value": "2",
+      "percentile": 0.053
+    },
+    "Hits": {
+      "value": "2",
+      "percentile": 0.132
+    },
+    "Hurries": {
+      "value": "14",
+      "percentile": 0.158
+    },
+    "Batted Balls": {
+      "value": "0",
+      "percentile": 0.158
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.132
+    },
+    "Tackling Grade": {
+      "value": "59.4",
+      "percentile": 0.2
+    },
+    "Missed Tackle Rate": {
+      "value": "14.3",
+      "percentile": 0.632
+    },
+    "Total Pressures": {
+      "value": "18",
+      "percentile": 0.053
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 97.42857142857143,
+      "positional_rank": "15"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 99.0,
+      "positional_rank": "17"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 131.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 90.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 72.0,
+      "positional_rank": "14"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 110.0,
+      "positional_rank": "27"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 59.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "3RD",
+    "Bleacher": "4th Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Marshawn KNEELAND",
+    "Bleacher": "Michael Clemons",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.0,
+    "Pass Rush": 0.82,
+    "Run Defense": 0.73
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 0,
+      "career": 2
+    },
+    "B GAP": {
+      "2025": 28,
+      "career": 112
+    },
+    "Over Tackle": {
+      "2025": 149,
+      "career": 422
+    },
+    "Outside Tkl": {
+      "2025": 226,
+      "career": 575
+    },
+    "Off Ball": {
+      "2025": 4,
+      "career": 8
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nTyreak Sapp has steadily climbed the Gators' depth chart since arriving as a four-star recruit from powerhouse St. Thomas Aquinas High School. After redshirting in 2021, Sapp gradually increased his production over three seasons, culminating in a breakout 2024 campaign where he led the Gators with seven sacks and 13 tackles-for-loss while forcing two fumbles.\n\nStanding 6'3\" and weighing 272 pounds, Sapp possesses an NFL-ready frame that combines power and functional movement skills. His journey through Florida's program showcases steady development-starting with special teams contributions as a redshirt freshman in 2022 (20 tackles), becoming a rotational piece in 2023 (24 tackles, 2 sacks), before blossoming into a disruptive force in 2024. What's particularly impressive about Sapp's senior season was his consistency and timing of impact plays, with critical fourth-quarter sacks against ranked opponents like Ole Miss and clutch tackles for loss against LSU that changed game outcomes.\n\nThe numbers only tell part of the story with Sapp, whose technical refinement caught the eye of analysts throughout the 2024 season. His 90.4 PFF grade ranked eighth among all FBS edge rushers and was the highest for any Florida defender since Jonathon Greenard in 2019. More telling was his dominant 94.8 run defense grade, which ranked among the elite in college football.\n\nSCOUTING REPORT: SUMMARY\nDespite lacking the elite bend and explosiveness that defines premier edge rushers, Sapp's technical refinement and power at the point of attack make him an immediate contributor on early downs. His exceptional run defense jumps off the tape - shocking power from his hands and natural leverage consistently reset the line of scrimmage. When rushing the passer, athletic limitations become more apparent, relying more on power and timing than the quick-twitch traits coveted in high-end rushers.\n\nThe gap between Sapp's run defense and pass rush abilities reveals his likely NFL ceiling - a high-floor starter whose impact may never fully translate to splash plays and highlight reels. His initial quickness limitations will be magnified against NFL tackles, potentially relegating him to more of a power rusher who wins with technique rather than athleticism. Yet his versatility to reduce inside on passing downs adds valuable scheme flexibility in a league that increasingly demands it.\n\nWhat makes Sapp intriguing is how he's maximized his physical tools through technical development. Those violent hands and leverage fundamentals will translate immediately, even while his athletic ceiling caps his pass rush potential. The team that drafts him will be getting a ready-made run defender with enough pass rush ability to stay on the field in most situations - a valuable combination in the draft's first two days. His play style brings a physical edge that helps establish defensive identity while his technical approach offers reliability that coordinators value in building a defensive front.\nWRITTEN BY:\nBILL MILLER (SEC)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Tyreak Sapp is one of those \"strong as a bull\" type of edge prospects, combining size—he's listed at 6'2.5\", 272 pounds—and heavy hands to be a good run defender at the next level. He's limited as a pass—rusher, though.\n\nSapp went to Florida as a 4—star recruit in the 2021 class and redshirted during his first year on campus. He was a rotational player as a redshirt freshman before becoming a starter the following year and enjoying a breakout campaign in 2024, collecting 47 tackles, 13 for loss and seven sacks during that season.\n\nHowever, the Gator has not received any postseason recognition as of Oct. 14, 2025."
+        },
+        {
+          "title": "Positives",
+          "text": "— Thick build and carries his frame well with little—to—no bad weight.\n\n— very Good upper body strength to get extension on blocks and stand up offensive tackles. Also, Sapp is quick to get his hands up as a run defender and can knock linemen climbing to the second level off their path to help free up linebackers.\n\n— takes on blocks with a wide base and is hard to move one—on—one against the run. he can set the edge against tackles and create stalemates against interior offensive linemen in short—yardage situations.\n\n— Good Block recognition to avoid getting washed inside by down blocks, getting reached or get underneath pullers as the spill player in run fits.\n\n— quick first step and a decent rip move to help get penetration when slanting.\n\n— has shown flashes of being able to win as a power rusher with decent long—arm and push—pull moves."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Not twitchy and lacks explosiveness off the line of scrimmage to threaten offensive tackles with speed as a pass—rusher.\n\n— Subpar explosiveness and change of direction skills hinder his effectiveness at turning speed to power and when bull rushing.\n\n— Use of hands as a pass—rusher is poor; Sapp either drops his hands, is very inaccurate or doesn't have good timing to win the hand fight against offensive tackles.\n\n— Lacks the ideal height for an NFL defensive end and appears to have shorter arms, which also impacts his use of hands and allows offensive linemen to make the first significant contact.\n\n— Could afford to be more violent when shedding to get off blocks."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.8,
+    "grade_indicator": null,
+    "overall_rank": 131,
+    "position_rank": null,
+    "pro_comparison": "Michael Clemons",
+    "projected_round": "4th Round"
+  },
+  "injury_history": []
+}

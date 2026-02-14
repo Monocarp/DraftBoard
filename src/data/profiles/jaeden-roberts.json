@@ -1,0 +1,422 @@
+{
+  "name": "Jaeden Roberts",
+  "slug": "jaeden-roberts",
+  "overview": {
+    "POS": "IOL",
+    "College": "Alabama",
+    "Height": "6' 5\"",
+    "Weight": "327",
+    "Age": "23.0",
+    "DOB": "2002-12-22 00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": "36",
+    "Snaps": "1413",
+    "24/7 Sports": "88",
+    "ESPN": "TBD",
+    "Draft Buzz": "83.5 / 100",
+    "NFL.com": "TBD",
+    "BR": "TBD",
+    "Gridiron": null
+  },
+  "position": "IOL",
+  "college": "Alabama",
+  "height": "6' 5\"",
+  "weight": "327",
+  "age": 23.0,
+  "dob": "2002-12-22 00:00:00",
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": 36,
+  "snaps": 1413,
+  "site_ratings": {
+    "24/7 Sports": "88",
+    "ESPN": "TBD",
+    "Draft Buzz": "83.5 / 100",
+    "NFL.com": "TBD",
+    "BR": "TBD",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "69.5",
+      "percentile": 0.3
+    },
+    "2024 Grade": {
+      "value": "67.3",
+      "percentile": 0.2
+    },
+    "2023 Grade": {
+      "value": "76.7",
+      "percentile": 0.9
+    },
+    "Run Block Grade": {
+      "value": "62.6",
+      "percentile": 0.0
+    },
+    "Pass Block Grade": {
+      "value": "87.5",
+      "percentile": 0.9
+    },
+    "True Pass Set Grade": {
+      "value": "77.6",
+      "percentile": 0.5
+    },
+    "Pass Block Efficiency": {
+      "value": "99.3",
+      "percentile": 0.7
+    },
+    "Zone Grade": {
+      "value": "63.1",
+      "percentile": 0.0
+    },
+    "Gap Grade": {
+      "value": "63.9",
+      "percentile": 0.4
+    },
+    "Sacks Allowed": {
+      "value": "1",
+      "percentile": 0.5
+    },
+    "Hits Allowed": {
+      "value": "0",
+      "percentile": 0.8
+    },
+    "Hurries Allowed": {
+      "value": "1",
+      "percentile": 1.0
+    },
+    "Pressures Allowed": {
+      "value": "2",
+      "percentile": 1.0
+    },
+    "Penalties": {
+      "value": "1",
+      "percentile": 0.8
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 128.33333333333334,
+      "positional_rank": "8"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 149.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "0"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 69.0,
+      "positional_rank": "32"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 167.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "TBD"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Tate RATLEDGE",
+    "Bleacher": "TBD",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.83,
+    "Run Blocking Grade": 0.7
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 1,
+      "career": 1
+    },
+    "LG": {
+      "2025": 0,
+      "career": 0
+    },
+    "C": {
+      "2025": 0,
+      "career": 0
+    },
+    "RG": {
+      "2025": 326,
+      "career": 1398
+    },
+    "RT": {
+      "2025": 0,
+      "career": 502
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nAfter spending his first two seasons in Tuscaloosa largely as a developmental prospect, Jaeden Roberts emerged from the shadows in 2023, stringing together eight consecutive starts that showcased his mauling style and raw power. His trajectory took another leap forward in 2024 when he locked down the right guard position for 12 games, earning recognition on both the Lombardi and Outland Trophy watch lists while establishing himself as a force in the Crimson Tide's ground attack.\n\nThe Houston native began making waves at North Shore High School, where he helped secure back-to-back Texas 6A D-I state championships before arriving at Alabama as a four-star ESPN recruit. His journey through the program has been defined by steady development and growing consistency, culminating in a breakthrough 2024 campaign where he routinely notched impressive knockdown totals while maintaining clean pass protection sheets. Despite battling through undisclosed pain that limited his mobility at times, Roberts gutted through the season, demonstrating the toughness NFL evaluators covet from interior linemen.\n\nWhat stands out on Roberts' resume beyond the physical tools is his gradual technical refinement. From a raw prospect who saw just three snaps in the 2022 Sugar Bowl to a lineman who graded out at 92 percent against Wisconsin and logged a career-high six knockdowns against a vaunted Georgia defense, Roberts' development curve suggests his ceiling remains untapped heading into his fifth season. The persistent injury concerns that hampered his movement in 2024 raise questions about durability, but his decision to return for a final campaign provides an opportunity to silence those doubts while cementing his draft stock.\n\nWhen watching Roberts' tape, the brutal effectiveness in the run game immediately jumps off the screen, yet so do the concerning limitations in space. The man moves bodies with malicious intent in tight quarters but finds himself struggling when asked to climb to the second level with consistency. Gap and power schemes will showcase his strengths - the ability to displace defenders and create immediate vertical movement that gives backs those crucial first two yards untouched. The concern comes on passing downs against the increasingly athletic interior defenders populating NFL fronts.\n\n\n\nThe technical refinement from his early Alabama film to current tape shows the developmental upside still bubbling beneath the surface. While his anchor strength frustrates bull-rushers, his recovery mechanics and lateral agility need significant work to handle the counter moves and stunts he'll face weekly at the next level. The medical concerns that visibly affected his mobility in 2024 require thorough investigation - playing through pain speaks to his toughness, but also raises red flags about durability over a 17-game NFL season.\n\n\n\nRoberts' fifth year at Alabama will be defining for his draft trajectory. If he can maintain his punishing power while demonstrating improved hand placement and quicker lateral transitions, he has starter potential in the right system. The game film reveals a tone-setter with the mean streak and finishing mentality coaches covet, but also a player with technical flaws that require patience. His developmental arc suggests the ceiling remains higher than what we've seen, making his 2025 campaign essential viewing for evaluators trying to project whether the flashes of dominance can become consistent performances at the next level.   \n\n                                        \n                                            \n                                                Written By:\n                                                Wyatt Brooks (SEC)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "injury_history": []
+}

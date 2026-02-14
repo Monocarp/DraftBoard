@@ -1,0 +1,420 @@
+{
+  "name": "Trey Moore",
+  "slug": "trey-moore",
+  "overview": {
+    "POS": "LB",
+    "College": "Texas",
+    "Height": "6' 3\"",
+    "Weight": "249",
+    "Age": "0",
+    "DOB": "00:00:00",
+    "Year": null,
+    "Prj. Rd": null,
+    "Games": "55",
+    "Snaps": "2246",
+    "24/7 Sports": "93",
+    "ESPN": "TBD",
+    "Draft Buzz": "80.2 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "TBD",
+    "Gridiron": null
+  },
+  "position": "LB",
+  "college": "Texas",
+  "height": "6' 3\"",
+  "weight": "249",
+  "age": 0.0,
+  "dob": "00:00:00",
+  "year": null,
+  "projected_round": null,
+  "games": 55,
+  "snaps": 2246,
+  "site_ratings": {
+    "24/7 Sports": "93",
+    "ESPN": "TBD",
+    "Draft Buzz": "80.2 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "TBD",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "66.6",
+      "percentile": 0.0
+    },
+    "24 Grade": {
+      "value": "75.9",
+      "percentile": 0.5
+    },
+    "23 Grade": {
+      "value": "78",
+      "percentile": 1.0
+    },
+    "Pass Rush Grade": {
+      "value": "70.4",
+      "percentile": 0.8
+    },
+    "Run Def. Grade": {
+      "value": "73.2",
+      "percentile": 0.0
+    },
+    "Run Stop %": {
+      "value": "5.4",
+      "percentile": 0.0
+    },
+    "Tackles": {
+      "value": "22",
+      "percentile": 0.0
+    },
+    "Tackling Grade": {
+      "value": "68.1",
+      "percentile": 0.2
+    },
+    "Missed Tkl Rate": {
+      "value": "15.4",
+      "percentile": 0.1
+    },
+    "ADORT": {
+      "value": "1.9",
+      "percentile": 0.05
+    },
+    "Coverage": {
+      "value": "53.8",
+      "percentile": 0.1
+    },
+    "Coverage Stops": {
+      "value": "7",
+      "percentile": 0.0
+    },
+    "Recs/Tgts": {
+      "value": "0",
+      "percentile": 0.5
+    },
+    "Completion %": {
+      "value": "85.7",
+      "percentile": 0.1
+    },
+    "TD / INT": {
+      "value": "1 / 0",
+      "percentile": null
+    },
+    "Forced Inc Rate": {
+      "value": "4.8",
+      "percentile": 0.4
+    },
+    "Pass Rat. All.": {
+      "value": "121",
+      "percentile": 0.0
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 138.5,
+      "positional_rank": "10"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 131.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 146.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "6TH",
+    "Bleacher": "TBD"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Nick HAMPTON",
+    "Bleacher": "TBD",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.7,
+    "Pass Rush": 0.79,
+    "Run Defense": 0.77,
+    "Coverage": 0.68
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 203,
+      "career": 1245
+    },
+    "Slot": {
+      "2025": 52,
+      "career": 136
+    },
+    "Corner": {
+      "2025": 1,
+      "career": 3
+    },
+    "Box": {
+      "2025": 230,
+      "career": 278
+    },
+    "Deep": {
+      "2025": 0,
+      "career": 0
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nTrey Moore, a 6'2\", 250-pound outside linebacker and edge rusher, was born on August 15, 2002, in Spring Branch, Texas. He attended Smithson Valley High School, where he earned District 27-6A Defensive Player of the Year honors as a senior. Moore's high school career culminated with impressive stats: 70 tackles, 19 tackles for loss, 8 sacks, and 3 blocked kicks in his final season.\n\nMoore began his college career at the University of Texas at San Antonio (UTSA) in 2021. After a redshirt freshman year with limited playing time, he exploded onto the scene in 2022, breaking the school's single-season record for tackles for loss with 18. His sophomore campaign included 59 total tackles, 8 sacks, and 2 forced fumbles, earning him Freshman All-American honors from multiple publications. Moore's junior year in 2023 was even more impressive, as he set a new UTSA record with 14 sacks and was named the American Athletic Conference Defensive Player of the Year.\n\nFollowing his standout performances at UTSA, Moore transferred to the University of Texas for the 2024 season. His college career stats to date include 105 total tackles, 35.5 tackles for loss, 22 sacks, 3 forced fumbles, and 1 interception across 28 games. Moore's transfer to Texas marks a significant step up in competition, as he moves from the Group of Five to the Power Five level, joining one of college football's most storied programs.\n\nSCOUTING REPORT: SUMMARY\nMoore projects as a high-upside edge rusher in the NFL, with the potential to make an immediate impact as a situational pass rusher. His elite pass-rushing productivity and athleticism will appeal to teams running aggressive 3-4 or 4-3 defensive schemes. Moore's ability to drop into coverage adds versatility that defensive coordinators will value.\n\nHis transition to SEC competition at Texas will be crucial in evaluating his NFL readiness. If Moore can replicate his production against top-tier offensive linemen, he could solidify himself as a potential first-round selection. Teams will be watching closely to see how he performs against the run and whether he can maintain his disruptive presence in the backfield.\n\nMoore's combination of production, athleticism, and room for growth makes him an intriguing prospect. His success at the next level will likely hinge on his ability to refine his technique and adapt to the increased physicality of NFL offensive linemen. With continued development, Moore has the tools to become a impactful edge defender at the professional level."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "injury_history": []
+}

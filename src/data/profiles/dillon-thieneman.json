@@ -1,0 +1,468 @@
+{
+  "name": "Dillon Thieneman",
+  "slug": "dillon-thieneman",
+  "overview": {
+    "POS": "SAF",
+    "College": "Oregon",
+    "Height": "6' 0\"",
+    "Weight": "205",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": "1st Rd",
+    "Games": "39",
+    "Snaps": "2417",
+    "24/7 Sports": "87",
+    "ESPN": "85",
+    "Draft Buzz": "86.0 / 100",
+    "NFL.com": "6.32",
+    "Bleacher": "7.9",
+    "Gridiron": "TBD"
+  },
+  "position": "SAF",
+  "college": "Oregon",
+  "height": "6' 0\"",
+  "weight": "205",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Jr",
+  "projected_round": "1st Rd",
+  "games": 39,
+  "snaps": 2417,
+  "site_ratings": {
+    "24/7 Sports": "87",
+    "ESPN": "85",
+    "Draft Buzz": "86.0 / 100",
+    "NFL.com": "6.32",
+    "Bleacher": "7.9",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "90.7",
+      "percentile": 0.909
+    },
+    "24 Grade": {
+      "value": "72.4",
+      "percentile": 0.3
+    },
+    "23 Grade": {
+      "value": "89.5",
+      "percentile": 1.0
+    },
+    "Coverage Grade": {
+      "value": "91",
+      "percentile": 0.909
+    },
+    "Interceptions": {
+      "value": "2",
+      "percentile": 0.545
+    },
+    "Forced Inc. Rate": {
+      "value": "18.5",
+      "percentile": 0.818
+    },
+    "Passer Rating Alwd": {
+      "value": "66.9",
+      "percentile": 0.455
+    },
+    "TD Allowed/Ints": {
+      "value": "2 / 2",
+      "percentile": null
+    },
+    "Coverage Stops": {
+      "value": "11",
+      "percentile": 0.818
+    },
+    "Run Def Grade": {
+      "value": "73.1",
+      "percentile": 0.455
+    },
+    "Run Stops": {
+      "value": "12",
+      "percentile": 0.545
+    },
+    "Tackling Grade": {
+      "value": "88.8",
+      "percentile": 0.909
+    },
+    "Tackles": {
+      "value": "63",
+      "percentile": 0.909
+    },
+    "Assisted Tackles": {
+      "value": "24",
+      "percentile": 0.727
+    },
+    "Missed Tackles": {
+      "value": "8",
+      "percentile": 0.636
+    },
+    "Missed Tackle Rate": {
+      "value": "8.4",
+      "percentile": 0.818
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 42.3,
+      "positional_rank": "3.2857142857142856"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 49.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 43.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 23.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 27.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 43.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 48.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 49.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 40.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 25.0,
+      "positional_rank": "3"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 48.8,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 38.0,
+    "Bleacher": 32.0,
+    "Walter": 93.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - EARLY",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "Jevon Holland",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Daxton Hill",
+    "WF": "TBD",
+    "NFL.com": "Jevon Holland"
+  },
+  "strengths": "• Top Tier Effort/Motor\n• Willing and Able Run Defender\n• Backpedal and Athleticism to Mirror and Trigger Effectively\n• Great Range and Instincts\n• Superb Coverage Grade\n• Allignment Versatile",
+  "weaknesses": "• Processing Speed Needs To Improve\n• Pursuit Angles Inconsistent\n• Gets Caught With Eyes in Backfield",
+  "accolades": "• 2025 1st Team All American\n• 2023 Big 10 Freshman OTY\n• 2023 3rd Team All American\n• 2023 2nd Team All Big 10",
+  "player_summary": "Thieneman, a 3-year starter delivers rare production (306 career tackles, eight interceptions) with NFL-ready size, speed, and alignment versatility across both safety spots, big nickel, and potentially slot coverage. Functioning as an on-field extension of the coordinator, he excels at pre-snap adjustments, reading route concepts and spacing in zone, tracking the ball deep, and maintaining quarterback focus while ranging over the top. His instinctive downhill triggers and relentless pursuit squeeze run lanes and keep him around the football, stacking tackles despite not being a dominant thumper. Limitations appear in man coverage, where average COD quickness allows routes to separate late; he can be step-slow adjusting perimeter angles, struggles with hand usage to shed blocks, and shows hit/miss variability plus modest stopping power against bigger ball-carriers. Thieneman projects as a versatile, high-IQ three-down safety with early starting potential.",
+  "draftbuzz_grades": {
+    "QBR When Targeted": 95.5,
+    "Tackling": 0.74,
+    "Run Defense": 0.79,
+    "Coverage Grade": 0.92,
+    "Zone Coverage": 0.89,
+    "Man/Press": 0.92
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 112,
+      "career": 112
+    },
+    "Box": {
+      "2025": 392,
+      "career": 392
+    },
+    "Corner": {
+      "2025": 5,
+      "career": 5
+    },
+    "Deep": {
+      "2025": 235,
+      "career": 235
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": "Top Tier Effort, loves to compete (BR)\nYoung, 21",
+      "negatives": null
+    }
+  },
+  "media_links": [
+    {
+      "description": "Career Highlights",
+      "source": "YT - Prospects",
+      "url": "https://www.youtube.com/watch?v=bIL8AztNmtI"
+    },
+    {
+      "description": "Film Breakdown",
+      "source": "YT - Jets Film Room",
+      "url": "https://www.youtube.com/watch?v=TYEWifuSpN4"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Savvy three-year starter with NFL size, speed and alignment versatility. Thieneman is an extension of his defensive coordinator, aligning and adjusting the secondary to motion and pre-snap shifts. He’s an instinctive, rangy safety who can roll down into big nickel or robber positioning. He has a good feel for play design and route concepts in zone but has average change of direction to match breaks in man. He’s not a big thumper near the line, but he rushes into the action with a relentless pursuit that should allow him to keep stacking high scores in the tackle columns. Thieneman checks important boxes for teams looking to add versatile playmakers in the secondary."
+        },
+        {
+          "title": "Strengths",
+          "text": "Rare production (306 tackles, eight interceptions) in his three seasons. | Size/athleticism combination to play all three safety positions. | High coverage IQ with a strong feel for spacing and route structure. | Range and ball-tracking ability to play over the top. | Rarely takes eyes off the quarterback for extended periods of time. | Persistent pursuit of the football keeps him near the action. | Reads run and races downhill to squeeze work space for ball-carriers. | Recognizes run track and bolts to the junction point ready to meet the runner."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Man coverage begins to show cracks as the route progresses. | Average short space change-of-direction quickness. | Step slow to adjust his pursuit angles to the perimeter. | Needs better hand usage to stack and play off blocks. | Full speed alley running leads to greater hit/miss variability. | Average stopping power when bringing down bigger bodies."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nThe Thieneman name was already part of Purdue football lore before Dillon ever stepped on campus. His brothers walked on with the Boilermakers, but Dillon took a different path to West Lafayette. Coming out of Westfield High School in Indiana, he was a three-star prospect ranked No. 12 in the state and No. 61 nationally at his position by 247Sports. He earned Indiana's Mr. Football honor at defensive back in 2022 and put up eye-popping prep numbers: 246 tackles, 11 tackles for loss, 11 passes defended, and five interceptions across his high school career. Recruiting services had him pegged as a solid but unspectacular get, with ratings of 5.6 from Rivals and an 0.87 composite from 247.\n\nThat unspectacular label lasted about three weeks into his freshman season. In his collegiate debut against Fresno State, Thieneman posted 10 tackles and an interception, and he never slowed down. By season's end, he had racked up 106 total tackles (74 solo), six interceptions, and two forced fumbles while earning FWAA Defensive Freshman of the Year, Big Ten Freshman of the Year, and third-team All-American recognition. He became the first defender in Big Ten history to win a conference weekly award five times in a single season. His sophomore campaign brought more of the same production, leading all Big Ten defensive backs with 104 tackles while adding seven pass breakups and a sack across 12 starts, though the Boilermakers cratered to a 1-11 record around him.\n\nThat dismal team record pushed Thieneman into the transfer portal, where Oregon's Dan Lanning pounced. The move to Eugene was transformative in every sense. Thieneman earned first-team All-Big Ten and first-team All-American honors in 2025, picking off two more passes while continuing to pile up tackles (99 total, 72 solo) and adding four pass breakups and 30 run stops. His 5:30 a.m. arrival time at the facility became a running joke among teammates who quickly realized the Indiana kid was wired differently. After three seasons of elite production totaling over 300 career tackles and eight interceptions, Thieneman declared for the 2026 NFL Draft with feedback projecting him as a top-50 selection.\n\nThieneman is the kind of safety who walks into a defensive meeting room on Day One and immediately earns his keep. The coverage grades speak loudly, but what separates him is the totality of the package. This is a player who can align in a two-high shell pre-snap, rotate down to a robber look post-snap, and then fill an alley against the run with real physicality, all within the same drive. The modern NFL is demanding exactly this type of defensive back, and Thieneman's college production in multiple schemes and alignments suggests his transition should be smoother than most.\n\n\n\n\n\nHis best fit is in a defense that values pre-snap disguise and post-snap versatility in the secondary. Defensive coordinators who run multiple coverage structures and ask their safeties to communicate and adjust on the fly will love what Thieneman brings to the table. His coverage instincts and diagnostic ability make him a natural fit in split-safety looks, but his tackling and run support are good enough that he won't be a liability when asked to come down into the box. The 4.4 speed is the icing, giving him the kind of range that makes coordinators comfortable playing him as a true centerfielder when the situation calls for it.\n\n\n\n\n\nThe concerns are real but manageable. He needs to add some functional mass to hold up better against blocks at the next level, and the occasional over-aggressiveness against play-action will get exploited by NFL quarterbacks who are far better at manipulating safeties with their eyes. But these are refinement issues for a coaching staff, not red flags on a scouting report. Thieneman's combination of good speed, proven versatility, reliable tackling, and ball-hawking ability in coverage makes him one of the safer selections in this draft class. His floor is a quality starter who contributes from the jump, and his ceiling stretches well beyond that if a defensive staff puts him in a position to be the quarterback of the back end."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Dillon Theineman's versatile skillset is being underrated as a true three—down impact defender in the NFL. He can line up anywhere, triggers downhill in a hurry, and gives the coaching staff his all whenever he's on the field. The effort shows up in every phase.\n\nHe's a former 3—star recruit and a former 4—star transfer from Purdue following the 2024 season.\n\nThieneman broke into college football in a big way, earning second—team All—Big Ten and third—team All—American honors as a freshman in 2023. He transferred to Oregon after his 2024 season, where he had 70 solo tackles and 34 assists, including four tackles for loss and broke up seven passes"
+        },
+        {
+          "title": "Positives",
+          "text": "— Willing and able run defender in the box and from depth. He triggers and flows downhill in the run gamne and looks to make an impact.\n\n— Defensive backfield alignment versatility from a two—high alignment to the nickel. He has the range and instincts to give a defense single—high impact as well.\n\n— He sees the field well from all levels and locates the football. Allows him to vary between playing the run and the pass.\n\n— His backpedal and athleticism let him mirror and trigger on throws. Paired with his ball skills to attack the catch point, he can dislodge the football.\n\n— Plays the game with top—tier effort and will track down ball carriers from any depth. He just loves to compete."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Pursuit angles to properly line up the ball carrier when triggering downhill. That can change angles from reaching at the ankles to running through a tackle.\n\n— He's a smart player and wants to quickly get downhill, but can get caught with eyes in the backfield. Needs to be a tick more patient on play fakes to not get taken advantage of.\n\n— Processing speed and urgency when identifying route combinations will let him flow and pass off responsibilites at a better rate."
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.32,
+    "prospect_grade_indicator": "Will Eventually Be Plus Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Jevon Holland",
+    "eligibility": "Junior",
+    "nfl_rank": 25,
+    "nfl_pos_rank": 3
+  },
+  "bleacher_profile": {
+    "grade": 7.9,
+    "grade_indicator": null,
+    "overall_rank": 27,
+    "position_rank": null,
+    "pro_comparison": "Daxton Hill",
+    "projected_round": "2nd Round"
+  },
+  "injury_history": [
+    {
+      "detail": "MCL Tear",
+      "recovery_time": "Unclear",
+      "year": "High School"
+    }
+  ]
+}

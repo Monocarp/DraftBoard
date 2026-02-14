@@ -1,0 +1,398 @@
+{
+  "name": "Eli Stowers",
+  "slug": "eli-stowers",
+  "overview": {
+    "POS": "TE",
+    "College": "Vanderbilt",
+    "Height": "6' 4\"",
+    "Weight": "235",
+    "Age": "22.9",
+    "DOB": "2003-04-15 00:00:00",
+    "Year": "G",
+    "Prj. Rd": null,
+    "Games": "39",
+    "Snaps": "1269",
+    "24/7 Sports": "94",
+    "ESPN": "80",
+    "Draft Buzz": "85.1 / 100",
+    "NFL.com": "TBD",
+    "BR": "6.5",
+    "Gridiron": "TBD"
+  },
+  "position": "TE",
+  "college": "Vanderbilt",
+  "height": "6' 4\"",
+  "weight": "235",
+  "age": 22.9,
+  "dob": "2003-04-15 00:00:00",
+  "year": "G",
+  "projected_round": null,
+  "games": 39,
+  "snaps": 1269,
+  "site_ratings": {
+    "24/7 Sports": "94",
+    "ESPN": "80",
+    "Draft Buzz": "85.1 / 100",
+    "NFL.com": "TBD",
+    "BR": "6.5",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "81.5",
+      "percentile": 1.0
+    },
+    "2024 Grade": {
+      "value": "86.9",
+      "percentile": 1.0
+    },
+    "2023 Grade": {
+      "value": "71.8",
+      "percentile": 1.0
+    },
+    "Receiving Grade": {
+      "value": "85.2",
+      "percentile": 1.0
+    },
+    "Drop %": {
+      "value": "6.1",
+      "percentile": 0.4
+    },
+    "Cont. Catch Ratio": {
+      "value": "41.2",
+      "percentile": 0.3
+    },
+    "Yards Per Route Run": {
+      "value": "2.55",
+      "percentile": 1.0
+    },
+    "YAC Per Reception": {
+      "value": "6.1",
+      "percentile": 0.7
+    },
+    "Missed Tkles Forced": {
+      "value": "9",
+      "percentile": 0.9
+    },
+    "Pass Block Grade": {
+      "value": "71.5",
+      "percentile": 0.6
+    },
+    "Run Block Grade": {
+      "value": "51.2",
+      "percentile": 0.2
+    },
+    "Touchdowns": {
+      "value": "4",
+      "percentile": 0.6
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 70.625,
+      "positional_rank": "4.166666666666667"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 50.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 65.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 48.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 149.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 79.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 68.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 44.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 48.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 48.0,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Trey MCBRIDE",
+    "Bleacher": "0",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 108.9,
+    "Hands": 0.84,
+    "Short Receiving": 0.93,
+    "Intermediate Routes": 0.94,
+    "Deep Threat": 0.94,
+    "Blocking": 0.66
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot Snaps": {
+      "2025": 221,
+      "career": null
+    },
+    "Inline Snaps": {
+      "2025": 83,
+      "career": null
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nThe road to elite tight end prospect isn't typically paved with quarterback cleats, but Eli Stowers has blazed an unconventional path to the NFL draft. A former four-star QB recruit and Texas 6A high jump state champion (with a remarkable 7-foot clearance), Stowers initially landed at Texas A&M where he spent two seasons as a reserve signal-caller. His journey took a pivotal turn when he transferred to New Mexico State and transitioned to tight end, immediately showcasing natural receiving ability that belied his newcomer status at the position. After earning Honorable Mention All-Conference USA honors with the Aggies, Stowers followed offensive coordinator Tim Beck to Vanderbilt for his graduate season.\n\nAt Vanderbilt, the former Denton Guyer High School standout detonated in the SEC, establishing himself as Diego Pavia's lifeline in the passing attack. His breakout 2024 campaign featured several jaw-dropping performances, including a six-catch, 113-yard masterclass in Vandy's historic upset over top-ranked Alabama. The Biletnikoff Award watch lister finished his final collegiate season with 49 receptions for 638 yards and five touchdowns, earning first-team All-SEC honors and semifinalist recognition for the Mackey Award. His rapid development curve and immediate production against elite competition showed a natural feel for a position he'd only recently adopted.\n\nDespite flashing tantalizing receiving traits, Stowers opted to return for the 2025 season to refine his craft rather than declaring for the previous draft. The decision paid dividends as he added muscle to his frame while honing blocking techniques previously foreign to the former quarterback.\n\nThe gap between Stowers' receiving prowess and blocking limitations creates a fascinating evaluation. Every jaw-dropping seam route and contested catch must be weighed against the reality of his struggles at the point of attack. What you're getting is a dynamic pass-catching specialist who'll need schematic protection early in his career. His basketball-like rebounding skills in the red zone provide immediate value, but his inability to sustain blocks against defensive ends will limit his snap count in traditional formations until significant strength gains materialize.\n\n\n\nWhen the ball's in the air, Stowers transforms into a matchup nightmare with elite speed that forces defenses to account for his vertical presence. This aerial threat comes packaged with surprising after-catch wiggle that can turn routine completions into chunk gains. The flip side reveals a player who gets overwhelmed when asked to anchor against bull rushers or create movement in the run game. Offensive coordinators must balance his explosive receiving traits against the potential liability he presents when asked to handle traditional inline blocking responsibilities.\n\n\n\nHis developmental trajectory hinges on two critical factors: physical development and landing in a system that values his specific skill set. The foundation of natural hands and route intelligence provides a solid base to build upon, while his late transition to the position suggests untapped potential still waiting to be unlocked. Though he'll enter the league as more \"big receiver\" than complete tight end, his unique athletic profile and former quarterback background provide the tools that could yield serious returns. The transition from quarterback to tight end isn't fully complete, but the ceiling remains tantalizing for a teamwilling to invest in his continued growth."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.5,
+    "grade_indicator": null,
+    "overall_rank": 149,
+    "position_rank": null,
+    "pro_comparison": null,
+    "projected_round": null
+  },
+  "injury_history": []
+}

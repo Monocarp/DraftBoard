@@ -1,0 +1,528 @@
+{
+  "name": "Caleb Lomu",
+  "slug": "caleb-lomu",
+  "overview": {
+    "POS": "OT",
+    "College": "Utah",
+    "Height": "6' 6\"",
+    "Weight": "308",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "RS So.",
+    "Prj. Rd": "1st Round",
+    "Games": "27",
+    "Snaps": "1620",
+    "24/7 Sports": "94",
+    "ESPN": "90",
+    "Draft Buzz": "86.4 / 100",
+    "NFL.com": "6.36",
+    "BR": "7.5",
+    "Gridiron": null
+  },
+  "position": "OT",
+  "college": "Utah",
+  "height": "6' 6\"",
+  "weight": "308",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "RS So.",
+  "projected_round": "1st Round",
+  "games": 27,
+  "snaps": 1620,
+  "site_ratings": {
+    "24/7 Sports": "94",
+    "ESPN": "90",
+    "Draft Buzz": "86.4 / 100",
+    "NFL.com": "6.36",
+    "BR": "7.5",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "68.5",
+      "percentile": 0.1
+    },
+    "2024 Grade": {
+      "value": "75.5",
+      "percentile": 0.5
+    },
+    "2023 Grade": {
+      "value": "76.1",
+      "percentile": 1.0
+    },
+    "Run Block Grade": {
+      "value": "62.3",
+      "percentile": 0.1
+    },
+    "Pass Block Grade": {
+      "value": "82.1",
+      "percentile": 0.4
+    },
+    "True Pass Set Grade": {
+      "value": "69.9",
+      "percentile": 0.3
+    },
+    "Pass Block Efficiency": {
+      "value": "98.9",
+      "percentile": 0.8
+    },
+    "Zone Grade": {
+      "value": "65.2",
+      "percentile": 0.2
+    },
+    "Gap Grade": {
+      "value": "59.4",
+      "percentile": 0.2
+    },
+    "Sacks Allowed": {
+      "value": "0",
+      "percentile": 0.85
+    },
+    "Hits Allowed": {
+      "value": "2",
+      "percentile": 0.5
+    },
+    "Hurries Allowed": {
+      "value": "6",
+      "percentile": 0.75
+    },
+    "Pressures Allowed": {
+      "value": "8",
+      "percentile": 0.8
+    },
+    "Penalties": {
+      "value": "4",
+      "percentile": 0.55
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 27.53846153846154,
+      "positional_rank": "4.285714285714286"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 27.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 17.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 30.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 21.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 23.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 52.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 16.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 32.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 39.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 29.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 29.0,
+      "positional_rank": "6"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 23.333333333333332,
+    "PFF": 24.0,
+    "ESPN": null,
+    "Brugler": 17.0,
+    "Kiper": 27.0,
+    "Miller": 27.0,
+    "Bleacher": 24.0,
+    "Walter": 17.0,
+    "TDN": 23.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 24.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - LATE",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "Dan Moore Jr",
+    "Miller": "TBD",
+    "DraftBuzz": "Abraham LUCAS",
+    "Bleacher": "Walker Little",
+    "WF": "Taylor Decker.",
+    "Ringer": "Roger Rosengarten",
+    "NFL.com": "Dan Moore Jr"
+  },
+  "strengths": "• Strong Pass Blocking Skills\n• Quick Feet, Athletic, Balanced\n• Great Frame, Room To Grow\n• Diverse Punch Moves, Well-Timed\n• Strong Anchor, Knee Bender\n• Adept Recognize/React\n• Plays With Sufficient Edge",
+  "weaknesses": "• Lacks Needed UB Strength for Run\n Game\n• Pad Level/Demeanor Needs Help\n• Unpolished positioning in Run Game\n• Hands/Feet Inconsistent Sync\n• Below Average Sustain/Finish in Run",
+  "accolades": "• 2025 1st Team All Big 12\n• 2024 Academic All Big 12",
+  "player_summary": "Lomu is a solid floor pass protecting LT coming out of Utah, with the potential to become a high end overall starter due to his frame and coachable deficits. Whats hurting him most in the run game is need for more upperbody strength, lack of polish in getting to his positions, maintaining pad level,  and really sustaining those blocks. The good news is, those are fixable traits with more experience and mass. His athleticism stands out in his footwork, and his hand usage is very good, he just has to sync them up better. Mentality wise, he does show the right attitude in Pass Pro, hopefully see more of a mauler mentality in run when he gets the size on him. He also remains calm in blitz, reacting to moves with poise. A little more of a development project than most 1st rounders, but what a player needs to show in college he's shown and his deficits are manageable ones, so expect to see him off the board before Day 2.",
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.88,
+    "Run Blocking Grade": 0.7
+  },
+  "projected_role": "Left Tackle",
+  "ideal_scheme": "Zone Heavy",
+  "alignments": {
+    "LT": {
+      "2025": 800,
+      "career": 1582
+    },
+    "LG": {
+      "2025": 0,
+      "career": 0
+    },
+    "C": {
+      "2025": 0,
+      "career": 0
+    },
+    "RG": {
+      "2025": 0,
+      "career": 0
+    },
+    "RT": {
+      "2025": 18,
+      "career": 31
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": "Edge to his game, blocks to the whistle (ESPN)\n Sifts through games/blitzes and responds with no panic. (NFL)\nAdept at reacting/stopping inside moves (WF)",
+      "negatives": "Needs nastier demeanor (NFL)\nBelow average with sustain and finish consistency. (NFL)"
+    },
+    "Upper Body": {
+      "positives": "Resets hands, moves them back inside (ESPN)\nLands quick, well-timed punches, uses a firm grip to control rushers (NFL)\nUses different punch approaches and times them well to maximize his length. (NFL)",
+      "negatives": "Needs to keep improving upper-body strength (NFL)"
+    },
+    "Lower Body": {
+      "positives": "Strong enough to anchor (ESPN)\nGood balance and adequate foot quickness (NFL)\nAnchor was rarely stressed (NFL)\n Core strength to keep from having his pads rattled on contact (NFL)\nGood knee bender (WF)\nQuickness, quick feet (WF)",
+      "negatives": "Footwork can get sloppy mirroring inside moves and counters (NFL)\nStill learning to find lateral landmarks in the run game. (NFL)\n Can be out of control and miss his positioning when fitting run blocks (NFL)"
+    },
+    "Technical Ability": {
+      "positives": "Play could improve rapidly with strength gains and coaching (NFL)\nSkilled pass pro, especially speed rushers (WF)",
+      "negatives": "Run blocking trails his pass blocking (NFL)\nBetter harmony needed between his hands and feet. (NFL)"
+    },
+    "Physical Ability": {
+      "positives": "Smooth setter, COD efectively (ESPN)\nAthletic reoveries are average (NFL)\nGood frame with room for muscle mass (NFL)\nVery athletic getting out of stance and into lead pulls or cut-off blocks (NFL)",
+      "negatives": "Lacks power of a true mauler (ESPN)\nPad level could close the gap of Run and Pass Pro (NFL)"
+    }
+  },
+  "media_links": [
+    {
+      "description": "Career Highlights",
+      "source": "YT - Prospects",
+      "url": "https://www.youtube.com/watch?v=8ZJ3jz6Sh18"
+    },
+    {
+      "description": "Scouting Report",
+      "source": "YT - NFL on CBS",
+      "url": "https://www.youtube.com/watch?v=gr2lmcybAgk"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Two-year starting left tackle who is still in the early stages of his development. Utah's run game leaned heavily on movement and misdirection, preventing Lomu from firing out and showing his power. His run blocking trails his pass protection, but improved pad level and a nastier demeanor could close the gap. In protection, he shows good balance with adequate foot quickness, landing quick, well-timed punches and using a firm grip to control rushers once he’s in. His anchor was rarely stressed by power and his athletic recoveries are average. Lomu flashes but is still under construction. His play could improve rapidly with strength gains and additional coaching."
+        },
+        {
+          "title": "Strengths",
+          "text": "Good frame with room for more muscle mass. | Very athletic getting out of stance and into lead pulls or cut-off blocks. | Activates hands with good quickness in both phases. | Core strength to keep from having his pads rattled on contact. | Pass sets with good posture, rarely ducking head and leaning. | Uses different punch approaches and times them well to maximize his length. | Shows ability to gather and control rushers with strong grip. | Sifts through games/blitzes and responds with no panic."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Gallops and opens his outer half too quickly against speed rushers. | Better harmony needed between his hands and feet. | Footwork can get sloppy mirroring inside moves and counters. | Still learning to find lateral landmarks in the run game. | Can be out of control and miss his positioning when fitting run blocks. | Needs to keep improving upper-body strength. | Below average with sustain and finish consistency."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Caleb Lomu is a dependable, sturdy offensive lineman with good technical polish and the arrow pointing up. Lomu is a safe, long-term option on the offensive line."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nCaleb Lomu played his high school ball at Highland High School in Gilbert, Arizona, where he anchored an offensive line that won back-to-back state championships in 2021 and 2022. At 6'6\", 304 pounds, the four-star recruit earned invitations to both the All-American Bowl and Polynesian Bowl. 247Sports ranked him the No. 21 tackle nationally and No. 3 player in Arizona, while Rivals (5.9 grade) and ESPN (81 rating) gave him four-star marks as well. He won the BJ Media and Randall McDaniel Offensive Lineman of the Year award as a senior, protecting for an offense that averaged over 300 yards per game. Michigan, Florida, Oregon, USC, and Tennessee all offered, but Lomu committed to Utah.\n\nAfter a redshirt season in 2023 where he saw action in three games on special teams and limited offensive line work, Lomu grabbed the starting left tackle job in 2024 and started all 12 games. He allowed just two sacks and 17 pressures on 425 pass blocking snaps, posting a 76.0 pass blocking grade per PFF. The Athletic named him a Midseason Freshman All-American, and he earned CSC Academic All-District and Academic All-Big 12 honors for his work in the classroom.\n\nLomu took another step forward in 2025, starting all 12 games and improving his pass blocking grade to 82.1. He gave up zero sacks and just eight pressures across 357 pass blocking opportunities. The recognition followed: First Team All-Big 12, Outland Trophy Preseason Watch List, Polynesian College Football Player of the Year Watch List. Utah's offensive line was named Big 12 Offensive Line of the Week four times, and the unit made the Joe Moore Award Midseason Honor Roll. Lomu blocked for an offense that put up 587 yards against Colorado (422 rushing), 532 yards at West Virginia, and 518 yards against Cal Poly.\n\nLomu's athletic testing numbers are real, and they show up on every single snap when he's asked to kick-slide against speed, climb to the second level, or get out in space on screens. His pass protection technique is genuinely advanced for a player with only two years of starting experience. The hand timing, the punch placement, the ability to gather and control once he's locked in on a rusher. These are traits that typically take years to develop, and Lomu already owns them as a redshirt sophomore.\n\n\n\nWith Lomu the run blocking needs work, and anyone telling you otherwise hasn't watched enough tape. He struggles to find his landmarks consistently, and his finishing through contact remains a clear area for growth. The good news is that these issues are correctable with reps and strength development. His frame can handle 15 to 20 more pounds of functional mass, and once that lower body fills out, the anchor concerns will diminish. Zone-heavy offenses will get the most out of his current skill set because they maximize his lateral movement and let him work in space rather than asking him to win at the point of attack against 290-pound defensive ends.\n\n\n\nThe upside here is tantalizing. A left tackle with this kind of athletic foundation, who already flashes legitimate blindside protection ability, represents exactly the kind of developmental bet that pays off in a big way. He'll need a situation where he can learn behind a veteran for a season or compete with some patience built into the timeline. The floor is a quality starter who protects the quarterback at a high level. The ceiling is a franchise cornerstone who eventually adds enough physicality to dominate in both phases. Teams looking to invest in long-term left tackle answers will have Lomu circled on their boards."
+        },
+        {
+          "title": "Overview",
+          "text": "Smooth-moving offensive lineman with the body control, length, and light feet to block on an island at tackle.\n\nLomu is a high-ceiling tackle prospect because of his elite length, nimble feet, and balance as a pass blocker on the edge, but he’s still developing as a run blocker. A two-year starter for the Utes, he played almost all of his college snaps at left tackle (1,582), but manned a handful of reps at right tackle (32). He’s tall with a low-cut, power forward’s frame, and keeps his feet moving throughout his pass set, which helps him avoid over-extending or getting flat-footed. He mirrors easily on the edge, matching the speed of pass rushers while still avoiding inside counter moves. Lomu recovers quickly when he initially loses a step, showing the balance to finish a block. He flashes a strong punch and good hand-fighting skills to keep himself square with pass rushers, and he gave up zero sacks on 382 pass blocking snaps in 2025, per PFF. In the run game, he brings natural movement skills on zone blocks. He covers ground quickly on pulling plays and has no trouble getting to the second level.\n\nLomu can get ripped off balance by bigger, stronger opponents, and needs to work on leverage at the point of attack. He lacks sand in his pants as a pass blocker and brings an inconsistent anchor against the bull rush. He needs to play with more power and sustain blocks better in the run game, and there are times he gets caught playing too upright."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nLomu is a second-year starter who showed great promise as a redshirt freshman in 2024. HeÃ•s an effective positional blocker who would be a good fit for zone-heavy run teams. He doesnÃ•t have the power of a true mauler, but thereÃ•s an edge to his game and he blocks to the whistle. HeÃ•s smooth when getting set, and he changes direction effectively for a player of his height. He resets his hands and works them back inside. HeÃ•s strong enough to anchor, too. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "As a redshirt sophomore, Caleb Lomu is still in the early stages of his physical and technical development but displays very good movement skills with a keen natural feel as a pass protector that tracks toward becoming a quality NFL left tackle. His traits help him negotiate leverage and get out of compromising positions at a high level.\n\nLomu is a 6'6\", 308—pound tackle prospect who entered the Utah program as a 4—star recruit in the 2023 class.\n\nLomu started 12 games at left tackle as a redshirt freshman during the 2023 season."
+        },
+        {
+          "title": "Positives",
+          "text": "— Excellent recovery skills due to very good body control and balance.\n\n— Has the foot quickness and range to expand his set points and widen the corner against high—side rushes.\n\n— Knows how to reset his hands and hips to get into his anchor and not panic against power.\n\n— Showed an impressive ability to adapt in—game against Texas Tech's Romello Height's inside counters to not lose to the same move twice.\n\n— Fluid mover in the zone run game with the burst and quickness to intersect targets on the move."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Inconsistent set lines and positional leverage in pass protection result in him floating/drifting past his spot to overset or too quickly opening up that prematurely shortens the corner.\n\n— below average play strength Shows up primarily in the run game, leading to quick stalemates, soft edges and shaky sustain skills, especially on angle—drive blocks."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "In his second season at Utah, Lomu took over as the starting left tackle with the Utes moving Spencer Fano to the right side. Over two seasons, Lomu locked down left tackle and showed NFL ability.\nIn the passing-driven NFL, Lomu has good athleticism to be an asset as a pass protector. Lomu is a capable pass blocker to neutralize speed rushers around the corner. Lomu is a natural pass blocker who has quick feet that allow him to get depth in his drop and neutralize speed rushers. He is quick out of stance and reacts immediately to cut off the corner and prevent them from running the loop around the edge. With his quick feet and an ability to bend at the knee, Lomu doesnâ€™t have to reach after rushers and is not a waist bender. With impressive awareness and reaction skills, Lomu reacts quickly to handle stunts and games from the defensive line. He reacts very well to rushes to the inside and shows impressive balance. As a pass blocker, Lomu does a nice job of maintaining his blocks and sustaining using his hands and length well to stay engaged on defenders. Lomu uses his athletic ability well and stays in front of defenders. For the NFL, Lomu could be a very valuable starting left tackle to protect his quarterback against edge rushers.\nAs a run blocker, Lomu is not a bull in the ground game. He is not overly strong or physical to blast defenders off the ball and ride them around the field. Lomu has a good mentality as he looks to hit and get after defenders, but Lomu needs to get stronger to create movement in the ground game at the pro level. While he is not as powerful as a run blocker, he shows the athleticism and mobility to execute zone runs. Utahâ€™s scheme did not have him fire off and run a lot of power man, so that will need development for the NFL. Right now, Lomu would be better off in a zone-blocking system to use his athleticism due to not packing a serious punch at the point of attack.\nThere are some raw elements to Lomu that need development. Lomu can stop bull rushes, but he needs to add more weight and strength to handle the power rushers in the NFL. His footwork can be inconsistent. He needs to get stronger to improve his power in the ground game and his ability to sustain blocks as a run blocker.\nLomu has a lot of upside, and his best football is ahead of him. If he gets stronger and develops his technique well, he could be an excellent starting left tackle as a pro. He definitely has a shot at beingselected on the opening night of the draft."
+        },
+        {
+          "title": "Strengths",
+          "text": "Skilled pass protector\nVery good against speed rushers\nCan glide with his feet to cut off the edge\nGets depth in his drop to neutralize speed\nAdept at reacting and stopping moves to the inside\nGood awareness\nReacts quickly to stop stunts and DL games\nGood athlete\nQuickness\nQuick feet\nBends at the knee\nSmooth mover\nCan stop bull rushes\nBends at the knee\nFights and blocks physical as a run blocker\nHas the frame to get bigger, stronger\nUpside"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Needs to get stronger\nNot powerful as a run blocker\nRun blocking needs improvement\nCould use more weight in his anchor\nFootwork needs development"
+        },
+        {
+          "title": "Player Comp",
+          "text": "Taylor Decker. In terms of style of play, Lomu reminds me of Decker as they are both solid athletes with size and good awareness. Like Decker, Lomu is a good player but not overwhelmingly dominant."
+        }
+      ]
+    },
+    {
+      "source": "ESPN",
+      "sections": [
+        {
+          "title": "Analysis",
+          "text": "Lomu is a second-year starter who showed great promise as a redshirt freshman in 2024. HeÃ•s an effective positional blocker who would be a good fit for zone-heavy run teams. He doesnÃ•t have the power of a true mauler, but thereÃ•s an edge to his game and he blocks to the whistle. HeÃ•s smooth when getting set, and he changes direction effectively for a player of his height. He resets his hands and works them back inside. HeÃ•s strong enough to anchor, too. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Smooth-moving offensive lineman with the body control, length, and light feet to block on an island at tackle.\n\nLomu is a high-ceiling tackle prospect because of his elite length, nimble feet, and balance as a pass blocker on the edge, but he’s still developing as a run blocker. A two-year starter for the Utes, he played almost all of his college snaps at left tackle (1,582), but manned a handful of reps at right tackle (32). He’s tall with a low-cut, power forward’s frame, and keeps his feet moving throughout his pass set, which helps him avoid over-extending or getting flat-footed. He mirrors easily on the edge, matching the speed of pass rushers while still avoiding inside counter moves. Lomu recovers quickly when he initially loses a step, showing the balance to finish a block. He flashes a strong punch and good hand-fighting skills to keep himself square with pass rushers, and he gave up zero sacks on 382 pass blocking snaps in 2025, per PFF. In the run game, he brings natural movement skills on zone blocks. He covers ground quickly on pulling plays and has no trouble getting to the second level.\n\nLomu can get ripped off balance by bigger, stronger opponents, and needs to work on leverage at the point of attack. He lacks sand in his pants as a pass blocker and brings an inconsistent anchor against the bull rush. He needs to play with more power and sustain blocks better in the run game, and there are times he gets caught playing too upright."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Smooth-moving offensive lineman"
+        },
+        {
+          "title": "Traits",
+          "text": "Short-Area Quickness\nSmooth Footwork"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A redshirt sophomore and former four-star recruit out of Gilbert, Arizona. Was the no. 14 offensive tackle and the no. 166 overall player in the 2023 class. Started 24 games at left tackle for the Utes over the past two seasons and was named first-team All–Big 12 in 2025."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "Started playing football in fourth grade. Also wrestled, played baseball, basketball, and golfed growing up.\nOn how getting his first college offer changed his mindset: “I always loved the sport, but I always felt like I didn’t have as much as these other guys, I don’t know why. My mindset just wasn’t there when I was younger and I didn’t take it as serious. I was focused on school and football was just there. Sophomore year in the summer, I started going all over for camps and that’s when I realized I wanted to do this even if I don’t get a chance until my senior year, I still want to chase it. Then that summer, I got my first offer and it hit me that it’s legit now and I can play at the next level, which I always wanted to do.”"
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF ROGER ROSENGARTEN"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.36,
+    "prospect_grade_indicator": "Will Eventually Be Plus Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Dan Moore Jr",
+    "eligibility": "Sophomore (RS)",
+    "nfl_rank": 29,
+    "nfl_pos_rank": 6
+  },
+  "bleacher_profile": {
+    "grade": 7.5,
+    "grade_indicator": null,
+    "overall_rank": 52,
+    "position_rank": null,
+    "pro_comparison": "Walker Little",
+    "projected_round": "2nd Round"
+  },
+  "walter_profile": {
+    "player_comp": "Taylor Decker. In terms of style of play, Lomu reminds me of Decker as they are both solid athletes with size and good awareness. Like Decker, Lomu is a good player but not overwhelmingly dominant."
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF ROGER ROSENGARTEN",
+    "traits": "Short-Area Quickness\nSmooth Footwork"
+  },
+  "injury_history": []
+}

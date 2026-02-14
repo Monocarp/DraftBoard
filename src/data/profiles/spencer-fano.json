@@ -1,0 +1,533 @@
+{
+  "name": "Spencer Fano",
+  "slug": "spencer-fano",
+  "overview": {
+    "POS": "OT",
+    "College": "Utah",
+    "Height": "6' 6\"",
+    "Weight": "308",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": "1st Round",
+    "Games": "37",
+    "Snaps": "2204",
+    "24/7 Sports": "97",
+    "ESPN": "92",
+    "Draft Buzz": "88.6 / 100",
+    "NFL.com": "6.44",
+    "BR": "8.1",
+    "Gridiron": null
+  },
+  "position": "OT",
+  "college": "Utah",
+  "height": "6' 6\"",
+  "weight": "308",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Jr",
+  "projected_round": "1st Round",
+  "games": 37,
+  "snaps": 2204,
+  "site_ratings": {
+    "24/7 Sports": "97",
+    "ESPN": "92",
+    "Draft Buzz": "88.6 / 100",
+    "NFL.com": "6.44",
+    "BR": "8.1",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "83.7",
+      "percentile": 0.7
+    },
+    "2024 Grade": {
+      "value": "92.6",
+      "percentile": 1.0
+    },
+    "2023 Grade": {
+      "value": "58.7",
+      "percentile": 0.111
+    },
+    "Run Block Grade": {
+      "value": "79.4",
+      "percentile": 0.5
+    },
+    "Pass Block Grade": {
+      "value": "82",
+      "percentile": 0.3
+    },
+    "True Pass Set Grade": {
+      "value": "83.7",
+      "percentile": 0.8
+    },
+    "Pass Block Efficiency": {
+      "value": "99.3",
+      "percentile": 1.0
+    },
+    "Zone Grade": {
+      "value": "76.3",
+      "percentile": 0.5
+    },
+    "Gap Grade": {
+      "value": "79.6",
+      "percentile": 1.0
+    },
+    "Sacks Allowed": {
+      "value": "0",
+      "percentile": 0.85
+    },
+    "Hits Allowed": {
+      "value": "0",
+      "percentile": 0.9
+    },
+    "Hurries Allowed": {
+      "value": "5",
+      "percentile": 1.0
+    },
+    "Pressures Allowed": {
+      "value": "5",
+      "percentile": 1.0
+    },
+    "Penalties": {
+      "value": "5",
+      "percentile": 0.35
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 10.846153846153847,
+      "positional_rank": "1.1428571428571428"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 17.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 7.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 8.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 12.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 17.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 13.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 15.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 4.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 15.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 8.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 12.0,
+      "positional_rank": "1"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 5.6923076923076925,
+    "PFF": 5.0,
+    "ESPN": null,
+    "Brugler": 3.0,
+    "Kiper": 6.0,
+    "Miller": 6.0,
+    "Bleacher": 3.0,
+    "Walter": 11.0,
+    "TDN": 13.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 13.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - MID",
+    "Bleacher": "1st Round"
+  },
+  "player_comps": {
+    "NFL": "Brian O’Neill",
+    "Miller": "TBD",
+    "DraftBuzz": "Bernhard RAIMANN",
+    "Bleacher": "Charles Cross",
+    "WF": "Anton Harrison.",
+    "Ringer": "Spencer Brown",
+    "NFL.com": "Brian O’Neill"
+  },
+  "strengths": "• Relentless Motor, Excellent Effort\n• Strong, Independent Hand Usage\n• Excellent, Aggressive Run Blocking\n• Balance, Posture, Recovery\n• Bend, Body Control, Athleticism\n• Swift, Controlled Feet\n• High Floor Overall, High Ceiling in Run",
+  "weaknesses": "• Lean Build, Apparent in Pass\n• Inconsistent, erratic strike timing\n• Exposes Chest in Pass Pro",
+  "accolades": "• 2024 2nd Team All Am.\n• 2024 1st Team All Big 12\n• 2024 Academic All Big12",
+  "player_summary": "Spencer Fano, a three-year starter with versatility at both left and right tackle in run-heavy schemes, plays with a violent, physical demeanor. Possessing loose hips, quick feet, high-end athleticism, good size, and natural strength, he overcomes a leaner frame to deliver strong pass protection: elite recovery, agile mirroring to seal edges, depth in drops, sinking to anchor bull rushes, and feinting punches to disrupt hand fights. In the run game, he excels in movement-based schemes, using quickness for pulling, reaching, and climbing; he fires out with fast hands, sustains blocks through footwork, springs big gains in space, and finishes with punishing intent—though poor fundamentals, high pad level, and core strength deficits limit sustained power blocking. Inconsistencies plague him: vulnerable to inside counters (stunts, spins), oversetting, early outside exposure, lost punch battles, lunging/hugging hands, and displacement by heavy-handed rushers.",
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.9,
+    "Run Blocking Grade": 0.92
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 0,
+      "career": 543
+    },
+    "LG": {
+      "2025": 0,
+      "career": 0
+    },
+    "C": {
+      "2025": 0,
+      "career": 0
+    },
+    "RG": {
+      "2025": 0,
+      "career": 0
+    },
+    "RT": {
+      "2025": 778,
+      "career": 847
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [
+    {
+      "description": "Career Highlights",
+      "source": "YT - NFL Film Room",
+      "url": "https://www.youtube.com/watch?v=uPV555PpO4k"
+    },
+    {
+      "description": "Film Breakdown",
+      "source": "YT - NFLTradingRoom",
+      "url": "https://www.youtube.com/watch?v=medxO3e8f34"
+    },
+    {
+      "description": "Interview",
+      "source": "YT - Fox 13 Utah",
+      "url": "https://www.youtube.com/watch?v=1vRiBj4PicY"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Fano lacks ideal proportional build but compensates with loose hips, quick feet and high-end athleticism. He has the tools to mirror speed rushers, wall off the top of the pocket and find a late anchor when taking the worst of a bull rush. He needs to stay square longer to prevent inside moves and refine his punch approach/timing. His athletic profile is designed for move-based blocking schemes where he can pull, reach and climb while beating opponents to the spot with quickness/feel for hitting landmarks on time. He gives good effort as a downhill blocker but issues with pad level and core strength lead to him being overtaken as the rep progresses. Fano’s level of NFL success might be tied to scheme fit and individual matchups."
+        },
+        {
+          "title": "Strengths",
+          "text": "Three-year starter with experience at both tackle spots. | Has extensive reps in prominent run-blocking schemes. | Good hand-strike quickness when allowed to fire out. | Accelerates feet and runs through angle blocks on contact. | Has footwork and body control to stay connected on move blocks. | Athleticism/adjustments can spring runs and screens in space. | Flies out of his stance and in front of the rusher with quickness. | Above-average mirroring the rush with foot quickness. | Able to unlock hips and ride edge rushers around the pocket. | Good at finding his footing after early push from speed to power. | Feints punches to draw and dry out rusher’s hand swipe attempts."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Lean through his chest, waist and thighs by NFL standards. | Lacks upper-body and core strength to sustain in-blocks at pro level. | Pad level rides way too high on drive blocks. | Can be pressed and displaced by heavy-handed ends. | Loses “first in” battles to the frame with his pass punch. | Will overset instead of working inside/out against speed rushers. | Opens outside half too quickly, creating opportunities for inside moves. | Must guard against lunging with inside hand and hugging with outside hand."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Spencer Fano has rare technical polish and is a day-one, high-floor starter who’s a savant in the run game."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nSpencer Fano arrived at Utah from Spanish Fork as one of the highest-rated offensive line recruits in state history, carrying four-star ratings across all major recruiting services and ranking as the No. 12 tackle prospect nationally per 247Sports. Born into a family with serious football pedigree, Fano has four uncles who reached the NFL: Gabe Reid suited up for the Bears, Spencer Reid played for the Panthers, Teni Palepoi spent time with the Chargers, and Anton Palepoi wore both Broncos and Seahawks jerseys. His brother Logan currently plays defensive line at Utah, and his sister Shalyn competes on the basketball court at Utah Valley. At Timpview High School, Fano anchored a dominant offense that averaged over 40 points per game and produced 76 touchdowns during his senior season, protecting a quarterback who threw for 2,330 yards while paving the way for a running back who nearly cracked 2,000 yards on the ground.\n\nThe Polynesian tackle became one of only two true freshmen in Division I to lock down the left tackle spot to start the 2023 season, immediately validating his recruiting hype. That debut campaign earned him CFN Freshman All-America first-team recognition after 13 games played with 12 starts. Utah then moved him to right tackle for his sophomore year, and Fano rewarded the coaching staff by earning All-American honors from multiple outlets: PFF First Team, AP Second Team, and Walter Camp Second Team. He also secured First-Team All-Big 12 recognition from both coaches and the AP while maintaining excellence in the classroom as an Academic All-Big 12 selection. In a moment that showcased his surprising athleticism, Fano rumbled into the end zone for a two-point conversion against Colorado.\n\nThrough three seasons, Fano has logged 37 career games with 35 starts split between both tackle spots, demonstrating the position flexibility that NFL teams covet. His 2025 junior campaign has cemented his status as a premier draft prospect, with Fano earning Big 12 Offensive Lineman of the Year honors and landing on the All-Big 12 First Team. The numbers tell a dominant story: in 357 pass blocking snaps this season, he surrendered just five pressures and five hurries while allowing zero sacks. He stands 6'6\" and weighs 302 pounds, carrying a frame that could use additional mass but possessing rare athletic testing numbers. His unit has been named to the Joe Moore Award Midseason Honor Roll, and Fano has been a driving force behind rushing performances that include 422 yards against Colorado and 380 yards against Baylor. The Outland Trophy finalist and Lombardi Award semifinalist projects as one of the first offensive linemen off the board.\n\nFano profiles as an ideal fit in wide-zone and outside-zone schemes where his ability to reach, pull, and climb to the second level becomes a genuine weapon rather than a luxury. His 4.90 forty time is not some meaningless combine number; it shows up constantly on film when he beats linebackers to the spot on screen blocks or springs cutback lanes by sealing backside defenders. Zone-running teams that prioritize getting their offensive linemen moving in space will maximize what Fano does best.\n\n\n\nHere is the deal with his pass protection: he has the foot quickness to mirror speed rushers and the hip flexibility to ride them past the quarterback, but his margin for error shrinks against power players who can walk him back into the pocket. His independent hand usage and punch timing work well against college pass rushers, though NFL defensive ends with refined counter moves will test his tendency to flash early and expose his chest. He needs to add functional weight without sacrificing his movement skills, and that will be the development puzzle for whichever team drafts him. The tools are there for him to handle edge speed at the next level; the question is whether he can hold up against power.\n\n\n\nMake no mistake: this is a starting-caliber tackle with genuine upside who should step into a lineup and contribute immediately in the right situation. Some teams will debate whether his long-term future lies at guard given his frame limitations, but his tape at tackle shows a player fully capable of handling the position's demands in the proper scheme. What separates Fano from other athletic tackles in this draft class is the violence he brings to his blocks and the relentless effort he plays with regardless of the score. He does not just win reps; he finishes them. That mentality, combined with his rare movement skills and processing speed, gives him legitimate top-15 caliber."
+        },
+        {
+          "title": "Overview",
+          "text": "Athletic, light-footed offensive lineman with great length, strong hands, and an aggressive demeanor on every snap.\n\nFano possesses a rare blend of length, athleticism, and competitiveness, giving him the potential to be an impact starter early in his NFL career. Sporting a tall, high-cut, and broad-shouldered frame and quick feet to mirror, recover, and drive opponents off the line, he’s a battle-tested brawler who logged over 2,200 snaps in his college career (with starting reps at both right and left tackle). The winner of the Outland Trophy in 2025 and a unanimous All-American, he is a quick-footed tackle who pass-blocks with good balance and savvy hand-fighting skills. Fano keeps his feet moving and hands working to maintain position, and he shows understanding of how to use his long arms to control opposing pass rushers. He has a strong grip to lock in and keep opponents in his grasp. He brings lateral recovery ability to get himself back into position even when he loses a step. In the run game, Fano churns his feet to create push and get defenders out of the play. He’s great on movement blocks and pulls, where his skills and coordination shine. He flashes quick feet to pivot and seal on playside runs and can smoothly climb to the second level to seal off blocks and pave the way for running backs. He plays with a feisty attitude; he regularly looks to put opponents on the ground in the open field.\n\nThere are times that Fano’s height can be a disadvantage for him; he will resort to leaning on defenders, and occasionally will get out over his skis and allow defensive linemen to swim past him. He can be overwhelmed by speed off the edge and be forced to hold. He can overcorrect to some pass rushers and set too wide, allowing inside penetration and counter moves. He lacks sand in his pants to anchor against the bull rush. He may need to get stronger at the next level."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nHeading into the 2025 season, Fano has started 13 games at right tackle and 11 games at left tackle. His upside as a pass blocker is elite, and his ability to recover is outstanding. Fano is quick enough to take away the edge from speed rushers. He mirrors, sinks and anchors well. Fano is not the most fundamentally sound run blocker, but he makes up for it with quickness, power and tenacity. He knocks defenders back, stays connected once locked on and moves defenders off the ball. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Spencer Fano is the 2026 class' top offensive tackle prospect due to his loose, fluid movement skills and relentless motor that allows him to get out of compromising positions, strain and sustain blocks at a high level.\n\nFano carries a fringe first—round grade due to a lean, light—in—the—pants build that calls into question his ability to consistently generate movement at the next level.\n\nFano is a 6'6\", 308—pound tackle prospect, who arrived to Utah as a 4—star recruit in the 2023 class."
+        },
+        {
+          "title": "Positives",
+          "text": "— Loose, fluid mover with very Good athletic Ability, balance and recovery skills.\n\n— Rangy pass protector who mixes up his set lines and works independent hands to manipulate space, disrupt and dictate terms to rushers.\n\n— very Good short—area quickness and contact balance to get out of compromising positions.\n\n— strong hands and firm center of gravity to brace, stay centered and maintain his posture on blocks once latched.\n\n— plays with excellent effort and strain regardless of game situation or opponent."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Lean build and light in the pants results in him getting stalemated and pried open too easily, especially on angle—drive blocks.\n\n— Overly reliant on the flash technique in pass protection, which exposes his chest and leads to erratic strike Timing and susceptibility to refined inside counters."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Over the past three seasons, Fano has been an impact player at the point of attack for the Utes. On top of being an effective blocker, Fano has been versatile with 11 starts at left tackle as a freshman and starting the past two seasons at right tackle. Fano formed a good tackle tandem with left tackle Caleb Lomu.\nFor the NFL, there is a lot to like about Fano as an edge blocker. He has good size, quickness, athleticism, and strength. It can be difficult to find players with Fanoâ€™s well-rounded skill set, and on top of his physical talent, Fano plays the game with a nasty demeanor and looks like he enjoys the violence of football.\nIn pass protection, Fano has a lot of natural ability to help protect the quarterback. Fano is an athletic edge blocker who is an easy mover. He has good agility to get depth in his drop and quick feet to seal the edge from speed rushers. Fano can play the typewriter with his feet to mirror speed rushers, and he can sink his weight to stonewall bull rushes. Fano has the natural strength to stop bull rushers. However, Fano is very inconsistent. He really has problems with moves to the inside as he gives up pressure from stunts, spins, and cuts to the inside. Fano has tools to stop speed or power rushers, but he is very inconsistent and gets caught by surprise too often.\nIn the ground game, Fano can be impressive with his movement. He is quick to fire to the second level and is athletic enough to hit blocks in space. Fano packs a punch when he gets there, and he will smash defenders with violence. Fano blocks through the whistle and looks to finish off defenders. There are many plays where Fano will bury defenders in the ground and punish them. Fano packs some physcality off the ball, but he could use more strength to sustain blocks and drive block in power man plays. He could be a good fit in a zone blocking scheme at the pro level.\nIn the 2026 NFL Draft, Fano looks poised to be a first-round pick as I have projected inmy latest 2026 NFL Mock Draft. Some team sources said they were very disappointed with his tape, while others feel that Fano is too talented to slide very far."
+        },
+        {
+          "title": "Strengths",
+          "text": "Excellent skill set\nStrong\nQuick\nAthletic\nPhysical blocker\nPlays with tenascity\nQuick to get depth in his drop\nTakes away the edge from speed rushers\nCan play the typewriter with his feet and block the edge\nCan anchor and stonewall bull rushes\nPacks attitude as a run blocker\nFast to the second level\nWill smash and bury defenders at the second level\nCould fit zone scheme well\nUpside to develop"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Lacks some length\nStruggles with inside rushes\nInconsistent\nRaw, needs development for the NFL\nCould stand to get stronger for sustaining blocks\nCould stand to get stronger to drive block\nNeeds to improve ability to handle power rushers"
+        },
+        {
+          "title": "Player Comp",
+          "text": "Anton Harrison. In terms of style of play and skill set, Fano reminds me of Harrison coming out of Oklahoma. Harrison was a first-round pick in 2023, and Fano projects him to be this year."
+        }
+      ]
+    },
+    {
+      "source": "ESPN",
+      "sections": [
+        {
+          "title": "Analysis",
+          "text": "Heading into the 2025 season, Fano has started 13 games at right tackle and 11 games at left tackle. His upside as a pass blocker is elite, and his ability to recover is outstanding. Fano is quick enough to take away the edge from speed rushers. He mirrors, sinks and anchors well. Fano is not the most fundamentally sound run blocker, but he makes up for it with quickness, power and tenacity. He knocks defenders back, stays connected once locked on and moves defenders off the ball. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Athletic, light-footed offensive lineman with great length, strong hands, and an aggressive demeanor on every snap.\n\nFano possesses a rare blend of length, athleticism, and competitiveness, giving him the potential to be an impact starter early in his NFL career. Sporting a tall, high-cut, and broad-shouldered frame and quick feet to mirror, recover, and drive opponents off the line, he’s a battle-tested brawler who logged over 2,200 snaps in his college career (with starting reps at both right and left tackle). The winner of the Outland Trophy in 2025 and a unanimous All-American, he is a quick-footed tackle who pass-blocks with good balance and savvy hand-fighting skills. Fano keeps his feet moving and hands working to maintain position, and he shows understanding of how to use his long arms to control opposing pass rushers. He has a strong grip to lock in and keep opponents in his grasp. He brings lateral recovery ability to get himself back into position even when he loses a step. In the run game, Fano churns his feet to create push and get defenders out of the play. He’s great on movement blocks and pulls, where his skills and coordination shine. He flashes quick feet to pivot and seal on playside runs and can smoothly climb to the second level to seal off blocks and pave the way for running backs. He plays with a feisty attitude; he regularly looks to put opponents on the ground in the open field.\n\nThere are times that Fano’s height can be a disadvantage for him; he will resort to leaning on defenders, and occasionally will get out over his skis and allow defensive linemen to swim past him. He can be overwhelmed by speed off the edge and be forced to hold. He can overcorrect to some pass rushers and set too wide, allowing inside penetration and counter moves. He lacks sand in his pants to anchor against the bull rush. He may need to get stronger at the next level."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Athletic, light-footed offensive lineman"
+        },
+        {
+          "title": "Traits",
+          "text": "Refined Technique\nShort-Area Quickness\nGot That Dog in Him"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former four-star recruit out of Provo, Utah. Was the no. 9 offensive tackle and the no. 96 overall player in the 2023 class. Was a multiyear starter along the Utes offensive front. Named the Outland Trophy winner in 2025, as well as the Polynesian College Football Player of the Year and a unanimous All-American."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "His older brother, Logan, is a defensive end for Utah, and his sister, Shalyn, played basketball at Utah Valley University.\nHe has four uncles who played in the NFL.\nPlays pickleball. Got into a five-minute back-and-forth with his brother in this interview about who is the better player.\nSays he worries more about fast and shifty pass rushers than he does about pure power guys. “If they’re really, really strong, they might be able to push you back pretty far, but I’m never really worried about them hitting the quarterback.”"
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF SPENCER BROWN"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.44,
+    "prospect_grade_indicator": "Will Become Good Starter Within Two Years",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Brian O’Neill",
+    "eligibility": "Junior",
+    "nfl_rank": 12,
+    "nfl_pos_rank": 1
+  },
+  "bleacher_profile": {
+    "grade": 8.1,
+    "grade_indicator": null,
+    "overall_rank": 13,
+    "position_rank": null,
+    "pro_comparison": "Charles Cross",
+    "projected_round": "1st Round"
+  },
+  "walter_profile": {
+    "player_comp": "Anton Harrison. In terms of style of play and skill set, Fano reminds me of Harrison coming out of Oklahoma. Harrison was a first-round pick in 2023, and Fano projects him to be this year."
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF SPENCER BROWN",
+    "traits": "Refined Technique\nShort-Area Quickness\nGot That Dog in Him"
+  },
+  "injury_history": []
+}

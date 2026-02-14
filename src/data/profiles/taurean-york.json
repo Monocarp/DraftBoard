@@ -1,0 +1,436 @@
+{
+  "name": "Taurean York",
+  "slug": "taurean-york",
+  "overview": {
+    "POS": "LB",
+    "College": "Texas A&M",
+    "Height": "5' 10\"",
+    "Weight": "227",
+    "Age": "20.5",
+    "DOB": "00:00:00",
+    "Year": null,
+    "Prj. Rd": null,
+    "Games": "39",
+    "Snaps": "1987",
+    "24/7 Sports": "86",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.8 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7",
+    "Gridiron": null
+  },
+  "position": "LB",
+  "college": "Texas A&M",
+  "height": "5' 10\"",
+  "weight": "227",
+  "age": 20.5,
+  "dob": "00:00:00",
+  "year": null,
+  "projected_round": null,
+  "games": 39,
+  "snaps": 1987,
+  "site_ratings": {
+    "24/7 Sports": "86",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.8 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "83",
+      "percentile": 0.8
+    },
+    "24 Grade": {
+      "value": "70",
+      "percentile": 0.1
+    },
+    "23 Grade": {
+      "value": "71.9",
+      "percentile": 0.5
+    },
+    "Pass Rush Grade": {
+      "value": "63.1",
+      "percentile": 0.3
+    },
+    "Run Def. Grade": {
+      "value": "74",
+      "percentile": 0.1
+    },
+    "Run Stop %": {
+      "value": "9.5",
+      "percentile": 0.6
+    },
+    "Tackles": {
+      "value": "56",
+      "percentile": 0.3
+    },
+    "Tackling Grade": {
+      "value": "70.5",
+      "percentile": 0.3
+    },
+    "Missed Tkl Rate": {
+      "value": "12.8",
+      "percentile": 0.3
+    },
+    "ADORT": {
+      "value": "3.7",
+      "percentile": 0.9
+    },
+    "Coverage": {
+      "value": "90.6",
+      "percentile": 0.9
+    },
+    "Coverage Stops": {
+      "value": "18",
+      "percentile": 0.8
+    },
+    "Recs/Tgts": {
+      "value": "0",
+      "percentile": 0.5
+    },
+    "Completion %": {
+      "value": "82.4",
+      "percentile": 0.5
+    },
+    "TD / INT": {
+      "value": "1 / 0",
+      "percentile": null
+    },
+    "Forced Inc Rate": {
+      "value": "8.8",
+      "percentile": 0.9
+    },
+    "Pass Rat. All.": {
+      "value": "102.5",
+      "percentile": 0.4
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 74.8,
+      "positional_rank": "8.333333333333334"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 81.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 102.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 83.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 55.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 53.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Brian ASAMOAH",
+    "Bleacher": "Zach Thomas",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.8,
+    "Pass Rush": 0.7,
+    "Run Defense": 0.78,
+    "Coverage": 0.87
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 30,
+      "career": 62
+    },
+    "Slot": {
+      "2025": 63,
+      "career": 188
+    },
+    "Corner": {
+      "2025": 1,
+      "career": 4
+    },
+    "Box": {
+      "2025": 595,
+      "career": 1725
+    },
+    "Deep": {
+      "2025": 3,
+      "career": 5
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nThe undersized three-star recruit from Temple High School has bulldozed every expectation placed on him since stepping foot in College Station. York carved his path through sheer will and football instinct, starting all 26 games during his first two seasons while collecting hardware along the way - ESPN Freshman All-America and SEC All-Freshman Team honors punctuating his arrival. This wasn't a five-star phenom living up to the hype; this was a worker transforming himself into the defensive heartbeat of Aggie football.\n\nYork's sophomore campaign showcased his evolution as both a player and a leader, earning season-long captain status before a single snap. His production jumped to 82 tackles while adding 9.5 TFLs and showing improved coverage skills with his first career interception against LSU. The consistency became his calling card - seven games with 5+ tackles, including back-to-back double-digit performances against Auburn and Texas where he seemingly lived in the backfield, logging 3.5 TFLs against the Longhorns alone.\n\nThe former District 12-6A Defensive MVP (three consecutive years in high school) has transferred that dominance to the SEC, where his tackling prowess and run defense have vaulted him from afterthought recruit to legitimate NFL prospect. Entering his junior season as a Preseason All-American, York has shattered the ceiling on his projection while positioning himself among the elite linebacker prospects in the 2026 class.\n\nSCOUTING REPORT: SUMMARY\nYork's tackling technique and run defense instincts translate immediately, though interior offensive linemen will test his undersized frame. His processing speed often beats blockers to the spot, but when directly engaged, he can get swallowed up. The Aggie linebacker thrives when slipping through gaps rather than taking on blocks head-on - a limitation that will require scheme consideration.\n\nAs a blitzer, York shows legitimate juice with timing and burst that creates backfield havoc. His coverage skills remain a work in progress - comfortable in underneath zones but lacking the fluidity to consistently match athletic tight ends in space. Defensive packages that deploy him as a targeted blitzer while limiting his man coverage exposure will maximize his effectiveness.\n\nThe three-star recruit turned All-American brings an edge born from perpetually exceeding expectations. His football I.Q. compensates for athletic limitations, suggesting a ceiling higher than measurables indicate. Evaluators willing to bet on instincts over prototype will find a linebacker whose production consistently outpaces his physical tools - the exact profile that often yields draft day steals on the second day of the draft."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Taurean York has the instincts of a veteran linebacker and the movement skills to capitalize. However, the 5'10\", 227—pound defender doesn't have the ideal size or length for the position, thus significantly hindering his draft stock.\n\nYork went to Texas A&M as a 3—star recruit and became an immediate starter as a true freshman, earning SEC All—Freshman and Freshman All—American (ESPN) honors by racking up 74 tackles, 8.5 tackles for loss and three sacks.\n\nIn his second season, York was even more productive with 82 tackles, 9.5 TFLs and 2.5 sacks but did not receive any postseason recognition."
+        },
+        {
+          "title": "Positives",
+          "text": "— constant pre—snap communicator, who takes command of the defense to get everyone lined up correctly.\n\n— Recognizes play designs based on pre—snap motion and displays Good instincts to quickly read his key and diagnose run plays post—snap.\n\n— has the lateral movement skills to mirror running backs on zone runs. York Recognizes when he can shoot gaps with the speed and quickness to capitalize.\n\n— solid speed overall to increase sideline—to—sideline range, help close in coverage or when rushing the passer. he takes Good angles in pursuit, too.\n\n— in zone coverage, he has Good eye discipline to locate threats coming into his area and is quick to reach his landmarks.\n\n— quickness and agility allow him to tighten throwing windows when playing zone coverage.\n\n— consistently Sniffs out screens to make tackles for short gains or behind the line of scrimmage.\n\n— Sure tackler who wraps up and rarely misses."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Undersized. Lacks height and appears to have short arms.\n\n— A combination of shorter arms and subpar upper body strength make it difficult for York to get extension on blocks, leading to struggles when asked to stack and shed or escape. York even has a tough time getting off blocks from tight ends.\n\n— Could afford to be more physical at the point of attack when taking on blocks.\n\n— Has issues anchoring against offensive linemen when he can't use his instincts and movement skills to beat them to the spot.\n\n— Lack of size creates issues in man coverage against tight ends. He'll get boxed out by bigger—bodied pass—catchers, which creates a problem when asked to defend contested catches."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.0,
+    "grade_indicator": null,
+    "overall_rank": 102,
+    "position_rank": null,
+    "pro_comparison": "Zach Thomas",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

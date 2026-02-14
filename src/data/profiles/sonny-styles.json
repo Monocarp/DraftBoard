@@ -1,0 +1,527 @@
+{
+  "name": "Sonny Styles",
+  "slug": "sonny-styles",
+  "overview": {
+    "POS": "LB",
+    "College": "Ohio State",
+    "Height": "6' 5\"",
+    "Weight": "243",
+    "Age": "21.2",
+    "DOB": "2004-11-24 00:00:00",
+    "Year": null,
+    "Prj. Rd": "1st Round",
+    "Games": "48",
+    "Snaps": "2026",
+    "24/7 Sports": "98",
+    "ESPN": "91",
+    "Draft Buzz": "87.3 / 100",
+    "NFL.com": "6.42",
+    "Bleacher": "8.1",
+    "Gridiron": null
+  },
+  "position": "LB",
+  "college": "Ohio State",
+  "height": "6' 5\"",
+  "weight": "243",
+  "age": 21.2,
+  "dob": "2004-11-24 00:00:00",
+  "year": null,
+  "projected_round": "1st Round",
+  "games": 48,
+  "snaps": 2026,
+  "site_ratings": {
+    "24/7 Sports": "98",
+    "ESPN": "91",
+    "Draft Buzz": "87.3 / 100",
+    "NFL.com": "6.42",
+    "Bleacher": "8.1",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "89.2",
+      "percentile": 0.9
+    },
+    "24 Grade": {
+      "value": "71.4",
+      "percentile": 0.2
+    },
+    "23 Grade": {
+      "value": "76.1",
+      "percentile": 0.625
+    },
+    "Pass Rush Grade": {
+      "value": "69.5",
+      "percentile": 0.6
+    },
+    "Run Def. Grade": {
+      "value": "87.4",
+      "percentile": 0.6
+    },
+    "Run Stop %": {
+      "value": "11.3",
+      "percentile": 0.9
+    },
+    "Tackles": {
+      "value": "71",
+      "percentile": 0.85
+    },
+    "Tackling Grade": {
+      "value": "91.6",
+      "percentile": 1.0
+    },
+    "Missed Tkl Rate": {
+      "value": "2.2",
+      "percentile": 1.0
+    },
+    "ADORT": {
+      "value": "3.1",
+      "percentile": 0.6
+    },
+    "Coverage": {
+      "value": "88.5",
+      "percentile": 0.8
+    },
+    "Coverage Stops": {
+      "value": "15",
+      "percentile": 0.5
+    },
+    "Recs/Tgts": {
+      "value": "0",
+      "percentile": 0.5
+    },
+    "Completion %": {
+      "value": "84.8",
+      "percentile": 0.25
+    },
+    "TD / INT": {
+      "value": "1 / 1",
+      "percentile": null
+    },
+    "Forced Inc Rate": {
+      "value": "9.1",
+      "percentile": 1.0
+    },
+    "Pass Rat. All.": {
+      "value": "86.1",
+      "percentile": 0.8
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 15.076923076923077,
+      "positional_rank": "1.8571428571428572"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 10.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 10.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 5.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 7.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 25.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 14.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 20.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 11.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 40.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 28.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 5.0,
+      "positional_rank": "1"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 11.615384615384615,
+    "PFF": 12.0,
+    "ESPN": null,
+    "Brugler": 12.0,
+    "Kiper": 12.0,
+    "Miller": 12.0,
+    "Bleacher": 12.0,
+    "Walter": 10.0,
+    "TDN": 12.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 12.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - MID",
+    "Bleacher": "1st Round"
+  },
+  "player_comps": {
+    "NFL": "Fred Warner",
+    "Miller": "TBD",
+    "DraftBuzz": "Payton WILSON",
+    "Bleacher": "Skinny Anthony Barr",
+    "WF": "TBD",
+    "Ringer": "Devin Lloyd",
+    "NFL.com": "Fred Warner"
+  },
+  "strengths": "• Sideline to Sideline Range\n• Intelligent, Instinctual leader \n• Impeccable Tackler\n• Excellent Coverage Skills\n• Natural Leverage/Pursuit Angles\n• Short Area Quickness, Pursuit Speed",
+  "weaknesses": "• Slightly Undersized, Needs To Add Weight\n• Block Deconstruction/Recognition\n• Tight Hips Hurt COD Downhill\n• Average Blitz Instincts",
+  "accolades": "• 5 Star Recruit\n• 2024 2nd Team All Big 10\n• 2025 1st Team All Big 10\n• 2025 1st Team All American",
+  "player_summary": "Styles is safety turned linebacker who shows the best set of coverage skills at Linebacker in this draft. He couples those skills with great sideline range and top end instincts/discipline to get the front four in position and make needed adjustments pre and post snap. His short area quickness and pursuit speed, combined with a natural shiftiness alow him to slip through traffic with ease to make tackles. He's an exceptionally sure tackler who effectively uses his movement skills to shed blocks on the second level. His instincts when blitzing are just average, and he lacks the needed upper body strength to shed blocks faster. His tight hips do prevent him from changing direction when triggering downhill, but his trigger and violence improved a lot over 2025. Overall, Style projects as the best true coverage linebacker in this draft and will immediately elevate the guys around him.",
+  "draftbuzz_grades": {
+    "Tackling": 0.9,
+    "Pass Rush": 0.76,
+    "Run Defense": 0.9,
+    "Coverage": 0.9
+  },
+  "projected_role": "Coverage LB",
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 132,
+      "career": 304
+    },
+    "Slot": {
+      "2025": 65,
+      "career": 377
+    },
+    "Corner": {
+      "2025": 8,
+      "career": 25
+    },
+    "Box": {
+      "2025": 456,
+      "career": 1228
+    },
+    "Deep": {
+      "2025": 0,
+      "career": 164
+    }
+  },
+  "skills_traits": {
+    "Instincts/Processing/Production": {
+      "positives": "has good eyes in man and zone coverages (BR)\nlast half of the season, Styles showed a completely different trigger and exploded downhill (SI)\nLines up the defensive front, makes adjustments (NFL)\nDisciplined in sifting through pre and post snap eye candy (NFL)",
+      "negatives": "can get caught staring into the backfield against the run (BR)\nBites hard against run fakes on play action (BR)"
+    },
+    "Physical/Athletic Traits": {
+      "positives": "Impressive Athlete (BR)\nGood tackle radius (BR)\nFreakishly Athletic (SI)\nPlenty of short-area quickness and pursuit speed (NFL)",
+      "negatives": "a little thin for his height, could afford to add some size and strength (BR)\nLacks some upper Body strength to stack/shed blocks (BR)\nSlow to re-accelerate in pursuit (NFL)\nTight hips prevent fluid COD downhill (NFL)"
+    },
+    "Coverage Ability": {
+      "positives": "Necessary Skills to be an excellent coverage LB (BR)\nAthleticism allows him to cover TEs or carry WRs in vertical routes (BR)\nPlus man-cover talent (NFL)",
+      "negatives": null
+    },
+    "Pass Rush Skills": {
+      "positives": "Sideline range against the run (BR)\nEffective Open Field Tackler (BR)\nImpressive speed to close on ball carriers (BR)\nPhysical player against the run (BR)\nUses movement skills to shed blocks on 2nd level (BR)\nNatural Leverage/Pursuit Angles (MDB)",
+      "negatives": "Block Deconstruction (SI)\nAverage blitz instincts (NFL)"
+    },
+    "Run Defense/Tackling Skills": {
+      "positives": "Diffuses block attempts with cris hand strikes and leverages run fits with force/anchor (NFL)\nImpressive talen for slipping through traffic into tackles (NFL)\nImpeccable tackle finisher (NFL)",
+      "negatives": "Block scheme recognition (NFL)"
+    }
+  },
+  "media_links": [
+    {
+      "description": "Career Highlights",
+      "source": "Youtube - Prospects",
+      "url": "https://www.youtube.com/watch?v=mgbJlLop8IM"
+    },
+    {
+      "description": "Career Highlights",
+      "source": "YT - Golden Buckeye Nation",
+      "url": "https://www.youtube.com/watch?v=pQIeEiFL4S0"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Styles began his Ohio State career as a safety, but he settled in at linebacker in 2024. He’s improved in diagnosing play development. The former Buckeye diffuses block attempts with crisp hand strikes and leverages run fits with force/anchor strength. There are times when he slips back into a containment-based approach, but he has plenty of short-area quickness and pursuit speed to get where he needs to go. He can make an impact from multiple spots on the field and is a plus man-cover talent. Styles is an emerging player with the traits and versatility to garner longer looks by NFL evaluators. He could see his stock soar leading up to draft day."
+        },
+        {
+          "title": "Strengths",
+          "text": "Lines up the defensive front and makes adjustments if needed. | Disciplined in sifting through pre- and post-snap eye candy. | Pops and separates from climbing blockers with a crisp punch. | Constricts run fits by using size, force and technique. | Scrapes quickly to the action without losing leverage. | Impressive talent for slipping through traffic and into tackles. | Versatility/athleticism can be weaponized for coverage disguise. | Gains depth and widens to the flats with above-average quickness. | Impeccable tackle finisher."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Recognition of blocking schemes needs more work. | Can afford to crank up the urgency at times. | Slow to reaccelerate on stop/start movements in pursuit. | Tight hips prevent fluid change of direction from downhill flow. | Inconsistent shading zone drops to quarterback’s eyes. | Average instincts and physicality as a blitzer."
+        },
+        {
+          "title": "Sources Tell Us",
+          "text": "“It’s hard to look at him and think that he was ever a safety with that frame. And he’s always been wired like a linebacker.” – AFC regional scout"
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nSonny Styles was born into football royalty in Pickerington, Ohio. His father, Lorenzo Styles Sr, suited up for the Buckeyes from 1992 to 1994 before carving out a six-year NFL career that included a Super Bowl XXXIV ring with the St. Louis Rams. The younger Styles made noise early at Pickerington Central High School, racking up four interceptions as a sophomore and 55 tackles during his junior campaign. He made the unusual decision to reclassify and graduate a year early, arriving in Columbus as a 17-year-old true freshman in June 2022 alongside ten other early enrollees from that recruiting class.\n\nEvery major recruiting service stamped Styles with a five-star rating. ESPN gave him a 90 overall grade, 247Sports assigned a 0.98 composite, and Rivals handed out their top 6.1 designation. He ranked as the third-best prospect in Ohio and 29th nationally in 2021. His first two seasons in Columbus were spent at safety, where he logged nine tackles as a backup in 2022 before earning 12 starts in 2023 and recording 53 tackles, two sacks, and one pass breakup. The coaching staff made the call to move him to linebacker heading into spring 2024, and the results were immediate. Styles registered 100 tackles, 10.5 tackles for loss, and six sacks while playing 906 defensive snaps on the way to second-team All-Big Ten honors.\n\nThe 2024 postseason showcased Styles at his best. He piled up 24 tackles across four College Football Playoff games, including nine stops against both Oregon and Penn State. The Cotton Bowl semifinal against Texas saw him deliver nine more tackles, two sacks, and a forced fumble while escorting Jack Sawyer on his 83-yard scoop-and-score that sealed the national championship. He returned for 2025 and tallied 83 tackles, one interception, three pass breakups, and a forced fumble in 14 games. Off the field, Styles has earned multiple Scholar-Athlete and Academic All-Big Ten awards while majoring in sport industry and volunteering with Huckleberry House, a nonprofit serving at-risk and homeless youth in central Ohio. His brother Lorenzo Jr transferred from Notre Dame and joined him on the 2025 Buckeyes roster.\n\nSCOUTING REPORT: SUMMARY\nThis is a modern linebacker built for modern defenses. Styles does his best work when coordinators use his range and coverage ability rather than asking him to take on pulling guards and lead blockers between the tackles. He should be deployed in sub packages from day one, where his safety background becomes an asset rather than something to hide. The ideal scheme keeps him in space, lets him read and react, and takes advantage of the rare size-speed combination that made him a freak show at Ohio State testing sessions.\n\nThe transition will require patience. Two years at linebacker is not a lot of runway, and there will be games where power-heavy offenses expose his developing play strength. He wins with leverage, angles, and athleticism rather than brute force, which works until it does not. NFL coaching and an offseason dedicated to functional strength should address some of these issues, but expecting him to anchor against double teams early in his career is asking for trouble. Defenses that rotate their linebackers based on personnel groupings will get the most out of him while protecting him from unfavorable matchups.\n\nThe ceiling is high if everything clicks. A defender who can cover tight ends, rush the passer situationally, and provide legitimate range in run defense fits exactly what teams are searching for in the new NFL. His zone coverage will improve with professional coaching, and the ball skills he showed at safety could translate into turnovers once he settles into his role. The floor is a quality coverage linebacker who stays on the field in nickel and dime packages and contributes immediately on special teams. His athletic testing numbers, national championship experience, and positional flexibility should keep him firmly in the first-round conversation.\nWRITTEN BY:\nK.C. MARTINEZ (BIG TEN)"
+        },
+        {
+          "title": "Overview",
+          "text": "Rangy and versatile linebacker who brings sideline-to-sideline speed and incredible reliability as a tackler.\n\nStyles is an ascending playmaker with a rare combination of athleticism, length, and range at the linebacker position. A former safety who made the switch to linebacker over the past two seasons, he’s tall with an angular, tapered build, and he effortlessly covers ground at the second level. Styles showcases good vision to sort through the trash on run plays and still keep his eyes on the ball. He brings effortless lateral agility to strafe from gap to gap and arrive at the ballcarrier to make a stop. His closing speed stands out; he drives on the ball decisively to deliver a hit and corral the runner. He’s an incredibly reliable tackler: He missed just two tackles in 2025, per PFF, while racking up 47 stops. Styles glides around in man coverage and can put himself into position to play the ball in zone. He sees routes developing and keeps his head on a swivel to adjust his drop. He’s a blur as a blitzer, flying downhill to shoot through the line. He tallied nine sacks in his college career.\n\nThere are times when Styles struggles to disengage from blocks and allows himself to get sealed away from the play. He’s thin-framed and lacks the sand in his pants to defeat blocks and bring high-end stopping power. He will occasionally take the cheese on a play fake and find himself chasing a decoy. There were times when his intensity waxed and waned while chasing down a play or pursuing from the backside; he may need to turn up the aggressiveness at the next level."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Sonny Styles... linebacker... Ohio State... Number 12... the former safety who can run to the football and he can be the spy on the quarterback... sideline to sideline range... kept improving from that position change... the best football is ahead... Rve Reese linebacker going way up there at that fourth spot... Sunny Styles dropping down to pick number 15... they'd be pretty excited... four Buckeyes in the first half of round one. Three of them on the defensive side of the ball."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Sonny Styles is an impressive athlete with the necessary skills to be an excellent coverage linebacker in the NFL and a top—tier backer in the 2026 NFL draft class.\n\nStyles stands at 6'4\" and 235 pounds and entered Ohio State as a 5—star recruit at safety in the 2022 class, per 247Sports.\n\nHe didn't get much playing time as a true freshman on the Buckeyes' deep defense, but he became an honorable mention All—Big Ten selection as a defensive back with 53 tackles, five tackles for loss, two sacks and one defended pass in year two."
+        },
+        {
+          "title": "Positives",
+          "text": "— Very good athlete for a linebacker who has good eyes in man and zone coverages to locate threats and/or avoid pick routes.\n\n— Movement skills, fluid hips and speed allow him to cover tight ends and running backs in man coverage or carry wide receivers on vertical routes when playing Tampa 2.\n\n— Impressive speed to close on ball carriers, either when clicking and closing in coverage or when it comes to his sideline—to—sideline range against the run.\n\n— Effective open—field tackler, Styles has the athleticism to avoid getting juked out in space, breaks down before contact and appears to have long arms to increase his tackle radius.\n\n— Physical player against the run and takes on blocks with his hands to help get extension when he adds more strength.\n\n— Has showed the ability to use his movement skills to slip blocks from offensive linemen when they climb to the second level."
+        },
+        {
+          "title": "Negatives",
+          "text": "— can get caught staring into the backfield against the run, putting him in a bad position to take on blocks and occasionally leading to him getting caught in the trash.\n\n— a little thin for his height, could afford to add some size and strength to have more pop behind his pads when coming downhill and hold his ground against stronger offensive linemen.\n\n— Also Lacks some upper body strength to stack and shed blocks, and needs to develop a move to escape.\n\n— Bites hard against run fakes on play action."
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Rangy and versatile linebacker who brings sideline-to-sideline speed and incredible reliability as a tackler.\n\nStyles is an ascending playmaker with a rare combination of athleticism, length, and range at the linebacker position. A former safety who made the switch to linebacker over the past two seasons, he’s tall with an angular, tapered build, and he effortlessly covers ground at the second level. Styles showcases good vision to sort through the trash on run plays and still keep his eyes on the ball. He brings effortless lateral agility to strafe from gap to gap and arrive at the ballcarrier to make a stop. His closing speed stands out; he drives on the ball decisively to deliver a hit and corral the runner. He’s an incredibly reliable tackler: He missed just two tackles in 2025, per PFF, while racking up 47 stops. Styles glides around in man coverage and can put himself into position to play the ball in zone. He sees routes developing and keeps his head on a swivel to adjust his drop. He’s a blur as a blitzer, flying downhill to shoot through the line. He tallied nine sacks in his college career.\n\nThere are times when Styles struggles to disengage from blocks and allows himself to get sealed away from the play. He’s thin-framed and lacks the sand in his pants to defeat blocks and bring high-end stopping power. He will occasionally take the cheese on a play fake and find himself chasing a decoy. There were times when his intensity waxed and waned while chasing down a play or pursuing from the backside; he may need to turn up the aggressiveness at the next level."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Rangy and versatile linebacker"
+        },
+        {
+          "title": "Traits",
+          "text": "Elite Athleticism\nShort-Area Quickness\nInfinite Upside"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A fifth-year senior and former five-star recruit out of Pickerington, Ohio. Was the no. 2 safety in the 2022 class and the no. 27 player overall. Played safety for Ohio State in 2022 and 2023 (when he made 12 starts) before switching to linebacker in 2024. Named a first-team All-American in 2025."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "Sonny’s father, Lorenzo, was a two-time first-team All–Big Ten linebacker at Ohio State and was drafted in the third round in 1995 by the Falcons. He played two seasons in Atlanta and four with the St. Louis Rams, where he was a Super Bowl XXXIV champion.\nHis brother, Lorenzo Jr, plays corner for Ohio State and spent two seasons as a wide receiver at Notre Dame.\nHe was the green dot defender for the Buckeyes in 2024 and 2025.\nDropped his missed tackle rate from 18 percent in 2024 to 2 percent in 2025."
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF DEVIN LLOYD"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.42,
+    "prospect_grade_indicator": "Will Become Good Starter Within Two Years",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Fred Warner",
+    "eligibility": "Senior",
+    "nfl_rank": 5,
+    "nfl_pos_rank": 1
+  },
+  "bleacher_profile": {
+    "grade": 8.1,
+    "grade_indicator": null,
+    "overall_rank": 14,
+    "position_rank": null,
+    "pro_comparison": "Skinny Anthony Barr",
+    "projected_round": "1st Round"
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF DEVIN LLOYD",
+    "traits": "Elite Athleticism\nShort-Area Quickness\nInfinite Upside"
+  },
+  "injury_history": []
+}

@@ -1,0 +1,450 @@
+{
+  "name": "Chris Johnson Jr",
+  "slug": "chris-johnson-jr",
+  "overview": {
+    "POS": "CB",
+    "College": "San Diego State",
+    "Height": "6' 0\"",
+    "Weight": "195",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": "4th Round",
+    "Games": "42",
+    "Snaps": "1732",
+    "24/7 Sports": "84",
+    "ESPN": "88",
+    "Draft Buzz": "85.9 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.4",
+    "Gridiron": "TBD"
+  },
+  "position": "CB",
+  "college": "San Diego State",
+  "height": "6' 0\"",
+  "weight": "195",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Sr",
+  "projected_round": "4th Round",
+  "games": 42,
+  "snaps": 1732,
+  "site_ratings": {
+    "24/7 Sports": "84",
+    "ESPN": "88",
+    "Draft Buzz": "85.9 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.4",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "91.6",
+      "percentile": 1.0
+    },
+    "24 Grade": {
+      "value": "74",
+      "percentile": 0.667
+    },
+    "23 Grade": {
+      "value": "74",
+      "percentile": 0.667
+    },
+    "Coverage Grade": {
+      "value": "92.4",
+      "percentile": 1.0
+    },
+    "Passer Rating": {
+      "value": "16.1",
+      "percentile": 1.0
+    },
+    "Interceptions": {
+      "value": "4",
+      "percentile": 0.972
+    },
+    "Forced Incom.": {
+      "value": "8",
+      "percentile": 0.417
+    },
+    "Forced Inc. Rate": {
+      "value": "18.6",
+      "percentile": 0.667
+    },
+    "Dropped Picks": {
+      "value": "1",
+      "percentile": 0.667
+    },
+    "Completion %": {
+      "value": "41.9",
+      "percentile": 0.889
+    },
+    "Man Coverage": {
+      "value": "74",
+      "percentile": 0.556
+    },
+    "Zone Coverage": {
+      "value": "91.9",
+      "percentile": 1.0
+    },
+    "% In Man": {
+      "value": "26.1",
+      "percentile": 0.389
+    },
+    "% In Zone": {
+      "value": "66.8",
+      "percentile": 0.833
+    },
+    "Coverage Stops": {
+      "value": "8",
+      "percentile": 0.389
+    },
+    "Tackling": {
+      "value": "80.3",
+      "percentile": 0.722
+    },
+    "Missed Tackles": {
+      "value": "3",
+      "percentile": 0.778
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Arm Length": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Hand Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Speed": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Explosive": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Agility": {
+      "result": "TBD",
+      "grade": null
+    },
+    "10 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "20 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "40 Time": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Vertical": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Broad": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "3 Cone": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Bench": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Height": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Weight": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Gridiron": {
+      "result": "TBD",
+      "grade": "TBD"
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 60.5,
+      "positional_rank": "6.6"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 43.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 29.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 38.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 63.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 119.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 71.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 93.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - EARLY",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Mario GOODRICH",
+    "Bleacher": "Coby Bryant",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR Allowed": 49.6,
+    "Tackling": 0.79,
+    "Run Defense": 0.68,
+    "Cov Grade": 0.83,
+    "Zone Coverage": 0.77,
+    "Man/Press": 0.82
+  },
+  "projected_role": "Outside",
+  "ideal_scheme": "Zone",
+  "alignments": {
+    "D-Line": {
+      "2025": 8,
+      "career": 14
+    },
+    "Slot": {
+      "2025": 20,
+      "career": 51
+    },
+    "Corner": {
+      "2025": 561,
+      "career": 1429
+    },
+    "Box": {
+      "2025": 44,
+      "career": 154
+    },
+    "Deep": {
+      "2025": 0,
+      "career": 8
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Coverage Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Mental/Discipline Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nChris Johnson grew up in Long Beach and starred at Eleanor Roosevelt High School in Eastvale, California, where he dominated on both sides of the ball. As a senior, he posted 62 tackles with three interceptions and 18 pass deflections on defense while catching 16 passes for 342 yards and six touchdowns on offense. A consensus three-star recruit, Johnson selected San Diego State over offers from Boston College, Northwestern, and Boise State. He made an immediate impact as a true freshman in 2022, earning the team's Outstanding Freshman Award after appearing in 12 games and contributing primarily on special teams.\n\nHis sophomore season in 2023 brought expanded responsibilities and recognition as SDSU's Special Teams Player of the Year. Johnson appeared in all 12 games, recording 30 tackles, two pass breakups, and his first career interception against San Jose State. The 44-yard return showcased the ball skills that would define his later success. As a junior in 2024, Johnson seized a starting role and never looked back, logging 757 defensive snaps while posting 67 tackles, four pass breakups, and an interception with a 42-yard return. His performance earned All-Mountain West Honorable Mention recognition and established him as one of the conference's most reliable corners.\n\nJohnson's senior campaign in 2025 catapulted him into national prominence. Named the Mountain West Co-Defensive Player of the Year and an AP Second Team All-American, he became a Jim Thorpe Award semifinalist after compiling 44 solo tackles, seven assists, four interceptions, nine pass breakups, and a forced fumble across 634 defensive snaps. When targeted in coverage, quarterbacks completed just 18 of 43 attempts for 185 yards, zero touchdowns, and four interceptions. That production translates to an elite 16.1 passer rating allowed, cementing his status as one of college football's most disruptive defensive backs and establishing him as a legitimate first-round prospect.\n\nSCOUTING REPORT: SUMMARY\nWatch his 2005 tape you see a corner who just shut down one of the best statistical seasons any Group of Five defensive back has ever produced. The 16.1 passer rating allowed isn't a fluke, and neither is the 92.4 coverage grade. Johnson plays the position the right way, with patience, intelligence, and an understanding of route concepts that usually takes corners three years to develop at the pro level. He's already there. When you watch him work in zone coverage, you're seeing a finished product who reads quarterbacks, anticipates breaks, and attacks the football with proper timing.\n\nThe speed concerns are overblown. A 4.5ish forty is adequate for an outside corner who plays with the kind of technique and anticipation Johnson brings. He's not getting beat deep because he processes information quickly enough to get into position before receivers threaten his cushion. His recovery speed shows up on tape when he needs to flip and run, and the hip fluidity allows him to stay connected through breaks without grabbing. Teams that play predominantly zone coverage are going to love what he brings, but his man coverage numbers weren't bad either, holding receivers to a 54.3 passer rating in those situations. That's starting-caliber production regardless of scheme.\n\nJohnson has a chance to be a quality NFL starter for a long time. The concerns about competition level matter less when you're talking about a guy who didn't just win his matchups but dominated them to historically great levels. He brings scheme versatility, reliable tackling, ball production, and special teams value. His floor is a rock-solid CB2 who can slide into a starting role when needed, and there's legitimate upside for him to develop into a number one corner in the right system. Teams picking in the back half of the first round should consider circling his name, because you're getting a pro-ready corner who'll contribute immediately and still has room to grow."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Chris Johnson is one of the best—kept secrets in college football and another extremely talented cornerback playing his best football in 2025. He's been one of the best corners in the country this season as a senior, and he's putting up some impressive numbers.\n\nA precise technician on the outside, Johnson displays the scheme versatility to excel with his eyes in off, zone, and in a man coverage phone booth. He trusts in his athleticism to flip his hips and run while being patient and reading manipulation tactics.\n\nThe former 3—star recruit has played his entire career at San Diego State and set new career highs in tackles for loss (1.5), interceptions (3), defensive touchdowns (2), and passes defensed this year (6) before the season concluded. After choosing to go back to school last season, he's making the case to be the first G5 player selected in this upcoming draft."
+        },
+        {
+          "title": "Positives",
+          "text": "— Johnson has good size and athleticism to compete on the outside at the NFL level. His hip fluidity helps him stay in phase at every level.\n\n— Scheme versatility to toggle between man and zone while having the football IQ to stay in his responsibilities in each. He sees route combinations well and uses his eyes well in off coverage.\n\n—He maintains a good athletic position in his backpedal to remain smooth which aids in change of dircection. He has the speed to turn and run and recover down the field.\n\n— Plays with instinctual movements in off coverage and reads receivers well to trigger on routes. He attacks the football in the air and times his burst to close on the football to break up the catch point or take the ball away.\n\n— A willing participant in the run game, Johnson always stays ready to tackle and wraps up to finish plays."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Johnson has a hitch in his trigger when he gets momentum running upfield. Receivers who sell vertically with speed and decelerate create separation on comebacks and out breakers.\n\n— When in press alignment, using more jam technique and timing hands at release points will aid the former 3—star corner in staying on top of routes and not getting stacked vertically.\n\n— Down the field he locates the football, but will get out—timed at the catch point. Focusing on the catch point and hands of the receiver while timing his jumps better can create more difficult catches."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.4,
+    "grade_indicator": null,
+    "overall_rank": 63,
+    "position_rank": null,
+    "pro_comparison": "Coby Bryant",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

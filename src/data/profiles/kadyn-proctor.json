@@ -1,0 +1,538 @@
+{
+  "name": "Kadyn Proctor",
+  "slug": "kadyn-proctor",
+  "overview": {
+    "POS": "OT",
+    "College": "Alabama",
+    "Height": "6' 7\"",
+    "Weight": "366",
+    "Age": "20.6",
+    "DOB": "2005-06-04 00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": "1st Round",
+    "Games": "40",
+    "Snaps": "2435",
+    "24/7 Sports": "99",
+    "ESPN": "89",
+    "Draft Buzz": "88.2 / 100",
+    "NFL.com": "6.45",
+    "BR": "7.7",
+    "Gridiron": null
+  },
+  "position": "OT",
+  "college": "Alabama",
+  "height": "6' 7\"",
+  "weight": "366",
+  "age": 20.6,
+  "dob": "2005-06-04 00:00:00",
+  "year": "Jr",
+  "projected_round": "1st Round",
+  "games": 40,
+  "snaps": 2435,
+  "site_ratings": {
+    "24/7 Sports": "99",
+    "ESPN": "89",
+    "Draft Buzz": "88.2 / 100",
+    "NFL.com": "6.45",
+    "BR": "7.7",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "85.6",
+      "percentile": 0.9
+    },
+    "2024 Grade": {
+      "value": "70.8",
+      "percentile": 0.4
+    },
+    "2023 Grade": {
+      "value": "66.3",
+      "percentile": 0.333
+    },
+    "Run Block Grade": {
+      "value": "81.1",
+      "percentile": 0.8
+    },
+    "Pass Block Grade": {
+      "value": "83.5",
+      "percentile": 0.55
+    },
+    "True Pass Set Grade": {
+      "value": "77.6",
+      "percentile": 0.6
+    },
+    "Pass Block Efficiency": {
+      "value": "97.9",
+      "percentile": 0.0
+    },
+    "Zone Grade": {
+      "value": "83.6",
+      "percentile": 0.8
+    },
+    "Gap Grade": {
+      "value": "70.3",
+      "percentile": 0.4
+    },
+    "Sacks Allowed": {
+      "value": "2",
+      "percentile": 0.35
+    },
+    "Hits Allowed": {
+      "value": "4",
+      "percentile": 0.1
+    },
+    "Hurries Allowed": {
+      "value": "16",
+      "percentile": 0.0
+    },
+    "Pressures Allowed": {
+      "value": "22",
+      "percentile": 0.0
+    },
+    "Penalties": {
+      "value": "2",
+      "percentile": 0.9
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 22.5,
+      "positional_rank": "3.5714285714285716"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 25.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 23.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 17.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 39.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 18.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 13.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 19.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 23.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 28.0,
+      "positional_rank": "5"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 20.76923076923077,
+    "PFF": 17.0,
+    "ESPN": null,
+    "Brugler": 23.0,
+    "Kiper": 28.0,
+    "Miller": 35.0,
+    "Bleacher": 23.0,
+    "Walter": 23.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 9.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - MID",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "Miller": "TBD",
+    "DraftBuzz": "Amarius MIMS",
+    "Bleacher": "Rodger Saffold",
+    "WF": "Trent Brown.",
+    "Ringer": "Orlando Brown Jr"
+  },
+  "strengths": "• Elite Power & Physicality\n• Massive Frame, Dense Build\n• Athletic Anomoly with Size",
+  "weaknesses": "• Unrefined Technique\n• Undisciplined, Erratic Leverage",
+  "accolades": "• 5 Star Recruit\n• 2024 2nd Team All SEC\n• 2023 All Freshman SEC",
+  "player_summary": "Proctor is a massive left tackle from Alabama (6'7\", 366 lbs) with elite length and power, started 37 games across three seasons as a 5-star recruit, provided steady blindside protection for playoff runs. He dominates as a downhill run blocker, overwhelming defenders at the point of attack with knock-back pop, gap-emptying doubles, edge-sealing upper-body strength, and violent second-level finishes—excelling in short-yardage and resetting the LOS. In pass, his stout anchor and hand strength neutralize bull rushes when centered, stalling power charges effectively. However, inconsistency plagues him: indecisive vs. slants/quick sets, catching rather than punching, early weight drift opening gates, poor mirroring on inside counters, limited kick-slide range against speed, and high pad level.  Boom-or-bust profile; projects as a potential first-round pick with good RT or very good guard upside in power schemes.",
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.9,
+    "Run Blocking Grade": 0.87
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 963,
+      "career": 2408
+    },
+    "LG": {
+      "2025": 0,
+      "career": 0
+    },
+    "C": {
+      "2025": 0,
+      "career": 0
+    },
+    "RG": {
+      "2025": 0,
+      "career": 0
+    },
+    "RT": {
+      "2025": 0,
+      "career": 0
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": "Rugged, Aggressive Demeanor",
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": "Unrefined technique (BR)\nUndisciplined, Erratic Leverage (BR)"
+    },
+    "Physical Ability": {
+      "positives": "Elite power, Physicality, and Pedigree (BR)\nMassive Frame, Dense Build (BR)\nAtheltic Anomoly, Explosive, Fluid, Flexible (TDN)",
+      "negatives": null
+    }
+  },
+  "media_links": [
+    {
+      "description": "Highlights",
+      "source": "YT - Prospects",
+      "url": "https://www.youtube.com/watch?v=tW6Ej7y35SY"
+    },
+    {
+      "description": "Scouting Report",
+      "source": "YT - NFL on CBS",
+      "url": "https://www.youtube.com/watch?v=ouQ-1EPQr14"
+    },
+    {
+      "description": "Film Breakdown",
+      "source": "YT - PFF College Football Show",
+      "url": "https://www.youtube.com/watch?v=pcs9ueaqzL8"
+    },
+    {
+      "description": "Rose Bowl Interview",
+      "source": "YT - BamaOnLine",
+      "url": "https://www.youtube.com/watch?v=PDpoEWD3Au0"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Proctor is a mass of humanity with rare size and length at his command. He’s capable as a move blocker but shines when rolling downhill as a bona-fide people mover with bulldozing power. However, slants and quick first steps beat him to the spot in the run game. When set and centered, Proctor is a roadblock to speed-to-power charges. He has a stout anchor and strong hands to stall the rush in its track. He struggles to mirror athletes in space and lacks the range to protect deeper pocket drops against speed. Inconsistency in pass protection hasn’t helped his draft standing, but he still has the potential to become a good right tackle or very good guard."
+        },
+        {
+          "title": "Strengths",
+          "text": "Massive frame with good length. | Big knock-back pop when accelerating into contact. | Down blocks and double teams can empty the gap. | Captures and seals outside edge with upper-body power. | Adequate early quickness to execute move blocks. | Able to cover and engulf his second-level targets. | Settles into pass reps with adequate hand timing. | Power rushers need to pack a lunch against him. | Rush plans are stifled when he centers his contact. | Has hand strength to lock in and control the action."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Indecisive and inefficient when defender isn’t in front of him. | Cross-faced by slants and short-area movement. | Does too much catching and not enough punching. | Early gate opener with weight drifting too far outside. | Struggled staying mirrored to inside moves and counters. | Limited pass-set range will limit quarterback’s drop depth. | Needs to stabilize playing weight to dial in balance/quickness."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "“Kadyn Proctor is an exaggerated movie depiction of an offensive lineman in real life. At his best, he is the best offensive line prospect I’ve ever watched.”"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nKadyn Proctor was born on June 22, 2004 in Pleasant Hill, Iowa, where he would become the most dominant high school offensive lineman the state had ever seen. At Southeast Polk High School, the 6'7\", 366-pound behemoth did not just block opponents; he obliterated them, leading his team to a Class 5A state championship during his senior year with a 12-1 record. Beyond football, Proctor proved his rare combination of size and explosiveness by finishing fifth at the Iowa State Track and Field Championships with a shot put throw of 52-10, a number that still gets brought up when scouts discuss his unique athletic profile.\n\nHis recruitment was one of the most watched sagas of the 2023 cycle. A consensus five-star prospect rated as the top offensive tackle in the country, Proctor initially committed to his hometown Iowa Hawkeyes before flipping to Alabama on signing day, choosing Nick Saban's NFL tackle factory over the comfort of staying close to home. He stepped into the starting left tackle role immediately as a true freshman in 2023, playing all 13 games and earning All-SEC Freshman Team honors while logging 20 knockdown blocks across 743 snaps. When Saban retired in January 2024, Proctor made the surprising decision to transfer back to Iowa, but within three months he recognized his error and returned to Tuscaloosa in one of the most unusual portal situations in recent memory.\n\nHis junior campaign in 2025 validated everything scouts believed about his ceiling. Despite playing through a torn labrum suffered during pregame warmups before the season opener, Proctor started 12 games and earned First-Team All-SEC honors along with the Jacobs Blocking Trophy as the conference's best blocker. He was named a consensus All-American and finished second on Bruce Feldman's annual Freaks List, where his strength numbers became the stuff of legend: 815-pound squat, 535-pound bench press, and a 405-pound power clean. The Georgia game in Week 5, where he allowed zero pressures against one of the nation's most talented defensive fronts, stands as the defining performance of his college career.\n\nProctor is a rare combination of mass and movement. At 366 pounds with a 32-inch vertical and a quick forty, the athletic testing backs up what you see on film. The anchor is his calling card. When he gets his hands on you and sinks his hips, the rep is over. Power rushers who think they can walk him into the quarterback's lap are going to have a long afternoon. That Georgia game where he stonewalled one of the best defensive lines in college football with zero pressures allowed tells you everything about his ceiling.\n\n\n\nHis ideal landing spot is a team that runs heavy gap and power concepts where he can fire off the ball and move people. Duo schemes with a physical running back would maximize his skill set immediately. He is going to create holes at the NFL level the same way he did in the SEC because his combination of mass and violence at the point of attack simply overwhelms defenders. Teams that want to establish a physical identity up front will fall in love with his tape. The zone blocking concerns are real, but plenty of coordinators will happily build around his strengths rather than force him into schemes that expose his limitations.\n\n\n\nThe technical refinements needed in pass protection will come with quality NFL coaching, and there is enough evidence of improvement each season to believe his development arc is still trending upward. His willingness to return to the SEC cauldron after briefly transferring to Iowa, then playing through a torn labrum all season, speaks to the kind of mental toughness that translates to the league. He is not a perfect prospect, but the traits are rare enough that teams picking early will view the upside as worth the gamble. You are betting on a cornerstone left tackle who could anchor a line for the next decade."
+        },
+        {
+          "title": "Overview",
+          "text": "In awe of the size of this lad. Absolute unit.\n\nThere are not a lot of dudes on the planet who possess the combination of size and movement skills that Proctor brings to the table. A former five-star recruit, he has a massive build, tree-trunk legs, a wide torso, and very long arms. He was a three-year starter for the Crimson Tide and logged 2,408 snaps at left tackle during his college career. He blocks with surprising quickness for a man his size and is able to recover against the bull rush, regain his feet, and drop an anchor. He has heavy vise-grip hands, and when he gets you in his grasp, it’s hard to escape. He allowed just two sacks on 610 pass blocking snaps in 2025. In the run game, he has bulldozer power and uproots and carries opposing linemen out of the play, and he also flashed enough foot quickness to reach and seal off the backside of a run.\n\nThere were times when Proctor’s size was an issue. He struggles with speed off the edge and reverts to leaning and holding when he loses a step on the rusher. He overcompensates and oversets, opening himself up to interior countermoves. He blocks rushers for an initial few seconds but can then struggle to sustain blocks, allowing hustle sacks and second-effort rushes to get into the pocket. Teams may view him as a guard at the next level, where his size and power can take over in smaller spaces."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Kadyn Proctor is a mountain of a man with elite—level power, physicality and pedigree. At the same time, his unrefined technique results in a boom—or—bust prospect with too many glaring, clean losses on film, especially in pass—protection. These concerns call into question his ability to stick at tackle in the NFL after a shaky first month of the 2025 college season.\n\nProctor is a 6'7\", 366—pound tackle prospect, who entered the Alabama program as a 5—star recruit in the 2023 class.\n\nProctor was a second—team All—SEC selection in 2024 after starting 11 games at left tackle. He was also an All—SEC freshman team selection in 2023 after starting 13 games at left tackle."
+        },
+        {
+          "title": "Positives",
+          "text": "— massive frame with a dense build and a rare amount of Lean muscle mass.\n\n— Jarring power at the point of attack to uproot and overwhelm defenders.\n\n— flashes of anchoring and ending reps on command once latched.\n\n— Rugged, aggressive demeanor leads to some punishing finishes and body blows on defenders."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Undisciplined, erratic positional leverage in pass protection creates soft edges and short corners.\n\n— Bad habit of dipping head into contact results in getting overextended when the picture changes post—snap, causing him to fall off of blocks too easily.\n\n— Upright playing style saps his power and results in him 'catching' too many blocks."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Over the past two seasons, Proctor has been a steady and reliable blocker for the Crimson Tide. After being a top recruit, he broke into the starting lineup in 2023 as a freshman. He did a nice job of protecting Jalen Milroe and helping Alabama reach the college football playoff. Proctor had some struggles with Michigan, and after the season, it seemed as though he was going to leave for money in the transfer portal. Eventually, Proctor was back at Alabama and had a solid 2024 season for the Crimson Tide. Proctor had a mixed 2025 season. He had some good games as the blind side protector for Ty Simpson, but Proctor had some ugly outings as well. The tapes against Missouri and South Carolina, where he saw some future NFL defensive ends, were alarming, but Proctor did look better late in the season.\nAs a run blocker, Proctor is a load at the point of attack. Defensive linemen get overwhelmed by their mass, and he is steady to keep their defender from getting in on tackles. Off the ball, Proctor can blast defensive linemen and knock them backwards to create movement at the point of attack. Proctor has the power to open holes and roll defenders backwards off the line of scrimmage. He is very good in short-yardage situations at resetting the line of scrimmage, and Alabama has success going behind Proctor in obvious run downs. Proctor also shows some ability to fire to the second level and pull to his right. Proctor is not an elite mover, and he lumbers some in space. However, he has enough movement to get to spots and will dish out a violent hit or shove on second-level defenders. Proctor looks like a plus run blocker for the next level.\nIn pass protection, Proctor uses his size well to neutralize bull rushes. He has a propensity to play a little too high and needs to improve his ability to bend at the knee, but his mass is so tough to move that even when his positioning is not perfect, defensive linemen struggle to win on a bull rush. Proctor could stand to improve his hand placement to improve his ability to sustain blocks. Proctor did okay against speed rushers in 2024, but he needs to improve his kick slide for taking on the NFL speed that will come at him every week as a pro.\nIn the 2026 NFL Draft, Proctor could go in the first round, as multiple team sources say they see a future pro starter."
+        },
+        {
+          "title": "Strengths",
+          "text": "Massive blocker\nCan overhwhelm defenders with mass\nCan knock back defenders as a run blocker\nGood in short yardage\nCan fire to the second level\nDishes ou some violent hits\nWill neutralize bull rushes\nHIs mass is tough to move\nReliable hands\nReady to contribute immediately\nExperienced and successful against good college programs"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Poor weight management\nPoor work ethic\nConditioning\nCan struggles with speed rushers\nHas a bad habit of getting his feet stuck and reaching after rushers\nNeeds to improve his kick slide\nLumbers some in space\nNeeds to improve ability to bend at the knee\nHand placement needs to improve\nCould be better off moving to right tackle"
+        },
+        {
+          "title": "Player Comp",
+          "text": "Trent Brown. In terms of style of play, Proctor reminds me of a shorter version of Brown. When Brown has his weight done and is healthy, he has had some good seasons in the NFL. However, weight, durability, and character have been issues, and they could be problems for Proctor as well."
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "In awe of the size of this lad. Absolute unit.\n\nThere are not a lot of dudes on the planet who possess the combination of size and movement skills that Proctor brings to the table. A former five-star recruit, he has a massive build, tree-trunk legs, a wide torso, and very long arms. He was a three-year starter for the Crimson Tide and logged 2,408 snaps at left tackle during his college career. He blocks with surprising quickness for a man his size and is able to recover against the bull rush, regain his feet, and drop an anchor. He has heavy vise-grip hands, and when he gets you in his grasp, it’s hard to escape. He allowed just two sacks on 610 pass blocking snaps in 2025. In the run game, he has bulldozer power and uproots and carries opposing linemen out of the play, and he also flashed enough foot quickness to reach and seal off the backside of a run.\n\nThere were times when Proctor’s size was an issue. He struggles with speed off the edge and reverts to leaning and holding when he loses a step on the rusher. He overcompensates and oversets, opening himself up to interior countermoves. He blocks rushers for an initial few seconds but can then struggle to sustain blocks, allowing hustle sacks and second-effort rushes to get into the pocket. Teams may view him as a guard at the next level, where his size and power can take over in smaller spaces."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "In awe of the size of this lad."
+        },
+        {
+          "title": "Traits",
+          "text": "Bulldozer Power\nGot That Dog in Him"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former five-star recruit out of Des Moines, Iowa. Was the no. 2 offensive tackle and the no. 10 overall player in the 2023 class. Originally signed with Alabama in 2023, then transferred to Iowa ahead of the 2024 season, and returned to Alabama before the 2025 season, reclaiming a starting role at left tackle for the Crimson Tide offensive line. Named first-team All-SEC in 2025."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "The no. 2 player on Bruce Feldman’s annual Freaks List in 2025. According to the list, Proctor has squatted 815 pounds and done a 32-inch vertical jump.\nCan throw a football 60 yards.\nLined up as a wide receiver and caught this screen pass against Georgia. Has also rushed out of the fullback spot.\nNickname is “Krispy” because when he was a freshman, he got up to 400 pounds eating Krisy Kreme donuts."
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF ORLANDO BROWN Jr"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.45,
+    "prospect_grade_indicator": "Will Become Good Starter Within Two Years",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": null,
+    "eligibility": "Junior",
+    "nfl_rank": 28,
+    "nfl_pos_rank": 5
+  },
+  "bleacher_profile": {
+    "grade": 7.7,
+    "grade_indicator": null,
+    "overall_rank": 39,
+    "position_rank": null,
+    "pro_comparison": "Rodger Saffold",
+    "projected_round": "2nd Round"
+  },
+  "walter_profile": {
+    "player_comp": "Trent Brown. In terms of style of play, Proctor reminds me of a shorter version of Brown. When Brown has his weight done and is healthy, he has had some good seasons in the NFL. However, weight, durability, and character have been issues, and they could be problems for Proctor as well."
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF ORLANDO BROWN Jr",
+    "traits": "Bulldozer Power\nGot That Dog in Him"
+  },
+  "injury_history": [
+    {
+      "detail": "Shoulder",
+      "recovery_time": "2 Games",
+      "year": "2024"
+    },
+    {
+      "detail": "Shoulder Surgery",
+      "recovery_time": "Bowlgame",
+      "year": "2024"
+    }
+  ]
+}

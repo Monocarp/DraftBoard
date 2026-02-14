@@ -1,0 +1,430 @@
+{
+  "name": "Zakee Wheatley",
+  "slug": "zakee-wheatley",
+  "overview": {
+    "POS": "SAF",
+    "College": "Penn State",
+    "Height": "6' 2\"",
+    "Weight": "202",
+    "Age": "23.11",
+    "DOB": "2002-02-28 00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": "56",
+    "Snaps": "2148",
+    "24/7 Sports": "88",
+    "ESPN": "77",
+    "Draft Buzz": "84.7 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.8",
+    "Gridiron": "TBD"
+  },
+  "position": "SAF",
+  "college": "Penn State",
+  "height": "6' 2\"",
+  "weight": "202",
+  "age": 23.11,
+  "dob": "2002-02-28 00:00:00",
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": 56,
+  "snaps": 2148,
+  "site_ratings": {
+    "24/7 Sports": "88",
+    "ESPN": "77",
+    "Draft Buzz": "84.7 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.8",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "86.1",
+      "percentile": 0.545
+    },
+    "24 Grade": {
+      "value": "78.5",
+      "percentile": 0.5
+    },
+    "23 Grade": {
+      "value": "66.3",
+      "percentile": 0.2
+    },
+    "Coverage Grade": {
+      "value": "83.9",
+      "percentile": 0.273
+    },
+    "Interceptions": {
+      "value": "1",
+      "percentile": 0.182
+    },
+    "Forced Inc. Rate": {
+      "value": "10",
+      "percentile": 0.364
+    },
+    "Passer Rating Alwd": {
+      "value": "69.2",
+      "percentile": 0.273
+    },
+    "TD Allowed/Ints": {
+      "value": "1 / 1",
+      "percentile": null
+    },
+    "Coverage Stops": {
+      "value": "9",
+      "percentile": 0.636
+    },
+    "Run Def Grade": {
+      "value": "82.7",
+      "percentile": 0.818
+    },
+    "Run Stops": {
+      "value": "14",
+      "percentile": 0.773
+    },
+    "Tackling Grade": {
+      "value": "73.1",
+      "percentile": 0.364
+    },
+    "Tackles": {
+      "value": "59",
+      "percentile": 0.727
+    },
+    "Assisted Tackles": {
+      "value": "26",
+      "percentile": 0.818
+    },
+    "Missed Tackles": {
+      "value": "12",
+      "percentile": 0.364
+    },
+    "Missed Tackle Rate": {
+      "value": "12.4",
+      "percentile": 0.364
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 97.14285714285714,
+      "positional_rank": "5.5"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 94.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 83.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 55.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 35.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 72.0,
+      "positional_rank": "16"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 244.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "3RD",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Kyle Hamilton",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Targeted": 72.3,
+    "Tackling": 0.0,
+    "Run Defense": 0.91,
+    "Coverage Grade": 0.86,
+    "Zone Coverage": 0.87,
+    "Man/Press": 0.79
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 84,
+      "career": 84
+    },
+    "Box": {
+      "2025": 253,
+      "career": 253
+    },
+    "Corner": {
+      "2025": 1,
+      "career": 1
+    },
+    "Deep": {
+      "2025": 316,
+      "career": 316
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nThe Archbishop Spalding product from Maryland arrived in Happy Valley as a consensus four-star recruit who chose the Nittany Lions over several power conference suitors back in 2021. Standing 6'2\" and weighing 200 pounds, Wheatley redshirted his first season before gradually working his way into the defensive rotation over the next two campaigns. His junior year saw limited action with 24 tackles across thirteen games, but everything changed when KJ Winston went down early in 2024.\n\nThat injury thrust Wheatley into the starting lineup permanently, and the redshirt junior responded with authority. He racked up 96 tackles while snagging three interceptions and forcing a fumble across sixteen starts, earning All-Big Ten honorable mention honors from the media. His performance crescendoed in the playoff run where he became just the fifth Penn State player ever to record fifteen-plus tackles in a bowl game, hammering Notre Dame sixteen times in the Orange Bowl loss.\n\nRather than test the draft waters after his breakout campaign, the Maryland native returned for his final season of eligibility with unfinished business in mind. The former high school two-way standout who caught 56 passes for 810 yards and seven touchdowns as a prep junior now anchors a retooled Penn State secondary. Through 47 career games, he's accumulated nine takeaways while demonstrating the versatility that made him such a coveted recruit out of the DMV area, where he earned Big 33 Game selection honors and ranked among the top safety prospects in the region.\n\nWheatley has all the tools NFL defensive coordinators covet in today's passing league - the speed to erase mistakes, the instincts to create turnovers, and the versatility to handle multiple assignments. Watch him trigger from his deep alignment and close on intermediate routes, and you see a player who understands leverage and spacing at an advanced level.\n\n\n    \n   His 6'2\", 200-pound frame combined with that blazing speed gives him the physical toolkit to match up with the league's new breed of athletic tight ends and slot receivers. The film shows a player who processes information quickly, rarely gets fooled by misdirection, and consistently finds himself around the football. When he commits to being physical in run support, he can absolutely stone runners at the second level. The key word there is \"commits\" because the aggression comes and goes.\n\n\n    \n    This is a solid starting safety prospect who should develop into a reliable contributor at the next level. The team that drafts Wheatley gets a versatile defensive back who can play strong or free, drop into the slot in dime packages, and occasionally roll down as a robber. He's already shown the mental toughness to handle big stages, evidenced by his monster performance against Notre Dame in the Orange Bowl. Give him a position coach who demands consistent physicality and a defensive coordinator who understands how to maximize his range and ball skills, and you're looking at someone who can anchor a secondary for years."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Zakee Wheatley consistently finds the football and makes plays from a single—high alignment better than any safety in this class.\n\nHe's a former 3—star recruit from Archbishop Spalding High School in Severn, Maryland.\n\nWheatley is a seasoned player in Penn State's defense. He's coming off his best season in 2024, where he racked up 96 total tackles (58 solo), three tackles for loss, one sack, three interceptions, four passes defensed, two fumble recoveries, and a forced fumble."
+        },
+        {
+          "title": "Positives",
+          "text": "— Always around the football whether it's against the run or the pass. His instincts take him to where the plays go in every game.\n\n— His single—high ability, paired with his instincts, let him flow around the back end of the defense. Has real range to make plays.\n\n— Locates the football in the run game and triggers downhill with intent. He wants to make big hits and will wrap up the ball carrier.\n\n— His naturtal athleticism to mirror the quarterback and break on throws makes him a dangerous player against tough sideline throws and slighty under thrown balls."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Tackling technique when wrapping up to not fall around ankles. He has the length to tackle properly, but diving instead of driving to the ball can result in falling to ankles.\n\n— Aggression to trigger downhill quickly on play fakes makes him susceptible to double moves or deep shots over the top with play—action.\n\n— Playing more physically against tight ends in man coverage will help round out his impact against the pass."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.8,
+    "grade_indicator": null,
+    "overall_rank": 35,
+    "position_rank": null,
+    "pro_comparison": "Kyle Hamilton",
+    "projected_round": "2nd Round"
+  },
+  "injury_history": []
+}

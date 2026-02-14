@@ -1,0 +1,532 @@
+{
+  "name": "Jermod McCoy",
+  "slug": "jermod-mccoy",
+  "overview": {
+    "POS": "CB",
+    "College": "Tennessee",
+    "Height": "6' 0\"",
+    "Weight": "193",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": "1st Round",
+    "Games": "24",
+    "Snaps": "1106",
+    "24/7 Sports": "87",
+    "ESPN": "90",
+    "Draft Buzz": "89.0 / 100",
+    "NFL.com": "6.37",
+    "Bleacher": "8.5",
+    "Gridiron": "TBD"
+  },
+  "position": "CB",
+  "college": "Tennessee",
+  "height": "6' 0\"",
+  "weight": "193",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Jr",
+  "projected_round": "1st Round",
+  "games": 24,
+  "snaps": 1106,
+  "site_ratings": {
+    "24/7 Sports": "87",
+    "ESPN": "90",
+    "Draft Buzz": "89.0 / 100",
+    "NFL.com": "6.37",
+    "Bleacher": "8.5",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "24 Grade": {
+      "value": "87",
+      "percentile": 0.944
+    },
+    "23 Grade": {
+      "value": "64.2",
+      "percentile": 0.111
+    },
+    "Coverage Grade": {
+      "value": "89.6",
+      "percentile": 0.778
+    },
+    "Passer Rating": {
+      "value": "53.6",
+      "percentile": 0.667
+    },
+    "Interceptions": {
+      "value": "4",
+      "percentile": 0.972
+    },
+    "Forced Incom.": {
+      "value": "12",
+      "percentile": 1.0
+    },
+    "Forced Inc. Rate": {
+      "value": "19",
+      "percentile": 0.722
+    },
+    "Dropped Picks": {
+      "value": "0",
+      "percentile": 0.194
+    },
+    "Completion %": {
+      "value": "50",
+      "percentile": 0.667
+    },
+    "Man Coverage": {
+      "value": "80.3",
+      "percentile": 0.861
+    },
+    "Zone Coverage": {
+      "value": "86.5",
+      "percentile": 0.944
+    },
+    "% In Man": {
+      "value": "25.7",
+      "percentile": 0.333
+    },
+    "% In Zone": {
+      "value": "57.3",
+      "percentile": 0.417
+    },
+    "Coverage Stops": {
+      "value": "8",
+      "percentile": 0.389
+    },
+    "Tackling": {
+      "value": "79",
+      "percentile": 0.611
+    },
+    "Missed Tackles": {
+      "value": "4",
+      "percentile": 0.611
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Arm Length": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Hand Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Speed": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Explosive": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Agility": {
+      "result": "TBD",
+      "grade": null
+    },
+    "10 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "20 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "40 Time": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Vertical": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Broad": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "3 Cone": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Bench": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Height": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Weight": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Gridiron": {
+      "result": "TBD",
+      "grade": "TBD"
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 13.076923076923077,
+      "positional_rank": "1.5714285714285714"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 12.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 20.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 16.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 13.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 12.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 7.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 9.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 19.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 10.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 12.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 14.0,
+      "positional_rank": "2"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 11.538461538461538,
+    "PFF": 13.0,
+    "ESPN": null,
+    "Brugler": 11.0,
+    "Kiper": 13.0,
+    "Miller": 11.0,
+    "Bleacher": 11.0,
+    "Walter": 12.0,
+    "TDN": 18.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 10.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - TOP 10",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "Tyson Campbell",
+    "Miller": "TBD",
+    "DraftBuzz": "Kool-Aid MCKINSTRY",
+    "Bleacher": "0",
+    "WF": "TBD",
+    "Ringer": "Eric Stokes",
+    "NFL.com": "Tyson Campbell"
+  },
+  "strengths": "• Natural Fluidity, Elite Ball Skills\n• Vocal Leader, Play Maker\n• Top Tier Instincts, Route Recognition\n• Willing Tackler\n• Scheme Versatile\n• Closing Speed, Mirror Ability",
+  "weaknesses": "• Missed 2025 with ACL Injury\n• Inconsistent Recovery Speed\n• Gets Grabby Downfield When Losing\n• Tackling in Space",
+  "accolades": "• 2024 All SEC\n• 2024 2nd Team All American\n• 2024 Jim Thorpe Semifinalist",
+  "player_summary": "McCoy is a toolsy outside CB who transferred from Oregon State to Tennessee, posted elite production in 2023-2024 (16 PBU, 6 INT) including a team-leading 13 PBU and 4 INT at Tennessee before suffering an ACL tear in January training that cost him the entire 2025 season. Possessing a long, explosive frame from his triple/long-jump background, he shows smooth hips, quick feet, fluid transitions, and confident recoveries to match releases, gather on comebacks, and overlap routes in zone while tracking the ball like a receiver and finishing strongly at the catch point with length to contest 50-50 balls. Weaknesses include average acceleration that leaves him chasing verticals, struggles maintaining phase against speed, grabbing under duress, insufficient press physicality, indecision on zone handoffs, and drag-down tackling without big hitting power. His pre-injury tape screams first-round lockdown CB1 potential if he regains explosiveness.",
+  "draftbuzz_grades": {
+    "QBR Allowed": 65.7,
+    "Tackling": 0.86,
+    "Run Defense": 0.86,
+    "Cov Grade": 0.98,
+    "Zone Coverage": 0.93,
+    "Man/Press": 0.97
+  },
+  "projected_role": "Outside",
+  "ideal_scheme": "Zone",
+  "alignments": {
+    "D-Line": {
+      "2025": 16,
+      "career": 17
+    },
+    "Slot": {
+      "2025": 20,
+      "career": 34
+    },
+    "Corner": {
+      "2025": 611,
+      "career": 977
+    },
+    "Box": {
+      "2025": 49,
+      "career": 76
+    },
+    "Deep": {
+      "2025": 0,
+      "career": 1
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Tackling": {
+      "positives": null,
+      "negatives": null
+    },
+    "Coverage Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Mental/Discipline Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Athleticism/Phsyical Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [
+    {
+      "description": "Scouting Report",
+      "source": "YT - A to Z Sports",
+      "url": "https://www.youtube.com/watch?v=TUXf769PI6g"
+    },
+    {
+      "description": "Career Highlights",
+      "source": "YT - SimplyAS10",
+      "url": "https://www.youtube.com/watch?v=bOvjtqLnVOI"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "McCoy is a toolsy outside corner with CB1 flashes, but an ACL tear robbed him of a much-needed third season. Hips and feet are smooth, allowing for quality lateral transitions and efficient gathers to match hard-breaking curls. He’s athletic in his recoveries but average acceleration leaves him chasing too often on go routes. More focused, physical press disruption should make the rep easier to control. He’s opportunistic with strong ball skills at the catch point. His route squeeze and zone awareness should improve with more reps. We should expect McCoy’s athletic traits and instincts to help him make up for lost time once he gets into camp."
+        },
+        {
+          "title": "Strengths",
+          "text": "Former triple- and long-jumper with explosive lowers. | Posted 16 passes defensed, including six interceptions, from 2023 to 2024. | Patient in the early phases, allowing receivers to declare before opening. | Quick, confident feet can match release and recover when beaten. | Oily hips create fluid movement and change of direction in space. | Has the size to become more imposing underneath. | Shows ability to gather and redirect when matching comebacks. | Doesn’t guard grass and will look to overlap in zone coverages. | Engulfs wideouts at catch point for fast finishes or pass breakups."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Struggles to stay in phase against speedy route benders. | Loses poise and will grab when the rep becomes challenging. | Needs better physicality to suffocate work space on verticals. | Displays some indecision on zone switch-offs. | More drag-down tackler than full-body hitter. | Missed 2025 season with ACL tear."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nThe Whitehouse, Texas product burst onto the national scene after transferring from Oregon State to Tennessee, where his ball-hawking skills transformed the Volunteers' secondary. McCoy wasn't exactly a blue-chip recruit coming out of high school - a three-star prospect who excelled as a two-way player and track star in the Lone Star State. His athleticism was never in question (state titles in both long jump and triple jump), but his football instincts took time to develop as he balanced multiple positions and sports.\n\nAfter cutting his teeth as a freshman at Oregon State (31 tackles, 2 INTs in 12 games), McCoy found his true home in Knoxville where he blossomed into one of college football's premier corners. In 2024, his first season with the Vols, he racked up 44 tackles while defending 13 passes and snagging 4 interceptions - three of which came inside the opponent's 3-yard line, showing an uncanny knack for making momentum-shifting plays. The former multi-sport athlete turned heads in the SEC, earning Second-Team All-America honors and finding himself on the Jim Thorpe Award semifinalist list, cementing his status as an elite defensive back.\n\nThe path was set for McCoy to build on his breakthrough campaign in 2025, but a torn ACL suffered during an offseason training session in January has temporarily derailed his ascent. The injury comes at a critical juncture for the Volunteers' defense, as coaches have already noted his development as a vocal leader during rehabilitation. Before the setback, McCoy had established himself as a versatile corner with exceptional ball skills and coverage instincts that translated to an elite 97.2% overall coverage grade - the kind of production that has NFL scouts salivating despite the injury concern.\n\nSCOUTING REPORT: SUMMARY\nMcCoy brings scheme versatility that allows him to excel in multiple systems, though he'll particularly shine in defenses emphasizing zone pattern-matching concepts. His instinctive understanding of spatial relationships and route combinations allows him to process information faster than most prospects at his position. His timed speed raises questions about his recovery ability against elite NFL deep threats, but his anticipation and technique typically compensate for what he lacks in pure straight-line acceleration.\n\nHis ball production isn't an accident - the former Volunteer displays an authentic nose for the football that can't be taught. This isn't just a cornerback who prevents completions; he's a legitimate turnover creator who can flip field position in an instant. The elite coverage grades back up what the tape shows - a corner who anticipates throws and disrupts passing lanes with exceptional consistency. His technique allows him to play faster than his timed speed, particularly in short and intermediate zones where his click-and-close ability shines.\n\nEvaluating McCoy requires projecting how his game translates against NFL speed while factoring in his ongoing ACL recovery. Defensive coordinators will best maximize his instinctive zone skills by allowing him to read quarterbacks and jump routes rather than asking him to carry vertical threats with no help. Despite the long speed concerns and injury situation, his exceptional football IQ, ball skills, and versatility make him a worthy high selection with legitimate CB1 upside at the next level, provided his rehabilitation continues on schedule."
+        },
+        {
+          "title": "Overview",
+          "text": "Speedy, ball-hawking cornerback who plants himself in the personal space of opposing receivers.\n\nMcCoy is a loose and flexible cornerback who mirrors easily in coverage, using lightning-quick footwork and excellent balance to stick to receivers throughout their routes. A transfer to Tennessee in 2024 after starting his career at Oregon State, he has a slender, angular build and is comfortable in both press and off-man coverage. He has good instincts in zone coverage and can see the whole field, allowing him to undercut routes and get into passing lanes. He has explosive makeup speed, and even when he loses a step, his elite acceleration gives him a chance to close the gap quickly to make a play. McCoy has good ball skills, and he racked up four picks and nine passes defensed in 13 games in 2024 while giving up just two touchdowns in coverage, per PFF. He’s physical at the catch point, breaks on the ball decisively, and gets his hands around receivers to defend a pass or punch the ball loose. He’s tough, he’s physical, and he doesn’t back down from anyone.\n\nMcCoy can be inconsistent looking back for the ball in trailing coverage. Too often, he plays through the receiver instead of turning his head to find the ball. There have been times when he’s struggled with bigger, more physical pass catchers. One of the biggest questions he’ll face during the draft process is medical: He missed all of the 2025 college season after tearing his ACL in offseason training."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Jermod McCoy, cornerback Tennessee coming back from that injury... go him over the injured... in Jermod McCoy... McCoy at 13... Germa, McCoy, cornerback, Tennessee... medical's gonna be big with him moving forward, but the tape speaks volumes. What kind of true corner cover, corner lockdown corner he can be... whether you're at nine or 13, 13 is a little more palatable than eight or nine... McCoy's gonna have to be in the mix. He's coming back from a, it was a January injury so it was January when it happened. So we're a year removed now basically from that injury... McCoy at the medical test out good throughout this draft process, his tape will make him worthy of being a mid first round draft choice... confusing prospect as far as sizing up where he goes right now. The tape is awesome from last year. His tape is awesome going back to his time in Oregon State as well. Big long premier man coverage corner... Tore ACL in January of last year... 12 months of... zero Jermod McCoy exposure... he ends up finding his way into the first round. How high is the big question mark?... if he was eligible to come out after last year's season at Tennessee, I think he's gone by this pick number 13 overall..."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nMcCoy transferred from Oregon State to Tennessee last season, leading the team with 13 passes defended and tying a team-high four interceptions. He tore his ACL while training in January, so itÃ•s unclear when heÃ•ll be able to return this season. McCoy reads receivers' breaks well, showing good timing when reaching in to defend passes. His frame and balance make it tough to push him around at the top of routes. McCoy can turn and run, too. He reads the quarterback, plays the ball not the man and knows when to break on the ball in zone looks. He played both ways in high school, which shows since he tracks the ball like a receiver. McCoy has the length and frame to compete for 50-50 balls. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "ESPN",
+      "sections": [
+        {
+          "title": "Analysis",
+          "text": "McCoy transferred from Oregon State to Tennessee last season, leading the team with 13 passes defended and tying a team-high four interceptions. He tore his ACL while training in January, so itÃ•s unclear when heÃ•ll be able to return this season. McCoy reads receivers' breaks well, showing good timing when reaching in to defend passes. His frame and balance make it tough to push him around at the top of routes. McCoy can turn and run, too. He reads the quarterback, plays the ball not the man and knows when to break on the ball in zone looks. He played both ways in high school, which shows since he tracks the ball like a receiver. McCoy has the length and frame to compete for 50-50 balls. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Speedy, ball-hawking cornerback who plants himself in the personal space of opposing receivers.\n\nMcCoy is a loose and flexible cornerback who mirrors easily in coverage, using lightning-quick footwork and excellent balance to stick to receivers throughout their routes. A transfer to Tennessee in 2024 after starting his career at Oregon State, he has a slender, angular build and is comfortable in both press and off-man coverage. He has good instincts in zone coverage and can see the whole field, allowing him to undercut routes and get into passing lanes. He has explosive makeup speed, and even when he loses a step, his elite acceleration gives him a chance to close the gap quickly to make a play. McCoy has good ball skills, and he racked up four picks and nine passes defensed in 13 games in 2024 while giving up just two touchdowns in coverage, per PFF. He’s physical at the catch point, breaks on the ball decisively, and gets his hands around receivers to defend a pass or punch the ball loose. He’s tough, he’s physical, and he doesn’t back down from anyone.\n\nMcCoy can be inconsistent looking back for the ball in trailing coverage. Too often, he plays through the receiver instead of turning his head to find the ball. There have been times when he’s struggled with bigger, more physical pass catchers. One of the biggest questions he’ll face during the draft process is medical: He missed all of the 2025 college season after tearing his ACL in offseason training."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Speedy, ball-hawking cornerback"
+        },
+        {
+          "title": "Traits",
+          "text": "Instinctual Playmaking\nShort-Area Quickness\nCoverage chops"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former three-star recruit out of Whitehouse, Texas. Was the no. 126 cornerback in the 2023 class. Began his college career at Oregon State before transferring to Tennessee, where he was named first-team All-SEC and a Jim Thorpe Award semifinalist in 2024. Missed the 2025 season after suffering a torn ACL during offseason training last January."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "Was recruited to play receiver at Oregon State but switched to corner once he got to college.\nFormer Tennessee DBs coach on McCoy: “He’s not the loudest guy, but just little things where guys might be complaining or not sure about something. There’s always a positive spin to it. He sees that glass half full. I’ve noticed that from the beginning is the consistency every day. He’s a very competitive person both on and off the field.”"
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF ERIC STOKES"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.37,
+    "prospect_grade_indicator": "Will Eventually Be Plus Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Tyson Campbell",
+    "eligibility": "Junior",
+    "nfl_rank": 14,
+    "nfl_pos_rank": 2
+  },
+  "bleacher_profile": {
+    "grade": 8.5,
+    "grade_indicator": null,
+    "overall_rank": 7,
+    "position_rank": null,
+    "pro_comparison": null,
+    "projected_round": null
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF ERIC STOKES",
+    "traits": "Instinctual Playmaking\nShort-Area Quickness\nCoverage chops"
+  },
+  "injury_history": [
+    {
+      "detail": "Torn ACL",
+      "recovery_time": "All Season",
+      "year": "2025"
+    }
+  ]
+}

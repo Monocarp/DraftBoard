@@ -1,0 +1,1787 @@
+{
+  "consensus": [
+    {
+      "rank": 1,
+      "player": "Fernando Mendoza",
+      "position": "QB",
+      "school": "Indiana",
+      "slug": "fernando-mendoza"
+    },
+    {
+      "rank": 2,
+      "player": "Jeremiyah Love",
+      "position": "HB",
+      "school": "Notre Dame",
+      "slug": "jeremiyah-love"
+    },
+    {
+      "rank": 3,
+      "player": "Arvell Reese",
+      "position": "LB",
+      "school": "Ohio State",
+      "slug": "arvell-reese"
+    },
+    {
+      "rank": 4,
+      "player": "Caleb Downs",
+      "position": "S",
+      "school": "Ohio State",
+      "slug": "caleb-downs"
+    },
+    {
+      "rank": 5,
+      "player": "David Bailey",
+      "position": "ED",
+      "school": "Texas Tech",
+      "slug": "david-bailey"
+    },
+    {
+      "rank": 6,
+      "player": "Rueben Bain Jr",
+      "position": "ED",
+      "school": "Miami (FL)",
+      "slug": "rueben-bain-jr"
+    },
+    {
+      "rank": 7,
+      "player": "Jordyn Tyson",
+      "position": "WR",
+      "school": "Arizona State",
+      "slug": "jordyn-tyson"
+    },
+    {
+      "rank": 8,
+      "player": "Sonny Styles",
+      "position": "LB",
+      "school": "Ohio State",
+      "slug": "sonny-styles"
+    },
+    {
+      "rank": 9,
+      "player": "Carnell Tate",
+      "position": "WR",
+      "school": "Ohio State",
+      "slug": "carnell-tate"
+    },
+    {
+      "rank": 10,
+      "player": "Mansoor Delane",
+      "position": "CB",
+      "school": "LSU",
+      "slug": "mansoor-delane"
+    },
+    {
+      "rank": 11,
+      "player": "Spencer Fano",
+      "position": "T",
+      "school": "Utah",
+      "slug": "spencer-fano"
+    },
+    {
+      "rank": 12,
+      "player": "Francis Mauigoa",
+      "position": "T",
+      "school": "Miami (FL)",
+      "slug": "francis-mauigoa"
+    },
+    {
+      "rank": 13,
+      "player": "Jermod McCoy",
+      "position": "CB",
+      "school": "Tennessee",
+      "slug": "jermod-mccoy"
+    },
+    {
+      "rank": 14,
+      "player": "Makai Lemon",
+      "position": "WR",
+      "school": "USC",
+      "slug": "makai-lemon"
+    },
+    {
+      "rank": 15,
+      "player": "Keldric Faulk",
+      "position": "ED",
+      "school": "Auburn",
+      "slug": "keldric-faulk"
+    },
+    {
+      "rank": 16,
+      "player": "Kenyon Sadiq",
+      "position": "TE",
+      "school": "Oregon",
+      "slug": "kenyon-sadiq"
+    },
+    {
+      "rank": 17,
+      "player": "Olaivavega Ioane",
+      "position": "G",
+      "school": "Penn State",
+      "slug": "olaivavega-ioane"
+    },
+    {
+      "rank": 18,
+      "player": "Peter Woods",
+      "position": "DI",
+      "school": "Clemson",
+      "slug": "peter-woods"
+    },
+    {
+      "rank": 19,
+      "player": "Avieon Terrell",
+      "position": "CB",
+      "school": "Clemson",
+      "slug": "avieon-terrell"
+    },
+    {
+      "rank": 20,
+      "player": "Cashius Howell",
+      "position": "ED",
+      "school": "Texas A&M",
+      "slug": "cashius-howell"
+    },
+    {
+      "rank": 21,
+      "player": "Kayden McDonald",
+      "position": "DI",
+      "school": "Ohio State",
+      "slug": "kayden-mcdonald"
+    },
+    {
+      "rank": 22,
+      "player": "Denzel Boston",
+      "position": "WR",
+      "school": "Washington",
+      "slug": "denzel-boston"
+    },
+    {
+      "rank": 23,
+      "player": "Kadyn Proctor",
+      "position": "T",
+      "school": "Alabama",
+      "slug": "kadyn-proctor"
+    },
+    {
+      "rank": 24,
+      "player": "KC Concepcion",
+      "position": "WR",
+      "school": "Texas A&M",
+      "slug": "kc-concepcion"
+    },
+    {
+      "rank": 25,
+      "player": "Ty Simpson",
+      "position": "QB",
+      "school": "Alabama",
+      "slug": "ty-simpson"
+    },
+    {
+      "rank": 26,
+      "player": "Akheem Mesidor",
+      "position": "ED",
+      "school": "Miami (FL)",
+      "slug": "akheem-mesidor"
+    },
+    {
+      "rank": 27,
+      "player": "Caleb Lomu",
+      "position": "T",
+      "school": "Utah",
+      "slug": "caleb-lomu"
+    },
+    {
+      "rank": 28,
+      "player": "CJ Allen",
+      "position": "LB",
+      "school": "Georgia",
+      "slug": "cj-allen"
+    },
+    {
+      "rank": 29,
+      "player": "Monroe Freeling",
+      "position": "T",
+      "school": "Georgia",
+      "slug": "monroe-freeling"
+    },
+    {
+      "rank": 30,
+      "player": "Caleb Banks",
+      "position": "DI",
+      "school": "Florida",
+      "slug": "caleb-banks"
+    },
+    {
+      "rank": 31,
+      "player": "Emmanuel McNeil-Warren",
+      "position": "S",
+      "school": "Toledo",
+      "slug": "emmanuel-mcneil-warren"
+    },
+    {
+      "rank": 32,
+      "player": "Brandon Cisse",
+      "position": "CB",
+      "school": "South Carolina",
+      "slug": "brandon-cisse"
+    },
+    {
+      "rank": 33,
+      "player": "Zion Young",
+      "position": "ED",
+      "school": "Missouri",
+      "slug": "zion-young"
+    },
+    {
+      "rank": 34,
+      "player": "Colton Hood",
+      "position": "CB",
+      "school": "Tennessee",
+      "slug": "colton-hood"
+    },
+    {
+      "rank": 35,
+      "player": "Dillon Thieneman",
+      "position": "S",
+      "school": "Oregon",
+      "slug": "dillon-thieneman"
+    },
+    {
+      "rank": 36,
+      "player": "R Mason Thomas",
+      "position": "ED",
+      "school": "Oklahoma",
+      "slug": "r-mason-thomas"
+    },
+    {
+      "rank": 37,
+      "player": "T.J. Parker",
+      "position": "ED",
+      "school": "Clemson",
+      "slug": "tj-parker"
+    },
+    {
+      "rank": 38,
+      "player": "Christen Miller",
+      "position": "DI",
+      "school": "Georgia",
+      "slug": "christen-miller"
+    },
+    {
+      "rank": 39,
+      "player": "Jadarian Price",
+      "position": "HB",
+      "school": "Notre Dame",
+      "slug": "jadarian-price"
+    },
+    {
+      "rank": 40,
+      "player": "Chris Johnson Jr",
+      "position": "CB",
+      "school": "San Diego State",
+      "slug": "chris-johnson-jr"
+    },
+    {
+      "rank": 41,
+      "player": "Lee Hunter",
+      "position": "DI",
+      "school": "Texas Tech",
+      "slug": "lee-hunter"
+    },
+    {
+      "rank": 42,
+      "player": "Jake Golday",
+      "position": "LB",
+      "school": "Cincinnati",
+      "slug": "jake-golday"
+    },
+    {
+      "rank": 43,
+      "player": "Gabe Jacas",
+      "position": "ED",
+      "school": "Illinois",
+      "slug": "gabe-jacas"
+    },
+    {
+      "rank": 44,
+      "player": "Malachi Fields",
+      "position": "WR",
+      "school": "Notre Dame",
+      "slug": "malachi-fields"
+    },
+    {
+      "rank": 45,
+      "player": "Chris Bell",
+      "position": "WR",
+      "school": "Louisville",
+      "slug": "chris-bell"
+    },
+    {
+      "rank": 46,
+      "player": "Chris Brazzell II",
+      "position": "WR",
+      "school": "Tennessee",
+      "slug": "chris-brazzell-ii"
+    },
+    {
+      "rank": 47,
+      "player": "Omar Cooper Jr",
+      "position": "WR",
+      "school": "Indiana",
+      "slug": "omar-cooper-jr"
+    },
+    {
+      "rank": 48,
+      "player": "Anthony Hill Jr",
+      "position": "LB",
+      "school": "Texas",
+      "slug": "anthony-hill-jr"
+    },
+    {
+      "rank": 49,
+      "player": "Emmanuel Pregnon",
+      "position": "G",
+      "school": "Oregon",
+      "slug": "emmanuel-pregnon"
+    },
+    {
+      "rank": 50,
+      "player": "DAngelo Ponds",
+      "position": "CB",
+      "school": "Indiana",
+      "slug": "dangelo-ponds"
+    },
+    {
+      "rank": 51,
+      "player": "Kamari Ramsey",
+      "position": "S",
+      "school": "USC",
+      "slug": "kamari-ramsey"
+    },
+    {
+      "rank": 52,
+      "player": "Blake Miller",
+      "position": "T",
+      "school": "Clemson",
+      "slug": "blake-miller"
+    },
+    {
+      "rank": 53,
+      "player": "Max Klare",
+      "position": "TE",
+      "school": "Ohio State",
+      "slug": "max-klare"
+    },
+    {
+      "rank": 54,
+      "player": "Zachariah Branch",
+      "position": "WR",
+      "school": "Georgia",
+      "slug": "zachariah-branch"
+    },
+    {
+      "rank": 55,
+      "player": "Germie Bernard",
+      "position": "WR",
+      "school": "Alabama",
+      "slug": "germie-bernard"
+    },
+    {
+      "rank": 56,
+      "player": "Chase Bisontis",
+      "position": "G",
+      "school": "Texas A&M",
+      "slug": "chase-bisontis"
+    },
+    {
+      "rank": 57,
+      "player": "A.J. Haulcy",
+      "position": "S",
+      "school": "LSU",
+      "slug": "aj-haulcy"
+    },
+    {
+      "rank": 58,
+      "player": "Deontae Lawson",
+      "position": "LB",
+      "school": "Alabama",
+      "slug": "deontae-lawson"
+    },
+    {
+      "rank": 59,
+      "player": "Chandler Rivers",
+      "position": "CB",
+      "school": "Duke",
+      "slug": "chandler-rivers"
+    },
+    {
+      "rank": 60,
+      "player": "Keith Abney II",
+      "position": "CB",
+      "school": "Arizona State",
+      "slug": "keith-abney-ii"
+    },
+    {
+      "rank": 61,
+      "player": "Deion Burks",
+      "position": "WR",
+      "school": "Oklahoma",
+      "slug": "deion-burks"
+    },
+    {
+      "rank": 62,
+      "player": "Caleb Tiernan",
+      "position": "T",
+      "school": "Northwestern",
+      "slug": "caleb-tiernan"
+    },
+    {
+      "rank": 63,
+      "player": "Derrick Moore",
+      "position": "ED",
+      "school": "Michigan",
+      "slug": "derrick-moore"
+    },
+    {
+      "rank": 64,
+      "player": "LT Overton",
+      "position": "ED",
+      "school": "Alabama",
+      "slug": "lt-overton"
+    },
+    {
+      "rank": 65,
+      "player": "Zakee Wheatley",
+      "position": "S",
+      "school": "Penn State",
+      "slug": "zakee-wheatley"
+    },
+    {
+      "rank": 66,
+      "player": "Max Iheanachor",
+      "position": "T",
+      "school": "Arizona State",
+      "slug": "max-iheanachor"
+    },
+    {
+      "rank": 67,
+      "player": "JaKobi Lane",
+      "position": "WR",
+      "school": "USC",
+      "slug": "jakobi-lane"
+    },
+    {
+      "rank": 68,
+      "player": "Trinidad Chambliss",
+      "position": "QB",
+      "school": "Ole Miss",
+      "slug": "trinidad-chambliss"
+    },
+    {
+      "rank": 69,
+      "player": "Josiah Trotter",
+      "position": "LB",
+      "school": "Missouri",
+      "slug": "josiah-trotter"
+    },
+    {
+      "rank": 70,
+      "player": "Elijah Sarratt",
+      "position": "WR",
+      "school": "Indiana",
+      "slug": "elijah-sarratt"
+    },
+    {
+      "rank": 71,
+      "player": "Garrett Nussmeier",
+      "position": "QB",
+      "school": "LSU",
+      "slug": "garrett-nussmeier"
+    },
+    {
+      "rank": 72,
+      "player": "Gennings Dunker",
+      "position": "T",
+      "school": "Iowa",
+      "slug": "gennings-dunker"
+    },
+    {
+      "rank": 73,
+      "player": "Connor Lew",
+      "position": "C",
+      "school": "Auburn",
+      "slug": "connor-lew"
+    },
+    {
+      "rank": 74,
+      "player": "Will Lee III",
+      "position": "CB",
+      "school": "Texas A&M",
+      "slug": "will-lee-iii"
+    },
+    {
+      "rank": 75,
+      "player": "Domonique Orange",
+      "position": "DI",
+      "school": "Iowa State",
+      "slug": "domonique-orange"
+    },
+    {
+      "rank": 76,
+      "player": "Emmett Johnson",
+      "position": "HB",
+      "school": "Nebraska",
+      "slug": "emmett-johnson"
+    },
+    {
+      "rank": 77,
+      "player": "Julian Neal",
+      "position": "CB",
+      "school": "Arkansas",
+      "slug": "julian-neal"
+    },
+    {
+      "rank": 78,
+      "player": "Malik Muhammad",
+      "position": "CB",
+      "school": "Texas",
+      "slug": "malik-muhammad"
+    },
+    {
+      "rank": 79,
+      "player": "Javon Kilgore",
+      "position": "TBD",
+      "school": "TBD",
+      "slug": "javon-kilgore"
+    },
+    {
+      "rank": 80,
+      "player": "Darrell Jackson Jr",
+      "position": "DI",
+      "school": "Florida State",
+      "slug": "darrell-jackson-jr"
+    },
+    {
+      "rank": 81,
+      "player": "Davison Igbinosun",
+      "position": "CB",
+      "school": "Ohio State",
+      "slug": "davison-igbinosun"
+    },
+    {
+      "rank": 82,
+      "player": "Jack Endries",
+      "position": "TE",
+      "school": "Texas",
+      "slug": "jack-endries"
+    },
+    {
+      "rank": 83,
+      "player": "Jakobe Thomas",
+      "position": "S",
+      "school": "Miami (FL)",
+      "slug": "jakobe-thomas"
+    },
+    {
+      "rank": 84,
+      "player": "Dani Dennis-Sutton",
+      "position": "ED",
+      "school": "Penn State",
+      "slug": "dani-dennis-sutton"
+    },
+    {
+      "rank": 85,
+      "player": "Keionte Scott",
+      "position": "CB",
+      "school": "Miami (FL)",
+      "slug": "keionte-scott"
+    },
+    {
+      "rank": 86,
+      "player": "Michael Trigg",
+      "position": "TE",
+      "school": "Baylor",
+      "slug": "michael-trigg"
+    },
+    {
+      "rank": 87,
+      "player": "Daylen Everette",
+      "position": "CB",
+      "school": "Georgia",
+      "slug": "daylen-everette"
+    },
+    {
+      "rank": 88,
+      "player": "Eli Stowers",
+      "position": "TE",
+      "school": "Vanderbilt",
+      "slug": "eli-stowers"
+    },
+    {
+      "rank": 89,
+      "player": "Jake Slaughter",
+      "position": "C",
+      "school": "Florida",
+      "slug": "jake-slaughter"
+    },
+    {
+      "rank": 90,
+      "player": "Antonio Williams",
+      "position": "WR",
+      "school": "Clemson",
+      "slug": "antonio-williams"
+    },
+    {
+      "rank": 91,
+      "player": "Carson Beck",
+      "position": "QB",
+      "school": "Miami (FL)",
+      "slug": "carson-beck"
+    },
+    {
+      "rank": 92,
+      "player": "Billy Schrauth",
+      "position": "TBD",
+      "school": "TBD",
+      "slug": "billy-schrauth"
+    },
+    {
+      "rank": 93,
+      "player": "Romello Height",
+      "position": "ED",
+      "school": "Texas Tech",
+      "slug": "romello-height"
+    },
+    {
+      "rank": 94,
+      "player": "Jacob Rodriguez",
+      "position": "LB",
+      "school": "Texas Tech",
+      "slug": "jacob-rodriguez"
+    },
+    {
+      "rank": 95,
+      "player": "Joshua Josephs",
+      "position": "ED",
+      "school": "Tennessee",
+      "slug": "joshua-josephs"
+    },
+    {
+      "rank": 96,
+      "player": "DeZhaun Stribling",
+      "position": "WR",
+      "school": "OLE MISS",
+      "slug": "dezhaun-stribling"
+    },
+    {
+      "rank": 97,
+      "player": "Ted Hurst",
+      "position": "WR",
+      "school": "Georgia State",
+      "slug": "ted-hurst"
+    },
+    {
+      "rank": 98,
+      "player": "Genesis Smith",
+      "position": "S",
+      "school": "ARIZONA",
+      "slug": "genesis-smith"
+    },
+    {
+      "rank": 99,
+      "player": "Justin Joly",
+      "position": "TE",
+      "school": "NC State",
+      "slug": "justin-joly"
+    },
+    {
+      "rank": 100,
+      "player": "Taurean York",
+      "position": "LB",
+      "school": "Texas A&M",
+      "slug": "taurean-york"
+    }
+  ],
+  "bengals": [
+    {
+      "rank": 1,
+      "player": "Rueben Bain Jr",
+      "position": "ED",
+      "school": "Miami (FL)",
+      "slug": "rueben-bain-jr"
+    },
+    {
+      "rank": 2,
+      "player": "Arvell Reese",
+      "position": "LB",
+      "school": "Ohio State",
+      "slug": "arvell-reese"
+    },
+    {
+      "rank": 3,
+      "player": "David Bailey",
+      "position": "ED",
+      "school": "Texas Tech",
+      "slug": "david-bailey"
+    },
+    {
+      "rank": 4,
+      "player": "Sonny Styles",
+      "position": "LB",
+      "school": "Ohio State",
+      "slug": "sonny-styles"
+    },
+    {
+      "rank": 5,
+      "player": "Caleb Downs",
+      "position": "S",
+      "school": "Ohio State",
+      "slug": "caleb-downs"
+    },
+    {
+      "rank": 6,
+      "player": "Spencer Fano",
+      "position": "T",
+      "school": "Utah",
+      "slug": "spencer-fano"
+    },
+    {
+      "rank": 7,
+      "player": "Akheem Mesidor",
+      "position": "ED",
+      "school": "Miami (FL)",
+      "slug": "akheem-mesidor"
+    },
+    {
+      "rank": 8,
+      "player": "Francis Mauigoa",
+      "position": "T",
+      "school": "Miami (FL)",
+      "slug": "francis-mauigoa"
+    },
+    {
+      "rank": 9,
+      "player": "Carnell Tate",
+      "position": "WR",
+      "school": "Ohio State",
+      "slug": "carnell-tate"
+    },
+    {
+      "rank": 10,
+      "player": "Jordyn Tyson",
+      "position": "WR",
+      "school": "Arizona State",
+      "slug": "jordyn-tyson"
+    },
+    {
+      "rank": 11,
+      "player": "Mansoor Delane",
+      "position": "CB",
+      "school": "LSU",
+      "slug": "mansoor-delane"
+    },
+    {
+      "rank": 12,
+      "player": "Makai Lemon",
+      "position": "WR",
+      "school": "USC",
+      "slug": "makai-lemon"
+    },
+    {
+      "rank": 13,
+      "player": "Peter Woods",
+      "position": "DI",
+      "school": "Clemson",
+      "slug": "peter-woods"
+    },
+    {
+      "rank": 14,
+      "player": "Dillon Thieneman",
+      "position": "S",
+      "school": "Oregon",
+      "slug": "dillon-thieneman"
+    },
+    {
+      "rank": 15,
+      "player": "Lee Hunter",
+      "position": "DI",
+      "school": "Texas Tech",
+      "slug": "lee-hunter"
+    },
+    {
+      "rank": 16,
+      "player": "Jermod McCoy",
+      "position": "CB",
+      "school": "Tennessee",
+      "slug": "jermod-mccoy"
+    },
+    {
+      "rank": 17,
+      "player": "CJ Allen",
+      "position": "LB",
+      "school": "Georgia",
+      "slug": "cj-allen"
+    },
+    {
+      "rank": 18,
+      "player": "Caleb Lomu",
+      "position": "T",
+      "school": "Utah",
+      "slug": "caleb-lomu"
+    },
+    {
+      "rank": 19,
+      "player": "Denzel Boston",
+      "position": "WR",
+      "school": "Washington",
+      "slug": "denzel-boston"
+    },
+    {
+      "rank": 20,
+      "player": "Kayden McDonald",
+      "position": "DI",
+      "school": "Ohio State",
+      "slug": "kayden-mcdonald"
+    },
+    {
+      "rank": 21,
+      "player": "Keldric Faulk",
+      "position": "ED",
+      "school": "Auburn",
+      "slug": "keldric-faulk"
+    },
+    {
+      "rank": 22,
+      "player": "T.J. Parker",
+      "position": "ED",
+      "school": "Clemson",
+      "slug": "tj-parker"
+    },
+    {
+      "rank": 23,
+      "player": "Avieon Terrell",
+      "position": "CB",
+      "school": "Clemson",
+      "slug": "avieon-terrell"
+    },
+    {
+      "rank": 24,
+      "player": "Colton Hood",
+      "position": "CB",
+      "school": "Tennessee",
+      "slug": "colton-hood"
+    },
+    {
+      "rank": 25,
+      "player": "Olaivavega Ioane",
+      "position": "G",
+      "school": "Penn State",
+      "slug": "olaivavega-ioane"
+    },
+    {
+      "rank": 26,
+      "player": "Caleb Banks",
+      "position": "DI",
+      "school": "Florida",
+      "slug": "caleb-banks"
+    },
+    {
+      "rank": 27,
+      "player": "Cashius Howell",
+      "position": "ED",
+      "school": "Texas A&M",
+      "slug": "cashius-howell"
+    },
+    {
+      "rank": 28,
+      "player": "Emmanuel McNeil-Warren",
+      "position": "S",
+      "school": "Toledo",
+      "slug": "emmanuel-mcneil-warren"
+    },
+    {
+      "rank": 29,
+      "player": "KC Concepcion",
+      "position": "WR",
+      "school": "Texas A&M",
+      "slug": "kc-concepcion"
+    },
+    {
+      "rank": 30,
+      "player": "R Mason Thomas",
+      "position": "ED",
+      "school": "Oklahoma",
+      "slug": "r-mason-thomas"
+    },
+    {
+      "rank": 31,
+      "player": "Monroe Freeling",
+      "position": "T",
+      "school": "Georgia",
+      "slug": "monroe-freeling"
+    },
+    {
+      "rank": 32,
+      "player": "Kadyn Proctor",
+      "position": "T",
+      "school": "Alabama",
+      "slug": "kadyn-proctor"
+    },
+    {
+      "rank": 33,
+      "player": "Zachariah Branch",
+      "position": "WR",
+      "school": "Georgia",
+      "slug": "zachariah-branch"
+    },
+    {
+      "rank": 34,
+      "player": "Christen Miller",
+      "position": "DI",
+      "school": "Georgia",
+      "slug": "christen-miller"
+    },
+    {
+      "rank": 35,
+      "player": "Chris Bell",
+      "position": "WR",
+      "school": "Louisville",
+      "slug": "chris-bell"
+    }
+  ],
+  "expanded": [
+    {
+      "rank": 1,
+      "player": "Rueben Bain Jr",
+      "position": "ED",
+      "school": "Miami (FL)",
+      "slug": "rueben-bain-jr",
+      "grades": {
+        "ESPN": 92,
+        "NFL": 6.7,
+        "PFF": 92.9,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 6,
+        "NFL": 6,
+        "PFF": 5,
+        "Bleacher": 2,
+        "Walter": 17,
+        "CBS": 2
+      },
+      "summary": "Bain is a compact edge defender with inside versatility. He's an extremely tenacious and violent player who disguises a speed to power move that takes unwary tackles off guard if they take a snap off. He showcases elite hand usage, and keeps them well coordinated with his feet. He's got enough bend to create short corners and strong enough hands to shove tackles off balance, a rare combination to win both inside and out. In the run game, he's effective in setting his edge, shedding blocks, and using his natural leverage to get under blocks. His immense strength shows up on film in both phases, including an impressive Bull Rush that also takes advantage of his leverage. His lack of length and high end speed to close/pursue are noticable, but have not prevented him from being Uber productive at the highest levels and in the toughest games. A very safe pick with real all pro potential despite his size limitations. He'll upgrade any defense in either phase. "
+    },
+    {
+      "rank": 2,
+      "player": "Arvell Reese",
+      "position": "LB",
+      "school": "Ohio State",
+      "slug": "arvell-reese",
+      "grades": {
+        "ESPN": 92,
+        "NFL": 7.04,
+        "PFF": 75.7,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 2,
+        "NFL": 3,
+        "PFF": 3,
+        "Bleacher": 6,
+        "Walter": 5,
+        "CBS": 6
+      },
+      "summary": "Reese is a stand up linebacker who can play both in coverage or as a true edge. Likely needs to pick one and sprinkle the other in, most likely will be an edge rusher. He's very young but has had great coaching from Patricia and Lauranitus, but there are still some growing pains as he needs to learn how to diagnose quicker. His elite athleticism and trigger allows him to make up for some of that right now, and he should only improve with time. He's got that ideal frame, but needs to fill out more and focus on building upper body strength. He's got the traits to be an effective edge setter with time. But he's got a great tackle radius, consistent wrap up technique, top end closing speed, and has a solid pass rush repetoire to start with. His second half of the season in 2025 really hurt his numbers, but he showed enough improvements and his young age offset a lot of these concerns. He's an easy pick in the top of this draft with his potential and early returns. "
+    },
+    {
+      "rank": 3,
+      "player": "David Bailey",
+      "position": "ED",
+      "school": "Texas Tech",
+      "slug": "david-bailey",
+      "grades": {
+        "ESPN": 92,
+        "NFL": 6.75,
+        "PFF": 93.6,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 4,
+        "NFL": 4,
+        "PFF": 6,
+        "Bleacher": 8,
+        "Walter": 3,
+        "CBS": 20
+      },
+      "summary": "David Bailey has been the most productive pass rusher for a couple of years now in college. He's accomplished that consistent high level production with elite athleticism, explosive first steps, and a deep bag of pass rush moves. He plays like a stand up linebacker, largely due to his lack of size needed to be a real edge setter and hold his ground in the run game; however, he's shown he can get after the QB even against high level competition. Areas he will need to address include his hand usage, coming up with a better pass rush plan (although he's got a good selection of moves to work with), and bringing more toughness and physicality to his game. He's been able to win with his insane first step quickness and mvoement skills, but that won't be sufficient in the NFL. Fortunately, as mentioned, he's got the moves to work with, he just needs more of a plan. Some concern given his age, but he has a rock solid PR floor and true All pro pass rush potential. He does not get out of the top ten. "
+    },
+    {
+      "rank": 4,
+      "player": "Sonny Styles",
+      "position": "LB",
+      "school": "Ohio State",
+      "slug": "sonny-styles",
+      "grades": {
+        "ESPN": 91,
+        "NFL": 6.42,
+        "PFF": 89.2,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 10,
+        "NFL": 5,
+        "PFF": 10,
+        "Bleacher": 14,
+        "Walter": 20,
+        "CBS": 28
+      },
+      "summary": "Styles is safety turned linebacker who shows the best set of coverage skills at Linebacker in this draft. He couples those skills with great sideline range and top end instincts/discipline to get the front four in position and make needed adjustments pre and post snap. His short area quickness and pursuit speed, combined with a natural shiftiness alow him to slip through traffic with ease to make tackles. He's an exceptionally sure tackler who effectively uses his movement skills to shed blocks on the second level. His instincts when blitzing are just average, and he lacks the needed upper body strength to shed blocks faster. His tight hips do prevent him from changing direction when triggering downhill, but his trigger and violence improved a lot over 2025. Overall, Style projects as the best true coverage linebacker in this draft and will immediately elevate the guys around him. "
+    },
+    {
+      "rank": 5,
+      "player": "Caleb Downs",
+      "position": "S",
+      "school": "Ohio State",
+      "slug": "caleb-downs",
+      "grades": {
+        "ESPN": 92,
+        "NFL": 6.47,
+        "PFF": 87.6,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 5,
+        "NFL": 10,
+        "PFF": 1,
+        "Bleacher": 1,
+        "Walter": 4,
+        "CBS": 2
+      },
+      "summary": "Downs brings 3 years of starting exp including high-stakes games and a National Title, brings strong productivity. A versatile defender, he excels in run support with twitchy C.O.D., body control, and open-field tackling to mirror slashing runners and limit perimeter gains, while his elite instincts, read-and-react skills, and awareness allow him to process route combos, deny leverage in off-man coverage, stay sticky in transitions, and disrupt plays near the LOS without frequent false steps or susceptibility to misdirection. In coverage, he shows fluid hips in man, excellent range and burst to cover ground or close, and the ability to limit yards after catch, though he occasionally focuses too much on receivers rather than locating the ball, lacks ideal length for contesting jump balls downfield, and may struggle with larger \"Y\" tight ends. Drawbacks include below-average size/strength , inconsistent wrap-up , a tendency to gamble downhill, and hints of caution that reduce plays on the ball. "
+    },
+    {
+      "rank": 6,
+      "player": "Spencer Fano",
+      "position": "T",
+      "school": "Utah",
+      "slug": "spencer-fano",
+      "grades": {
+        "ESPN": 92,
+        "NFL": 6.44,
+        "PFF": 83.7,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 7,
+        "NFL": 12,
+        "PFF": 17,
+        "Bleacher": 13,
+        "Walter": 15,
+        "CBS": 8
+      },
+      "summary": "Spencer Fano, a three-year starter with versatility at both left and right tackle in run-heavy schemes, plays with a violent, physical demeanor. Possessing loose hips, quick feet, high-end athleticism, good size, and natural strength, he overcomes a leaner frame to deliver strong pass protection: elite recovery, agile mirroring to seal edges, depth in drops, sinking to anchor bull rushes, and feinting punches to disrupt hand fights. In the run game, he excels in movement-based schemes, using quickness for pulling, reaching, and climbing; he fires out with fast hands, sustains blocks through footwork, springs big gains in space, and finishes with punishing intent—though poor fundamentals, high pad level, and core strength deficits limit sustained power blocking. Inconsistencies plague him: vulnerable to inside counters (stunts, spins), oversetting, early outside exposure, lost punch battles, lunging/hugging hands, and displacement by heavy-handed rushers."
+    },
+    {
+      "rank": 7,
+      "player": "Akheem Mesidor",
+      "position": "ED",
+      "school": "Miami (FL)",
+      "slug": "akheem-mesidor",
+      "grades": {
+        "ESPN": 90,
+        "NFL": 6.41,
+        "PFF": 92.7,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 18,
+        "NFL": 18,
+        "PFF": 33,
+        "Bleacher": 30,
+        "Walter": 49,
+        "CBS": 61
+      },
+      "summary": "Mesidor is an older prospect, will be 25 in his rookie season. This is due in part to an injury history, largely foot injuries. However, his skills in pass rush are undeniable. He has that phenomenal combination of deep pass rush skills, real awareness of how to beat his opponent, adapt as needed, and a truly ruthless demeanor that doesn't take a snap off. He also shows ability to spy mobile QBs. His ability in the run game is less documented and will need further analysis. His run defense grade is high at 90, but run stop % is low and missed tackle is high. He is noted to be a valuable edge setter. He also has the ability and experience to kick inside and be truly versatile. Overall, he seems like an early high end contributor, limited by his size, age, and injury concerns, but he's shown just about everything you're looking for from a guy with those limitations. "
+    },
+    {
+      "rank": 8,
+      "player": "Francis Mauigoa",
+      "position": "T",
+      "school": "Miami (FL)",
+      "slug": "francis-mauigoa",
+      "grades": {
+        "ESPN": 92,
+        "NFL": 6.48,
+        "PFF": 84.4,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 8,
+        "NFL": 13,
+        "PFF": 19,
+        "Bleacher": 15,
+        "Walter": 11,
+        "CBS": 5
+      },
+      "summary": "Francis Mauigoa, a durable three-year starter and 2025 captain at right tackle with 26 consecutive starts, combines a dense, broad, powerfully muscled frame—more guard-like than typical tackle—with surprising movement and athleticism for the position. He plays with high football IQ, excellent contact balance, and a strong core, delivering firm initial pop and torque on run blocks while patiently sliding, latching, and redirecting rushers in pass protection. Mauigoa rarely loses to speed, anchors well against power, maintains pocket depth, and smothers momentum at the turn. In the run game, he walls off defenders with a wide base and shows destructive finishing power. Primary concerns are excessive leaning that erodes leverage and sustain on drive blocks, vulnerability to spin counters, average range reaching outside-zone landmarks, and shorter arms that limit recovery on stacked or late moves. He's an early Day 1 starter at right tackle with guard versatility and a high ceiling."
+    },
+    {
+      "rank": 9,
+      "player": "Carnell Tate",
+      "position": "WR",
+      "school": "Ohio State",
+      "slug": "carnell-tate",
+      "grades": {
+        "ESPN": 91,
+        "NFL": 6.75,
+        "PFF": 88.6,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 11,
+        "NFL": 9,
+        "PFF": 8,
+        "Bleacher": 11,
+        "Walter": 19,
+        "CBS": 13
+      },
+      "summary": "Physically, Tate brings good size with long arms and a wide catch radius, making him a reliable red-zone and contested-catch weapon who excels on jump balls, uses body control and timing to win in traffic, tracks deep balls at full speed, adjusts to throws effectively, and works back to secure them away from defenders. He displays surprising speed and twitch for his frame, building momentum quickly on intermediate and deep routes, generating separation with route savvy, burst, tempo changes, and a second gear to threaten all levels or create after the catch, including on screens. His hands are soft, strong, and reliable, with effortless pass-catching and polish rare for his age; he consistently extends the catch point away from his frame, plucks the ball cleanly, and climbs the ladder over defenders when needed. While he could add play strength and bulk to better handle physical corners, his overall traits project him as a Day 1 starter and a strong No. 2 receiver."
+    },
+    {
+      "rank": 10,
+      "player": "Jordyn Tyson",
+      "position": "WR",
+      "school": "Arizona State",
+      "slug": "jordyn-tyson",
+      "grades": {
+        "ESPN": 91,
+        "NFL": 6.46,
+        "PFF": 83.6,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 9,
+        "NFL": 15,
+        "PFF": 7,
+        "Bleacher": 9,
+        "Walter": 7,
+        "CBS": 10
+      },
+      "summary": "Jordyn Tyson is a twitchy, dynamic wide receiver with improved route running, added size, and versatility across all three positions. At 6'2\", 200 pounds, he features a long-levered frame and large catch radius, using sudden burst, acceleration, and quick, springy cuts to shake man and zone coverage, stem defenders, flatten out of breaks, and generate separation that draws penalties. He releases well off press, gains vertical leverage, threatens downfield with adequate speed, and shows short-area quickness for high-leverage, chain-moving catches. Tyson separates with savvy footwork to cross up corners, contorts at the catch point for off-target throws, concentrates through contact, climbs for 50/50 balls with timing and body control, and extends to pluck away from his frame. He threatens after the catch by making defenders miss. A notable injury history creates durability concerns that teams must investigate pre-draft; contested-catch success has been inconsistent in evaluations"
+    },
+    {
+      "rank": 11,
+      "player": "Mansoor Delane",
+      "position": "CB",
+      "school": "LSU",
+      "slug": "mansoor-delane",
+      "grades": {
+        "ESPN": 90,
+        "NFL": 6.8,
+        "PFF": 90.7,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 16,
+        "NFL": 8,
+        "PFF": 14,
+        "Bleacher": 5,
+        "Walter": 12,
+        "CBS": 14
+      },
+      "summary": "Experienced, High floor player with traits to be a top tier back in the league. Can compete Day 1 as an outside corner with the size, ball skills, and athleticism required to get the job done and continue to ascend. While quickness and burst are evident, true long speed is a potential issue. Pre-draft testing will determine his spot in the draft. Unsure if he has true Elite tier potential, but appears capable of being a high end starter for a long time in the league. Physical player that showed willingness to go against high end competition, his phsyicality may cause some penalities early in the NFL. Needs to improve his tackling form, but not a lack of effort. Some stiffness in his game due to size. Shows solid versatility in scheme. "
+    },
+    {
+      "rank": 12,
+      "player": "Makai Lemon",
+      "position": "WR",
+      "school": "USC",
+      "slug": "makai-lemon",
+      "grades": {
+        "ESPN": 90,
+        "NFL": 6.7,
+        "PFF": 90.8,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 15,
+        "NFL": 7,
+        "PFF": 11,
+        "Bleacher": 12,
+        "Walter": 40,
+        "CBS": 16
+      },
+      "summary": "A Playmaking slot reciever with some ability to line up outside. He's got the short area burst to create seperation, combined with strong route running savvy to keep defenders guessing. His competitiveness, ball tracking, and high point ability maximize his otherwise limited catch radius. Despite his size, has extremely strong, sure hands that makes him an ideal 50-50 ball receiver. Some mixed feedback on YAC ability, likely that his burst, competitiveness, and open-space playmaking give him real big play potential every down, but size and lack of elite speed limit the opportunities. Overall, a true high end slot guy who can start day 1 and offer real value in the return game. "
+    },
+    {
+      "rank": 13,
+      "player": "Peter Woods",
+      "position": "DI",
+      "school": "Clemson",
+      "slug": "peter-woods",
+      "grades": {
+        "ESPN": 91,
+        "NFL": 6.36,
+        "PFF": 72,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 14,
+        "NFL": 34,
+        "PFF": 9,
+        "Bleacher": 10,
+        "Walter": 23,
+        "CBS": 4
+      },
+      "summary": "Woods is a young DT with three seasons of exp lining up both inside and outside, projects best as a three-tech. Possessing powerful lower-body explosiveness, lateral quickness, synced hands/feet, and strong anticipation, he defeats reach blocks, splits doubles, explodes through contact, sheds quickly to pursue, and sets effective picks in twists—making him disruptive against the run and functional in collective pocket pressure despite lacking solo quick-win moves. He holds ground at the POA,  reestablishes the LOS, and shows chase-down range. Primary issues include shorter arms, giving ground against single blocks, inconsistent finishing , risk-taking in the run game, and average twist quickness without reliable PR moves. Still developing play strength and fill-out potential in his frame,  '24 tape better reflects his upside than '25 (combined ~82 tackles, 5 sacks). He has three-down starting traits and is viewed by scouts as a 1st rd talent with solid starter potential in even fronts."
+    },
+    {
+      "rank": 14,
+      "player": "Dillon Thieneman",
+      "position": "S",
+      "school": "Oregon",
+      "slug": "dillon-thieneman",
+      "grades": {
+        "ESPN": 85,
+        "NFL": 6.32,
+        "PFF": 90.7,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 43,
+        "NFL": 25,
+        "PFF": 49,
+        "Bleacher": 27,
+        "Walter": 43,
+        "CBS": 40
+      },
+      "summary": "Thieneman, a 3-year starter delivers rare production (306 career tackles, eight interceptions) with NFL-ready size, speed, and alignment versatility across both safety spots, big nickel, and potentially slot coverage. Functioning as an on-field extension of the coordinator, he excels at pre-snap adjustments, reading route concepts and spacing in zone, tracking the ball deep, and maintaining quarterback focus while ranging over the top. His instinctive downhill triggers and relentless pursuit squeeze run lanes and keep him around the football, stacking tackles despite not being a dominant thumper. Limitations appear in man coverage, where average COD quickness allows routes to separate late; he can be step-slow adjusting perimeter angles, struggles with hand usage to shed blocks, and shows hit/miss variability plus modest stopping power against bigger ball-carriers. Thieneman projects as a versatile, high-IQ three-down safety with early starting potential."
+    },
+    {
+      "rank": 15,
+      "player": "Lee Hunter",
+      "position": "DI",
+      "school": "Texas Tech",
+      "slug": "lee-hunter",
+      "grades": {
+        "ESPN": 88,
+        "NFL": 6.33,
+        "PFF": 80.8,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 34,
+        "NFL": 26,
+        "PFF": 53,
+        "Bleacher": 36,
+        "Walter": 56,
+        "CBS": 104
+      },
+      "summary": "Hunter is a massive NT prospect who showed real ability to handle high competition at Texas Tech and was the standout of the Senior Bowl. His massive frame and superior strength allows him to win in the pass and run games. He will not be easily moved backward and consistently collapses the pocket or resets the line of scrimmage. While he doesn't have much upside in the pass rush game due to his limited athleticism, he does show flashes of usage with his hands, and his motor to keep fighting allows him to make some cleanup sacks. He'll need to continue to refine his hand usage and his technique when taking on blocks, but he has the tools to develop into a very reliable early down NT, with some potential to improve his PR game as well. See him as a late 1st round, early second right now. Given the lack of high end talent in this class and the league's need for more guys like him, probably pushes him up a bit. "
+    },
+    {
+      "rank": 16,
+      "player": "Jermod McCoy",
+      "position": "CB",
+      "school": "Tennessee",
+      "slug": "jermod-mccoy",
+      "grades": {
+        "ESPN": 90,
+        "NFL": 6.37,
+        "PFF": 87,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 20,
+        "NFL": 14,
+        "PFF": 12,
+        "Bleacher": 7,
+        "Walter": 9,
+        "CBS": 12
+      },
+      "summary": "McCoy is a toolsy outside CB who transferred from Oregon State to Tennessee, posted elite production in 2023-2024 (16 PBU, 6 INT) including a team-leading 13 PBU and 4 INT at Tennessee before suffering an ACL tear in January training that cost him the entire 2025 season. Possessing a long, explosive frame from his triple/long-jump background, he shows smooth hips, quick feet, fluid transitions, and confident recoveries to match releases, gather on comebacks, and overlap routes in zone while tracking the ball like a receiver and finishing strongly at the catch point with length to contest 50-50 balls. Weaknesses include average acceleration that leaves him chasing verticals, struggles maintaining phase against speed, grabbing under duress, insufficient press physicality, indecision on zone handoffs, and drag-down tackling without big hitting power. His pre-injury tape screams first-round lockdown CB1 potential if he regains explosiveness. \n"
+    },
+    {
+      "rank": 17,
+      "player": "CJ Allen",
+      "position": "LB",
+      "school": "Georgia",
+      "slug": "cj-allen",
+      "grades": {
+        "ESPN": 88,
+        "NFL": 6.29,
+        "PFF": 76.4,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 27,
+        "NFL": 22,
+        "PFF": 28,
+        "Bleacher": 33,
+        "Walter": 30,
+        "CBS": 24
+      },
+      "summary": "CJ Allen, a \"green dot\" off-ball linebacker and team captain, projects as a dependable three-down Mike with leadership intangibles and high character. He sorts run fits patiently, mirrors backs with leverage, secures gaps when engaged, pops off blocks with hand strikes, disguises A/B-gap blitzes effectively, and finishes tackles with rare consistency and body control while closing quickly to limit YAC in zone. His toughness, instincts, and run-defense productivity make him a floor-raiser who arrives with force and understands play development. Limitations include average trigger quickness, pursuit speed hampered by hip tightness and stride length, post-meniscus injury stiffness/reduced confidence, shorter arms that hinder block shedding, infrequent high-value splash plays or cross-LOS disruption, and restricted ball production in man coverage. Allen lacks elite athleticism or playmaking upside but offers immediate starting reliability.\n"
+    },
+    {
+      "rank": 18,
+      "player": "Caleb Lomu",
+      "position": "T",
+      "school": "Utah",
+      "slug": "caleb-lomu",
+      "grades": {
+        "ESPN": 90,
+        "NFL": 6.36,
+        "PFF": 68.5,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 17,
+        "NFL": 29,
+        "PFF": 27,
+        "Bleacher": 52,
+        "Walter": 16,
+        "CBS": 29
+      },
+      "summary": "Lomu is a solid floor pass protecting LT coming out of Utah, with the potential to become a high end overall starter due to his frame and coachable deficits. Whats hurting him most in the run game is need for more upperbody strength, lack of polish in getting to his positions, maintaining pad level,  and really sustaining those blocks. The good news is, those are fixable traits with more experience and mass. His athleticism stands out in his footwork, and his hand usage is very good, he just has to sync them up better. Mentality wise, he does show the right attitude in Pass Pro, hopefully see more of a mauler mentality in run when he gets the size on him. He also remains calm in blitz, reacting to moves with poise. A little more of a development project than most 1st rounders, but what a player needs to show in college he's shown and his deficits are manageable ones, so expect to see him off the board before Day 2. "
+    },
+    {
+      "rank": 19,
+      "player": "Denzel Boston",
+      "position": "WR",
+      "school": "Washington",
+      "slug": "denzel-boston",
+      "grades": {
+        "ESPN": 89,
+        "NFL": 6.4,
+        "PFF": 88.5,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 24,
+        "NFL": 20,
+        "PFF": 20,
+        "Bleacher": 32,
+        "Walter": 29,
+        "CBS": 21
+      },
+      "summary": "Denzel Boston is the prototype of a big, competitive, possession receiver. He may have trouble creating seperation with his lack of high end speed, but he's got the burst and route savvy to get open consistently enough, and his elite ball skills will make him a coveted receiving option for a number of teams. With his ability to track the ball, make adjustments, and use his high end grip strength and competitiveness to win at the catch point, NFL Teams aren't going to be super worried about his ability to seperate. He brings an edge to his game that also shows up in the run game where hes a willing and capable blocker. His lack of athleticism does show up in some in breaking routes, and the longer routes go the more he'll lose ground, but his possession skills will make him a mid day 1 pick. "
+    },
+    {
+      "rank": 20,
+      "player": "Kayden McDonald",
+      "position": "DI",
+      "school": "Ohio State",
+      "slug": "kayden-mcdonald",
+      "grades": {
+        "ESPN": 90,
+        "NFL": 6.39,
+        "PFF": 86.5,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 19,
+        "NFL": 33,
+        "PFF": 21,
+        "Bleacher": 25,
+        "CBS": 39
+      },
+      "summary": "McDonald is a thickly built DT from OSU, broke out as a 2025 starter after limited 2024 backup duty, posting high interior production (47-65 tackles, 8 TFL, 3 sacks, 2 forced fumbles). He dominates run defense with natural leverage, knock-back jolt on contact, excellent recognition, gap penetration, disruption of wide-zone schemes, accurate sheds to defend both gaps, and strong rally/tracking—leveraging rare size-strength-athleticism to recover from poor positions as fundamentals improved late-season. Pass rush shows bull-rush power, active hands, and closing burst but remains underdeveloped: slow hands/power activation, no quick-win moves, limited lateral width/edge threat, and ooze rather than collapse. Vulnerable to displacement (up to 3 yards) by doubles or hip-to-hip blocks when pads rise. McDonald projects as a run-focused even-front nose tackle with starting potential; 1st-round upside if technique refines further.\n"
+    },
+    {
+      "rank": 21,
+      "player": "Keldric Faulk",
+      "position": "ED",
+      "school": "Auburn",
+      "slug": "keldric-faulk",
+      "grades": {
+        "ESPN": 91,
+        "NFL": 6.49,
+        "PFF": 74.5,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 12,
+        "NFL": 27,
+        "PFF": 13,
+        "Bleacher": 21,
+        "Walter": 8,
+        "CBS": 7
+      },
+      "summary": "Faulk turns 21 during his rookie season, features a long, projectable frame with room to reach 300+ pounds and high-character leadership that boosts his grade. Versatile for odd or even fronts, he aligns anywhere from edge to interior on passing downs, where quickness and long levers overmatch guards. A fluid athlete with diverse rush moves, efficient sudden hands, and strong pursuit, he stalks scrambling QBs effectively. As a run defender, he dominates with elite grades (89.2, 86th percentile solo stops), low missed tackles (88th percentile), and the strength/length to control, shed, or penetrate gaps while chasing stretch plays. Limitations include average upfield burst, playing tall, inconsistent violent hands/assertiveness at the point, and overruns that delay working back to the QB—reflected in uneven sack production (7+ in 2024, just a couple in 2025) and an underdeveloped pass-rush plan. "
+    },
+    {
+      "rank": 22,
+      "player": "T.J. Parker",
+      "position": "ED",
+      "school": "Clemson",
+      "slug": "tj-parker",
+      "grades": {
+        "ESPN": 87,
+        "NFL": 6.26,
+        "PFF": 82.1,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 36,
+        "NFL": 38,
+        "PFF": 23,
+        "Bleacher": 23,
+        "Walter": 83,
+        "CBS": 18
+      },
+      "summary": "Parker is a powerful 4-3 DE with NFL length and heavy hands, posted explosive ‘24 production (11 sacks, 19.5 TFL, record 6 forced fumbles) but regressed in ‘25 (5.5 sacks, tighter movement) before dominating Senior Bowl practices with diverse wins and unexpected bend/juice. He sets firm edges by striking early, pressing/stacking tackles, swiping blocks, and finishing as a heavy hitter who knocks balls loose. His long arms can collapse pockets when timed right. Limitations include average short-area burst and pursuit speed (short-strider), lacking initial pop vs drive blocks, getting widened, static frame for punches, slow secondary counters when stalled, and an underdeveloped rush menu beyond power. The 2025 tape likely better reflects his pro floor, while traits suggest improvement. Parker projects as a three-down, average-to-above-average starter with run-control strength; stock dipped to early-to-mid second round but Senior Bowl boosted first-round consideration in a weaker class. "
+    },
+    {
+      "rank": 23,
+      "player": "Avieon Terrell",
+      "position": "CB",
+      "school": "Clemson",
+      "slug": "avieon-terrell",
+      "grades": {
+        "ESPN": 89,
+        "NFL": 6.43,
+        "PFF": 83.5,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 22,
+        "NFL": 30,
+        "PFF": 18,
+        "Bleacher": 18,
+        "Walter": 25,
+        "CBS": 17
+      },
+      "summary": "A polished CB and brother of Falcons 1st-rounder A.J., offers athletic fluidity, loose hips, twitchy transitions, and sufficient speed to mirror releases and stay in phase on verticals, excelling in press-man by crowding routes and disrupting at the catch point with elite timing—evidenced by 8 career fumbles (including ACC-leading marks) and consistent PBU production (25+ PBU across three seasons).He reads routes/QB well in zone, closes explosively, and contributes willing downhill run support with urgency off perimeter blocks. Primary concerns stem from a slender 180-lb frame that yields ground on 50/50 balls to bigger receivers, loses trail positioning on bendy routes, shows reactive rather than proactive anticipation, average short-zone eye discipline, and modest stopping power against larger ball-carriers. Despite size limitations, his man-coverage polish, ball skills, and competitiveness project him as an early NFL starter in schemes emphasizing press and zone versatility.\n"
+    },
+    {
+      "rank": 24,
+      "player": "Colton Hood",
+      "position": "CB",
+      "school": "Tennessee",
+      "slug": "colton-hood",
+      "grades": {
+        "ESPN": 87,
+        "NFL": 6.42,
+        "PFF": 79.7,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 35,
+        "NFL": 16,
+        "PFF": 29,
+        "Bleacher": 66,
+        "CBS": 37
+      },
+      "summary": "Hood is a physical press-man CB, dominates with disruptive punches that suffocate outside releases, aggressive catch-point battles for top positioning, and box-safety run support—triggering downhill explosively to limit YAC, finish with stopping power against bigger backs, and force incompletions at an SEC-leading rate while turning his side into a no-fly zone. He maintains phase on verticals, erases in-breakers from press or off looks, and operates disciplined against high/low concepts in zone. Weaknesses include vulnerability to twitchy/shifty NFL releases, sticky hips on sudden transitions, grabby tendencies when out of phase, occasional ball-tracking lapses or zone-switch missteps, developing off-coverage instincts, and leggy open-field tackling. Despite a toe injury limiting Senior Bowl practice, his poise, patience, and ball plays in sessions cemented first-round status; Hood projects as a mentality-driven CB2 with upside in press-heavy schemes. \n"
+    },
+    {
+      "rank": 25,
+      "player": "Olaivavega Ioane",
+      "position": "G",
+      "school": "Penn State",
+      "slug": "olaivavega-ioane",
+      "grades": {
+        "ESPN": 88,
+        "NFL": 6.4,
+        "PFF": 79.4,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 33,
+        "NFL": 11,
+        "PFF": 22,
+        "Bleacher": 20,
+        "Walter": 21,
+        "CBS": 34
+      },
+      "summary": "Ionae is the top interior Olineman coming into this draft. He bring the desired build and a rock solid floor especially in pass pro. With strong hands, combined with a natural use of hips to deliver power, he can create movement on the line as well as anchor effectively against bull rushes. He lacks the desired athleticism and his foot speed shows up against interior speed and a lack of ability to make needed adjustments. Mentally, theres some concern about his ability to read and react to stunting linemen. His lack of athleticism also shows up in his ability to deal with moving targets. Daniel Jeremiah is surprisingly high on him, calling him the best offensive lineman in the draft, but his upside seems limited by that athleticism. Nevertheless, seems like a day 1 starter with the potential to be a long time quality starter. Should also be noted he achieved very good PFF grades playing in the Big 10. "
+    },
+    {
+      "rank": 26,
+      "player": "Caleb Banks",
+      "position": "DI",
+      "school": "Florida",
+      "slug": "caleb-banks",
+      "grades": {
+        "ESPN": 88,
+        "NFL": 6.39,
+        "PFF": 66.4,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 28,
+        "NFL": 39,
+        "PFF": 16,
+        "Bleacher": 49,
+        "Walter": 26,
+        "CBS": 49
+      },
+      "summary": "Banks is 24, with an injury history that took him out for most of 2025. He's a development project with the desired traits and instincts to develop into a serious contributor on the inside, with some versatility to play on the outside as well. His strenght and natural athleticism show up on tape, but his hand usage needs to be more refined and will need to develop a more mature pass rush plan. In the run game, he's got the size and strength to control blockers and handle double teams effectively, although his high-hipped playing style may cost him there in the NFL if he doesn't get that fixed. Showed really well in days 2 and 3 of the Senior Bowl. "
+    },
+    {
+      "rank": 27,
+      "player": "Cashius Howell",
+      "position": "ED",
+      "school": "Texas A&M",
+      "slug": "cashius-howell",
+      "grades": {
+        "ESPN": 88,
+        "NFL": 6.38,
+        "PFF": 81.2,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 26,
+        "NFL": 17,
+        "PFF": 15,
+        "Bleacher": 22,
+        "Walter": 28,
+        "CBS": 19
+      },
+      "summary": "Howell is a small but athletic pass rush specialist in the NFL. Lacks size, instincts, ability to contirbute in the run game, but has a a decent grouping of PR moves to contibute on third down right away. Showed consistent success in PRWR against the SEC for two years in a row, but did disappear in big games against elite fronts. His handwork has room to improve and needs to diversify his cadence, move selection. He's got the right temperment to succeed, absolute competitor when rushing the passer. He's got the moves to start with and athleticism to improve. Hard to see him going super high given his limitation to one down, but could be a real contributor early. "
+    },
+    {
+      "rank": 28,
+      "player": "Emmanuel McNeil-Warren",
+      "position": "S",
+      "school": "Toledo",
+      "slug": "emmanuel-mcneil-warren",
+      "grades": {
+        "ESPN": 85,
+        "NFL": 6.33,
+        "PFF": 91.4,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 44,
+        "NFL": 19,
+        "PFF": 51,
+        "Bleacher": 19,
+        "CBS": 97
+      },
+      "summary": "A tall, long-limbed downhill safety from Toledo, supports run def as a box enforcer with physicality, block-slipping ability, urgent triggers via long strides, and an expansive tackle radius—highlighted by 9 career forced fumbles (elite Peanut punch) and 5 interceptions. He anticipates routes adequately from off alignments, closes quickly to deliver strikes over the middle, and fits best in  near-LOS roles where he meets runners early and limits big plays. Weaknesses center on diagnostic inefficiencies: excessive bouncing/pre-snap movement, unsettled feet leading to open-field misses, downhill dives that lose containment, and poor footwork that struggles against vertical speed or space coverage—likely limiting him to scheme-protected, 2-down duties rather than versatile deep-third work. A dedicated, high-character worker with ST contributions, McNeil-Warren offers late 1st- to mid-2nd-round value (potential riser to top-20 with testing) as a specialized run-support safety.\n"
+    },
+    {
+      "rank": 29,
+      "player": "KC Concepcion",
+      "position": "WR",
+      "school": "Texas A&M",
+      "slug": "kc-concepcion",
+      "grades": {
+        "ESPN": 87,
+        "NFL": 6.4,
+        "PFF": 78.4,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 38,
+        "NFL": 32,
+        "PFF": 26,
+        "Bleacher": 17,
+        "Walter": 22,
+        "CBS": 22
+      },
+      "summary": "Conception is a smaller receiver out of Texas A&M who uses his burst, shiftiness, and evasion skills to be a true big play threat at any time. He's hard to square up and his elite short area quickness makes it hard to capture him. He seemed to play more as a general athlete early in his career, taking lots of snaps out of the backfield. This shows up in his ability to vary route speeds and be more consistent bringing the ball in. But he's shown his ability to truly improve an offense with his touchdown production and his high YAC. In this class, would be suprised to see him fall out of the first, definitely doesnt fall out of the top 40. "
+    },
+    {
+      "rank": 30,
+      "player": "R Mason Thomas",
+      "position": "ED",
+      "school": "Oklahoma",
+      "slug": "r-mason-thomas",
+      "grades": {
+        "ESPN": 85,
+        "NFL": 6.25,
+        "PFF": 85.3,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 42,
+        "NFL": 35,
+        "PFF": 37,
+        "Bleacher": 51,
+        "Walter": 24,
+        "CBS": 51
+      },
+      "summary": "Thomas is an experienced pass rusher with a variety of ways to win with his natural athleticism, explosiveness, and a solid group of PR moves. He'salso shown the ability to win consistently by converting speed to power. His short frame limits his upside, and he lacks the lower body strength to anchor and set an edge effectively. However, for a team looking for a passing down stand up pass rusher, his size, leverage, and quickness allows him to get under taller tackles, and his relentless motor combined with a natural athelticism to bend and recover give him a really solid floor for that fit. He's had a long history of injuries to both ankles, which will push him down boards. "
+    },
+    {
+      "rank": 31,
+      "player": "Monroe Freeling",
+      "position": "T",
+      "school": "Georgia",
+      "slug": "monroe-freeling",
+      "grades": {
+        "ESPN": 88,
+        "NFL": 6.31,
+        "PFF": 72.2,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 25,
+        "NFL": 24,
+        "PFF": 31,
+        "Bleacher": 61,
+        "CBS": 70
+      },
+      "summary": "Freeling is a traits guy with a high ceiling and questionable floor. He doesn't bring day 1 starter ability, but could very well be a high end starter with coaching and added size. He's got an elite frame and high end athletic traits. His quickness allows him to make the first move most of the time and get into position and even without the desired mass he can hold a functional anchor against the bull rush. But he has a lot to work on. He doesn't use his hands independently, nor does he have a diverse approach to using them. He plays stiff/upright, which causes him to lunge and lean. Edges with a good PR plan confound him. He did show improvement throughout the year, but his lack of experience shows up on tape. With his traits, some team will be willing to use an early pick on him, and it may pay off big time, but they'll need to be patient. Mel Kiper is crazy high on him right now, but I don't see the reason yet. Slot him in at late 1st to early 2nd due to his upside and thin options at Tackle in the NFL. "
+    },
+    {
+      "rank": 32,
+      "player": "Kadyn Proctor",
+      "position": "T",
+      "school": "Alabama",
+      "slug": "kadyn-proctor",
+      "grades": {
+        "ESPN": 89,
+        "NFL": 6.45,
+        "PFF": 85.6,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 23,
+        "NFL": 28,
+        "PFF": 25,
+        "Bleacher": 39,
+        "Walter": 18,
+        "CBS": 23
+      },
+      "summary": "Proctor is a massive left tackle from Alabama (6'7\", 366 lbs) with elite length and power, started 37 games across three seasons as a 5-star recruit, provided steady blindside protection for playoff runs. He dominates as a downhill run blocker, overwhelming defenders at the point of attack with knock-back pop, gap-emptying doubles, edge-sealing upper-body strength, and violent second-level finishes—excelling in short-yardage and resetting the LOS. In pass, his stout anchor and hand strength neutralize bull rushes when centered, stalling power charges effectively. However, inconsistency plagues him: indecisive vs. slants/quick sets, catching rather than punching, early weight drift opening gates, poor mirroring on inside counters, limited kick-slide range against speed, and high pad level.  Boom-or-bust profile; projects as a potential first-round pick with good RT or very good guard upside in power schemes."
+    },
+    {
+      "rank": 33,
+      "player": "Zachariah Branch",
+      "position": "WR",
+      "school": "Georgia",
+      "slug": "zachariah-branch",
+      "grades": {
+        "ESPN": 88,
+        "NFL": 6.33,
+        "PFF": 82,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 31,
+        "NFL": 48,
+        "PFF": 84,
+        "Bleacher": 54,
+        "CBS": 75
+      },
+      "summary": "Branch is a small but sturdy receiver who brings true top end speed, acceleration, and elusiveness to both the slot and the backfield. His limited size and poor route running limit what you can do with him down the field, but a gifted OC with a plan can use him in a lot of ways behind the line and out of the slot to serious effect. He'll likely bring early value in the run game as he continues to refine his game and eventually be a solid slot guy. His playmaking ability in space will be very attractive to teams that know how to use him, so I would expect him to not go past round two. How high he goes will just depend on how many teams value what he brings. Wouldn't expect a day 1 sighting, but wouldn't be shocking to see him sneak in given the lack of impact starters in this class. "
+    },
+    {
+      "rank": 34,
+      "player": "Christen Miller",
+      "position": "DI",
+      "school": "Georgia",
+      "slug": "christen-miller",
+      "grades": {
+        "ESPN": 82,
+        "NFL": 6.34,
+        "PFF": 84.9,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 57,
+        "NFL": 37,
+        "PFF": 30,
+        "Bleacher": 45,
+        "CBS": 27
+      },
+      "summary": "Miller is a UGA DT , redshirted as a 2022 freshman behind first-round talents before breaking out with a strong 2025 season that addressed concerns and placed him in first-round discussions. Built for even-front nose duties, he rattles pads at the point with hip explosion, heavy hand strikes for knock-back pop, sturdy balance rarely yielding ground, quick lock-out/peek/shed against singles, and active hustle across gaps to squeeze lanes while recognizing play design. His size-strength-movement blend offers three-worthy three-down potential as a consistent interior starter. Limitations include insufficient mass/girth to reliably anchor doubles or function as a pure space-eater/gap hog—shown when displaced by powerful interiors like Tennessee—and average lateral matching plus anticipation as a two-gapper. Further bulking should enhance reliability, positioning him as a solid rather than dominant pro contributor.\n"
+    },
+    {
+      "rank": 35,
+      "player": "Chris Bell",
+      "position": "WR",
+      "school": "Louisville",
+      "slug": "chris-bell",
+      "grades": {
+        "ESPN": 86,
+        "NFL": 6.2,
+        "PFF": 81.8,
+        "Gridiron": "TBD",
+        "RAS Score": "TBD",
+        "RAS Grade": "TBD"
+      },
+      "ranks": {
+        "ESPN": 40,
+        "NFL": 50,
+        "PFF": 36,
+        "Bleacher": 85,
+        "Walter": 38,
+        "CBS": 35
+      },
+      "summary": "Bell is a big body receiver who excells over the middle and loves to compete after the catch, making him very valuable for offenses looking for a guy they can hit for short/medium gains with a true threat to become home run plays. While he lacks serious burst and his short area footwork is lacking, once he gets going he builds up speed fast. Really curious to get his testing back because some conflicting reports on how fast he can really be. While he's definitely competitive and uses his size well, his contested catch ability isn't what you'd hope for. His lack of natural hands catching ability and general ball skills show up there the most. He is not a polish route runner either, hopefully something that can improve in the NFL, but not likely to ever really generate seperation with it given his lack of twitch/footwork. Overall, expect him to go early Day 2, especially with the ACL tear, but someone that could do a lot of damage in the NFL in the right offense. "
+    }
+  ]
+}

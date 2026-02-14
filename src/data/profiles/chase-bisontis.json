@@ -1,0 +1,457 @@
+{
+  "name": "Chase Bisontis",
+  "slug": "chase-bisontis",
+  "overview": {
+    "POS": "IOL",
+    "College": "Texas A&M",
+    "Height": "6' 5\"",
+    "Weight": "315",
+    "Age": "21.7",
+    "DOB": "2004-06-10 00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": null,
+    "Games": "36",
+    "Snaps": "1962",
+    "24/7 Sports": "96",
+    "ESPN": "TBD",
+    "Draft Buzz": "83.5 / 100",
+    "NFL.com": "6.37",
+    "BR": "7.5",
+    "Gridiron": null
+  },
+  "position": "IOL",
+  "college": "Texas A&M",
+  "height": "6' 5\"",
+  "weight": "315",
+  "age": 21.7,
+  "dob": "2004-06-10 00:00:00",
+  "year": "Jr",
+  "projected_round": null,
+  "games": 36,
+  "snaps": 1962,
+  "site_ratings": {
+    "24/7 Sports": "96",
+    "ESPN": "TBD",
+    "Draft Buzz": "83.5 / 100",
+    "NFL.com": "6.37",
+    "BR": "7.5",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "62.4",
+      "percentile": 0.0
+    },
+    "2024 Grade": {
+      "value": "70.2",
+      "percentile": 0.4
+    },
+    "2023 Grade": {
+      "value": "55.2",
+      "percentile": 0.0
+    },
+    "Run Block Grade": {
+      "value": "62.7",
+      "percentile": 0.1
+    },
+    "Pass Block Grade": {
+      "value": "70.7",
+      "percentile": 0.1
+    },
+    "True Pass Set Grade": {
+      "value": "66.5",
+      "percentile": 0.1
+    },
+    "Pass Block Efficiency": {
+      "value": "98.4",
+      "percentile": 0.3
+    },
+    "Zone Grade": {
+      "value": "66",
+      "percentile": 0.2
+    },
+    "Gap Grade": {
+      "value": "56.5",
+      "percentile": 0.0
+    },
+    "Sacks Allowed": {
+      "value": "1",
+      "percentile": 0.5
+    },
+    "Hits Allowed": {
+      "value": "3",
+      "percentile": 0.1
+    },
+    "Hurries Allowed": {
+      "value": "8",
+      "percentile": 0.3
+    },
+    "Pressures Allowed": {
+      "value": "12",
+      "percentile": 0.3
+    },
+    "Penalties": {
+      "value": "8",
+      "percentile": 0.2
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 84.57142857142857,
+      "positional_rank": "4.5"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 89.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 43.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 57.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 128.0,
+      "positional_rank": "16"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 131.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 49.0,
+      "positional_rank": "2"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 45.833333333333336,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 64.0,
+    "Bleacher": null,
+    "Walter": 85.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 28.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "Miller": "TBD",
+    "DraftBuzz": "Trevor KEEGAN",
+    "Bleacher": "Mark Glowinski",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.75,
+    "Run Blocking Grade": 0.68
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 0,
+      "career": 0
+    },
+    "LG": {
+      "2025": 795,
+      "career": 1358
+    },
+    "C": {
+      "2025": 0,
+      "career": 0
+    },
+    "RG": {
+      "2025": 0,
+      "career": 62
+    },
+    "RT": {
+      "2025": 0,
+      "career": 540
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Bisontis is a tough, well-schooled guard. He lacks ideal length, but he brings heavy hands, good footwork and plus core strength to the table. He plays with ideal strain and stickiness to sustain blocks. He has plenty of nasty when he needs it, too. He’s consistent as a move/zone blocker and when working downhill. He can be outreached, stacked and shed when his hands aren’t first, though. While he provides poise and good technique as a run blocker, there are slight levels of anxiety/hurry in his pass protection, with his lack of length a contributing factor. In general, his protection meets the mark and pairs nicely with his run blocking. Bisontis projects as a future starter with plenty of upside."
+        },
+        {
+          "title": "Strengths",
+          "text": "Balance and core strength provide longer connection to the block. | Settles feet, strikes with inside hands and unlocks hips into his target. | Able to gather, adjust and land against moving targets in space. | Initial quickness to climb and seal or make back-side cutoff blocks. | Pairs technique with churning feet for optimal double-team displacement. | Keeps feet active and sliding to stay mirrored to movement. | Uses downward chops to wipe out rusher’s long-arm push. | Displays ability to redirect an edge rush off the track. | Can bounce and drop a shallow anchor when needed."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Footwork can become excitable and sloppy in pass pro. | Short arms lead to occasional lunging. | Will give way to spin counters and edge-to-edge setups. | Better knee bend would improve his drive blocking. | Limited wingspan requires faster hands. | Gets extended and pulled off his spot by length. | Below-average pad level into first contact."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nChase Bisontis arrived in College Station carrying the weight of New Jersey's top offensive line prospect, earning unanimous four-star recognition from all major recruiting services. The Don Bosco Prep standout helped deliver a state championship appearance before making an immediate impact for the Aggies. His freshman campaign turned heads across the SEC, as he became one of just two offensive linemen to start all 13 games while earning ESPN Freshman All-America honors and SEC All-Freshman Team recognition. The versatile blocker split time between right tackle and right guard, showcasing the positional flexibility that made him such a coveted recruit.\n\nBisontis continued his developmental trajectory as a sophomore, though injuries limited his availability during the 2024 season. He managed ten starts at left guard before a mid-season injury sidelined him for three games, returning as a reserve against Auburn. Despite the setback, he remained integral to an Aggies rushing attack that ranked 26th nationally and second in the SEC at 195.5 yards per game. His contributions helped Texas A&M achieve multiple 300-yard rushing performances, including a dominant 333-yard effort against McNeese that marked the program's best ground game since 2018.\n\nOver 23 games spanning two seasons, Bisontis logged 1,167 offensive snaps while contributing to an offensive line unit that allowed just 1.77 sacks per game in 2024. His versatility between tackle and guard positions, combined with his physical style and technical development, positioned him as a cornerstone piece for what Pro Football Focus ranked as the nation's third-best offensive line heading into 2025.\n\nThe appeal is obvious when you watch Bisontis maul defenders in the run game, generating the kind of violent displacement that creates explosive rushing lanes. Yet that same film reveals concerning lapses in pass protection technique that could derail his pro aspirations if left unaddressed. His athletic profile suggests he belongs on an NFL roster, but the inconsistent hand placement and lateral movement deficiencies create legitimate questions about his readiness for immediate starting duties. The positional versatility that made him valuable at Texas A&amp;M becomes both an asset and a potential red flag - teams love flexibility, but sometimes it masks an inability to master one specific position.\n\n\n\nWhat separates Bisontis from typical developmental prospects is his proven track record against SEC competition, where he earned recognition while barely out of high school. However, the technical flaws that plagued him as a freshman haven't been fully corrected, suggesting either coaching limitations or stubbornness in accepting instruction. His injury setbacks compound the evaluation challenges, as scouts must project development based on limited recent film. The David DeCastro comparison holds merit in terms of physical tools and run-blocking violence, but DeCastro possessed superior pass protection instincts at the same stage. Organizations will need to decide whether Bisontis's ceiling justifies the developmental investment required to unlock his potential.\n\n\n\nThe most likely scenario involves a patient franchise taking him in the middle rounds, betting on his work ethic and foundational skills while accepting a longer development timeline. His immediate contributions would likely come as a sixth lineman in heavy personnel packages, where his run-blocking prowess can shine without exposing his pass protection vulnerabilities. The injury concerns aren't career-threatening, but they add another variable to an already complex evaluation. Success at the next level demands significant technical refinement, yet his college production suggests the football I.Q. exists to make those corrections with proper coaching and commitment."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Chase Bisontis is a light—footed guard prospect who creates quick leverage and has good balance to stay centered, sustain and steer blocks. Bisontis needs to clean up his positional leverage to not open too early or lean into blocks but has the movement and recovery skills to start as a rookie and develop into a quality starter within his first contract.\n\nBisontis is a 6'5\", 315—pound offensive guard prospect, who entered the Texas A&M program as a 4—star recruit in the 2023 class.\n\nBisontis started 10 games in 2024 at left guard, missing three games with a left lower leg injury. He started 13 games during the '23 season (12 at right tackle/one at right guard), earning SEC All—Freshman Team recognition."
+        },
+        {
+          "title": "Positives",
+          "text": "— Light—footed mover with very good short—area quickness.\n\n— Strikes with tight hand placement and elbows connected to hips to maximize his power output.\n\n— Operates with a flat—back posture and even weight distribution in his pass sets.\n\n— Balanced pass protector who can utilize independent hands to leverage and mirror rushers once engaged.\n\n— Quality move blocker who can intersect and kick out smaller targets on climbs, screens and pulls."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Will open his hips early, drift and overset when being lured upfield to create a soft inside shoulder.\n\n— Eyes tend to drop him into overextension against head—up down linemen when in the post on doubles/combo blocks.\n\n— Below average mass and square power can knock him on his heels against power down the middle of his frame."
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.37,
+    "prospect_grade_indicator": "Will Eventually Be Plus Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": null,
+    "eligibility": "Junior",
+    "nfl_rank": 49,
+    "nfl_pos_rank": 2
+  },
+  "bleacher_profile": {
+    "grade": 7.5,
+    "grade_indicator": null,
+    "overall_rank": 57,
+    "position_rank": null,
+    "pro_comparison": "Mark Glowinski",
+    "projected_round": "2nd Round"
+  },
+  "injury_history": []
+}

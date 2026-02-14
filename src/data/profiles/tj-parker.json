@@ -1,0 +1,536 @@
+{
+  "name": "T.J. Parker",
+  "slug": "tj-parker",
+  "overview": {
+    "POS": "ED",
+    "College": "Clemson",
+    "Height": "6' 3\"",
+    "Weight": "260",
+    "Age": "21.4",
+    "DOB": "2004-09-19 00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": null,
+    "Games": "39",
+    "Snaps": "1652",
+    "24/7 Sports": "97",
+    "ESPN": "87",
+    "Draft Buzz": "87.2 / 100",
+    "NFL.com": "6.26",
+    "Bleacher": "7.9",
+    "Gridiron": null
+  },
+  "position": "ED",
+  "college": "Clemson",
+  "height": "6' 3\"",
+  "weight": "260",
+  "age": 21.4,
+  "dob": "2004-09-19 00:00:00",
+  "year": "Jr",
+  "projected_round": null,
+  "games": 39,
+  "snaps": 1652,
+  "site_ratings": {
+    "24/7 Sports": "97",
+    "ESPN": "87",
+    "Draft Buzz": "87.2 / 100",
+    "NFL.com": "6.26",
+    "Bleacher": "7.9",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "82.1",
+      "percentile": 0.6
+    },
+    "24 Grade": {
+      "value": "88.1",
+      "percentile": 0.8
+    },
+    "23 Grade": {
+      "value": "76.9",
+      "percentile": 0.775
+    },
+    "Pass Rush Grade": {
+      "value": "76.2",
+      "percentile": 0.275
+    },
+    "True Pass Rush": {
+      "value": "80.5",
+      "percentile": 0.474
+    },
+    "PR Win Rate": {
+      "value": "16.4",
+      "percentile": 0.421
+    },
+    "Run Def. Grade": {
+      "value": "78.5",
+      "percentile": 0.6
+    },
+    "Run Stop %": {
+      "value": "7.6",
+      "percentile": 0.65
+    },
+    "Sacks": {
+      "value": "6",
+      "percentile": 0.474
+    },
+    "Hits": {
+      "value": "11",
+      "percentile": 0.789
+    },
+    "Hurries": {
+      "value": "25",
+      "percentile": 0.474
+    },
+    "Batted Balls": {
+      "value": "0",
+      "percentile": 0.158
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.132
+    },
+    "Tackling Grade": {
+      "value": "66.2",
+      "percentile": 0.65
+    },
+    "Missed Tackle Rate": {
+      "value": "11.1",
+      "percentile": 0.763
+    },
+    "Total Pressures": {
+      "value": "42",
+      "percentile": 0.632
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 29.0,
+      "positional_rank": "5.285714285714286"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 23.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 36.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 36.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 19.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 23.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 83.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 8.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 18.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 18.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 38.0,
+      "positional_rank": "8"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 34.166666666666664,
+    "PFF": 27.0,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 20.0,
+    "Bleacher": 19.0,
+    "Walter": 55.0,
+    "TDN": 25.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - LATE",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "Miller": "TBD",
+    "DraftBuzz": "Marshawn KNEELAND",
+    "Bleacher": "Bradley Chubb",
+    "WF": "TBD",
+    "Ringer": "Jermaine Johnson"
+  },
+  "strengths": "• NFL Strength and Size Profile\n• Ready-Made Run Defender Day 1\n• Polished Pass Rush Moves\n• Natural Feel for PR Manipulation\n• Can Win With Power in PR\n• Smooth COD and Lateral Movement\n• Difficult to Displace in Run\n• Uses Hands Well In Both Phases",
+  "weaknesses": "• Agility and Flexibility Subpar\n• Lacks Burst or Explosiveness\n• Lacks Quality Counter Moves\n• Step Back in Production in 2025\n• Pass Rush Angles",
+  "accolades": "• 2024 2nd Team All ACC",
+  "player_summary": "Parker is a powerful 4-3 DE with NFL length and heavy hands, posted explosive ‘24 production (11 sacks, 19.5 TFL, record 6 forced fumbles) but regressed in ‘25 (5.5 sacks, tighter movement) before dominating Senior Bowl practices with diverse wins and unexpected bend/juice. He sets firm edges by striking early, pressing/stacking tackles, swiping blocks, and finishing as a heavy hitter who knocks balls loose. His long arms can collapse pockets when timed right. Limitations include average short-area burst and pursuit speed (short-strider), lacking initial pop vs drive blocks, getting widened, static frame for punches, slow secondary counters when stalled, and an underdeveloped rush menu beyond power. The 2025 tape likely better reflects his pro floor, while traits suggest improvement. Parker projects as a three-down, average-to-above-average starter with run-control strength; stock dipped to early-to-mid second round but Senior Bowl boosted first-round consideration in a weaker class.",
+  "draftbuzz_grades": {
+    "Tackling": 0.69,
+    "Pass Rush": 0.82,
+    "Run Defense": 0.82
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 0,
+      "career": 3
+    },
+    "B GAP": {
+      "2025": 21,
+      "career": 54
+    },
+    "Over Tackle": {
+      "2025": 19,
+      "career": 108
+    },
+    "Outside Tkl": {
+      "2025": 507,
+      "career": 1481
+    },
+    "Off Ball": {
+      "2025": 1,
+      "career": 6
+    }
+  },
+  "skills_traits": {
+    "Character Traits/Mentality/Processing": {
+      "positives": null,
+      "negatives": null
+    },
+    "Tackling/Run Defense": {
+      "positives": "He's tough against the run (NFLSE)\nStrong at physical to set the edge (BR)\nVery difficult to displace in the run game (TDN)",
+      "negatives": null
+    },
+    "Pass Rush": {
+      "positives": "Some good PR moves, got some quickness when he pins his ears back (NFLSE)\nHas the strength to win with power as a pass rusher (BR)\nUnderstands how to manipulate tackles (TDN)",
+      "negatives": "Sack production dropped (NFLSE)\nLacks burst off the line to win with speed (BR)\nLacks a counter move (NFLSE)\nPass rush angles (TDN)"
+    },
+    "Physical Traits & Abilities": {
+      "positives": "Strong Enough, Long Enough To defend the run (NFLSE)\nGood strength to control POA (NFLSE)\nThick Build, good size, good length (BR)\nSmooth COD and lateral movement (BR)",
+      "negatives": "Agility, flexibility took a step back this year (NFLSE)\nLacks the twitch and quickness needed (BR)\nAverage bend at best (BR)"
+    }
+  },
+  "media_links": [
+    {
+      "description": "2025 Highlights",
+      "source": "YT - ACC Network",
+      "url": "https://www.youtube.com/watch?v=MX2S6SAVYs0"
+    },
+    {
+      "description": "Career Highlights",
+      "source": "YT - NFL Film Room",
+      "url": "https://www.youtube.com/watch?v=WQWmW1lkPRQ"
+    },
+    {
+      "description": "Scouting Report",
+      "source": "YT - NFL Draft Talk",
+      "url": "https://www.youtube.com/watch?v=W_tRek-yawc"
+    },
+    {
+      "description": "Senior Bowl Interview",
+      "source": "NFL.com",
+      "url": "https://www.nfl.com/videos/t-j-parker-joins-the-insiders-for-an-exclusive-interview-at-senior-bowl-practice"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Powerful edge defender with NFL length whose 2025 tape might be closer to his pro projection than his gaudy 2024 numbers. Parker’s hand work is above average in both phases. He strikes early to set very firm edges, then sheds quickly to finish tackles. Average short-area burst limits his ability to pursue the run in space and threaten tackles in a race to the top of the rush. He can long-arm tackles into the pocket when he catches them right, but he fails to find quick solutions when that approach stalls. His rush production will be muted until he expands his approach but improvement is likely. Parker profiles as an average to above-average starter."
+        },
+        {
+          "title": "Strengths",
+          "text": "Posted 11 sacks, 19.5 tackles for loss and 6 forced fumbles in 2024. | Possesses upper-body strength to press and stack tackles. | Builds a wall as edge-setter, turning runs back inside. | Effective use of hands to quickly get off blocks. | Long-arm rush can devastate tackles and roll them into the pocket. | Attacks and dislodges blocker's outside hand to open the corner. | Keys backfield to bring his rush with the quarterback's movements. | Drives and steers blockers out of the way inside the pocket."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Lacks firm pop into first contact versus run blocks. | Gets widened out when drive-blockers land first. | Below-average pursuit speed chasing from the back side. | Short-strider lacking burst in his upfield climb and cornering. | Static frame for tackles to find with their punch. | Slow to reset secondary effort when bull rush stalls. | Needs to diversify his rush tools and menu."
+        },
+        {
+          "title": "Sources Tell Us",
+          "text": "“He had better numbers in 2024 but also he just played better. I felt like he saw more attention (in 2025) and didn’t always respond well.” – NFC scouting director"
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "With phenomenal power and strength displayed on all downs, T.J. Parker is one of the highest floor defenders in this class."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nTomarrion \"T.J.\" Parker hails from Phenix City, Alabama, where Central High School has become something of a Clemson pipeline in recent years. Born September 19, 2004, Parker terrorized opposing backfields throughout his prep career, racking up 63 tackles and 12 sacks as a senior while helping Central to a 10-3 record. His junior campaign was even more destructive with 75 tackles, 23 tackles for loss, and 9.5 sacks. The 6'4\", 263-pound defender earned four-star status from Rivals, ESPN, and 247Sports, with composite rankings placing him among the nation's top 50 overall prospects in the 2023 class. Originally committed to Penn State, Parker flipped to Clemson in November 2022 and enrolled early in January 2023.\n\nParker's freshman season at Clemson announced his arrival in spectacular fashion. He shattered Myles Murphy's freshman record with 12.5 tackles for loss while adding 5.5 sacks and earning Freshman All-American honors from 247Sports, ESPN, the FWAA, The Athletic, and several other outlets. His performance at Syracuse that year, a five-tackle, two-sack demolition, made him the first Clemson true freshman with multiple sacks in a game since Murphy himself in 2020. The accolades kept coming as a sophomore: 64 tackles, 19.5 tackles for loss, 11 sacks, and a school-record six forced fumbles earned him second-team All-ACC recognition and national attention.\n\nThat Pittsburgh game in 2024 will live in Clemson lore. Parker went nuclear with seven tackles, five tackles for loss, and four sacks, tying the school record held by Keith Adams (1999), Andre Branch (2011), and Austin Bryant (2017). The performance earned him Bednarik Award National Player of the Week, Walter Camp National Defensive Player of the Week, and ACC Defensive Lineman of the Week in one fell swoop. He finished his sophomore year as the only player in the nation ranking top-10 in forced fumbles, tackles for loss, and sacks. His junior season saw a dip in production with five sacks over 12 games, but Parker still flashed dominance, including a three-sack performance against South Carolina that pushed him past Chester McGlockton into 10th place on Clemson's all-time sack list. He earned his degree in sports communication in December 2025 and married former Clemson volleyball player Azyah Dailey that fall.\n\nSCOUTING REPORT: SUMMARY\nPut the tape on from 2024 and you see a defender who bends games to his will. The Pittsburgh performance alone shows what Parker is capable of when everything clicks. His hand usage is already NFL-caliber, violent and varied enough to keep tackles uncomfortable for four quarters. The ball production speaks for itself: six forced fumbles in a single season does not happen by accident. That kind of timing and awareness around the football translates directly to the next level, where turnovers swing games and seasons.\n\nHere's the deal on Parker: the 2025 tape might actually be more instructive for NFL evaluators than his gaudy 2024 numbers. He faced more attention, more chips, more scheme adjustments designed to neutralize him, and he didn't always have answers. That's not a red flag as much as it's a development arrow. His rush menu needs to grow beyond the long-arm and bull. When tackles sit down and absorb his power, he needs counters ready to deploy. The good news is that these are teachable skills, and Parker has already shown he can absorb coaching and refine his technique year over year.\n\nThe fit here is a 4-3 front that will let him pin his ears back on third down while trusting him to hold up against the run on early downs. He's not a liability when asked to set edges, and his coverage reps suggest some sub-package versatility. Pair him with an interior presence that commands double teams and watch Parker feast on one-on-one matchups. His floor is a quality starter who contributes immediately; his ceiling depends on whether he can diversify that pass rush approach. Given his track record of growth from Phenix City to Death Valley, betting against his development would be a mistake."
+        },
+        {
+          "title": "Overview",
+          "text": "Solidly built edge defender who plays with tremendous power against both the pass and the run.\n\nParker is built for the NFL, combining good length, a rugged and powerful frame, and a tenacious play style that often overwhelms opponents. A three-year contributor for the Tigers who racked up 21.5 sacks, 41.5 tackles for a loss, four pass deflections, and six forced fumbles over 39 career games, he rushes from both two- and three-point stances and brings intensity and force to every snap. He fires out of his stance and shoots his hands into opponents, showcasing the ability to use his length to control the rush and react to the play. He keeps his hands active and is always working to get off blocks. He can deliver overwhelming power at the point of attack, shocking offensive tackles with a strong punch before churning his feet on a bull rush. He flashes the ability to convert speed to power and employs an effective long-arm stab. Parker brings cross-chop and Euro-step moves to get to the edge and uses a good inside countermove to keep opponents on their heels. He’s a smooth, fluid athlete who can drop back into space with ease. He plays with a ton of physicality in the run game, sets a hard edge, and turns runners back inside. He delivers some pop as a tackler and consistently ups the intensity on the defensive line.\n\nParker lacks elite bend and flexibility off the edge and is more of a power rusher at this point. His awareness leaves something to be desired at times: He will take the cheese on misdirection and find himself out of position, losing sight of the ball and allowing the quarterback or running back to escape. His production dropped in 2025."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nParker broke Clemson's true freshman record for tackles for loss with 12.5 in 2023, and he set ClemsonÃ•s single season record for forced fumbles with six in 2024. He is a powerful pass rusher who ran over offensive linemen on two instances last season. Parker is long enough to keep blockers off his frame and swipe off blocks at the top of his rush. He is a heavy hitter who can knock the ball loose when he gets to the quarterback. He overpowers and slips tight ends; he can control offensive tackles and set the edge. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "T.J. Parker is a 6'3\", 260—pound edge defender with the size, strength and physicality to be a high—quality run defender and power—rusher at the next level. He went to Clemson as a 4—star recruit in the 2023 class, per 247Sports.\n\nParker made an immediate impact for the Tigers, becoming a Freshman All—American selection from several outlets while recording 32 total tackles, 13 TFLs and 5.5 sacks. In 2024, he was a second—team All—ACC selection with 57 tackles, 20 TFLs, 11 sacks and a school—record six forced fumbles.\n\nMatt Holder has been a part of B/R's Scouting Department for four seasons. He also writes about the Las Vegas Raiders and NFL draft for SB Nation's Silver and Black Pride, and co—hosts a YouTube Channel, Tape Don't Lie, providing film breakdowns and more draft prospect analysis."
+        },
+        {
+          "title": "Positives",
+          "text": "— Thick build with Good size for an NFL defensive end. appears to have Good arm length.\n\n— strong and Physical at the point of attack to set the edge against the run and win with power as a pass—rusher. Also has a Good long—arm move to collapse the pocket.\n\n— plays with his hands in front of him in both phases of the game to protect his chest.\n\n— active hands when rushing the passer, has shown a solid cross—chop move.\n\n— smooth change of direction and lateral movement skills for his size.\n\n— Looked comfortable in zone coverage when asked to drop in coverage."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Doesn't display good burst off the line of scrimmage to win around the edge with speed.\n\n— Lacks some twitch and quickness for a prospect of his caliber.\n\n— Struggles to work the hands after contact and doesn't have a counter move to win as a pass—rusher if he doesn't make the first significant contact.\n\n— Average at best bend, ankles are a little stiff to turn tight corners at the top of the rush.\n\n— Pays high and struggles to sink his hips to avoid getting pushed inside by down blocks from offensive linemen."
+        }
+      ]
+    },
+    {
+      "source": "ESPN",
+      "sections": [
+        {
+          "title": "Analysis",
+          "text": "Parker broke Clemson's true freshman record for tackles for loss with 12.5 in 2023, and he set ClemsonÃ•s single season record for forced fumbles with six in 2024. He is a powerful pass rusher who ran over offensive linemen on two instances last season. Parker is long enough to keep blockers off his frame and swipe off blocks at the top of his rush. He is a heavy hitter who can knock the ball loose when he gets to the quarterback. He overpowers and slips tight ends; he can control offensive tackles and set the edge. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Solidly built edge defender who plays with tremendous power against both the pass and the run.\n\nParker is built for the NFL, combining good length, a rugged and powerful frame, and a tenacious play style that often overwhelms opponents. A three-year contributor for the Tigers who racked up 21.5 sacks, 41.5 tackles for a loss, four pass deflections, and six forced fumbles over 39 career games, he rushes from both two- and three-point stances and brings intensity and force to every snap. He fires out of his stance and shoots his hands into opponents, showcasing the ability to use his length to control the rush and react to the play. He keeps his hands active and is always working to get off blocks. He can deliver overwhelming power at the point of attack, shocking offensive tackles with a strong punch before churning his feet on a bull rush. He flashes the ability to convert speed to power and employs an effective long-arm stab. Parker brings cross-chop and Euro-step moves to get to the edge and uses a good inside countermove to keep opponents on their heels. He’s a smooth, fluid athlete who can drop back into space with ease. He plays with a ton of physicality in the run game, sets a hard edge, and turns runners back inside. He delivers some pop as a tackler and consistently ups the intensity on the defensive line.\n\nParker lacks elite bend and flexibility off the edge and is more of a power rusher at this point. His awareness leaves something to be desired at times: He will take the cheese on misdirection and find himself out of position, losing sight of the ball and allowing the quarterback or running back to escape. His production dropped in 2025."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Solidly built edge defender"
+        },
+        {
+          "title": "Traits",
+          "text": "Bulldozer Power\nRelentless Motor"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former four-star recruit out of Phenix City, Alabama. Was the no. 6 defensive lineman and the no. 51 overall player in the 2023 class. Named second-team All-ACC in 2024."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "Had an internship with the Beverly Hills Chamber of Commerce in spring 2024.\nIs married to former Clemson volleyball player Aźyah Dailey.\nIs roommates with fellow draft prospect Peter Woods.\nOn the first time he held a football as a kid: “I didn’t want to let it go.”\nGot his parents an English bulldog."
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF JERMAINE JOHNSON"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.26,
+    "prospect_grade_indicator": "Will Eventually Be Average Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": null,
+    "eligibility": "Junior",
+    "nfl_rank": 38,
+    "nfl_pos_rank": 8
+  },
+  "bleacher_profile": {
+    "grade": 7.9,
+    "grade_indicator": null,
+    "overall_rank": 23,
+    "position_rank": null,
+    "pro_comparison": "Bradley Chubb",
+    "projected_round": "2nd Round"
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF JERMAINE JOHNSON",
+    "traits": "Bulldozer Power\nRelentless Motor"
+  },
+  "injury_history": [
+    {
+      "detail": "Knee Surgery",
+      "recovery_time": "Offseason",
+      "year": "2024"
+    }
+  ]
+}

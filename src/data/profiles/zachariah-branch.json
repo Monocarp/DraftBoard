@@ -1,0 +1,483 @@
+{
+  "name": "Zachariah Branch",
+  "slug": "zachariah-branch",
+  "overview": {
+    "POS": "WR",
+    "College": "Georgia",
+    "Height": "5' 10\"",
+    "Weight": "180",
+    "Age": "21.1",
+    "DOB": "2004-03-29 00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": "2nd",
+    "Games": "37",
+    "Snaps": "1268",
+    "24/7 Sports": "99",
+    "ESPN": "88",
+    "Draft Buzz": "83.7 / 100",
+    "NFL.com": "6.33",
+    "Bleacher": "7.6",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "Georgia",
+  "height": "5' 10\"",
+  "weight": "180",
+  "age": 21.1,
+  "dob": "2004-03-29 00:00:00",
+  "year": "Jr",
+  "projected_round": "2nd",
+  "games": 37,
+  "snaps": 1268,
+  "site_ratings": {
+    "24/7 Sports": "99",
+    "ESPN": "88",
+    "Draft Buzz": "83.7 / 100",
+    "NFL.com": "6.33",
+    "Bleacher": "7.6",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "82",
+      "percentile": 0.658
+    },
+    "2024 Grade": {
+      "value": "66.3",
+      "percentile": 0.158
+    },
+    "2023 Grade": {
+      "value": "69.9",
+      "percentile": 0.526
+    },
+    "Receiving Grade": {
+      "value": "82.6",
+      "percentile": 0.579
+    },
+    "Yards/ Routes Run": {
+      "value": "2.57",
+      "percentile": 0.711
+    },
+    "Drop %": {
+      "value": "2.4",
+      "percentile": 0.737
+    },
+    "Contested Catch": {
+      "value": "62.5",
+      "percentile": 0.684
+    },
+    "Grade vs Man": {
+      "value": "87.5",
+      "percentile": 0.842
+    },
+    "YAC/Reception": {
+      "value": "7.8",
+      "percentile": 0.895
+    },
+    "Missed Tkls Forced": {
+      "value": "20",
+      "percentile": 0.842
+    },
+    "ADOT": {
+      "value": "3.6",
+      "percentile": 0.0
+    },
+    "Deep Yards": {
+      "value": "109",
+      "percentile": 0.053
+    },
+    "Touchdowns": {
+      "value": "6",
+      "percentile": 0.289
+    },
+    "Elusiveness": {
+      "value": "94.7",
+      "percentile": 1.0
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 66.66666666666667,
+      "positional_rank": "11.285714285714286"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 84.0,
+      "positional_rank": "14"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 31.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 75.0,
+      "positional_rank": "15"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 54.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 24.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 120.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 75.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 48.0,
+      "positional_rank": "10"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 49.75,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": 24.0,
+    "Miller": 53.0,
+    "Bleacher": null,
+    "Walter": 74.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "Curtis Samuel",
+    "Miller": "TBD",
+    "DraftBuzz": "Rondale MOORE",
+    "Bleacher": "KJ Hamler",
+    "WF": "TBD",
+    "NFL.com": "Curtis Samuel"
+  },
+  "strengths": "• High End Speed, Explosiveness, Acc. \n• Can Stick and Cut at Full Speed\n• Excellent YAC Ability in Space\n• Real PR/KR Value\n• Elusive Playmaker with the Ball\n• Natural Usage out of the Backfield",
+  "weaknesses": "• Undersized, Limited Catch Radius\n• Rushes Routes, Rounds Turns\n• Limited Downfield Ablity\n• Jumps Unnecessarily for the Ball",
+  "accolades": null,
+  "player_summary": "Branch is a small but sturdy receiver who brings true top end speed, acceleration, and elusiveness to both the slot and the backfield. His limited size and poor route running limit what you can do with him down the field, but a gifted OC with a plan can use him in a lot of ways behind the line and out of the slot to serious effect. He'll likely bring early value in the run game as he continues to refine his game and eventually be a solid slot guy. His playmaking ability in space will be very attractive to teams that know how to use him, so I would expect him to not go past round two. How high he goes will just depend on how many teams value what he brings. Wouldn't expect a day 1 sighting, but wouldn't be shocking to see him sneak in given the lack of impact starters in this class.",
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 109.7,
+    "Hands": 0.9,
+    "Short Receiving": 0.86,
+    "Med Routes": 0.9,
+    "Deep Threat": 0.89,
+    "Blocking": 0.49
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 271,
+      "career": 668
+    },
+    "Wide": {
+      "2025": 65,
+      "career": 155
+    }
+  },
+  "skills_traits": {
+    "Character/Mentality": {
+      "positives": "Snaps out of the backfield (NFL)\nPraised for his work ethic and passion (NFL)\n5 Star Recruit",
+      "negatives": "Large share of snaps out of the backfield (NFL)"
+    },
+    "Receiving Skills": {
+      "positives": "Can thrive through heavy contact (NFL)",
+      "negatives": null
+    },
+    "Technique": {
+      "positives": "Can pile on YAC in space (NFL)",
+      "negatives": "Jumps to make catches unnecessarily (NFL)\nRushes through routes, no attention to detail (NFL)\nHeavily rounded route turns (NFL)"
+    },
+    "Physical Traits": {
+      "positives": "Top End speed (NFL)\nAbove Avg play strength in coverage (NFL)\nCan stick and cut at full speed (NFL)\nExplosiveness, Acceleration (BR)",
+      "negatives": "Short arms, small catch radius (NFL)"
+    },
+    "Blocking/Other": {
+      "positives": "Return Game Value",
+      "negatives": null
+    }
+  },
+  "media_links": [
+    {
+      "description": "Post Sugar Bowl Interview",
+      "source": "YT - DawgNation",
+      "url": "https://www.youtube.com/watch?v=JwKanTHdjpg"
+    },
+    {
+      "description": "Highlights",
+      "source": "YT - Under the Radar Prospects",
+      "url": "https://www.youtube.com/watch?v=9UWlF6EAcQY"
+    },
+    {
+      "description": "Scouting Report",
+      "source": "YT - Daft on Draft",
+      "url": "https://www.youtube.com/watch?v=pYI1RxVQsBY"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Slot receiver who can turn routine touches into explosive gains. Georgia prioritized quick touches at or behind the line of scrimmage to take advantage of Branch’s ability to slip tackles and add yards after catch. I expect to see more choice routes and deep crossers rolled into his workload as a pro. His routes are rushed and rounded, though. He will jump unnecessarily to make catches, which subjects him to added punishment from defenders. Branch is strong for his size and very tough. He could be pigeon-holed into a “manufactured touch” role, but he’s capable of more. He should help move the sticks and return punts before eventually settling in as a starting slot."
+        },
+        {
+          "title": "Strengths",
+          "text": "Top-end speed to pull away and take it to the house. | Praised for his work ethic and passion for the game at Georgia. | Above-average play strength to battle against hands-on coverage. | Able to stick and cut at full speed without losing his pace. | Can punish zone coverage when working between short and deep. | Piles on yards after catch when given too much breathing room. | Showed an ability to thrive through heavy catch contact. | Access to instant speed when he wants it. | Offers a dangerous punt-return option when teams need a play."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Large share of his targets were thrown behind the line of scrimmage at Georgia. | Developed a bad habit of jumping to make the catch when it’s unnecessary. | Rushes through his routes with little attention to detail. | Will need to eliminate his heavily rounded route turns. | Short arms will require an accurate passer."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Zachariah Branch is a versatile, dynamic, and explosive receiver who can make game-changing plays at any moment."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nBranch took the long road to stardom, beginning his collegiate journey at USC where he exploded onto the scene as one of the nation's most electrifying freshmen in 2023. The Las Vegas native earned First Team All-American honors as a returner, becoming USC's first-ever true freshman to achieve such distinction after tallying 16 punt returns for 332 yards (30.8 avg) and a touchdown while also registering 24 kick returns for 442 yards and another score. His rare dual-threat ability as both returner and receiver netted him the prestigious Jet Award as the nation's top return specialist while collecting All-PAC-12 honors and numerous freshman accolades.\n\nAfter a solid sophomore campaign with the Trojans where he hauled in 47 receptions for 503 yards and continued to contribute in the return game, Branch sought to elevate his draft stock by transferring to Georgia in spring 2025. The pedigree runs deep in the Branch family-his great-uncle Cliff Branch was enshrined in the Pro Football Hall of Fame in 2022, while his brother Zion also made the move from USC to Georgia alongside him. Before college, Branch dominated at powerhouse Bishop Gorman High School as a five-star recruit and the consensus #1 wide receiver prospect nationally, showcasing his athletic gifts beyond football as a state champion in the 100m (10.33), 200m, and long jump.\n\nAt Georgia, Branch immediately displayed his explosive abilities with a 36-yard reception in the spring game while building chemistry with quarterback Gunner Stockton. His transfer to the SEC powerhouse program was viewed as the potential missing piece for a Bulldogs offense looking to break through after an 11-3 season that ended with a playoff loss to Notre Dame.\n\nBranch brings day one impact potential in the slot and return game with home-run upside every time he touches the ball. What jumps off the film is a receiver who consistently wins with short-area quickness and vertical acceleration rather than technical precision. The comparison that kept flashing while studying his film: a young Jamison Crowder with afterburners-similar compact build but with rare gamebreaking speed that forces defensive coordinators to adjust their entire coverage shells.\n\n\nBranch's NFL transition will feature heavy slot usage where his explosive traits can be maximized against less athletic nickel defenders and linebackers caught in space. Creative play-callers will feed him through manufactured touches-bubble screens, jet motions, and shallow crossers-while his downfield route arsenal develops. His elite return ability offers immediate roster value, creating scoring opportunities on special teams while his receiving game matures against NFL-caliber defenders. By his second season, expect significant growth as a route-runner as he learns to use his athletic gifts more efficiently.\n\n\nBody type limitations create a clear ceiling-Branch won't develop into a boundary X-receiver who consistently defeats press coverage or dominates contested catch situations. But his explosive skillset and multi-phase impact make him a valuable chess piece in modern NFL offenses. What he lacks in traditional outside receiver traits, he compensates for with game-changing acceleration and YAC ability. His vision with the ball mirrors elite running backs, turning modest gains into explosive plays by navigating through traffic with instinctive fluidity. The right offense will unlock Branch's full potential as a dynamic weapon who stresses defenses horizontally and vertically, though his frame will always create durability questions through a grueling NFL schedule."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Zachariah Branch is a pint-sized dynamo... fear factor weapon... great punt returner, kick returner at USC for two years... Slot receiver Georgia 81 catches six touchdowns... punt return kick return ability... touchdowns in both areas... extension of the running game... bonus his hands... bubble screens... eight 10 yards... second and two second and three... dynamic and will be a dynamic punt and kickoff returner... how much damage can he do down the field?... yards per reception is stuffed at or near the line of scrimmage... sometimes behind the line... extension of the running game... like Deebo Samuel... ZA flowers had much more vertical ability... Xavier Worthy around a 4.21... Zachariah Branch may be in that area... speed on display... different level from a speed and explosiveness standpoint... first round grade... 23rd highest rated player... if he gets into the second round... one hell of a value pick.\n\nZachariah Branch, from Georgia, is a great kick returner, punt returner bubble screen sensation... Great with the run after the catch... So while I think first some, think second... I don't think Zachariah Branch gets into the first round... I think Zachariah Branch is borderline right now... He's the bubble screen sensation. He is the return man and all that... Zay Flowers came and I, that's my comp and Zay, there was some mixed opinion one coming out as well... This kid has a little Zay in him and what do you do with Zay? You got the jet sweeps, you got the motion, you got him getting bubble screens a lot of yards after catch. Not a great average per catch, but guess what he is? He's an extension of the running game. That's what Zachariah Branch is... So he may not average 15, 16 yards to catch, but he is gonna get you a lot of production. He's gonna keep the chains moving. He's gonna keep you on schedule and he is gonna be a great punt kickoff returner... He's obviously surrounded by all those players there that have aspirations that going in the SEC is going up against really good corners. This kid plays at a different speed... He's gonna threaten that. He will threaten that 'cause he should be in the four twos. So this speed is off the charts and it, and and to me, he's not just a speed guy, he's a football player in Zachariah Branch... I'm definitely a day two player here for Zachariah Branch because the reason why the Zay Flowers come to me falls short is just because they, coming out of Boston College was this small receiver who played big vertical player down the field... Zachariah Branch, it's pretty much all at near or behind the line of scrimmage for him. And, and it worked effectively obviously for Georgia and at USC as well, super dynamic... There are a couple of other players that are smaller and explosive that I will have higher grades on than Zachariah Branch who kind of fit a similar mold but to me offer a little bit more down the field, which is why I have him a little bit lower than you do on the overall big board... What is he? Yeah. What? Yeah, let, let's hey and college footballs, you get the ball in his hands and they're not gonna be able to handle him... Zachariah Branch was better than the guys trying to tackle him... Why would you wanna do anything else? Just get him the ball and then all of a sudden you're, there's nothing wrong with being in a second and two, there's nothing wrong with having a chance to have that. You know, that why that bubble screen become a 1520 yard game or even more... I think Zachariah Branch can expand that more once he's in the NFL... The return game to me is the one that we don't talk about enough. When you had that kind of speed and that kind of shiftiness jet power exhilaration, that punt kickoff returnability for both he and McKay Lemon and several others is gonna play a large part in just how valuable they are in the National Football League."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Zachariah Branch is one of the most dynamic athletes in college football. He is lightning in a bottle and a dangerous playmaker out in space.\n\nBranch excels with quick touches where he makes defenders miss out in the open field for yards after the catch.\n\nHe is a former 5—star recruit in the 2023 recruiting class. Branch began his career at USC before transferring to Georgia. He fits the mold of explosive YAC receivers who create issues for defenses out of the slot."
+        },
+        {
+          "title": "Positives",
+          "text": "— Electric playmaker in space with the football. Branch is a dynamic mover who puts defenders in conflict in the open field. His agility and elusiveness make it difficult for defenders to bring him down in one—on—one situations.\n\n— His speed and acceleration are dangerous and emphasize pursuit angles for defenders. At top speed, Branch can outrun defenders and beat their angles, creating big plays after the catch.\n\n— Usage versatility is one of the best parts of his skill set. The USC transfer can be infused into the offensive game plan in multiple ways: in the backfield as an RB, in the slot, in bunch sets, and in stacked alignments. He has taken handoffs from the backfield, and those reps looked natural.\n\n— Branch transitions from receiver to runner quickly. He shows good contact balance, along with his athletic ability, to stay upright for extra yardage.\n\n— Georgia's explosive weapon adds special teams value. He has two return touchdowns in his career. Branch's elusiveness and explosiveness make him a dangerous return specialist."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Branch has a limited wingspan and catch radius. he will struggle to make contested catches against tight—man coverage. this creates issues for the quarterback when targeting him downfield.\n\n— he is an undersized receiver. he will need a creative playcaller to maximize his talents. NFL teams will potentially view Branch as a slot—only weapon, limiting his overall ceiling.\n\n— Refining his route tree will have an impact on how NFL teams decide to deploy him. Branch needs to develop counters at the line of scrimmage against Longer and more Physical corners if he wants to have a chance as a predominant outside threat."
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.33,
+    "prospect_grade_indicator": "Will Eventually Be Plus Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Curtis Samuel",
+    "eligibility": "Junior",
+    "nfl_rank": 48,
+    "nfl_pos_rank": 10
+  },
+  "bleacher_profile": {
+    "grade": 7.6,
+    "grade_indicator": null,
+    "overall_rank": 54,
+    "position_rank": null,
+    "pro_comparison": "KJ Hamler",
+    "projected_round": "2nd Round"
+  },
+  "injury_history": [
+    {
+      "detail": "Hamstring",
+      "recovery_time": "Spring Training",
+      "year": "2025"
+    },
+    {
+      "detail": "Undisclosed",
+      "recovery_time": "2 Games",
+      "year": "2023"
+    }
+  ]
+}

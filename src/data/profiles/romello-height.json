@@ -1,0 +1,447 @@
+{
+  "name": "Romello Height",
+  "slug": "romello-height",
+  "overview": {
+    "POS": "ED",
+    "College": "Texas Tech",
+    "Height": "6' 3\"",
+    "Weight": "240",
+    "Age": "24.9",
+    "DOB": "2001-04-13 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "50",
+    "Snaps": "1645",
+    "24/7 Sports": "90",
+    "ESPN": "TBD",
+    "Draft Buzz": "85.9 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.2",
+    "Gridiron": null
+  },
+  "position": "ED",
+  "college": "Texas Tech",
+  "height": "6' 3\"",
+  "weight": "240",
+  "age": 24.9,
+  "dob": "2001-04-13 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 50,
+  "snaps": 1645,
+  "site_ratings": {
+    "24/7 Sports": "90",
+    "ESPN": "TBD",
+    "Draft Buzz": "85.9 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.2",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "92.6",
+      "percentile": 0.85
+    },
+    "24 Grade": {
+      "value": "78.4",
+      "percentile": 0.4
+    },
+    "23 Grade": {
+      "value": "69.7",
+      "percentile": 0.5
+    },
+    "Pass Rush Grade": {
+      "value": "92.5",
+      "percentile": 0.95
+    },
+    "True Pass Rush": {
+      "value": "91.1",
+      "percentile": 0.737
+    },
+    "PR Win Rate": {
+      "value": "22.2",
+      "percentile": 0.947
+    },
+    "Run Def. Grade": {
+      "value": "65.6",
+      "percentile": 0.15
+    },
+    "Run Stop %": {
+      "value": "7.1",
+      "percentile": 0.55
+    },
+    "Sacks": {
+      "value": "9",
+      "percentile": 0.737
+    },
+    "Hits": {
+      "value": "11",
+      "percentile": 0.789
+    },
+    "Hurries": {
+      "value": "42",
+      "percentile": 0.842
+    },
+    "Batted Balls": {
+      "value": "0",
+      "percentile": 0.158
+    },
+    "Forced Fumbles": {
+      "value": "3",
+      "percentile": 0.895
+    },
+    "Tackling Grade": {
+      "value": "62.2",
+      "percentile": 0.3
+    },
+    "Missed Tackle Rate": {
+      "value": "21.9",
+      "percentile": 0.211
+    },
+    "Total Pressures": {
+      "value": "62",
+      "percentile": 0.947
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 68.875,
+      "positional_rank": "10.6"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 56.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 80.0,
+      "positional_rank": "14"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 92.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 97.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 97.0,
+      "positional_rank": "17"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 53.0,
+      "positional_rank": "14"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 30.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 88.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": 90.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - EARLY",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Will MCDONALD IV",
+    "Bleacher": "Nick Herbig",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.68,
+    "Pass Rush": 0.72,
+    "Run Defense": 0.96
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 0,
+      "career": 0
+    },
+    "B GAP": {
+      "2025": 1,
+      "career": 5
+    },
+    "Over Tackle": {
+      "2025": 0,
+      "career": 12
+    },
+    "Outside Tkl": {
+      "2025": 580,
+      "career": 1312
+    },
+    "Off Ball": {
+      "2025": 17,
+      "career": 31
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nRomello Height grew up in Dublin, Georgia, a small town about two hours southeast of Atlanta where Friday night football is practically a religion. Standing 6'2\", 234 pounds (born to Ronnie Height, a Marine veteran, and Sharon Rozier), Height rewrote the record books at Dublin High School by the time he finished his senior year. That 2019 campaign was special: 27 tackles for loss, 16 sacks, two forced fumbles, a pick-six that went 60 yards, and a Class 2A state championship. The recruiting services noticed. ESPN and 247Sports stamped him a four-star prospect and the No. 24 outside linebacker nationally, though Rivals came in a bit lower at three stars. Auburn beat out Florida, Tennessee, Miami, and a dozen other programs for his signature.\n\nWhat followed was one of the more wandering college careers you'll find in this draft class. Height enrolled at Auburn in spring 2020, barely saw the field as a true freshman during the COVID year, then contributed sparingly as a redshirt freshman with 19 tackles and three for loss across nine games. He transferred to USC in 2022, won the starting job out of camp, and promptly tore up his shoulder in week two against Stanford. Season over. He bounced back in 2023 with 20 tackles, six tackles for loss, and four sacks as a rotational piece, then moved again to Georgia Tech for 2024. That year in Atlanta produced his first real sustained success: 34 tackles, a team-high 6.5 tackles for loss, 2.5 sacks, and an interception while starting all 12 games. Pro Football Focus credited him with 32 pressures and the second-best coverage grade among FBS edge rushers at 92.5.\n\nThe final stop came in Lubbock, where Height joined Texas Tech's loaded defensive front for his sixth collegiate season in 2025. Flanking David Bailey on the opposite edge, Height finally put together the production his athleticism always promised. He finished with 38 tackles, 10.5 tackles for loss, and 10 sacks while earning First Team All-Big 12 honors, a spot on the Sports Illustrated Midseason All-America Team, and an invitation to the Senior Bowl. By the end of his college career, Height had accumulated 69 total pressures across 1,645 defensive snaps and 50 games played at four different programs.\n\nSCOUTING REPORT: SUMMARY\nHeight profiles as a situational pass rusher who can contribute immediately on third downs while developing the strength and technique to handle a larger workload. His 2025 breakout at Texas Tech produced 62 total pressures in a single season, nearly matching his output from the previous five years combined. That 96.1% pass rush grade is elite by any measure, and his hand timing, bend, and first-step explosiveness all translate to the professional level. Defensive coordinators will appreciate the coverage versatility since dropping an edge into zone isn't usually this clean. He's the kind of sub-package weapon who can give offensive coordinators headaches when designing protections for obvious passing situations.\n\nThe questions are real though, and they center on whether he can ever be more than a 400-500 snap player as a rookie. The 234-pound frame is going to struggle when NFL tackles get locked on and start driving their feet. His run defense grades in the low 70s for a reason, and until he adds functional mass without sacrificing that get-off, he's going to be a liability on early downs. The tackling inconsistencies compound this concern since he's posted missed tackle rates above 21% in consecutive seasons. There's also the matter of context: playing opposite David Bailey, a consensus first-round pick, meant Height rarely saw double teams and often faced one-on-one matchups against tackles who had bigger problems to worry about. How much of that production was his own merit versus being the beneficiary of Texas Tech's loaded front? That's a fair question teams will need to answer.\n\nThe age factor matters too. Height will turn 25 during his rookie season, which limits the developmental runway considerably. Add in the injury history (shoulder surgery cost him essentially all of 2022) and the journeyman path through four programs, and you've got legitimate reasons to temper expectations. Still, the pass rush production against SEC and ACC competition proves he belongs at this level. A team running a four-down front that values rush-coverage versatility gets a contributor from day one. The ceiling depends entirely on whether he can add 10-15 pounds of good weight and improve as a run defender, but the floor is a productive rotational piece who makes quarterbacks uncomfortable on passing downs."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Romello Height combines salesmanship with quickness and high—level athleticism as a pass—rusher to be a productive and contribute on third downs in the NFL. However, the 6'3\", 240—pound edge defender lacks the size and strength to be a complete or every—down player on the next level.\n\nHeight was a 4—star recruit in the 2020 class and originally went to Auburn out of high school. He didn't see the field much, playing in 10 games and collecting just 19 total tackles with three tackles for loss over two seasons before transferring to USC.\n\nIn 2022, the former Trojan suffered a shoulder injury that forced him to have season—ending surgery after just two games. He was a rotational player the following year and recorded 20 tackles, six TFLs and four sacks before transferring to Georgia Tech."
+        },
+        {
+          "title": "Positives",
+          "text": "— height is very quick and a Good overall athlete whose Impressive change of direction skills allow him to glide from one edge to the other and beat offensive tackles across their faces.\n\n— explosive off the line of scrimmage to threaten offensive tackles with speed around the edge.\n\n— sets up his pass—rush moves well by stemming inside or outside to win in the opposite direction, or Gets to square to give himself a two—way go.\n\n— Also is effective using head and shoulder fakes to get offensive tackles to stop their feet.\n\n— active hands as a pass—rusher and has shown a handful of moves that he can win with, like a cross—chop, spin move or ghost rush.\n\n— uses Good angles and has Good bend to corner at the top of the rush and take efficient paths to the quarterback.\n\n— Good pass—rush motor.\n\n— against the run, he stays tight to the line of scrimmage when unblocked and has the speed to make tackles from the backside of zone runs.\n\n— comfortable dropping into zone coverage occasionally as a standup outside linebacker."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Height is undersized, lacking the size and strength to hold up against the run in the NFL.\n\n— Could afford to add some more mass to be more effective when turning speed to power.\n\n— Doesn't have the lower body strength to effectively set the edge.\n\n— Ends up chest—to—chest frequently when taking on blocks, struggling to get extension and escape from offensive linemen.\n\n— Timing with his hands as a pass—rusher can be late, making it harder for him to win against offensive tackles who don't fall for his tricks and can stay in front of him.\n\n— Older prospect who will be a 25—year—old rookie and took several years to become a productive player in college."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.2,
+    "grade_indicator": null,
+    "overall_rank": 92,
+    "position_rank": null,
+    "pro_comparison": "Nick Herbig",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

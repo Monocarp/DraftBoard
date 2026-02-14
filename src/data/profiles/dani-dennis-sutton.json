@@ -1,0 +1,447 @@
+{
+  "name": "Dani Dennis-Sutton",
+  "slug": "dani-dennis-sutton",
+  "overview": {
+    "POS": "ED",
+    "College": "Penn State",
+    "Height": "6' 5\"",
+    "Weight": "265",
+    "Age": "22.0",
+    "DOB": "2003-12-23 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "54",
+    "Snaps": "1898",
+    "24/7 Sports": "98",
+    "ESPN": "80",
+    "Draft Buzz": "84.7 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "TBD",
+    "Gridiron": null
+  },
+  "position": "ED",
+  "college": "Penn State",
+  "height": "6' 5\"",
+  "weight": "265",
+  "age": 22.0,
+  "dob": "2003-12-23 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 54,
+  "snaps": 1898,
+  "site_ratings": {
+    "24/7 Sports": "98",
+    "ESPN": "80",
+    "Draft Buzz": "84.7 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "TBD",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "80.7",
+      "percentile": 0.5
+    },
+    "24 Grade": {
+      "value": "73.2",
+      "percentile": 0.3
+    },
+    "23 Grade": {
+      "value": "77.5",
+      "percentile": 0.85
+    },
+    "Pass Rush Grade": {
+      "value": "80.1",
+      "percentile": 0.4
+    },
+    "True Pass Rush": {
+      "value": "77.8",
+      "percentile": 0.368
+    },
+    "PR Win Rate": {
+      "value": "15.7",
+      "percentile": 0.368
+    },
+    "Run Def. Grade": {
+      "value": "78.3",
+      "percentile": 0.55
+    },
+    "Run Stop %": {
+      "value": "5.8",
+      "percentile": 0.35
+    },
+    "Sacks": {
+      "value": "8",
+      "percentile": 0.658
+    },
+    "Hits": {
+      "value": "13",
+      "percentile": 0.947
+    },
+    "Hurries": {
+      "value": "29",
+      "percentile": 0.684
+    },
+    "Batted Balls": {
+      "value": "1",
+      "percentile": 0.5
+    },
+    "Forced Fumbles": {
+      "value": "2",
+      "percentile": 0.605
+    },
+    "Tackling Grade": {
+      "value": "49.6",
+      "percentile": 0.05
+    },
+    "Missed Tackle Rate": {
+      "value": "22.9",
+      "percentile": 0.158
+    },
+    "Total Pressures": {
+      "value": "50",
+      "percentile": 0.737
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 71.88888888888889,
+      "positional_rank": "10.166666666666666"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 90.0,
+      "positional_rank": "15"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 72.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 68.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 82.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 69.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 40.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 54.0,
+      "positional_rank": "18"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 32.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 55.5,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": 49.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "3RD",
+    "Bleacher": "TBD"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Mykel WILLIAMS",
+    "Bleacher": "Dorance Armstrong",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.55,
+    "Pass Rush": 0.84,
+    "Run Defense": 0.86
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 0,
+      "career": 0
+    },
+    "B GAP": {
+      "2025": 3,
+      "career": 17
+    },
+    "Over Tackle": {
+      "2025": 36,
+      "career": 80
+    },
+    "Outside Tkl": {
+      "2025": 592,
+      "career": 1583
+    },
+    "Off Ball": {
+      "2025": 10,
+      "career": 14
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nDani Dennis-Sutton arrived in Happy Valley as one of the most decorated recruits in Penn State history, carrying five-star ratings from both Rivals and 247Sports while ranking as Maryland's top prospect. The McDonogh School product played for head coach Hakeem Sule and earned four letters despite seeing his junior season wiped out by COVID-19 and missing chunks of his senior year with a dislocated elbow. As a sophomore, he totaled 40 tackles with six sacks and two forced fumbles, showing the kind of disruptive ability that made him a coveted national recruit. Dennis-Sutton maintained honor roll status throughout high school while also competing in basketball and track, demonstrating the athletic versatility that would translate to college football.\n\nDennis-Sutton made an immediate impact as a true freshman in 2022, appearing in all 13 games and recording 17 tackles with three sacks and an interception returned 20 yards against Indiana. His two-sack performance against Central Michigan announced his arrival, earning him ESPN True Freshman All-American recognition. The following year saw expanded responsibilities with three starts across 13 appearances, producing 26 tackles, 3.5 sacks, and six tackles for loss while earning third-team All-Big Ten honors from coaches. His breakout arrived in 2024 when he started opposite Abdul Carter in all 16 games, compiling 42 tackles, 13 tackles for loss, and 8.5 sacks while adding an interception against Notre Dame in the College Football Playoff. Dennis-Sutton posted back-to-back six-tackle performances against Boise State and Notre Dame in the playoffs, including a strip-sack forced fumble that showcased his biggest-moment mentality. His senior campaign in 2025 produced similar numbers with 42 tackles, 12 tackles for loss, and 8.5 sacks across 13 games, leading the Big Ten in forced fumbles with three while earning unanimous third-team All-Big Ten recognition and maintaining his Academic All-Big Ten standing for the third consecutive year.\n\nOver four years with the Nittany Lions, Dennis-Sutton appeared in 54 games with significant playing time, accumulating 127 tackles, 34.5 tackles for loss, 23.5 sacks, seven forced fumbles, two fumble recoveries, two interceptions, and seven pass breakups. His two-sack performance in the Pinstripe Bowl against Clemson capped his Penn State career with the same kind of production that defined his journey from five-star recruit to established Big Ten pass rusher. Dennis-Sutton leaves State College as one of the program's most accomplished defensive linemen of the James Franklin era, with consistent year-over-year improvement and a reputation for elevating his game when the lights shine brightest.\n\nSCOUTING REPORT: SUMMARY\nDennis-Sutton profiles as a quality rotational piece who can carve out a defined role in an NFL defensive line rotation without ever being mistaken for a foundational building block. His size and power translate to the next level, particularly in early-down situations where setting edges and two-gapping matter more than pure pass rush dynamism. Teams employing traditional 4-3 fronts will find value in his ability to anchor against the run and provide depth behind established starters, while his willingness to play multiple alignments gives defensive coordinators flexibility in personnel packages. The tape reveals a technically sound defender who rarely gets fooled by window dressing or misdirection, making him a safe bet for situational work as a rookie.\n\nThe athletic limitations are real and they cap his upside as an every-down defender at the professional level. Dennis-Sutton's stiff lower body and lack of explosive first-step burst mean he'll struggle to win consistently against quality NFL tackles who can handle power and won't get beaten by predictable rush plans. He needs significant refinement in his pass rush craft to develop counters beyond his bull rush, and even then, his lack of natural bend suggests he's better suited as a complementary rusher rather than someone you count on for double-digit sacks. Watch him try to turn corners and you'll see why his production came more from effort and motor than dominant athletic traits. His value comes in short bursts where power matters, not in extended snaps against elite competition.\n\nThe realistic projection puts Dennis-Sutton as a third-round selection who provides immediate depth on early downs before hopefully developing into a high-snap rotational player by year two. His character and work ethic give coaches confidence he'll maximize whatever ability he has, but teams need to be honest about what they're getting here. This is a role player with defined limitations who can contribute in the right scheme without ever becoming the guy opposing offenses gameplan around.\nWRITTEN BY:\nK.C. MARTINEZ (BIG TEN)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Dani Dennis—Sutton looks like he was built in a lab to play in the NFL. At a listed 6'5\" and 265 pounds with long arms, he has the size and length for the position, with plenty of strength to be a quality run—defender and solid power—rusher.\n\nSutton entered Penn State as a 5—star recruit in the 2022 class and made an impact with 17 tackles, 3.5 for loss and three sacks to be named a True Freshman All—American (ESPN).\n\nHis role expanded as a sophomore, with increased production (26 tackles, six tackles for loss and 3.5 sacks) to earn third—team All—Big Ten honors. In 2024, the Nittany Lion was a full—time starter opposite Abdul Carter and posted 42 tackles, 13 TFLs and 8.5 sacks to earn an honorable mention All—Big Ten selection."
+        },
+        {
+          "title": "Positives",
+          "text": "— Good size and appears to have long arms. looks the part of an NFL defensive end.\n\n— quick to shoot his hands and take on blocks, while Also showing Impressive upper—body strength to get extension and set the edge. Dennis—Sutton physically dominates tight ends, too.\n\n— solid when taking on pullers, either getting underneath them as the spill player or creating a stalemate as the force player.\n\n— decent at shedding and getting off blocks to make tackles against the run.\n\n— solid power—rusher with a decent long—arm to occasionally collapse the pocket.\n\n— Also Showed solid hand—swipe and a rip move to win when working around the edge. Dennis—Sutton displays a Good motor to generate coverage sacks."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Lacks twitch and displays subpar athleticism.\n\n— Heavy—footed and isn't explosive off the snap. Dennis—Sutton doesn't threaten offensive tackles with speed as an edge—rusher.\n\n— Bend is below—average to turn tight corners. Combined with his lack of quick—twitch fibers, his makeup limits the ability to make backside tackles when unblocked.\n\n— Struggles to break down in the backfield. His subpar athletic ability will cause him to miss sacks and let mobile quarterbacks escape the pocket.\n\n— Needs to improve his rotational strength and avoid getting his shoulders turned against combo/scoop blocks."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.3,
+    "grade_indicator": null,
+    "overall_rank": 82,
+    "position_rank": null,
+    "pro_comparison": "Dorance Armstrong",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

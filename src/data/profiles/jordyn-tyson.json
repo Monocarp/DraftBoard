@@ -1,0 +1,535 @@
+{
+  "name": "Jordyn Tyson",
+  "slug": "jordyn-tyson",
+  "overview": {
+    "POS": "WR",
+    "College": "Arizona State",
+    "Height": "6' 2\"",
+    "Weight": "200",
+    "Age": "21.5",
+    "DOB": "2004-08-12 00:00:00",
+    "Year": "RS Jr",
+    "Prj. Rd": "1st Rd",
+    "Games": "33",
+    "Snaps": "1580",
+    "24/7 Sports": "84",
+    "ESPN": "91",
+    "Draft Buzz": "88.7 / 100",
+    "NFL.com": "6.46",
+    "Bleacher": "8.35",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "Arizona State",
+  "height": "6' 2\"",
+  "weight": "200",
+  "age": 21.5,
+  "dob": "2004-08-12 00:00:00",
+  "year": "RS Jr",
+  "projected_round": "1st Rd",
+  "games": 33,
+  "snaps": 1580,
+  "site_ratings": {
+    "24/7 Sports": "84",
+    "ESPN": "91",
+    "Draft Buzz": "88.7 / 100",
+    "NFL.com": "6.46",
+    "Bleacher": "8.35",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "83.6",
+      "percentile": 0.737
+    },
+    "2024 Grade": {
+      "value": "80.3",
+      "percentile": 0.895
+    },
+    "2023 Grade": {
+      "value": "51.7",
+      "percentile": 0.0
+    },
+    "Receiving Grade": {
+      "value": "85.9",
+      "percentile": 0.763
+    },
+    "Yards/ Routes Run": {
+      "value": "2.37",
+      "percentile": 0.316
+    },
+    "Drop %": {
+      "value": "1.6",
+      "percentile": 0.895
+    },
+    "Contested Catch": {
+      "value": "43.8",
+      "percentile": 0.237
+    },
+    "Grade vs Man": {
+      "value": "89",
+      "percentile": 0.947
+    },
+    "YAC/Reception": {
+      "value": "4.3",
+      "percentile": 0.105
+    },
+    "Missed Tkls Forced": {
+      "value": "6",
+      "percentile": 0.105
+    },
+    "ADOT": {
+      "value": "11.7",
+      "percentile": 0.579
+    },
+    "Deep Yards": {
+      "value": "170",
+      "percentile": 0.342
+    },
+    "Touchdowns": {
+      "value": "8",
+      "percentile": 0.526
+    },
+    "Elusiveness": {
+      "value": "27.8",
+      "percentile": 0.125
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 8.76923076923077,
+      "positional_rank": "1.5714285714285714"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 7.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 9.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 12.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 8.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 7.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 9.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 7.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 7.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 12.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 10.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 15.0,
+      "positional_rank": "3"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 13.307692307692308,
+    "PFF": 8.0,
+    "ESPN": null,
+    "Brugler": 5.0,
+    "Kiper": 8.0,
+    "Miller": 14.0,
+    "Bleacher": 9.0,
+    "Walter": 14.0,
+    "TDN": 11.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 18.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - MID",
+    "Bleacher": "1st Round"
+  },
+  "player_comps": {
+    "NFL": "Terry McLaurin",
+    "Miller": "TBD",
+    "DraftBuzz": "Jaxon SMITH-NJIGBA",
+    "Bleacher": "Brandon Aiyuk",
+    "WF": "TBD",
+    "Ringer": "Christian Watson",
+    "NFL.com": "Terry McLaurin"
+  },
+  "strengths": "• Burst, Acceleration of The Line\n• Instinctual, Experienced Playmaker\n• Route Running, Attacking Angles\n• Strong Seperation Ability\n• Short Area Quickness, Burst\n• Massive Catch Radius\n• Contested Catch Toughness\n• Elite Ball Skills/Body Control\n• Spent Time Honing his Craft",
+  "weaknesses": "• Not Blazing Speed\n• Functional Play Strength is Meh\n• Inefficient Footwork on Inbreaking Routes\n• Long History of Injuries",
+  "accolades": "• 25 1st Team All Big 12\n• 24 1st Team All Big 12",
+  "player_summary": "Jordyn Tyson is a twitchy, dynamic wide receiver with improved route running, added size, and versatility across all three positions. At 6'2\", 200 pounds, he features a long-levered frame and large catch radius, using sudden burst, acceleration, and quick, springy cuts to shake man and zone coverage, stem defenders, flatten out of breaks, and generate separation that draws penalties. He releases well off press, gains vertical leverage, threatens downfield with adequate speed, and shows short-area quickness for high-leverage, chain-moving catches. Tyson separates with savvy footwork to cross up corners, contorts at the catch point for off-target throws, concentrates through contact, climbs for 50/50 balls with timing and body control, and extends to pluck away from his frame. He threatens after the catch by making defenders miss. A notable injury history creates durability concerns that teams must investigate pre-draft; contested-catch success has been inconsistent in evaluations",
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 111.2,
+    "Hands": 0.82,
+    "Short Receiving": 0.85,
+    "Med Routes": 0.89,
+    "Deep Threat": 0.89,
+    "Blocking": 0.59
+  },
+  "projected_role": "WR 1/2",
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 81,
+      "career": 243
+    },
+    "Wide": {
+      "2025": 242,
+      "career": 468
+    }
+  },
+  "skills_traits": {
+    "Character/Mentality": {
+      "positives": "Putting in time to hone his craft (NFL)\nHighly competitive (NFL)\nAccustomed to being the playmaker (BR)",
+      "negatives": null
+    },
+    "Receiving Skills": {
+      "positives": "Contested catch toughness (NFL)\nBall Skills and body control to win above the rim (NFL)",
+      "negatives": "Focus drops in 2024 (NFL)\ninefficient footwork on inbreaking routes"
+    },
+    "Technique": {
+      "positives": "Gets of the Line well (ESPN)\nStrong seperation ability, leads to hohlding/PI calls (ESPN)\nThreat after the catch, makes guys miss (ESPN)\nCan play  all three spots (NFL)\nTwitchy, Dynamic, Playmaker (BR)\nThrives at attacking angles and leverage (BR)\nUsing his hands to counter phsyciality at the LOS (BR)",
+      "negatives": "Hurries his routes (NFL)"
+    },
+    "Physical Traits": {
+      "positives": "Short area Quickness, plays with suddenness (NFL)\nFast enough (NFL)\nKing sized catch radius (Ringer)",
+      "negatives": "Not a blazer (NFL)\nFuncitonal Play Strength (BR)"
+    },
+    "Blocking": {
+      "positives": "Willing run blocker (NFL)",
+      "negatives": "Not an overpowering blocker (ESPN)\nHistory of Injuries (NFL)\nKnee (2022), Collarbone (2024), Hamstring (2025)"
+    }
+  },
+  "media_links": [
+    {
+      "description": "2025 Highlights",
+      "source": "YT - CFB on FOX",
+      "url": "https://www.youtube.com/watch?v=-hfoZJr13M0"
+    },
+    {
+      "description": "Scouting Report",
+      "source": "YT - The Scouting Room",
+      "url": "https://www.youtube.com/watch?v=qsVqcN9uBUg&vl=en"
+    },
+    {
+      "description": "Interview",
+      "source": "YT - Arizona St Univ.",
+      "url": "https://www.youtube.com/watch?v=UYbncHCjSnc"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Learning from Super Bowl XL MVP Hines Ward helped unlock Tyson’s production and elevated his draft stock. He’s added size and improved his route running over the last two years, showing he can align at all three receiver spots. He occasionally rushes the route but has the short-area quickness and contested-catch toughness to find chain-moving grabs in high-leverage moments. He’s not a blazer but has enough speed to work down the field. Also, he has the ball skills and body control to win above the rim with timing on 50/50 throws. Scouts say he puts in the time to absorb knowledge and hone his craft. A history of injuries might explain inconsistent competitiveness as a run blocker in 2025. The wiring, versatility and finishing talent point to a WR1 ceiling."
+        },
+        {
+          "title": "Strengths",
+          "text": "Able to play every receiver spot on the field. | Plays with ideal suddenness and cut quickness underneath. | Routes are smooth and manipulative to induce leverage. | Stems routes suddenly, leaving man coverage temporarily stranded. | Digs hard on posts to gain ground before looking for the ball. | Uses off hand to maintain leads and landing zones down the sideline. | Highly competitive to hog the catch space and win contested catches. | Ball skills feature impeccable body control and high-point timing. | Showed willingness in 2024 to put hat on hat as a run blocker. | Coached by former NFL standout Hines Ward at Arizona State."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Focus drops were an issue in 2024. | Can be impatient and hurry his routes at times. | Loses momentum on in-breaking routes because of inefficient footwork. | Long speed and play strength are average. | Missed games in every season from 2022-2025. | Suffered knee (2022), collarbone (2024) and hamstring (2025) injuries."
+        },
+        {
+          "title": "Sources Tell Us",
+          "text": "“He injured both hamstrings in that Texas Tech game but still played through it and then single-handedly closed that game out for them. He wouldn’t check out.” – NFC regional scout"
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Jordyn Tyson combines route running, size, athleticism, and big-play ability, which gives him a clear path to be a WR1 for an NFL offense."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nJordyn Tyson bounced between three different high schools, playing at John Paul II High before moving to Independence High for his junior year and then transferring to powerhouse 6A Allen High for his senior season. That final prep campaign was a showcase: 80 catches for 1,512 yards and 12 touchdowns, including eight 100-yard performances that cemented him as a legitimate Division I talent despite being ranked as just a three-star prospect by the major recruiting services. Standing 6-2 and 200 pounds, Tyson signed with Colorado and immediately made an impact as a true freshman in 2022, leading the Buffaloes in receiving with 22 catches for 470 yards and four touchdowns.\n\nHis 21.36 yards per catch that season ranked fourth nationally among all players, and he became the first Colorado freshman in school history to score a receiving touchdown in the season opener. His best game came against Arizona State, where he put together a spectacular multi-phase performance with 115 receiving yards, a touchdown, and 131 punt return yards including a score. That 246-yard, two-touchdown effort signaled that Tyson had the explosiveness to play on Sundays. After that promising debut, he transferred to Arizona State in April 2023 and spent that season as a redshirt while recovering from a knee injury, biding his time under the tutelage of wide receivers coach Hines Ward, the former Super Bowl XL MVP.\n\nTyson's patience paid off in a massive way in 2024. He erupted for 75 catches, 1,101 yards, and 10 touchdowns, earning third-team Associated Press All-America honors and Big 12 Offensive Newcomer of the Year recognition. His signature performance came in a road victory at Kansas State, where he scorched the Wildcats for 176 yards and two scores on 12 receptions, the most receiving yards by a Sun Devil since Brandon Aiyuk torched Washington State in 2019. During a scorching six-game stretch in the back half of the season, Tyson compiled 732 yards and six touchdowns on 50 catches, averaging 104.0 yards per contest. A collarbone injury suffered in the regular season finale against Arizona cut his breakout campaign short and forced him to miss the Big 12 Championship Game and College Football Playoff, but his tape had already spoken volumes. In 2025, hamstring issues limited him to nine games and 61 catches for 711 yards with eight touchdowns, but the production remained steady when healthy. His brother Jaylon, who starred at California, was the 20th overall pick by the Cleveland Cavaliers in the 2024 NBA Draft, so athletic bloodlines run deep in this family.\n\nThis is a receiver who wins with craft, body control, and competitive fire rather than overwhelming physical tools. His 4.5 speed is not going to scare anyone on paper, but his release package and route-running savvy create separation that stopwatches cannot measure. He thrives in the intermediate areas of the field, finding soft spots in zone coverage and working back to the quarterback on in-breaking routes. His basketball background is not just a fun biographical note; it genuinely shows up in how he plays the position, particularly in contested-catch situations where he boxes out defenders like he is working for position in the paint.\n\n\n\nThe positional flexibility is a major selling point. Tyson has produced from the outside, from the slot, and in motion, giving offensive coordinators a moveable chess piece who can be deployed in multiple alignments. He fits best in passing attacks that emphasize intermediate concepts, play-action designs, and timing routes where his precise stems and reliable hands can shine. His willingness to block in the run game, a trait drilled into him by Hines Ward, will endear him to coaching staffs who value complete receivers rather than one-dimensional route runners.\n\n\n\nThe medical questions are real and cannot be ignored. Three different injuries in three consecutive seasons will make team doctors earn their paychecks during the pre-draft process. If the medicals check out, Tyson has the skill set to be a legitimate number one receiver at the next level, someone who can win consistently across all three levels of the field and contribute in high-leverage moments. His floor is a productive second or third option in a passing attack; his ceiling is a Pro Bowl caliber player who can be the primary target in a quality offense. The talent is obvious on tape, and the production against Power Five competition speaks for itself."
+        },
+        {
+          "title": "Overview",
+          "text": "Twitchy, long-levered receiver who shakes coverage with ease and brings a king-sized catch radius.\n\nTyson is a competitive, big-play pass catcher who separates with springy, lightning-quick cuts as a route runner and brings the wingspan to come down with off-target throws. A transfer to Arizona State after playing one season at Colorado, he’s tall with a high-cut, muscular frame, and he moves with sudden burst and acceleration. He flashes the ability to shake tight coverage early in his route, using savvy footwork to cross up cornerbacks and get them spinning in place. He brings the flexibility and body control to twist and contort at the catch point, giving his quarterback a friendly target downfield. Tyson has shown the ability to concentrate through contact to see the ball into his hands, with just one drop in 2025. He climbs the ladder to go up high and snare throws in his area. He mainly plays outside but has seen snaps in the slot as well. He works hard at blocking and does well to lock in on corners and wall them off from the play. He got a little bit of experience as a kick and punt returner when he was at Colorado, including one punt return for a score.\n\nTeams will have to dig into Tyson’s injury history during the run-up to the draft. He missed all but three games in 2023 due to a serious knee injury, missed the final two games of the 2024 season with a collarbone injury, and then missed games again in 2025 with a hamstring injury. While he brings a big catch radius, his win rate in contested catch situations was underwhelming (he caught seven of 16 contested passes in 2025 and caught 22 of 42 of those passes in his college career, per PFF). On tape, there were times when he failed to position himself to make the play, and there were others when he struggled to play through contact. He may need to get stronger in the pros."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "here do you have McKay Lemon, Jordan Tyson, could you trade down? Could you trade off of that? Pick if you're the Giants because you're gonna see a receiver. Jordan Tyson with that durability concern, had he been healthy throughout the process, You know about this year and going back even the previous two injuries, had he been more durable, you're looking at a top 10 pick guarantee there... All these receivers, all three of them, whether it's Tate Tyson or Lemon, they're all gonna go way, way up there... Yeah, they're gonna get pushed down just a bit... The top three guys in some order of Tate Tyson and Lemon... Jayden Daniels will have a field day with Jordan Tyson draft him and go all defense... That brings us to the second best receiver in this class... Probably the most explosive receiver in this class... I think it's neck and neck between Carnell Tate and Jordan Tyson from Arizona State. Six foot two, 200 pounds explosive dynamic athlete... This past year his production dropped a little bit to 61 catches for 711 yards and eight touchdowns. He dealt with a couple of minor injuries and also Sam Levitt, his quarterback didn't finish the season with the team... If we did the draft at the end of last year prior to, or right when Arizona State's remarkable season was coming to a close and the final three regular season games before he got banged up, Jordan Tyson went for 29 catches, 444 yards and three touchdowns... He looked like the best player on a team that nearly upended Texas in that double overtime loss in the playoffs... Jordan Tyson, you put the football in his hands, good things happen. He's very comfortable handling the ball. He actually began his career at Colorado... He had an 88 yard punt return during his true freshman season... Jordan Tyson's older brother Jalen Tyson, a breakout player for the Cleveland Cavaliers this year. It is a remarkably athletic family. I think these two guys you, you could pull 32 teams and it might be 1814 in terms of who has the edge as a superior player... When you look at where we are with another receiver that's right in there... 'cause there's not much separating I think three, four receivers even in this draft... You feel bad... 'cause I love him so much I put him at number one but I love Tate two and Tyson... Splitting hairs. Guys between Lemon Tyson and also Tate and I'll throw in Denzel Boston at it list as well... I've got Tyson Tate Lemon, like five total spots apart on the overall big board... Those top three in any order, probably in the order that we have them will be the consensus... Lemon and Tyson. They were all very consistent catchers of the football... Neither does Carnell Tate Lemon and Tyson. They were all very consistent catchers of the football.\n\n\n Jordyn Tyson...maybe a Jordan Tyson from Arizona State...I know he is had the injury history but he's a kid when he is healthy and ready to go. Outstanding football player...What an explosive playmaker Jordan Tyson is. He just is instant offense. You find ways to get touches for him.\n\n\"Jordan Tyson's coming back, he had a couple catches...from that hamstring. He had some injury issues. He had the knee, then he had the collarbone, then he, now he has this...I think it's Carne Tate and Jordan Tyson kind of vying...it's Tyson and Tate vying for that...all three are tough 15 picks...I don't have 15 players graded higher than those three...Jordan Tyson and Carne Tate because of their combination of size and likely speed as well will end up going a little bit higher...Jordan Tyson who began his college career at Colorado...The younger brother of Cavalier's, former first round pick, Jalen Tyson who finished his college career at Cal...Unbelievably fluid, really good, really comfortable with the football in his hands. Was a great punt returner during his time at Colorado as well...Tyson back from injury now has a real chance to be a top 10 or so...you think about Car Tate getting back and Tyson coming back. These guys have been banged up a little bit...the hamstring with Tate out with three games will be back from Michigan...now Car take Jordan Tyson, who by the way by the way is coached by Heinz Ward...Those three guys...top 15 field. I'd be surprised if those three got outta the top 10 to 12...we've got a Twitter question...it sounds to me like you guys are saying wide receiver. 'cause we have Jordan Tyson and we talked about him\"."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTyson is Colorado transfer coming off a breakout second season at Arizona State. He gets off the line well, stems defenders and flattens out when getting out of his breaks. His ability to separate leads to plenty of pass interference and holding calls. After the catch, he's a threat who can make defenders miss. Tyson can get off press coverage and gain leverage as a vertical route runner. HeÃ•s not an overpowering blocker, but he gets into position and moves his feet once locked on. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Jordyn Tyson is a twitchy, dynamic playmaker with the route—running chops to create space against man and zone coverage.\n\nTyson emerged as a potential top—ten pick. He has an NFL—ready game and skill set. This season, he has emerged as a high—volume target that translates well to the next level. A lingering injury history will cause difficult conversations during the draft season regarding how high he should be valued.\n\nTyson is listed as a 6'2\", 200—pound wide receiver. He began his collegiate career with the Colorado Buffaloes as a 3—star recruit in the 2022 class. Tyson had a breakout season in 2024, with 75 catches for 1,101 yards and 10 touchdowns."
+        },
+        {
+          "title": "Positives",
+          "text": "— Good route—running ability. Tyson thrives at attacking angles and leverage. His routes are run with the intent to step on the defensive back's toes quickly. His lateral agility and footwork are great in setting up defensive backs in off coverage at the apex of his route.\n\n— Short area quickness and suddenness are key components to his space creation as a route—runner. On key downs, he is accustomed to being the go—to receiver when the offense needs a play.\n\n— Alignment versatile receiver who can win from every wide receiver position in the formation. He offers the play caller the opportunity to move him around, dictate the numbers game, and create advantageous matchups for his offense.\n\n— Nuanced receiver who flashes late hands with excellent body control to come down with combat/contested catches. Plays with the requisite aggressiveness and confidence when high—pointing at the catch point.\n\n— Good ball skills and leaping ability. Tyson has excellent body control and hang time as he high—points passes downfield."
+        },
+        {
+          "title": "Negatives",
+          "text": "— While Tyson is a good route runner, there is room to improve. He can sharpen his cuts at the apex of his routes. He has some wasted movements and freelancing against man coverage. He'd be more efficient with a streamlined process.\n\n— Using his hands to counter physical press—man corners in bump—and—run coverage. He allows too much contact at the line of scrimmage. This leads to timing disruption at the early phase of his route. Shooting his hands into the contact window can limit the defensive back's ability to re—route him early, allowing Tyson to get into his route phase more efficiently.\n\n— Tyson has battled injuries throughout his collegiate career. He has been injured at some point during each of his last three seasons. Combine medicals will be important for his NFL Draft stock.\n\n— Arizona State's best receiver doesn't bring instant yards after catch ability. Improving his functional play strength can increase his effectiveness."
+        }
+      ]
+    },
+    {
+      "source": "ESPN",
+      "sections": [
+        {
+          "title": "Analysis",
+          "text": "Tyson is Colorado transfer coming off a breakout second season at Arizona State. He gets off the line well, stems defenders and flattens out when getting out of his breaks. His ability to separate leads to plenty of pass interference and holding calls. After the catch, he's a threat who can make defenders miss. Tyson can get off press coverage and gain leverage as a vertical route runner. HeÃ•s not an overpowering blocker, but he gets into position and moves his feet once locked on. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Twitchy, long-levered receiver who shakes coverage with ease and brings a king-sized catch radius.\n\nTyson is a competitive, big-play pass catcher who separates with springy, lightning-quick cuts as a route runner and brings the wingspan to come down with off-target throws. A transfer to Arizona State after playing one season at Colorado, he’s tall with a high-cut, muscular frame, and he moves with sudden burst and acceleration. He flashes the ability to shake tight coverage early in his route, using savvy footwork to cross up cornerbacks and get them spinning in place. He brings the flexibility and body control to twist and contort at the catch point, giving his quarterback a friendly target downfield. Tyson has shown the ability to concentrate through contact to see the ball into his hands, with just one drop in 2025. He climbs the ladder to go up high and snare throws in his area. He mainly plays outside but has seen snaps in the slot as well. He works hard at blocking and does well to lock in on corners and wall them off from the play. He got a little bit of experience as a kick and punt returner when he was at Colorado, including one punt return for a score.\n\nTeams will have to dig into Tyson’s injury history during the run-up to the draft. He missed all but three games in 2023 due to a serious knee injury, missed the final two games of the 2024 season with a collarbone injury, and then missed games again in 2025 with a hamstring injury. While he brings a big catch radius, his win rate in contested catch situations was underwhelming (he caught seven of 16 contested passes in 2025 and caught 22 of 42 of those passes in his college career, per PFF). On tape, there were times when he failed to position himself to make the play, and there were others when he struggled to play through contact. He may need to get stronger in the pros."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Twitchy, long-levered receiver"
+        },
+        {
+          "title": "Traits",
+          "text": "Short-Area Quickness\nSure Hands\nSmooth Footwork\nInstinctual Playmaking"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former three-star recruit out of Allen, Texas. Was the no. 98 wide receiver and the no. 703 overall player in the 2022 class. Began his college career at Colorado before transferring to Arizona State ahead of the 2023 season. Suffered a torn ACL, MCL, and PCL in his left knee in 2022. Missed time in 2024 with a broken collarbone. Named first-team All–Big 12 in 2025 even though he missed time late in the season with a hamstring injury."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "His older brother Jaylon is in his second season in the NBA for the Cleveland Cavaliers. He’s averaging 13.5 points and 5.5 rebounds per game as of this writing.\nHis other older brother, Berron, played football at South Alabama, and his father, John, played football at Florida A&M.\nArizona State wide receivers coach—and former Steelers great—Hines Ward on Tyson in 2024: “Explosive playmaker. Phenomenal hands, can catch acrobatic, go up and high point the ball. The kid wants to get better. … We haven’t scratched the surface of how good he can really be as an individual and as a football player.”"
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF CHRISTIAN WATSON"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.46,
+    "prospect_grade_indicator": "Will Become Good Starter Within Two Years",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Terry McLaurin",
+    "eligibility": "Junior (RS)",
+    "nfl_rank": 15,
+    "nfl_pos_rank": 3
+  },
+  "bleacher_profile": {
+    "grade": 8.35,
+    "grade_indicator": null,
+    "overall_rank": 9,
+    "position_rank": null,
+    "pro_comparison": "Brandon Aiyuk",
+    "projected_round": "1st Round"
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF CHRISTIAN WATSON",
+    "traits": "Short-Area Quickness\nSure Hands\nSmooth Footwork\nInstinctual Playmaking"
+  },
+  "injury_history": [
+    {
+      "detail": "ACL,MCL,PCL Tear",
+      "recovery_time": "Season Ending",
+      "year": "2023"
+    },
+    {
+      "detail": "Collarbone Fracture",
+      "recovery_time": "2 Games",
+      "year": "2024"
+    },
+    {
+      "detail": "Hamstring Strain",
+      "recovery_time": "3 Games",
+      "year": "2025"
+    }
+  ]
+}

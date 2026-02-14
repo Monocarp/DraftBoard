@@ -1,0 +1,450 @@
+{
+  "name": "Antonio Williams",
+  "slug": "antonio-williams",
+  "overview": {
+    "POS": "WR",
+    "College": "Clemson",
+    "Height": "5' 11\"",
+    "Weight": "190",
+    "Age": "21.6",
+    "DOB": "2004-07-14 00:00:00",
+    "Year": "RS Jr",
+    "Prj. Rd": null,
+    "Games": "42",
+    "Snaps": "1944",
+    "24/7 Sports": "96",
+    "ESPN": "81",
+    "Draft Buzz": "85.3 / 100",
+    "NFL.com": "6.24",
+    "Bleacher": "6.7",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "Clemson",
+  "height": "5' 11\"",
+  "weight": "190",
+  "age": 21.6,
+  "dob": "2004-07-14 00:00:00",
+  "year": "RS Jr",
+  "projected_round": null,
+  "games": 42,
+  "snaps": 1944,
+  "site_ratings": {
+    "24/7 Sports": "96",
+    "ESPN": "81",
+    "Draft Buzz": "85.3 / 100",
+    "NFL.com": "6.24",
+    "Bleacher": "6.7",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "79.9",
+      "percentile": 0.474
+    },
+    "2024 Grade": {
+      "value": "74.1",
+      "percentile": 0.5
+    },
+    "2023 Grade": {
+      "value": "72.4",
+      "percentile": 0.684
+    },
+    "Receiving Grade": {
+      "value": "79.2",
+      "percentile": 0.316
+    },
+    "Yards/ Routes Run": {
+      "value": "2.27",
+      "percentile": 0.263
+    },
+    "Drop %": {
+      "value": "1.8",
+      "percentile": 0.842
+    },
+    "Contested Catch": {
+      "value": "46.2",
+      "percentile": 0.316
+    },
+    "Grade vs Man": {
+      "value": "75.7",
+      "percentile": 0.5
+    },
+    "YAC/Reception": {
+      "value": "5.8",
+      "percentile": 0.579
+    },
+    "Missed Tkls Forced": {
+      "value": "8",
+      "percentile": 0.316
+    },
+    "ADOT": {
+      "value": "7.7",
+      "percentile": 0.053
+    },
+    "Deep Yards": {
+      "value": "181",
+      "percentile": 0.421
+    },
+    "Touchdowns": {
+      "value": "4",
+      "percentile": 0.053
+    },
+    "Elusiveness": {
+      "value": "36",
+      "percentile": 0.375
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 74.8,
+      "positional_rank": "13.666666666666666"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 95.0,
+      "positional_rank": "16"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 64.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 61.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 138.0,
+      "positional_rank": "22"
+    },
+    {
+      "source": "Jeremiah",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 37.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 60.0,
+      "positional_rank": "14"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 85.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Tankathon",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 63.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 42.0,
+    "Bleacher": null,
+    "Jeremiah": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "Tankathon": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - MID",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "Miller": "TBD",
+    "DraftBuzz": "Malachi CORLEY",
+    "Bleacher": "0",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 125.4,
+    "Hands": 0.75,
+    "Short Receiving": 0.78,
+    "Med Routes": 0.81,
+    "Deep Threat": 0.85,
+    "Blocking": 0.62
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 265,
+      "career": 600
+    },
+    "Wide": {
+      "2025": 19,
+      "career": 237
+    }
+  },
+  "skills_traits": {
+    "Character/Mentality": {
+      "positives": null,
+      "negatives": null
+    },
+    "Receiving Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technique": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Blocking/Other": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Williams is a bona fide ball player with good size and an ability to make mischief when he totes the pigskin. There is freestyling inside his routes that create uncertainty for corners but teams might drill down on attention to detail and better efficiency to keep him on schedule. He’s not a field-stretcher but he plays fast from snap to whistle and has the ball skills to bring in challenging catches. He’s more slippery than explosive with outstanding run-after-catch ability. Williams projects as a productive slot receiver with legitimate run/pass/catch talent that should appeal to creative play-callers."
+        },
+        {
+          "title": "Strengths",
+          "text": "Consistently productive in four seasons at Clemson. | Possesses rare ability to throw, catch, run and return punts. | Sauces up defenders with fakes and tempo changes. | Works the middle of the field and has a good feel for soft spots in zone. | Wiggle-and-go to turn hitches/screens into first downs. | Running back’s vision and cut quickness with ball in his hands. | Stabs and tucks off-frame throws with cat-quick hands. | Loose and fluid making in-air adjustments to win jump balls."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Lost games to nagging injuries in 2023 and 2025. | Rarely pressed and needs to prove he can beat it. | Not a deep hip-sinker for tight turns in his routes. | Lacks top-end speed to stretch defense from the slot. | Average burst to separate getting out of breaks. | Route work will need to become more efficient and focused."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Antonio Williams is a dynamic, explosive playmaker who wins all over the field and has the opportunity to be a No. 1 option for an NFL offense."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nAntonio Williams arrived at Clemson as a decorated 4-star prospect out of Dutch Fork High School, where he dominated South Carolina competition with a blend of route precision and dynamic playmaking ability. The Irmo native hit the ground running as a true freshman in 2022, leading the Tigers in receptions (56) and receiving yards (604) while earning Freshman All-American honors from multiple outlets. After an injury-plagued sophomore campaign limited him to just four regular-season games, Williams roared back with vengeance in 2024, posting 75 catches for 904 yards and 11 touchdowns while emerging as QB Cade Klubnik's most trusted target.\n\nThe production speaks volumes - recording a reception in all 33 games he's played at Clemson, a streak that will enter 2025 just 10 shy of Hunter Renfrow's school record. His versatility has been on full display throughout his career, joining rare company in 2024 as just the fourth Tiger since 2000 to record a passing touchdown, rushing touchdown, and receiving touchdown in the same season. While not possessing prototypical size, Williams has flourished both outside and in the slot, showcasing advanced route-running techniques that belie his years while also contributing significantly as a punt returner, where his 9.65-yard average in 2024 was the program's best since 2017.\n\nRather than testing NFL waters after his breakout 2024 campaign (which earned him first-team All-ACC honors), Williams made the calculated decision to return for his senior season, positioning himself for a potential rise up draft boards. With established chemistry alongside Klubnik and complementary weapons in young standouts Bryant Wesco Jr and T.J. Moore, Williams enters 2025 with legitimate chances to challenge several major Clemson receiving records, including Artavis Scott's career mark of 245 receptions and the program's touchdown reception record of 27 currently shared by DeAndre Hopkins, Sammy Watkins, and Tee Higgins.\n\nWilliams brings a rare combination of technical mastery and football intelligence that commands first-round consideration despite obvious physical limitations. His route-running represents the gold standard for this draft class - those masterful tempo changes, violent head snaps, and the way he drops his weight beautifully at break points create separation that translates to a ridiculous 95th percentile separation rate. The eight drops on his stat sheet are genuinely misleading when you watch him pluck balls cleanly away from his frame with natural hands that rarely betray him in crucial moments. His professional-grade route precision at all three levels gives quarterbacks a reliable target who understands leverage better than receivers with twice his experience.\n\n\n\nThe tape reveals a player built for immediate NFL impact in the right system, particularly as a slot weapon where his limited catch radius becomes less problematic. His tracking ability on off-target throws and concentration between converging defenders - like that courageous grab against Florida State - demonstrate the toughness needed to survive NFL physicality despite his compact frame. Teams running timing-based attacks will salivate over his ability to find soft spots against zone coverage while his punt return skills provide day-one roster value that pushes borderline prospects into round one. However, his burst limitations after the catch and concerns about whether a 190-pound frame can endure 17-game seasons create legitimate evaluation splits among front offices.\n\n\n\nWilliams profiles as a late first-round selection whose draft position hinges on organizational philosophy rather than talent evaluation. His route-running grade sits at elite levels while his overall skill set projects as an immediate slot contributor with WR2 upside in spread offenses. Some teams will view his technical polish and special teams ability as worthy of premium investment, especially those prioritizing sure-thing production over developmental ceiling. Others will hesitate to use first-round capital on a player whose physical constraints suggest a complementary role rather than alpha potential. The 2023 injury concerns add another layer of risk assessment, but his film shows a prospect whose floor remains remarkably high even if his ceiling feels somewhat capped by measurables.   \n\n                                        \n                                            \n                                                Written By:\n                                                Felix Green (ACC)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nWilliams led Clemson in catches, receiving yards and receiving touchdowns in 2024. He gets off the line well, and he snaps his head around as he gets out of breaks in routes. His burst after the catch stands out on tape, and he runs away from defenders who underestimate it. Williams is fast enough to threaten vertically and tracks the deep ball well. He dropped four passes in 2024, but he has natural hands. Williams has the body control to adjust to passes thrown outside his frame. He is quick to secure the ball, and he makes contested catches. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "ESPN",
+      "sections": [
+        {
+          "title": "Analysis",
+          "text": "Williams led Clemson in catches, receiving yards and receiving touchdowns in 2024. He gets off the line well, and he snaps his head around as he gets out of breaks in routes. His burst after the catch stands out on tape, and he runs away from defenders who underestimate it. Williams is fast enough to threaten vertically and tracks the deep ball well. He dropped four passes in 2024, but he has natural hands. Williams has the body control to adjust to passes thrown outside his frame. He is quick to secure the ball, and he makes contested catches. -- Steve Muench"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.24,
+    "prospect_grade_indicator": "Will Eventually Be Average Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": null,
+    "eligibility": "Junior (RS)",
+    "nfl_rank": 36,
+    "nfl_pos_rank": 6
+  },
+  "bleacher_profile": {
+    "grade": 6.7,
+    "grade_indicator": null,
+    "overall_rank": 138,
+    "position_rank": null,
+    "pro_comparison": null,
+    "projected_round": null
+  },
+  "injury_history": []
+}

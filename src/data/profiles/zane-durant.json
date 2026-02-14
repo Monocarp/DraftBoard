@@ -1,0 +1,447 @@
+{
+  "name": "Zane Durant",
+  "slug": "zane-durant",
+  "overview": {
+    "POS": "DT",
+    "College": "Penn State",
+    "Height": "6' 1\"",
+    "Weight": "287",
+    "Age": "21.9",
+    "DOB": "2004-05-06 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "53",
+    "Snaps": "1616",
+    "24/7 Sports": "89",
+    "ESPN": "TBD",
+    "Draft Buzz": "81.3 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "position": "DT",
+  "college": "Penn State",
+  "height": "6' 1\"",
+  "weight": "287",
+  "age": 21.9,
+  "dob": "2004-05-06 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 53,
+  "snaps": 1616,
+  "site_ratings": {
+    "24/7 Sports": "89",
+    "ESPN": "TBD",
+    "Draft Buzz": "81.3 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "64.7",
+      "percentile": 0.0
+    },
+    "24 Grade": {
+      "value": "70.4",
+      "percentile": 0.083
+    },
+    "23 Grade": {
+      "value": "76.4",
+      "percentile": 0.833
+    },
+    "Pass Rush Grade": {
+      "value": "64",
+      "percentile": 0.556
+    },
+    "True Pass Rush": {
+      "value": "69.3",
+      "percentile": 0.722
+    },
+    "PR Win Rate": {
+      "value": "6.9",
+      "percentile": 0.472
+    },
+    "Run Def. Grade": {
+      "value": "62.1",
+      "percentile": 0.0
+    },
+    "Run Stop %": {
+      "value": "4.3",
+      "percentile": 0.111
+    },
+    "Sacks": {
+      "value": "4",
+      "percentile": 0.944
+    },
+    "Hits": {
+      "value": "1",
+      "percentile": 0.417
+    },
+    "Hurries": {
+      "value": "14",
+      "percentile": 0.722
+    },
+    "Batted Balls": {
+      "value": "2",
+      "percentile": 0.889
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.444
+    },
+    "Tackling Grade": {
+      "value": "66.9",
+      "percentile": 0.722
+    },
+    "Missed Tackle Rate": {
+      "value": "7.7",
+      "percentile": 0.861
+    },
+    "Total Pressures": {
+      "value": "19",
+      "percentile": 0.75
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 132.5,
+      "positional_rank": "13.5"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 203.0,
+      "positional_rank": "16"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 140.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "Jeremiah",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 67.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 192.0,
+      "positional_rank": "34"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 93.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Tankathon",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 84.5,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Jeremiah": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "Tankathon": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "5TH",
+    "Bleacher": "4th Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Jordan JEFFERSON",
+    "Bleacher": "Tyler Davis",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.6,
+    "Pass Rush": 0.68,
+    "Run Defense": 0.69
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 43,
+      "career": 120
+    },
+    "B GAP": {
+      "2025": 410,
+      "career": 1242
+    },
+    "Over Tackle": {
+      "2025": 7,
+      "career": 68
+    },
+    "Outside Tkl": {
+      "2025": 13,
+      "career": 20
+    },
+    "Off Ball": {
+      "2025": 3,
+      "career": 11
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nThe Florida native has steadily risen through the ranks at Happy Valley since arriving as a four-star recruit from Lake Nona High School. Durant wasted no time making his presence felt, appearing in all 13 games as a true freshman before earning 11 starts his sophomore campaign where he notched 17 tackles and 5.5 TFLs. That sophomore season offered a glimpse of his disruptive potential when he recorded a monster game against Northwestern with three tackles for loss - becoming the first Penn State defensive tackle to hit that mark against a Big Ten opponent since 2016.\n\nDurant's trajectory continued upward during his junior season, where he started all 16 games and registered career-highs across the board with 42 tackles, 11 tackles for loss, and 3 sacks. The interior defender turned heads with multi-TFL performances against Northwestern, Illinois, and Minnesota, showcasing the quick-twitch athleticism that has NFL scouts intrigued. His consistent production earned him All-Big Ten honorable mention recognition from both coaches and media, validating his development from rotational piece to full-time difference-maker.\n\nWhat truly separates Durant is the athletic profile packed into his somewhat undersized frame. His eye-popping testing numbers landed him on Bruce Feldman's Freaks List at #38 in 2023, where he turned heads with a blazing 4.66 forty-yard dash, 4.44 shuttle, and 9'10\" broad jump - elite numbers that hint at the explosive first step that shows up consistently on game film. After flirting with the 2025 NFL Draft process, Durant opted to return for his senior season, setting the stage for what could be a draft-stock-boosting campaign as the anchor of Penn State's interior defensive line.\n\nSCOUTING REPORT: SUMMARY\nWhen the pads come on Sundays, Durant will be a fascinating study in contrasts. That electric first step jumps off the tape and gives him legitimate backfield-penetrating ability, but his technical inconsistencies and frame limitations will create boom-or-bust moments at the next level. The tape shows a defender who can slice through gaps with rare athleticism one play, then get washed out by coordinated double teams the next - making his evaluation dependent on role and usage.\n\nDefensive schemes featuring one-gap principles will maximize Durant's quick-twitch explosiveness while masking his anchor issues. His performances against Northwestern and Illinois revealed a disruptor with legitimate interior pass rush potential, though those flashes need to become more consistent to earn every-down snaps. The gap between his run defense and tackling efficiency suggests a player still harnessing his physical gifts - something NFL defensive line coaches will need to develop through technical refinement.\n\nA defensive staff that values penetration from the interior will find ways to unlock Durant's ceiling despite his limitations. The Penn State product has shown enough physical tools and developmental trajectory to intrigue evaluators, yet his senior season must demonstrate improved hand fighting techniques and better gap control to solidify his standing. Durant embodies the modern NFL's shifting prototype at defensive tackle - where the ability to collapse the pocket from the interior trumps traditional two-gap responsibilities for many defenses.\nWRITTEN BY:\nK.C. MARTINEZ (BIG TEN)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Zane Durant is a feisty and strong run defender, who can either get penetration or stand up offensive linemen to take away gaps. He was also listed at No. 8 on Bruce Feldman's list of college football's exceptional athletes, clocking a 4.66—second 40—yard dash and 4.43—second shuttle time.\n\nHowever, the 6'1\", 287—pound defensive tackle is undersized and struggles to win as a pass—rusher, which lessens his draft value. Some NFL organizations will be hesitant to take a smaller, two—down interior defender.\n\nDurant entered Penn State as a 4—star recruit in the 2022 class. He had a small role on the defense as a true freshman, coming off the bench and playing in 13 games but didn't get many snaps."
+        },
+        {
+          "title": "Positives",
+          "text": "— Durant is quick off the ball with Good agility to get penetration on run stunts.\n\n— Good strength at the point of attack to stand up offensive linemen and gain leverage advantage against base blocks.\n\n— plays with a wide base., with natural leverage and solid strength to hold his gap when left one—on—one.\n\n— against down blocks or when slanting, he sinks his hips well to fight back against pressure and avoid getting washed out of the play.\n\n— flashes the Ability to escape blocks with quickness and athleticism."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Durant is undersized and appears to have shorter arms, limiting the amount of extension he can get on blocks and making it difficult for him to beat offensive linemen with Good length.\n\n— Lacks the mass to anchor and hold his gap against double—teams and combo blocks.\n\n— size Also impacts his Ability to win when bull—rushing as a pass—rusher.\n\n— stiff hips prevent him from clearing his lower half when working finesse moves and limit his bend or Ability to corner at the top of the rush."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.7,
+    "grade_indicator": null,
+    "overall_rank": 140,
+    "position_rank": null,
+    "pro_comparison": "Tyler Davis",
+    "projected_round": "4th Round"
+  },
+  "injury_history": []
+}

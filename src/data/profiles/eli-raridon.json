@@ -1,0 +1,406 @@
+{
+  "name": "Eli Raridon",
+  "slug": "eli-raridon",
+  "overview": {
+    "POS": "TE",
+    "College": "Notre Dame",
+    "Height": "6' 7\"",
+    "Weight": "252",
+    "Age": "21.11",
+    "DOB": "2004-02-12 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "36",
+    "Snaps": "1293",
+    "24/7 Sports": "97",
+    "ESPN": "TBD",
+    "Draft Buzz": "83.2 / 100",
+    "NFL.com": "TBD",
+    "BR": "7.2",
+    "Gridiron": "TBD"
+  },
+  "position": "TE",
+  "college": "Notre Dame",
+  "height": "6' 7\"",
+  "weight": "252",
+  "age": 21.11,
+  "dob": "2004-02-12 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 36,
+  "snaps": 1293,
+  "site_ratings": {
+    "24/7 Sports": "97",
+    "ESPN": "TBD",
+    "Draft Buzz": "83.2 / 100",
+    "NFL.com": "TBD",
+    "BR": "7.2",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "68.3",
+      "percentile": 0.3
+    },
+    "2024 Grade": {
+      "value": "59.1",
+      "percentile": 0.1
+    },
+    "2023 Grade": {
+      "value": "54.7",
+      "percentile": 0.0
+    },
+    "Receiving Grade": {
+      "value": "71.9",
+      "percentile": 0.7
+    },
+    "Drop %": {
+      "value": "5.9",
+      "percentile": 0.5
+    },
+    "Cont. Catch Ratio": {
+      "value": "80",
+      "percentile": 1.0
+    },
+    "Yards Per Route Run": {
+      "value": "2.2",
+      "percentile": 0.9
+    },
+    "YAC Per Reception": {
+      "value": "5.8",
+      "percentile": 0.6
+    },
+    "Missed Tkles Forced": {
+      "value": "6",
+      "percentile": 0.55
+    },
+    "Pass Block Grade": {
+      "value": "61.9",
+      "percentile": 0.1
+    },
+    "Run Block Grade": {
+      "value": "55.6",
+      "percentile": 0.4
+    },
+    "Touchdowns": {
+      "value": "0",
+      "percentile": 0.0
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 167.75,
+      "positional_rank": "6.666666666666667"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 121.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 86.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 74.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 390.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "0",
+    "Bleacher": "Kyle Rudolph—lite",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 98.3,
+    "Hands": 0.72,
+    "Short Receiving": 0.75,
+    "Intermediate Routes": 0.74,
+    "Deep Threat": 0.85,
+    "Blocking": 0.59
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot Snaps": {
+      "2025": 148,
+      "career": null
+    },
+    "Inline Snaps": {
+      "2025": 144,
+      "career": null
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nThe son of former Notre Dame offensive lineman Scott Raridon, Eli grew up around Fighting Irish football before following his father's path to South Bend. Valley High School in West Des Moines became his proving ground, where the lanky tight end hauled in 53 catches for 627 yards and 10 touchdowns as a senior while earning Elite All-Iowa Team recognition. He also shined on the hardwood, grabbing Second Team All-State honors as a basketball player following his junior year. The recruiting services couldn't quite agree on his ranking, with 247Sports calling him the 173rd prospect nationally while Rivals slotted him at 198, but all four major services awarded him four stars. His 5.8 Rivals grade and 0.97 247 recruit grade reflected his projection as a legitimate pass-catching weapon at the next level.\n\nThat projection got delayed when Raridon tore his right ACL during his senior basketball season, then suffered the devastating blow of re-tearing the same ACL during practice in October 2022 as a true freshman. The double knee reconstruction cost him nearly two full seasons, limiting him to just five games before the injury and seven contests in 2023 as he worked his way back. His 2024 campaign finally showed what Notre Dame signed, as he appeared in all 16 games during the Irish's march to the national championship game, starting three times and catching 11 passes for 90 yards with two touchdowns. The 2025 season has become his showcase year, with Raridon starting all 12 games and finishing third on the team with 32 receptions for 482 yards. His career-best performance came against NC State when he torched the Wolfpack secondary for seven catches and 109 yards, and he opened the season by leading Notre Dame with 97 receiving yards at Miami. Across 36 career games and 1,293 offensive snaps, Raridon has evolved from an injury rehab project into one of college football's most intriguing vertical tight end weapons.\n\nThe 79-inch frame that basketball coaches loved has translated differently to football, creating both advantages and challenges. Raridon carries his 251 pounds across that long frame without the thickness scouts typically want at the position, ranking in just the 24th percentile for tight end weight. What matters more than the stopwatch is how that speed plays on Sundays, and Raridon's tape suggests the straight-line velocity works better than the testing number implies. He entered Notre Dame as the program's highest-rated tight end recruit since 2018, and despite the injury setbacks, he's delivered enough production as a senior to warrant significant draft consideration.\n\nWatch enough tape on Raridon and you see a tight end who can contribute right away in specific packages while developing into something more substantial with proper coaching and strength work. His length and ball skills create real matchup problems attacking the middle of the field against zone coverage, exactly the type of weapon coordinators love deploying on second-and-six to generate explosive plays. The blocking has come far enough that he won't hurt you out there, though asking him to consistently stone defensive ends one-on-one right now might be asking too much. Medical evaluation determines everything with this kid, but assuming doctors sign off on those knees, you're getting a tight end who can handle three-down work within a couple years.\n\n\n\n    Raridon fits best in offenses that value vertical passing concepts and deploy multiple tight end sets where his blocking doesn't need to be elite every snap. Teams running heavy play-action will love how he threatens safeties deep and opens up underneath throwing windows. That size and catch radius make him a legit red zone weapon who can win contested catches, though he's more effective running past linebackers than boxing out defensive backs in tight quarters. Organizations that use athletic tight ends primarily as receiving weapons while mixing in enough blocking to stay balanced will maximize what he brings. Needs patience early to add functional strength and expand his route repertoire, but the athletic foundation and competitive streak suggest the investment pays off.\n\n\n\n    Can't ignore the injury history during evaluations, and some teams will simply pass because two ACL tears on the same knee represent too much risk regardless of what the medical staff says. For organizations comfortable with the reports, Raridon represents solid value as a developmental Y tight end with slot versatility who provides immediate contributions as a receiving weapon. His ceiling depends entirely on how much quality weight he can add without losing his movement skills and whether those knees hold up under NFL punishment. The tape shows enough to warrant a selection somewhere in the fourth or fifth round range, understanding that patience will be required before he becomes a true every-down player. Basketball background suggests the body control and spatial awareness needed at the position, while his football bloodlines indicate he understands offensive line nuances better than most tight ends. Won't be a star, but he can absolutely carve out a productive NFL career if the medical checks clear and he commits to the weight room work required to maximize that unique frame."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Eli Raridon has legitimate three—down ability, with a well—rounded game that will help offenses in the run game and add explosives through the air. He's got the size and speed to be a mismatch against most defenders down the field, and he's improving his functional strength to create movement on them.\n\nRaridon is a former 4—star recruit who has spent his entire four—year career with the Fighting Irish and is seeing his role in the offense expand in the offense.\n\nComing into the season, Raridon amassed 16 catches for 141 yards and three touchdowns, but he's been used as a seam weapon and mismatch for Notre Dame quarterback CJ Carr this season. His length and frame give him a leg up on defenders with the ball in the air and as he continues to improve his blocking technique, he'll be a useful tool in an NFL offensive arsenal."
+        },
+        {
+          "title": "Positives",
+          "text": "— Raridon's combination of vertical speed and size make him an easy target over the middle of the field. He can stretch the field for an offense and create explosives.\n\n— He's building his route stem manipulation tactics with speed deviation and leverage understanding. He moves defenders where he wants and gets into space.\n\n— He breaks off routes at the proper depth and with good timing regularly. The ability to play on time within the offensive structure is critical at the next level.\n\n— He possesses three—down ability and positional versatility from the tight end position. He's a willing and effective blocker with a good understanding of run blocks and timing."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Raridon needs to continue developing his technique as a blocker. With his height, getting outleveraged is the battle, and staying low and keeping his hands inside will improve connectivity.\n\n— He's a limited linear athlete who struggles to make defenders miss in the short area. Changing direction and getting upfield from a linear route takes too long.\n\n— While he plays with good timing at the top of routes, improving hand usage and intention will create more separation on in breaking routes and curls."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.2,
+    "grade_indicator": null,
+    "overall_rank": 86,
+    "position_rank": null,
+    "pro_comparison": "Kyle Rudolph—lite",
+    "projected_round": null
+  },
+  "injury_history": []
+}

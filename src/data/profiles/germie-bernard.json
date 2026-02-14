@@ -1,0 +1,419 @@
+{
+  "name": "Germie Bernard",
+  "slug": "germie-bernard",
+  "overview": {
+    "POS": "WR",
+    "College": "Alabama",
+    "Height": "6' 1\"",
+    "Weight": "204",
+    "Age": "22.2",
+    "DOB": "2003-12-02 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "52",
+    "Snaps": "2131",
+    "24/7 Sports": "91",
+    "ESPN": "83",
+    "Draft Buzz": "85.6 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "Alabama",
+  "height": "6' 1\"",
+  "weight": "204",
+  "age": 22.2,
+  "dob": "2003-12-02 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 52,
+  "snaps": 2131,
+  "site_ratings": {
+    "24/7 Sports": "91",
+    "ESPN": "83",
+    "Draft Buzz": "85.6 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "72",
+      "percentile": 0.053
+    },
+    "2024 Grade": {
+      "value": "79.9",
+      "percentile": 0.789
+    },
+    "2023 Grade": {
+      "value": "71",
+      "percentile": 0.579
+    },
+    "Receiving Grade": {
+      "value": "71.7",
+      "percentile": 0.053
+    },
+    "Yards/ Routes Run": {
+      "value": "1.7",
+      "percentile": 0.053
+    },
+    "Drop %": {
+      "value": "1.5",
+      "percentile": 0.947
+    },
+    "Contested Catch": {
+      "value": "35.7",
+      "percentile": 0.0
+    },
+    "Grade vs Man": {
+      "value": "61.1",
+      "percentile": 0.0
+    },
+    "YAC/Reception": {
+      "value": "6.2",
+      "percentile": 0.632
+    },
+    "Missed Tkls Forced": {
+      "value": "17",
+      "percentile": 0.737
+    },
+    "ADOT": {
+      "value": "10.7",
+      "percentile": 0.526
+    },
+    "Deep Yards": {
+      "value": "147",
+      "percentile": 0.211
+    },
+    "Touchdowns": {
+      "value": "7",
+      "percentile": 0.447
+    },
+    "Elusiveness": {
+      "value": "89.4",
+      "percentile": 0.875
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 57.666666666666664,
+      "positional_rank": "10.833333333333334"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 40.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 50.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 45.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 24.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 111.0,
+      "positional_rank": "19"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 46.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 57.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 66.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 34.75,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 34.0,
+    "Bleacher": null,
+    "Walter": 39.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 30.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - MID",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Ja'Lynn POLK",
+    "Bleacher": "Jarvis Landry",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 108.3,
+    "Hands": 0.86,
+    "Short Receiving": 0.81,
+    "Med Routes": 0.89,
+    "Deep Threat": 0.82,
+    "Blocking": 0.68
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 186,
+      "career": 564
+    },
+    "Wide": {
+      "2025": 335,
+      "career": 566
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nGermie Bernard (6'1\", 209 lbs) established himself as a standout at Liberty High School in Nevada, where he tallied 53 receptions for 956 yards and 12 touchdowns as a senior, while adding 452 rushing yards on 37 carries. His performance earned him Gatorade Player of the Year honors for Nevada and Mountain League Offensive MVP. A consensus 4-star recruit, Bernard was ranked among the top 30 receivers nationally by both ESPN (No. 27) and 247Sports (No. 31).\n\nBernard's college journey took him through three FBS programs over four seasons. His freshman year at Michigan State (2022) saw him appear in all 12 games, recording 7 receptions for 128 yards and 2 touchdowns while contributing 119 yards on 6 kick returns. At Washington in 2023, he expanded his role with 34 catches for 419 yards across 14 games (7 starts), adding 13 rushes for 43 yards and 2 touchdowns. His final collegiate stop at Alabama proved his most productive, as he led the Crimson Tide with 50 receptions for 794 yards and 2 touchdowns in 2024, highlighted by a 7-catch, 111-yard performance against Auburn.\n\nThroughout his 38-game collegiate career, Bernard accumulated 91 receptions for 1,341 yards and 6 receiving touchdowns while demonstrating consistency across different offensive systems. At Alabama, he twice earned offensive player of the week honors from the coaching staff (South Carolina and Auburn games). His special teams background includes experience as both a kickoff returner (16 career returns) and punt returner (3 returns at Washington).\n\nBernard brings immediate value as a technician with alignment versatility and third-down reliability baked into his DNA. His route-running precision and trustworthy hands will endear him to quarterbacks who value timing and anticipation, particularly in critical situations where reliability trumps flash. His combination of technical refinement and football intelligence translates to a higher floor than most receivers in this class, even if his athletic ceiling remains a question mark.\n\n\n\nBernard thrives in the intermediate areas where his route nuance creates separation despite average long speed. His exceptional ball-tracking ability allows him to be a legitimate three-level threat - evidenced by how he consistently creates chunk plays downfield despite lacking burner speed. The most intriguing aspect of his game is how his deep and medium receiving abilities significantly outpace his athletic testing. He's one of those players whose production consistently exceeds what the stopwatch suggests should be possible.\n\n\n\nWhat I love about Bernard's game is how it translates immediately to Sunday action. He shows veteran-like instincts finding soft spots against zone coverage and understands how to use subtle body manipulation to create separation in man coverage. He reminds me of receivers who may not dominate the combine but somehow always get open on third-and-seven. His special teams background provides additional value while he develops into a dependable secondary target who can occasionally take over games when matchups favor his technical prowess over pure athleticism.  \n\n                                        \n                                            \n                                                Written By:\n                                                Wyatt Brooks (SEC)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Germie Bernard... SEC... Alabama... leading receiver... played three schools... Michigan State, then... Washington for one season... behind the triplets... Alabama... six total receiving touchdowns in his first three college seasons... seven this past year... six foot 1, 204 pounds... smooth football player... smooth ball carrier... 18 carries this past year... comfortable with the ball... no 50 plus yard catches... possession number two-ish wide receiver... day two... smooth and fluid... yards after the catch... put him at the running back spot... picking up yards... wear a lot of hats... valuable member of this Crimson Tide offense... relied on him... drop here and there... rare... consistent catching the football... solid... may not be spectacular... day two... third round... productive... rely on in key moments... tough catches... underrated category... didn't have the wow factor... lost in the shuffle... same general area."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Germie Bernard is a physical and intelligent wide receiver who gives defenses fits working in the middle of the field. He projects as a WR2/3 and complementary weapon alongside an established number one receiver in the NFL.\n\nBernard makes his money working between the hashes. If there is a soft or vulnerable spot within the defensive coverage, he will find it. NFL teams will love his run—blocking reps and physicality there.\n\nHe is a former 4—star recruit in the 2022 class. Bernard began his career at Michigan State. He transferred to Alabama ahead of the 2024 season. In his first season in Kalen DeBoer's offense, Bernard caught 50 passes for 794 yards and two touchdowns."
+        },
+        {
+          "title": "Positives",
+          "text": "— Muscular frame with good play strength. Bernard displays good contact balance with the ball in space, leaving defenders in a position of conflict and bringing him down on the first attempt. He is a physical playmaker with good acceleration in the open field, generating yards after the catch and contact.\n\n— Bernard is a refined route runner with precision cuts at the breaking point of his stem. He understands pacing and leveraging to create pockets and space between himself and the defensive back. He excels at attacking defenses between the hashes in the MoF—in—breaking routes like dig, shallow crossers, slants, and deep over routes. He has a winnable release package against man coverage using his strength and hands to deflect the DB's punches.\n\n— Attacking and exploiting zone defenses with high—level football IQ and processing. The former Michigan Spartan excels at finding open grass against zone coverages and makes himself available for the quarterback. He has a great feel for space, knowing when to extend his route and sit it down in an open void.\n\n— Bernard's positional flexibility helps create mismatches and easy outlet targets for the quarterback. He aligns in the backfield and every receiver position. Alabama will motion him out of the backfield into the slot or the end of a three—receiver set, generating a mismatch against a safety and/or linebacker.\n\n— Bernard displays strong and reliable hands to pluck the football away from his frame. This shows up on the slot and back shoulder fades. He is a tough, physical playmaker who is not afraid to work into high—traffic areas."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Bernard does not possess great top—end speed to win the vertical plane often on the outside. This puts more onus on his technique to defeat tight—man coverage at the line of scrimmage.\n\n— As a YAC threat, his calling card is physicality. Alabama's leading receiver is not overly agile or twitchy enough to consistently make defenders miss in a phone booth at the next level.\n\n— He is a strong and muscular pass catcher, but his length/wingspan is questionable. Bernard has not dominated the contested catch opportunities this season. This must improve to ensure he will maintain his outside receiver tag heading into an NFL offense."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.0,
+    "grade_indicator": null,
+    "overall_rank": 111,
+    "position_rank": null,
+    "pro_comparison": "Jarvis Landry",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

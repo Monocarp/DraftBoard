@@ -1,0 +1,548 @@
+{
+  "name": "Rueben Bain Jr",
+  "slug": "rueben-bain-jr",
+  "overview": {
+    "POS": "ED",
+    "College": "Miami (FL)",
+    "Height": "6' 3\"",
+    "Weight": "275",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": "Top 10",
+    "Games": "37",
+    "Snaps": "1871",
+    "24/7 Sports": "96",
+    "ESPN": "92",
+    "Draft Buzz": "93.1 / 100",
+    "NFL.com": "6.7",
+    "Bleacher": "8.7",
+    "Gridiron": null
+  },
+  "position": "ED",
+  "college": "Miami (FL)",
+  "height": "6' 3\"",
+  "weight": "275",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Jr",
+  "projected_round": "Top 10",
+  "games": 37,
+  "snaps": 1871,
+  "site_ratings": {
+    "24/7 Sports": "96",
+    "ESPN": "92",
+    "Draft Buzz": "93.1 / 100",
+    "NFL.com": "6.7",
+    "Bleacher": "8.7",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "92.9",
+      "percentile": 0.95
+    },
+    "24 Grade": {
+      "value": "79.8",
+      "percentile": 0.55
+    },
+    "23 Grade": {
+      "value": "82.2",
+      "percentile": 1.0
+    },
+    "Pass Rush Grade": {
+      "value": "92.2",
+      "percentile": 0.85
+    },
+    "True Pass Rush": {
+      "value": "92.3",
+      "percentile": 0.895
+    },
+    "PR Win Rate": {
+      "value": "23.7",
+      "percentile": 1.0
+    },
+    "Run Def. Grade": {
+      "value": "87",
+      "percentile": 0.85
+    },
+    "Run Stop %": {
+      "value": "6.9",
+      "percentile": 0.45
+    },
+    "Sacks": {
+      "value": "11",
+      "percentile": 0.842
+    },
+    "Hits": {
+      "value": "3",
+      "percentile": 0.289
+    },
+    "Hurries": {
+      "value": "61",
+      "percentile": 1.0
+    },
+    "Batted Balls": {
+      "value": "1",
+      "percentile": 0.5
+    },
+    "Forced Fumbles": {
+      "value": "2",
+      "percentile": 0.605
+    },
+    "Tackling Grade": {
+      "value": "63.3",
+      "percentile": 0.5
+    },
+    "Missed Tackle Rate": {
+      "value": "20",
+      "percentile": 0.368
+    },
+    "Total Pressures": {
+      "value": "75",
+      "percentile": 1.0
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 6.153846153846154,
+      "positional_rank": "1.5714285714285714"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 5.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 6.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 9.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 9.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 2.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 2.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 17.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 3.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 1.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "CBS",
+      "overall_rank": 2.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 6.0,
+      "positional_rank": "3"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 7.461538461538462,
+    "PFF": 4.0,
+    "ESPN": null,
+    "Brugler": 10.0,
+    "Kiper": 7.0,
+    "Miller": 4.0,
+    "Bleacher": 2.0,
+    "Walter": 8.0,
+    "TDN": 4.0,
+    "DraftBuzz": null,
+    "CBS": 9.0,
+    "NFL.com": 11.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - TOP 5",
+    "Bleacher": "1st Round"
+  },
+  "player_comps": {
+    "NFL": "Brandon Graham",
+    "Miller": "TBD",
+    "DraftBuzz": "George KARLAFTIS",
+    "Bleacher": "Brandon Graham",
+    "WF": "Jared Verse.",
+    "Ringer": "Kwity Paye",
+    "NFL.com": "Brandon Graham"
+  },
+  "strengths": "• Tenacious, Violent, Relentless\n• Extremely Productive\n• Handwork, Leverage, PR Moves\n• Positional Versatility\n• Great Strenght, Edge Setter\n• Explosive First Step\n• Very Techinically Refined, both Phases\n• Bullrush specialist\n• Closing Speed for Size",
+  "weaknesses": "• Undersized, Not Long Enough\n• Gap Discipline/Over-Aggressive\n• Middling Flexibility\n• Tackling Grade\n• Tackling Radius",
+  "accolades": "• 2023 ACC Def. ROY\n• 2023 3rd Team All ACC",
+  "player_summary": "Bain is a compact edge defender with inside versatility. He's an extremely tenacious and violent player who disguises a speed to power move that takes unwary tackles off guard if they take a snap off. He showcases elite hand usage, and keeps them well coordinated with his feet. He's got enough bend to create short corners and strong enough hands to shove tackles off balance, a rare combination to win both inside and out. In the run game, he's effective in setting his edge, shedding blocks, and using his natural leverage to get under blocks. His immense strength shows up on film in both phases, including an impressive Bull Rush that also takes advantage of his leverage. His lack of length and high end speed to close/pursue are noticable, but have not prevented him from being Uber productive at the highest levels and in the toughest games. A very safe pick with real all pro potential despite his size limitations. He'll upgrade any defense in either phase.",
+  "draftbuzz_grades": {
+    "Tackling": 0.62,
+    "Pass Rush": 0.92,
+    "Run Defense": 0.95
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 4,
+      "career": 7
+    },
+    "B GAP": {
+      "2025": 11,
+      "career": 198
+    },
+    "Over Tackle": {
+      "2025": 91,
+      "career": 400
+    },
+    "Outside Tkl": {
+      "2025": 654,
+      "career": 1192
+    },
+    "Off Ball": {
+      "2025": 2,
+      "career": 14
+    }
+  },
+  "skills_traits": {
+    "Instincts/Processing/Production": {
+      "positives": "Tenacious, tenacious rusher (FD)\nHe just wears guys out (NFLSE)\nPure violence and destruction (NFLSE)\nRelentless effort (WF)\nCan Kick Inside, Has Versatility (FD)",
+      "negatives": null
+    },
+    "Physical Traits": {
+      "positives": "Thick Lower Half (BR)\nCan Take Over With His Strenght (FD)\nStrenght to play anywhere (NFLSE)\nNFL Ready Body (BR)\nPower of A DT, Agility of an Edge (NFL)",
+      "negatives": "Unorthodox Build..height…length (FD)\nNot a wide tackling radius (NFLSE)\nAverage Pursuit Speed, closing burst (NFL)"
+    },
+    "Athletic Ability": {
+      "positives": "No False steps, launches off front foot (NFLSE)\nClosing speed for his weight (NFLSE)\nHands and feet are fully in sync (NFL)",
+      "negatives": "Not gonna be the bendiest, flexible type (NFLSE)"
+    },
+    "Pass Rush Skills": {
+      "positives": "Disguises Speed to power, to surprise and win early (NFL)\nPowerful hands to stab and shove tackles off balance (NFL)\nHandwork is unbelievably clean (NFLSE)\nUber Productive (FD)\nPart of the most techinically refined edge rush duo (NFLSE)\nSo many pass rush moves, high pass IQ(NFLSE)\nCan Collpase the pocket with Bullrush (BR)",
+      "negatives": null
+    },
+    "Run Defense Skills": {
+      "positives": "Hands and leverage in run defense (NFLSE)\nBlock Shedding (BR)\nTough, sets the edge (WF)",
+      "negatives": "Gap discipline agains the run (BR)\nDrops his head and eyes (NFL)"
+    }
+  },
+  "media_links": [
+    {
+      "description": "All 22 Film Breakdown",
+      "source": "YT - Jets Film Room",
+      "url": "https://www.youtube.com/watch?v=Apgm3EcffZ8"
+    },
+    {
+      "description": "2025 Highlights",
+      "source": "YT - ACC Digital Network",
+      "url": "https://www.youtube.com/watch?v=avYVgI-9PVs"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Note taker, grudge holder and block destructor with a compact frame and defensive tackle play strength. Bain is ill-tempered with his take-ons, hitting blockers with heavy hand strikes. He plays through tight ends and can anchor against tackles and double teams. However, his lack of length can lead to him being smothered if he doesn’t land the first strike. He can bend and flip his hips at the top of the rush, swipe away punches and generate a strong bull rush. His playoff run showed an ability to generate quick wins if tackles are passive in setting to him. He can rush off the edge or mismatch guards as a sub-package rusher. Bain’s explosive power and toughness should translate, giving him a high floor as an NFL starter."
+        },
+        {
+          "title": "Strengths",
+          "text": "Loose hips and violent hands create shorter rush corners. | Disguises speed-to-power charge, surprising tackles. | Can stab and shove tackles off-balance, creating inside openings. | Accurate two-hand swipe batters and clears the punch. | Power like a defensive tackle with agility like an edge. | Explodes punch into the chest of blocker. | Can eat blocks and hold his ground at the point of attack. | Hands and feet are in full alliance to shed and work around edges. | Coached by NFL rush aficionado and Hall of Famer, Jason Taylor."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Ducks head and drops eyes, driving into run blocks. | Short arms will get him crowded at the point of attack. | Average pursuit speed out to the flanks. | Will take some plays off when action doesn’t come his way. | Counters don't come naturally at the top of the rush. | Average closing burst to the quarterback."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Rueben Bain Jr is a physically dominant edge rusher who uses a blend of explosiveness and strength to provide dominant reps in both the run game and as a pass rusher."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nRueben's grandfather Herman starred as a three-sport quarterback at Northwestern High in the 1960s. His father Rueben Sr was such a physical force on the offensive line at Carol City that legendary coach Willie Wilcox gave him the nickname \"Hurricane.\" His cousin Tolbert helped Miami win the 1987 national title. Growing up, Tolbert brought young Rueben to campus for Mark Richt's youth camps, and the kid fell in love with the U. There was never another school. When Cristobal offered, the decision was already made.\n\nWhat Bain did at Miami Central borders on absurd. Four years, four state championships, 77 career sacks. Read that again. Seventy-seven sacks. His junior year alone he put up 29.5 sacks and anchored a defense that gave up just 15 points a game. He won the Nat Moore Trophy as South Florida's best player and was the Herald's Co-Defensive Player of the Year. Every major service had him as a four-star: ESPN slotted him 73rd nationally, 247Sports had him 70th, Rivals put him at 102. He picked Miami over Alabama, Georgia, LSU, Michigan, Oregon, and about a dozen others. The Under Armour All-American played both ways in high school but everybody knew he was a defensive end.\n\nHe stepped on campus in 2023 and immediately looked like he belonged. Started by Week 3 as a true freshman and never came off the field. Forty-four tackles, 12.5 TFLs, 7.5 sacks. Those sack numbers led every defensive lineman in the country. ACC Defensive Rookie of the Year. Third-Team All-ACC. Freshman All-American everywhere you looked. A calf injury cost him four games in 2024 but he still scraped together 23 tackles, 5.5 TFLs, and 3.5 sacks in nine games. This year? Team captain, 54 tackles, 9.5 sacks, a pick, a forced fumble, ACC Defensive Player of the Year, unanimous All-American, and a trip to the national championship game against Indiana. The 6-3, 275-pounder is 21 years old with 20.5 career sacks in 37 games.\n\nSCOUTING REPORT: SUMMARY\nBain plays like every offensive lineman owes him money. The first step is legitimate, the hands are nasty, and the effort is relentless. At 275 pounds with that kind of twitch and pop, he creates problems that tackles cannot simulate in practice. He finished tied for third nationally in total pressures this year. PFF graded him as the fourth-best edge rusher in college football. Those are not empty calories. That is production against real competition in big games.\n\nThe positional debate is going to follow him through April. Some teams see a traditional edge rusher who can anchor a pass rush from a wide alignment. Others look at that thick, compact frame and those T-Rex arms and start thinking about kicking him inside to three-tech at 290 pounds. Honestly? The answer is probably both. Think about what the Chargers do with Tuli Tuipulotu. He lines up on the edge as his base spot but rushes inside against guards in obvious passing situations. That hybrid role plays to Bain's strengths. Let him use that power and violence against guards who are not used to seeing his kind of quickness, and you might be looking at double-digit sacks.\n\nHere is the deal. The arm length worries are legitimate for certain matchups. There will be Sundays where a long, athletic tackle gives him fits. But the tape shows a guy who wins anyway. The production is real. The winning is real. The motor, the violence, the big-game moments, all of it shows up when you actually watch him play. Bain is the best pass rusher in this draft class. He has the talent to hear his name called in the top five picks. The NFL is starving for edge rushers who bring this kind of pop and this kind of pedigree, and Bain is that guy. Whoever takes him is getting a tone-setter who can wreck game plans for the next decade."
+        },
+        {
+          "title": "Overview",
+          "text": "Versatile and power-packed defensive lineman who plays with a ferocious demeanor and lives in the backfield.\n\nBain’s lack of arm length is going to be a major talking point in the run-up to the draft, but the team that takes him is going to get a high-intensity edge defender who rushes the passer with overwhelming zeal and plenty of power. The former Hurricanes star has a burly, high-cut, and muscular build with a massive, powerful lower half. Bain played primarily on the edge in his college career, but also saw snaps on the interior. He filled up the stat sheet in 2025, tallying the second-most pressures in the country (66, per PFF) while adding 37 tackles, 4.5 sacks, a forced fumble, and a pick; his 30 percent win rate on true pass set situations ranked 23rd among edge defenders (minimum 100 snaps). Bain is explosive out of his stance to get upfield and covers ground with long strides to threaten the edge. He converts speed to power on his bull rush and has a nice hump move that sends offensive linemen flying past the pocket. He’s quick and accurate with his hands, using swipes and punches to bat away blocks and keep himself clean. His powerful and effective push/pull move sends opponents lunging, and he shows bend at the top of his rush to dip his shoulder, get low, and flatten to the quarterback. In the run game, he shocks opponents with heavy hands, stacking them to hold his ground and play his gap. He stays low, keeping his leverage, and creates push to disrupt run lanes and turn the back toward his help.\n\nBain is a bit of a tweener, and the arm-length concerns could mean teams see him as an interior defensive tackle and not an edge. He has a relatively small tackle radius, and missed tackles have been a concern, with a 20 percent career missed tackle rate, per PFF. While he brings first-step burst off the snap, there are times he loses steam and stops his feet after his initial contact with opponents. Sometimes his aggressive style pulls him out of position. He’ll overrun a play or come in too hot and allow a ballcarrier to spill away."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Ruben Bain...will continue to be a very interesting player to debate over the next few months...Bain's best version of himself is a guy who can take over with his strength. He has versatility to kick down inside and get underneath offensive guards. He is a tenacious, tenacious rusher who has been very productive in the college football playoff as well. He's got an unorthodox build...there are gonna be some people that are gonna be saying this guy who might have 31 and a half inch arms. It might be six foot two as opposed to six foot four and 280 pounds as opposed to a six foot 4, 260 pound edge rusher. What is he going to be at the NFL level? Those are fair, they're valid...he drops to 15...he has been excellent all season...the ACC defensive player of the year."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nBain was selected to every freshman All-America team in 2023, including from ESPN, The Athletic and 247Sports. He is a powerful edge rusher who drives offensive tackles and can get off blocks at the top of his rush. Bain rips under and powers through the inside shoulder of offensive tackles; he can also anchor well when setting the edge. He can win matchups with his hands, especially when he kicks inside. Bain missed four games due to injury last year, but he looked explosive when he was healthy in 2023. He can shoot his hands, control blockers and get off blocks. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Rueben Bain Jr has the skill set to be the top player at his position and a top—five pick in the 2026 NFL draft.\n\nBain is a 6'3\", 275—pound edge defender prospect who entered Miami as a 4—star recruit in the 2023 class, per 247Sports, and made an immediate impact for the Hurricanes, earning ACC Defensive Rookie of the Year, third—team All—ACC and freshman All—American honors with 44 total tackles, 13 TFLs and 7.5 sacks.\n\nHe suffered a calf injury that caused him to miss four games in 2024, leading to a dip in production (23 tackles, six TFLs and 3.5 sacks) and just an honorable mention All—ACC bid."
+        },
+        {
+          "title": "Positives",
+          "text": "— Good size with an NFL—ready body. Doesn't carry much bad weight and has a thick lower half.\n\n— Good quickness for his size and impressive movement skills.\n\n— Strong and physical at the point of attack to gain control of the block and set the edge against offensive tackles. Also, Bain is solid at holding ground against combo blocks from tackles and tight ends.\n\n— Has shown the ability to shed blocks from offensive linemen and make tackles near the line of scrimmage.\n\n— Can collapse the pocket when bull rushing and has impressive change—of—direction skills to be effective when turning speed to power.\n\n— Flashed decent rip and cross—chop moves as secondary move options. Also, he has the athleticism to be an effective looper in line games.\n\n— Good bend at the top of the rush to take efficient paths to the quarterback."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Lacks some explosion off the line to win with speed around the edge as a pass—rusher at the next level.\n\n— Timing/consistency with his hands when rushing the quarterback is a work in progress. Bain is often late and doesn't play the hands well after contact.\n\n— Isn't gap disciplined against the run. He has a habit of leaving his assignment/gap early and can lose outside contain when setting the edge. He likes to gamble to make plays and can get burned by running backs who are good at setting defenders up on zone runs."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Bain came on strong as a freshman for Miami, recording 44 tackles with 7.5 sacks, three forced fumbles, and one pass batted in his debut season with the Hurricanes.  As a sophomore, Bain was injured and did not see the field until early October. In eight games, he totaled 23 tackles with 3.5 sacks. In 2025, Bain had a hot start to the season. He was quiet for the middle section of the year, and late in the season he had only three sacks on the year. However, he got hot to close out the season and was excellent in the college football playoff. Bain finished with 54 tackles, 9.5 sacks, an interception, and a forced fumble in his final season with Miami.\nFor the NFL, Bain is a physical defender at the point of attack and an excellent run defender. He is tough as nails and difficult to move in the ground game. He holds his gap well with the strength to work off blocks. With a quality lateral anchor and good leverage, offensive linemen struggle to move Bain. He routinely takes on and sheds blocks to get in on tackles that help produce quality down-and-distance situations. Bain has a steady motor and doesnâ€™t quit on plays. With his strength, build, good fundamentals, and technique, Bain should be an asset as a run defender at the next level.\nIn the pass rush, Bain is a solid contributor but not a world beater that is going to be a mid-teens or 20 sack kind of defender like a Myles Garrett or T.J. Watt. While Bain is quick and has some speed to close, Bain is not ultra-fast with dominant speed rush off the edge. He has a powerful bull rush and some quickness out of his stance, but he has some stiffness and can struggle to dip his hips to redirect to the quarterback. As a rusher, he has the versatility to move inside and go against guards. In the pro ranks, Bain will probably never be a prolific sack artist, but he could be a really solid complement to good rushers around him.\nBain is versatile to line up on the edge or move inside to tackle as a three technique in the sub package. He is known to be a leader, a hard worker, and a tone setter. Bain is a tweener end/tackle, and that makes him have some limitations for the NFL and could limit his sack total as a pro.\nIn the 2026 NFL Draft, Bain looks likea top-20 pick."
+        },
+        {
+          "title": "Strengths",
+          "text": "Dangerous edge defender\nPowerful bull rush\nHas some speed to power\nInstincts\nExcellent motor\nCompetitor, fighter\nPlays hard\nGood motor\nBurst to close\nActive hands\nAbility to use hands and feet at same time\nAble to shed blocks\nGood run defender\nPursues out of his gap\nCan hold his gap\nPlay recognition\nVision\nTone setter"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Tweener end/tackle\nLacks length\nNot overly fast\nHas some stiffness\nLacks height\nWill have quiet games, stretches"
+        },
+        {
+          "title": "Player Comp",
+          "text": "Jared Verse. In terms of style of play with his power, quickness, and motor, Bain is very similar to Verse."
+        }
+      ]
+    },
+    {
+      "source": "ESPN",
+      "sections": [
+        {
+          "title": "Analysis",
+          "text": "Bain was selected to every freshman All-America team in 2023, including from ESPN, The Athletic and 247Sports. He is a powerful edge rusher who drives offensive tackles and can get off blocks at the top of his rush. Bain rips under and powers through the inside shoulder of offensive tackles; he can also anchor well when setting the edge. He can win matchups with his hands, especially when he kicks inside. Bain missed four games due to injury last year, but he looked explosive when he was healthy in 2023. He can shoot his hands, control blockers and get off blocks. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Versatile and power-packed defensive lineman who plays with a ferocious demeanor and lives in the backfield.\n\nBain’s lack of arm length is going to be a major talking point in the run-up to the draft, but the team that takes him is going to get a high-intensity edge defender who rushes the passer with overwhelming zeal and plenty of power. The former Hurricanes star has a burly, high-cut, and muscular build with a massive, powerful lower half. Bain played primarily on the edge in his college career, but also saw snaps on the interior. He filled up the stat sheet in 2025, tallying the second-most pressures in the country (66, per PFF) while adding 37 tackles, 4.5 sacks, a forced fumble, and a pick; his 30 percent win rate on true pass set situations ranked 23rd among edge defenders (minimum 100 snaps). Bain is explosive out of his stance to get upfield and covers ground with long strides to threaten the edge. He converts speed to power on his bull rush and has a nice hump move that sends offensive linemen flying past the pocket. He’s quick and accurate with his hands, using swipes and punches to bat away blocks and keep himself clean. His powerful and effective push/pull move sends opponents lunging, and he shows bend at the top of his rush to dip his shoulder, get low, and flatten to the quarterback. In the run game, he shocks opponents with heavy hands, stacking them to hold his ground and play his gap. He stays low, keeping his leverage, and creates push to disrupt run lanes and turn the back toward his help.\n\nBain is a bit of a tweener, and the arm-length concerns could mean teams see him as an interior defensive tackle and not an edge. He has a relatively small tackle radius, and missed tackles have been a concern, with a 20 percent career missed tackle rate, per PFF. While he brings first-step burst off the snap, there are times he loses steam and stops his feet after his initial contact with opponents. Sometimes his aggressive style pulls him out of position. He’ll overrun a play or come in too hot and allow a ballcarrier to spill away."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Versatile and power-packed defensive lineman"
+        },
+        {
+          "title": "Traits",
+          "text": "Got That Dog in Him\nShort-Area Quickness\nRelentless Motor"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former four-star recruit out of Miami. Was the no. 11 edge in the 2023 class and the no. 62 player overall. Named ACC Defensive Rookie of the Year his freshman season. Played in just eight games in 2024 because of a soft-tissue injury he suffered during the season opener. Named a consensus first-team All-American and ACC Defensive Player of the Year in 2025."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "From Miami defensive coordinator Corey Hetherman: “He’s a guy you never have to get on. … The way he practices on a Monday or Tuesday is exactly what you’re going to get on [game day]. He’s constantly improving. That’s why he’s playing at such a high level.”\nReportedly has sub-31-inch arms.\nRanked sixth among Power Four edge defenders (minimum 100 snaps) in pass rush win rate in 2025.\nAfter Miami defeated Ohio State in the playoff, Bain said he was “just ready to watch Stranger Things” when he got home."
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF KWITY PAYE"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.7,
+    "prospect_grade_indicator": "Year 1 Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Brandon Graham",
+    "eligibility": "Junior",
+    "nfl_rank": 6,
+    "nfl_pos_rank": 3
+  },
+  "bleacher_profile": {
+    "grade": 8.7,
+    "grade_indicator": null,
+    "overall_rank": 2,
+    "position_rank": null,
+    "pro_comparison": "Brandon Graham",
+    "projected_round": "1st Round"
+  },
+  "walter_profile": {
+    "player_comp": "Jared Verse. In terms of style of play with his power, quickness, and motor, Bain is very similar to Verse."
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF KWITY PAYE",
+    "traits": "Got That Dog in Him\nShort-Area Quickness\nRelentless Motor"
+  },
+  "injury_history": [
+    {
+      "detail": "Calf",
+      "recovery_time": "4 Games",
+      "year": "2024"
+    }
+  ]
+}

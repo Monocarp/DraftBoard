@@ -1,0 +1,455 @@
+{
+  "name": "DAngelo Ponds",
+  "slug": "dangelo-ponds",
+  "overview": {
+    "POS": "CB",
+    "College": "Indiana",
+    "Height": "5' 9\"",
+    "Weight": "173",
+    "Age": "TBD",
+    "DOB": "0",
+    "Year": "Jr",
+    "Prj. Rd": null,
+    "Games": "39",
+    "Snaps": "2146",
+    "24/7 Sports": "84",
+    "ESPN": "78",
+    "Draft Buzz": "84.0 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.8",
+    "Gridiron": "TBD"
+  },
+  "position": "CB",
+  "college": "Indiana",
+  "height": "5' 9\"",
+  "weight": "173",
+  "age": null,
+  "dob": "0",
+  "year": "Jr",
+  "projected_round": null,
+  "games": 39,
+  "snaps": 2146,
+  "site_ratings": {
+    "24/7 Sports": "84",
+    "ESPN": "78",
+    "Draft Buzz": "84.0 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.8",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "84.5",
+      "percentile": 0.706
+    },
+    "24 Grade": {
+      "value": "83.5",
+      "percentile": 0.889
+    },
+    "23 Grade": {
+      "value": "89.7",
+      "percentile": 1.0
+    },
+    "Coverage Grade": {
+      "value": "84.5",
+      "percentile": 0.667
+    },
+    "Passer Rating": {
+      "value": "63.7",
+      "percentile": 0.556
+    },
+    "Interceptions": {
+      "value": "1",
+      "percentile": 0.306
+    },
+    "Forced Incom.": {
+      "value": "7",
+      "percentile": 0.278
+    },
+    "Forced Inc. Rate": {
+      "value": "14",
+      "percentile": 0.278
+    },
+    "Dropped Picks": {
+      "value": "0",
+      "percentile": 0.194
+    },
+    "Completion %": {
+      "value": "54",
+      "percentile": 0.556
+    },
+    "Man Coverage": {
+      "value": "68.8",
+      "percentile": 0.444
+    },
+    "Zone Coverage": {
+      "value": "76.9",
+      "percentile": 0.722
+    },
+    "% In Man": {
+      "value": "7.6",
+      "percentile": 0.0
+    },
+    "% In Zone": {
+      "value": "70.6",
+      "percentile": 0.944
+    },
+    "Coverage Stops": {
+      "value": "9",
+      "percentile": 0.639
+    },
+    "Tackling": {
+      "value": "80.9",
+      "percentile": 0.778
+    },
+    "Missed Tackles": {
+      "value": "2",
+      "percentile": 0.917
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Arm Length": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Hand Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Speed": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Explosive": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Agility": {
+      "result": "TBD",
+      "grade": null
+    },
+    "10 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "20 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "40 Time": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Vertical": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Broad": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "3 Cone": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Bench": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Height": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Weight": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Gridiron": {
+      "result": "TBD",
+      "grade": "TBD"
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 60.857142857142854,
+      "positional_rank": "7.2"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 57.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 78.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 40.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 29.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 63.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 114.0,
+      "positional_rank": "17"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 45.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 37.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 37.0,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Jahdae BARRON",
+    "Bleacher": "Marcus Jones",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR Allowed": 55.9,
+    "Tackling": 0.94,
+    "Run Defense": 0.92,
+    "Cov Grade": 0.99,
+    "Zone Coverage": 0.89,
+    "Man/Press": 0.96
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 1,
+      "career": 10
+    },
+    "Slot": {
+      "2025": 4,
+      "career": 26
+    },
+    "Corner": {
+      "2025": 568,
+      "career": 1795
+    },
+    "Box": {
+      "2025": 82,
+      "career": 234
+    },
+    "Deep": {
+      "2025": 11,
+      "career": 18
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Coverage Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Mental/Discipline Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nD'Angelo Ponds arrived at Chaminade-Madonna Prep in Hollywood, Florida, as more than just a football player - he was a legitimate track star who captured state titles in both the 100 and 200-meter dashes as a senior. His blazing speed translated perfectly to the gridiron, where he helped lead the Lions to back-to-back championship seasons, including a perfect 14-0 campaign and Sunshine State 1M title as a senior. Despite accumulating 77 tackles and seven pass breakups in his final prep season, major programs overlooked the undersized defensive back, leading to his commitment to James Madison as a modestly-rated three-star prospect.\n\nThe transition to college ball proved seamless for the Miami native, who immediately established himself as one of the nation's premier young cornerbacks during his true freshman campaign at James Madison in 2023. Working his way from special teams contributor to full-time starter by mid-season, Ponds finished with 15 passes defended - 11th nationally among all players - while earning Freshman All-America recognition from multiple outlets. His breakout performance came in a crucial victory at Utah State, where he sealed the win with a fourth-quarter interception, showcasing the clutch gene that would become his trademark.\n\nFollowing coach Curt Cignetti's move to Indiana, Ponds transferred to Bloomington and elevated his game to elite status during the 2024 season. His sophomore campaign featured second-team All-America honors from six different publications, first-team All-Big Ten recognition, and a starring role on a defense that set program records for scoring defense (15.6 points per game) and total yards allowed. The crown jewel of his season came against Washington, where he returned the game's opening interception 67 yards for a touchdown and added a second pick in the first half alone, earning multiple national player of the week awards.\n\nSCOUTING REPORT: SUMMARY\nPonds has that rare combination of instincts and athleticism that translates seamlessly to Sundays. His ability to consistently make game-altering plays against elite Power Four competition removes any doubt about his readiness for the next level. The way he dismantled Washington's passing attack with two first-half picks, including that spectacular 67-yard house call, showcases exactly the type of momentum-shifting playmaker that championship teams covet. NFL defensive coordinators will salivate over his coverage versatility and ball production in an era where creating turnovers has become increasingly difficult.\n\nPonds thrives in aggressive defensive systems that allow corners to play with anticipation rather than reaction. His skill set screams perfect fit for teams like Miami, Philadelphia, or San Francisco - organizations that utilize pattern-matching concepts and aren't afraid to let their DBs take calculated risks. The way he processes route combinations and disguises his intentions will cause headaches for even veteran NFL quarterbacks who think they've identified favorable matchups. His track speed gives him a recovery gear that few corners possess, meaning he can afford to be more aggressive knowing he has the wheels to bail himself out.\n\nMake no mistake about the size concerns - they're real and will need constant monitoring at the professional level. However, his tape against receivers like Jeremiah Smith and Emeka Egbuka proves he can handle elite athletes without getting physically dominated. This isn't a finesse player who shies away from contact; he tackles with bad intentions and competes like his life depends on every snap. Day one, he steps in as a quality nickel defender with the ceiling to develop into a shutdown outside corner within two seasons. His combination of elite coverage grades, proven clutch gene, and untapped athletic ceiling makes him a safe bet to outperform his draft position."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "DeAngelo Ponds from Indiana (via JMU)... baller... spunky competitor... slot corner... production... ball skills... competitiveness... tackling ability... fight through blockers... pound for pound one of the best pure football players... no durability concerns... missed one game... day two... round three... maybe second round wouldn’t stun."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "D'Angelo Ponds is the type of competitive, athletic and playmaking cornerback that coaches want in their secondary. He plays bigger than his size and doesn't back down to any receiver. With great footwork, feel for space and timing, Ponds continuously makes plays on the football and frustrates receivers with his closing speed and attention to detail.\n\nThe former 3—star recruit is an instinctual player and coming off an impressive inaugural season with the Indiana Hoosiers. He finished his true—sophomore campaign with 57 total tackles, four and a half tackles for loss, three interceptions (one returned for a touchdown) and nine passes defensed. The 5'9\", 173—pound defensive back may be undersized, but he'll play with anyone and make them earn every inch.\n\n— Ponds plays with fantastic zone awareness in any variation thanks to his quick feet and track background. His instincts are tied to strong eye discipline and make him a formidable opponent when reading the quarterback."
+        },
+        {
+          "title": "Positives",
+          "text": "— Ponds plays with fantastic zone awareness in any variation thanks to his quick feet and track background. His instincts are tied to strong eye discipline and make him a formidable opponent when reading the quarterback.\n\n— Ultra—competitive. Ponds is not afraid to mix it up with any receiver, play physical man coverage and trust his mirroring ability/athleticism to recover throughout the route.\n\n— He recognizes route—combinations well, while maintaining proper depth and zone responsibility, passes off routes and communicates with his teammates at a high level.\n\n— Doesn't panic with the ball in the air and plays with the mindset of a bigger corner when working downfield. He attacks the catchpoint with authority and timing to disrupt catches.\n\n—The twitched—up athlete offers special teams upside in both return aspects. In fact, he returned a punt against the Illinois Fighting Illini for a touchdown in Week 4 of the 2025 campaign."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Ponds is undersized with shorter arms that limit his ability to play the ball against taller and longer receivers. His lack of length could impact his ball production at the next level.\n\n— While he's a willing participant against the run, he struggles to get off blocks and wrapping up consistently is a challenge. Instead, he falls down around the ankles too often, which creates missed tackles.\n\n— When dealing with comeback routes or hitches at full speed, he displays a slight hitch within his deceleration. This slight pause allows receivers to sell deep and break him off at the top of routes."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.8,
+    "grade_indicator": null,
+    "overall_rank": 29,
+    "position_rank": null,
+    "pro_comparison": "Marcus Jones",
+    "projected_round": "2nd Round"
+  },
+  "injury_history": []
+}

@@ -1,0 +1,406 @@
+{
+  "name": "Oscar Delp",
+  "slug": "oscar-delp",
+  "overview": {
+    "POS": "TE",
+    "College": "Georgia",
+    "Height": "6' 5\"",
+    "Weight": "245",
+    "Age": "22.4",
+    "DOB": "2003-08-04 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "51",
+    "Snaps": "1919",
+    "24/7 Sports": "97",
+    "ESPN": "TBD",
+    "Draft Buzz": "81.1 / 100",
+    "NFL.com": "TBD",
+    "BR": "7",
+    "Gridiron": "TBD"
+  },
+  "position": "TE",
+  "college": "Georgia",
+  "height": "6' 5\"",
+  "weight": "245",
+  "age": 22.4,
+  "dob": "2003-08-04 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 51,
+  "snaps": 1919,
+  "site_ratings": {
+    "24/7 Sports": "97",
+    "ESPN": "TBD",
+    "Draft Buzz": "81.1 / 100",
+    "NFL.com": "TBD",
+    "BR": "7",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "62.2",
+      "percentile": 0.1
+    },
+    "2024 Grade": {
+      "value": "56.4",
+      "percentile": 0.0
+    },
+    "2023 Grade": {
+      "value": "66.3",
+      "percentile": 0.778
+    },
+    "Receiving Grade": {
+      "value": "59.4",
+      "percentile": 0.0
+    },
+    "Drop %": {
+      "value": "4.8",
+      "percentile": 0.6
+    },
+    "Cont. Catch Ratio": {
+      "value": "25",
+      "percentile": 0.05
+    },
+    "Yards Per Route Run": {
+      "value": "1.25",
+      "percentile": 0.15
+    },
+    "YAC Per Reception": {
+      "value": "7.8",
+      "percentile": 0.9
+    },
+    "Missed Tkles Forced": {
+      "value": "0",
+      "percentile": 0.05
+    },
+    "Pass Block Grade": {
+      "value": "73.3",
+      "percentile": 0.8
+    },
+    "Run Block Grade": {
+      "value": "58.9",
+      "percentile": 0.7
+    },
+    "Touchdowns": {
+      "value": "1",
+      "percentile": 0.1
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 132.71428571428572,
+      "positional_rank": "9.5"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 166.0,
+      "positional_rank": "16"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 112.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 77.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 78.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 201.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 148.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 90.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "5TH",
+    "Bleacher": "3rd round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Tanner MCLACHLAN",
+    "Bleacher": "Robert Tonyan",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 120.1,
+    "Hands": 0.75,
+    "Short Receiving": 0.72,
+    "Intermediate Routes": 0.67,
+    "Deep Threat": 0.75,
+    "Blocking": 0.62
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot Snaps": {
+      "2025": 77,
+      "career": null
+    },
+    "Inline Snaps": {
+      "2025": 238,
+      "career": null
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Oscar Delp is an athletic, alignment-versatile TE prospect who has the physical traits to be utilized as an important piece of an NFL passing attack."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nOscar Travis Delp carved out his niche in Athens after walking into one of college football's most crowded tight end rooms. The Sport Management major from West Forsyth High School arrived at Georgia as the nation's top-rated tight end prospect, carrying a pristine four-star pedigree across all major recruiting platforms. His senior season numbers told the story of dominance - 59 catches for 923 yards and eight touchdowns while helping the Wolverines reach the GHSA Class 7A playoffs. Those eye-popping stats earned him Forsyth County Offensive Player of the Year honors and cemented his status as Georgia's fourth-ranked prospect.\n\nThe transition to college proved challenging initially, as Delp found himself sharing the field with future NFL stars Darnell Washington and Brock Bowers. His freshman campaign in 2022 yielded modest numbers - five catches for 61 yards - but included a memorable 28-yard touchdown strike from Carson Beck against South Carolina. The experience served as valuable seasoning, allowing him to absorb lessons from two elite talents while contributing on special teams. His sophomore year saw increased responsibility with 24 receptions for 284 yards and three touchdowns across 14 games, establishing him as a reliable secondary option in Georgia's aerial attack.\n\nThe 2024 season marked Delp's emergence as the primary tight end weapon for the Bulldogs, appearing in all 14 games with 10 starts. His breakout performance came against Tennessee, where he hauled in four passes for 56 yards and two touchdowns - all career highs that showcased his red zone prowess. The highlight of his campaign arrived at Texas, where his 43-yard reception from Carson Beck demonstrated the deep-ball ability that makes him such an intriguing prospect. His consistent production earned recognition on the Senior Bowl Watch List and AP Preseason All-SEC Third Team, validating his growth from role player to featured weapon. Through three seasons, Delp accumulated 50 catches for 593 yards and eight touchdowns while proving his durability with 41 game appearances.\n\nDelp's elite speed at 245 pounds opens up offensive possibilities that few players at his position can provide, yet the modest college production raises legitimate questions about his readiness to contribute immediately. While his route-running shows flashes of sophistication in intermediate zones, the limited route tree and struggles against press coverage expose technical gaps that need addressing.\n\n\n\nHis blocking presents the most compelling contradiction - the effort and competitive spirit are undeniable, but the lack of functional strength and refined technique make him a liability against NFL-caliber edge rushers early in his career. The special teams experience provides immediate value, though his primary role will likely center around receiving packages where his speed can create mismatches. His ascension to leadership at Georgia demonstrates maturity, but the late-blooming production curve suggests he may need time to fully harness his physical gifts at the next level.\n\n\n\nThe evaluation ultimately hinges on patience and development timeline. His athletic ceiling remains tantalizing for offensive coordinators willing to invest in his growth, particularly in systems that move tight ends around to exploit favorable matchups. However, his current skill level suggests he'll need a year or two of seasoning before becoming a reliable every-down contributor. The combination of rare speed and coachable character creates legitimate upside, but teams expecting immediate impact may find themselves frustrated with his inconsistent technical foundation.\n \n\n                                        \n                                            \n                                                Written By:\n                                                Wyatt Brooks (SEC)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Oscar Delp is a vertical, seam busting tight end with explosive speed and three down upside for an NFL offense. He's become a versatile blocker for the Bulldogs offense, and springs multiple runs a game for their offense.\n\nUnderutilized as a pass catcher, the 6'5\" 245—pound prospect showcases his burst after the catch by reducing pursuit angles by linebackers and defensive backs, regularly.\n\nDelp is a former 4—star recruit who's spent his entire four—year collegiate career at Georgia and hasn't fully realized his potential as a receiver. He's only eclipsed 250 yards once in a season (2023), and has eight touchdowns in his career. The alignment versatile tight end is looking to have a breakout season as a senior and showcase his talents."
+        },
+        {
+          "title": "Positives",
+          "text": "— Delp is a multi—functional tight end who has run and pass blocking ability to aid on all three downs. Has the size and ability to play in—line in the run game as well as split out as a receiver.\n\n— Possesses NFL size and athleticism to transition to the next level and has room to add mass without losing a step. That size helps him move people in the run game, along with relocating his hands to get better leverage and drive blocks.\n\n— His speed down the seam is a weapon; second and third level defenders have to respect it or he will run right by them. That speed is greatly helpful in reducing pursuit angles after the catch.\n\n— He has power in his extension to displace defenders as a blocker and attempts to use his hands to clear defenders as a receiver.\n\n— Plays with good timing as a route runner and when jumping for the football. Delp shows soft hands and quick transition after the catch."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Physical defenders can bump him off his route and maintain connectivity in man coverage without much difficulty. He needs to add more route nuance, manipulation tactics, and expand his route tree to keep defenders guessing.\n\n— As a blocker, Delp can be too top heavy and fall over his feet, giving smarter defenders quick paths by him. Shoring up his footwork and limiting the lunging can clean up his technique.\n\n— His playstyle needs a physicality boost. From in—line blocking to outworking defenders at the catch point and everywhere in between, his game would benefit from a greater effort to use his size."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.0,
+    "grade_indicator": null,
+    "overall_rank": 112,
+    "position_rank": null,
+    "pro_comparison": "Robert Tonyan",
+    "projected_round": "3rd round"
+  },
+  "injury_history": []
+}

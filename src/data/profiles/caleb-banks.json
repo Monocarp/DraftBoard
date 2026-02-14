@@ -1,0 +1,499 @@
+{
+  "name": "Caleb Banks",
+  "slug": "caleb-banks",
+  "overview": {
+    "POS": "DT",
+    "College": "Florida",
+    "Height": "6' 6\"",
+    "Weight": "330",
+    "Age": "24.1",
+    "DOB": "2001-12-20 00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": "2nd Rd",
+    "Games": "36",
+    "Snaps": "929",
+    "24/7 Sports": "86",
+    "ESPN": "88",
+    "Draft Buzz": "85.7 / 100",
+    "NFL.com": "6.39",
+    "Bleacher": "7.5",
+    "Gridiron": null
+  },
+  "position": "DT",
+  "college": "Florida",
+  "height": "6' 6\"",
+  "weight": "330",
+  "age": 24.1,
+  "dob": "2001-12-20 00:00:00",
+  "year": "RS Sr",
+  "projected_round": "2nd Rd",
+  "games": 36,
+  "snaps": 929,
+  "site_ratings": {
+    "24/7 Sports": "86",
+    "ESPN": "88",
+    "Draft Buzz": "85.7 / 100",
+    "NFL.com": "6.39",
+    "Bleacher": "7.5",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "66.4",
+      "percentile": 0.056
+    },
+    "24 Grade": {
+      "value": "73",
+      "percentile": 0.333
+    },
+    "23 Grade": {
+      "value": "69.8",
+      "percentile": 0.417
+    },
+    "Pass Rush Grade": {
+      "value": "60.1",
+      "percentile": 0.222
+    },
+    "True Pass Rush": {
+      "value": "62.8",
+      "percentile": 0.389
+    },
+    "PR Win Rate": {
+      "value": "4.2",
+      "percentile": 0.194
+    },
+    "Run Def. Grade": {
+      "value": "68.5",
+      "percentile": 0.111
+    },
+    "Run Stop %": {
+      "value": "4.8",
+      "percentile": 0.167
+    },
+    "Sacks": {
+      "value": "0",
+      "percentile": 0.167
+    },
+    "Hits": {
+      "value": "0",
+      "percentile": 0.167
+    },
+    "Hurries": {
+      "value": "3",
+      "percentile": 0.056
+    },
+    "Batted Balls": {
+      "value": "0",
+      "percentile": 0.222
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.444
+    },
+    "Tackling Grade": {
+      "value": "25.2",
+      "percentile": 0.0
+    },
+    "Missed Tackle Rate": {
+      "value": "50",
+      "percentile": 0.0
+    },
+    "Total Pressures": {
+      "value": "3",
+      "percentile": 0.056
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 34.2,
+      "positional_rank": "3.4285714285714284"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 16.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 28.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 24.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 49.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 26.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 54.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 26.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 49.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 39.0,
+      "positional_rank": "5"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 23.22222222222222,
+    "PFF": 28.0,
+    "ESPN": null,
+    "Brugler": 28.0,
+    "Kiper": 30.0,
+    "Miller": 22.0,
+    "Bleacher": null,
+    "Walter": 27.0,
+    "TDN": 28.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - MID",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "Gervon Dexter Sr",
+    "Miller": "TBD",
+    "DraftBuzz": "Eyioma UWAZURIKE",
+    "Bleacher": "Gervon Dexter",
+    "WF": "TBD",
+    "NFL.com": "Gervon Dexter Sr"
+  },
+  "strengths": "• Outstanding Frame, Traits\n• First Step Quickness, Closing Speed\n• Strong Hands, Long Arms\n• Can Handle Double Teams\n• Has The Desired Traits To Develop\n• Shows versatility in odd fronts",
+  "weaknesses": "• Missed Most of 2025 With Foot Inj.\n• Unpolish Hand Usage\n• Can Fatigue Quickly\n• Needs More PR Moves/Counters\n• Plays Too High, Will Cost In NFL\n• Older Prospect",
+  "accolades": null,
+  "player_summary": "Banks is 24, with an injury history that took him out for most of 2025. He's a development project with the desired traits and instincts to develop into a serious contributor on the inside, with some versatility to play on the outside as well. His strenght and natural athleticism show up on tape, but his hand usage needs to be more refined and will need to develop a more mature pass rush plan. In the run game, he's got the size and strength to control blockers and handle double teams effectively, although his high-hipped playing style may cost him there in the NFL if he doesn't get that fixed. Showed really well in days 2 and 3 of the Senior Bowl.",
+  "draftbuzz_grades": {
+    "Tackling": 0.39,
+    "Pass Rush": 0.75,
+    "Run Defense": 0.77
+  },
+  "projected_role": "3 Tech",
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 3,
+      "career": 38
+    },
+    "B GAP": {
+      "2025": 62,
+      "career": 603
+    },
+    "Over Tackle": {
+      "2025": 25,
+      "career": 213
+    },
+    "Outside Tkl": {
+      "2025": 4,
+      "career": 23
+    },
+    "Off Ball": {
+      "2025": 2,
+      "career": 5
+    }
+  },
+  "skills_traits": {
+    "Instincts/Processing/Production": {
+      "positives": "Position Versatile (ESPN)",
+      "negatives": null
+    },
+    "Physical Traits": {
+      "positives": "Big frame, long limbed; outstanding physical traits (NFL)",
+      "negatives": null
+    },
+    "Athletic Ability": {
+      "positives": "Shows quickness (ESPN)\nHas burst, length, and felxibility to develop at NFL level (ESPN)\nQuick first step (NFL)\nAbove average first step and pursuit (NFL)",
+      "negatives": "Looked heavy and slow in 2025, foot injury (NFL)\nFatigues and see his rush effectiveness decline (NFL)"
+    },
+    "Pass Rush Skills": {
+      "positives": "Can stun/control single blocks when his strikes are timely and accurate (NFL)\nUses length and heavy hands to stun blockers (NFL)\nHas the traits to unlock in NFL (NFL)",
+      "negatives": "Not technical or polished as a pass rusher (ESPN)\nNeeds more polish (NFL)\nLearning how to convert physcal advantages into sacks (NFL)\nHands get sloppy when moving blocker to blocker (NFL)\nLacks needed repetoire (NFL)"
+    },
+    "Run Defense Skills": {
+      "positives": "Can control blockers, locate the ball, and shed as a two gap defender (ESPN)\nCan handle double teams (ESPN)\nHas power to press and separate at POA (NFL)",
+      "negatives": "Plays with high hips, losing grounds to double teams (NFL)\nTakes too much time to disengage (NFL)"
+    }
+  },
+  "media_links": [
+    {
+      "description": "Senior Bowl Interview",
+      "source": "Revenge of the Birds",
+      "url": "https://www.revengeofthebirds.com/arizona-cardinals-draft/87539/senior-bowl-interview-dt-caleb-banks"
+    },
+    {
+      "description": "Scouting Report",
+      "source": "YT - 2 Minute Drill",
+      "url": "https://www.youtube.com/watch?v=_zKwu0J1F2M"
+    },
+    {
+      "description": "Career Highlights",
+      "source": "YT - Prospects",
+      "url": "https://www.youtube.com/watch?v=Br0RBRRpUCE"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Big-framed, long-limbed interior defender whose play needs more polish to consistently match his traits. Banks has a quick first step. He can stun/control single blocks when his hand strikes are timely and accurate, but he needs faster disengagement to increase his tackle count. His high center of gravity allows double teams to generate displacement, so a move to odd-front end could be in his best interest as a run defender. Like a grappler without submission knowledge, Banks is still learning to unlock his physical advantages so he can turn them into sacks."
+        },
+        {
+          "title": "Strengths",
+          "text": "Outstanding physical traits with good short-area quickness. | Uses long arms and heavy hands to stun blockers. | Has power to press and separate at the point. | Controls the action convincingly when he lands first. | Above-average first-step quickness and pursuit movements. | Rush traits waiting to be unlocked as a pro. | Combines step fake and slap to create pressure opportunities. | Above-average bust to close on the quarterback."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Looked heavier and slower in 2025, when he dealt with foot injury. | Plays with high hips, losing ground to double teams. | Hands get a little sloppy working from blocker to blocker. | Takes time to disengage and tackle his gaps. | Lacks openings and closings as a pass rusher. | Fatigues and sees his rush effectiveness decline."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nCaleb Banks grew up in Southfield, Michigan, where he captained Southfield A&T High School's football team twice and earned all-state recognition despite being overlooked by most Power Five programs. Standing 6-6 and weighing 330 pounds, Banks finished his high school career with 42 tackles, 12 tackles for loss, and three sacks while collecting offers from Cincinnati, Michigan, and Tennessee before ultimately signing with Louisville as a three-star recruit ranked outside the top 900 nationally.\n\nBanks spent two years with the Cardinals, redshirting in 2021 and appearing in just six games in 2022, though he did manage his first career sack and a forced fumble against Wake Forest in late October. He transferred to Florida in January 2023 and immediately earned a starting role, appearing in all 12 games with 11 starts and recording 19 tackles with one sack. His junior year in 2024 proved to be the breakthrough campaign that scouts had been waiting for, as Banks totaled 21 tackles, 4.5 sacks, two forced fumbles, and generated 29 quarterback pressures. His late-season performances against LSU and Ole Miss were particularly eye-opening: seven QB pressures in back-to-back weeks, a career-high 3.5 tackles for loss against the Rebels, and SEC Defensive Lineman of the Week honors.\n\nBanks opted to return to Gainesville for his redshirt senior year rather than enter the 2025 draft cycle, but a nagging foot injury that originated in fall camp severely limited his final season. He appeared in just three games, starting all three, and recorded six tackles with one tackle for loss and a fumble recovery. Despite the lost season, Banks earned his bachelor's degree in Education Sciences and landed on the SEC Fall Academic Honor Roll for the second consecutive year. He finished his five-year collegiate career with 48 total tackles, 6.5 sacks, three forced fumbles, and was invited to participate in the 2026 Senior Bowl, where he turned in one of his best performances of the year.\n\nSCOUTING REPORT: SUMMARY\nWatch the tape on from his LSU and Ole Miss games in 2024 and you will see a player who can absolutely wreck an offensive game plan when everything clicks. Banks generated 14 quarterback pressures across those two weeks, moving with a fluidity that has no business existing in a 330-pound frame. The problem is that those performances remain the exception rather than the rule. He flashes dominant and then goes quiet, leaving evaluators wondering which version will show up at the next level.\n\nHere is the deal with Banks: the physical tools are rare and the athletic profile is legitimate, but the technique has not caught up yet. A 4-3 scheme where he can attack upfield as a three-technique pass rusher makes the most sense, allowing him to use his first-step quickness and length to disrupt timing in the pocket. Asking him to hold the point of attack as a two-gapping nose tackle exposes his high pad level and gives double teams too many opportunities to move him off his spot. He needs a role that emphasizes penetration over occupation.\n\nBanks is the definition of a boom or bust prospect. Whoever drafts him is betting on ceiling over floor, and that is not necessarily a bad wager. The Senior Bowl showed he can take coaching and make adjustments in real time. His willingness to work and his motor suggest the development curve will continue trending upward. The boom scenario sees Banks putting together his physical tools with refined technique and becoming a game-wrecking force who collapses pockets and demands constant double teams. The bust scenario sees the technical flaws never getting corrected, leaving teams with an oversized athlete who flashes without ever producing consistently. With another offseason of focused technical work, particularly on his pad level and counter moves, Banks has the physical foundation to become a legitimate interior disruptor who commands attention on every passing down. The talent is undeniable, but so is the risk."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nBanks is versatile in position and scheme. He can line up at defensive end or nose tackle in base three-man fronts; he can line up at defensive tackle or defensive end in base four-man fronts. Banks can control blockers, locate the ball and shed in time to make plays as a two-gap defender. HeÃ•s quick and flashes the ability to split double-teams. HeÃ•s not a technical or polished pass rusher, but he has the burst, length and flexibility to develop at the NFL level. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Caleb Banks makes a person second—guess what they're seeing on film because of how quick and athletic he is for his size. The 6'6\", 330—pound defensive lineman has plenty of tools to develop into a well—rounded interior defender in the NFL.\n\nDue to a foot injury, Banks played in three games during the 2025 season. As a result, his pre—draft evaluation shifts to the previous year's tape, which shows raw technique that will require fine—tuning at the next level.\n\nComing out of high school as part of the 2021 class, the 3—star recruit originally played at Louisville. He redshirted as a true freshman and barely saw the field in Year 2 before transferring to Florida ahead of the 2023 campaign."
+        },
+        {
+          "title": "Positives",
+          "text": "— Banks has a Good combination of size, strength, athleticism and quickness for an NFL defensive tackle.\n\n— Accelerates off the line of scrimmage well for a Good get—off.\n\n— Combines quickness and a Good arm—over move to beat offensive linemen across their faces as a pass—rusher and run defender.\n\n— Also displays a hump—move that he can catch offensive linemen leaning and flashes a solid inside spin move that he can develop when rushing the passer at the next level.\n\n— Good change—of—direction skills to pivot and take advantage of oversets from offensive linemen.\n\n— when Banks shoots his hands against the run, he presents solid knockback power to occasionally reset the line of scrimmage."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Banks stands up out of his stance and plays with high pad—level, causing him to get pushed out of his gap by double—teams and combo blocks.\n\n— Also, he'll get kicked inside by down—blocks, because he struggles to sink his hips and anchor.\n\n— Has a habit of taking on blocks with his forearms instead of his hands, preventing him from capitalizing on his strength and length at the point of attack.\n\n— Hips are a little tight to clear his lower half when working finesse moves.\n\n— Needs to learn how to work the hands as a pass—rusher.\n\n— Gets knocked off his path too easily for someone of his size when rushing the passer.\n\n— Foot injury could be a lingering issue. He missed spring practices and the first two games of the 2025 season because of it, then re—injured it during his first game back and had to have surgery."
+        }
+      ]
+    },
+    {
+      "source": "ESPN",
+      "sections": [
+        {
+          "title": "Analysis",
+          "text": "Banks is versatile in position and scheme. He can line up at defensive end or nose tackle in base three-man fronts; he can line up at defensive tackle or defensive end in base four-man fronts. Banks can control blockers, locate the ball and shed in time to make plays as a two-gap defender. HeÃ•s quick and flashes the ability to split double-teams. HeÃ•s not a technical or polished pass rusher, but he has the burst, length and flexibility to develop at the NFL level. -- Steve Muench"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.39,
+    "prospect_grade_indicator": "Will Eventually Be Plus Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Gervon Dexter Sr",
+    "eligibility": "Senior",
+    "nfl_rank": 39,
+    "nfl_pos_rank": 5
+  },
+  "bleacher_profile": {
+    "grade": 7.5,
+    "grade_indicator": null,
+    "overall_rank": 49,
+    "position_rank": null,
+    "pro_comparison": "Gervon Dexter",
+    "projected_round": "2nd Round"
+  },
+  "injury_history": [
+    {
+      "detail": "Foot",
+      "recovery_time": "Season Ending",
+      "year": "2025"
+    }
+  ]
+}

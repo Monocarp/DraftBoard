@@ -1,0 +1,422 @@
+{
+  "name": "Carter Smith",
+  "slug": "carter-smith",
+  "overview": {
+    "POS": "OT",
+    "College": "Indiana",
+    "Height": "6' 5\"",
+    "Weight": "313",
+    "Age": "TBD",
+    "DOB": null,
+    "Year": "RS Jr",
+    "Prj. Rd": null,
+    "Games": null,
+    "Snaps": null,
+    "24/7 Sports": null,
+    "ESPN": "TBD",
+    "Draft Buzz": null,
+    "NFL.com": "TBD",
+    "BR": "TBD",
+    "Gridiron": null
+  },
+  "position": "OT",
+  "college": "Indiana",
+  "height": "6' 5\"",
+  "weight": "313",
+  "age": null,
+  "dob": null,
+  "year": "RS Jr",
+  "projected_round": null,
+  "games": null,
+  "snaps": null,
+  "site_ratings": {
+    "24/7 Sports": null,
+    "ESPN": "TBD",
+    "Draft Buzz": null,
+    "NFL.com": "TBD",
+    "BR": "TBD",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "87.7",
+      "percentile": 1.0
+    },
+    "2024 Grade": {
+      "value": "80.1",
+      "percentile": 0.7
+    },
+    "2023 Grade": {
+      "value": "67.5",
+      "percentile": 0.556
+    },
+    "Run Block Grade": {
+      "value": "83.4",
+      "percentile": 1.0
+    },
+    "Pass Block Grade": {
+      "value": "93.1",
+      "percentile": 1.0
+    },
+    "True Pass Set Grade": {
+      "value": "89.4",
+      "percentile": 1.0
+    },
+    "Pass Block Efficiency": {
+      "value": "99.2",
+      "percentile": 0.9
+    },
+    "Zone Grade": {
+      "value": "82.7",
+      "percentile": 0.7
+    },
+    "Gap Grade": {
+      "value": "77.1",
+      "percentile": 0.9
+    },
+    "Sacks Allowed": {
+      "value": "0",
+      "percentile": 0.85
+    },
+    "Hits Allowed": {
+      "value": "0",
+      "percentile": 0.9
+    },
+    "Hurries Allowed": {
+      "value": "6",
+      "percentile": 0.75
+    },
+    "Pressures Allowed": {
+      "value": "6",
+      "percentile": 0.9
+    },
+    "Penalties": {
+      "value": "6",
+      "percentile": 0.2
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 76.66666666666667,
+      "positional_rank": "8"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 87.0,
+      "positional_rank": "15"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 74.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "TBD",
+    "Bleacher": "TBD"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "TBD",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": null,
+    "Run Blocking Grade": null
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 884,
+      "career": 2502
+    },
+    "LG": {
+      "2025": 0,
+      "career": 0
+    },
+    "C": {
+      "2025": 0,
+      "career": 0
+    },
+    "RG": {
+      "2025": 0,
+      "career": 1
+    },
+    "RT": {
+      "2025": 0,
+      "career": 0
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "injury_history": []
+}

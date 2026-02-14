@@ -1,0 +1,450 @@
+{
+  "name": "Malik Muhammad",
+  "slug": "malik-muhammad",
+  "overview": {
+    "POS": "CB",
+    "College": "Texas",
+    "Height": "6' 0\"",
+    "Weight": "188",
+    "Age": "21.4",
+    "DOB": "2004-09-14 00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": "3rd Round",
+    "Games": "40",
+    "Snaps": "1913",
+    "24/7 Sports": "96",
+    "ESPN": "77",
+    "Draft Buzz": "84.8 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.8",
+    "Gridiron": "TBD"
+  },
+  "position": "CB",
+  "college": "Texas",
+  "height": "6' 0\"",
+  "weight": "188",
+  "age": 21.4,
+  "dob": "2004-09-14 00:00:00",
+  "year": "Jr",
+  "projected_round": "3rd Round",
+  "games": 40,
+  "snaps": 1913,
+  "site_ratings": {
+    "24/7 Sports": "96",
+    "ESPN": "77",
+    "Draft Buzz": "84.8 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.8",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "70.7",
+      "percentile": 0.235
+    },
+    "24 Grade": {
+      "value": "71.7",
+      "percentile": 0.556
+    },
+    "23 Grade": {
+      "value": "78.5",
+      "percentile": 0.889
+    },
+    "Coverage Grade": {
+      "value": "69.8",
+      "percentile": 0.167
+    },
+    "Passer Rating": {
+      "value": "59.4",
+      "percentile": 0.611
+    },
+    "Interceptions": {
+      "value": "2",
+      "percentile": 0.667
+    },
+    "Forced Incom.": {
+      "value": "2",
+      "percentile": 0.056
+    },
+    "Forced Inc. Rate": {
+      "value": "5.9",
+      "percentile": 0.056
+    },
+    "Dropped Picks": {
+      "value": "0",
+      "percentile": 0.194
+    },
+    "Completion %": {
+      "value": "61.8",
+      "percentile": 0.167
+    },
+    "Man Coverage": {
+      "value": "61.8",
+      "percentile": 0.167
+    },
+    "Zone Coverage": {
+      "value": "70.9",
+      "percentile": 0.167
+    },
+    "% In Man": {
+      "value": "27",
+      "percentile": 0.444
+    },
+    "% In Zone": {
+      "value": "68.6",
+      "percentile": 0.889
+    },
+    "Coverage Stops": {
+      "value": "11",
+      "percentile": 0.806
+    },
+    "Tackling": {
+      "value": "66.2",
+      "percentile": 0.167
+    },
+    "Missed Tackles": {
+      "value": "5",
+      "percentile": 0.361
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Arm Length": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Hand Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Speed": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Explosive": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Agility": {
+      "result": "TBD",
+      "grade": null
+    },
+    "10 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "20 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "40 Time": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Vertical": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Broad": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "3 Cone": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Bench": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Height": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Weight": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Gridiron": {
+      "result": "TBD",
+      "grade": "TBD"
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 77.75,
+      "positional_rank": "11.8"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 106.0,
+      "positional_rank": "15"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 82.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 90.0,
+      "positional_rank": "14"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 31.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 66.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 79.0,
+      "positional_rank": "20"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 60.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 83.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "2nd round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Benjamin MORRISON",
+    "Bleacher": "Nate Wiggins",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR Allowed": 69.8,
+    "Tackling": 0.71,
+    "Run Defense": 0.8,
+    "Cov Grade": 0.79,
+    "Zone Coverage": 0.75,
+    "Man/Press": 0.79
+  },
+  "projected_role": "Outside",
+  "ideal_scheme": "Zone",
+  "alignments": {
+    "D-Line": {
+      "2025": 1,
+      "career": 5
+    },
+    "Slot": {
+      "2025": 15,
+      "career": 45
+    },
+    "Corner": {
+      "2025": 521,
+      "career": 1762
+    },
+    "Box": {
+      "2025": 53,
+      "career": 149
+    },
+    "Deep": {
+      "2025": 3,
+      "career": 7
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Coverage Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Mental/Discipline Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nBorn into the football-rich environment of Dallas, Texas, Malik Muhammad established himself as a force in the secondary during his high school days at South Oak Cliff. The 6'0\", 190-pound cornerback wasn't just a participant in back-to-back state championships - he was instrumental, notching 60 tackles and 14 passes defended as a senior while returning an interception for a touchdown in the title game. His athletic prowess extended beyond football, as he excelled in track and field with impressive marks in triple jump (43-6.5), long jump (18-8.5), and as an anchor in relay events.\n\nMuhammad's transition to Texas was seamless, contributing immediately as a freshman in all 14 games and recording 31 tackles, one interception, and four pass breakups. His special teams acumen showed when he scooped a blocked punt for a touchdown against Oklahoma in the Red River Rivalry. By his sophomore year, Muhammad had secured a starting role for all 16 games, amassing 36 tackles and eight pass breakups while testing himself against elite competition in the College Football Playoff.\n\nThroughout his career at Texas, Muhammad has been battle-tested against the nation's premier receivers. From defending Michigan's aerial attack to matching up against Georgia's NFL-caliber wideouts in the SEC Championship, he's been thrown into the fire repeatedly. Even when dealing with an injury scare in the College Football Playoff quarterfinal against Arizona State, Muhammad displayed toughness by returning to action in the fourth quarter.\n\nSCOUTING REPORT: SUMMARY\nMuhammad brings immediate value as a defender who can contribute in multiple packages from day one. What jumps off the tape is his natural feel for route distributions and ability to process passing concepts - he sees the game unfold with veteran anticipation despite his youth. Watching him navigate complex coverage assignments against elite SEC competition revealed a corner who rarely finds himself out of position and consistently plays above his experience level.\n\nHis best NFL fit appears to be with defensive schemes employing pattern-match principles that maximize his instincts and football IQ. Coordinators who prioritize versatility in their secondary will appreciate his ability to execute both man and zone techniques with equal proficiency. While Muhammad doesn't possess elite length, he compensates with exceptional footwork and transitional quickness that lets him mirror even the craftiest route runners. The technical refinement he displays in press technique and zone spacing indicates a prospect who's been meticulously coached.\n\nThe comparison that resonates when studying Muhammad is a young Marcus Peters - a corner with football intelligence beyond his years who can process route combinations at an elite level. He's not the type who generates pre-draft buzz with highlight-reel interceptions, but instead wins with consistent positioning and technique. In a cornerback class filled with one-dimensional specialists, he stands out as a complete defender who can align anywhere in the secondary - the kind of cornerstone talent that transforms a unit's identity and elevates the entire defensive structure."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "For those who love watching ultra—competitive, twitchy—man coverage corners who frustrate wide receivers, Malik Muhammad is a must—watch.\n\nThe former 4—star recruit entered 2025 with a big confidence boost after starting all 16 games for the Longhorns and playing alongside Jahdae Barron.\n\nHe compiled 36 tackles, 32 solo, one tackle for loss, and eight passes defensed. He built the reputation as someone quarterbacks don't often want to test because his basketball and track backgrounds show up on the football field."
+        },
+        {
+          "title": "Positives",
+          "text": "— Uses elite short—area footwork to mirror receivers movements in man coverage.\n\n— Athletic ability shows up in his smooth backpedal and hip—sink to decelerate.\n\n— His speed translates downhill against ball carriers and receivers as well as turning and running.\n\n— Muhammad does a great job passing off route responsibilities in zone coverage.\n\n— A willing run—defender who wants to be a physical player and deliver momentum—altering hits."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Muhammad has room to add weight, which can help physically shed blocks in the run game.\n\n— Start using more single hand—jam technique to not lock his hips in press coverage.\n\n— Tends to bite on route movements quickly and is susceptible to double—moves and route nuance."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.8,
+    "grade_indicator": null,
+    "overall_rank": 31,
+    "position_rank": null,
+    "pro_comparison": "Nate Wiggins",
+    "projected_round": "2nd round"
+  },
+  "injury_history": []
+}

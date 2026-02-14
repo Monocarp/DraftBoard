@@ -1,0 +1,463 @@
+{
+  "name": "Blake Miller",
+  "slug": "blake-miller",
+  "overview": {
+    "POS": "OT",
+    "College": "Clemson",
+    "Height": "6' 6\"",
+    "Weight": "315",
+    "Age": "21.11",
+    "DOB": "38042",
+    "Year": "G",
+    "Prj. Rd": null,
+    "Games": "53",
+    "Snaps": "3655",
+    "24/7 Sports": "89",
+    "ESPN": "80",
+    "Draft Buzz": "83.3 / 100",
+    "NFL.com": "6.26",
+    "BR": "7.2",
+    "Gridiron": null
+  },
+  "position": "OT",
+  "college": "Clemson",
+  "height": "6' 6\"",
+  "weight": "315",
+  "age": 21.11,
+  "dob": "38042",
+  "year": "G",
+  "projected_round": null,
+  "games": 53,
+  "snaps": 3655,
+  "site_ratings": {
+    "24/7 Sports": "89",
+    "ESPN": "80",
+    "Draft Buzz": "83.3 / 100",
+    "NFL.com": "6.26",
+    "BR": "7.2",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "78.8",
+      "percentile": 0.4
+    },
+    "2024 Grade": {
+      "value": "75.6",
+      "percentile": 0.6
+    },
+    "2023 Grade": {
+      "value": "72.9",
+      "percentile": 0.889
+    },
+    "Run Block Grade": {
+      "value": "73.8",
+      "percentile": 0.4
+    },
+    "Pass Block Grade": {
+      "value": "83.5",
+      "percentile": 0.55
+    },
+    "True Pass Set Grade": {
+      "value": "72",
+      "percentile": 0.4
+    },
+    "Pass Block Efficiency": {
+      "value": "98.3",
+      "percentile": 0.5
+    },
+    "Zone Grade": {
+      "value": "77.8",
+      "percentile": 0.6
+    },
+    "Gap Grade": {
+      "value": "72.3",
+      "percentile": 0.5
+    },
+    "Sacks Allowed": {
+      "value": "2",
+      "percentile": 0.35
+    },
+    "Hits Allowed": {
+      "value": "2",
+      "percentile": 0.5
+    },
+    "Hurries Allowed": {
+      "value": "11",
+      "percentile": 0.2
+    },
+    "Pressures Allowed": {
+      "value": "15",
+      "percentile": 0.2
+    },
+    "Penalties": {
+      "value": "5",
+      "percentile": 0.35
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 72.77777777777777,
+      "positional_rank": "6.571428571428571"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 78.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 69.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 42.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 88.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 39.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 136.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 137.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 23.0,
+      "positional_rank": "3"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 27.857142857142858,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 28.0,
+    "Bleacher": null,
+    "Walter": 38.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 22.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "Roger Rosengarten",
+    "Miller": "TBD",
+    "DraftBuzz": "Blake FISHER",
+    "Bleacher": "Colton McKivitz",
+    "WF": "TBD",
+    "NFL.com": "Roger Rosengarten"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.83,
+    "Run Blocking Grade": 0.74
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 0,
+      "career": 101
+    },
+    "LG": {
+      "2025": 0,
+      "career": 0
+    },
+    "C": {
+      "2025": 0,
+      "career": 0
+    },
+    "RG": {
+      "2025": 0,
+      "career": 0
+    },
+    "RT": {
+      "2025": 858,
+      "career": 1813
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Ultimate iron man at right tackle with 54 career starts. Miller has unusual lateral quickness and fluidity in space despite playing too upright. His hands lack accuracy and command in both phases, but he can recover and make blocks with a finisher’s mindset. Miller is rarely beaten by rush games, but he has his edges attacked because of his hand issues. He will encounter difficulties at the next level without better pad level, core strength and cleaner technique. If he tightens up in those areas, Miller can become a solid NFL right tackle."
+        },
+        {
+          "title": "Strengths",
+          "text": "Possesses long arms, big hands and quick feet. | Fluid and accurate working to linebackers on combo blocks. | Snap quickness beats defender’s leverage on play-side and back-side zone blocks. | More frame-striker than body-catcher on angle blocks. | Able to pull across formation with timing to land a blow. | Springs into pass sets with a long initial kick slide. | High awareness to twists and games, with pitcher/catcher timing on pass-offs. | Feet stay active and slide to mirror rush to the top. | Scrambles and recoverers thanks to above-average agility."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Unsteady footwork robs him of contact balance. | Lunges into contact with upper body instead of well-placed hands. | Tall pads and average core strength lead to him being tossed off-balance by force. | Hand usage in both phases is often wide, wild and slippery on contact. | Inconsistent connection between hands and feet in pass pro. | Needs to keep feet closer to the ground to avoid being caught and driven mid-shuffle. | Rushers eliminate his outside hand by using basic swipes and wrist control."
+        },
+        {
+          "title": "Sources Tell Us",
+          "text": "“It wasn’t surprising that he played in (Clemson’s) bowl game because he doesn’t opt out of anything or miss any games. Has a team-first mindset.” – AFC regional scout"
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nBlake Miller from Strongsville, Ohio as a highly-touted lineman prospect who followed the path of former Tigers Jackson Carman and Matt Bockhorst. The four-star recruit wasted no time making his mark in Death Valley, becoming only the third true freshman since 1944 to start a season opener at offensive tackle for Clemson. What followed was an unprecedented ironman streak - Miller started every single game of his collegiate career, amassing a staggering 2,893 offensive snaps across 41 consecutive starts at right tackle.\n\nMiller's path shows remarkable consistency in his development. After earning Freshman All-American honors in 2022, he steadily climbed the conference ranks from a third-team All-ACC selection in 2023 to first-team honors in 2024. His reliability anchored a Clemson offensive line that powered the Tigers to a top-15 ranking in total offense (451.9 yards per game) during their 2024 ACC Championship campaign. Most impressively, Miller showcased his versatility and overall talent during a pivotal matchup at Pitt, where he seamlessly shifted to left tackle for 73 snaps after an early injury to Elyjah Thurmon.\n\nWhile NFL scouts already had him firmly on their radar following his junior campaign, Miller chose to refine his technique for one more collegiate season. His presence gives Clemson four returning starters on their offensive line heading into 2025, providing stability for a Tigers program looking to build on their College Football Playoff appearance.\n\nMiller has developed into one of the more intriguing tackle prospects in this class, blending a tackle's frame with positional flexibility that could make him valuable across multiple spots on an NFL line. His experience exclusively at right tackle might suggest that's his NFL home, but his emergency stint at left tackle revealed adaptability that will have offensive line coaches pounding the table for him in draft meetings.\n\n\nWhat jumps off the tape is his fluidity for a big man - Miller moves with the easy coordination of someone who's spent time in other sports. This natural athleticism creates a high ceiling that smart NFL coaching staffs will view as moldable clay. His technical inconsistencies are fixable, but the natural movement skills and football intelligence can't be taught.\n\n\nMiller projects as a Day 2 selection who could develop into a quality NFL starter within his first two seasons. Teams with zone-blocking tendencies will particularly value his movement skills and processing ability. Expect him to hear his name called in the early-to-mid second round, with scheme-specific teams potentially viewing him as a high floor plug-and-play starter who can solidify the right side of their line for years to come.   \n\n                                        \n                                            \n                                                Written By:\n                                                Felix Green (ACC)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Blake Miller is a durable, alert right tackle prospect with good athletic ability, arm length and quick, proactive hands to establish first meaningful contact and gain control of defenders. Miller lacks high—end power but brings tenacity as a finisher to stick on blocks. He lacks proven versatility but has the tools to develop it and compete for a starting right tackle job during his rookie contract.\n\nMiller is a 6'6\", 315—pound offensive line prospect, who entered the Clemson program as a 3—star recruit in the 2022 class.\n\nMiller started 14 games in 2024 at right tackle, earning first—team All—ACC honors. He started 13 games at RT during the '23 season and 14 games at RT in '22 at RT as a true freshman. He is the first Clemson offensive lineman to start every game played in each of his freshman, sophomore and junior years without the benefit of a redshirt year since starting center Ralph Jenkins from 1943—45."
+        },
+        {
+          "title": "Positives",
+          "text": "— Utilizes effective high—low hand carriage and approach in pass protection to strike and latch the outer pec of rushers with a responsive catch hand to corral his target.\n\n— Capable anchor to regain balance and die slowly after initially getting jolted against the bull—rush.\n\n— Active drag hand with good spacing to overtake and sort out basic line games and stunts.\n\n— Churns and strains to capitalize on drive—block momentum to displace and steer defenders away from the ball.\n\n— Uncorks into contact with aggression and pop in his hands to deliver initial jolt.\n\n— Does a decent job on angle—drive blocks of walling off and securing rush lanes."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Upright playing style with shaky body control leads to leaning and consistently being overextended, especially against the push—pull technique.\n\n— Struggles to timely adjust and stay in front of moves across his face in the run and pass game.\n\n— Choppy feet lead to being tardy getting his second step in the ground and generate power on contact.\n\n— Takes erratic angles to backers on climbs that results in a boom—or—bust hit rate."
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.26,
+    "prospect_grade_indicator": "Will Eventually Be Average Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Roger Rosengarten",
+    "eligibility": "Senior",
+    "nfl_rank": 23,
+    "nfl_pos_rank": 3
+  },
+  "bleacher_profile": {
+    "grade": 7.2,
+    "grade_indicator": null,
+    "overall_rank": 88,
+    "position_rank": null,
+    "pro_comparison": "Colton McKivitz",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

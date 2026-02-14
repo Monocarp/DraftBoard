@@ -1,0 +1,450 @@
+{
+  "name": "Davison Igbinosun",
+  "slug": "davison-igbinosun",
+  "overview": {
+    "POS": "CB",
+    "College": "Ohio State",
+    "Height": "6' 2\"",
+    "Weight": "195",
+    "Age": "21.9",
+    "DOB": "2004-04-11 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "53",
+    "Snaps": "2640",
+    "24/7 Sports": "94",
+    "ESPN": "84",
+    "Draft Buzz": "82.0 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.5",
+    "Gridiron": "TBD"
+  },
+  "position": "CB",
+  "college": "Ohio State",
+  "height": "6' 2\"",
+  "weight": "195",
+  "age": 21.9,
+  "dob": "2004-04-11 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 53,
+  "snaps": 2640,
+  "site_ratings": {
+    "24/7 Sports": "94",
+    "ESPN": "84",
+    "Draft Buzz": "82.0 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.5",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "81.5",
+      "percentile": 0.588
+    },
+    "24 Grade": {
+      "value": "65.9",
+      "percentile": 0.111
+    },
+    "23 Grade": {
+      "value": "71.8",
+      "percentile": 0.5
+    },
+    "Coverage Grade": {
+      "value": "81",
+      "percentile": 0.611
+    },
+    "Passer Rating": {
+      "value": "42.6",
+      "percentile": 0.833
+    },
+    "Interceptions": {
+      "value": "2",
+      "percentile": 0.667
+    },
+    "Forced Incom.": {
+      "value": "10",
+      "percentile": 0.778
+    },
+    "Forced Inc. Rate": {
+      "value": "21.7",
+      "percentile": 0.889
+    },
+    "Dropped Picks": {
+      "value": "1",
+      "percentile": 0.667
+    },
+    "Completion %": {
+      "value": "47.8",
+      "percentile": 0.722
+    },
+    "Man Coverage": {
+      "value": "80",
+      "percentile": 0.778
+    },
+    "Zone Coverage": {
+      "value": "70.5",
+      "percentile": 0.111
+    },
+    "% In Man": {
+      "value": "30.6",
+      "percentile": 0.611
+    },
+    "% In Zone": {
+      "value": "57.3",
+      "percentile": 0.417
+    },
+    "Coverage Stops": {
+      "value": "1",
+      "percentile": 0.0
+    },
+    "Tackling": {
+      "value": "66.5",
+      "percentile": 0.222
+    },
+    "Missed Tackles": {
+      "value": "8",
+      "percentile": 0.167
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Arm Length": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Hand Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Speed": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Explosive": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Agility": {
+      "result": "TBD",
+      "grade": null
+    },
+    "10 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "20 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "40 Time": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Vertical": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Broad": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "3 Cone": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Bench": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Height": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Weight": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Gridiron": {
+      "result": "TBD",
+      "grade": "TBD"
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 90.375,
+      "positional_rank": "11.6"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 146.0,
+      "positional_rank": "19"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 46.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 50.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 59.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Jeremiah",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 62.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 175.0,
+      "positional_rank": "28"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 57.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Tankathon",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Jeremiah": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "Tankathon": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "5TH",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Tyson CAMPBELL",
+    "Bleacher": "Charvarius Ward",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR Allowed": 52.0,
+    "Tackling": 0.76,
+    "Run Defense": 0.88,
+    "Cov Grade": 0.82,
+    "Zone Coverage": 0.83,
+    "Man/Press": 0.77
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 0,
+      "career": 17
+    },
+    "Slot": {
+      "2025": 31,
+      "career": 109
+    },
+    "Corner": {
+      "2025": 544,
+      "career": 1870
+    },
+    "Box": {
+      "2025": 76,
+      "career": 224
+    },
+    "Deep": {
+      "2025": 3,
+      "career": 11
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Coverage Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Mental/Discipline Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nDavison Igbinosun, a cornerback from Ohio State, has quickly made his mark in college football. After a standout freshman season at Ole Miss where he started 10 games and earned freshman All-American honors, Igbinosun transferred to Ohio State for the 2023 season. There, he immediately stepped into a starting role, playing all 13 games and ranking third on the team in tackles with 59 total and 39 solo stops.\n\nA native of Union, New Jersey, Igbinosun was a highly touted four-star recruit coming out of high school. He led Union High School to a 9-1 record in 2021 and was named to the all-BCC Division 5A first team. His high school career was impressive, with 211 tackles, seven interceptions, and 19 passes defensed over his tenure.\n\nAt Ohio State, Igbinosun quickly became a key player in the Buckeyes' secondary. He led all Ohio State defensive players with 781 snaps on defense and added five pass break-ups and two fumble recoveries to his stat line. His performances earned him honorable mention all-Big Ten Conference honors on both the coaches' and media ballots, solidifying his status as a rising star in college football.\n\nSCOUTING REPORT: SUMMARY\nIgbinosun's elite athleticism and length project well to the NFL level. His versatility allows him to function in both man and zone schemes, with a current edge in zone coverage performance. His blazing speed enables him to match up against deep threats, while his physicality is an asset in press coverage. At the next level, Igbinosun's ability to contribute immediately on special teams while developing his coverage skills will be valuable.\n\nHis experience in multiple defensive systems should accelerate his learning curve in adapting to NFL schemes. With continued refinement of his technique, particularly in maintaining leverage and improving his ball skills, Igbinosun has the tools to develop into a reliable starting cornerback.\n\nGiven his athletic profile and collegiate production, Igbinosun profiles as a potential Day 2 selection in the NFL Draft. Teams running predominantly zone schemes may value him higher on their draft boards, but his physical traits give him the potential to excel in various defensive systems as he develops.\nWRITTEN BY:\nK.C. MARTINEZ (BIG TEN)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Davison Igbinosun is a physical force on the outside in coverage and run defense, and one of the most improved defensive backs in the nation.\n\nHe still brings the competitive nature to the position, but he's cleaned up the penalties and turned into a shutdown corner. He takes pride in the run game and is as sure a tackler as they come.\n\nHe's a former 4—star recruit and 4—star transfer from Ole Miss and enters the 2025 season with 141 career tackles (90 solo),19 pass break—ups, and two interceptions. One of the most experienced defenders in the Buckeye secondary, Igbinosun is setting the proper example and executing his game at a high level with physicality in every phase."
+        },
+        {
+          "title": "Positives",
+          "text": "— Igbinosun excels in press—man alignment where he can use his physicality to throw off timing and frustrate receivers. His compete level is extremely high.\n\n— He does a great job of getting off blocks while maintaining proper leverage to force ball carriers inside. Then, he finishes plays with good tackling technique.\n\n— Uses well—timed lateral bursts to stay in phase with receivers looking to stack vertically and has recovery speed downfield to maintain connectivity.\n\n— He identifies route concepts and quick screens rapidly and triggers downhill with a purpose. His football IQ for passing off routes and staying in phase is noticeable.\n\n— He's improved how quickly he gets his head around to locate the football when it's in the air. Preventing panic mode and allowing him to use his length better at the catch point."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Igbinosun's feel for off—coverage is inconsistent. He opens his hips too early, allowing receivers an easy path to manipulation. Staying square and patient would help anticipate routes and could see his ball production increase.\n\n— His backpedal deceleration transition is segmented and jarring. Making it a smoother transition downhill will put him in better position to make tackles.\n\n— While he's cleaned up the penalties more this season, he's a grabby corner who likes to make contact through the route. Continuing to build on relocating hands and looking for the football will keep the flags away."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.5,
+    "grade_indicator": null,
+    "overall_rank": 59,
+    "position_rank": null,
+    "pro_comparison": "Charvarius Ward",
+    "projected_round": "2nd Round"
+  },
+  "injury_history": []
+}

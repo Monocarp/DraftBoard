@@ -1,0 +1,456 @@
+{
+  "name": "Malachi Fields",
+  "slug": "malachi-fields",
+  "overview": {
+    "POS": "WR",
+    "College": "Notre Dame",
+    "Height": "6' 4\"",
+    "Weight": "222",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": "3rd - 4th",
+    "Games": "TBD",
+    "Snaps": "TBD",
+    "24/7 Sports": "84",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.8 / 100",
+    "NFL.com": "6.34",
+    "Bleacher": "7.8",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "Notre Dame",
+  "height": "6' 4\"",
+  "weight": "222",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Sr",
+  "projected_round": "3rd - 4th",
+  "games": null,
+  "snaps": null,
+  "site_ratings": {
+    "24/7 Sports": "84",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.8 / 100",
+    "NFL.com": "6.34",
+    "Bleacher": "7.8",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "77.3",
+      "percentile": 0.263
+    },
+    "2024 Grade": {
+      "value": "74.2",
+      "percentile": 0.579
+    },
+    "2023 Grade": {
+      "value": "72.7",
+      "percentile": 0.737
+    },
+    "Receiving Grade": {
+      "value": "77.3",
+      "percentile": 0.211
+    },
+    "Yards/ Routes Run": {
+      "value": "2.2",
+      "percentile": 0.211
+    },
+    "Drop %": {
+      "value": "2.7",
+      "percentile": 0.632
+    },
+    "Contested Catch": {
+      "value": "47.6",
+      "percentile": 0.368
+    },
+    "Grade vs Man": {
+      "value": "68.4",
+      "percentile": 0.211
+    },
+    "YAC/Reception": {
+      "value": "5.3",
+      "percentile": 0.5
+    },
+    "Missed Tkls Forced": {
+      "value": "6",
+      "percentile": 0.105
+    },
+    "ADOT": {
+      "value": "16.4",
+      "percentile": 1.0
+    },
+    "Deep Yards": {
+      "value": "291",
+      "percentile": 0.684
+    },
+    "Touchdowns": {
+      "value": "5",
+      "percentile": 0.158
+    },
+    "Elusiveness": {
+      "value": null,
+      "percentile": null
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 61.625,
+      "positional_rank": "8.8"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 98.0,
+      "positional_rank": "17"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 49.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 26.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 32.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 30.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 80.0,
+      "positional_rank": "16"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 133.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 45.0,
+      "positional_rank": "8"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 29.8,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 32.0,
+    "Bleacher": 26.0,
+    "Walter": 36.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "Michael Pittman Jr",
+    "Miller": "TBD",
+    "DraftBuzz": "Cedric TILLMAN",
+    "Bleacher": "Brandon Marshall",
+    "WF": "TBD",
+    "NFL.com": "Michael Pittman Jr"
+  },
+  "strengths": "• Elite Size, Strength, High Point Ability\n• Able to Leap, Adjust, Extend\n• Dominant Blocker\n• Size Makes Him Hard To Bring Down\n• Works Outside His Frame Well",
+  "weaknesses": "• Lacks Explosiveness, High End Speed\n• Delayed Release Vs Press\n• Lacks Foot Quickness to Separate\n• Very Basic Route running",
+  "accolades": null,
+  "player_summary": "Fields is a big body receiver who brings elite size and strength as well as an innate high point abiltiy to leap, adjust, and bring the ball in with very strong hands. His large frame and history of circus grabs will make him  a valuable safety blanket for QBs. He lacks the burst, speed, and route running ability to create consistent seperation however. His size does still allow him to be a threat after the catch becasue of the difficulty in bringing him down. He contributes meaningfully in the run game as a blocker, and was well-ultiized in the Notre Dame offense in that capacity. Most commentary indicates his prolific success in contested catch scenarios, but PFF grades indicate otherwise. May be worth more investigation. Overall, this is a late day two, early day three pick that can be a solid WR3 with time.",
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 99.7,
+    "Hands": 0.86,
+    "Short Receiving": 0.79,
+    "Med Routes": 0.86,
+    "Deep Threat": 0.86,
+    "Blocking": 0.69
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 30,
+      "career": 110
+    },
+    "Wide": {
+      "2025": 274,
+      "career": 1086
+    }
+  },
+  "skills_traits": {
+    "Character/Mentality": {
+      "positives": null,
+      "negatives": "Run Heavy Offense limited exp (NFL)"
+    },
+    "Receiving Skills": {
+      "positives": "Dominant Win rate on contested catches during career (NFL)\nSudden, sticky hands outside of his frame (NFL)\nAble to leap, adjust, and extend to make circus catches (NFL)\nJump timing, bully at the catch point, strong hands (NFLSE)",
+      "negatives": null
+    },
+    "Technique": {
+      "positives": "Defenders struggle to get him down quickly after the catch (NFL)",
+      "negatives": "Route running insufficient to shake clingy coverage (NFL)\nLacks Foot quickness to add yards after the catch (NFL)\nNot a dynamic route runner (BR)"
+    },
+    "Physical Traits": {
+      "positives": "Elite Size, Strength, High-Point talent(NFL)",
+      "negatives": "Delayed release vs press (NFL)\nSpeed is more build up (NFL)\nLacks Explosiveness (BR)"
+    },
+    "Blocking/Other": {
+      "positives": "Ability to dominate in run blocking (NFL)",
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Boundary “X” receiver who uses elite size and strength to bully defensive backs. Notre Dame’s run-heavy approach and quarterback play slowed Fields’ production somewhat but his tape was filled with impressive moments. He’s best suited for an offense that allows him to get from Point A to Point B while using his frame/ball skills to dominate the work space and win in the air. He can be a slow starter versus press and lives on contested targets, but he moves the chains on tight-window throws and consistently tilts 50/50 balls in his direction outside the numbers. Fields might never be a star, but his traits, playing style and ball skills should make him a productive WR2 in time."
+        },
+        {
+          "title": "Strengths",
+          "text": "Elite blend of size, strength and high-point talent. | Once he gets top position, it’s too late for the defender. | Dominant win rate on contested catches during career. | Displayed better vertical push on comeback routes in 2025. | Catches with sudden, sticky hands outside his frame. | Able to leap, adjust and extend to make circus catches. | Defenders struggle to get him down quickly after the catch. | Has the ability to connect and dominate as a run blocker."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Delayed release creates early traffic against press. | Speed is more build-up than run-by. | Unable to shake clingy coverage with route running. | Route tree will come with fewer branches. | Lacks foot quickness to add yards after short throws. | Below-average scrambling to uncover on extended plays."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Malachi Fields has all of the physical traits, from height and weight to speed and quickness, to be a dominant X-receiver in the NFL."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nMalachi Fields played quarterback and cornerback at Monticello High School in Charlottesville before staying close to home at Virginia, where he converted to wide receiver. After earning All-ACC honors at Virginia, he transferred to Notre Dame for his final collegiate season. His development path includes overcoming a foot injury in 2022 that limited him to just one game, followed by back-to-back seasons with over 800 receiving yards for the Cavaliers.\n\nAt Virginia, Fields established himself as a reliable target despite inconsistent quarterback play, recording nearly identical production in 2023 and 2024 (56.5 catches, 809.5 yards, 5 TDs each season). His growth at the position earned him captain status in his final year with the Cavaliers. Fields brings valuable experience to Notre Dame's receiving corps, where he's expected to serve as an immediate starter and primary target in the boundary position.\n\nThe move to South Bend gives Fields a chance to showcase his abilities on a bigger stage with better surrounding talent. With productive seasons at Virginia despite quarterback instability, his potential in a more established offense makes him an intriguing NFL prospect.\n\nThe big-bodied boundary target brings intriguing potential to the NFL level, though questions remain about his overall ceiling. In the intermediate area, Fields wins with physicality and body positioning rather than explosive separation, displaying an advanced understanding of leveraging his size advantage. While his contested catch ability stands out on tape, particularly in tight windows and red zone situations, his average acceleration and top-end speed will limit his effectiveness against NFL corners who can match his physicality.\n\n\nHis background as a quarterback shows up routinely in how he attacks zone coverage and adjusts routes based on defensive leverage. That football I.Q. creates opportunities where pure athleticism might fall short. The transition to Notre Dame will be telling - if he can maintain production against elevated competition while refining his release package against press coverage, his draft stock will benefit significantly. The concerning elements remain his blocking inconsistency and tendency to round off routes, technical issues that could be exposed more frequently against pro level competition.\n\n\nWhat's most fascinating about Fields is the contrast between his dominant physical presence and the technical refinement still needed in his game. When the ball is in the air, he plays like a veteran - when working to get open or sustain blocks, he occasionally reverts to relying on size rather than technique. His ceiling in the NFL depends largely on whether he can develop the complete package during his final collegiate season."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Malachi Fields from Notre Dame... body beautiful... huge... muscle tone... thick... vice grip hands... red zone... attack the football... compete for it... tough matchup... testing important... 13th highest rated receiver... late day two... early day three... third or fourth round... power forward in traffic.\n\nMalachi Fields... Notre Dame... highlight real grab after highlight real grab... averaged 17.5 a catch... career high... ability at six four... 215, 218, 220 pounds... weapon... go get the football... consistent... reliable... put it all together... great catches... wow catches... snatching a ball... phenomenal... day two discussion... played his way into... day two... round three, round four... at worst... best single play... week of practice... Senior Bowl... 55 yards down the field... adjusted... beautifully corralled... LTP... zero drops this past year... great hands... former Virginia standout... first early to mid second round discussion... big guys... thick... 6 4 218, 220."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Malachi Fields is a talented playmaker who fits the profile of a prototypical X—receiver.\n\nThe combination of size, strength, and athleticism makes him a difficult receiver to defend.\n\nFields spent four seasons in Virginia, showcasing his consistency as a pass—catcher. He transferred to Notre Dame last offseason. He is a former 3—star recruit in the 2021 class."
+        },
+        {
+          "title": "Positives",
+          "text": "— Fields has outstanding leaping ability and body control to win contested catches. He dominates defenders at the catch point with aggression and fully extends his frame.\n\n— He offers more fluidity and agility than meets the eye. Fields can take short passes and gain yards after the catch. He has quick feet and uses a tight spin maneuver to evade incoming defenders.\n\n— His ball skills are incredible; if the ball enters his area code, he brings it in. This makes him a difficult cover in the red zone on fade and back shoulder fade routes.\n\n— Plus—level run blocker who uses his frame and grip strength to maintain control of the defender.\n\n— He settles into the soft spots in the zone well. As an outside receiver, Fields works into the hole versus cover 2. With his size, he takes advantage of the void on the sideline for chunk plays."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Fields is not a dynamic route runner and can struggle to uncover from man coverage. this emphasizes the importance of dominating the catch point.\n\n— he Lacks explosiveness and top—end speed to threaten and pull away from defenders vertically down the field."
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.34,
+    "prospect_grade_indicator": "Will Eventually Be Plus Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Michael Pittman Jr",
+    "eligibility": "Senior",
+    "nfl_rank": 45,
+    "nfl_pos_rank": 8
+  },
+  "bleacher_profile": {
+    "grade": 7.8,
+    "grade_indicator": null,
+    "overall_rank": 26,
+    "position_rank": null,
+    "pro_comparison": "Brandon Marshall",
+    "projected_round": "2nd Round"
+  },
+  "injury_history": []
+}

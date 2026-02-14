@@ -1,0 +1,406 @@
+{
+  "name": "Jack Endries",
+  "slug": "jack-endries",
+  "overview": {
+    "POS": "TE",
+    "College": "Texas",
+    "Height": "6' 4\"",
+    "Weight": "236",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": null,
+    "Games": "39",
+    "Snaps": "2237",
+    "24/7 Sports": "83",
+    "ESPN": "72",
+    "Draft Buzz": "84.3 / 100",
+    "NFL.com": "TBD",
+    "BR": "7.5",
+    "Gridiron": "TBD"
+  },
+  "position": "TE",
+  "college": "Texas",
+  "height": "6' 4\"",
+  "weight": "236",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Jr",
+  "projected_round": null,
+  "games": 39,
+  "snaps": 2237,
+  "site_ratings": {
+    "24/7 Sports": "83",
+    "ESPN": "72",
+    "Draft Buzz": "84.3 / 100",
+    "NFL.com": "TBD",
+    "BR": "7.5",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "69.1",
+      "percentile": 0.5
+    },
+    "2024 Grade": {
+      "value": "77",
+      "percentile": 0.7
+    },
+    "2023 Grade": {
+      "value": "57.4",
+      "percentile": 0.333
+    },
+    "Receiving Grade": {
+      "value": "65",
+      "percentile": 0.3
+    },
+    "Drop %": {
+      "value": "0",
+      "percentile": 0.95
+    },
+    "Cont. Catch Ratio": {
+      "value": "60",
+      "percentile": 0.7
+    },
+    "Yards Per Route Run": {
+      "value": "1.06",
+      "percentile": 0.0
+    },
+    "YAC Per Reception": {
+      "value": "4.9",
+      "percentile": 0.3
+    },
+    "Missed Tkles Forced": {
+      "value": "2",
+      "percentile": 0.2
+    },
+    "Pass Block Grade": {
+      "value": "64.4",
+      "percentile": 0.3
+    },
+    "Run Block Grade": {
+      "value": "68.2",
+      "percentile": 0.9
+    },
+    "Touchdowns": {
+      "value": "3",
+      "percentile": 0.4
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 88.66666666666667,
+      "positional_rank": "5.4"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 71.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 100.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 55.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 109.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 105.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "3RD",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Elijah ARROYO",
+    "Bleacher": "Dalton Schultz",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 118.6,
+    "Hands": 0.98,
+    "Short Receiving": 0.83,
+    "Intermediate Routes": 0.91,
+    "Deep Threat": 0.88,
+    "Blocking": 0.71
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot Snaps": {
+      "2025": 106,
+      "career": null
+    },
+    "Inline Snaps": {
+      "2025": 270,
+      "career": null
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nJack Endries walked onto Cal's campus as an unheralded three-star recruit from Monte Vista High School, carrying 17 scholarship offers but choosing to bet on himself at Berkeley. The Danville native turned heads early, transforming from walk-on to starter as a redshirt freshman in 2023 when he earned multiple Freshman All-American honors while leading the nation's tight ends with 859 snaps. His rise culminated in becoming Cal's leading receiver as a redshirt sophomore, hauling in 56 catches for 623 yards in his final season with the Golden Bears.\n\nThe departure from Cal to Texas tells the story of a player who outgrew his original destination. After catching 91 passes for 1,030 yards across two productive seasons in Berkeley, Endries entered the transfer portal following Cal's spring showcase and quickly landed with Steve Sarkisian's Longhorns. His college journey reads like a recruiting oversight corrected - a player whose verified 4.68 forty-yard dash, 36.2-inch vertical, and three-sport background at Monte Vista deserved more attention than his initial 215-pound frame suggested. The move to Austin represents both an opportunity to showcase his talents in a premier offensive system and a chance to prove he belongs among the elite tight ends in college football.\n\nEndries brings impressive production metrics to Texas, having accumulated over 1,000 receiving yards in just two seasons of major contributions. His 2024 campaign featured career highlights including a 57-yard touchdown against Miami and back-to-back 100-yard performances against Pittsburgh and NC State. The Burlsworth Trophy nominee has consistently delivered when targeted, improving his drop rate from 10.3 percent as a freshman to an outstanding 1.3 percent in 2024.\n\nHis film shows a fundamentally sound receiver who understands how to get open but lacks the physical dominance that defines elite tight end prospects. Endries excels in the short and intermediate passing game where his route precision and reliable hands create immediate value, yet his struggles as a run blocker limit his three-down potential and force coordinators to telegraph their intentions when he's on the field. His versatility across multiple alignments provides schematic flexibility, though his inability to consistently move defenders in the ground game restricts how creatively he can be deployed.\n\n\n\nWhat separates Endries from typical move tight ends is his football instincts and technical refinement rather than raw athleticism. He finds soft spots in coverage with veteran-like instincts and has eliminated the concentration drops that plagued his freshman season, but his modest frame and average speed ceiling prevent him from becoming a true mismatch weapon against NFL athletes.\n\n\n\nEndries represents the modern evolution of the position where receiving ability often outweighs traditional tight end responsibilities, but his blocking limitations create roster construction challenges that could affect his draft stock. His consistent production and technical soundness suggest he'll find a role somewhere in the middle rounds, yet the inability to contribute meaningfully in run support may cap his upside as anything more than a situational contributor."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Jack Endries has hands as sure as they come from the tight end position.\n\nHis role in Texas's offense prepares him for whatever will be asked at the next level. Arch Manning's safety net is always looking for different ways to help his team win and displays a great work ethic.\n\nHe's a former 3—star recruit before committing to play for the California Bears. After two seasons, he entered the transfer portal as a 4—star and committed to Texas for his junior season. Steve Sarkisian—led programs have produced a ton of NFL prospects, and Endries is next in line."
+        },
+        {
+          "title": "Positives",
+          "text": "— Multiple alignment skill set. He's at his best as a detached tight end with free releases.\n\n— Does his best work in the run game as a motion blocker and puller to create better angles.\n\n— Endries is a vertical route salesman, who stresses defenses down the seam.\n\n— Has a great catch to attack mentality to get upfield quickly.\n\n— Showcases top end ball skills and hands to make plays at all levels of the field."
+        },
+        {
+          "title": "Negatives",
+          "text": "— In—line blocking capabilities with functional strength and anchor to give the block and play it's best chance. Straining blocks are important for run game success.\n\n— Route stem manipulation against man coverage to create space. Using leverage to turn hips or make defenders hesitate will open him up more.\n\n— Endries could improve his impact after the catch with better contact balance or increasing his foot speed to make tacklers miss."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.5,
+    "grade_indicator": null,
+    "overall_rank": 55,
+    "position_rank": null,
+    "pro_comparison": "Dalton Schultz",
+    "projected_round": "2nd Round"
+  },
+  "injury_history": []
+}

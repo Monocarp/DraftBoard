@@ -1,0 +1,474 @@
+{
+  "name": "Olaivavega Ioane",
+  "slug": "olaivavega-ioane",
+  "overview": {
+    "POS": "IOL",
+    "College": "Penn State",
+    "Height": "6' 4\"",
+    "Weight": "328",
+    "Age": "TBD",
+    "DOB": "0",
+    "Year": "RS Jr",
+    "Prj. Rd": "1st Round",
+    "Games": "43",
+    "Snaps": "2304",
+    "24/7 Sports": "89",
+    "ESPN": "88",
+    "Draft Buzz": "87.2 / 100",
+    "NFL.com": "6.4",
+    "BR": "8",
+    "Gridiron": null
+  },
+  "position": "IOL",
+  "college": "Penn State",
+  "height": "6' 4\"",
+  "weight": "328",
+  "age": null,
+  "dob": "0",
+  "year": "RS Jr",
+  "projected_round": "1st Round",
+  "games": 43,
+  "snaps": 2304,
+  "site_ratings": {
+    "24/7 Sports": "89",
+    "ESPN": "88",
+    "Draft Buzz": "87.2 / 100",
+    "NFL.com": "6.4",
+    "BR": "8",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "79.4",
+      "percentile": 0.6
+    },
+    "2024 Grade": {
+      "value": "73.4",
+      "percentile": 0.5
+    },
+    "2023 Grade": {
+      "value": "66.5",
+      "percentile": 0.6
+    },
+    "Run Block Grade": {
+      "value": "77.9",
+      "percentile": 0.7
+    },
+    "Pass Block Grade": {
+      "value": "87.3",
+      "percentile": 0.8
+    },
+    "True Pass Set Grade": {
+      "value": "90.9",
+      "percentile": 1.0
+    },
+    "Pass Block Efficiency": {
+      "value": "99.3",
+      "percentile": 0.7
+    },
+    "Zone Grade": {
+      "value": "74.1",
+      "percentile": 0.4
+    },
+    "Gap Grade": {
+      "value": "71.4",
+      "percentile": 1.0
+    },
+    "Sacks Allowed": {
+      "value": "0",
+      "percentile": 0.95
+    },
+    "Hits Allowed": {
+      "value": "0",
+      "percentile": 0.8
+    },
+    "Hurries Allowed": {
+      "value": "4",
+      "percentile": 0.5
+    },
+    "Pressures Allowed": {
+      "value": "4",
+      "percentile": 0.7
+    },
+    "Penalties": {
+      "value": "1",
+      "percentile": 0.8
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 22.545454545454547,
+      "positional_rank": "1.2857142857142858"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 22.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 33.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 13.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 15.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "0"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 20.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 21.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 44.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 34.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 11.0,
+      "positional_rank": "1"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 19.076923076923077,
+    "PFF": 22.0,
+    "ESPN": null,
+    "Brugler": 14.0,
+    "Kiper": 17.0,
+    "Miller": 19.0,
+    "Bleacher": 22.0,
+    "Walter": 22.0,
+    "TDN": 22.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 17.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - LATE",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "Cooper Beebe",
+    "Miller": "TBD",
+    "DraftBuzz": "Tyler BOOKER",
+    "Bleacher": "Larry Warford",
+    "WF": "TBD",
+    "NFL.com": "Cooper Beebe"
+  },
+  "strengths": "• Grip Strength, Jarring Punch\n• Impressive Core Power, Body Control, and Balance\n• Thich Limbs, Broad Frame, Great Build\n• Pass Pro Grading\n• No Hits/Sacks in 2025",
+  "weaknesses": "• Lacks Athleticism, Foot Quickness\n• Below Average Adjustments\n• Loses Track of Stunting Linemen",
+  "accolades": null,
+  "player_summary": "Ionae is the top interior Olineman coming into this draft. He bring the desired build and a rock solid floor especially in pass pro. With strong hands, combined with a natural use of hips to deliver power, he can create movement on the line as well as anchor effectively against bull rushes. He lacks the desired athleticism and his foot speed shows up against interior speed and a lack of ability to make needed adjustments. Mentally, theres some concern about his ability to read and react to stunting linemen. His lack of athleticism also shows up in his ability to deal with moving targets. Daniel Jeremiah is surprisingly high on him, calling him the best offensive lineman in the draft, but his upside seems limited by that athleticism. Nevertheless, seems like a day 1 starter with the potential to be a long time quality starter. Should also be noted he achieved very good PFF grades playing in the Big 10.",
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.9,
+    "Run Blocking Grade": 0.82
+  },
+  "projected_role": "Starting LG",
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 4,
+      "career": 8
+    },
+    "LG": {
+      "2025": 565,
+      "career": 1868
+    },
+    "C": {
+      "2025": 0,
+      "career": 17
+    },
+    "RG": {
+      "2025": 1,
+      "career": 285
+    },
+    "RT": {
+      "2025": 5,
+      "career": 140
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": "Loses track of stunting linemen (NFL)"
+    },
+    "Upper Body": {
+      "positives": "Good posture, firm punch (NFL)\nCreates leverage W/ upward strikes (NFL)\nUses grip strength to stay tight (NFL)",
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": "Can anchor against power (NFL)\nImpressive core power, body control, contact balance (NFL)\nGenerates jarrign power with hips (BR)",
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": "Excellent contact balance and tech (NFL)",
+      "negatives": "Lacks athelticism and foot quickness to work on the move (NFL)\nBelow average lateral quicks/range (NFL)\nBelow average adjustments to moving targets (NFL)"
+    },
+    "Physical Ability": {
+      "positives": "Thick limbs, broad frame, plus core strength (NFL)",
+      "negatives": null
+    }
+  },
+  "media_links": [
+    {
+      "description": "Career Highlights",
+      "source": "YT - Prospects",
+      "url": "https://www.youtube.com/watch?v=vpTZIs0F80k"
+    },
+    {
+      "description": "Scouting Report",
+      "source": "YT - The Scrambling Armchair",
+      "url": "https://www.youtube.com/watch?v=Trb0Uh6u3JQ"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Prototypical guard for physical run schemes with thick limbs, a broad frame and plus core strength. Ioane plays with excellent contact balance and technique on both base blocks and double teams. He uses his hips and hands for leverage and displacement when drive blocking. However, he lacks athleticism and foot quickness to operate effectively as a move blocker. He pass sets with good posture and a firm punch and can anchor against power. Though quicker at a lighter weight in 2025, he will struggle with twitchy interior defenders who cross his face in the run game and attack his edges in protection. Despite scheme dependence, Ioane projects as an early starter with a high floor."
+        },
+        {
+          "title": "Strengths",
+          "text": "Prototypical guard build, with thick limbs and a broad frame. | Plays with impressive core power, body control and contact balance. | Creates leverage with upward hand strikes and rolls hips under his hands. | Uses grip strength and chopping feet to stay tight as a drive blocker. | Size and power create momentum to wash out angle blocks. | Punches with tight hands and good pop. | Snaps off twisters with good force. | Firm inside hand with ability to set quick anchors against power."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Below-average lateral quickness and range as move blocker. | Loses track of stunting linemen crossing his face. | Lacks fluidity getting from block to block on combos. | Below-average adjustments to moving targets. | Gets beaten to the punch by twitchy interior rushers. | Lacks reactive quickness to make sudden recoveries."
+        },
+        {
+          "title": "Sources Tell Us",
+          "text": "“He worked hard to eliminate some extra weight and re-shape his body in the offseason and I think he played more consistently because of it. – AFC area scout"
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nOlaivavega \"Vega\" Ioane never touched a football until his sophomore year at Graham-Kapowsin High School, and even that came with a catch: his parents, who prioritized academics over athletics, had no idea their son was suiting up on Friday nights until they noticed he kept missing dinner. Once that secret was out, football became a permanent fixture in the Ioane household.\n\nWhat followed was a meteoric rise through the Washington prep scene. Ioane anchored an offensive line at Graham-Kapowsin that helped the Eagles run roughshod over Class 4A competition, culminating in a perfect 15-0 senior campaign and a state championship in 2021. The team averaged a staggering 456.3 yards and 44.1 points per game that season, with Ioane earning MaxPreps Second Team All-American recognition. Despite the accolades, major recruiting services remained unconvinced, pegging him as a consensus three-star prospect across ESPN (79 rating), 247Sports (0.89 grade), and Rivals (5.6 grade). He initially committed to Washington, but when Jimmy Lake's staff was dismissed, Ioane pivoted to Penn State just sixty minutes before signing day in February 2022.\n\nThe Nittany Lions proved to be the perfect landing spot. After redshirting his true freshman year in 2022, Ioane earned five starts as a redshirt freshman in 2023 and won the coaching staff's Offensive Player of the Week award against Iowa. He seized the starting left guard job full-time in 2024, starting all 16 games for a Penn State squad that reached the College Football Playoff semifinals, earning Second-Team All-Big Ten honors from both coaches and media. His 2025 campaign was nothing short of dominant: he surrendered just four pressures across 613 pass blocking snaps, allowing zero sacks and zero hits while earning First-Team All-Big Ten and First-Team All-American recognition. Across 43 career games and 2,304 offensive snaps, Ioane has been the heartbeat of an offensive line that routinely produced 100-yard rushers and explosive plays, including a Big Ten Championship Game performance against Oregon where Penn State gashed the nation's stingiest run defense for 292 yards at 8.3 yards per carry.\n\nIoane is a pass-protection-first guard in a league that increasingly values exactly that skill set. His 2025 tape is a clinic in pocket integrity: zero sacks, zero hits, and a quarterback who could set up shop back there all day long. The anchor is NFL-ready right now. The grip strength is NFL-ready right now. The processing speed against stunts and games is NFL-ready right now. For teams building around a quarterback who needs time, Ioane solves a problem on Day One.\n\n\n\nThe run game is where you see some limitations. He wins plenty of reps with pure power at the point of attack, moving defensive tackles when he gets his hands on them and creating displacement on double teams. But ask him to reach a shade nose on an outside zone concept or climb to a flowing linebacker with any urgency, and you see a 330-pound man fighting his athletic ceiling. Gap schemes and inside zone concepts that let him work downhill and use his mass are where he thrives. Wide zone systems that demand lateral agility and movement skills will expose his limitations. This is a guard who belongs in a phone booth, not racing to the perimeter.\n\n\n\nThe projection here is a quality starter in the right system with Pro Bowl upside if the technical details sharpen. His tendency to rise out of his stance and his inconsistent hand timing are coaching points that quality position coaches can address. The experience at both guard spots adds flexibility, and his durability across 43 games and 2,304 snaps suggests a player who can handle NFL workloads. For gap-heavy and power-based offenses that want to protect the passer first and run between the tackles second, Ioane represents one of the safest interior line investments in this draft class."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Olaivavega \"Vega\" Ioane is the top pure guard in the class thanks to his ability to halt and generate movement on command. Ioane has been a notably steady presence on an otherwise inconsistent Nittany Lions offense over the first six weeks of the 2025 season.\n\nIoane is a 6'4\", 328—pound prospect, who entered the Penn State program as a 3—star recruit in the 2022 class.\n\nIoane started 16 games at left guard in 2024 for Penn State, earning All—Big Ten second—team. He started five games during the 2023 season as a redshirt freshman."
+        },
+        {
+          "title": "Positives",
+          "text": "— Stout, densely—built body type with heavy hands and very good square power.\n\n— Jarring power in hips and hands to deliver jolt on contact and excavate smaller defenders on the move.\n\n— Excellent grip strength to strike through pass—rush moves, latch on target and end reps on command.\n\n— Plays on the plus side of the line of scrimmage in the run game by covering up targets and creating displacement to form lanes on combinations, angle—drive and base blocks.\n\n— Does a nice job using shoe and short sets to play with inside—out positional leverage in pass protection to harden his inside shoulder and force rushers to work down the middle or high—side."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Solid rather than a very good or elite athlete.\n\n— Rigid approach as a pass protector results in adequate fluidity and recovery skills once rushers get on his edge."
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.4,
+    "prospect_grade_indicator": "Will Become Good Starter Within Two Years",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Cooper Beebe",
+    "eligibility": "Junior (RS)",
+    "nfl_rank": 11,
+    "nfl_pos_rank": 1
+  },
+  "bleacher_profile": {
+    "grade": 8.0,
+    "grade_indicator": null,
+    "overall_rank": 20,
+    "position_rank": null,
+    "pro_comparison": "Larry Warford",
+    "projected_round": null
+  },
+  "injury_history": []
+}

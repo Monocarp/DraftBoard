@@ -1,0 +1,430 @@
+{
+  "name": "Michael Taaffe",
+  "slug": "michael-taaffe",
+  "overview": {
+    "POS": "SAF",
+    "College": "Texas",
+    "Height": "6' 0\"",
+    "Weight": "189",
+    "Age": "22.9",
+    "DOB": "00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "48",
+    "Snaps": "2019",
+    "24/7 Sports": null,
+    "ESPN": "TBD",
+    "Draft Buzz": "85.5 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.8",
+    "Gridiron": "TBD"
+  },
+  "position": "SAF",
+  "college": "Texas",
+  "height": "6' 0\"",
+  "weight": "189",
+  "age": 22.9,
+  "dob": "00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 48,
+  "snaps": 2019,
+  "site_ratings": {
+    "24/7 Sports": null,
+    "ESPN": "TBD",
+    "Draft Buzz": "85.5 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.8",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "88.1",
+      "percentile": 0.818
+    },
+    "24 Grade": {
+      "value": "84.4",
+      "percentile": 0.8
+    },
+    "23 Grade": {
+      "value": "67.9",
+      "percentile": 0.3
+    },
+    "Coverage Grade": {
+      "value": "89.4",
+      "percentile": 0.727
+    },
+    "Interceptions": {
+      "value": "2",
+      "percentile": 0.545
+    },
+    "Forced Inc. Rate": {
+      "value": "0",
+      "percentile": 0.0
+    },
+    "Passer Rating Alwd": {
+      "value": "59.7",
+      "percentile": 0.636
+    },
+    "TD Allowed/Ints": {
+      "value": "1 / 2",
+      "percentile": null
+    },
+    "Coverage Stops": {
+      "value": "11",
+      "percentile": 0.818
+    },
+    "Run Def Grade": {
+      "value": "72",
+      "percentile": 0.364
+    },
+    "Run Stops": {
+      "value": "10",
+      "percentile": 0.273
+    },
+    "Tackling Grade": {
+      "value": "80.5",
+      "percentile": 0.636
+    },
+    "Tackles": {
+      "value": "47",
+      "percentile": 0.364
+    },
+    "Assisted Tackles": {
+      "value": "21",
+      "percentile": 0.636
+    },
+    "Missed Tackles": {
+      "value": "7",
+      "percentile": 0.818
+    },
+    "Missed Tackle Rate": {
+      "value": "9.3",
+      "percentile": 0.727
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 97.8,
+      "positional_rank": "10"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 119.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 134.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 100.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 59.0,
+      "positional_rank": "30"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 77.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - MID",
+    "Bleacher": "4th Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Daxton Hill",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Targeted": 52.9,
+    "Tackling": 0.0,
+    "Run Defense": 0.79,
+    "Coverage Grade": 1.0,
+    "Zone Coverage": 0.93,
+    "Man/Press": 1.0
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 88,
+      "career": 88
+    },
+    "Box": {
+      "2025": 132,
+      "career": 132
+    },
+    "Corner": {
+      "2025": 5,
+      "career": 5
+    },
+    "Deep": {
+      "2025": 370,
+      "career": 370
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nTaaffe transformed from a local Westlake High standout who turned down Ivy League scholarships to bet on himself at Texas into an AP second-team All-American by his senior season. His journey began with humble origins, not even having his name recognized in hallways as a freshman, before exploding onto the scene as a key defensive catalyst during the Longhorns' back-to-back College Football Playoff appearances.\n\nTaaffe's evolution was methodical - earning a scholarship in December 2022 after seeing action in 13 games his redshirt freshman season, then becoming an honorable mention All-Big 12 performer as a sophomore with interceptions in three consecutive games against Houston, BYU and Kansas State. His senior campaign cemented his NFL prospects with 78 tackles, six TFLs, two sacks and two interceptions while anchoring a Longhorns secondary that tied for the national lead allowing just 5.7 yards per passing attempt. The Burlsworth Trophy semifinalist (nation's top former walk-on) ultimately went from special teams contributor to cornerstone of Texas' conference championship defense.\n\nTaaffe built his reputation through consistent production in championship settings - earning defensive MVP honors in back-to-back Texas 6A state title games at Westlake (including two interceptions against Southlake Carroll in 2020), then recording 4 tackles and 2.0 TFLs in the 2024 SEC Championship against Georgia. His statistical progression culminated with career highs in tackles (78), TFLs (6), sacks (2), and pass breakups (10) during his senior season. In the 2025 CFP quarterfinal against Arizona State, he posted his single-game career high of 10 tackles (6 solo) with 2 pass breakups, though one tackle sparked controversy when officials declined to call targeting despite Taaffe appearing to lead with his helmet against a defenseless receiver.\n\nTaaffe brings second-round value through his elite pattern-matching instincts and proven special teams production. His route recognition and anticipatory coverage skills will translate immediately to sub-package roles in passing situations, where his diagnostic abilities shine in complex zone shells. Though his controversial hit in the Arizona State game raised eyebrows about tackling technique, his overall body of work shows a cerebral defender whose football intelligence and communication skills consistently put him in advantageous positions.\n\n\n\nThe risk-reward calculation centers on whether a team can develop his physical limitations while refining his tackling fundamentals. His coverage instincts warrant day-two capital, with positional versatility allowing defensive coordinators to deploy him creatively against tight ends and slot receivers. Teams will value his pre-snap adjustments and route recognition - skills that compensate for modest athletic tools and project well to the increased complexity of NFL passing attacks.\n\n\n\nDay-one expectations should include immediate contributions as a four-phase special teamer and sub-package defender in obvious passing situations. By year three, Taaffe could develop into a starting-caliber defensive back who leverages exceptional play recognition and communication skills to exceed his athletic profile. His ceiling as a second-round investment is justified by proven production against elite competition, natural ball skills, and the capacity to outthink opponents on the back end - a rare trait that elevates his NFL projection despite physical limitations."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "One of the best stories in College Football, Michael Taaffe turned pure determination, work ethic, and execution into an impressive collegiate and a soon—to—be NFL career. A jack—of—all—trades for a defense, he consistently executes at a high level and is a great communicator on the field. Lining teammates up and passing off routes became second nature for him, and his smooth movements take him where he needs to be.\n\nThe former walk—on at Texas earned 2024 Associated Press All—America Second Team honors while compiling 222 tackles (119 solo), three sacks, nine and a half tackles for loss, seven interceptions, and 14 passes defensed throughout his Longhorn career. He brings a core special—teams presence to an NFL team who can quickly work into a defensive rotation.\n\n— Taaffe is an excellent communicator in the defense pre— and post—snap. He lines up his teammates, passes off routes, and handles motions with ease. He's a leader on and off the field, and it shows."
+        },
+        {
+          "title": "Positives",
+          "text": "— Taaffe is an excellent communicator in the defense pre— and post—snap. He lines up his teammates, passes off routes, and handles motions with ease. He's a leader on and off the field, and it shows.\n\n— Smooth backpedal and change of direction athletic ability shows up every snap with his quarterback mirroring and handling of defensive rotations. He's a well—studied player who excels at handling zone—matching concepts.\n\n— The 6'0\", 189—pound safety keeps his head on a swivel and navigates traffic underneath as a robber or nickel well while recognizing route concepts from a single—high or two—high alignment.\n\n— He possesses an excellent work ethic and will bring an added special teams floor with over 500 special teams snaps in his collegiate career. He's a glue guy."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Taaffe struggles to tackle one—on—one in space, and with his size, doesn't have the consistency to drive through powerful runners. He overruns pursuit angles in the box, which creates easy—to—break arm tackles.\n\n— He lacks recovery speed when beaten downfield and in man coverage; that translates to his range as a post safety and trigger downhill.\n\n— Not an overly explosive mover, he needs to rely on anticipation and the quarterback's eyes to take him to the ball, and his instincts are still a work in progress.\n\n— While he recognizes run concepts well and isn't afraid to mix it up in the box, he lacks the physicality to contribute in the run game. He gets swallowed up by blocks and falls to the ground too often."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.8,
+    "grade_indicator": null,
+    "overall_rank": 134,
+    "position_rank": null,
+    "pro_comparison": "Daxton Hill",
+    "projected_round": "4th Round"
+  },
+  "injury_history": []
+}

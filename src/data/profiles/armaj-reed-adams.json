@@ -1,0 +1,422 @@
+{
+  "name": "Armaj Reed-Adams",
+  "slug": "armaj-reed-adams",
+  "overview": {
+    "POS": "IOL",
+    "College": "Texas A&M",
+    "Height": "6' 5\"",
+    "Weight": "325",
+    "Age": "TBD",
+    "DOB": "0",
+    "Year": "G",
+    "Prj. Rd": null,
+    "Games": "55",
+    "Snaps": "2416",
+    "24/7 Sports": "84",
+    "ESPN": "83",
+    "Draft Buzz": "83.0 / 100",
+    "NFL.com": "TBD",
+    "BR": "TBD",
+    "Gridiron": null
+  },
+  "position": "IOL",
+  "college": "Texas A&M",
+  "height": "6' 5\"",
+  "weight": "325",
+  "age": null,
+  "dob": "0",
+  "year": "G",
+  "projected_round": null,
+  "games": 55,
+  "snaps": 2416,
+  "site_ratings": {
+    "24/7 Sports": "84",
+    "ESPN": "83",
+    "Draft Buzz": "83.0 / 100",
+    "NFL.com": "TBD",
+    "BR": "TBD",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "69.1",
+      "percentile": 0.2
+    },
+    "2024 Grade": {
+      "value": "79.7",
+      "percentile": 0.8
+    },
+    "2023 Grade": {
+      "value": "61.7",
+      "percentile": 0.2
+    },
+    "Run Block Grade": {
+      "value": "72.7",
+      "percentile": 0.3
+    },
+    "Pass Block Grade": {
+      "value": "65.2",
+      "percentile": 0.0
+    },
+    "True Pass Set Grade": {
+      "value": "53.9",
+      "percentile": 0.0
+    },
+    "Pass Block Efficiency": {
+      "value": "97.9",
+      "percentile": 0.15
+    },
+    "Zone Grade": {
+      "value": "75.8",
+      "percentile": 0.5
+    },
+    "Gap Grade": {
+      "value": "63.7",
+      "percentile": 0.3
+    },
+    "Sacks Allowed": {
+      "value": "1",
+      "percentile": 0.5
+    },
+    "Hits Allowed": {
+      "value": "0",
+      "percentile": 0.8
+    },
+    "Hurries Allowed": {
+      "value": "13",
+      "percentile": 0.1
+    },
+    "Pressures Allowed": {
+      "value": "14",
+      "percentile": 0.2
+    },
+    "Penalties": {
+      "value": "9",
+      "percentile": 0.05
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 118.25,
+      "positional_rank": "6"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 139.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 49.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 150.0,
+      "positional_rank": "36"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 135.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "TBD"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Zak ZINTER",
+    "Bleacher": "TBD",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.72,
+    "Run Blocking Grade": 0.81
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 0,
+      "career": 4
+    },
+    "LG": {
+      "2025": 0,
+      "career": 456
+    },
+    "C": {
+      "2025": 0,
+      "career": 0
+    },
+    "RG": {
+      "2025": 680,
+      "career": 1423
+    },
+    "RT": {
+      "2025": 0,
+      "career": 879
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nAr'maj Reed-Adams, a late bloomer who struggled to attract Power Five attention coming out of high school, began his collegiate career as an overlooked three-star recruit at Kansas in 2020. The 6'5\", 330-pound mauler saw limited action as a freshman before gradually working his way into the Jayhawks' starting lineup, eventually starting 12 games in 2023 across multiple positions on the offensive line.\n\nReed-Adams' career took a major turn when he transferred to Texas A&M for the 2024 season, following a lifelong family connection to the school-his 6'2\" mother had once received a basketball scholarship offer from the Aggies. The move paid immediate dividends as Reed-Adams locked down the starting right guard position, playing 744 non-special teams snaps while surrendering just one sack across 361 pass-blocking opportunities. His dominating presence helped propel the Aggies to the nation's 26th-ranked rushing attack and second in the SEC, averaging 195.5 yards per game.\n\nAfter contemplating entering the 2025 NFL Draft-where projections had him going anywhere from the third to seventh round-Reed-Adams chose to return to College Station for his final year of eligibility. The decision granted him an opportunity to further refine his technique against elite SEC competition while serving as a team captain and cornerstone of an offensive line that returned all five starters from the previous campaign.\n\nReed-Adams enters the NFL as a powerful run-blocker whose heavy hands and drive strength immediately translate to the pro game. While his movement skills flash impressively for a 330-pounder, his technique falters when asked to make quick adjustments in space against smaller, more athletic defenders. The growth in his pass protection skills over two seasons at Texas A&amp;M demonstrates coachability, yet teams must weigh this development against persistent issues with hand placement and conditioning that could limit his effectiveness in pass-heavy offenses.\n\n\n\nThe film reveals a mauler who thrives in straight-ahead blocking schemes where he can fire out and overwhelm defenders with raw power. This same aggression becomes a double-edged sword when he overextends or narrows his base, leaving him vulnerable against crafty interior defenders with quick counters. His natural strength and mean streak will appeal to offenses built around downhill running concepts, while zone-heavy teams will hesitate given his inconsistent footwork when climbing to the second level.\n\n\n\nWhat makes Reed-Adams worth an early investment is the clear trajectory of his development. A player who transformed from overlooked recruit to dominant SEC lineman shows the mental toughness and work ethic teams covet. His multi-position experience provides valuable versatility, though he's best suited at guard where his limited lateral quickness won't be exposed. The raw tools are undeniable - a powerful anchor, violent hands, and natural strength that can't be taught - but unlocking his complete potential requires addressing technical inconsistencies that better interior defenders will exploit at the next level."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "injury_history": []
+}

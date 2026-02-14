@@ -1,0 +1,411 @@
+{
+  "name": "Max Klare",
+  "slug": "max-klare",
+  "overview": {
+    "POS": "TE",
+    "College": "Ohio State",
+    "Height": "6' 5\"",
+    "Weight": "243",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": null,
+    "Games": "31",
+    "Snaps": "1325",
+    "24/7 Sports": "87",
+    "ESPN": "86",
+    "Draft Buzz": "85.2 / 100",
+    "NFL.com": "TBD",
+    "BR": "7.5",
+    "Gridiron": "TBD"
+  },
+  "position": "TE",
+  "college": "Ohio State",
+  "height": "6' 5\"",
+  "weight": "243",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Jr",
+  "projected_round": null,
+  "games": 31,
+  "snaps": 1325,
+  "site_ratings": {
+    "24/7 Sports": "87",
+    "ESPN": "86",
+    "Draft Buzz": "85.2 / 100",
+    "NFL.com": "TBD",
+    "BR": "7.5",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "69.9",
+      "percentile": 0.6
+    },
+    "2024 Grade": {
+      "value": "78.8",
+      "percentile": 0.8
+    },
+    "2023 Grade": {
+      "value": "62.6",
+      "percentile": 0.667
+    },
+    "Receiving Grade": {
+      "value": "66.6",
+      "percentile": 0.4
+    },
+    "Drop %": {
+      "value": "4.4",
+      "percentile": 0.7
+    },
+    "Cont. Catch Ratio": {
+      "value": "66.7",
+      "percentile": 0.85
+    },
+    "Yards Per Route Run": {
+      "value": "1.49",
+      "percentile": 0.4
+    },
+    "YAC Per Reception": {
+      "value": "5.2",
+      "percentile": 0.4
+    },
+    "Missed Tkles Forced": {
+      "value": "5",
+      "percentile": 0.4
+    },
+    "Pass Block Grade": {
+      "value": "57.7",
+      "percentile": 0.0
+    },
+    "Run Block Grade": {
+      "value": "73.5",
+      "percentile": 1.0
+    },
+    "Touchdowns": {
+      "value": "2",
+      "percentile": 0.25
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 61.666666666666664,
+      "positional_rank": "3"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 70.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 41.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 54.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 42.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 79.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 70.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 65.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 79.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 92.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Colston LOVELAND",
+    "Bleacher": "Mark Andrews",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 100.3,
+    "Hands": 0.79,
+    "Short Receiving": 0.82,
+    "Intermediate Routes": 0.88,
+    "Deep Threat": 0.87,
+    "Blocking": 0.63
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot Snaps": {
+      "2025": 135,
+      "career": null
+    },
+    "Inline Snaps": {
+      "2025": 142,
+      "career": null
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nMax Klare's path to becoming one of the nation's premier tight end prospects wasn't exactly linear. The Cincinnati St. Xavier product began his collegiate journey at Purdue, where he quickly made waves as a dynamic pass-catcher. After establishing himself as the Boilermakers' leading receiver with 51 catches for 685 yards and four touchdowns in 2024, the 6'4\", 240-pounder made the jump to Ohio State, elevating both his draft stock and national profile.\n\nWhat makes Klare's development particularly intriguing is his athletic versatility. Before settling in at tight end, he was a multi-position talent at St. Xavier - playing quarterback, tight end, and even handling kicking duties. The former three-star recruit initially committed to Duke before changing course to Purdue, where he showed flashes of brilliance during an injury-shortened 2023 campaign (22 catches, 196 yards in five games) before his breakout 2024 season. An ankle injury served as a temporary setback, but Klare has consistently emerged stronger from adversity, developing into a legitimate receiving threat with untapped potential as a blocker.\n\nBorn July 8, 2003, Klare actually comes from baseball roots as well, with his left-handed power hitting drawing attention from coaches who believed he had MLB potential. This multi-sport background shows in his fluid movements and natural ball skills. His father Andy, a former Boston College nose guard, instilled the focused mentality that has helped Klare make the most of his opportunities at each level. With two years of eligibility remaining at Ohio State, Klare has positioned himself as potentially the top tight end in the 2026 draft class if he continues his upward trajectory.\n\nKlare is a tight end with natural receiving gifts and concerning blocking limitations that create an intriguing evaluation paradox. When running routes and catching passes, he displays the fluid athleticism and instinctive hands that offensive coordinators covet, particularly on intermediate routes where he consistently creates separation with subtle movements and understands how to shield defenders from the ball. Yet these receiving talents are currently undermined by significant deficiencies in the blocking phase, where his high pad level and inadequate hand placement leave him vulnerable against physical defenders.  \nKlare's transfer to Ohio State introduces both opportunity and risk to his development. While competing against elite talent daily should accelerate his technical growth, particularly as a blocker, the crowded skill position room may limit his statistical production compared to his featured role at Purdue. His background as a former quarterback manifests in his advanced route adjustments and field awareness, though this positional transition also explains his raw blocking technique. The ankle injury that derailed his 2023 season raises durability questions that must be answered through consistent availability during his time in Columbus.  \nLooking ahead to the next level, Klare's game translates best to spread offenses that can leverage his receiving abilities from multiple alignments while minimizing his blocking responsibilities early in his career. His ceiling hinges entirely on blocking development - without significant improvement there, he risks being pigeonholed as a situational passing-down specialist. With proper strength gains and technical refinement, however, his complete skill set could become a true three-down weapon. The best path forward involves gradually increasing his blocking responsibilities at Ohio State while continuing to refine the natural receiving talents that already make him dangerous in the passing game."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "big long fluid athlete... instinctive after the catch... fluid with the football... not a knockback blocker... good enough... long enough... hard guy to get around... create separation and time for running backs... day two... as high as late second round."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Max Klare is an explosive presence who uses route nuance and a great catch—to—attack mentality to create space for himself.\n\nThe Ohio State offense hasn't given him the platform to show what he can do, but the tape doesn't lie.\n\nKlare was a 3—star recruit when he committed to play collegiately for Purdue. Seldom—used before the 2024 campaign, he started all 12 games for the Boilermakers last season and led them in receiving with 51 receptions for 685 yards and four touchdowns. He was named third—team All—Big Ten by the league's coaches before transferring to Ohio State as a 4—star transfer."
+        },
+        {
+          "title": "Positives",
+          "text": "— Has a workmanlike mentality as a blocker who can help from multiple alignments.\n\n— Showcases route—stem nuance to read defenders' leverage and manipulate body position.\n\n— Explosive seam threat who gets on second level defenders in a hurry.\n\n— Once Klare catches the football, he gets upfield quickly and can reduce defenders angles.\n\n— Settling in zone to become available to the quarterback."
+        },
+        {
+          "title": "Negatives",
+          "text": "— In—line blocking, functional strength and hand placement to increase effectiveness.\n\n— Consistently uses his hands at the top of his route to not get caught by physical defenders.\n\n— Lining up blocks on the move to stay connected and free up running backs."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.5,
+    "grade_indicator": null,
+    "overall_rank": 42,
+    "position_rank": null,
+    "pro_comparison": "Mark Andrews",
+    "projected_round": "2nd Round"
+  },
+  "injury_history": []
+}

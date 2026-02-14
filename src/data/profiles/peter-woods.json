@@ -1,0 +1,544 @@
+{
+  "name": "Peter Woods",
+  "slug": "peter-woods",
+  "overview": {
+    "POS": "DT",
+    "College": "Clemson",
+    "Height": "6' 3\"",
+    "Weight": "310",
+    "Age": "20.8",
+    "DOB": null,
+    "Year": "Jr",
+    "Prj. Rd": "1st Round",
+    "Games": null,
+    "Snaps": null,
+    "24/7 Sports": null,
+    "ESPN": "91",
+    "Draft Buzz": null,
+    "NFL.com": "6.36",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "position": "DT",
+  "college": "Clemson",
+  "height": "6' 3\"",
+  "weight": "310",
+  "age": 20.8,
+  "dob": null,
+  "year": "Jr",
+  "projected_round": "1st Round",
+  "games": null,
+  "snaps": null,
+  "site_ratings": {
+    "24/7 Sports": null,
+    "ESPN": "91",
+    "Draft Buzz": null,
+    "NFL.com": "6.36",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "72",
+      "percentile": 0.389
+    },
+    "24 Grade": {
+      "value": "83.7",
+      "percentile": 0.889
+    },
+    "23 Grade": {
+      "value": "87.6",
+      "percentile": 1.0
+    },
+    "Pass Rush Grade": {
+      "value": "65.6",
+      "percentile": 0.722
+    },
+    "True Pass Rush": {
+      "value": "75",
+      "percentile": 0.944
+    },
+    "PR Win Rate": {
+      "value": "8.1",
+      "percentile": 0.722
+    },
+    "Run Def. Grade": {
+      "value": "73.8",
+      "percentile": 0.389
+    },
+    "Run Stop %": {
+      "value": "10.1",
+      "percentile": 0.778
+    },
+    "Sacks": {
+      "value": "3",
+      "percentile": 0.833
+    },
+    "Hits": {
+      "value": "2",
+      "percentile": 0.528
+    },
+    "Hurries": {
+      "value": "10",
+      "percentile": 0.417
+    },
+    "Batted Balls": {
+      "value": "1",
+      "percentile": 0.611
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.444
+    },
+    "Tackling Grade": {
+      "value": "55.4",
+      "percentile": 0.278
+    },
+    "Missed Tackle Rate": {
+      "value": "18.2",
+      "percentile": 0.222
+    },
+    "Total Pressures": {
+      "value": "15",
+      "percentile": 0.611
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 13.416666666666666,
+      "positional_rank": "1.8571428571428572"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 9.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 14.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 33.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 8.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 10.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 23.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 1.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 5.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 4.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 34.0,
+      "positional_rank": "3"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 23.818181818181817,
+    "PFF": 19.0,
+    "ESPN": null,
+    "Brugler": 19.0,
+    "Kiper": 22.0,
+    "Miller": 41.0,
+    "Bleacher": 14.0,
+    "Walter": 28.0,
+    "TDN": 10.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "TBD",
+    "Bleacher": "1st Round"
+  },
+  "player_comps": {
+    "NFL": "Christian Wilkins",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Jeffery Simmons",
+    "WF": "Grady Jarrett.",
+    "Ringer": "Shai-Hulud",
+    "NFL.com": "Christian Wilkins"
+  },
+  "strengths": "• Size, Movement Skills, Quickness\n• Rare Twitch, Power, Explosiveness combo\n• Upper Body Strength, Pop in Hands\n• Can Handle Double Teams\n• Has Athleticism to Develop PR Ability",
+  "weaknesses": "• Squat, Short Frame\n• Minimal Pass Rush Production\n• Step Back in 2025\n• Down to Down Consistency\n• Pad Level, Anchor, Balance\n• Not Gap Sound, Overaggressive",
+  "accolades": "• #9 Prospect in 23 HS Class\n• 23 Freshman All American\n• 2024 HM All ACC\n• 2025 2nd Team All American",
+  "player_summary": "Woods is a young DT with three seasons of exp lining up both inside and outside, projects best as a three-tech. Possessing powerful lower-body explosiveness, lateral quickness, synced hands/feet, and strong anticipation, he defeats reach blocks, splits doubles, explodes through contact, sheds quickly to pursue, and sets effective picks in twists—making him disruptive against the run and functional in collective pocket pressure despite lacking solo quick-win moves. He holds ground at the POA,  reestablishes the LOS, and shows chase-down range. Primary issues include shorter arms, giving ground against single blocks, inconsistent finishing , risk-taking in the run game, and average twist quickness without reliable PR moves. Still developing play strength and fill-out potential in his frame,  '24 tape better reflects his upside than '25 (combined ~82 tackles, 5 sacks). He has three-down starting traits and is viewed by scouts as a 1st rd talent with solid starter potential in even fronts.",
+  "draftbuzz_grades": {
+    "Tackling": null,
+    "Pass Rush": null,
+    "Run Defense": null
+  },
+  "projected_role": "NT/DT",
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 51,
+      "career": 122
+    },
+    "B GAP": {
+      "2025": 429,
+      "career": 828
+    },
+    "Over Tackle": {
+      "2025": 50,
+      "career": 130
+    },
+    "Outside Tkl": {
+      "2025": 16,
+      "career": 161
+    },
+    "Off Ball": {
+      "2025": 16,
+      "career": 17
+    }
+  },
+  "skills_traits": {
+    "Character/Processing/Instincts": {
+      "positives": "Displays a sixth sense for reading and reacting to plays (TDN)",
+      "negatives": "Needs to be more consistent down to down (TDN)"
+    },
+    "Athleticism/Physical Traits": {
+      "positives": "Good Size, impressive movement skills and quickness (BR)\nPlenty of upper body strength and pop in hands to gain control of blocks(BR)\nRare twitch, power and explsoiveness(TDN)",
+      "negatives": "Played with too much bad weight in 2024 (BR)\nSquat frame with short arms (TDN)"
+    },
+    "Pass Rush": {
+      "positives": "Solid against double teams (BR)\nHas the combo of power and movement to develop into a quality pass rusher (BR)\nAssertive and precise striker (BR)",
+      "negatives": "Minimal production, no go to move, still learning how to use his hands in PR (BR)\nSubpar pad level, reduces bull rush ability (BR)\nStruggles to sink hips and anchor (BR)"
+    },
+    "Run Defense/Tackling": {
+      "positives": "Great Run Defender (BR)\nVery good getting off blocks, stack and shedding (BR)",
+      "negatives": "Has balance issues when shedding blocks (BR)"
+    }
+  },
+  "media_links": [
+    {
+      "description": "Career Highlights",
+      "source": "YT - NFL Film Room",
+      "url": "https://www.youtube.com/watch?v=8JS4alOzu5o"
+    },
+    {
+      "description": "Deep Dive W/ Joe Goodberry",
+      "source": "YT - First Star Media",
+      "url": "https://www.youtube.com/watch?v=JVKIqppxfW0"
+    },
+    {
+      "description": "Scouting Report",
+      "source": "YT - A to Z Sports",
+      "url": "https://www.youtube.com/watch?v=h8iNyUGJtkk"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Woods is a young interior defender with room to add play strength as he fills out his frame. He’s not a pure one- or two-gap fit, but he’s capable in both schemes. He plays with good lower-body explosiveness into initial contact, keeping his hands and feet synced to work around blocks when needed. He’s more of an active brawler than double-team eating tree stump. Shorter arms allow blockers to crowd his frame and force him to fight harder at the point. Yet, his ability to overtake and win as the rep progresses is impressive. He lacks quick-win talent as a solo rusher, but he’s fully functional as part of a pocket-collapsing collective. His 2024 tape might be a better representation of his upside, but Woods clearly has the potential to become a solid starter in an even front."
+        },
+        {
+          "title": "Strengths",
+          "text": "Powerful and explosive athlete. | Lateral quickness frequently defeats attempted reach blocks. | Ties hands with feet to slide across blocker’s face and into gaps. | Explodes hips through initial contact at point of attack. | Good feel for finding the seam to split the double team. | Good anticipation and shed quickness to tackle as two-gapper. | Sturdy base allows for more consistent recovery. | Sets booming picks on blockers in twist game."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Plays lighter but gives more ground against single blocks. | Took chances that failed to pay off in the run game. | Short arms prevent him from keeping blockers out of his frame. | Average twist quickness to set off a schemed rush. | No real primary moves to reliably open an edge."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Peter Woods is a special defensive lineman whose character, athletic ability, and technical polish make him NFL-ready."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "Much like the giant sandworms of Arrakis, Woods possesses incredible power and shocking agility and is attracted to the rhythmic footsteps of a quarterback’s dropback.\n\nWoods is a barrel-chested brawler who creates havoc in the trenches with a combination of explosive burst, tremendous upper-body torque, and intensity-raising energy. A three-year impact player for the Tigers, he lines up at multiple spots on the line and rushes the passer with twitchy lateral burst. He fires out of his stance with good leverage, getting under the pads of opponents. He does a good job of keeping himself clean, striking and locking out his arms to keep opponents from getting into his chest. Woods has strong hands and employs savvy hand strikes and swipes to rip away from opponents’ blocks, frequently leaving defenders lunging. He shows the quickness to shoot gaps and catch offensive linemen off guard, and he plays with his intensity turned up to 11. He stacks defenders against the run and keeps his eyes in the backfield, locating the runner, holding his blocker at bay, and then discarding the block at the right moment to make the play. He shows good closing speed as a pass rusher and in pursuit of the ballcarrier.\n\nWoods saw his production drop in 2025, and his production has never really matched the athletic traits he displays (he notched just 2.0 sacks and 3.5 tackles for a loss in 2025). He lacks top-tier length, and he brings a below-average tackle radius. He occasionally allows himself to be sealed away from the play, and at times, his feet slow down and he gets stalemated when engaged by a blocker. He needs to continue to develop a wider repertoire of pass rush moves."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nWoods is a versatile defensive lineman who can line up on the inside or outside. As an interior run defender, he can shoot his hands and reestablish the line of scrimmage. He tracks the ball well and gets off blocks, which allows him to make plays in the backfield. When Woods lines up outside, he properly sets the edge. His hands are active, and he changes directions well enough for his size. Woods can win at the line with a long arm move, and he also mixes in an effective arm over move. ThereÃ•s potential for him to develop into an effective pass rusher in the NFL. Woods even has some experience at fullback, where he's a powerful lead blocker. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Peter Woods is a great run defender, the top defensive tackle and a top five overall prospect in the 2026 NFL draft class. He's 6'3\", 310—pound prospect and went to Clemson as a 4—star recruit in the 2023 class, per 247Sports.\n\nWoods was an immediate impact player for the Tigers, earning Freshman All—American honors by several outlets, while recording 26 total tackles, including three tackles for loss. He was an All—ACC Honorable Mention selection as a sophomore in 2024 after logging 28 total tackles, nine TFLs and three sacks.\n\nMatt Holder has been a part of B/R's Scouting Department for four seasons. He also writes about the Las Vegas Raiders and NFL draft for SB Nation's Silver and Black Pride, and co—hosts a YouTube Channel, Tape Don't Lie, providing film breakdowns and more draft prospect analysis."
+        },
+        {
+          "title": "Positives",
+          "text": "— Good size with impressive movement skills and quickness for a defensive tackle.\n\n— Plenty of upper body strength and pop in his hands to stand up offensive linemen and gain control of the block. Also is quick to shoot his hands and keeps his hands tight to protect his chest.\n\n— Very good at getting off blocks, stack—and—shedding looks easy for him and has a hump move to escape, too.\n\n— Against double teams, Woods attacks the man he's lined up across and has showed the ability to get skinny and occasionally split combo blocks.\n\n— Has the combination of power and movement skills to develop into a quality pass—rusher down the line."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Minimal pass—rush production, doesn't have a go—to move and is still learning how to use his hands as a rusher. Only has three career sacks (all in 2024), as of Sept. 11, 2025.\n\n— Pad level off the line of scrimmage is subpar, hurting the effectiveness of his bull rush, and Woods struggles to sink his hips and anchor against down blocks.\n\n— Has balance issues when shedding blocks or breaking into the backfield, which can lead to missed tackles.\n\n— In 2024, he played with some bad weight and admitted he was too heavy (h/t The Clemson Insider), will need to keep his weight under control at the next level."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Woods was part of a strong recruiting class that saw the field as a freshman for the Tigers. In 2023, Woods contributed 26 tackles with zero sacks in his debut for the Tigers. As a sophomore, Woods really improved in his pass rush, totaling three sacks, getting more pressures, and recording 26 tackles. In 2025, Woods had 30 tackles with two sacks and a pass batted.\nEarly in the 2026 NFL Draft process, scouts from around the league have already remarked that the Clemson defense is loaded with NFL talent. Woods is one of those prospects who has jumped out to pro evaluators. At the point of attack, Woods is very quick, athletic, strong, and disruptive. Woods lined up at defensive end and tackle for the Tigers, but for the NFL, he is more of a three-technique tackle rather than an edge defender. His build profiles better as a gap-shooting interior defensive lineman rather than an edge rusher, as he does not have the speed or length to be an every-down end in the NFL.\nFor the NFL, Woods is a twitchy interior tackle who has speed to get upfield and impressive agility to dart past blockers. Woods is fast to fire his gap and can charge hard into the pocket to cause disruption. However, he has to finish better as Woods gets close, but lets some sacks and tackles escape from him.\nIn the run game, Woods is a tough defender who can hold his ground at the point of attack. He also shows the ability to work off blocks and chase down backs to get in on tackles. Woods has three down starting potential on the inside as a tackle.\nAs a pro, Woods looks like a starting three-technique tackle who will fit well in a one-gap scheme. In the 2026 NFL Draft, Woods looks like a first-round pick."
+        },
+        {
+          "title": "Strengths",
+          "text": "Twitchy interior defender\nImpressive agility\nFast to fire his gap\nCauses disruption behind the line\nContributes interior pass rush\nTough run defender\nCan work off blocks and chase outside of his gap\nStarting three technique ability\nMakes contested catches\nConcentration\nReady to compete immediately"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Doesnâ€™t finish some plays\nLets some sacks get away from him\nLets some tackles get away from him\nWill have some quiet stretches"
+        },
+        {
+          "title": "Player Comp",
+          "text": "Grady Jarrett. In terms of style of play, Woods reminds me of Jarrett."
+        }
+      ]
+    },
+    {
+      "source": "ESPN",
+      "sections": [
+        {
+          "title": "Analysis",
+          "text": "Woods is a versatile defensive lineman who can line up on the inside or outside. As an interior run defender, he can shoot his hands and reestablish the line of scrimmage. He tracks the ball well and gets off blocks, which allows him to make plays in the backfield. When Woods lines up outside, he properly sets the edge. His hands are active, and he changes directions well enough for his size. Woods can win at the line with a long arm move, and he also mixes in an effective arm over move. ThereÃ•s potential for him to develop into an effective pass rusher in the NFL. Woods even has some experience at fullback, where he's a powerful lead blocker. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Much like the giant sandworms of Arrakis, Woods possesses incredible power and shocking agility and is attracted to the rhythmic footsteps of a quarterback’s dropback.\n\nWoods is a barrel-chested brawler who creates havoc in the trenches with a combination of explosive burst, tremendous upper-body torque, and intensity-raising energy. A three-year impact player for the Tigers, he lines up at multiple spots on the line and rushes the passer with twitchy lateral burst. He fires out of his stance with good leverage, getting under the pads of opponents. He does a good job of keeping himself clean, striking and locking out his arms to keep opponents from getting into his chest. Woods has strong hands and employs savvy hand strikes and swipes to rip away from opponents’ blocks, frequently leaving defenders lunging. He shows the quickness to shoot gaps and catch offensive linemen off guard, and he plays with his intensity turned up to 11. He stacks defenders against the run and keeps his eyes in the backfield, locating the runner, holding his blocker at bay, and then discarding the block at the right moment to make the play. He shows good closing speed as a pass rusher and in pursuit of the ballcarrier.\n\nWoods saw his production drop in 2025, and his production has never really matched the athletic traits he displays (he notched just 2.0 sacks and 3.5 tackles for a loss in 2025). He lacks top-tier length, and he brings a below-average tackle radius. He occasionally allows himself to be sealed away from the play, and at times, his feet slow down and he gets stalemated when engaged by a blocker. He needs to continue to develop a wider repertoire of pass rush moves."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Woods possesses incredible power and shocking agility"
+        },
+        {
+          "title": "Traits",
+          "text": "Bulldozer Power\nShort-Area Quickness\nRelentless Motor"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former four-star recruit out of Alabaster, Alabama. Was the no. 4 defensive lineman and the no. 36 overall player in the 2023 class. Named first-team All-ACC in 2025."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "Can reportedly bench-press 490 pounds, squat 700 pounds, and power clean 385 pounds. Also has a 33-inch vertical jump.\nWon four consecutive state championships before enrolling at Clemson in early 2023.\nWhen head coach Dabo Swinney was asked about Woods’s weakness, he said, “Nope, he ain’t got none.”\nGrew up riding horses on his grandparents’ farm in Alabama.\nIs roommates with fellow draft prospect TJ Parker."
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF SHAI-HULUD"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.36,
+    "prospect_grade_indicator": "Will Eventually Be Plus Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Christian Wilkins",
+    "eligibility": "Junior",
+    "nfl_rank": 34,
+    "nfl_pos_rank": 3
+  },
+  "bleacher_profile": {
+    "grade": 8.3,
+    "grade_indicator": null,
+    "overall_rank": 10,
+    "position_rank": null,
+    "pro_comparison": "Jeffery Simmons",
+    "projected_round": "1st Round"
+  },
+  "walter_profile": {
+    "player_comp": "Grady Jarrett. In terms of style of play, Woods reminds me of Jarrett."
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF SHAI-HULUD",
+    "traits": "Bulldozer Power\nShort-Area Quickness\nRelentless Motor"
+  },
+  "injury_history": [
+    {
+      "detail": "Leg Injury",
+      "recovery_time": "1 Game",
+      "year": "2024"
+    }
+  ]
+}

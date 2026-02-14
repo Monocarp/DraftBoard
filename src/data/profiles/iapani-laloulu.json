@@ -1,0 +1,417 @@
+{
+  "name": "Iapani Laloulu",
+  "slug": "iapani-laloulu",
+  "overview": {
+    "POS": "IOL",
+    "College": "Oregon",
+    "Height": "6'2\"",
+    "Weight": "325",
+    "Age": "TBD",
+    "DOB": null,
+    "Year": "JR",
+    "Prj. Rd": null,
+    "Games": null,
+    "Snaps": null,
+    "24/7 Sports": null,
+    "ESPN": "TBD",
+    "Draft Buzz": null,
+    "NFL.com": "TBD",
+    "BR": "TBD",
+    "Gridiron": null
+  },
+  "position": "IOL",
+  "college": "Oregon",
+  "height": "6'2\"",
+  "weight": "325",
+  "age": null,
+  "dob": null,
+  "year": "JR",
+  "projected_round": null,
+  "games": null,
+  "snaps": null,
+  "site_ratings": {
+    "24/7 Sports": null,
+    "ESPN": "TBD",
+    "Draft Buzz": null,
+    "NFL.com": "TBD",
+    "BR": "TBD",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "2024 Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "2023 Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "Run Block Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "Pass Block Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "True Pass Set Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "Pass Block Efficiency": {
+      "value": null,
+      "percentile": null
+    },
+    "Zone Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "Gap Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "Sacks Allowed": {
+      "value": null,
+      "percentile": null
+    },
+    "Hits Allowed": {
+      "value": null,
+      "percentile": null
+    },
+    "Hurries Allowed": {
+      "value": null,
+      "percentile": null
+    },
+    "Pressures Allowed": {
+      "value": null,
+      "percentile": null
+    },
+    "Penalties": {
+      "value": null,
+      "percentile": null
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 121.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 161.0,
+      "positional_rank": "27"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 81.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "TBD",
+    "Bleacher": "TBD"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "TBD",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": null,
+    "Run Blocking Grade": null
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": null,
+      "career": null
+    },
+    "LG": {
+      "2025": null,
+      "career": null
+    },
+    "C": {
+      "2025": null,
+      "career": null
+    },
+    "RG": {
+      "2025": null,
+      "career": null
+    },
+    "RT": {
+      "2025": null,
+      "career": null
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "injury_history": []
+}

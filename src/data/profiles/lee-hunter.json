@@ -1,0 +1,497 @@
+{
+  "name": "Lee Hunter",
+  "slug": "lee-hunter",
+  "overview": {
+    "POS": "DT",
+    "College": "Texas Tech",
+    "Height": "6' 4\"",
+    "Weight": "330",
+    "Age": "23.7",
+    "DOB": "2002-07-02 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": "Late 1st",
+    "Games": "51",
+    "Snaps": "1824",
+    "24/7 Sports": "94",
+    "ESPN": "88",
+    "Draft Buzz": "84.9 / 100",
+    "NFL.com": "6.33",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "position": "DT",
+  "college": "Texas Tech",
+  "height": "6' 4\"",
+  "weight": "330",
+  "age": 23.7,
+  "dob": "2002-07-02 00:00:00",
+  "year": "Sr",
+  "projected_round": "Late 1st",
+  "games": 51,
+  "snaps": 1824,
+  "site_ratings": {
+    "24/7 Sports": "94",
+    "ESPN": "88",
+    "Draft Buzz": "84.9 / 100",
+    "NFL.com": "6.33",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "80.8",
+      "percentile": 0.778
+    },
+    "24 Grade": {
+      "value": "72.1",
+      "percentile": 0.278
+    },
+    "23 Grade": {
+      "value": "74",
+      "percentile": 0.667
+    },
+    "Pass Rush Grade": {
+      "value": "71.9",
+      "percentile": 0.889
+    },
+    "True Pass Rush": {
+      "value": "74.8",
+      "percentile": 0.889
+    },
+    "PR Win Rate": {
+      "value": "10.6",
+      "percentile": 0.889
+    },
+    "Run Def. Grade": {
+      "value": "84.5",
+      "percentile": 0.833
+    },
+    "Run Stop %": {
+      "value": "11.9",
+      "percentile": 0.944
+    },
+    "Sacks": {
+      "value": "2",
+      "percentile": 0.667
+    },
+    "Hits": {
+      "value": "4",
+      "percentile": 1.0
+    },
+    "Hurries": {
+      "value": "20",
+      "percentile": 0.944
+    },
+    "Batted Balls": {
+      "value": "0",
+      "percentile": 0.222
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.444
+    },
+    "Tackling Grade": {
+      "value": "69.9",
+      "percentile": 0.833
+    },
+    "Missed Tackle Rate": {
+      "value": "9.8",
+      "percentile": 0.694
+    },
+    "Total Pressures": {
+      "value": "26",
+      "percentile": 0.944
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 68.88888888888889,
+      "positional_rank": "3.5714285714285716"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 53.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 34.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 60.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 36.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 56.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 215.0,
+      "positional_rank": "25"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 104.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 26.0,
+      "positional_rank": "1"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 36.625,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 49.0,
+    "Bleacher": 28.0,
+    "Walter": 86.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 15.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "Miller": "TBD",
+    "DraftBuzz": "Jerrod CLARK",
+    "Bleacher": "Dalvin Tomlinson",
+    "WF": "Kenny Clark."
+  },
+  "strengths": "• Ideal Size, Strength, and Length\n• Twitchy Upper Body, Violent Sheds\n• Superior Bull Rush, Collapses Pocket\n• Consistent Run Disruptor\n• Can Win Both Phases With Strength\n• Consistent PR Motor for Cleanup",
+  "weaknesses": "• Subpar Athlete, Even For NT\n• Lacks PR Moves Outside of Bullrush\n• Waist Bender\n• Technique Taking On Blocks",
+  "accolades": "• 2024 2nd Team All Big 12\n• 2023 HM All Big 12",
+  "player_summary": "Hunter is a massive NT prospect who showed real ability to handle high competition at Texas Tech and was the standout of the Senior Bowl. His massive frame and superior strength allows him to win in the pass and run games. He will not be easily moved backward and consistently collapses the pocket or resets the line of scrimmage. While he doesn't have much upside in the pass rush game due to his limited athleticism, he does show flashes of usage with his hands, and his motor to keep fighting allows him to make some cleanup sacks. He'll need to continue to refine his hand usage and his technique when taking on blocks, but he has the tools to develop into a very reliable early down NT, with some potential to improve his PR game as well. See him as a late 1st round, early second right now. Given the lack of high end talent in this class and the league's need for more guys like him, probably pushes him up a bit.",
+  "draftbuzz_grades": {
+    "Tackling": 0.73,
+    "Pass Rush": 0.9,
+    "Run Defense": 0.79
+  },
+  "projected_role": "NT",
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 185,
+      "career": 348
+    },
+    "B GAP": {
+      "2025": 317,
+      "career": 1188
+    },
+    "Over Tackle": {
+      "2025": 15,
+      "career": 73
+    },
+    "Outside Tkl": {
+      "2025": 5,
+      "career": 5
+    },
+    "Off Ball": {
+      "2025": 1,
+      "career": 8
+    }
+  },
+  "skills_traits": {
+    "Instincts/Processing/Production": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits": {
+      "positives": "Has the Size, Strength, and Length to do battle in the trenches (NFL)\nMassive Wingspan (NFL)",
+      "negatives": null
+    },
+    "Athletic Ability": {
+      "positives": "Changes directions pretty well in small spaces (NFL)\nTwitchy upper body creates violent sheds against centers (NFL)",
+      "negatives": "Lacks initial quickness to creater early wins in PR (NFL)\nSubpar athelticism, even for a NT (BR)\nWaits bender instead of a knee bender (BR)"
+    },
+    "Pass Rush Skills": {
+      "positives": "Can dent the pocket with bull rush (NFL)\nShows flashes of working the hands as a pass rushser (NFL)\nGood PR Motor to get coverage or clean up sakcs when QB steps up in the pocket (BR)\nHas some ability with his BR and strength (WF)",
+      "negatives": "Doesn't Have enough quickness or skill as a rusher to see passing downs (NFL)"
+    },
+    "Run Defense Skills": {
+      "positives": "Can stack & shed single block, or slide & stablize (NFL)\nLow Pads, leveraged contact (NFL)\nRoutinely disrupts runs and resets LOS (WF)",
+      "negatives": "Needs to improve block take on technique (NFL)\nWon't win in the gaps (NFL)"
+    }
+  },
+  "media_links": [
+    {
+      "description": "Highlights",
+      "source": "YT - NFL Film Room",
+      "url": "https://www.youtube.com/watch?v=E-pRCcROhAI"
+    },
+    {
+      "description": "Senior Bowl Interview",
+      "source": "YT - Roundtable Sports",
+      "url": "https://www.youtube.com/watch?v=4VDHS_Evk1o"
+    },
+    {
+      "description": "Film Breakdown",
+      "source": "YT - Daft on Draft",
+      "url": "https://www.youtube.com/watch?v=4VDHS_Evk1o"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Hunter is a two-gapping nose tackle for odd or even fronts. He has the size, strength and length to do battle in the heart of the trenches but requires better block take-on technique to sit firmer in his grass. He won’t win in the gaps, but he can stack and shed single blocks or slide and stabilize his run fit against zone blocks. Hunter’s girth and length are advantages when aligning over the center as a run defender. He doesn’t have enough quickness or skill as a rusher to see many passing downs, but he can dent the pocket with his power. Hunter projects as an early down space-eater who can make interior offensive linemen work for their gaps."
+        },
+        {
+          "title": "Strengths",
+          "text": "Broad chest with a 6-foot-9 wingspan. | Fires off snaps with low pads and into leveraged contact. | Displays adequate balance and recovery through double teams. | Slides with lateral blocks and can make a stand on the move. | Changes directions pretty well in small spaces. | Twitchy upper body creates violent sheds against centers. | Dominated as a bull rusher at Senior Bowl."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Too reliant on size over technique when taking on double teams. | Lacks feel and efficiency in taking on down blocks. | Limited to early downs and two-gapping schemes. | Lacks initial quickness to create early wins as a rusher."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nLee Hunter's college the Mobile native arrived at Auburn as a consensus four-star recruit in 2021, ranked among the top defensive tackle prospects nationally by every major service. After redshirting his true freshman season under Gus Malzahn, Hunter followed his coach to UCF when Malzahn took over the Knights program. That decision to transfer proved pivotal for his development.\n\nHunter steadily improved during three seasons in Orlando, transforming from a rotational piece as a redshirt freshman into one of the Big 12's most productive interior defenders. His sophomore campaign in 2023 showcased his emergence as a legitimate force, recording 69 tackles to lead all FBS defensive tackles according to Pro Football Focus while adding 11 tackles for loss and three sacks across 13 starts. The production dipped slightly as a junior in 2024 when he posted 45 tackles with 9.5 for loss, but his 27 total pressures ranked second among Big 12 interior linemen. Over his final two UCF seasons, Hunter accumulated 58 run-defense stops, more than any interior defender in the country during that span. His consistent disruption earned him All-Big 12 Second Team honors as a junior and Honorable Mention recognition as a sophomore.\n\nHunter transferred to Texas Tech for his senior season in 2025, immediately drawing national attention as ESPN's No. 2 ranked defensive tackle in the transfer portal. Pro Football Focus named him the top returning interior defensive lineman in the Big 12 and fifth nationally, while his 49 total pressures over the previous two seasons ranked second among returning Power Four interior defenders. The Red Raiders invested heavily in defensive line upgrades through the portal, bringing in nearly $28 million in NIL resources to reshape their front. Hunter landed on preseason watch lists for the Outland Trophy, Bednarik Award, Lombardi Trophy, and Bronko Nagurski Trophy while earning All-Big 12 Preseason Team recognition. Through 48 career games including 23 starts, Hunter accumulated 1,698 defensive snaps with teammates calling him \"The Fridge\" for his ability to clog interior lanes.\n\nSCOUTING REPORT: SUMMARY\nHunter projects as a rotational defensive tackle who can provide immediate value in sub packages and early-down situations where his run-stuffing ability matters most. His track record of disrupting interior run schemes translates directly to the NFL level, where teams constantly search for defensive linemen who can anchor against double teams and maintain gap integrity. The 58 run-defense stops over his final two college seasons weren't fluky production but rather the result of consistently winning at the point of attack with heavy hands and natural strength. Teams running gap-scheme defenses that prioritize two-gapping will appreciate his ability to occupy blockers and free up linebackers to make plays.\n\nThe pass-rush limitations prevent Hunter from becoming an every-down player early in his career, but his interior pressure numbers suggest untapped potential if the right coaching staff can develop counters and help him play with better pad level. He generated 49 pressures over two seasons despite lacking refined technique, which indicates the raw power translates when he gets opportunities to rush. Four-man front defenses that value size and strength over penetration will find the most use for his skill set, particularly on early downs where his gap control makes him valuable. Hunter needs to prove he can maintain effort level snap after snap rather than taking plays off when he's not immediately engaged, but the physical tools exist for a seven-year career as a quality rotation piece who provides value in specific packages.\n\nThe combination of size, power, and proven production against Power Four competition makes Hunter a safe mid-round selection who should contribute immediately on run downs. His floor is higher than his ceiling given the athletic limitations and lack of pass-rush diversity, but teams investing a Day 3 pick will receive a player who understands his role and consistently delivers what he does well. Hunter won't become a Pro Bowl interior rusher, but he has the traits to develop into a dependable rotation player who earns starter snaps if he improves his conditioning and maintains consistent effort. The tape shows a physically impressive defender who needs refinement rather than a project, making him attractive for teams seeking immediate depth with developmental upside.\nWRITTEN BY:\nANDREW MOORE (THE AMERICAN)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "The phrase \"country strong\" comes to mind when watching Lee Hunter's tape.\n\nThe 6'4\", 330—pound nose tackle has impressive size and strength to be a run—stuffer on first and second downs. However, his lack of athleticism and an effective get—off limits his contributions as a pass—rusher.\n\nHunter was originally a 4—star recruit in the 2021 class, committing to Auburn out of high school and redshirting as a true freshman. He transferred to UCF the following year and became a rotational player, collecting 17 tackles, one tackle for loss and one sack."
+        },
+        {
+          "title": "Positives",
+          "text": "— Hunter is built like a true NFL nose tackle.\n\n— Takes on blocks with his hands and displays impressive upper body strength to stand up offensive linemen at the line of scrimmage.\n\n— Hard to move with one—on—one blocks and holds his gap when he keeps his pads down against double—teams, solid at absorbing contact against the run.\n\n— Recognizes down blocks, shifting his eyes and hands to hold ground and avoid getting washed inside.\n\n— Presents several ways to escape blocks, with the strength to stack—and—shed, while also showing hump and arm—over moves to catch offensive linemen leaning.\n\n— Showed flashes of working the hands as a pass—rusher.\n\n— Good pass—rush motor to get coverage or clean—up sacks when the quarterback steps up in the pocket."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Subpar athleticism and quickness, even for a nose tackle.\n\n— A little late off the ball with a habit of playing too high, preventing him from collapsing the pocket as a bull—rusher consistently. Also, Hunter can cause him to concede some ground against double—teams and combo blocks.\n\n— A waist—bender instead of a knee—bender.\n\n— Lack of agility leads to Hunter taking long and inefficient paths in line games and makes him susceptible to getting reached or scooped.\n\n— Appears to have shorter arms, limiting his extension against blocks.\n\n— Struggles to sink his hips and bend in the backfield, leading to him getting too far up the field.\n\n— Has lapses in gap integrity where he'll leave his assignment and create a cutback lane."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Hunter was at Auburn in 2021 before playing three seasons at UCF. He had 44 tackles with one sack in 2024 and 69 tackles with three sacks in 2023. In 2025, Hunter finished out his collegiate career with Texas Tech, and he had an excellent season with the Red Raiders. In 2025, Hunter totaled 41 tackles with 2.5 sacks and a forced fumble. After the season, he had an impressive week of practice at the Senior Bowl.\nIn the ground game, Hunter is a tough defender. He is very stout at the point of attack. When runs come downhill at him, he is able to anchor and hold his ground. He also shows the strength to shed and tackle. Routinely, Hunter pushes his way into the backfield to disrupt runs and resets the line of scrimmage. His lateral anchor is advanced for a college player, as he is tough to move at the point of attack. Hunter is very strong to take on double-team bump blocks and hold his ground when getting hit from the side. Hunter is a very good run defender entering the NFL.\nAs a pass rusher, Hunter has some ability to get a push into the backfield with his power. Hunter can seriously bull rush to help collapse the pocket and take away space to step up in the pocket. He is limited from a speed and athleticism perspective to be a dangerous pass rusher that firest a gap and darts past guards in the NFL. As a pro, he could be rotated out of the game for a significant amount of sub-package plays. If Hunter had more pass-rush ability, he would have been a definite first-round pick.\nIn the 2026 NFL Draft, Hunter could be selected in the first or second round. Check out where we currently have him projected inmy latest 2026 NFL Mock Draft."
+        },
+        {
+          "title": "Strengths",
+          "text": "Tough run stuffing nose tackle\nGood initial quickness off the ball\nLateral quickness\nPowerful bull rush\nCan get a push powering through blockers\nCan help collapse the pocket\nQuick to close\nAthletic enough to redirect\nGood lateral anchor\nHard to move at the point of attack\nHolds his gap\nAbsorbs double teams\nVery tough, plays hard\nDisruptive run defender\nStrong hands\nUses hands and feet at same time\nCan get a push working upfield\nReady to compete quickly"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Could have some limitations as a pass rusher for the NFL\nConditioning could be an issue to monitor at the pro level"
+        },
+        {
+          "title": "Player Comp",
+          "text": "Kenny Clark. Hunterâ€™s size, power, quickness, and athelticism reminds me of Clark. Clark was a late first-rounder, and Hunter could get selected in that range."
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.33,
+    "prospect_grade_indicator": "Will Eventually Be Plus Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": null,
+    "eligibility": "Senior",
+    "nfl_rank": 26,
+    "nfl_pos_rank": 1
+  },
+  "bleacher_profile": {
+    "grade": 7.7,
+    "grade_indicator": null,
+    "overall_rank": 36,
+    "position_rank": null,
+    "pro_comparison": "Dalvin Tomlinson",
+    "projected_round": "2nd Round"
+  },
+  "walter_profile": {
+    "player_comp": "Kenny Clark. Hunterâ€™s size, power, quickness, and athelticism reminds me of Clark. Clark was a late first-rounder, and Hunter could get selected in that range."
+  },
+  "injury_history": []
+}

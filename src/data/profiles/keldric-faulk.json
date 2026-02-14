@@ -1,0 +1,527 @@
+{
+  "name": "Keldric Faulk",
+  "slug": "keldric-faulk",
+  "overview": {
+    "POS": "ED",
+    "College": "Auburn",
+    "Height": "6' 6\"",
+    "Weight": "285",
+    "Age": "20.5",
+    "DOB": "2005-09-07 00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": "1st Round",
+    "Games": "37",
+    "Snaps": "1588",
+    "24/7 Sports": "96",
+    "ESPN": "91",
+    "Draft Buzz": "89.3 / 100",
+    "NFL.com": "6.49",
+    "Bleacher": "8",
+    "Gridiron": null
+  },
+  "position": "ED",
+  "college": "Auburn",
+  "height": "6' 6\"",
+  "weight": "285",
+  "age": 20.5,
+  "dob": "2005-09-07 00:00:00",
+  "year": "Jr",
+  "projected_round": "1st Round",
+  "games": 37,
+  "snaps": 1588,
+  "site_ratings": {
+    "24/7 Sports": "96",
+    "ESPN": "91",
+    "Draft Buzz": "89.3 / 100",
+    "NFL.com": "6.49",
+    "Bleacher": "8",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "74.5",
+      "percentile": 0.3
+    },
+    "24 Grade": {
+      "value": "83.8",
+      "percentile": 0.7
+    },
+    "23 Grade": {
+      "value": "67.5",
+      "percentile": 0.4
+    },
+    "Pass Rush Grade": {
+      "value": "63.8",
+      "percentile": 0.05
+    },
+    "True Pass Rush": {
+      "value": "69.6",
+      "percentile": 0.158
+    },
+    "PR Win Rate": {
+      "value": "10.2",
+      "percentile": 0.158
+    },
+    "Run Def. Grade": {
+      "value": "85.5",
+      "percentile": 0.8
+    },
+    "Run Stop %": {
+      "value": "8.6",
+      "percentile": 0.8
+    },
+    "Sacks": {
+      "value": "2",
+      "percentile": 0.053
+    },
+    "Hits": {
+      "value": "1",
+      "percentile": 0.0
+    },
+    "Hurries": {
+      "value": "26",
+      "percentile": 0.553
+    },
+    "Batted Balls": {
+      "value": "2",
+      "percentile": 0.763
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.132
+    },
+    "Tackling Grade": {
+      "value": "67.7",
+      "percentile": 0.7
+    },
+    "Missed Tackle Rate": {
+      "value": "10",
+      "percentile": 0.895
+    },
+    "Total Pressures": {
+      "value": "29",
+      "percentile": 0.316
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 15.076923076923077,
+      "positional_rank": "3"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 13.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 12.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 15.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 20.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 20.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 21.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 8.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 18.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 8.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 7.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 27.0,
+      "positional_rank": "6"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 16.916666666666668,
+    "PFF": 15.0,
+    "ESPN": null,
+    "Brugler": 15.0,
+    "Kiper": 11.0,
+    "Miller": 17.0,
+    "Bleacher": 30.0,
+    "Walter": 9.0,
+    "TDN": 14.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 27.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - TOP 10",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "Carlos Dunlap",
+    "Miller": "TBD",
+    "DraftBuzz": "Mykel WILLIAMS",
+    "Bleacher": "Carlos Dunlap",
+    "WF": "TBD",
+    "Ringer": "Travon Walker",
+    "NFL.com": "Carlos Dunlap"
+  },
+  "strengths": "• Ideal Size/Frame/Wingspan\n• Immediate High End Run Def.\n• Solid Block Shedder\n• Versatile Experience\n• High Motor Pass Rusher\n• Young Player, 21 Y.O. Rookie",
+  "weaknesses": "• Lacks Elite Athleticism\n• Inconsistent Hand Usage\n• Pass Rush Repetoire\n• Pass Rush Production is poor\n• Technically Unrefined",
+  "accolades": null,
+  "player_summary": "Faulk turns 21 during his rookie season, features a long, projectable frame with room to reach 300+ pounds and high-character leadership that boosts his grade. Versatile for odd or even fronts, he aligns anywhere from edge to interior on passing downs, where quickness and long levers overmatch guards. A fluid athlete with diverse rush moves, efficient sudden hands, and strong pursuit, he stalks scrambling QBs effectively. As a run defender, he dominates with elite grades (89.2, 86th percentile solo stops), low missed tackles (88th percentile), and the strength/length to control, shed, or penetrate gaps while chasing stretch plays. Limitations include average upfield burst, playing tall, inconsistent violent hands/assertiveness at the point, and overruns that delay working back to the QB—reflected in uneven sack production (7+ in 2024, just a couple in 2025) and an underdeveloped pass-rush plan.",
+  "draftbuzz_grades": {
+    "Tackling": 0.8,
+    "Pass Rush": 0.98,
+    "Run Defense": 0.77
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 11,
+      "career": 30
+    },
+    "B GAP": {
+      "2025": 48,
+      "career": 172
+    },
+    "Over Tackle": {
+      "2025": 160,
+      "career": 558
+    },
+    "Outside Tkl": {
+      "2025": 333,
+      "career": 822
+    },
+    "Off Ball": {
+      "2025": 4,
+      "career": 6
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": "Impressive Physicality (BR)\nHigh Motor Pass Rusher (BR)",
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": "Use of hands is a work in progress (BR)"
+    },
+    "Lower Body": {
+      "positives": "Really Good First Step (NFLSE)",
+      "negatives": "Follow up steps not as impressive (NFLSE)\nNot explsoive enough off the edge (BR)"
+    },
+    "Technical Skills": {
+      "positives": "Unbelievable run defender (NFLSE)\nJust does not miss tackles (NFLSE)\nSolid block shedding (BR)\nVersatile Exp (BR)\nImmediate high end run defender (TDN)",
+      "negatives": "Production was way down this year (FD)\nHas yet to show a real pass rush plan consistently (NFLSE)"
+    },
+    "Physical Traits & Abilities": {
+      "positives": "Looks the Part, Big Wing Span, Long smooth athlete (MK)\nMassive Human Being…strong as an ox (NFLSE)\nVery Young, ascending player",
+      "negatives": "Lacks some twitch and overall athleticism (BR)\nSubpar Bend (BR)"
+    }
+  },
+  "media_links": [
+    {
+      "description": "Career Highlights",
+      "source": "YT - NFL Film Room",
+      "url": "https://www.youtube.com/watch?v=ODacFbfHoT0"
+    },
+    {
+      "description": "Film Study",
+      "source": "YT - First Star Media Group",
+      "url": "https://www.youtube.com/watch?v=_xy1KU_CHvc"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Faulk has a long, developing frame, good movement skills and the potential for odd or even fronts once he gains more muscle mass. He’s a culture player with high character who earns a grade bump based on his age (turns 21 in September), traits and advanced foundation. A fluid athlete with good movement skills, he works around blocks with finesse but needs more assertive initial strikes to set firmer edges in gap control. His toughness and mentality suggest he’ll play through blocks more consistently in an NFL environment. Faulk’s rush is diverse. However, with average upfield burst, he might require a move inside on passing downs, where his long levers, quickness and agility can overmatch guards. Faulk needs polish but offers a high ceiling that should reveal itself within a couple of years."
+        },
+        {
+          "title": "Strengths",
+          "text": "Culture player praised for leadership, accountability and character. | Won’t turn 21 until September but has the skill level of an older player. | Potential to align at any spot in odd or even fronts depending on the down. | Long levers to strike blocker’s frame first and take early leads. | Has the tools to penetrate or maintain gap integrity on lateral run plays. | Smooth arm-over move can create early wins when aligned inside. | Has access to a diverse set of rush approaches and moves. | Able to open up edges with efficient, sudden hands. | Does a nice job of stalking and hounding scrambling quarterbacks. | Long frame allows him to expand his tackle radius near the line."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Upfield burst is average when rushing off the edge. | Would benefit from more violent hands to dislodge the punch. | Has a habit of overrunning pocket depth instead of working back under. | Tends to play tall as a run defender and on inside rush counters. | Needs to become more assertive and physical to control the point. | Inconsistent to press and extend from run blocks."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Keldric Faulk is a versatile edge rusher with a physical, violent temperament that also has high-end upside as a pass rusher."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nKeldric Faulk, the 6-foot-6, 285-pound defender made his name at Highland Home High under Coach Will Pouncey, earning Class 2A State Lineman of the Year honors after piling up 58 tackles, 13 tackles for loss, three sacks, and 19 quarterback hurries as a junior. He helped lead that squad to a 13-2 record and the state semifinals while also starring on the basketball court, where he earned Final Four MVP honors for the state runners-up. The recruiting services came calling early: Rivals tagged him a five-star prospect and the No. 79 overall player nationally, while 247Sports, ESPN, and On3 all rated him a consensus four-star and top-15 talent in Alabama. He played in the All-American Bowl and the Alabama-Mississippi All-Star Game before signing with Auburn as a prized piece of their 2023 class.\n\nFaulk made an immediate impact on the Plains, appearing in all 13 games as a true freshman and earning his first start at LSU. He finished that debut season with 35 tackles, four tackles for loss, and a sack, capping the year with a sack and three tackles in the Music City Bowl to earn SEC All-Freshman honors. His sophomore campaign in 2024 announced his arrival as an elite defender: 45 tackles, 11 tackles for loss, and seven sacks while starting every contest. The highlight reel from that season tells the story of a player who showed up in the biggest moments. He recorded seven tackles and two sacks against Georgia, then delivered a game-wrecking performance in the Iron Bowl with six tackles, two TFLs, a forced fumble, and a fumble recovery against Alabama. The Kentucky game earned him SEC Defensive Lineman of the Week after he tallied three tackles and two sacks. Bruce Feldman took notice, naming Faulk the No. 9 player on his 2025 Freaks List after he squatted 700 pounds and benched 415 during the offseason.\n\nEntering his junior year, Faulk carried Preseason ESPN All-American (second team) and Preseason All-SEC first team designations along with a spot on the Senior Bowl top 300 watchlist. Auburn deployed him differently in 2025, moving him around the formation with 30.3 percent of his snaps coming from 2-4 technique rather than his traditional edge alignments. The scheme shift showed in his pass rush numbers, as he finished with 31 pressures, two sacks, and a 9.9 percent win rate. But his run defense never wavered, and he added 29 tackles, a fumble recovery, and four pass deflections to close out a three-year career that saw him accumulate 110 tackles and lead all FBS edge defenders with 62 run stops. At just 21 years old with 37 games of experience, Faulk remains one of the youngest prospects in a loaded 2026 edge class.\n\nSCOUTING REPORT: SUMMARY\nPut the tape on and Faulk physically overwhelms people in a way that translates immediately to the pro game. This is not a finesse rusher who wins with speed and bend around the arc. He is a powerful, violent defender who makes offensive linemen uncomfortable from the moment the ball is snapped. His run defense grades as elite for a reason: 62 run stops over three years leading all FBS edge defenders and consistent dominance against the ground game regardless of alignment. He will contribute on early downs from day one and set a physical tone that elevates the entire defensive front.\n\nThe pass rush conversation is where evaluators will split. Faulk does not possess the burst or bend to consistently win on the outside track against quality tackles. His 4.74 forty (71st percentile) is adequate but not explosive, and his ability to turn the corner is functional rather than special. Here is the deal though: he collapses the pocket with legitimate power, his long-arm creates separation, and he can rush effectively from multiple alignments. The 2025 production dip (two sacks, 9.9% win rate) looks worse without context. Auburn moved him inside on 30.3 percent of his pass rush snaps, and interior wins are significantly harder than edge wins. When he rushed from outside the tackle in 2024, his pressure rate ranked in the 73rd percentile. NFL coaching that refines his hand fighting and develops counters off his initial move could unlock double-digit sack potential.\n\nFaulk projects as a base 5-technique in odd fronts or a traditional defensive end in even fronts who slides inside to 3-technique on passing downs. The comparison to Mykel Williams from the previous cycle fits: both entered the league as elite run defenders with developing pass rush arsenals and similar physical profiles. Teams building around hybrid fronts that emphasize versatility will covet his ability to play multiple spots without sacrificing run integrity. The floor is a starting-caliber three-down defender. The ceiling, if the technical refinement catches up to the physical gifts, is a Pro Bowl defender who wrecks games against the run while generating consistent pressure as a pocket-pusher. At 21 years old with room to grow, the arrow points up."
+        },
+        {
+          "title": "Overview",
+          "text": "Well-built and powerful defender with uncommon physical and athletic traits and the ability to play multiple spots.\n\nWith a scintillating combination of length and athleticism, Faulk is a plug-and-play defensive lineman who can line up at multiple spots on the front and brings rare physical traits. And at just 20 years old, he brings sky-high upside as an impact player against both the run and the pass. The former Auburn standout fires out of his stance and gets his hands on opponents, using a strong punch for his initial attack to keep blockers on their heels. He employs a strong long-arm stab to walk offensive linemen back into the pocket. He stacks and sheds opponents and fights with his hands incessantly, ripping, chopping, and clubbing away at defenders to keep himself clean and wrench opponents aside. Faulk is an easy-moving pass rusher who shows excellent power at the point of attack; he overpowers blockers and fights into the backfield. He’s an active and high-energy rusher who sticks with plays and chases down the ballcarrier. He is a force against the run, using his length and strength to hold his ground, set the edge, and shed opponent blocks.\n\nFaulk lacks top-tier explosive burst off the ball and does not possess elite bend off the edge. There are times when he loses his footing or balance when trying to quickly turn the corner. That makes him more of a power player who wins with brute force. He needs to expand his repertoire of rush moves and work to avoid getting stalemated. His production is underwhelming—he notched just two sacks in 2025 after grabbing seven sacks in 2024."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Keldric Faulk... pass rusher out of Auburn... not quite as bullish on... Faulk is not just an LT Pier... looks the parter... had a great 2024 season. He had seven plus sacks for Auburn last year's. Got this big wing span, long smooth athlete coming off of the edge. The production was way down this year. Just a couple of sacks this season... doesn't got this first step quickness that blows you away, but he covers so much ground... how does he compare to Mikel Williams another huge player last year who went ninth overall... quite a few people feel like Faulk maybe has a little bit more upside as a pass rusher... desperate for anybody that can disrupt the quarterback this year... it could be right A 16 is where I have 'em on the board... wanted to see more dominant performances... he was in the area, he was getting some pressures. He's a super talented kid... gets to the NFL, you're coached up by the best defensive line coaches in the world. He can take off 'cause the talent's there and the want tos there... Shamar Stewart... that 17th... Area where I would expect... to come off the board."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nFaulk is long and strong enough to control or shed blocks regardless of where he lines up. His quickness makes it tough for backside offensive tackles to reach him. When he lines up over the offensive tackleÃ•s inside shoulder, Faulk can chase down backs if teams run stretch zone plays away from him. When he lines up over the tackleÃ•s outside shoulder, he can slip blocks and get into gaps. If Faulk is rushing off the edge or between the tackles, he can shoot his hands and drive offensive linemen back. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Keldric Faulk is a 6'6\", 285—pound defensive line prospect whose impressive size and age at only 20 years old give him the necessary tools to be an impact player at the next level.\n\nWhile some project the former Tiger as an edge defender, he's at his best as a 4i—technique in odd fronts and has a physical profile that fits better as a 'defensive lineman'.\n\nFaulk originally went to Auburn as a 4—star recruit in the 2023 class, per 247Sports. He became a starter about halfway through his freshman season and racked up 35 tackles, four tackles for loss and a sack to earn a spot on the SEC All—Freshman team."
+        },
+        {
+          "title": "Positives",
+          "text": "— Great size and frame for a defensive lineman, Faulk has an \"NFL—ready\" body and appears to have very long arms.\n\n— Impressive strength and physicality at the point of attack, which combined with his arm length, allows him to get extension on blocks.\n\n— Pretty good at shedding blocks against offensive linemen to make plays in the running game.\n\n— Good against pullers as a run defender, he's quick to recognize when he's unblocked and either get underneath the puller as the spill player or be stout and set the edge as the force player.\n\n— Solid long—arm, rip and swim moves that he can win with occasionally as a pass—rusher.\n\n— High motor pass—rusher to get coverage sacks or clean up sacks when the quarterback leaves the pocket.\n\n— Experience playing several different defensive line alignments, from a shade—nose tackle to standup outside linebacker. He's best in odd fronts as a 4i—technique and can be a base end in even fronts if needed in the NFL."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Lacks some twitch and overall athleticism for a prospect of his caliber. This plays into his projection as more of an interior lineman.\n\n— Not explosive off the line of scrimmage to threaten offensive tackles with speed as a pass—rusher. Also, impacts his ability to collapse the pocket when bull rushing.\n\n— Use of hands as a pass—rusher is still a work in progress, Faulk often lets offensive tackles make the first significant contact and ends up chest—to—chest too often. Also, he doesn't work the tackle's hands after contact, nor does he have a good counter move.\n\n— Subpar bend to turn tight corners at the top of the rush, shows some stiffness in his lower body.\n\n— Against reach blocks, he's reliant on winning at the point of attack due to his lack of lateral movement skills."
+        }
+      ]
+    },
+    {
+      "source": "ESPN",
+      "sections": [
+        {
+          "title": "Analysis",
+          "text": "Faulk is long and strong enough to control or shed blocks regardless of where he lines up. His quickness makes it tough for backside offensive tackles to reach him. When he lines up over the offensive tackleÃ•s inside shoulder, Faulk can chase down backs if teams run stretch zone plays away from him. When he lines up over the tackleÃ•s outside shoulder, he can slip blocks and get into gaps. If Faulk is rushing off the edge or between the tackles, he can shoot his hands and drive offensive linemen back. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Well-built and powerful defender with uncommon physical and athletic traits and the ability to play multiple spots.\n\nWith a scintillating combination of length and athleticism, Faulk is a plug-and-play defensive lineman who can line up at multiple spots on the front and brings rare physical traits. And at just 20 years old, he brings sky-high upside as an impact player against both the run and the pass. The former Auburn standout fires out of his stance and gets his hands on opponents, using a strong punch for his initial attack to keep blockers on their heels. He employs a strong long-arm stab to walk offensive linemen back into the pocket. He stacks and sheds opponents and fights with his hands incessantly, ripping, chopping, and clubbing away at defenders to keep himself clean and wrench opponents aside. Faulk is an easy-moving pass rusher who shows excellent power at the point of attack; he overpowers blockers and fights into the backfield. He’s an active and high-energy rusher who sticks with plays and chases down the ballcarrier. He is a force against the run, using his length and strength to hold his ground, set the edge, and shed opponent blocks.\n\nFaulk lacks top-tier explosive burst off the ball and does not possess elite bend off the edge. There are times when he loses his footing or balance when trying to quickly turn the corner. That makes him more of a power player who wins with brute force. He needs to expand his repertoire of rush moves and work to avoid getting stalemated. His production is underwhelming—he notched just two sacks in 2025 after grabbing seven sacks in 2024."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Well-built and powerful defender"
+        },
+        {
+          "title": "Traits",
+          "text": "Rare Versatility\nRelentless Motor\nPrototypical Frame\nInfinite Upside"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former four-star recruit out of Highland Home, Alabama. Was the no. 10 defensive lineman and the no. 77 overall player in the 2023 class. Played in 25 games (20 starts) over his first two seasons at Auburn. Named first-team All-SEC in 2025."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "Can reportedly squat 700 pounds and bench-press 415 pounds.\nHunts and goes fishing in his free time.\nHis younger brother, J.J., is a defensive end for Auburn.\nFormer Auburn coach Hugh Freeze on Faulk: “Keldric has just had an incredible voice that people listen to, because he’s wise for his age and his work ethic is incredible. … This guy does everything.”"
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF TRAVON WALKER"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.49,
+    "prospect_grade_indicator": "Will Become Good Starter Within Two Years",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Carlos Dunlap",
+    "eligibility": "Junior",
+    "nfl_rank": 27,
+    "nfl_pos_rank": 6
+  },
+  "bleacher_profile": {
+    "grade": 8.0,
+    "grade_indicator": null,
+    "overall_rank": 21,
+    "position_rank": null,
+    "pro_comparison": "Carlos Dunlap",
+    "projected_round": "2nd Round"
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF TRAVON WALKER",
+    "traits": "Rare Versatility\nRelentless Motor\nPrototypical Frame\nInfinite Upside"
+  },
+  "injury_history": []
+}

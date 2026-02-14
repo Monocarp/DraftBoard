@@ -1,0 +1,547 @@
+{
+  "name": "David Bailey",
+  "slug": "david-bailey",
+  "overview": {
+    "POS": "ED",
+    "College": "Texas Tech",
+    "Height": "6' 3\"",
+    "Weight": "250",
+    "Age": "22.5",
+    "DOB": "2003-08-28 00:00:00",
+    "Year": null,
+    "Prj. Rd": "Top 10",
+    "Games": "48",
+    "Snaps": "1765",
+    "24/7 Sports": "97",
+    "ESPN": "92",
+    "Draft Buzz": "88.8 / 100",
+    "NFL.com": "6.75",
+    "Bleacher": "8.4",
+    "Gridiron": null
+  },
+  "position": "ED",
+  "college": "Texas Tech",
+  "height": "6' 3\"",
+  "weight": "250",
+  "age": 22.5,
+  "dob": "2003-08-28 00:00:00",
+  "year": null,
+  "projected_round": "Top 10",
+  "games": 48,
+  "snaps": 1765,
+  "site_ratings": {
+    "24/7 Sports": "97",
+    "ESPN": "92",
+    "Draft Buzz": "88.8 / 100",
+    "NFL.com": "6.75",
+    "Bleacher": "8.4",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "93.6",
+      "percentile": 1.0
+    },
+    "24 Grade": {
+      "value": "90.9",
+      "percentile": 1.0
+    },
+    "23 Grade": {
+      "value": "66.1",
+      "percentile": 0.25
+    },
+    "Pass Rush Grade": {
+      "value": "93.9",
+      "percentile": 1.0
+    },
+    "Run Def. Grade": {
+      "value": "81.5",
+      "percentile": 0.75
+    },
+    "Run Stop %": {
+      "value": "9",
+      "percentile": 0.85
+    },
+    "Tackles": {
+      "value": "29",
+      "percentile": null
+    },
+    "Tackling Grade": {
+      "value": "83.7",
+      "percentile": 1.0
+    },
+    "Missed Tkl Rate": {
+      "value": "11.9",
+      "percentile": null
+    },
+    "ADORT": {
+      "value": "1.6",
+      "percentile": null
+    },
+    "Coverage": {
+      "value": "88.2",
+      "percentile": null
+    },
+    "Coverage Stops": {
+      "value": "20",
+      "percentile": null
+    },
+    "Recs/Tgts": {
+      "value": "0",
+      "percentile": null
+    },
+    "Completion %": {
+      "value": "0",
+      "percentile": null
+    },
+    "TD / INT": {
+      "value": "0",
+      "percentile": null
+    },
+    "Forced Inc Rate": {
+      "value": "0",
+      "percentile": null
+    },
+    "Pass Rat. All.": {
+      "value": "0",
+      "percentile": null
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 14.923076923076923,
+      "positional_rank": "1.7142857142857142"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 6.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 4.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 6.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 4.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 16.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 8.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 3.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 85.0,
+      "positional_rank": "16"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 17.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 20.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 4.0,
+      "positional_rank": "2"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 5.153846153846154,
+    "PFF": 7.0,
+    "ESPN": null,
+    "Brugler": 7.0,
+    "Kiper": 4.0,
+    "Miller": 9.0,
+    "Bleacher": 7.0,
+    "Walter": 3.0,
+    "TDN": 7.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 4.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - MID",
+    "Bleacher": "1st Round"
+  },
+  "player_comps": {
+    "NFL": "Nik Bonitto",
+    "Miller": "TBD",
+    "DraftBuzz": "Dallas TURNER",
+    "Bleacher": "Jaelan Phillips",
+    "WF": "Micah Parsons.",
+    "Ringer": "Chop Robinson",
+    "NFL.com": "Nik Bonitto"
+  },
+  "strengths": "• Rare Twitch, Agility, Fluidity\n• Highest Pressure Rate in CFB\n• Deep Pass Rush Moveset\n• Elite First Step Quickness\n• Leveral, Lower Body Flexion\n• Instinctual, Mid-Rush Counters",
+  "weaknesses": "• Seems limited to 2 point stance\n• Lacks Needed Size, Espec. In Run\n• Hand Usage, Rush Plans\n• Lacks Consistent Anchor\n• Lacks Toughness, Physicality\n• Going to be 23 year old rookie",
+  "accolades": "• Freaks List\n• 2025 Unanimous All American\n• 2025 1st Team All Big 12\n• 2025 Big12 D Lineman OTY",
+  "player_summary": "David Bailey has been the most productive pass rusher for a couple of years now in college. He's accomplished that consistent high level production with elite athleticism, explosive first steps, and a deep bag of pass rush moves. He plays like a stand up linebacker, largely due to his lack of size needed to be a real edge setter and hold his ground in the run game; however, he's shown he can get after the QB even against high level competition. Areas he will need to address include his hand usage, coming up with a better pass rush plan (although he's got a good selection of moves to work with), and bringing more toughness and physicality to his game. He's been able to win with his insane first step quickness and mvoement skills, but that won't be sufficient in the NFL. Fortunately, as mentioned, he's got the moves to work with, he just needs more of a plan. Some concern given his age, but he has a rock solid PR floor and true All pro pass rush potential. He does not get out of the top ten.",
+  "draftbuzz_grades": {
+    "Tackling": 0.88,
+    "Pass Rush": 1.0,
+    "Run Defense": 0.85,
+    "Coverage": 0.97
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 0,
+      "career": 0
+    },
+    "Slot": {
+      "2025": 0,
+      "career": 0
+    },
+    "Corner": {
+      "2025": 0,
+      "career": 0
+    },
+    "Box": {
+      "2025": 0,
+      "career": 0
+    },
+    "Deep": {
+      "2025": 0,
+      "career": 0
+    }
+  },
+  "skills_traits": {
+    "Instincts/Processing/Production": {
+      "positives": "Started as a true freshman\nPlays constantly (NFLSE)\nPlayed some of his best football in big games (NFLSE)",
+      "negatives": "Not very physical at the point of attack. (BR)\nLack of Toughbess (NFL)\nAvg recognition of screen and misdirection (NFL)"
+    },
+    "Physical Traits": {
+      "positives": null,
+      "negatives": "Slightly undersized to be a full time edge defender in the NFL (BR)\nStronger blockers can stall out his speed to power (NFLSE)\nShort Stride length (NFLSE)\nLack of Anchor (NFL)"
+    },
+    "Athletic Ability": {
+      "positives": "Impressive athlete, quick—twichted, smooth/easy COD (BR)\nGreat blend of explosiveness and lfuidity (NFL)\nLeverage and Lower body flexion (NFL)\nRare short-area twitch, reactive agility (NFL)",
+      "negatives": "Lack of flexibility when not in 2 point stance (NFLSE)"
+    },
+    "Pass Rush Skills": {
+      "positives": "Deep back of pass-rush moves (BR)\nGood acceleration off LOS to win around the edge (BR)\nGood bend to corner at the top of the rush (BR)\nPass Rush Demon…Burst to QB (NFLSE)\nBest first step of any edge rusher in CFB (NFLSE)\nBest pressure rate in the nation (MK)\nInstinctive, natural mid-rush coutners (NFL)\nA dynamic pursuit defender and a true speed rusher (WF)",
+      "negatives": "Tries to win just off his first step (NFLSE)\nWill need to continue developing hand usage and rush plans (NFL)"
+    },
+    "Run Defense Skills": {
+      "positives": "Competitive Run Defender (NFLSE)\nSo Good at getting off blockers (NFLSE)\nGood in pursuit, shows his speed to chase (WF)",
+      "negatives": "Lacks the strength to be an effective run defender (BR)\n Has a habit of working around blocks, even against tight ends, often vacating his gap. (BR)\nInconsistent in decisiveness against the run (NFLSE)"
+    }
+  },
+  "media_links": [
+    {
+      "description": "2025 Highlights",
+      "source": "Youtube - Texas Tech",
+      "url": "https://youtu.be/sbbww4ouiCI?si=vPLQIo-MqOosDN8O"
+    },
+    {
+      "description": "Career Highlights",
+      "source": "Youtube - NFL Film Room",
+      "url": "https://www.youtube.com/watch?v=RN4USZOyzLE"
+    },
+    {
+      "description": "Deep Dive W/Joe Goodberry",
+      "source": "Youtube - First Star Media",
+      "url": "https://www.youtube.com/watch?v=oE5Zg_1UPF4"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Bailey is extremely hard for linemen to stay in front of. He moves like a slashing two guard, blending explosiveness and fluidity to slip, bend and flow around blocks from multiple angles. His leverage and lower-body flexion create game-over scenarios once he reaches pocket depth with even a minor lead. He can be stalled when a blocker latches his hands in deep, but Bailey’s elusiveness and suddenness make clean clamps a relative rarity. He’s instinctive with natural mid-rush counters, but he must continue developing hand usage and crafting rush plans for when protection shifts his way. Teams can run at Bailey due to his lack of anchor and take-on presence, but his work-around quickness will also lead to tackles for loss. His draft grade is slightly tempered by a lack of desired size/length, but the explosiveness and athletic talent is truly elite. His sack production should carry over to the NFL as an odd-front rush linebacker with Pro Bowl upside."
+        },
+        {
+          "title": "Strengths",
+          "text": "Possesses rare short-area twitch and reactive agility. | Makes a lot of plays behind the line of scrimmage. | Explosive take-off leaves tackle little margin for error out of his stance. | Widens rush track on second step to create space at the corner. | Builds speed and momentum as the rush ripens. | Has the lean, bend and cornering to shrink-wrap the pocket. | Natural rush instincts with quick reaction to blocker’s pass sets. | Stacks an outside counter on top of his speed-to-power charge. | Fights through redirect blocks to stay connected to his track. | Able to flip hips and shoulders to play quickly around run blocks. | Runs well and squeezes pursuit angles wide."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Finesse approach against the run due to lack of size/power. | Can be caved in or torqued out by kick-outs. | Missing escape strength once he's stuck on contact. | Average recognition of screens and misdirection. | Hand accuracy on swipes and chops is inconsistent. | Will need to develop inside counters to exploit oversets."
+        },
+        {
+          "title": "Sources Tell Us",
+          "text": "“Best rusher in the draft. No doubt. But I worry about his size and toughness. If you are taking him high, you need him to play on all three downs.” – AFC executive"
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nDavid Bailey grew up in Orange, California before becoming a household name at Mater Dei High School, arguably the premier football factory on the West Coast. As a senior, Bailey terrorized opposing offenses with 20.5 tackles for loss and 15.5 sacks while leading the Monarchs to a perfect 12-0 record and the California Open Division State Championship. His dominance earned him CalHiSports Defensive Player of the Year, Orange County Defensive Player of the Year, Trinity League Defensive Player of the Year, and a spot in the prestigious All-American Bowl. The recruiting services took notice: 247Sports ranked him the 33rd overall prospect nationally and the No. 3 edge rusher in the country, while he landed as a consensus four-star and the first player left off 247's five-star list with a 0.97 grade. His older brother DJ had played defensive end at Harvard, but David chose Stanford over Alabama and Penn State.\n\nBailey wasted no time making an impact in Palo Alto. He started nine games as a true freshman in 2022, racking up 46 tackles and 8.5 tackles for loss while earning True Freshman All-American honors from 247Sports and the Stanford Outstanding Freshman award. His sophomore campaign brought team-leading numbers in both tackles for loss (6.0) and sacks (5.0), including a three-sack outburst against Hawaii. The junior season cemented his status as one of college football's elite pass rushers: seven sacks, 31 tackles, and five forced fumbles that ranked fourth nationally, along with a 93.2 pass-rush grade from Pro Football Focus that topped every player in the country. He also completed his bachelor's degree in Science, Technology and Science in under four years while making the ACC Academic Team. Career totals at Stanford across 33 games: 111 tackles, 22.5 tackles for loss, 14.5 sacks, and seven forced fumbles.\n\nWhen Troy Taylor was fired and the coaching staff turned over, Bailey entered the transfer portal as the crown jewel available and landed at Texas Tech with one of the richest NIL deals in college football history. The investment paid immediate dividends. Bailey dominated the Big 12, finishing with 13.5 sacks (second nationally, first among power four schools), 17.5 tackles for loss (tied for third nationally), and 52 total tackles while helping propel the Red Raiders into the College Football Playoff. He recorded a sack in 10 of 13 games, including a season-high three against Kansas that earned him four weekly awards. His collection of honors reads like a greatest hits album: consensus All-American, Big 12 Defensive Player of the Year, Big 12 Defensive Newcomer of the Year, Big 12 Defensive Lineman of the Year, Lombardi Award Finalist, Bednarik Award Semifinalist, and invitee to the Senior Bowl. Bruce Feldman placed him on the College Football Freaks List after Bailey posted a 405-pound bench press, 550-pound squat, and hit 22.16 mph on GPS tracking.\n\nSCOUTING REPORT: SUMMARY\nBailey's first step is among the best in this class, and once he clears the corner, quarterbacks are in serious trouble. The 13.5 sacks and 23.4% pressure rate he posted against Big 12 competition tell you everything about his ability to finish: this isn't a guy who generates heat without results. His counter game still needs polish, particularly with hand timing and inside moves to punish oversets, but the foundation of athleticism and instincts gives you something real to build on. NFL pass-rush coaches will drool over the raw tools.\n\nHere's the deal: Bailey isn't walking into a building and playing every down from Week One. The run defense tape shows a player who gets moved off spots, loses leverage battles, and takes himself out of plays chasing rather than fitting. That's workable in sub-packages where you're asking him to pin his ears back and hunt, but defensive coordinators will need to protect him on early downs until he adds functional strength and learns to play with better pad level. The coverage skills open doors for creative deployment where he's not anchoring against lead blocks but creating chaos rushing the passer or dropping into zones.\n\nTeams running odd fronts will see an outside linebacker who can wreck game plans on third down while developing into more. Even-front defenses can deploy him as a situational rusher who rotates in obvious passing situations and contributes as a designated pass-rush weapon. The athletic testing, production against quality competition, and finishing ability all point to a player who can become a consistent double-digit sack producer at the next level once the supporting elements catch up to the pass-rush talent. He profiles best in an organization willing to let him develop without asking him to carry early-down responsibilities before he's ready.\nWRITTEN BY:\nLENNOX TATE"
+        },
+        {
+          "title": "Overview",
+          "text": "Souped-up, highly disruptive defender who creates anarchy in the backfield.\n\nBailey is a twitched-up edge rusher with top-tier burst and a switch that’s flipped to attack mode at all times. A transfer to Texas Tech in 2025 after playing three seasons at Stanford, he emerged as one of the most productive edge players in the country last year, tying for an FCS-best 14.5 sacks while adding 19.5 tackles for a loss (second most) and 81 pressures (also second, per PFF). He’s a quick-footed rusher with an explosive first step and a variety of moves at his disposal: He uses long arms to strike and lock out opponents and keep them off his chest, he converts speed to power as a bull-rusher, he has an effective Euro-step inside counter, and his spin move regularly leaves tackles lunging. He’s a real pain in the ass to block, basically, as evidenced by his 39.5 percent win rate in true pass rush situations, per PFF, which ranked fourth best among pass rushers with 100-plus rushes last season. He brings excellent closing speed and arrives at the quarterback or ballcarrier with a thump, with eight forced fumbles over the past two seasons.\n\nBailey has a slimmer-than-ideal build and is light in the pants when taking on blocks. He could be a liability in the run game and may need to bulk up a bit at the next level so he can stay on the field for all three downs. He lacks power as a rusher and sometimes struggles to disengage from blocks once offensive linemen get their hands on him."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "David Bailey...When you watch that, you knew the defense was gonna show...I dunno what that vertical's gonna be...but he was getting up there batting passes down...he was a good player at Stanford. He was a great player this year at Texas Tech...the edge rusher...certainly in line with great...on a big board right now at six...fifth on my big board...Love the player. 14 and a half sacks. So instinctive, just maybe the most violent player in the draft, at least on the defensive side of the ball...Couldn't take your eyes off him in that ball game...He was exceptional In the playoff game. He was absolutely sensational."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "A transfer from Stanford, Bailey gets after the quarterback. He had 14.5 sacks over three seasons for the Cardinal, and he matched that total in 2025 alone after notably becoming more of a finisher this season. His 20.2% pressure rate was the best in the nation -- despite actually being lower than it was in 2024 (22.2%) and 2023 (22.1%).\nESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "David Bailey is an impressive athlete, who has a deep bag of pass—rush moves to be a significant contributor on third downs in the NFL.\n\nBailey is a 6'3\", 250—pound edge defender prospect who originally went to Stanford as a 4—star recruit in the 2022 class. He was an immediate starter for the Cardinal, racking up 46 tackles, 8.5 tackles for loss and 2.5 sacks as a freshman to be named a true freshman All—American by 247Sports.\n\nIn 2023, Bailey accumulated 34 tackles, six TFLs and five sacks before logging 31 tackles, eight TFLs and seven sacks as a junior. However, he did not receive any postseason honors in those seasons and transferred to Texas Tech in 2024."
+        },
+        {
+          "title": "Positives",
+          "text": "— Impressive athlete who is quick—twichted and has very smooth/easy change of direction skills to beat offensive linemen across faces.\n\n— Good acceleration off the line of scrimmage to win around the edge with speed.\n\n— Bailey uses his hands well as a pass—rusher, showing quick and active hands to \"defeat the hands, defeat the man\" against offensive tackles.\n\n— Shown several pass—rush moves that he can with: hand swipe, rip, ghost rush, inside spin and long—arm.\n\n— Good bend to corner at the top of the rush.\n\n— Very agile to be an effective looper in line games, he can gain ground vertically while moving laterally."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Slightly undersized to be a full—time edge defender in the NFL, Stanford had Bailey listed at 238 pounds in 2024 and Texas Tech's listing at 250 looks generous.\n\n— Lacks the strength to be an effective run defender; he struggles to get extension on blocks and has skinny legs, which makes setting the edge against offensive linemen difficult.\n\n— Not very physical at the point of attack.\n\n— Has a habit of working around blocks, even against tight ends, often vacating his gap.\n\n— Doesn't have the mass and strength to effectively turn speed to power against good competition."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Bailey started out his collegiate career at Stanford. As a freshman in 2022, he had 46 tackles with 2.5 sacks. In his second season, Bailey produced five sacks with 34 tackles. As a junior, he had seven sacks with 31 tackles and five forced fumbles. That led to Bailey landing a payday in the transfer portal, and he landed at Texas Tech. With the Red Raiders, Bailey dominated the Big 12 with 14.5 sacks, 52 tackles, three forced fumbles, and three passes batted. Bailey was superb in the college football playoff game, dominating the Oregon offensive tackles.\nFor the NFL, Bailey is a lightning-fast edge rusher with devastating speed around the edge. Bailey has tremendous first-step quickness, and he explodes off the ball. Bailey can fly upfield and blow by offensive tackles even when they know his speed rush is coming. Bailey shows a variety of pass-rushing moves as he has an excellent spin move, darts to the inside, and has some functional power. Bailey shows impressive speed to power rushes and has upper-body strength to get a bull rush as a change-up on offensive tackles. The bull rush and the speed to power take tackles by surprise, and that makes Bailey a tough rusher to defend. Along with being fast off the ball, Bailey has easy acceleration to eat up ground in a blur. He is a dynamic pursuit defender and a true speed rusher quarterback hunter.\nAs a run defender, Bailey has some natural issues given his size. Bailey fights and competes in the ground game nicely on some plays, but he has limitations for the NFL with his lack of weight and length. Bailey could have problems holding up against downhill runs coming straight at him for four quarters with offensive tackles that weigh 50-80 pounds more than him, pounding on him all game. Bailey will need to be rotated as a run defender, but in the ground game, he is good in pursuit and shows his speed to chase.\nIn the 2026 NFL Draft, Bailey looks like a high first-round pick. He could be a Pro Bowl edge rusher and double-digit sack producer early in his pro career."
+        },
+        {
+          "title": "Strengths",
+          "text": "Instinctive, natural quarterback hunter off the edge\nFast\nExplodes off the ball\nElite first step quickness and get off\nDevastating speed to blow by offensive tackles around the corner\nRepertoire of moves\nCan sink his hips\nCan bend and dip underneath tackles\nExcellent spin move\nHas speed to power rush\nCan bull rush\nUpper body strength to shed blocks\nUses hands and feet at the same time\nExcellent cutting and change of direction in the pass rush\nEats up space in a blur\nGood play recognition\nGood motor\nFights off blocks as a run defender\nExcellent in pursuit as a run defender\nFunctioned well in space\nCan dominate an offense and take over a game\nReady to contribute immediately\nExperienced and successful against good college programs\nCreates mismatches out of the slot"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Undersized\nLacks weight\nLacks length\nWill have issues holding up as a three-down base end\nHas some natural limitations as a run defender for the NFL\nCould have problems with repeated downhill runs straight at him"
+        },
+        {
+          "title": "Player Comp",
+          "text": "Micah Parsons. In terms of style of play, Bailey reminds me of Parsons as an explosive edge rusher who has some size limitations as a run defender."
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Souped-up, highly disruptive defender who creates anarchy in the backfield.\n\nBailey is a twitched-up edge rusher with top-tier burst and a switch that’s flipped to attack mode at all times. A transfer to Texas Tech in 2025 after playing three seasons at Stanford, he emerged as one of the most productive edge players in the country last year, tying for an FCS-best 14.5 sacks while adding 19.5 tackles for a loss (second most) and 81 pressures (also second, per PFF). He’s a quick-footed rusher with an explosive first step and a variety of moves at his disposal: He uses long arms to strike and lock out opponents and keep them off his chest, he converts speed to power as a bull-rusher, he has an effective Euro-step inside counter, and his spin move regularly leaves tackles lunging. He’s a real pain in the ass to block, basically, as evidenced by his 39.5 percent win rate in true pass rush situations, per PFF, which ranked fourth best among pass rushers with 100-plus rushes last season. He brings excellent closing speed and arrives at the quarterback or ballcarrier with a thump, with eight forced fumbles over the past two seasons.\n\nBailey has a slimmer-than-ideal build and is light in the pants when taking on blocks. He could be a liability in the run game and may need to bulk up a bit at the next level so he can stay on the field for all three downs. He lacks power as a rusher and sometimes struggles to disengage from blocks once offensive linemen get their hands on him."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Souped-up, highly disruptive defender"
+        },
+        {
+          "title": "Traits",
+          "text": "Short-Area Quickness\nRelentless Motor\nPass-Rush Talent"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A senior and former four-star recruit out of Santa Ana, California. Was the no. 7 edge rusher and the no. 66 overall player in the 2022 class. Began his college career at Stanford, where he was a freshman All-American and played in 32 games across three seasons. Transferred to Texas Tech for the 2025 season, when he was named a unanimous first-team All-American, Big 12 Defensive Lineman of the Year, Big 12 Defensive Newcomer of the Year, and first-team All–Big 12. Also tied for the FBS lead in sacks, with 14.5."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "Has reportedly bench-pressed 405 pounds, squatted 550 pounds, and run 22.16 mph.\nNamed to the All-ACC Academic Team during his final year at Stanford, where he majored in science, technology, and society and earned a bachelor’s degree in fewer than four years.\nHis older brother, DJ, played defensive end at Harvard.\nIs a big fan of the Killers."
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF CHOP ROBINSON"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.75,
+    "prospect_grade_indicator": "Year 1 Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Nik Bonitto",
+    "eligibility": "Senior",
+    "nfl_rank": 4,
+    "nfl_pos_rank": 2
+  },
+  "bleacher_profile": {
+    "grade": 8.4,
+    "grade_indicator": null,
+    "overall_rank": 8,
+    "position_rank": null,
+    "pro_comparison": "Jaelan Phillips",
+    "projected_round": "1st Round"
+  },
+  "walter_profile": {
+    "player_comp": "Micah Parsons. In terms of style of play, Bailey reminds me of Parsons as an explosive edge rusher who has some size limitations as a run defender."
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF CHOP ROBINSON",
+    "traits": "Short-Area Quickness\nRelentless Motor\nPass-Rush Talent"
+  },
+  "injury_history": []
+}

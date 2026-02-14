@@ -1,0 +1,481 @@
+{
+  "name": "Emmanuel McNeil-Warren",
+  "slug": "emmanuel-mcneil-warren",
+  "overview": {
+    "POS": "SAF",
+    "College": "Toledo",
+    "Height": "6' 2\"",
+    "Weight": "202",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "39",
+    "Snaps": "1859",
+    "24/7 Sports": "84",
+    "ESPN": "85",
+    "Draft Buzz": "85.0 / 100",
+    "NFL.com": "6.33",
+    "Bleacher": "TBD",
+    "Gridiron": "TBD"
+  },
+  "position": "SAF",
+  "college": "Toledo",
+  "height": "6' 2\"",
+  "weight": "202",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 39,
+  "snaps": 1859,
+  "site_ratings": {
+    "24/7 Sports": "84",
+    "ESPN": "85",
+    "Draft Buzz": "85.0 / 100",
+    "NFL.com": "6.33",
+    "Bleacher": "TBD",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "91.4",
+      "percentile": 1.0
+    },
+    "24 Grade": {
+      "value": "83.6",
+      "percentile": 0.7
+    },
+    "23 Grade": {
+      "value": "86.8",
+      "percentile": 0.9
+    },
+    "Coverage Grade": {
+      "value": "91.6",
+      "percentile": 1.0
+    },
+    "Interceptions": {
+      "value": "2",
+      "percentile": 0.545
+    },
+    "Forced Inc. Rate": {
+      "value": "31.3",
+      "percentile": 1.0
+    },
+    "Passer Rating Alwd": {
+      "value": "44.8",
+      "percentile": 1.0
+    },
+    "TD Allowed/Ints": {
+      "value": "1 / 2",
+      "percentile": null
+    },
+    "Coverage Stops": {
+      "value": "7",
+      "percentile": 0.318
+    },
+    "Run Def Grade": {
+      "value": "82",
+      "percentile": 0.636
+    },
+    "Run Stops": {
+      "value": "11",
+      "percentile": 0.364
+    },
+    "Tackling Grade": {
+      "value": "60.7",
+      "percentile": 0.091
+    },
+    "Tackles": {
+      "value": "43",
+      "percentile": 0.182
+    },
+    "Assisted Tackles": {
+      "value": "28",
+      "percentile": 0.955
+    },
+    "Missed Tackles": {
+      "value": "14",
+      "percentile": 0.227
+    },
+    "Missed Tackle Rate": {
+      "value": "16.5",
+      "percentile": 0.136
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 50.375,
+      "positional_rank": "2.5714285714285716"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 51.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 44.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 31.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 19.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 113.0,
+      "positional_rank": "15"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 97.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 19.0,
+      "positional_rank": "2"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 35.625,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": 29.0,
+    "Kiper": null,
+    "Miller": 18.0,
+    "Bleacher": 25.0,
+    "Walter": 94.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 26.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "TBD"
+  },
+  "player_comps": {
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Justin Reid",
+    "WF": "TBD"
+  },
+  "strengths": "• Great Length/Frame\n• Consistently Well Graded for 3 Years\n• Turnover Machine\n• Zone Coverage Instincts\n• Plays Physical\n• Solid Closing Burst",
+  "weaknesses": "• Pattern/Route Recognition\n• Poor in Single High Cov\n• Overly Aggressive Angles\n• Hestiation in Decisions\n• Mirroring Speedy Receivers",
+  "accolades": null,
+  "player_summary": "A tall, long-limbed downhill safety from Toledo, supports run def as a box enforcer with physicality, block-slipping ability, urgent triggers via long strides, and an expansive tackle radius—highlighted by 9 career forced fumbles (elite Peanut punch) and 5 interceptions. He anticipates routes adequately from off alignments, closes quickly to deliver strikes over the middle, and fits best in  near-LOS roles where he meets runners early and limits big plays. Weaknesses center on diagnostic inefficiencies: excessive bouncing/pre-snap movement, unsettled feet leading to open-field misses, downhill dives that lose containment, and poor footwork that struggles against vertical speed or space coverage—likely limiting him to scheme-protected, 2-down duties rather than versatile deep-third work. A dedicated, high-character worker with ST contributions, McNeil-Warren offers late 1st- to mid-2nd-round value (potential riser to top-20 with testing) as a specialized run-support safety.",
+  "draftbuzz_grades": {
+    "QBR When Targeted": 61.5,
+    "Tackling": 0.81,
+    "Run Defense": 0.8,
+    "Coverage Grade": 0.88,
+    "Zone Coverage": 0.72,
+    "Man/Press": 0.88
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 33,
+      "career": 33
+    },
+    "Box": {
+      "2025": 401,
+      "career": 401
+    },
+    "Corner": {
+      "2025": 13,
+      "career": 13
+    },
+    "Deep": {
+      "2025": 198,
+      "career": 198
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [
+    {
+      "description": "Highlights",
+      "source": "YT - Prospects",
+      "url": "https://www.youtube.com/watch?v=DhM9ewt-ynE"
+    },
+    {
+      "description": "Evaluation",
+      "source": "YT - King Cold Sports Talk",
+      "url": "https://www.youtube.com/watch?v=rjP4gUMvDHg"
+    },
+    {
+      "description": "Interview",
+      "source": "The Draft Network",
+      "url": "https://www.thedraftnetwork.com/2025/10/29/emmanuel-mcneil-warren-interview"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Long, downhill safety capable of bolstering a team’s run defense and playing enforcer over the middle. McNeil-Warren is most valuable when playing near the line of scrimmage or in robber positioning. He anticipates well in coverage and is quick to close on receivers but will need to be protected by scheme to prevent speed mismatches. He’s urgent in run support and has a feel for slipping blocks/meeting runners early in the carry. He’s a rangy tackler, but needs to quiet his feet when diagnosing and flowing downhill to tackle. McNeil-Warren might be pigeon-holed schematically but he’s good at his job."
+        },
+        {
+          "title": "Strengths",
+          "text": "Tall, long-limbed and rangy as a down safety. | Adequate eye balance and anticipation from off coverages. | Triggers to the action with long, ground-gaining strides. | Frequently delivers strikes on pass-catchers. | Size and toughness to bolster run defense from the box. | Slips blocks and slithers through traffic deep into run lanes. | Uses his expansive tackle radius to run and capture in space. | “Peanut punched” his way to nine career forced fumbles."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Excessive bouncing and movement during run diagnosis. | Needs to settle feet sooner to prevent open-field misses. | Downhill dives open him to loss of containment against the run. | Won’t be a versatile coverage piece on the back end. | Inefficient footwork when covering in space. | Will struggle staying connected to vertical speed."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nEmmanuel McNeil-Warren arrived at Toledo as a three-star recruit with raw athleticism that caught the eyes of MAC programs but flew under the radar of Power Five schools. The son of Tarus Horne and one of nine siblings, McNeil-Warren brought a 75 ESPN rating and modest recruiting buzz from his prep days where he snagged 55 tackles and three interceptions his senior year. His journey from overlooked recruit to NFL prospect began slowly - playing primarily special teams in 2022 with just seven tackles before the light switch flipped.\n\nThe 2023 season marked McNeil-Warren's breakout, earning MAC West Division Defensive Player of the Week honors after a dominant 13-tackle, two-pass-breakup performance against Western Michigan that included an interception and forced fumble. He finished that campaign fourth on the team with 69 tackles while adding two picks and demonstrating his trademark ability to create turnovers with multiple forced fumbles, including two against Wyoming in the Barstool Sports Arizona Bowl. His knack for punching the football loose became his calling card, accumulating six career forced fumbles heading into his senior year.\n\nMcNeil-Warren's 2024 campaign started with fireworks - eight solo tackles plus a forced and recovered fumble against Kentucky, followed by a pick-six and fumble recovery against Western Kentucky that showcased his evolving coverage instincts. Though injury cut his final season short after just seven games, he still managed 61 tackles including a career-high 14 against UMass. His college tenure at Toledo established him as a physical safety who brings rare size to the position while developing from special teams contributor to defensive catalyst, recording 137 career tackles and becoming one of the MAC's most disruptive defensive backs when healthy.\n\nMcNeil-Warren enters the draft as a fascinating developmental prospect whose physical tools and turnover production make him worthy of Day 2 consideration despite some technical rough edges. His combination of length, improving instincts, and proven ability to generate game-changing plays positions him as the type of safety who could thrive in a role-specific capacity early before expanding his responsibilities. The modern NFL's emphasis on versatile defensive backs who can match up with tight ends and provide run support from depth aligns perfectly with his skill set, though defensive coordinators will need patience developing his deep coverage reliability.\n\n\nHis ceiling depends heavily on continued refinement of his anticipation and pattern recognition - the mental processing that separates good college safeties from NFL starters. The flashes are there, particularly his pick-six against Western Kentucky that demonstrated his growth reading quarterback intentions, but consistency remains elusive. Teams running primarily split-safety coverages where he can work from depth and leverage his closing speed downhill would maximize his immediate impact while minimizing exposure to his weaknesses in isolated deep coverage situations.\n\n\nThe second-to-third round projection feels appropriate given his unique physical profile and production despite playing at Toledo rather than a Power Five program. His combination of forced fumbles, improving coverage skills, and rare length creates a compelling case for teams seeking a strong safety who can eventually develop into a three-down player. While he may never become an elite single-high free safety, McNeil-Warren possesses the tools and competitive drive to carve out a decade-long career as a valuable chess piece in creative defensive schemes that value versatility and playmaking over pure coverage ability."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Emmanuel McNeil-Warren from Toledo... 6-2 205... all over the field... forced nine fumbles... five ints... tremendous work... prepare... studies... dedicated... always in the building... great special teams... physicality... length... late first... early to mid second... tremendous value pick... 28th on board... could rise to 18 with testing."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Something must be in Toledo's water, because the Rockets have another hard—hitting, multi—talented defensive back who is going to make an NFL impact in Emmanuel McNeil—Warren. The safety is a physical tone—setter, who understands how to put his stamp on a football game.\n\nA former 3—star recruit, McNeil—Warren is now an experienced safety entering his fourth season with the Rockets, while looking to build on an injury—shortened season where he was on pace to have a career year with 61 tackles, 35 solo, two tackles for loss, a half sack, tone interception, five passes defensed and one forced fumble in eight games.\n\n— A willing and effective run supporting safety who can set the tone with big hits."
+        },
+        {
+          "title": "Positives",
+          "text": "— A willing and effective run supporting safety who can set the tone with big hits.\n\n— McNeil—Warren plays with sound tackling technique and attacks the football with regularity.\n\n— Zone eyes show up in identifying route concepts underneath and matching that with quarterback eyes.\n\n— Can man—up on tight ends and athletically stay with them in routes. Throwing off the timing and not backing down to bigger receivers gives him versatility.\n\n— He is always around the football and uses his instincts to sniff out underneath plays."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Learn to better use his length to take on blocks in the run game. Extending and peaking to locate the football will give him more impact.\n\n— Recovery top—end speed is limited, and his backpedal can be choppy, contributing to recovery time.\n\n— Impact as a true single high defender will be determined on continued growth of instincts."
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.33,
+    "prospect_grade_indicator": "Will Eventually Be Plus Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": null,
+    "eligibility": "Senior",
+    "nfl_rank": 19,
+    "nfl_pos_rank": 2
+  },
+  "bleacher_profile": {
+    "grade": 8.0,
+    "grade_indicator": null,
+    "overall_rank": 19,
+    "position_rank": null,
+    "pro_comparison": "Justin Reid",
+    "projected_round": null
+  },
+  "injury_history": [
+    {
+      "detail": "Leg",
+      "recovery_time": "Returned to Game",
+      "year": "2025"
+    },
+    {
+      "detail": "Shoulder",
+      "recovery_time": "5 Games",
+      "year": "2024"
+    }
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "name": "Bray Hubbard",
+  "slug": "bray-hubbard",
+  "overview": {
+    "POS": "SAF",
+    "College": "Alabama",
+    "Height": "6'2\"",
+    "Weight": "204",
+    "Age": "TBD",
+    "DOB": "TBD",
+    "Year": "JR",
+    "Prj. Rd": null,
+    "Games": "TBD",
+    "Snaps": "TBD",
+    "24/7 Sports": "TBD",
+    "ESPN": "TBD",
+    "Draft Buzz": "TBD",
+    "NFL.com": "TBD",
+    "Bleacher": "TBD",
+    "Gridiron": "TBD"
+  },
+  "position": "SAF",
+  "college": "Alabama",
+  "height": "6'2\"",
+  "weight": "204",
+  "age": null,
+  "dob": "TBD",
+  "year": "JR",
+  "projected_round": null,
+  "games": null,
+  "snaps": null,
+  "site_ratings": {
+    "24/7 Sports": "TBD",
+    "ESPN": "TBD",
+    "Draft Buzz": "TBD",
+    "NFL.com": "TBD",
+    "Bleacher": "TBD",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "86",
+      "percentile": 0.455
+    },
+    "24 Grade": {
+      "value": "89.2",
+      "percentile": 1.0
+    },
+    "23 Grade": {
+      "value": "62",
+      "percentile": 0.05
+    },
+    "Coverage Grade": {
+      "value": "85.1",
+      "percentile": 0.409
+    },
+    "Interceptions": {
+      "value": "4",
+      "percentile": 0.955
+    },
+    "Forced Inc. Rate": {
+      "value": "12.5",
+      "percentile": 0.545
+    },
+    "Passer Rating Alwd": {
+      "value": "69.8",
+      "percentile": 0.182
+    },
+    "TD Allowed/Ints": {
+      "value": "3 / 4",
+      "percentile": null
+    },
+    "Coverage Stops": {
+      "value": "8",
+      "percentile": 0.5
+    },
+    "Run Def Grade": {
+      "value": "90.4",
+      "percentile": 1.0
+    },
+    "Run Stops": {
+      "value": "22",
+      "percentile": 1.0
+    },
+    "Tackling Grade": {
+      "value": "85.5",
+      "percentile": 0.818
+    },
+    "Tackles": {
+      "value": "62",
+      "percentile": 0.818
+    },
+    "Assisted Tackles": {
+      "value": "28",
+      "percentile": 0.955
+    },
+    "Missed Tackles": {
+      "value": "8",
+      "percentile": 0.636
+    },
+    "Missed Tackle Rate": {
+      "value": "8.2",
+      "percentile": 0.909
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 112.66666666666667,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 86.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 140.0,
+      "positional_rank": "31"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 112.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "TBD",
+    "Bleacher": "TBD"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "TBD",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Targeted": null,
+    "Tackling": null,
+    "Run Defense": null,
+    "Coverage Grade": null,
+    "Zone Coverage": null,
+    "Man/Press": null
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 185,
+      "career": 185
+    },
+    "Box": {
+      "2025": 382,
+      "career": 382
+    },
+    "Corner": {
+      "2025": 3,
+      "career": 3
+    },
+    "Deep": {
+      "2025": 203,
+      "career": 203
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "injury_history": []
+}

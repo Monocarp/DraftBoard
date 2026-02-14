@@ -1,0 +1,438 @@
+{
+  "name": "Logan Jones",
+  "slug": "logan-jones",
+  "overview": {
+    "POS": "IOL",
+    "College": "Iowa",
+    "Height": "6' 3\"",
+    "Weight": "302",
+    "Age": "24.3",
+    "DOB": "2001-10-19 00:00:00",
+    "Year": "G",
+    "Prj. Rd": null,
+    "Games": "50",
+    "Snaps": "2756",
+    "24/7 Sports": "94",
+    "ESPN": "79",
+    "Draft Buzz": "83.1 / 100",
+    "NFL.com": "TBD",
+    "BR": "6.7",
+    "Gridiron": null
+  },
+  "position": "IOL",
+  "college": "Iowa",
+  "height": "6' 3\"",
+  "weight": "302",
+  "age": 24.3,
+  "dob": "2001-10-19 00:00:00",
+  "year": "G",
+  "projected_round": null,
+  "games": 50,
+  "snaps": 2756,
+  "site_ratings": {
+    "24/7 Sports": "94",
+    "ESPN": "79",
+    "Draft Buzz": "83.1 / 100",
+    "NFL.com": "TBD",
+    "BR": "6.7",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "80.9",
+      "percentile": 0.8
+    },
+    "2024 Grade": {
+      "value": "83.6",
+      "percentile": 1.0
+    },
+    "2023 Grade": {
+      "value": "65.1",
+      "percentile": 0.4
+    },
+    "Run Block Grade": {
+      "value": "75.5",
+      "percentile": 0.6
+    },
+    "Pass Block Grade": {
+      "value": "90.2",
+      "percentile": 1.0
+    },
+    "True Pass Set Grade": {
+      "value": "81.2",
+      "percentile": 0.8
+    },
+    "Pass Block Efficiency": {
+      "value": "99.4",
+      "percentile": 0.95
+    },
+    "Zone Grade": {
+      "value": "73.5",
+      "percentile": 0.3
+    },
+    "Gap Grade": {
+      "value": "64.7",
+      "percentile": 0.5
+    },
+    "Sacks Allowed": {
+      "value": "1",
+      "percentile": 0.5
+    },
+    "Hits Allowed": {
+      "value": "0",
+      "percentile": 0.8
+    },
+    "Hurries Allowed": {
+      "value": "2",
+      "percentile": 0.75
+    },
+    "Pressures Allowed": {
+      "value": "3",
+      "percentile": 0.9
+    },
+    "Penalties": {
+      "value": "0",
+      "percentile": 1.0
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 122.0,
+      "positional_rank": "8.4"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 167.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 76.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 139.0,
+      "positional_rank": "14"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 82.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 148.0,
+      "positional_rank": "28"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 110.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 77.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 58.0,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "4th Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Jared WILSON",
+    "Bleacher": "Tyler Linderbaum",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.95,
+    "Run Blocking Grade": 0.79
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 0,
+      "career": 0
+    },
+    "LG": {
+      "2025": 0,
+      "career": 0
+    },
+    "C": {
+      "2025": 766,
+      "career": 2023
+    },
+    "RG": {
+      "2025": 0,
+      "career": 0
+    },
+    "RT": {
+      "2025": 0,
+      "career": 0
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nCouncil Bluffs, Iowa native Logan Jones arrived in Iowa City as a decorated multi-sport athlete who dominated the hardwood and gridiron at Lewis Central High School. Standing 6'3\" and weighing 293 pounds, Jones brought impressive versatility to the Hawkeyes, earning four-star ratings from both ESPN (81/100) and 247 Sports (0.94 composite). His high school resume included back-to-back Iowa Lineman of the Year honors and basketball prowess that showcased the athleticism that would later define his college career. The powerful frame that once terrorized opposing quarterbacks as a defensive end would eventually anchor one of college football's most productive rushing attacks.\n\nJones' Iowa journey began with uncertainty, as a redshirt freshman season in 2020 transitioned into an injury-plagued 2021 campaign that limited him to just two defensive appearances. The pivotal spring of 2022 brought a complete positional overhaul when coaches moved him from defensive line to center, asking him to fill the considerable void left by Tyler Linderbaum's departure to the NFL. That transition proved masterful, as Jones immediately seized the starting role and hasn't relinquished it since. His 38 career starts include an iron-man stretch of starting every game at center from 2022-2024, establishing himself as the anchor of Iowa's offensive line renaissance.\n\nThe numbers tell the story of Jones' impact on Iowa's ground game dominance. His 2024 season helped propel the Hawkeyes to 197.2 rushing yards per game-their best mark since 2002 and third-best in the Big Ten. First-Team All-Big Ten honors from the media, along with second-team recognition from coaches, validated his emergence as one of the conference's premier centers. Pro Football Focus crowned him the highest-graded center among Power Four players in 2024, while his leadership qualities earned him permanent team captain status and recognition with Iowa's prestigious Iron Hawk Award. His 700-pound squat record and 425-pound bench press demonstrate the raw power that drives his effectiveness in the trenches.\n\nJones' rare speed for the position opens doors in zone-blocking schemes where his ability to climb to linebackers could prove invaluable, yet those same mobility skills sometimes mask fundamental technique flaws that more experienced rushers will exploit. His anchor strength against power moves looks NFL-ready, but pass protection lapses against complex stunts suggest he'll need patience from coaching staffs early in his professional career.\n\n\n\n        What makes Jones fascinating is how his physical tools create both opportunity and concern simultaneously. The speed that makes him special also contributes to over-aggressive tendencies where he lunges past defenders rather than maintaining proper leverage. His defensive line background provides him with an understanding of rush angles that helps in run blocking, but that same inexperience at center shows up in crucial moments when blitz recognition becomes paramount. The leadership qualities that earned him captain status demonstrate readiness for the mental demands, though the technical refinement process remains ongoing after just three years at the position.\n\n\n\n        Offensive coordinators will be drawn to Jones' athletic ceiling and proven ability to anchor successful ground games, but they'll also need realistic timelines for his development in pass protection. His college production validates his impact potential when surrounded by quality coaching and proper scheme fit, yet the technical concerns suggest he may struggle initially against veteran defensive tackles who understand how to attack his leverage weaknesses. \n  \n\n                                        \n                                            \n                                                Written By:\n                                                K.C. Martinez (Big Ten)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Logan Jones is an athletic, center—only prospect with adept run blocking skills who will compete for a role in a zone—oriented system. Jones' short arms and middling play—strength will make it difficult to consistently hold the point or move NFL defensive tackles, shrinking the margins for him to enter into a lineup and stick.\n\nJones is a 6'3\", 302—pound center prospect, who entered the Iowa program as a 4—star recruit in the 2020 class.\n\nJones is in his fourth season as a starting center for the Hawkeyes and earned second—team All—Big Ten honors in 2024."
+        },
+        {
+          "title": "Positives",
+          "text": "— Very good initial quickness and burst to close space and establish first meaningful contact on defenders in the zone run game and on back blocks.\n\n— Can hook shades, complete overtakes on combination blocks and transition into the drive—phase late in the rep to steer and widen defenders out of lanes.\n\n— Takes adequate angles on climbs but closes space very quickly to square up, latch and steer slow—trigger backers away from the ball.\n\n— Fluidly shifts his weight and redirects to mirror and slow down counter moves across his face.\n\n— Can work his way around power moves in pass protection using jump sets to eliminate the rusher's runway, gain quick control and die slowly in his anchor."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Below average mass, length and play strength leave him routinely stalemated and pried open on base blocks.\n\n— Will get lifted, pressed and walked back in his anchor against the bull—rush from head—up rushers."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.7,
+    "grade_indicator": null,
+    "overall_rank": 139,
+    "position_rank": null,
+    "pro_comparison": "Tyler Linderbaum",
+    "projected_round": "4th Round"
+  },
+  "injury_history": []
+}

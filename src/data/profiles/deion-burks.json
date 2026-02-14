@@ -1,0 +1,433 @@
+{
+  "name": "Deion Burks",
+  "slug": "deion-burks",
+  "overview": {
+    "POS": "WR",
+    "College": "Oklahoma",
+    "Height": "5' 9\"",
+    "Weight": "188",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": "TBD",
+    "Snaps": "TBD",
+    "24/7 Sports": "88",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.1 / 100",
+    "NFL.com": "6.18",
+    "Bleacher": "7.6",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "Oklahoma",
+  "height": "5' 9\"",
+  "weight": "188",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": null,
+  "snaps": null,
+  "site_ratings": {
+    "24/7 Sports": "88",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.1 / 100",
+    "NFL.com": "6.18",
+    "Bleacher": "7.6",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "64.1",
+      "percentile": 0.0
+    },
+    "2024 Grade": {
+      "value": "66.9",
+      "percentile": 0.211
+    },
+    "2023 Grade": {
+      "value": "65.7",
+      "percentile": 0.368
+    },
+    "Receiving Grade": {
+      "value": "65.8",
+      "percentile": 0.0
+    },
+    "Yards/ Routes Run": {
+      "value": "1.45",
+      "percentile": 0.0
+    },
+    "Drop %": {
+      "value": "4.9",
+      "percentile": 0.263
+    },
+    "Contested Catch": {
+      "value": "52.9",
+      "percentile": 0.579
+    },
+    "Grade vs Man": {
+      "value": "67.7",
+      "percentile": 0.158
+    },
+    "YAC/Reception": {
+      "value": "5.2",
+      "percentile": 0.368
+    },
+    "Missed Tkls Forced": {
+      "value": "10",
+      "percentile": 0.5
+    },
+    "ADOT": {
+      "value": "8.6",
+      "percentile": 0.211
+    },
+    "Deep Yards": {
+      "value": "62",
+      "percentile": 0.0
+    },
+    "Touchdowns": {
+      "value": "4",
+      "percentile": 0.053
+    },
+    "Elusiveness": {
+      "value": "45.4",
+      "percentile": 0.5
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 73.57142857142857,
+      "positional_rank": "11.333333333333334"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 88.0,
+      "positional_rank": "15"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 46.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 73.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 59.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 112.0,
+      "positional_rank": "18"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 91.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 46.0,
+      "positional_rank": "9"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 37.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": 37.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "Miller": "TBD",
+    "DraftBuzz": "Ainias SMITH",
+    "Bleacher": "Zay Flowers",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 93.5,
+    "Hands": 0.82,
+    "Short Receiving": 0.74,
+    "Med Routes": 0.81,
+    "Deep Threat": 0.75,
+    "Blocking": 0.51
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 99,
+      "career": 268
+    },
+    "Wide": {
+      "2025": 349,
+      "career": 786
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Fifth-year slot receiver who is savvy against zone coverage and crafty after making a catch. Burks does a good job of utilizing his straight-line speed when the ball is in his hands. He struggles to win on vertical routes, though. He creates windows underneath by crisply breaking off short routes. He’s a compact, short-armed target who secures catches through contact. However, his production left something to be desired during his time at Purdue and Oklahoma. Comebacks and curls are often swallowed. Coaching and route work could lead to improvement in those areas. Burks lacks standout measurables, but better quarterback play could unlock a more productive player."
+        },
+        {
+          "title": "Strengths",
+          "text": "Shaves in-breaking routes with disciplined, tight cuts. | Loose hips allow for smoother adjustments to back-hip throws. | Displayed vast improvement to finish combat catches. | Squares numbers to quarterback and frames his catch point. | Plays with pro footwork, dropping both feet near the boundary. | Spatial awareness present in route breaks and zone landings. | Crafty runner on jet sweeps and after the catch."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Play speed doesn’t always align with timed speed. | Lacks convincing push to sell his curls/comebacks. | Short arms put him at a disadvantage on 50/50 balls. | Early head turns shorten his drive phase on deep routes. | Waits for throws outside the numbers to come to him instead of attacking them."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Deion Burks is an electric playmaker who can win vertically up the field or by taking short passes and converting them to big offensive plays."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nGrowing up in Inkster, Michigan, Deion Burks carved out his reputation as a three-star recruit at Belleville High School, where he torched defenses for 35 catches, 819 yards, and 12 touchdowns as a junior while helping his team achieve a perfect 9-0 record and capture the Kensington Lakes-East league title. His efforts earned him AP Division 1-2 All-Michigan recognition, setting the stage for his college journey at Purdue beginning in 2021.\n\nAfter redshirting his freshman season and gradually working his way up the depth chart, Burks exploded onto the scene in 2023 with a breakout campaign that saw him lead the Boilermakers with 47 receptions for 629 yards and seven touchdowns across 12 starts. His season opener against Fresno State served as a coming-out party, hauling in four catches for 152 yards and two scores, including a career-long 84-yard touchdown that showcased his game-breaking ability. The redshirt junior's consistent production throughout the season, making at least four catches in eight games, caught the attention of Oklahoma's coaching staff and prompted his transfer to Norman for the 2024 campaign.\n\nUnfortunately, Burks' first season in crimson and cream was derailed by injury, limiting him to just five games before a soft tissue injury sidelined him for the remainder of the year. Despite the shortened season, he managed to establish himself as a key offensive weapon, leading all first-year Sooners with 31 receptions while adding 245 yards and three touchdowns. His immediate impact was evident in the season opener against Temple, where he became the first Oklahoma player to record three receiving touchdowns in his debut, demonstrating the explosive playmaking ability that made him such a coveted transfer portal target.\n\nBurks enters the conversation as a classic slot receiver whose calling card is creating separation through route-running precision and initial burst rather than winning contested catches. His ability to threaten defenses vertically while maintaining the quickness to operate underneath makes him an ideal fit for offenses that prioritize getting playmakers the ball in space. The Michigan native's skill set aligns perfectly with modern NFL passing attacks that emphasize quick game concepts and manufactured touches for smaller receivers who can create after the catch.\n\n\n\n        Teams running spread concepts with heavy 11 personnel usage will find Burks most appealing, particularly those looking to add a reliable chain-mover who can also threaten deep when defenses bite on underneath routes. His experience operating from multiple alignments gives offensive coordinators flexibility in their game-planning, though his most productive NFL role will likely come from the slot where he can avoid the physicality that consistently bothers him on the perimeter. The former Boilermaker's return experience adds another layer of value for teams seeking versatility on special teams units.\n\n\n\n        While his size will always create limitations in certain matchups, Burks possesses the type of separation skills that translate well to the pro level where windows are tighter and timing is more critical. His route-running fundamentals are already NFL-caliber, and his understanding of leverage and how to attack different coverage concepts suggests he can contribute immediately as a rotational receiver with the potential to develop into a reliable target for quick-hitting passing games. The key for Burks will be staying healthy and proving he can handle the increased physicality that comes with facing NFL defensive backs week after week.\n   \n\n                                        \n                                            \n                                                Written By:\n                                                Eli Cooper (Big 12)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Deion Burks is an explosive impact playmaker with the football and possesses a better skill set than the numbers suggest.\n\nHe is a dynamic weapon in the open field and will flip field possession in an instant. His speed creates opportunities for explosive plays at any moment.\n\nBegan his career as a Purdue Boilermaker before transferring to Oklahoma. Burks is a former 3—star recruit in the 2021 class. He is a talented receiver with a concerning injury history."
+        },
+        {
+          "title": "Positives",
+          "text": "— Playmaking explosivity! Burks is a threat to make big plays at all times. He possesses the acceleration and top—end speed to beat defenses over the top routinely. If untouched at the line, Burks will run past defenders and stack them, creating an out—of—phase rep for the defensive back.\n\n— Tracking the football down the field is an underrated part of Burks' game. He locates the ball in the air and adjusts to its arc and descent. He has good hand—eye coordination to see the ball in on over—the—shoulder throws, even in hole—shot vs. cover—two defenses.\n\n— Burks displays good football IQ by settling into the soft spots versus zone coverages. He attacks zone defenses with patience and awareness.\n\n— The Sooners' second—leading receiver excels with the football. He handles manufactured touches, like screens, jet sweep pop passes, and jet sweeps. With his speed and explosiveness in space, he is dangerous to create YAC.\n\n— Burks is a natural hands catcher who plucks the ball out of the air with confidence.\n\n— Good route running ability vs man coverage. Burks sells the vertical, steps on the DB's toes, and stops on a dime to work back down the route stem. Outstanding stop/start ability to sell double moves to their maximum. From stutter/Go, sluggos, etc, he will put the defensive back in conflict if they're playing with a cushion."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Staying healthy to continue his development and sharpening his craft. Burks sustained soft—tissue injuries, a concussion, and a minor neck injury during the 2023 Citrus Bowl while at Purdue.\n\n— Burks is an undersized receiver with a limited wingspan. He will have trouble fending off longer—limbed cornerbacks at the catch point.\n\n— The former Boilermaker will be challenged when facing quick—footed and long cornerbacks at the next level. They will be able to crowd his space at the line of scrimmage, eliminating free releases to gear up to top speed and neutralizing his best attribute early in reps."
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.18,
+    "prospect_grade_indicator": "Good Backup With The Potential To Develop Into Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": null,
+    "eligibility": "Senior",
+    "nfl_rank": 46,
+    "nfl_pos_rank": 9
+  },
+  "bleacher_profile": {
+    "grade": 7.6,
+    "grade_indicator": null,
+    "overall_rank": 46,
+    "position_rank": null,
+    "pro_comparison": "Zay Flowers",
+    "projected_round": "2nd Round"
+  },
+  "injury_history": []
+}

@@ -1,0 +1,417 @@
+{
+  "name": "Charles Jagusah",
+  "slug": "charles-jagusah",
+  "overview": {
+    "POS": "IOL",
+    "College": "Notre Dame",
+    "Height": "6-7",
+    "Weight": "333",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "TBD",
+    "Prj. Rd": null,
+    "Games": "3",
+    "Snaps": "119",
+    "24/7 Sports": "97",
+    "ESPN": "TBD",
+    "Draft Buzz": "81.0 / 100",
+    "NFL.com": "TBD",
+    "BR": "TBD",
+    "Gridiron": null
+  },
+  "position": "IOL",
+  "college": "Notre Dame",
+  "height": "6-7",
+  "weight": "333",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "TBD",
+  "projected_round": null,
+  "games": 3,
+  "snaps": 119,
+  "site_ratings": {
+    "24/7 Sports": "97",
+    "ESPN": "TBD",
+    "Draft Buzz": "81.0 / 100",
+    "NFL.com": "TBD",
+    "BR": "TBD",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "2024 Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "2023 Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "Run Block Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "Pass Block Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "True Pass Set Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "Pass Block Efficiency": {
+      "value": null,
+      "percentile": null
+    },
+    "Zone Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "Gap Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "Sacks Allowed": {
+      "value": null,
+      "percentile": null
+    },
+    "Hits Allowed": {
+      "value": null,
+      "percentile": null
+    },
+    "Hurries Allowed": {
+      "value": null,
+      "percentile": null
+    },
+    "Pressures Allowed": {
+      "value": null,
+      "percentile": null
+    },
+    "Penalties": {
+      "value": null,
+      "percentile": null
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 133.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 133.0,
+      "positional_rank": "30"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "6TH",
+    "Bleacher": "TBD"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Tate RATLEDGE",
+    "Bleacher": "TBD",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.72,
+    "Run Blocking Grade": 0.62
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": null,
+      "career": null
+    },
+    "LG": {
+      "2025": null,
+      "career": null
+    },
+    "C": {
+      "2025": null,
+      "career": null
+    },
+    "RG": {
+      "2025": null,
+      "career": null
+    },
+    "RT": {
+      "2025": null,
+      "career": null
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nCharles Jagusah didn't pick up football until seventh grade, having spent his youth dominating soccer fields and basketball courts before discovering his calling on the gridiron. That late start to football becomes even more remarkable when you consider he went undefeated as a junior wrestler at 41-0 while claiming a state championship - the kind of competitive fire and body control that translates beautifully to offensive line play.\n\nNotre Dame recognized something special in Jagusah during his prep career at Alleman High School, where he terrorized opponents on both sides of the ball while racking up 21 tackles as a senior defensive lineman. The consensus four-star recruit caught the attention of every major recruiting service, with rankings varying from 10th overall (On3) to 119th (Rivals), but all agreeing he was the top player in Illinois. His selection for the 2023 All-American Bowl confirmed what college scouts already knew - here was a freakish athlete who could develop into something special with proper coaching.\n\nThe Irish coaching staff wasted no time throwing Jagusah into the fire during his freshman campaign in 2023, making him the first true freshman to start on the offensive line since Joe Alt in 2021. His debut against Stanford served as a preview, but his Sun Bowl performance against Oregon State announced his arrival - protecting Steve Angeli while the Irish offense churned out 236 rushing yards and averaged 4.9 yards per carry. That early taste of success made his 2024 preseason pectoral injury all the more devastating, as he was projected to anchor the left tackle position before the tear derailed those plans and seemed to end his season before it started.\n\nJagusah is the kind of developmental prospect that keeps offensive line coaches awake at night - not from worry, but from excitement about the possibilities. His athletic profile screams NFL starter, but the limited tape creates a fascinating evaluation puzzle. Teams running zone-heavy schemes will drool over his movement skills and ability to reach defenders in space, while his wrestling background suggests he can handle the hand fighting that defines modern pass protection.\n\n\n\nThe versatility factor cannot be understated in today's NFL, where teams value linemen who can slide between guard and tackle based on matchups and injuries. Jagusah has already proven that adaptability by stepping into different roles during Notre Dame's championship run, showing the kind of team-first mentality that resonates with coaches. His comeback story from the pectoral injury also demonstrates the mental makeup needed to survive the NFL grind - players who can maintain their edge while dealing with setbacks tend to have longer, more successful careers.\n\n\n\nSmart franchises will view Jagusah as a classic developmental pick with starter upside, someone who can contribute immediately in a rotational role while learning the nuances of NFL offensive line play. His athletic ceiling remains sky-high, and the limited wear and tear from his abbreviated college career could actually work in his favor long-term. Teams picking in the third or fourth round looking for a cornerstone interior lineman would be wise to take a hard look at this Illinois product who has all the tools to anchor an NFL offensive line."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "injury_history": []
+}

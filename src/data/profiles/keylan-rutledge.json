@@ -1,0 +1,438 @@
+{
+  "name": "Keylan Rutledge",
+  "slug": "keylan-rutledge",
+  "overview": {
+    "POS": "IOL",
+    "College": "Georgia Tech",
+    "Height": "6' 4\"",
+    "Weight": "330",
+    "Age": "TBD",
+    "DOB": "0",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "46",
+    "Snaps": "2947",
+    "24/7 Sports": "83",
+    "ESPN": "TBD",
+    "Draft Buzz": "83.2 / 100",
+    "NFL.com": "TBD",
+    "BR": "7.1",
+    "Gridiron": null
+  },
+  "position": "IOL",
+  "college": "Georgia Tech",
+  "height": "6' 4\"",
+  "weight": "330",
+  "age": null,
+  "dob": "0",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 46,
+  "snaps": 2947,
+  "site_ratings": {
+    "24/7 Sports": "83",
+    "ESPN": "TBD",
+    "Draft Buzz": "83.2 / 100",
+    "NFL.com": "TBD",
+    "BR": "7.1",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "75",
+      "percentile": 0.5
+    },
+    "2024 Grade": {
+      "value": "64",
+      "percentile": 0.0
+    },
+    "2023 Grade": {
+      "value": "60.8",
+      "percentile": 0.1
+    },
+    "Run Block Grade": {
+      "value": "75.3",
+      "percentile": 0.5
+    },
+    "Pass Block Grade": {
+      "value": "76.1",
+      "percentile": 0.3
+    },
+    "True Pass Set Grade": {
+      "value": "79.1",
+      "percentile": 0.7
+    },
+    "Pass Block Efficiency": {
+      "value": "99",
+      "percentile": 0.5
+    },
+    "Zone Grade": {
+      "value": "77.7",
+      "percentile": 0.6
+    },
+    "Gap Grade": {
+      "value": "70.6",
+      "percentile": 0.9
+    },
+    "Sacks Allowed": {
+      "value": "0",
+      "percentile": 0.95
+    },
+    "Hits Allowed": {
+      "value": "2",
+      "percentile": 0.3
+    },
+    "Hurries Allowed": {
+      "value": "6",
+      "percentile": 0.4
+    },
+    "Pressures Allowed": {
+      "value": "8",
+      "percentile": 0.4
+    },
+    "Penalties": {
+      "value": "5",
+      "percentile": 0.4
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 119.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 128.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 101.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 52.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 143.0,
+      "positional_rank": "25"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 224.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 56.5,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": 52.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "0",
+    "Bleacher": "Christian Mahogany",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.85,
+    "Run Blocking Grade": 0.8
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 0,
+      "career": 2
+    },
+    "LG": {
+      "2025": 0,
+      "career": 0
+    },
+    "C": {
+      "2025": 0,
+      "career": 0
+    },
+    "RG": {
+      "2025": 871,
+      "career": 2532
+    },
+    "RT": {
+      "2025": 0,
+      "career": 901
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nKeylan Rutledge arrived at Middle Tennessee State as a three-star recruit in 2022, carrying the versatility of a multi-sport standout from Cleveland, Tennessee. The same physical tools that made him a state champion shot-putter and a 1,000-point, 1,000-rebound basketball player translated immediately to the trenches. He earned Conference USA All-Freshman honors while making six starts at right guard, grading out as a winner in nine of his 11 appearances. His sophomore campaign in 2023 brought first-team All-Conference USA recognition after starting every game he played and serving as a team captain, averaging 74 snaps per contest while earning Offensive Lineman of the Game honors four times.\n\nThe transfer to Georgia Tech before the 2024 season nearly didn't happen on the field at all. A severe foot injury sustained in a car accident on December 7, 2023 forced Rutledge to miss virtually the entire offseason, including all of spring practice. What followed was one of college football's most remarkable comeback stories. He started all 13 games at right guard for the Yellow Jackets, logging 904 offensive snaps while earning first-team All-ACC honors and becoming Georgia Tech's first first-team All-American since 2020. The performance was even more impressive considering he played 93 snaps in an eight-overtime marathon against sixth-ranked Georgia while still recovering from that devastating injury.\n\nRutledge's 2024 encore season cemented his status as one of the nation's elite interior linemen. He became Georgia Tech's first back-to-back first-team All-American since Calvin Johnson, adding honors from Sporting News, Sports Info Solutions, and multiple second-team selections from the AFCA, Walter Camp Foundation, On3, and the Associated Press. The junior allowed zero sacks across 801 regular-season snaps according to Pro Football Focus while ranking among the nation's top 10 guards in overall blocking, run blocking, and pass blocking. His dominance helped Georgia Tech finish fourth nationally in fewest sacks allowed, 19th in rushing offense, and earned the unit Joe Moore Award semifinalist recognition. The ACC honored his journey by presenting him with the Brian Piccolo Award, given annually to the conference's most courageous player.\n\nRutledge brings the kind of raw physical toolkit that gets offensive line coaches fired up during draft meetings. That combination of size, length, power, and competitive temperament translates directly to what teams need from their interior blockers at the next level. The anchor strength and heavy hands already play at an NFL caliber, and his willingness to finish blocks with violence suggests he won't need much coaxing to embrace the mentality required in professional trenches. Factor in legitimate athleticism for the position and you're looking at a guard prospect who can handle multiple scheme concepts rather than being pigeonholed into one system.\n\n\n\nThe technical inconsistencies can't be ignored, but they're correctable issues rather than fundamental flaws that limit his ceiling. An NFL offensive line coach will need to drill pad level discipline and refine his pass-set mechanics, particularly against speed and finesse rushers who can expose his tendency to play tall. The footwork needs cleaning up in space, but the athletic foundation exists to make those improvements stick with proper coaching and repetition. His performance coming off a severe foot injury actually speaks to his football character and pain tolerance, traits that matter plenty when evaluating guards who'll face 1000 snaps in the pro game.\n\n\n\nThe tape shows a mauler who can handle both gap and zone concepts, though he'll likely settle in best as a power-gap right guard where his finishing ability and length can maximize his impact. Teams running heavy play-action concepts or building around physical run games should have Rutledge circled as someone who can step in during Year 1 and contribute immediately in situational packages before developing into a three-down starter by Year 2. His back-to-back All-American seasons against quality ACC competition, combined with verified production against elite defensive fronts like Georgia, remove most projection risk from his evaluation. This is a guard prospect with legitimate starter upside who should come off the board in the fourth round range and provide excellent value for a team willing to invest coaching resources in polishing the rough edges."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Keylan Rutledge is a long, broad—framed mauler with heavy hands and bad intentions, who can rag—doll defenders. He has progressively provided more highlight—reel blocks as the season has played itself out. He does present inconsistent footwork and pad level, which lead to erratic sustain skills, but possesses can't—teach physical traits that can be molded into a potential NFL starter.\n\nRutledge is a 6'4\", 330—pound guard prospect, who entered the Middle Tennessee State program as a 3—star recruit in the 2022 class before transferring to Georgia Tech prior the 2024 campaign.\n\nRutledge became a first—team All—ACC selection in 2024 after starting 13 games at right guard. He was also a first—team All—Conference USA selection in 2023, with 11 games at right guard, after earning a Conference USA All—Freshman selection in 2022 with six starts at right guard."
+        },
+        {
+          "title": "Positives",
+          "text": "— Broad frame, Good arm length and Heavy hands.\n\n— can brace and anchor on command against the bull—rush, penetrators and speed—to—power pass—rush moves.\n\n— has solid burst and movement skills on the move, with the power to jar smaller defenders lift them off of their feet.\n\n— firm presence on base, angle—drive and overtake blocks to cover up his target, and enough leg drive to solidify lanes when defenders reach into gaps.\n\n— excellent competitive Toughness and effort with a nasty demeanor as a finisher."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Inconsistent positional leverage in pass protection creates soft edges due to setting too flat or too far against Loose/wide rushers.\n\n— Upright playing style with wide hand—placement leads to quick stalemates, which force him into recovery mode to regain leverage.\n\n— Unrefined footwork results in some uncoordinated, disjointed positions against movement across his face."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.1,
+    "grade_indicator": null,
+    "overall_rank": 101,
+    "position_rank": null,
+    "pro_comparison": "Christian Mahogany",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

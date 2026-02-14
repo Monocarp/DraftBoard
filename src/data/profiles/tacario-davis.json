@@ -1,0 +1,442 @@
+{
+  "name": "Tacario Davis",
+  "slug": "tacario-davis",
+  "overview": {
+    "POS": "CB",
+    "College": "Washington",
+    "Height": "6' 4\"",
+    "Weight": "200",
+    "Age": "21.5",
+    "DOB": "2004-08-17 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "37",
+    "Snaps": "1851",
+    "24/7 Sports": "85",
+    "ESPN": "TBD",
+    "Draft Buzz": "83.6 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.7",
+    "Gridiron": "TBD"
+  },
+  "position": "CB",
+  "college": "Washington",
+  "height": "6' 4\"",
+  "weight": "200",
+  "age": 21.5,
+  "dob": "2004-08-17 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 37,
+  "snaps": 1851,
+  "site_ratings": {
+    "24/7 Sports": "85",
+    "ESPN": "TBD",
+    "Draft Buzz": "83.6 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.7",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "66.2",
+      "percentile": 0.0
+    },
+    "24 Grade": {
+      "value": "59",
+      "percentile": 0.056
+    },
+    "23 Grade": {
+      "value": "84.2",
+      "percentile": 0.944
+    },
+    "Coverage Grade": {
+      "value": "63.9",
+      "percentile": 0.0
+    },
+    "Passer Rating": {
+      "value": "52.5",
+      "percentile": 0.722
+    },
+    "Interceptions": {
+      "value": "2",
+      "percentile": 0.667
+    },
+    "Forced Incom.": {
+      "value": "5",
+      "percentile": 0.167
+    },
+    "Forced Inc. Rate": {
+      "value": "17.2",
+      "percentile": 0.611
+    },
+    "Dropped Picks": {
+      "value": "2",
+      "percentile": 0.972
+    },
+    "Completion %": {
+      "value": "55.2",
+      "percentile": 0.417
+    },
+    "Man Coverage": {
+      "value": "53.6",
+      "percentile": 0.056
+    },
+    "Zone Coverage": {
+      "value": "68.2",
+      "percentile": 0.056
+    },
+    "% In Man": {
+      "value": "41.2",
+      "percentile": 0.944
+    },
+    "% In Zone": {
+      "value": "53.4",
+      "percentile": 0.278
+    },
+    "Coverage Stops": {
+      "value": "2",
+      "percentile": 0.083
+    },
+    "Tackling": {
+      "value": "79.4",
+      "percentile": 0.667
+    },
+    "Missed Tackles": {
+      "value": "1",
+      "percentile": 1.0
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Arm Length": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Hand Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Speed": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Explosive": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Agility": {
+      "result": "TBD",
+      "grade": null
+    },
+    "10 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "20 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "40 Time": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Vertical": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Broad": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "3 Cone": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Bench": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Height": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Weight": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Gridiron": {
+      "result": "TBD",
+      "grade": "TBD"
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 130.5,
+      "positional_rank": "22"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 152.0,
+      "positional_rank": "20"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 141.0,
+      "positional_rank": "24"
+    },
+    {
+      "source": "Jeremiah",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 126.0,
+      "positional_rank": "33"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 103.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Tankathon",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Jeremiah": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "Tankathon": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Israel MUKUAMU",
+    "Bleacher": "0",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR Allowed": 67.2,
+    "Tackling": 0.82,
+    "Run Defense": 0.73,
+    "Cov Grade": 0.66,
+    "Zone Coverage": 0.64,
+    "Man/Press": 0.66
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 1,
+      "career": 46
+    },
+    "Slot": {
+      "2025": 37,
+      "career": 55
+    },
+    "Corner": {
+      "2025": 368,
+      "career": 1577
+    },
+    "Box": {
+      "2025": 10,
+      "career": 58
+    },
+    "Deep": {
+      "2025": 3,
+      "career": 36
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Coverage Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Mental/Discipline Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nTacario Davis carved out his reputation as a versatile two-way threat at Millikan High School, where he served as team captain while hauling in 25 catches for 453 yards and six touchdowns as a receiver. His defensive instincts were equally impressive, recording 51 tackles and three interceptions during his senior campaign in 2021. Despite earning first-team All-Moore League honors and showcasing his speed as a sprinter on the track team, Davis flew under the radar as a three-star recruit, receiving modest offers from Arizona State and Kansas before ultimately choosing Arizona.\n\nDavis's college journey began quietly in Tucson, appearing in just five games as a true freshman in 2022 while collecting seven tackles and a fumble recovery. The following season marked his transformation into one of the Pac-12's most disruptive defensive backs. Starting 11 of 13 games in 2023, Davis dominated opposing passing attacks by leading the conference with 15 pass breakups and 16 total passes defended, adding 25 tackles and his lone collegiate interception along the way. His breakout performance earned him second-team All-Pac-12 recognition from the Associated Press and honorable mention from the coaches.\n\nThe 2024 season brought new challenges as Arizona transitioned to the Big 12, but Davis continued his excellence by appearing in all 12 games with 11 starts. He recorded 44 tackles and six pass deflections while earning second-team All-Big 12 honors and semifinalist recognition for the prestigious Jim Thorpe Award. His dominant five-pass-breakup performance against then-No. 10 Utah captured Big 12 Defensive Player of the Week honors. Following the season, Davis entered the transfer portal and reunited with former Arizona head coach Jedd Fisch at Washington, where he's positioned to anchor the Huskies' secondary as a senior.\n\nSCOUTING REPORT: SUMMARY\nDavis's towering frame and aggressive mentality make him a natural fit for press coverage schemes where he can use his length to disrupt receivers at the line, but that same size occasionally works against him when quicker slot receivers force him into space. His demonstrated excellence in man coverage situations suggests he'll thrive when matched up against bigger targets, though his struggles with route combinations could expose him against more sophisticated offensive concepts.\n\nWhat makes Davis intriguing is how his skill set translates differently depending on usage. His superior tackling ability and run support instincts point toward a player who can handle boundary responsibilities in multiple fronts, yet his average long speed raises legitimate questions about his ability to recover when beaten vertically. The inconsistency in his footwork that shows up on tape will need immediate attention at the pro level, but his natural ball skills and route anticipation provide a foundation that coaching staffs can build upon.\n\nHis versatility between man and zone concepts gives defensive coordinators flexibility in how they deploy him, though his development timeline may require patience as he refines the technical aspects that separate good college players from reliable NFL starters. The physical tools are undeniable, but the execution details will ultimately determine whether he becomes a consistent contributor or remains a player whose impact fluctuates based on matchups and game situations.\nWRITTEN BY:\nLENNOX TATE"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.7,
+    "grade_indicator": null,
+    "overall_rank": 141,
+    "position_rank": null,
+    "pro_comparison": null,
+    "projected_round": null
+  },
+  "injury_history": []
+}

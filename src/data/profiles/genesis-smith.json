@@ -1,0 +1,430 @@
+{
+  "name": "Genesis Smith",
+  "slug": "genesis-smith",
+  "overview": {
+    "POS": "SAF",
+    "College": "ARIZONA",
+    "Height": "6' 2\"",
+    "Weight": "204",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": null,
+    "Games": "37",
+    "Snaps": "1757",
+    "24/7 Sports": "88",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.6 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.1",
+    "Gridiron": "TBD"
+  },
+  "position": "SAF",
+  "college": "ARIZONA",
+  "height": "6' 2\"",
+  "weight": "204",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Jr",
+  "projected_round": null,
+  "games": 37,
+  "snaps": 1757,
+  "site_ratings": {
+    "24/7 Sports": "88",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.6 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.1",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "81.1",
+      "percentile": 0.273
+    },
+    "24 Grade": {
+      "value": "72.1",
+      "percentile": 0.2
+    },
+    "23 Grade": {
+      "value": "62",
+      "percentile": 0.05
+    },
+    "Coverage Grade": {
+      "value": "88.5",
+      "percentile": 0.545
+    },
+    "Interceptions": {
+      "value": "1",
+      "percentile": 0.182
+    },
+    "Forced Inc. Rate": {
+      "value": "26.1",
+      "percentile": 0.909
+    },
+    "Passer Rating Alwd": {
+      "value": "91.4",
+      "percentile": 0.091
+    },
+    "TD Allowed/Ints": {
+      "value": "1 / 1",
+      "percentile": null
+    },
+    "Coverage Stops": {
+      "value": "11",
+      "percentile": 0.818
+    },
+    "Run Def Grade": {
+      "value": "63",
+      "percentile": 0.0
+    },
+    "Run Stops": {
+      "value": "14",
+      "percentile": 0.773
+    },
+    "Tackling Grade": {
+      "value": "56.3",
+      "percentile": 0.0
+    },
+    "Tackles": {
+      "value": "58",
+      "percentile": 0.591
+    },
+    "Assisted Tackles": {
+      "value": "15",
+      "percentile": 0.182
+    },
+    "Missed Tackles": {
+      "value": "18",
+      "percentile": 0.0
+    },
+    "Missed Tackle Rate": {
+      "value": "19.8",
+      "percentile": 0.0
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 83.6,
+      "positional_rank": "6.8"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 105.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 72.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 94.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 96.0,
+      "positional_rank": "22"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "3RD",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Jaquan Brisker",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Targeted": 80.3,
+    "Tackling": 0.0,
+    "Run Defense": 0.68,
+    "Coverage Grade": 0.88,
+    "Zone Coverage": 0.85,
+    "Man/Press": 0.82
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 93,
+      "career": 93
+    },
+    "Box": {
+      "2025": 220,
+      "career": 220
+    },
+    "Corner": {
+      "2025": 0,
+      "career": 0
+    },
+    "Deep": {
+      "2025": 450,
+      "career": 450
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nGenesis Smith arrived at Arizona from Chandler Hamilton as a three-star recruit in 2023, carrying a high school résumé that included 103 tackles and 16 interceptions across 24 games. The Arizona native found early playing time in the Wildcats' seven-defensive back packages as a freshman, making his mark with a pivotal interception in Arizona's six-turnover masterpiece against Oklahoma in the 2023 Alamo Bowl. That performance helped secure a 10-win season—the fourth in program history—and signaled Smith's arrival as a reliable piece in the secondary.\n\nSmith's sophomore campaign in 2024 thrust him into a starting role after Gunner Maldonado suffered a season-ending injury, and the 6-2 safety responded with a breakout year. Playing three different positions—free safety, strong safety, and nickel back—Smith accumulated 63 tackles, 3.5 tackles for loss, nine pass deflections, two forced fumbles, a fumble recovery, and a team-leading three interceptions. His versatility became essential as Arizona's defense battled through injuries, with Smith earning Big 12 Co-Defensive Player of the Week honors after a seven-tackle, one-interception performance against Houston. He briefly entered the transfer portal and visited Washington for a potential reunion with former head coach Jedd Fisch, but ultimately returned to Tucson for his junior season.\n\nAs a junior in 2025, Smith elevated his game to new heights with 77 tackles, nine pass deflections, and an interception while earning third-team All-Big 12 recognition. Beyond the field, Smith demonstrated exceptional character by founding Christmas Cats, a holiday campaign providing gifts to families in Tucson and Phoenix, and hosting a football camp at Doolen Middle School. His community impact earned him spots on the Allstate AFCA Good Works Team and as a semifinalist for the Wuerffel Trophy, which recognizes excellence in service, academics, and performance. Defensive coordinator Danny Gonzales praised Smith as \"one of the greatest human beings I've ever been around\" with \"servant leadership\" and elite character. Smith finished his Arizona career with 165 tackles, five interceptions, and 19 pass deflections across 37 games before declaring for the 2026 NFL Draft.\n\nSmith brings the kind of length and coverage ability that defensive coordinators covet in today's pass-heavy NFL landscape. His capacity to patrol center field and take away deep routes with his combination of range, fluidity, and anticipation gives him immediate value as a single-high safety who can anchor zone coverages. The way he processes route combinations and positions himself to undercut throws suggests a player who won't get overwhelmed by NFL complexity—he's already shown he can digest multiple position responsibilities and execute them at a high level. Teams looking to protect against explosive plays and limit chunk yardage down the field will find Smith's skill set highly appealing, particularly in Cover 3 and Cover 1 structures where his length becomes a multiplier effect.\n\n\nThe concern comes when evaluating his effectiveness near the line of scrimmage. Smith's tackling inconsistencies and reluctance to engage physically in run support represent legitimate hurdles he'll need to clear at the next level. NFL offenses will test his willingness to come downhill and make plays in traffic, and his current technique won't hold up against professional athletes without meaningful refinement. The physical tools are present—the size, the length, the athletic ability—but he needs coaching that will instill proper breakdown mechanics and develop his aggression as a run defender. His angle awareness in pursuit shows promise that this aspect of his game isn't beyond repair, but it requires dedicated work to transform weakness into competence.\n\n\nWhat separates Smith from other safety prospects in this range is his ceiling as a coverage player combined with his character and leadership profile. He's not just physically gifted—he's mentally wired to handle responsibility and represent an organization with class. The foundation is built for a productive NFL career as a starting free safety who can make quarterbacks think twice about attacking deep. If he commits to improving his tackle technique and developing the necessary edge as a run defender, Smith has the tools to become a long-term starter who makes his defense more sound and more difficult to attack vertically. He's a Day 2 prospect whose best football lies ahead once he tightens up the details that currently hold him back."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Genesis Smith has the makings of an NFL centerfielder with his natural athletic gifts, size, length, and ability to cover ground. He does a great job of letting the quarterback take him to the football and can handle a multitude of tight end archetypes in man coverage. Being a tight end eraser is a big task in the NFL, and Smith can be one of them.\n\nThe former 3—star recruit is entering the draft after his true junior season as a team captain. Over the last two seasons, he's piled up 140 tackles, 74 solo, four interceptions, 14 passes defensed, three fumble recoveries, and four forced fumbles. He made a name for himself, impacting the defense at every level for the Wildcats.\n\n— Smith is tall, long, and rangy from the safety position. His athletic gifts allow him to cover ground quickly both downhill and down the field from the post."
+        },
+        {
+          "title": "Positives",
+          "text": "— Smith is tall, long, and rangy from the safety position. His athletic gifts allow him to cover ground quickly both downhill and down the field from the post.\n\n— His man coverage technique and footwork are sound and give him nickel ability against bigger receivers and tight ends. He's sticky and reads receiver movements well.\n\n— He triggers downhill in the run and screen game while mirroring tight end motions and pulls. He's comfortable playing at or near the line of scrimmage and has the tools to battle blocks.\n\n— The 6'2\", 204—pound safety locates the ball in the air quickly and tracks it well. With his length and timing, he does a good job of impacting the catch point and knocking the ball away."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Smith takes aggressive and poor angles to the line of scrimmage from the post position and gives running backs easier access to the field. He needs to be more patient and take efficient angles to the ball carrier.\n\n— Tackling technique is inconsistent, and he doesn't drive through ball carriers enough, allowing them to break tackles. Using his length to wrap up better and driving his legs will clean up missed tackles.\n\n— He's still growing as an instinctual player in zone coverage; he relies too heavily on the quarterback's eyes to take him to the play. Continuing to watch film and feel routes developing quicker will help him take more options away in different roles."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.1,
+    "grade_indicator": null,
+    "overall_rank": 94,
+    "position_rank": null,
+    "pro_comparison": "Jaquan Brisker",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

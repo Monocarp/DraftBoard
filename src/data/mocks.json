@@ -1,0 +1,5185 @@
+{
+  "mocks": {
+    "Bleacher": [
+      {
+        "pick": 1,
+        "team": "Raiders",
+        "player": "Fernando Mendoza",
+        "position": "QB",
+        "college": "Indiana",
+        "slug": "fernando-mendoza"
+      },
+      {
+        "pick": 2,
+        "team": "Jets",
+        "player": "Rueben Bain Jr",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "rueben-bain-jr"
+      },
+      {
+        "pick": 3,
+        "team": "Cardinals",
+        "player": "Spencer Fano",
+        "position": "T",
+        "college": "Utah",
+        "slug": "spencer-fano"
+      },
+      {
+        "pick": 4,
+        "team": "Titans",
+        "player": "Arvell Reese",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "arvell-reese"
+      },
+      {
+        "pick": 5,
+        "team": "Giants",
+        "player": "Francis Mauigoa",
+        "position": "T",
+        "college": "Miami (FL)",
+        "slug": "francis-mauigoa"
+      },
+      {
+        "pick": 6,
+        "team": "Browns",
+        "player": "Caleb Downs",
+        "position": "S",
+        "college": "Ohio State",
+        "slug": "caleb-downs"
+      },
+      {
+        "pick": 7,
+        "team": "Commanders",
+        "player": "David Bailey",
+        "position": "ED",
+        "college": "Texas Tech",
+        "slug": "david-bailey"
+      },
+      {
+        "pick": 8,
+        "team": "Saints",
+        "player": "Jeremiyah Love",
+        "position": "HB",
+        "college": "Notre Dame",
+        "slug": "jeremiyah-love"
+      },
+      {
+        "pick": 9,
+        "team": "Chiefs",
+        "player": "Jordyn Tyson",
+        "position": "WR",
+        "college": "Arizona State",
+        "slug": "jordyn-tyson"
+      },
+      {
+        "pick": 10,
+        "team": "Bengals",
+        "player": "Mansoor Delane",
+        "position": "CB",
+        "college": "LSU",
+        "slug": "mansoor-delane"
+      },
+      {
+        "pick": 11,
+        "team": "Dolphins",
+        "player": "Jermod McCoy",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "jermod-mccoy"
+      },
+      {
+        "pick": 12,
+        "team": "Cowboys",
+        "player": "Sonny Styles",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "sonny-styles"
+      },
+      {
+        "pick": 13,
+        "team": "Rams",
+        "player": "Carnell Tate",
+        "position": "WR",
+        "college": "Ohio State",
+        "slug": "carnell-tate"
+      },
+      {
+        "pick": 14,
+        "team": "Ravens",
+        "player": "Peter Woods",
+        "position": "DI",
+        "college": "Clemson",
+        "slug": "peter-woods"
+      },
+      {
+        "pick": 15,
+        "team": "Buccaneers",
+        "player": "Kenyon Sadiq",
+        "position": "TE",
+        "college": "Oregon",
+        "slug": "kenyon-sadiq"
+      },
+      {
+        "pick": 16,
+        "team": "Jets",
+        "player": "Makai Lemon",
+        "position": "WR",
+        "college": "USC",
+        "slug": "makai-lemon"
+      },
+      {
+        "pick": 17,
+        "team": "Lions",
+        "player": "Akheem Mesidor",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "akheem-mesidor"
+      },
+      {
+        "pick": 18,
+        "team": "Vikings",
+        "player": "Avieon Terrell",
+        "position": "CB",
+        "college": "Clemson",
+        "slug": "avieon-terrell"
+      },
+      {
+        "pick": 19,
+        "team": "Panthers",
+        "player": "T.J. Parker",
+        "position": "ED",
+        "college": "Clemson",
+        "slug": "tj-parker"
+      },
+      {
+        "pick": 20,
+        "team": "Cowboys",
+        "player": "Cashius Howell",
+        "position": "ED",
+        "college": "Texas A&M",
+        "slug": "cashius-howell"
+      },
+      {
+        "pick": 21,
+        "team": "Steelers",
+        "player": "KC Concepcion",
+        "position": "WR",
+        "college": "Texas A&M",
+        "slug": "kc-concepcion"
+      },
+      {
+        "pick": 22,
+        "team": "Chargers",
+        "player": "Olaivavega Ioane",
+        "position": "G",
+        "college": "Penn State",
+        "slug": "olaivavega-ioane"
+      },
+      {
+        "pick": 23,
+        "team": "Eagles",
+        "player": "Kadyn Proctor",
+        "position": "T",
+        "college": "Alabama",
+        "slug": "kadyn-proctor"
+      },
+      {
+        "pick": 24,
+        "team": "Browns",
+        "player": "Caleb Lomu",
+        "position": "T",
+        "college": "Utah",
+        "slug": "caleb-lomu"
+      },
+      {
+        "pick": 25,
+        "team": "Bears",
+        "player": "Emmanuel Mcneil-Warren",
+        "position": "S",
+        "college": "Toledo",
+        "slug": "emmanuel-mcneil-warren"
+      },
+      {
+        "pick": 26,
+        "team": "Bills",
+        "player": "Malachi Fields",
+        "position": "WR",
+        "college": "Notre Dame",
+        "slug": "malachi-fields"
+      },
+      {
+        "pick": 27,
+        "team": "49ers",
+        "player": "Denzel Boston",
+        "position": "WR",
+        "college": "Washington",
+        "slug": "denzel-boston"
+      },
+      {
+        "pick": 28,
+        "team": "Texans",
+        "player": "Lee Hunter",
+        "position": "DI",
+        "college": "Texas Tech",
+        "slug": "lee-hunter"
+      },
+      {
+        "pick": 29,
+        "team": "Rams",
+        "player": "Monroe Freeling",
+        "position": "T",
+        "college": "Georgia",
+        "slug": "monroe-freeling"
+      },
+      {
+        "pick": 30,
+        "team": "Patriots",
+        "player": "Keldric Faulk",
+        "position": "ED",
+        "college": "Auburn",
+        "slug": "keldric-faulk"
+      },
+      {
+        "pick": 31,
+        "team": "Broncos",
+        "player": "Kayden McDonald",
+        "position": "DI",
+        "college": "Ohio State",
+        "slug": "kayden-mcdonald"
+      },
+      {
+        "pick": 32,
+        "team": "Seahawks",
+        "player": "Dillon Thieneman",
+        "position": "S",
+        "college": "Oregon",
+        "slug": "dillon-thieneman"
+      }
+    ],
+    "Brugler": [
+      {
+        "pick": 1,
+        "team": "Raiders",
+        "player": "Fernando Mendoza",
+        "position": "QB",
+        "college": "Indiana",
+        "slug": "fernando-mendoza"
+      },
+      {
+        "pick": 2,
+        "team": "Jets",
+        "player": "Arvell Reese",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "arvell-reese"
+      },
+      {
+        "pick": 3,
+        "team": "Cardinals",
+        "player": "Spencer Fano",
+        "position": "T",
+        "college": "Utah",
+        "slug": "spencer-fano"
+      },
+      {
+        "pick": 4,
+        "team": "Titans",
+        "player": "Carnell Tate",
+        "position": "WR",
+        "college": "Ohio State",
+        "slug": "carnell-tate"
+      },
+      {
+        "pick": 5,
+        "team": "Giants",
+        "player": "Jordyn Tyson",
+        "position": "WR",
+        "college": "Arizona State",
+        "slug": "jordyn-tyson"
+      },
+      {
+        "pick": 6,
+        "team": "Browns",
+        "player": "Francis Mauigoa",
+        "position": "T",
+        "college": "Miami (FL)",
+        "slug": "francis-mauigoa"
+      },
+      {
+        "pick": 7,
+        "team": "Commanders",
+        "player": "David Bailey",
+        "position": "ED",
+        "college": "Texas Tech",
+        "slug": "david-bailey"
+      },
+      {
+        "pick": 8,
+        "team": "Saints",
+        "player": "Jeremiyah Love",
+        "position": "HB",
+        "college": "Notre Dame",
+        "slug": "jeremiyah-love"
+      },
+      {
+        "pick": 9,
+        "team": "Chiefs",
+        "player": "Caleb Downs",
+        "position": "S",
+        "college": "Ohio State",
+        "slug": "caleb-downs"
+      },
+      {
+        "pick": 10,
+        "team": "Bengals",
+        "player": "Rueben Bain Jr",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "rueben-bain-jr"
+      },
+      {
+        "pick": 11,
+        "team": "Dolphins",
+        "player": "Jermod McCoy",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "jermod-mccoy"
+      },
+      {
+        "pick": 12,
+        "team": "Cowboys",
+        "player": "Sonny Styles",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "sonny-styles"
+      },
+      {
+        "pick": 13,
+        "team": "Rams",
+        "player": "Mansoor Delane",
+        "position": "CB",
+        "college": "LSU",
+        "slug": "mansoor-delane"
+      },
+      {
+        "pick": 14,
+        "team": "Ravens",
+        "player": "Olaivavega Ioane",
+        "position": "G",
+        "college": "Penn State",
+        "slug": "olaivavega-ioane"
+      },
+      {
+        "pick": 15,
+        "team": "Buccaneers",
+        "player": "Keldric Faulk",
+        "position": "ED",
+        "college": "Auburn",
+        "slug": "keldric-faulk"
+      },
+      {
+        "pick": 16,
+        "team": "Jets",
+        "player": "Makai Lemon",
+        "position": "WR",
+        "college": "USC",
+        "slug": "makai-lemon"
+      },
+      {
+        "pick": 17,
+        "team": "Lions",
+        "player": "Caleb Lomu",
+        "position": "T",
+        "college": "Utah",
+        "slug": "caleb-lomu"
+      },
+      {
+        "pick": 18,
+        "team": "Vikings",
+        "player": "Kenyon Sadiq",
+        "position": "TE",
+        "college": "Oregon",
+        "slug": "kenyon-sadiq"
+      },
+      {
+        "pick": 19,
+        "team": "Panthers",
+        "player": "Peter Woods",
+        "position": "DI",
+        "college": "Clemson",
+        "slug": "peter-woods"
+      },
+      {
+        "pick": 20,
+        "team": "Cowboys",
+        "player": "Avieon Terrell",
+        "position": "CB",
+        "college": "Clemson",
+        "slug": "avieon-terrell"
+      },
+      {
+        "pick": 21,
+        "team": "Steelers",
+        "player": "Ty Simpson",
+        "position": "QB",
+        "college": "Alabama",
+        "slug": "ty-simpson"
+      },
+      {
+        "pick": 22,
+        "team": "Chargers",
+        "player": "Brandon Cisse",
+        "position": "CB",
+        "college": "South Carolina",
+        "slug": "brandon-cisse"
+      },
+      {
+        "pick": 23,
+        "team": "Eagles",
+        "player": "Kadyn Proctor",
+        "position": "T",
+        "college": "Alabama",
+        "slug": "kadyn-proctor"
+      },
+      {
+        "pick": 24,
+        "team": "Browns",
+        "player": "KC Concepcion",
+        "position": "WR",
+        "college": "Texas A&M",
+        "slug": "kc-concepcion"
+      },
+      {
+        "pick": 25,
+        "team": "Bears",
+        "player": "Kayden McDonald",
+        "position": "DI",
+        "college": "Ohio State",
+        "slug": "kayden-mcdonald"
+      },
+      {
+        "pick": 26,
+        "team": "Bills",
+        "player": "Cashius Howell",
+        "position": "ED",
+        "college": "Texas A&M",
+        "slug": "cashius-howell"
+      },
+      {
+        "pick": 27,
+        "team": "49ers",
+        "player": "Monroe Freeling",
+        "position": "T",
+        "college": "Georgia",
+        "slug": "monroe-freeling"
+      },
+      {
+        "pick": 28,
+        "team": "Texans",
+        "player": "Caleb Banks",
+        "position": "DI",
+        "college": "Florida",
+        "slug": "caleb-banks"
+      },
+      {
+        "pick": 29,
+        "team": "Rams",
+        "player": "Emmanuel McNeil-Warren",
+        "position": "S",
+        "college": "Toledo",
+        "slug": "emmanuel-mcneil-warren"
+      },
+      {
+        "pick": 30,
+        "team": "Patriots",
+        "player": "Akheem Mesidor",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "akheem-mesidor"
+      },
+      {
+        "pick": 31,
+        "team": "Broncos",
+        "player": "CJ Allen",
+        "position": "LB",
+        "college": "Georgia",
+        "slug": "cj-allen"
+      },
+      {
+        "pick": 32,
+        "team": "Seahawks",
+        "player": "Colton Hood",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "colton-hood"
+      }
+    ],
+    "Campbell": [
+      {
+        "pick": 1,
+        "team": "Raiders",
+        "player": "Fernando Mendoza",
+        "position": "QB",
+        "college": "Indiana",
+        "slug": "fernando-mendoza"
+      },
+      {
+        "pick": 2,
+        "team": "Jets",
+        "player": "Ty Simpson",
+        "position": "QB",
+        "college": "Alabama",
+        "slug": "ty-simpson"
+      },
+      {
+        "pick": 3,
+        "team": "Cardinals",
+        "player": "Arvell Reese",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "arvell-reese"
+      },
+      {
+        "pick": 4,
+        "team": "Titans",
+        "player": "David Bailey",
+        "position": "ED",
+        "college": "Texas Tech",
+        "slug": "david-bailey"
+      },
+      {
+        "pick": 5,
+        "team": "Giants",
+        "player": "Caleb Downs",
+        "position": "S",
+        "college": "Ohio State",
+        "slug": "caleb-downs"
+      },
+      {
+        "pick": 6,
+        "team": "Browns",
+        "player": "Spencer Fano",
+        "position": "T",
+        "college": "Utah",
+        "slug": "spencer-fano"
+      },
+      {
+        "pick": 7,
+        "team": "Commanders",
+        "player": "Rueben Bain Jr",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "rueben-bain-jr"
+      },
+      {
+        "pick": 8,
+        "team": "Saints",
+        "player": "Jeremiyah Love",
+        "position": "HB",
+        "college": "Notre Dame",
+        "slug": "jeremiyah-love"
+      },
+      {
+        "pick": 9,
+        "team": "Chiefs",
+        "player": "Keldric Faulk",
+        "position": "ED",
+        "college": "Auburn",
+        "slug": "keldric-faulk"
+      },
+      {
+        "pick": 10,
+        "team": "Bengals",
+        "player": "Mansoor Delane",
+        "position": "CB",
+        "college": "LSU",
+        "slug": "mansoor-delane"
+      },
+      {
+        "pick": 11,
+        "team": "Dolphins",
+        "player": "Francis Mauigoa",
+        "position": "T",
+        "college": "Miami (FL)",
+        "slug": "francis-mauigoa"
+      },
+      {
+        "pick": 12,
+        "team": "Cowboys",
+        "player": "Jermod McCoy",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "jermod-mccoy"
+      },
+      {
+        "pick": 13,
+        "team": "Rams",
+        "player": "Kadyn Proctor",
+        "position": "T",
+        "college": "Alabama",
+        "slug": "kadyn-proctor"
+      },
+      {
+        "pick": 14,
+        "team": "Ravens",
+        "player": "Caleb Banks",
+        "position": "DI",
+        "college": "Florida",
+        "slug": "caleb-banks"
+      },
+      {
+        "pick": 15,
+        "team": "Buccaneers",
+        "player": "Sonny Styles",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "sonny-styles"
+      },
+      {
+        "pick": 16,
+        "team": "Jets",
+        "player": "Jordyn Tyson",
+        "position": "WR",
+        "college": "Arizona State",
+        "slug": "jordyn-tyson"
+      },
+      {
+        "pick": 17,
+        "team": "Lions",
+        "player": "Caleb Lomu",
+        "position": "T",
+        "college": "Utah",
+        "slug": "caleb-lomu"
+      },
+      {
+        "pick": 18,
+        "team": "Vikings",
+        "player": "Avieon Terrell",
+        "position": "CB",
+        "college": "Clemson",
+        "slug": "avieon-terrell"
+      },
+      {
+        "pick": 19,
+        "team": "Panthers",
+        "player": "Peter Woods",
+        "position": "DI",
+        "college": "Clemson",
+        "slug": "peter-woods"
+      },
+      {
+        "pick": 20,
+        "team": "Cowboys",
+        "player": "Zion Young",
+        "position": "ED",
+        "college": "Missouri",
+        "slug": "zion-young"
+      },
+      {
+        "pick": 21,
+        "team": "Steelers",
+        "player": "Carnell Tate",
+        "position": "WR",
+        "college": "Ohio State",
+        "slug": "carnell-tate"
+      },
+      {
+        "pick": 22,
+        "team": "Chargers",
+        "player": "R Mason Thomas",
+        "position": "ED",
+        "college": "Oklahoma",
+        "slug": "r-mason-thomas"
+      },
+      {
+        "pick": 23,
+        "team": "Eagles",
+        "player": "Kenyon Sadiq",
+        "position": "TE",
+        "college": "Oregon",
+        "slug": "kenyon-sadiq"
+      },
+      {
+        "pick": 24,
+        "team": "Bills",
+        "player": "Denzel Boston",
+        "position": "WR",
+        "college": "Washington",
+        "slug": "denzel-boston"
+      },
+      {
+        "pick": 25,
+        "team": "Bears",
+        "player": "Cashius Howell",
+        "position": "ED",
+        "college": "Texas A&M",
+        "slug": "cashius-howell"
+      },
+      {
+        "pick": 26,
+        "team": "49ers",
+        "player": "Kayden McDonald",
+        "position": "DI",
+        "college": "Ohio State",
+        "slug": "kayden-mcdonald"
+      },
+      {
+        "pick": 27,
+        "team": "Texans",
+        "player": "Makai Lemon",
+        "position": "WR",
+        "college": "USC",
+        "slug": "makai-lemon"
+      },
+      {
+        "pick": 28,
+        "team": "Browns",
+        "player": "Olaivavega Ioane",
+        "position": "G",
+        "college": "Penn State",
+        "slug": "olaivavega-ioane"
+      },
+      {
+        "pick": 29,
+        "team": "Rams",
+        "player": "Malachi Fields",
+        "position": "WR",
+        "college": "Notre Dame",
+        "slug": "malachi-fields"
+      },
+      {
+        "pick": 30,
+        "team": "Patriots",
+        "player": "Blake Miller",
+        "position": "T",
+        "college": "Clemson",
+        "slug": "blake-miller"
+      },
+      {
+        "pick": 31,
+        "team": "Broncos",
+        "player": "KC Concepcion",
+        "position": "WR",
+        "college": "Texas A&M",
+        "slug": "kc-concepcion"
+      },
+      {
+        "pick": 32,
+        "team": "Seahawks",
+        "player": "Brandon Cisse",
+        "position": "CB",
+        "college": "South Carolina",
+        "slug": "brandon-cisse"
+      },
+      {
+        "pick": 33,
+        "team": "Jets",
+        "player": "Akheem Mesidor",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "akheem-mesidor"
+      },
+      {
+        "pick": 34,
+        "team": "Cardinals",
+        "player": "Chase Bisontis",
+        "position": "G",
+        "college": "Texas A&M",
+        "slug": "chase-bisontis"
+      },
+      {
+        "pick": 35,
+        "team": "Titans",
+        "player": "JaKobi Lane",
+        "position": "WR",
+        "college": "USC",
+        "slug": "jakobi-lane"
+      },
+      {
+        "pick": 36,
+        "team": "Raiders",
+        "player": "Germie Bernard",
+        "position": "WR",
+        "college": "Alabama",
+        "slug": "germie-bernard"
+      },
+      {
+        "pick": 37,
+        "team": "Giants",
+        "player": "CJ Allen",
+        "position": "LB",
+        "college": "Georgia",
+        "slug": "cj-allen"
+      },
+      {
+        "pick": 38,
+        "team": "Texans",
+        "player": "Lee Hunter",
+        "position": "DI",
+        "college": "Texas Tech",
+        "slug": "lee-hunter"
+      },
+      {
+        "pick": 39,
+        "team": "Browns",
+        "player": "Monroe Freeling",
+        "position": "T",
+        "college": "Georgia",
+        "slug": "monroe-freeling"
+      },
+      {
+        "pick": 40,
+        "team": "Chiefs",
+        "player": "Jadarian Price",
+        "position": "HB",
+        "college": "Notre Dame",
+        "slug": "jadarian-price"
+      },
+      {
+        "pick": 41,
+        "team": "Bengals",
+        "player": "Kamari Ramsey",
+        "position": "S",
+        "college": "USC",
+        "slug": "kamari-ramsey"
+      },
+      {
+        "pick": 42,
+        "team": "Saints",
+        "player": "Will Lee III",
+        "position": "CB",
+        "college": "Texas A&M",
+        "slug": "will-lee-iii"
+      },
+      {
+        "pick": 43,
+        "team": "Dolphins",
+        "player": "Colton Hood",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "colton-hood"
+      },
+      {
+        "pick": 44,
+        "team": "Jets",
+        "player": "Darrell Jackson Jr",
+        "position": "DI",
+        "college": "Florida State",
+        "slug": "darrell-jackson-jr"
+      },
+      {
+        "pick": 45,
+        "team": "Ravens",
+        "player": "Chris Bell",
+        "position": "WR",
+        "college": "Louisville",
+        "slug": "chris-bell"
+      },
+      {
+        "pick": 46,
+        "team": "Buccaneers",
+        "player": "Gabe Jacas",
+        "position": "ED",
+        "college": "Illinois",
+        "slug": "gabe-jacas"
+      },
+      {
+        "pick": 47,
+        "team": "Colts",
+        "player": "Max Iheanachor",
+        "position": "T",
+        "college": "Arizona State",
+        "slug": "max-iheanachor"
+      },
+      {
+        "pick": 48,
+        "team": "Falcons",
+        "player": "Zachariah Branch",
+        "position": "WR",
+        "college": "Georgia",
+        "slug": "zachariah-branch"
+      },
+      {
+        "pick": 49,
+        "team": "Vikings",
+        "player": "Emmanuel McNeil-Warren",
+        "position": "S",
+        "college": "Toledo",
+        "slug": "emmanuel-mcneil-warren"
+      },
+      {
+        "pick": 50,
+        "team": "Lions",
+        "player": "Jake Slaughter",
+        "position": "C",
+        "college": "Florida",
+        "slug": "jake-slaughter"
+      },
+      {
+        "pick": 51,
+        "team": "Panthers",
+        "player": "Anthony Hill Jr",
+        "position": "LB",
+        "college": "Texas",
+        "slug": "anthony-hill-jr"
+      },
+      {
+        "pick": 52,
+        "team": "Packers",
+        "player": "LT Overton",
+        "position": "ED",
+        "college": "Alabama",
+        "slug": "lt-overton"
+      },
+      {
+        "pick": 53,
+        "team": "Steelers",
+        "player": "Jaylon Guilbeau",
+        "position": "CB",
+        "college": "Texas",
+        "slug": "jaylon-guilbeau"
+      },
+      {
+        "pick": 54,
+        "team": "Eagles",
+        "player": "Drew Shelton",
+        "position": "T",
+        "college": "Penn State",
+        "slug": "drew-shelton"
+      },
+      {
+        "pick": 55,
+        "team": "Chargers",
+        "player": "Kyle Louis",
+        "position": "LB",
+        "college": "Pittsburgh",
+        "slug": "kyle-louis"
+      },
+      {
+        "pick": 56,
+        "team": "Bills",
+        "player": "Dillon Thieneman",
+        "position": "S",
+        "college": "Oregon",
+        "slug": "dillon-thieneman"
+      },
+      {
+        "pick": 57,
+        "team": "Bears",
+        "player": "Chris McClellan",
+        "position": "DI",
+        "college": "Missouri",
+        "slug": "chris-mcclellan"
+      },
+      {
+        "pick": 58,
+        "team": "Texans",
+        "player": "Isaiah World",
+        "position": "T",
+        "college": "Oregon",
+        "slug": "isaiah-world"
+      },
+      {
+        "pick": 59,
+        "team": "49ers",
+        "player": "T.J. Parker",
+        "position": "ED",
+        "college": "Clemson",
+        "slug": "tj-parker"
+      },
+      {
+        "pick": 60,
+        "team": "Jaguars",
+        "player": "Jaishawn Barham",
+        "position": "ED",
+        "college": "Michigan",
+        "slug": "jaishawn-barham"
+      },
+      {
+        "pick": 61,
+        "team": "Rams",
+        "player": "Keylan Rutledge",
+        "position": "G",
+        "college": "Georgia Tech",
+        "slug": "keylan-rutledge"
+      },
+      {
+        "pick": 62,
+        "team": "Patriots",
+        "player": "Dani Dennis-Sutton",
+        "position": "ED",
+        "college": "Penn State",
+        "slug": "dani-dennis-sutton"
+      },
+      {
+        "pick": 63,
+        "team": "Broncos",
+        "player": "Jude Bowry",
+        "position": "T",
+        "college": "Boston College",
+        "slug": "jude-bowry"
+      },
+      {
+        "pick": 64,
+        "team": "Seahawks",
+        "player": "Harold Perkins Jr",
+        "position": "LB",
+        "college": "LSU",
+        "slug": "harold-perkins-jr"
+      },
+      {
+        "pick": 65,
+        "team": "Cardinals",
+        "player": "Trinidad Chambliss",
+        "position": "QB",
+        "college": "Ole Miss",
+        "slug": "trinidad-chambliss"
+      },
+      {
+        "pick": 66,
+        "team": "Titans",
+        "player": "Gennings Dunker",
+        "position": "T",
+        "college": "Iowa",
+        "slug": "gennings-dunker"
+      },
+      {
+        "pick": 67,
+        "team": "Raiders",
+        "player": "Caleb Tiernan",
+        "position": "T",
+        "college": "Northwestern",
+        "slug": "caleb-tiernan"
+      },
+      {
+        "pick": 68,
+        "team": "Eagles",
+        "player": "Derrick Moore",
+        "position": "ED",
+        "college": "Michigan",
+        "slug": "derrick-moore"
+      },
+      {
+        "pick": 69,
+        "team": "Texans",
+        "player": "Kage Casey",
+        "position": "T",
+        "college": "Boise State",
+        "slug": "kage-casey"
+      },
+      {
+        "pick": 70,
+        "team": "Browns",
+        "player": "Javon Kilgore",
+        "position": "TBD",
+        "college": "TBD",
+        "slug": "javon-kilgore"
+      },
+      {
+        "pick": 71,
+        "team": "Commanders",
+        "player": "Antonio Williams",
+        "position": "WR",
+        "college": "Clemson",
+        "slug": "antonio-williams"
+      },
+      {
+        "pick": 72,
+        "team": "Bengals",
+        "player": "DeMonte Capehart",
+        "position": "DI",
+        "college": "Clemson",
+        "slug": "demonte-capehart"
+      },
+      {
+        "pick": 73,
+        "team": "Saints",
+        "player": "Aaron Anderson",
+        "position": "WR",
+        "college": "LSU",
+        "slug": "aaron-anderson"
+      },
+      {
+        "pick": 74,
+        "team": "Chiefs",
+        "player": "Sam Roush",
+        "position": "TE",
+        "college": "Stanford",
+        "slug": "sam-roush"
+      },
+      {
+        "pick": 75,
+        "team": "Dolphins",
+        "player": "Keyron Crawford",
+        "position": "ED",
+        "college": "Auburn",
+        "slug": "keyron-crawford"
+      },
+      {
+        "pick": 76,
+        "team": "Steelers",
+        "player": "Garrett Nussmeier",
+        "position": "QB",
+        "college": "LSU",
+        "slug": "garrett-nussmeier"
+      },
+      {
+        "pick": 77,
+        "team": "Buccaneers",
+        "player": "Jacob Rodriguez",
+        "position": "LB",
+        "college": "Texas Tech",
+        "slug": "jacob-rodriguez"
+      },
+      {
+        "pick": 78,
+        "team": "Colts",
+        "player": "Domonique Orange",
+        "position": "DI",
+        "college": "Iowa State",
+        "slug": "domonique-orange"
+      },
+      {
+        "pick": 79,
+        "team": "Falcons",
+        "player": "Domani Jackson",
+        "position": "CB",
+        "college": "Alabama",
+        "slug": "domani-jackson"
+      },
+      {
+        "pick": 80,
+        "team": "Ravens",
+        "player": "Fernando Carmona Jr",
+        "position": "G",
+        "college": "Arkansas",
+        "slug": "fernando-carmona-jr"
+      },
+      {
+        "pick": 81,
+        "team": "Jaguars",
+        "player": "Zane Durant",
+        "position": "DI",
+        "college": "Penn State",
+        "slug": "zane-durant"
+      },
+      {
+        "pick": 82,
+        "team": "Vikings",
+        "player": "Drew Allar",
+        "position": "QB",
+        "college": "Penn State",
+        "slug": "drew-allar"
+      },
+      {
+        "pick": 83,
+        "team": "Panthers",
+        "player": "Malik Muhammad",
+        "position": "CB",
+        "college": "Texas",
+        "slug": "malik-muhammad"
+      },
+      {
+        "pick": 84,
+        "team": "Packers",
+        "player": "Jake Golday",
+        "position": "LB",
+        "college": "Cincinnati",
+        "slug": "jake-golday"
+      },
+      {
+        "pick": 85,
+        "team": "Steelers",
+        "player": "Emmanuel Pregnon",
+        "position": "G",
+        "college": "Oregon",
+        "slug": "emmanuel-pregnon"
+      },
+      {
+        "pick": 86,
+        "team": "Chargers",
+        "player": "Romello Height",
+        "position": "ED",
+        "college": "Texas Tech",
+        "slug": "romello-height"
+      },
+      {
+        "pick": 87,
+        "team": "Dolphins",
+        "player": "Chris Brazzell II",
+        "position": "WR",
+        "college": "Tennessee",
+        "slug": "chris-brazzell-ii"
+      },
+      {
+        "pick": 88,
+        "team": "Jaguars",
+        "player": "Connor Lew",
+        "position": "C",
+        "college": "Auburn",
+        "slug": "connor-lew"
+      },
+      {
+        "pick": 89,
+        "team": "Bears",
+        "player": "Daylen Everette",
+        "position": "CB",
+        "college": "Georgia",
+        "slug": "daylen-everette"
+      },
+      {
+        "pick": 90,
+        "team": "Dolphins",
+        "player": "Oscar Delp",
+        "position": "TE",
+        "college": "Georgia",
+        "slug": "oscar-delp"
+      },
+      {
+        "pick": 91,
+        "team": "Bills",
+        "player": "Sam Hecht",
+        "position": "C",
+        "college": "Kansas State",
+        "slug": "sam-hecht"
+      },
+      {
+        "pick": 92,
+        "team": "49ers",
+        "player": "Max Klare",
+        "position": "TE",
+        "college": "Ohio State",
+        "slug": "max-klare"
+      },
+      {
+        "pick": 93,
+        "team": "Rams",
+        "player": "Chris Johnson Jr",
+        "position": "CB",
+        "college": "San Diego State",
+        "slug": "chris-johnson-jr"
+      },
+      {
+        "pick": 94,
+        "team": "Broncos",
+        "player": "Aamil Wagner",
+        "position": "T",
+        "college": "Notre Dame",
+        "slug": "aamil-wagner"
+      },
+      {
+        "pick": 95,
+        "team": "Patriots",
+        "player": "Joe Royer",
+        "position": "TE",
+        "college": "Cincinnati",
+        "slug": "joe-royer"
+      },
+      {
+        "pick": 96,
+        "team": "Seahawks",
+        "player": "Logan Jones",
+        "position": "C",
+        "college": "Iowa",
+        "slug": "logan-jones"
+      }
+    ],
+    "CBS": [
+      {
+        "pick": 1,
+        "team": "Raiders",
+        "player": "Fernando Mendoza",
+        "position": "QB",
+        "college": "Indiana",
+        "slug": "fernando-mendoza"
+      },
+      {
+        "pick": 2,
+        "team": "Jets",
+        "player": "Arvell Reese",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "arvell-reese"
+      },
+      {
+        "pick": 3,
+        "team": "Cardinals",
+        "player": "Spencer Fano",
+        "position": "T",
+        "college": "Utah",
+        "slug": "spencer-fano"
+      },
+      {
+        "pick": 4,
+        "team": "Titans",
+        "player": "David Bailey",
+        "position": "ED",
+        "college": "Texas Tech",
+        "slug": "david-bailey"
+      },
+      {
+        "pick": 5,
+        "team": "Giants",
+        "player": "Sonny Styles",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "sonny-styles"
+      },
+      {
+        "pick": 6,
+        "team": "Browns",
+        "player": "Kadyn Proctor",
+        "position": "T",
+        "college": "Alabama",
+        "slug": "kadyn-proctor"
+      },
+      {
+        "pick": 7,
+        "team": "Commanders",
+        "player": "Carnell Tate",
+        "position": "WR",
+        "college": "Ohio State",
+        "slug": "carnell-tate"
+      },
+      {
+        "pick": 8,
+        "team": "Saints",
+        "player": "Jeremiyah Love",
+        "position": "HB",
+        "college": "Notre Dame",
+        "slug": "jeremiyah-love"
+      },
+      {
+        "pick": 9,
+        "team": "Chiefs",
+        "player": "Rueben Bain Jr",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "rueben-bain-jr"
+      },
+      {
+        "pick": 10,
+        "team": "Bengals",
+        "player": "Caleb Downs",
+        "position": "S",
+        "college": "Ohio State",
+        "slug": "caleb-downs"
+      },
+      {
+        "pick": 11,
+        "team": "Dolphins",
+        "player": "Mansoor Delane",
+        "position": "CB",
+        "college": "LSU",
+        "slug": "mansoor-delane"
+      },
+      {
+        "pick": 12,
+        "team": "Cowboys",
+        "player": "Jermod McCoy",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "jermod-mccoy"
+      },
+      {
+        "pick": 13,
+        "team": "Rams",
+        "player": "Jordyn Tyson",
+        "position": "WR",
+        "college": "Arizona State",
+        "slug": "jordyn-tyson"
+      },
+      {
+        "pick": 14,
+        "team": "Ravens",
+        "player": "Francis Mauigoa",
+        "position": "T",
+        "college": "Miami (FL)",
+        "slug": "francis-mauigoa"
+      },
+      {
+        "pick": 15,
+        "team": "Buccaneers",
+        "player": "Olaivavega Ioane",
+        "position": "G",
+        "college": "Penn State",
+        "slug": "olaivavega-ioane"
+      },
+      {
+        "pick": 16,
+        "team": "Jets",
+        "player": "Makai Lemon",
+        "position": "WR",
+        "college": "USC",
+        "slug": "makai-lemon"
+      },
+      {
+        "pick": 17,
+        "team": "Lions",
+        "player": "Caleb Lomu",
+        "position": "T",
+        "college": "Utah",
+        "slug": "caleb-lomu"
+      },
+      {
+        "pick": 18,
+        "team": "Vikings",
+        "player": "Colton Hood",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "colton-hood"
+      },
+      {
+        "pick": 19,
+        "team": "Panthers",
+        "player": "Caleb Banks",
+        "position": "DI",
+        "college": "Florida",
+        "slug": "caleb-banks"
+      },
+      {
+        "pick": 20,
+        "team": "Cowboys",
+        "player": "Blake Miller",
+        "position": "T",
+        "college": "Clemson",
+        "slug": "blake-miller"
+      },
+      {
+        "pick": 21,
+        "team": "Steelers",
+        "player": "Ty Simpson",
+        "position": "QB",
+        "college": "Alabama",
+        "slug": "ty-simpson"
+      },
+      {
+        "pick": 22,
+        "team": "Chargers",
+        "player": "Peter Woods",
+        "position": "DI",
+        "college": "Clemson",
+        "slug": "peter-woods"
+      },
+      {
+        "pick": 23,
+        "team": "Eagles",
+        "player": "Kenyon Sadiq",
+        "position": "TE",
+        "college": "Oregon",
+        "slug": "kenyon-sadiq"
+      },
+      {
+        "pick": 24,
+        "team": "Browns",
+        "player": "Denzel Boston",
+        "position": "WR",
+        "college": "Washington",
+        "slug": "denzel-boston"
+      },
+      {
+        "pick": 25,
+        "team": "Bears",
+        "player": "Lee Hunter",
+        "position": "DI",
+        "college": "Texas Tech",
+        "slug": "lee-hunter"
+      },
+      {
+        "pick": 26,
+        "team": "Bills",
+        "player": "KC Concepcion",
+        "position": "WR",
+        "college": "Texas A&M",
+        "slug": "kc-concepcion"
+      },
+      {
+        "pick": 27,
+        "team": "49ers",
+        "player": "Cashius Howell",
+        "position": "ED",
+        "college": "Texas A&M",
+        "slug": "cashius-howell"
+      },
+      {
+        "pick": 28,
+        "team": "Texans",
+        "player": "Monroe Freeling",
+        "position": "T",
+        "college": "Georgia",
+        "slug": "monroe-freeling"
+      },
+      {
+        "pick": 29,
+        "team": "Rams",
+        "player": "Avieon Terrell",
+        "position": "CB",
+        "college": "Clemson",
+        "slug": "avieon-terrell"
+      },
+      {
+        "pick": 30,
+        "team": "Broncos",
+        "player": "Omar Cooper Jr",
+        "position": "WR",
+        "college": "Indiana",
+        "slug": "omar-cooper-jr"
+      },
+      {
+        "pick": 31,
+        "team": "Patriots",
+        "player": "Jake Golday",
+        "position": "LB",
+        "college": "Cincinnati",
+        "slug": "jake-golday"
+      },
+      {
+        "pick": 32,
+        "team": "Seahawks",
+        "player": "Anthony Hill Jr",
+        "position": "LB",
+        "college": "Texas",
+        "slug": "anthony-hill-jr"
+      }
+    ],
+    "Jeremiah": [
+      {
+        "pick": 1,
+        "team": "Raiders",
+        "player": "Fernando Mendoza",
+        "position": "QB",
+        "college": "Indiana",
+        "slug": "fernando-mendoza"
+      },
+      {
+        "pick": 2,
+        "team": "Jets",
+        "player": "Arvell Reese",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "arvell-reese"
+      },
+      {
+        "pick": 3,
+        "team": "Cardinals",
+        "player": "Spencer Fano",
+        "position": "T",
+        "college": "Utah",
+        "slug": "spencer-fano"
+      },
+      {
+        "pick": 4,
+        "team": "Titans",
+        "player": "Francis Mauigoa",
+        "position": "T",
+        "college": "Miami (FL)",
+        "slug": "francis-mauigoa"
+      },
+      {
+        "pick": 5,
+        "team": "Giants",
+        "player": "Mansoor Delane",
+        "position": "CB",
+        "college": "LSU",
+        "slug": "mansoor-delane"
+      },
+      {
+        "pick": 6,
+        "team": "Browns",
+        "player": "David Bailey",
+        "position": "ED",
+        "college": "Texas Tech",
+        "slug": "david-bailey"
+      },
+      {
+        "pick": 7,
+        "team": "Commanders",
+        "player": "Sonny Styles",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "sonny-styles"
+      },
+      {
+        "pick": 8,
+        "team": "Saints",
+        "player": "Jeremiyah Love",
+        "position": "HB",
+        "college": "Notre Dame",
+        "slug": "jeremiyah-love"
+      },
+      {
+        "pick": 9,
+        "team": "Chiefs",
+        "player": "Rueben Bain Jr",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "rueben-bain-jr"
+      },
+      {
+        "pick": 10,
+        "team": "Bengals",
+        "player": "Jermod McCoy",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "jermod-mccoy"
+      },
+      {
+        "pick": 11,
+        "team": "Dolphins",
+        "player": "Caleb Downs",
+        "position": "S",
+        "college": "Ohio State",
+        "slug": "caleb-downs"
+      },
+      {
+        "pick": 12,
+        "team": "Cowboys",
+        "player": "Colton Hood",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "colton-hood"
+      },
+      {
+        "pick": 13,
+        "team": "Rams",
+        "player": "Makai Lemon",
+        "position": "WR",
+        "college": "USC",
+        "slug": "makai-lemon"
+      },
+      {
+        "pick": 14,
+        "team": "Ravens",
+        "player": "Olaivavega Ioane",
+        "position": "G",
+        "college": "Penn State",
+        "slug": "olaivavega-ioane"
+      },
+      {
+        "pick": 15,
+        "team": "Buccaneers",
+        "player": "Cashius Howell",
+        "position": "ED",
+        "college": "Texas A&M",
+        "slug": "cashius-howell"
+      },
+      {
+        "pick": 16,
+        "team": "Jets",
+        "player": "Carnell Tate",
+        "position": "WR",
+        "college": "Ohio State",
+        "slug": "carnell-tate"
+      },
+      {
+        "pick": 17,
+        "team": "Lions",
+        "player": "Akheem Mesidor",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "akheem-mesidor"
+      },
+      {
+        "pick": 18,
+        "team": "Vikings",
+        "player": "Emmanuel McNeil-Warren",
+        "position": "S",
+        "college": "Toledo",
+        "slug": "emmanuel-mcneil-warren"
+      },
+      {
+        "pick": 19,
+        "team": "Panthers",
+        "player": "Jordyn Tyson",
+        "position": "WR",
+        "college": "Arizona State",
+        "slug": "jordyn-tyson"
+      },
+      {
+        "pick": 20,
+        "team": "Cowboys",
+        "player": "Keldric Faulk",
+        "position": "ED",
+        "college": "Auburn",
+        "slug": "keldric-faulk"
+      },
+      {
+        "pick": 21,
+        "team": "Steelers",
+        "player": "Denzel Boston",
+        "position": "WR",
+        "college": "Washington",
+        "slug": "denzel-boston"
+      },
+      {
+        "pick": 22,
+        "team": "Chargers",
+        "player": "Lee Hunter",
+        "position": "DI",
+        "college": "Texas Tech",
+        "slug": "lee-hunter"
+      },
+      {
+        "pick": 23,
+        "team": "Eagles",
+        "player": "Avieon Terrell",
+        "position": "CB",
+        "college": "Clemson",
+        "slug": "avieon-terrell"
+      },
+      {
+        "pick": 24,
+        "team": "Browns",
+        "player": "Kadyn Proctor",
+        "position": "T",
+        "college": "Alabama",
+        "slug": "kadyn-proctor"
+      },
+      {
+        "pick": 25,
+        "team": "Bears",
+        "player": "Dillon Thieneman",
+        "position": "S",
+        "college": "Oregon",
+        "slug": "dillon-thieneman"
+      },
+      {
+        "pick": 26,
+        "team": "Bills",
+        "player": "CJ Allen",
+        "position": "LB",
+        "college": "Georgia",
+        "slug": "cj-allen"
+      },
+      {
+        "pick": 27,
+        "team": "49ers",
+        "player": "Kenyon Sadiq",
+        "position": "TE",
+        "college": "Oregon",
+        "slug": "kenyon-sadiq"
+      },
+      {
+        "pick": 28,
+        "team": "Texans",
+        "player": "Monroe Freeling",
+        "position": "T",
+        "college": "Georgia",
+        "slug": "monroe-freeling"
+      },
+      {
+        "pick": 29,
+        "team": "Rams",
+        "player": "Blake Miller",
+        "position": "T",
+        "college": "Clemson",
+        "slug": "blake-miller"
+      },
+      {
+        "pick": 30,
+        "team": "Broncos",
+        "player": "Peter Woods",
+        "position": "DI",
+        "college": "Clemson",
+        "slug": "peter-woods"
+      },
+      {
+        "pick": 31,
+        "team": "Patriots",
+        "player": "Caleb Lomu",
+        "position": "T",
+        "college": "Utah",
+        "slug": "caleb-lomu"
+      },
+      {
+        "pick": 32,
+        "team": "Seahawks",
+        "player": "Brandon Cisse",
+        "position": "CB",
+        "college": "South Carolina",
+        "slug": "brandon-cisse"
+      }
+    ],
+    "Kiper": [
+      {
+        "pick": 1,
+        "team": "Raiders",
+        "player": "Fernando Mendoza",
+        "position": "QB",
+        "college": "Indiana",
+        "slug": "fernando-mendoza"
+      },
+      {
+        "pick": 2,
+        "team": "Jets",
+        "player": "Arvell Reese",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "arvell-reese"
+      },
+      {
+        "pick": 3,
+        "team": "Cardinals",
+        "player": "Francis Mauigoa",
+        "position": "T",
+        "college": "Miami (FL)",
+        "slug": "francis-mauigoa"
+      },
+      {
+        "pick": 4,
+        "team": "Titans",
+        "player": "David Bailey",
+        "position": "ED",
+        "college": "Texas Tech",
+        "slug": "david-bailey"
+      },
+      {
+        "pick": 5,
+        "team": "Giants",
+        "player": "Carnell Tate",
+        "position": "WR",
+        "college": "Ohio State",
+        "slug": "carnell-tate"
+      },
+      {
+        "pick": 6,
+        "team": "Browns",
+        "player": "Spencer Fano",
+        "position": "T",
+        "college": "Utah",
+        "slug": "spencer-fano"
+      },
+      {
+        "pick": 7,
+        "team": "Commanders",
+        "player": "Rueben Bain Jr",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "rueben-bain-jr"
+      },
+      {
+        "pick": 8,
+        "team": "Saints",
+        "player": "Jordyn Tyson",
+        "position": "WR",
+        "college": "Arizona State",
+        "slug": "jordyn-tyson"
+      },
+      {
+        "pick": 9,
+        "team": "Chiefs",
+        "player": "Jeremiyah Love",
+        "position": "HB",
+        "college": "Notre Dame",
+        "slug": "jeremiyah-love"
+      },
+      {
+        "pick": 10,
+        "team": "Bengals",
+        "player": "Caleb Downs",
+        "position": "S",
+        "college": "Ohio State",
+        "slug": "caleb-downs"
+      },
+      {
+        "pick": 11,
+        "team": "Dolphins",
+        "player": "Keldric Faulk",
+        "position": "ED",
+        "college": "Auburn",
+        "slug": "keldric-faulk"
+      },
+      {
+        "pick": 12,
+        "team": "Cowboys",
+        "player": "Sonny Styles",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "sonny-styles"
+      },
+      {
+        "pick": 13,
+        "team": "Rams",
+        "player": "Jermod McCoy",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "jermod-mccoy"
+      },
+      {
+        "pick": 14,
+        "team": "Ravens",
+        "player": "Makai Lemon",
+        "position": "WR",
+        "college": "USC",
+        "slug": "makai-lemon"
+      },
+      {
+        "pick": 15,
+        "team": "Buccaneers",
+        "player": "Kenyon Sadiq",
+        "position": "TE",
+        "college": "Oregon",
+        "slug": "kenyon-sadiq"
+      },
+      {
+        "pick": 16,
+        "team": "Jets",
+        "player": "Ty Simpson",
+        "position": "QB",
+        "college": "Alabama",
+        "slug": "ty-simpson"
+      },
+      {
+        "pick": 17,
+        "team": "Lions",
+        "player": "Olaivavega Ioane",
+        "position": "G",
+        "college": "Penn State",
+        "slug": "olaivavega-ioane"
+      },
+      {
+        "pick": 18,
+        "team": "Vikings",
+        "player": "Mansoor Delane",
+        "position": "CB",
+        "college": "LSU",
+        "slug": "mansoor-delane"
+      },
+      {
+        "pick": 19,
+        "team": "Panthers",
+        "player": "CJ Allen",
+        "position": "LB",
+        "college": "Georgia",
+        "slug": "cj-allen"
+      },
+      {
+        "pick": 20,
+        "team": "Cowboys",
+        "player": "Akheem Mesidor",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "akheem-mesidor"
+      },
+      {
+        "pick": 21,
+        "team": "Steelers",
+        "player": "Denzel Boston",
+        "position": "WR",
+        "college": "Washington",
+        "slug": "denzel-boston"
+      },
+      {
+        "pick": 22,
+        "team": "Chargers",
+        "player": "Peter Woods",
+        "position": "DI",
+        "college": "Clemson",
+        "slug": "peter-woods"
+      },
+      {
+        "pick": 23,
+        "team": "Eagles",
+        "player": "Avieon Terrell",
+        "position": "CB",
+        "college": "Clemson",
+        "slug": "avieon-terrell"
+      },
+      {
+        "pick": 24,
+        "team": "Browns",
+        "player": "Zachariah Branch",
+        "position": "WR",
+        "college": "Georgia",
+        "slug": "zachariah-branch"
+      },
+      {
+        "pick": 25,
+        "team": "Bears",
+        "player": "Kayden McDonald",
+        "position": "DI",
+        "college": "Ohio State",
+        "slug": "kayden-mcdonald"
+      },
+      {
+        "pick": 26,
+        "team": "Bills",
+        "player": "Chris Brazzell II",
+        "position": "WR",
+        "college": "Tennessee",
+        "slug": "chris-brazzell-ii"
+      },
+      {
+        "pick": 27,
+        "team": "49ers",
+        "player": "Caleb Lomu",
+        "position": "T",
+        "college": "Utah",
+        "slug": "caleb-lomu"
+      },
+      {
+        "pick": 28,
+        "team": "Texans",
+        "player": "Kadyn Proctor",
+        "position": "T",
+        "college": "Alabama",
+        "slug": "kadyn-proctor"
+      },
+      {
+        "pick": 29,
+        "team": "Rams",
+        "player": "Monroe Freeling",
+        "position": "T",
+        "college": "Georgia",
+        "slug": "monroe-freeling"
+      },
+      {
+        "pick": 30,
+        "team": "Patriots",
+        "player": "Caleb Banks",
+        "position": "DI",
+        "college": "Florida",
+        "slug": "caleb-banks"
+      },
+      {
+        "pick": 31,
+        "team": "Broncos",
+        "player": "Cashius Howell",
+        "position": "ED",
+        "college": "Texas A&M",
+        "slug": "cashius-howell"
+      },
+      {
+        "pick": 32,
+        "team": "Seahawks",
+        "player": "Brandon Cisse",
+        "position": "CB",
+        "college": "South Carolina",
+        "slug": "brandon-cisse"
+      }
+    ],
+    "Lance": [
+      {
+        "pick": 1,
+        "team": "Raiders",
+        "player": "Fernando Mendoza",
+        "position": "QB",
+        "college": "Indiana",
+        "slug": "fernando-mendoza"
+      },
+      {
+        "pick": 2,
+        "team": "Jets",
+        "player": "Arvell Reese",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "arvell-reese"
+      },
+      {
+        "pick": 3,
+        "team": "Cardinals",
+        "player": "Spencer Fano",
+        "position": "T",
+        "college": "Utah",
+        "slug": "spencer-fano"
+      },
+      {
+        "pick": 4,
+        "team": "Titans",
+        "player": "David Bailey",
+        "position": "ED",
+        "college": "Texas Tech",
+        "slug": "david-bailey"
+      },
+      {
+        "pick": 5,
+        "team": "Giants",
+        "player": "Mansoor Delane",
+        "position": "CB",
+        "college": "LSU",
+        "slug": "mansoor-delane"
+      },
+      {
+        "pick": 6,
+        "team": "Browns",
+        "player": "Carnell Tate",
+        "position": "WR",
+        "college": "Ohio State",
+        "slug": "carnell-tate"
+      },
+      {
+        "pick": 7,
+        "team": "Commanders",
+        "player": "Keldric Faulk",
+        "position": "ED",
+        "college": "Auburn",
+        "slug": "keldric-faulk"
+      },
+      {
+        "pick": 8,
+        "team": "Saints",
+        "player": "Jeremiyah Love",
+        "position": "HB",
+        "college": "Notre Dame",
+        "slug": "jeremiyah-love"
+      },
+      {
+        "pick": 9,
+        "team": "Chiefs",
+        "player": "Rueben Bain Jr",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "rueben-bain-jr"
+      },
+      {
+        "pick": 10,
+        "team": "Bengals",
+        "player": "Francis Mauigoa",
+        "position": "T",
+        "college": "Miami (FL)",
+        "slug": "francis-mauigoa"
+      },
+      {
+        "pick": 11,
+        "team": "Dolphins",
+        "player": "Jermod McCoy",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "jermod-mccoy"
+      },
+      {
+        "pick": 12,
+        "team": "Cowboys",
+        "player": "Caleb Downs",
+        "position": "S",
+        "college": "Ohio State",
+        "slug": "caleb-downs"
+      },
+      {
+        "pick": 13,
+        "team": "Rams",
+        "player": "Colton Hood",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "colton-hood"
+      },
+      {
+        "pick": 14,
+        "team": "Ravens",
+        "player": "Kadyn Proctor",
+        "position": "T",
+        "college": "Alabama",
+        "slug": "kadyn-proctor"
+      },
+      {
+        "pick": 15,
+        "team": "Buccaneers",
+        "player": "Sonny Styles",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "sonny-styles"
+      },
+      {
+        "pick": 16,
+        "team": "Jets",
+        "player": "Makai Lemon",
+        "position": "WR",
+        "college": "USC",
+        "slug": "makai-lemon"
+      },
+      {
+        "pick": 17,
+        "team": "Lions",
+        "player": "Zion Young",
+        "position": "ED",
+        "college": "Missouri",
+        "slug": "zion-young"
+      },
+      {
+        "pick": 18,
+        "team": "Vikings",
+        "player": "Avieon Terrell",
+        "position": "CB",
+        "college": "Clemson",
+        "slug": "avieon-terrell"
+      },
+      {
+        "pick": 19,
+        "team": "Panthers",
+        "player": "Akheem Mesidor",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "akheem-mesidor"
+      },
+      {
+        "pick": 20,
+        "team": "Cowboys",
+        "player": "Jordyn Tyson",
+        "position": "WR",
+        "college": "Arizona State",
+        "slug": "jordyn-tyson"
+      },
+      {
+        "pick": 21,
+        "team": "Steelers",
+        "player": "Denzel Boston",
+        "position": "WR",
+        "college": "Washington",
+        "slug": "denzel-boston"
+      },
+      {
+        "pick": 22,
+        "team": "Chargers",
+        "player": "Olaivavega Ioane",
+        "position": "G",
+        "college": "Penn State",
+        "slug": "olaivavega-ioane"
+      },
+      {
+        "pick": 23,
+        "team": "Eagles",
+        "player": "Cashius Howell",
+        "position": "ED",
+        "college": "Texas A&M",
+        "slug": "cashius-howell"
+      },
+      {
+        "pick": 24,
+        "team": "Browns",
+        "player": "Caleb Lomu",
+        "position": "T",
+        "college": "Utah",
+        "slug": "caleb-lomu"
+      },
+      {
+        "pick": 25,
+        "team": "Bears",
+        "player": "Caleb Banks",
+        "position": "DI",
+        "college": "Florida",
+        "slug": "caleb-banks"
+      },
+      {
+        "pick": 26,
+        "team": "Bills",
+        "player": "Emmanuel McNeil-Warren",
+        "position": "S",
+        "college": "Toledo",
+        "slug": "emmanuel-mcneil-warren"
+      },
+      {
+        "pick": 27,
+        "team": "49ers",
+        "player": "Kenyon Sadiq",
+        "position": "TE",
+        "college": "Oregon",
+        "slug": "kenyon-sadiq"
+      },
+      {
+        "pick": 28,
+        "team": "Texans",
+        "player": "Kayden McDonald",
+        "position": "DI",
+        "college": "Ohio State",
+        "slug": "kayden-mcdonald"
+      },
+      {
+        "pick": 29,
+        "team": "Rams",
+        "player": "Ty Simpson",
+        "position": "QB",
+        "college": "Alabama",
+        "slug": "ty-simpson"
+      },
+      {
+        "pick": 30,
+        "team": "Broncos",
+        "player": "KC Concepcion",
+        "position": "WR",
+        "college": "Texas A&M",
+        "slug": "kc-concepcion"
+      },
+      {
+        "pick": 31,
+        "team": "Patriots",
+        "player": "Monroe Freeling",
+        "position": "T",
+        "college": "Georgia",
+        "slug": "monroe-freeling"
+      },
+      {
+        "pick": 32,
+        "team": "Seahawks",
+        "player": "Chase Bisontis",
+        "position": "G",
+        "college": "Texas A&M",
+        "slug": "chase-bisontis"
+      }
+    ],
+    "McShay": [
+      {
+        "pick": 1,
+        "team": "Raiders",
+        "player": "Fernando Mendoza",
+        "position": "QB",
+        "college": "Indiana",
+        "slug": "fernando-mendoza"
+      },
+      {
+        "pick": 2,
+        "team": "Jets",
+        "player": "Arvell Reese",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "arvell-reese"
+      },
+      {
+        "pick": 3,
+        "team": "Cardinals",
+        "player": "Francis Mauigoa",
+        "position": "T",
+        "college": "Miami (FL)",
+        "slug": "francis-mauigoa"
+      },
+      {
+        "pick": 4,
+        "team": "Titans",
+        "player": "David Bailey",
+        "position": "ED",
+        "college": "Texas Tech",
+        "slug": "david-bailey"
+      },
+      {
+        "pick": 5,
+        "team": "Giants",
+        "player": "Caleb Downs",
+        "position": "S",
+        "college": "Ohio State",
+        "slug": "caleb-downs"
+      },
+      {
+        "pick": 6,
+        "team": "Browns",
+        "player": "Spencer Fano",
+        "position": "T",
+        "college": "Utah",
+        "slug": "spencer-fano"
+      },
+      {
+        "pick": 7,
+        "team": "Commanders",
+        "player": "Rueben Bain Jr",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "rueben-bain-jr"
+      },
+      {
+        "pick": 8,
+        "team": "Saints",
+        "player": "Jeremiyah Love",
+        "position": "HB",
+        "college": "Notre Dame",
+        "slug": "jeremiyah-love"
+      },
+      {
+        "pick": 9,
+        "team": "Chiefs",
+        "player": "Carnell Tate",
+        "position": "WR",
+        "college": "Ohio State",
+        "slug": "carnell-tate"
+      },
+      {
+        "pick": 10,
+        "team": "Bengals",
+        "player": "Mansoor Delane",
+        "position": "CB",
+        "college": "LSU",
+        "slug": "mansoor-delane"
+      },
+      {
+        "pick": 11,
+        "team": "Dolphins",
+        "player": "Jermod McCoy",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "jermod-mccoy"
+      },
+      {
+        "pick": 12,
+        "team": "Cowboys",
+        "player": "Akheem Mesidor",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "akheem-mesidor"
+      },
+      {
+        "pick": 13,
+        "team": "Rams",
+        "player": "Ty Simpson",
+        "position": "QB",
+        "college": "Alabama",
+        "slug": "ty-simpson"
+      },
+      {
+        "pick": 14,
+        "team": "Ravens",
+        "player": "Olaivavega Ioane",
+        "position": "G",
+        "college": "Penn State",
+        "slug": "olaivavega-ioane"
+      },
+      {
+        "pick": 15,
+        "team": "Buccaneers",
+        "player": "Sonny Styles",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "sonny-styles"
+      },
+      {
+        "pick": 16,
+        "team": "Jets",
+        "player": "Makai Lemon",
+        "position": "WR",
+        "college": "USC",
+        "slug": "makai-lemon"
+      },
+      {
+        "pick": 17,
+        "team": "Lions",
+        "player": "Cashius Howell",
+        "position": "ED",
+        "college": "Texas A&M",
+        "slug": "cashius-howell"
+      },
+      {
+        "pick": 18,
+        "team": "Vikings",
+        "player": "Colton Hood",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "colton-hood"
+      },
+      {
+        "pick": 19,
+        "team": "Panthers",
+        "player": "Kenyon Sadiq",
+        "position": "TE",
+        "college": "Oregon",
+        "slug": "kenyon-sadiq"
+      },
+      {
+        "pick": 20,
+        "team": "Cowboys",
+        "player": "CJ Allen",
+        "position": "LB",
+        "college": "Georgia",
+        "slug": "cj-allen"
+      },
+      {
+        "pick": 21,
+        "team": "Steelers",
+        "player": "Jordyn Tyson",
+        "position": "WR",
+        "college": "Arizona State",
+        "slug": "jordyn-tyson"
+      },
+      {
+        "pick": 22,
+        "team": "Chargers",
+        "player": "Peter Woods",
+        "position": "DI",
+        "college": "Clemson",
+        "slug": "peter-woods"
+      },
+      {
+        "pick": 23,
+        "team": "Eagles",
+        "player": "Keldric Faulk",
+        "position": "ED",
+        "college": "Auburn",
+        "slug": "keldric-faulk"
+      },
+      {
+        "pick": 24,
+        "team": "Browns",
+        "player": "Denzel Boston",
+        "position": "WR",
+        "college": "Washington",
+        "slug": "denzel-boston"
+      },
+      {
+        "pick": 25,
+        "team": "Bears",
+        "player": "T.J. Parker",
+        "position": "ED",
+        "college": "Clemson",
+        "slug": "tj-parker"
+      },
+      {
+        "pick": 26,
+        "team": "Bills",
+        "player": "Malachi Fields",
+        "position": "WR",
+        "college": "Notre Dame",
+        "slug": "malachi-fields"
+      },
+      {
+        "pick": 27,
+        "team": "49ers",
+        "player": "Kadyn Proctor",
+        "position": "T",
+        "college": "Alabama",
+        "slug": "kadyn-proctor"
+      },
+      {
+        "pick": 28,
+        "team": "Texans",
+        "player": "Blake Miller",
+        "position": "T",
+        "college": "Clemson",
+        "slug": "blake-miller"
+      },
+      {
+        "pick": 29,
+        "team": "Rams",
+        "player": "Monroe Freeling",
+        "position": "T",
+        "college": "Georgia",
+        "slug": "monroe-freeling"
+      },
+      {
+        "pick": 30,
+        "team": "Broncos",
+        "player": "Lee Hunter",
+        "position": "DI",
+        "college": "Texas Tech",
+        "slug": "lee-hunter"
+      },
+      {
+        "pick": 31,
+        "team": "Patriots",
+        "player": "R Mason Thomas",
+        "position": "ED",
+        "college": "Oklahoma",
+        "slug": "r-mason-thomas"
+      },
+      {
+        "pick": 32,
+        "team": "Seahawks",
+        "player": "KC Concepcion",
+        "position": "WR",
+        "college": "Texas A&M",
+        "slug": "kc-concepcion"
+      }
+    ],
+    "Miller": [
+      {
+        "pick": 1,
+        "team": "Chicago",
+        "player": "Caleb Williams",
+        "position": "QB",
+        "college": "USC",
+        "slug": "caleb-williams"
+      }
+    ],
+    "NFL": [
+      {
+        "pick": 1,
+        "team": "Raiders",
+        "player": "Fernando Mendoza",
+        "position": "QB",
+        "college": "Indiana",
+        "slug": "fernando-mendoza"
+      },
+      {
+        "pick": 2,
+        "team": "Jets",
+        "player": "Arvell Reese",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "arvell-reese"
+      },
+      {
+        "pick": 3,
+        "team": "Cardinals",
+        "player": "Francis Mauigoa",
+        "position": "T",
+        "college": "Miami (FL)",
+        "slug": "francis-mauigoa"
+      },
+      {
+        "pick": 4,
+        "team": "Titans",
+        "player": "David Bailey",
+        "position": "ED",
+        "college": "Texas Tech",
+        "slug": "david-bailey"
+      },
+      {
+        "pick": 5,
+        "team": "Giants",
+        "player": "Mansoor Delane",
+        "position": "CB",
+        "college": "LSU",
+        "slug": "mansoor-delane"
+      },
+      {
+        "pick": 6,
+        "team": "Browns",
+        "player": "Makai Lemon",
+        "position": "WR",
+        "college": "USC",
+        "slug": "makai-lemon"
+      },
+      {
+        "pick": 7,
+        "team": "Commanders",
+        "player": "Caleb Downs",
+        "position": "S",
+        "college": "Ohio State",
+        "slug": "caleb-downs"
+      },
+      {
+        "pick": 8,
+        "team": "Saints",
+        "player": "Jeremiyah Love",
+        "position": "HB",
+        "college": "Notre Dame",
+        "slug": "jeremiyah-love"
+      },
+      {
+        "pick": 9,
+        "team": "Chiefs",
+        "player": "Kadyn Proctor",
+        "position": "T",
+        "college": "Alabama",
+        "slug": "kadyn-proctor"
+      },
+      {
+        "pick": 10,
+        "team": "Bengals",
+        "player": "Jermod McCoy",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "jermod-mccoy"
+      },
+      {
+        "pick": 11,
+        "team": "Dolphins",
+        "player": "Rueben Bain Jr",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "rueben-bain-jr"
+      },
+      {
+        "pick": 12,
+        "team": "Cowboys",
+        "player": "Sonny Styles",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "sonny-styles"
+      },
+      {
+        "pick": 13,
+        "team": "Rams",
+        "player": "Spencer Fano",
+        "position": "T",
+        "college": "Utah",
+        "slug": "spencer-fano"
+      },
+      {
+        "pick": 14,
+        "team": "Ravens",
+        "player": "Carnell Tate",
+        "position": "WR",
+        "college": "Ohio State",
+        "slug": "carnell-tate"
+      },
+      {
+        "pick": 15,
+        "team": "Buccaneers",
+        "player": "Lee Hunter",
+        "position": "DI",
+        "college": "Texas Tech",
+        "slug": "lee-hunter"
+      },
+      {
+        "pick": 16,
+        "team": "Jets",
+        "player": "Ty Simpson",
+        "position": "QB",
+        "college": "Alabama",
+        "slug": "ty-simpson"
+      },
+      {
+        "pick": 17,
+        "team": "Lions",
+        "player": "Olaivavega Ioane",
+        "position": "G",
+        "college": "Penn State",
+        "slug": "olaivavega-ioane"
+      },
+      {
+        "pick": 18,
+        "team": "Vikings",
+        "player": "Jordyn Tyson",
+        "position": "WR",
+        "college": "Arizona State",
+        "slug": "jordyn-tyson"
+      },
+      {
+        "pick": 19,
+        "team": "Panthers",
+        "player": "Kenyon Sadiq",
+        "position": "TE",
+        "college": "Oregon",
+        "slug": "kenyon-sadiq"
+      },
+      {
+        "pick": 20,
+        "team": "Cowboys",
+        "player": "Denzel Boston",
+        "position": "WR",
+        "college": "Washington",
+        "slug": "denzel-boston"
+      },
+      {
+        "pick": 21,
+        "team": "Steelers",
+        "player": "KC Concepcion",
+        "position": "WR",
+        "college": "Texas A&M",
+        "slug": "kc-concepcion"
+      },
+      {
+        "pick": 22,
+        "team": "Chargers",
+        "player": "Blake Miller",
+        "position": "T",
+        "college": "Clemson",
+        "slug": "blake-miller"
+      },
+      {
+        "pick": 23,
+        "team": "Eagles",
+        "player": "Avieon Terrell",
+        "position": "CB",
+        "college": "Clemson",
+        "slug": "avieon-terrell"
+      },
+      {
+        "pick": 24,
+        "team": "Browns",
+        "player": "Caleb Lomu",
+        "position": "T",
+        "college": "Utah",
+        "slug": "caleb-lomu"
+      },
+      {
+        "pick": 25,
+        "team": "Bears",
+        "player": "Kayden McDonald",
+        "position": "DI",
+        "college": "Ohio State",
+        "slug": "kayden-mcdonald"
+      },
+      {
+        "pick": 26,
+        "team": "Bills",
+        "player": "Emmanuel McNeil-Warren",
+        "position": "S",
+        "college": "Toledo",
+        "slug": "emmanuel-mcneil-warren"
+      },
+      {
+        "pick": 27,
+        "team": "49ers",
+        "player": "Keldric Faulk",
+        "position": "ED",
+        "college": "Auburn",
+        "slug": "keldric-faulk"
+      },
+      {
+        "pick": 28,
+        "team": "Texans",
+        "player": "Chase Bisontis",
+        "position": "G",
+        "college": "Texas A&M",
+        "slug": "chase-bisontis"
+      },
+      {
+        "pick": 29,
+        "team": "Rams",
+        "player": "Colton Hood",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "colton-hood"
+      },
+      {
+        "pick": 30,
+        "team": "Broncos",
+        "player": "Germie Bernard",
+        "position": "WR",
+        "college": "Alabama",
+        "slug": "germie-bernard"
+      },
+      {
+        "pick": 31,
+        "team": "Patriots",
+        "player": "Christen Miller",
+        "position": "DI",
+        "college": "Georgia",
+        "slug": "christen-miller"
+      },
+      {
+        "pick": 32,
+        "team": "Seahawks",
+        "player": "Joshua Josephs",
+        "position": "ED",
+        "college": "Tennessee",
+        "slug": "joshua-josephs"
+      }
+    ],
+    "PFF": [
+      {
+        "pick": 1,
+        "team": "Raiders",
+        "player": "Fernando Mendoza",
+        "position": "QB",
+        "college": "Indiana",
+        "slug": "fernando-mendoza"
+      },
+      {
+        "pick": 2,
+        "team": "Jets",
+        "player": "Arvell Reese",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "arvell-reese"
+      },
+      {
+        "pick": 3,
+        "team": "Cardinals",
+        "player": "Francis Mauigoa",
+        "position": "T",
+        "college": "Miami (FL)",
+        "slug": "francis-mauigoa"
+      },
+      {
+        "pick": 4,
+        "team": "Titans",
+        "player": "Rueben Bain Jr",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "rueben-bain-jr"
+      },
+      {
+        "pick": 5,
+        "team": "Giants",
+        "player": "Spencer Fano",
+        "position": "T",
+        "college": "Utah",
+        "slug": "spencer-fano"
+      },
+      {
+        "pick": 6,
+        "team": "Browns",
+        "player": "Carnell Tate",
+        "position": "WR",
+        "college": "Ohio State",
+        "slug": "carnell-tate"
+      },
+      {
+        "pick": 7,
+        "team": "Commanders",
+        "player": "David Bailey",
+        "position": "ED",
+        "college": "Texas Tech",
+        "slug": "david-bailey"
+      },
+      {
+        "pick": 8,
+        "team": "Saints",
+        "player": "Jordyn Tyson",
+        "position": "WR",
+        "college": "Arizona State",
+        "slug": "jordyn-tyson"
+      },
+      {
+        "pick": 9,
+        "team": "Chiefs",
+        "player": "Jeremiyah Love",
+        "position": "HB",
+        "college": "Notre Dame",
+        "slug": "jeremiyah-love"
+      },
+      {
+        "pick": 10,
+        "team": "Bengals",
+        "player": "Caleb Downs",
+        "position": "S",
+        "college": "Ohio State",
+        "slug": "caleb-downs"
+      },
+      {
+        "pick": 11,
+        "team": "Dolphins",
+        "player": "Mansoor Delane",
+        "position": "CB",
+        "college": "LSU",
+        "slug": "mansoor-delane"
+      },
+      {
+        "pick": 12,
+        "team": "Cowboys",
+        "player": "Sonny Styles",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "sonny-styles"
+      },
+      {
+        "pick": 13,
+        "team": "Rams",
+        "player": "Jermod McCoy",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "jermod-mccoy"
+      },
+      {
+        "pick": 14,
+        "team": "Ravens",
+        "player": "Makai Lemon",
+        "position": "WR",
+        "college": "USC",
+        "slug": "makai-lemon"
+      },
+      {
+        "pick": 15,
+        "team": "Buccaneers",
+        "player": "Keldric Faulk",
+        "position": "ED",
+        "college": "Auburn",
+        "slug": "keldric-faulk"
+      },
+      {
+        "pick": 16,
+        "team": "Jets",
+        "player": "Ty Simpson",
+        "position": "QB",
+        "college": "Alabama",
+        "slug": "ty-simpson"
+      },
+      {
+        "pick": 17,
+        "team": "Lions",
+        "player": "Kadyn Proctor",
+        "position": "T",
+        "college": "Alabama",
+        "slug": "kadyn-proctor"
+      },
+      {
+        "pick": 18,
+        "team": "Vikings",
+        "player": "Avieon Terrell",
+        "position": "CB",
+        "college": "Clemson",
+        "slug": "avieon-terrell"
+      },
+      {
+        "pick": 19,
+        "team": "Panthers",
+        "player": "Peter Woods",
+        "position": "DI",
+        "college": "Clemson",
+        "slug": "peter-woods"
+      },
+      {
+        "pick": 20,
+        "team": "Cowboys",
+        "player": "Cashius Howell",
+        "position": "ED",
+        "college": "Texas A&M",
+        "slug": "cashius-howell"
+      },
+      {
+        "pick": 21,
+        "team": "Steelers",
+        "player": "Denzel Boston",
+        "position": "WR",
+        "college": "Washington",
+        "slug": "denzel-boston"
+      },
+      {
+        "pick": 22,
+        "team": "Chargers",
+        "player": "Olaivavega Ioane",
+        "position": "G",
+        "college": "Penn State",
+        "slug": "olaivavega-ioane"
+      },
+      {
+        "pick": 23,
+        "team": "Eagles",
+        "player": "Kenyon Sadiq",
+        "position": "TE",
+        "college": "Oregon",
+        "slug": "kenyon-sadiq"
+      },
+      {
+        "pick": 24,
+        "team": "Browns",
+        "player": "Caleb Lomu",
+        "position": "T",
+        "college": "Utah",
+        "slug": "caleb-lomu"
+      },
+      {
+        "pick": 25,
+        "team": "Bears",
+        "player": "Kayden McDonald",
+        "position": "DI",
+        "college": "Ohio State",
+        "slug": "kayden-mcdonald"
+      },
+      {
+        "pick": 26,
+        "team": "Bills",
+        "player": "KC Concepcion",
+        "position": "WR",
+        "college": "Texas A&M",
+        "slug": "kc-concepcion"
+      },
+      {
+        "pick": 27,
+        "team": "49ers",
+        "player": "T.J. Parker",
+        "position": "ED",
+        "college": "Clemson",
+        "slug": "tj-parker"
+      },
+      {
+        "pick": 28,
+        "team": "Texans",
+        "player": "Caleb Banks",
+        "position": "DI",
+        "college": "Florida",
+        "slug": "caleb-banks"
+      },
+      {
+        "pick": 29,
+        "team": "Rams",
+        "player": "Monroe Freeling",
+        "position": "T",
+        "college": "Georgia",
+        "slug": "monroe-freeling"
+      },
+      {
+        "pick": 30,
+        "team": "Patriots",
+        "player": "CJ Allen",
+        "position": "LB",
+        "college": "Georgia",
+        "slug": "cj-allen"
+      },
+      {
+        "pick": 31,
+        "team": "Broncos",
+        "player": "Akheem Mesidor",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "akheem-mesidor"
+      },
+      {
+        "pick": 32,
+        "team": "Seahawks",
+        "player": "Colton Hood",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "colton-hood"
+      }
+    ],
+    "Reid": [
+      {
+        "pick": 1,
+        "team": "Raiders",
+        "player": "Fernando Mendoza",
+        "position": "QB",
+        "college": "Indiana",
+        "slug": "fernando-mendoza"
+      },
+      {
+        "pick": 2,
+        "team": "Jets",
+        "player": "Dante Moore",
+        "position": null,
+        "college": null,
+        "slug": "dante-moore"
+      },
+      {
+        "pick": 3,
+        "team": "Cardinals",
+        "player": "Francis Mauigoa",
+        "position": "T",
+        "college": "Miami (FL)",
+        "slug": "francis-mauigoa"
+      },
+      {
+        "pick": 4,
+        "team": "Titans",
+        "player": "Arvell Reese",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "arvell-reese"
+      },
+      {
+        "pick": 5,
+        "team": "Giants",
+        "player": "Carnell Tate",
+        "position": "WR",
+        "college": "Ohio State",
+        "slug": "carnell-tate"
+      },
+      {
+        "pick": 6,
+        "team": "Browns",
+        "player": "Jordyn Tyson",
+        "position": "WR",
+        "college": "Arizona State",
+        "slug": "jordyn-tyson"
+      },
+      {
+        "pick": 7,
+        "team": "Commanders",
+        "player": "David Bailey",
+        "position": "ED",
+        "college": "Texas Tech",
+        "slug": "david-bailey"
+      },
+      {
+        "pick": 8,
+        "team": "Saints",
+        "player": "Jeremiyah Love",
+        "position": "HB",
+        "college": "Notre Dame",
+        "slug": "jeremiyah-love"
+      },
+      {
+        "pick": 9,
+        "team": "Chiefs",
+        "player": "Rueben Bain Jr",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "rueben-bain-jr"
+      },
+      {
+        "pick": 10,
+        "team": "Bengals",
+        "player": "Caleb Downs",
+        "position": "S",
+        "college": "Ohio State",
+        "slug": "caleb-downs"
+      },
+      {
+        "pick": 11,
+        "team": "Dolphins",
+        "player": "Spencer Fano",
+        "position": "T",
+        "college": "Utah",
+        "slug": "spencer-fano"
+      },
+      {
+        "pick": 12,
+        "team": "Cowboys",
+        "player": "Sonny Styles",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "sonny-styles"
+      },
+      {
+        "pick": 13,
+        "team": "Rams",
+        "player": "Makai Lemon",
+        "position": "WR",
+        "college": "USC",
+        "slug": "makai-lemon"
+      },
+      {
+        "pick": 14,
+        "team": "Ravens",
+        "player": "Peter Woods",
+        "position": "DI",
+        "college": "Clemson",
+        "slug": "peter-woods"
+      },
+      {
+        "pick": 15,
+        "team": "Buccaneers",
+        "player": "Keldric Faulk",
+        "position": "ED",
+        "college": "Auburn",
+        "slug": "keldric-faulk"
+      },
+      {
+        "pick": 16,
+        "team": "Jets",
+        "player": "Kayden McDonald",
+        "position": "DI",
+        "college": "Ohio State",
+        "slug": "kayden-mcdonald"
+      },
+      {
+        "pick": 17,
+        "team": "Lions",
+        "player": "Caleb Lomu",
+        "position": "T",
+        "college": "Utah",
+        "slug": "caleb-lomu"
+      },
+      {
+        "pick": 18,
+        "team": "Vikings",
+        "player": "Mansoor Delane",
+        "position": "CB",
+        "college": "LSU",
+        "slug": "mansoor-delane"
+      },
+      {
+        "pick": 19,
+        "team": "Panthers",
+        "player": "Kenyon Sadiq",
+        "position": "TE",
+        "college": "Oregon",
+        "slug": "kenyon-sadiq"
+      },
+      {
+        "pick": 20,
+        "team": "Cowboys",
+        "player": "Cashius Howell",
+        "position": "ED",
+        "college": "Texas A&M",
+        "slug": "cashius-howell"
+      },
+      {
+        "pick": 21,
+        "team": "Steelers",
+        "player": "KC Concepcion",
+        "position": "WR",
+        "college": "Texas A&M",
+        "slug": "kc-concepcion"
+      },
+      {
+        "pick": 22,
+        "team": "Chargers",
+        "player": "Kadyn Proctor",
+        "position": "T",
+        "college": "Alabama",
+        "slug": "kadyn-proctor"
+      },
+      {
+        "pick": 23,
+        "team": "Eagles",
+        "player": "Denzel Boston",
+        "position": "WR",
+        "college": "Washington",
+        "slug": "denzel-boston"
+      },
+      {
+        "pick": 24,
+        "team": "Browns",
+        "player": "CJ Allen",
+        "position": "LB",
+        "college": "Georgia",
+        "slug": "cj-allen"
+      },
+      {
+        "pick": 25,
+        "team": "Bears",
+        "player": "Jermod McCoy",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "jermod-mccoy"
+      },
+      {
+        "pick": 26,
+        "team": "Bills",
+        "player": "Brandon Cisse",
+        "position": "CB",
+        "college": "South Carolina",
+        "slug": "brandon-cisse"
+      },
+      {
+        "pick": 27,
+        "team": "49ers",
+        "player": "AMauri Washington",
+        "position": null,
+        "college": null,
+        "slug": "amauri-washington"
+      },
+      {
+        "pick": 28,
+        "team": "Texans",
+        "player": "Olaivavega Ioane",
+        "position": "G",
+        "college": "Penn State",
+        "slug": "olaivavega-ioane"
+      },
+      {
+        "pick": 29,
+        "team": "Rams",
+        "player": "Matayo Uiagalelei",
+        "position": null,
+        "college": null,
+        "slug": "matayo-uiagalelei"
+      },
+      {
+        "pick": 30,
+        "team": "Patriots",
+        "player": "Avieon Terrell",
+        "position": "CB",
+        "college": "Clemson",
+        "slug": "avieon-terrell"
+      },
+      {
+        "pick": 31,
+        "team": "Broncos",
+        "player": "Jake Golday",
+        "position": "LB",
+        "college": "Cincinnati",
+        "slug": "jake-golday"
+      },
+      {
+        "pick": 32,
+        "team": "Seahawks",
+        "player": "Colton Hood",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "colton-hood"
+      }
+    ],
+    "Tankathon": [
+      {
+        "pick": 1,
+        "team": "Raiders",
+        "player": "Fernando Mendoza",
+        "position": "QB",
+        "college": "Indiana",
+        "slug": "fernando-mendoza"
+      },
+      {
+        "pick": 2,
+        "team": "Jets",
+        "player": "Arvell Reese",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "arvell-reese"
+      },
+      {
+        "pick": 3,
+        "team": "Cardinals",
+        "player": "Rueben Bain Jr",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "rueben-bain-jr"
+      },
+      {
+        "pick": 4,
+        "team": "Titans",
+        "player": "Carnell Tate",
+        "position": "WR",
+        "college": "Ohio State",
+        "slug": "carnell-tate"
+      },
+      {
+        "pick": 5,
+        "team": "Giants",
+        "player": "Spencer Fano",
+        "position": "T",
+        "college": "Utah",
+        "slug": "spencer-fano"
+      },
+      {
+        "pick": 6,
+        "team": "Browns",
+        "player": "Francis Mauigoa",
+        "position": "T",
+        "college": "Miami (FL)",
+        "slug": "francis-mauigoa"
+      },
+      {
+        "pick": 7,
+        "team": "Commanders",
+        "player": "Caleb Downs",
+        "position": "S",
+        "college": "Ohio State",
+        "slug": "caleb-downs"
+      },
+      {
+        "pick": 8,
+        "team": "Saints",
+        "player": "Jeremiyah Love",
+        "position": "HB",
+        "college": "Notre Dame",
+        "slug": "jeremiyah-love"
+      },
+      {
+        "pick": 9,
+        "team": "Chiefs",
+        "player": "David Bailey",
+        "position": "ED",
+        "college": "Texas Tech",
+        "slug": "david-bailey"
+      },
+      {
+        "pick": 10,
+        "team": "Bengals",
+        "player": "Mansoor Delane",
+        "position": "CB",
+        "college": "LSU",
+        "slug": "mansoor-delane"
+      },
+      {
+        "pick": 11,
+        "team": "Dolphins",
+        "player": "Jordyn Tyson",
+        "position": "WR",
+        "college": "Arizona State",
+        "slug": "jordyn-tyson"
+      },
+      {
+        "pick": 12,
+        "team": "Cowboys",
+        "player": "Keldric Faulk",
+        "position": "ED",
+        "college": "Auburn",
+        "slug": "keldric-faulk"
+      },
+      {
+        "pick": 13,
+        "team": "Rams",
+        "player": "Jermod McCoy",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "jermod-mccoy"
+      },
+      {
+        "pick": 14,
+        "team": "Ravens",
+        "player": "Peter Woods",
+        "position": "DI",
+        "college": "Clemson",
+        "slug": "peter-woods"
+      },
+      {
+        "pick": 15,
+        "team": "Buccaneers",
+        "player": "Sonny Styles",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "sonny-styles"
+      },
+      {
+        "pick": 16,
+        "team": "Jets",
+        "player": "Makai Lemon",
+        "position": "WR",
+        "college": "USC",
+        "slug": "makai-lemon"
+      },
+      {
+        "pick": 17,
+        "team": "Lions",
+        "player": "Avieon Terrell",
+        "position": "CB",
+        "college": "Clemson",
+        "slug": "avieon-terrell"
+      },
+      {
+        "pick": 18,
+        "team": "Vikings",
+        "player": "Kayden McDonald",
+        "position": "DI",
+        "college": "Ohio State",
+        "slug": "kayden-mcdonald"
+      },
+      {
+        "pick": 19,
+        "team": "Panthers",
+        "player": "Kenyon Sadiq",
+        "position": "TE",
+        "college": "Oregon",
+        "slug": "kenyon-sadiq"
+      },
+      {
+        "pick": 20,
+        "team": "Cowboys",
+        "player": "CJ Allen",
+        "position": "LB",
+        "college": "Georgia",
+        "slug": "cj-allen"
+      },
+      {
+        "pick": 21,
+        "team": "Steelers",
+        "player": "Ty Simpson",
+        "position": "QB",
+        "college": "Alabama",
+        "slug": "ty-simpson"
+      },
+      {
+        "pick": 22,
+        "team": "Chargers",
+        "player": "Olaivavega Ioane",
+        "position": "G",
+        "college": "Penn State",
+        "slug": "olaivavega-ioane"
+      },
+      {
+        "pick": 23,
+        "team": "Eagles",
+        "player": "Denzel Boston",
+        "position": "WR",
+        "college": "Washington",
+        "slug": "denzel-boston"
+      },
+      {
+        "pick": 24,
+        "team": "Browns",
+        "player": "KC Concepcion",
+        "position": "WR",
+        "college": "Texas A&M",
+        "slug": "kc-concepcion"
+      },
+      {
+        "pick": 25,
+        "team": "Bears",
+        "player": "Caleb Banks",
+        "position": "DI",
+        "college": "Florida",
+        "slug": "caleb-banks"
+      },
+      {
+        "pick": 26,
+        "team": "Bills",
+        "player": "T.J. Parker",
+        "position": "ED",
+        "college": "Clemson",
+        "slug": "tj-parker"
+      },
+      {
+        "pick": 27,
+        "team": "49ers",
+        "player": "Kadyn Proctor",
+        "position": "T",
+        "college": "Alabama",
+        "slug": "kadyn-proctor"
+      },
+      {
+        "pick": 28,
+        "team": "Texans",
+        "player": "Anthony Hill Jr",
+        "position": "LB",
+        "college": "Texas",
+        "slug": "anthony-hill-jr"
+      },
+      {
+        "pick": 29,
+        "team": "Rams",
+        "player": "Caleb Lomu",
+        "position": "T",
+        "college": "Utah",
+        "slug": "caleb-lomu"
+      },
+      {
+        "pick": 30,
+        "team": "Patriots",
+        "player": "Emmanuel Pregnon",
+        "position": "G",
+        "college": "Oregon",
+        "slug": "emmanuel-pregnon"
+      },
+      {
+        "pick": 31,
+        "team": "Broncos",
+        "player": "Cashius Howell",
+        "position": "ED",
+        "college": "Texas A&M",
+        "slug": "cashius-howell"
+      },
+      {
+        "pick": 32,
+        "team": "Seahawks",
+        "player": "Brandon Cisse",
+        "position": "CB",
+        "college": "South Carolina",
+        "slug": "brandon-cisse"
+      }
+    ],
+    "TDN": [
+      {
+        "pick": 1,
+        "team": "Raiders",
+        "player": "Fernando Mendoza",
+        "position": "QB",
+        "college": "Indiana",
+        "slug": "fernando-mendoza"
+      },
+      {
+        "pick": 2,
+        "team": "Jets",
+        "player": "Caleb Downs",
+        "position": "S",
+        "college": "Ohio State",
+        "slug": "caleb-downs"
+      },
+      {
+        "pick": 3,
+        "team": "Cardinals",
+        "player": "Arvell Reese",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "arvell-reese"
+      },
+      {
+        "pick": 4,
+        "team": "Titans",
+        "player": "Rueben Bain Jr",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "rueben-bain-jr"
+      },
+      {
+        "pick": 5,
+        "team": "Giants",
+        "player": "Francis Mauigoa",
+        "position": "T",
+        "college": "Miami (FL)",
+        "slug": "francis-mauigoa"
+      },
+      {
+        "pick": 6,
+        "team": "Browns",
+        "player": "Carnell Tate",
+        "position": "WR",
+        "college": "Ohio State",
+        "slug": "carnell-tate"
+      },
+      {
+        "pick": 7,
+        "team": "Commanders",
+        "player": "David Bailey",
+        "position": "ED",
+        "college": "Texas Tech",
+        "slug": "david-bailey"
+      },
+      {
+        "pick": 8,
+        "team": "Saints",
+        "player": "Jeremiyah Love",
+        "position": "HB",
+        "college": "Notre Dame",
+        "slug": "jeremiyah-love"
+      },
+      {
+        "pick": 9,
+        "team": "Chiefs",
+        "player": "Kenyon Sadiq",
+        "position": "TE",
+        "college": "Oregon",
+        "slug": "kenyon-sadiq"
+      },
+      {
+        "pick": 10,
+        "team": "Bengals",
+        "player": "Peter Woods",
+        "position": "DI",
+        "college": "Clemson",
+        "slug": "peter-woods"
+      },
+      {
+        "pick": 11,
+        "team": "Dolphins",
+        "player": "Jordyn Tyson",
+        "position": "WR",
+        "college": "Arizona State",
+        "slug": "jordyn-tyson"
+      },
+      {
+        "pick": 12,
+        "team": "Cowboys",
+        "player": "Sonny Styles",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "sonny-styles"
+      },
+      {
+        "pick": 13,
+        "team": "Rams",
+        "player": "Spencer Fano",
+        "position": "T",
+        "college": "Utah",
+        "slug": "spencer-fano"
+      },
+      {
+        "pick": 14,
+        "team": "Ravens",
+        "player": "Keldric Faulk",
+        "position": "ED",
+        "college": "Auburn",
+        "slug": "keldric-faulk"
+      },
+      {
+        "pick": 15,
+        "team": "Buccaneers",
+        "player": "Akheem Mesidor",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "akheem-mesidor"
+      },
+      {
+        "pick": 16,
+        "team": "Jets",
+        "player": "Kayden McDonald",
+        "position": "DI",
+        "college": "Ohio State",
+        "slug": "kayden-mcdonald"
+      },
+      {
+        "pick": 17,
+        "team": "Lions",
+        "player": "Monroe Freeling",
+        "position": "T",
+        "college": "Georgia",
+        "slug": "monroe-freeling"
+      },
+      {
+        "pick": 18,
+        "team": "Vikings",
+        "player": "Jermod McCoy",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "jermod-mccoy"
+      },
+      {
+        "pick": 19,
+        "team": "Panthers",
+        "player": "Makai Lemon",
+        "position": "WR",
+        "college": "USC",
+        "slug": "makai-lemon"
+      },
+      {
+        "pick": 20,
+        "team": "Cowboys",
+        "player": "Mansoor Delane",
+        "position": "CB",
+        "college": "LSU",
+        "slug": "mansoor-delane"
+      },
+      {
+        "pick": 21,
+        "team": "Steelers",
+        "player": "KC Concepcion",
+        "position": "WR",
+        "college": "Texas A&M",
+        "slug": "kc-concepcion"
+      },
+      {
+        "pick": 22,
+        "team": "Chargers",
+        "player": "Olaivavega Ioane",
+        "position": "G",
+        "college": "Penn State",
+        "slug": "olaivavega-ioane"
+      },
+      {
+        "pick": 23,
+        "team": "Eagles",
+        "player": "Caleb Lomu",
+        "position": "T",
+        "college": "Utah",
+        "slug": "caleb-lomu"
+      },
+      {
+        "pick": 24,
+        "team": "Browns",
+        "player": "Ty Simpson",
+        "position": "QB",
+        "college": "Alabama",
+        "slug": "ty-simpson"
+      },
+      {
+        "pick": 25,
+        "team": "Bears",
+        "player": "T.J. Parker",
+        "position": "ED",
+        "college": "Clemson",
+        "slug": "tj-parker"
+      },
+      {
+        "pick": 26,
+        "team": "Bills",
+        "player": "CJ Allen",
+        "position": "LB",
+        "college": "Georgia",
+        "slug": "cj-allen"
+      },
+      {
+        "pick": 27,
+        "team": "49ers",
+        "player": "Denzel Boston",
+        "position": "WR",
+        "college": "Washington",
+        "slug": "denzel-boston"
+      },
+      {
+        "pick": 28,
+        "team": "Texans",
+        "player": "Caleb Banks",
+        "position": "DI",
+        "college": "Florida",
+        "slug": "caleb-banks"
+      },
+      {
+        "pick": 29,
+        "team": "Rams",
+        "player": "Avieon Terrell",
+        "position": "CB",
+        "college": "Clemson",
+        "slug": "avieon-terrell"
+      },
+      {
+        "pick": 30,
+        "team": "Patriots",
+        "player": "Jake Golday",
+        "position": "LB",
+        "college": "Cincinnati",
+        "slug": "jake-golday"
+      },
+      {
+        "pick": 31,
+        "team": "Broncos",
+        "player": "Cashius Howell",
+        "position": "ED",
+        "college": "Texas A&M",
+        "slug": "cashius-howell"
+      },
+      {
+        "pick": 32,
+        "team": "Seahawks",
+        "player": "Brandon Cisse",
+        "position": "CB",
+        "college": "South Carolina",
+        "slug": "brandon-cisse"
+      }
+    ],
+    "TWSN": [
+      {
+        "pick": 1,
+        "team": "Raiders",
+        "player": "Fernando Mendoza",
+        "position": "QB",
+        "college": "Indiana",
+        "slug": "fernando-mendoza"
+      },
+      {
+        "pick": 2,
+        "team": "Jets",
+        "player": "Arvell Reese",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "arvell-reese"
+      },
+      {
+        "pick": 3,
+        "team": "Cardinals",
+        "player": "Francis Mauigoa",
+        "position": "T",
+        "college": "Miami (FL)",
+        "slug": "francis-mauigoa"
+      },
+      {
+        "pick": 4,
+        "team": "Titans",
+        "player": "Rueben Bain Jr",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "rueben-bain-jr"
+      },
+      {
+        "pick": 5,
+        "team": "Giants",
+        "player": "Makai Lemon",
+        "position": "WR",
+        "college": "USC",
+        "slug": "makai-lemon"
+      },
+      {
+        "pick": 6,
+        "team": "Browns",
+        "player": "Carnell Tate",
+        "position": "WR",
+        "college": "Ohio State",
+        "slug": "carnell-tate"
+      },
+      {
+        "pick": 7,
+        "team": "Commanders",
+        "player": "David Bailey",
+        "position": "ED",
+        "college": "Texas Tech",
+        "slug": "david-bailey"
+      },
+      {
+        "pick": 8,
+        "team": "Saints",
+        "player": "Jordyn Tyson",
+        "position": "WR",
+        "college": "Arizona State",
+        "slug": "jordyn-tyson"
+      },
+      {
+        "pick": 9,
+        "team": "Chiefs",
+        "player": "Jeremiyah Love",
+        "position": "HB",
+        "college": "Notre Dame",
+        "slug": "jeremiyah-love"
+      },
+      {
+        "pick": 10,
+        "team": "Bengals",
+        "player": "Caleb Downs",
+        "position": "S",
+        "college": "Ohio State",
+        "slug": "caleb-downs"
+      },
+      {
+        "pick": 11,
+        "team": "Dolphins",
+        "player": "Sonny Styles",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "sonny-styles"
+      },
+      {
+        "pick": 12,
+        "team": "Cowboys",
+        "player": "Keldric Faulk",
+        "position": "ED",
+        "college": "Auburn",
+        "slug": "keldric-faulk"
+      },
+      {
+        "pick": 13,
+        "team": "Rams",
+        "player": "Mansoor Delane",
+        "position": "CB",
+        "college": "LSU",
+        "slug": "mansoor-delane"
+      },
+      {
+        "pick": 14,
+        "team": "Ravens",
+        "player": "Peter Woods",
+        "position": "DI",
+        "college": "Clemson",
+        "slug": "peter-woods"
+      },
+      {
+        "pick": 15,
+        "team": "Buccaneers",
+        "player": "Olaivavega Ioane",
+        "position": "G",
+        "college": "Penn State",
+        "slug": "olaivavega-ioane"
+      },
+      {
+        "pick": 16,
+        "team": "Jets",
+        "player": "Denzel Boston",
+        "position": "WR",
+        "college": "Washington",
+        "slug": "denzel-boston"
+      },
+      {
+        "pick": 17,
+        "team": "Lions",
+        "player": "Monroe Freeling",
+        "position": "T",
+        "college": "Georgia",
+        "slug": "monroe-freeling"
+      },
+      {
+        "pick": 18,
+        "team": "Vikings",
+        "player": "Jermod McCoy",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "jermod-mccoy"
+      },
+      {
+        "pick": 19,
+        "team": "Panthers",
+        "player": "Caleb Banks",
+        "position": "DI",
+        "college": "Florida",
+        "slug": "caleb-banks"
+      },
+      {
+        "pick": 20,
+        "team": "Cowboys",
+        "player": "CJ Allen",
+        "position": "LB",
+        "college": "Georgia",
+        "slug": "cj-allen"
+      },
+      {
+        "pick": 21,
+        "team": "Steelers",
+        "player": "KC Concepcion",
+        "position": "WR",
+        "college": "Texas A&M",
+        "slug": "kc-concepcion"
+      },
+      {
+        "pick": 22,
+        "team": "Chargers",
+        "player": "Christen Miller",
+        "position": "DI",
+        "college": "Georgia",
+        "slug": "christen-miller"
+      },
+      {
+        "pick": 23,
+        "team": "Eagles",
+        "player": "Spencer Fano",
+        "position": "T",
+        "college": "Utah",
+        "slug": "spencer-fano"
+      },
+      {
+        "pick": 24,
+        "team": "Browns",
+        "player": "Caleb Lomu",
+        "position": "T",
+        "college": "Utah",
+        "slug": "caleb-lomu"
+      },
+      {
+        "pick": 25,
+        "team": "Bears",
+        "player": "Kayden McDonald",
+        "position": "DI",
+        "college": "Ohio State",
+        "slug": "kayden-mcdonald"
+      },
+      {
+        "pick": 26,
+        "team": "Bills",
+        "player": "T.J. Parker",
+        "position": "ED",
+        "college": "Clemson",
+        "slug": "tj-parker"
+      },
+      {
+        "pick": 27,
+        "team": "49ers",
+        "player": "Cashius Howell",
+        "position": "ED",
+        "college": "Texas A&M",
+        "slug": "cashius-howell"
+      },
+      {
+        "pick": 28,
+        "team": "Texans",
+        "player": "Kadyn Proctor",
+        "position": "T",
+        "college": "Alabama",
+        "slug": "kadyn-proctor"
+      },
+      {
+        "pick": 29,
+        "team": "Rams",
+        "player": "Max Iheanachor",
+        "position": "T",
+        "college": "Arizona State",
+        "slug": "max-iheanachor"
+      },
+      {
+        "pick": 30,
+        "team": "Patriots",
+        "player": "Kenyon Sadiq",
+        "position": "TE",
+        "college": "Oregon",
+        "slug": "kenyon-sadiq"
+      },
+      {
+        "pick": 31,
+        "team": "Broncos",
+        "player": "Emmanuel Pregnon",
+        "position": "G",
+        "college": "Oregon",
+        "slug": "emmanuel-pregnon"
+      },
+      {
+        "pick": 32,
+        "team": "Seahawks",
+        "player": "Avieon Terrell",
+        "position": "CB",
+        "college": "Clemson",
+        "slug": "avieon-terrell"
+      }
+    ],
+    "Walter": [
+      {
+        "pick": 1,
+        "team": "Raiders",
+        "player": "Fernando Mendoza",
+        "position": "QB",
+        "college": "Indiana",
+        "slug": "fernando-mendoza"
+      },
+      {
+        "pick": 2,
+        "team": "Jets",
+        "player": "Arvell Reese",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "arvell-reese"
+      },
+      {
+        "pick": 3,
+        "team": "Cardinals",
+        "player": "David Bailey",
+        "position": "ED",
+        "college": "Texas Tech",
+        "slug": "david-bailey"
+      },
+      {
+        "pick": 4,
+        "team": "Titans",
+        "player": "Caleb Downs",
+        "position": "S",
+        "college": "Ohio State",
+        "slug": "caleb-downs"
+      },
+      {
+        "pick": 5,
+        "team": "Giants",
+        "player": "Mansoor Delane",
+        "position": "CB",
+        "college": "LSU",
+        "slug": "mansoor-delane"
+      },
+      {
+        "pick": 6,
+        "team": "Browns",
+        "player": "Francis Mauigoa",
+        "position": "T",
+        "college": "Miami (FL)",
+        "slug": "francis-mauigoa"
+      },
+      {
+        "pick": 7,
+        "team": "Commanders",
+        "player": "Jeremiyah Love",
+        "position": "HB",
+        "college": "Notre Dame",
+        "slug": "jeremiyah-love"
+      },
+      {
+        "pick": 8,
+        "team": "Saints",
+        "player": "Rueben Bain Jr",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "rueben-bain-jr"
+      },
+      {
+        "pick": 9,
+        "team": "Chiefs",
+        "player": "Keldric Faulk",
+        "position": "ED",
+        "college": "Auburn",
+        "slug": "keldric-faulk"
+      },
+      {
+        "pick": 10,
+        "team": "Bengals",
+        "player": "Sonny Styles",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "sonny-styles"
+      },
+      {
+        "pick": 11,
+        "team": "Dolphins",
+        "player": "Spencer Fano",
+        "position": "T",
+        "college": "Utah",
+        "slug": "spencer-fano"
+      },
+      {
+        "pick": 12,
+        "team": "Cowboys",
+        "player": "Jermod McCoy",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "jermod-mccoy"
+      },
+      {
+        "pick": 13,
+        "team": "Rams",
+        "player": "Carnell Tate",
+        "position": "WR",
+        "college": "Ohio State",
+        "slug": "carnell-tate"
+      },
+      {
+        "pick": 14,
+        "team": "Ravens",
+        "player": "Jordyn Tyson",
+        "position": "WR",
+        "college": "Arizona State",
+        "slug": "jordyn-tyson"
+      },
+      {
+        "pick": 15,
+        "team": "Buccaneers",
+        "player": "Zion Young",
+        "position": "ED",
+        "college": "Missouri",
+        "slug": "zion-young"
+      },
+      {
+        "pick": 16,
+        "team": "Jets",
+        "player": "Ty Simpson",
+        "position": "QB",
+        "college": "Alabama",
+        "slug": "ty-simpson"
+      },
+      {
+        "pick": 17,
+        "team": "Lions",
+        "player": "Caleb Lomu",
+        "position": "T",
+        "college": "Utah",
+        "slug": "caleb-lomu"
+      },
+      {
+        "pick": 18,
+        "team": "Vikings",
+        "player": "Brandon Cisse",
+        "position": "CB",
+        "college": "South Carolina",
+        "slug": "brandon-cisse"
+      },
+      {
+        "pick": 19,
+        "team": "Panthers",
+        "player": "Kenyon Sadiq",
+        "position": "TE",
+        "college": "Oregon",
+        "slug": "kenyon-sadiq"
+      },
+      {
+        "pick": 20,
+        "team": "Cowboys",
+        "player": "Makai Lemon",
+        "position": "WR",
+        "college": "USC",
+        "slug": "makai-lemon"
+      },
+      {
+        "pick": 21,
+        "team": "Steelers",
+        "player": "Avieon Terrell",
+        "position": "CB",
+        "college": "Clemson",
+        "slug": "avieon-terrell"
+      },
+      {
+        "pick": 22,
+        "team": "Chargers",
+        "player": "Olaivavega Ioane",
+        "position": "G",
+        "college": "Penn State",
+        "slug": "olaivavega-ioane"
+      },
+      {
+        "pick": 23,
+        "team": "Eagles",
+        "player": "Kadyn Proctor",
+        "position": "T",
+        "college": "Alabama",
+        "slug": "kadyn-proctor"
+      },
+      {
+        "pick": 24,
+        "team": "Bills",
+        "player": "R Mason Thomas",
+        "position": "ED",
+        "college": "Oklahoma",
+        "slug": "r-mason-thomas"
+      },
+      {
+        "pick": 25,
+        "team": "Bears",
+        "player": "Cashius Howell",
+        "position": "ED",
+        "college": "Texas A&M",
+        "slug": "cashius-howell"
+      },
+      {
+        "pick": 26,
+        "team": "49ers",
+        "player": "Denzel Boston",
+        "position": "WR",
+        "college": "Washington",
+        "slug": "denzel-boston"
+      },
+      {
+        "pick": 27,
+        "team": "Texans",
+        "player": "Caleb Banks",
+        "position": "DI",
+        "college": "Florida",
+        "slug": "caleb-banks"
+      },
+      {
+        "pick": 28,
+        "team": "Browns",
+        "player": "Peter Woods",
+        "position": "DI",
+        "college": "Clemson",
+        "slug": "peter-woods"
+      },
+      {
+        "pick": 29,
+        "team": "Rams",
+        "player": "Monroe Freeling",
+        "position": "T",
+        "college": "Georgia",
+        "slug": "monroe-freeling"
+      },
+      {
+        "pick": 30,
+        "team": "Patriots",
+        "player": "Kayden McDonald",
+        "position": "DI",
+        "college": "Ohio State",
+        "slug": "kayden-mcdonald"
+      },
+      {
+        "pick": 31,
+        "team": "Broncos",
+        "player": "CJ Allen",
+        "position": "LB",
+        "college": "Georgia",
+        "slug": "cj-allen"
+      },
+      {
+        "pick": 32,
+        "team": "Seahawks",
+        "player": "Akheem Mesidor",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "akheem-mesidor"
+      },
+      {
+        "pick": 33,
+        "team": "Jets",
+        "player": "KC Concepcion",
+        "position": "WR",
+        "college": "Texas A&M",
+        "slug": "kc-concepcion"
+      },
+      {
+        "pick": 34,
+        "team": "Cardinals",
+        "player": "Chris McClellan",
+        "position": "DI",
+        "college": "Missouri",
+        "slug": "chris-mcclellan"
+      },
+      {
+        "pick": 35,
+        "team": "Titans",
+        "player": "Chris Bell",
+        "position": "WR",
+        "college": "Louisville",
+        "slug": "chris-bell"
+      },
+      {
+        "pick": 36,
+        "team": "Raiders",
+        "player": "Malachi Fields",
+        "position": "WR",
+        "college": "Notre Dame",
+        "slug": "malachi-fields"
+      },
+      {
+        "pick": 37,
+        "team": "Giants",
+        "player": "Deion Burks",
+        "position": "WR",
+        "college": "Oklahoma",
+        "slug": "deion-burks"
+      },
+      {
+        "pick": 38,
+        "team": "Texans",
+        "player": "Blake Miller",
+        "position": "T",
+        "college": "Clemson",
+        "slug": "blake-miller"
+      },
+      {
+        "pick": 39,
+        "team": "Browns",
+        "player": "Germie Bernard",
+        "position": "WR",
+        "college": "Alabama",
+        "slug": "germie-bernard"
+      },
+      {
+        "pick": 40,
+        "team": "Chiefs",
+        "player": "Jadarian Price",
+        "position": "HB",
+        "college": "Notre Dame",
+        "slug": "jadarian-price"
+      },
+      {
+        "pick": 41,
+        "team": "Bengals",
+        "player": "Gabe Jacas",
+        "position": "ED",
+        "college": "Illinois",
+        "slug": "gabe-jacas"
+      },
+      {
+        "pick": 42,
+        "team": "Saints",
+        "player": "JaKobi Lane",
+        "position": "WR",
+        "college": "USC",
+        "slug": "jakobi-lane"
+      },
+      {
+        "pick": 43,
+        "team": "Dolphins",
+        "player": "Colton Hood",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "colton-hood"
+      },
+      {
+        "pick": 44,
+        "team": "Jets",
+        "player": "Will Lee III",
+        "position": "CB",
+        "college": "Texas A&M",
+        "slug": "will-lee-iii"
+      },
+      {
+        "pick": 45,
+        "team": "Ravens",
+        "player": "Nicholas Singleton",
+        "position": "HB",
+        "college": "PENN STATE",
+        "slug": "nicholas-singleton"
+      },
+      {
+        "pick": 46,
+        "team": "Buccaneers",
+        "player": "Jaishawn Barham",
+        "position": "ED",
+        "college": "Michigan",
+        "slug": "jaishawn-barham"
+      },
+      {
+        "pick": 47,
+        "team": "Colts",
+        "player": "Anthony Hill Jr",
+        "position": "LB",
+        "college": "Texas",
+        "slug": "anthony-hill-jr"
+      },
+      {
+        "pick": 48,
+        "team": "Falcons",
+        "player": "Isaiah World",
+        "position": "T",
+        "college": "Oregon",
+        "slug": "isaiah-world"
+      },
+      {
+        "pick": 49,
+        "team": "Vikings",
+        "player": "Dani Dennis-Sutton",
+        "position": "ED",
+        "college": "Penn State",
+        "slug": "dani-dennis-sutton"
+      },
+      {
+        "pick": 50,
+        "team": "Lions",
+        "player": "Drew Shelton",
+        "position": "T",
+        "college": "Penn State",
+        "slug": "drew-shelton"
+      },
+      {
+        "pick": 51,
+        "team": "Panthers",
+        "player": "LT Overton",
+        "position": "ED",
+        "college": "Alabama",
+        "slug": "lt-overton"
+      },
+      {
+        "pick": 52,
+        "team": "Packers",
+        "player": "Keylan Rutledge",
+        "position": "G",
+        "college": "Georgia Tech",
+        "slug": "keylan-rutledge"
+      },
+      {
+        "pick": 53,
+        "team": "Steelers",
+        "player": "Garrett Nussmeier",
+        "position": "QB",
+        "college": "LSU",
+        "slug": "garrett-nussmeier"
+      },
+      {
+        "pick": 54,
+        "team": "Eagles",
+        "player": "Noah Thomas",
+        "position": "WR",
+        "college": "Georgia",
+        "slug": "noah-thomas"
+      },
+      {
+        "pick": 55,
+        "team": "Chargers",
+        "player": "T.J. Parker",
+        "position": "ED",
+        "college": "Clemson",
+        "slug": "tj-parker"
+      },
+      {
+        "pick": 56,
+        "team": "Bills",
+        "player": "Amari Jackson",
+        "position": "CB",
+        "college": "MARYLAND",
+        "slug": "amari-jackson"
+      },
+      {
+        "pick": 57,
+        "team": "Bears",
+        "player": "DJ McKinney",
+        "position": "CB",
+        "college": "Colorado",
+        "slug": "dj-mckinney"
+      },
+      {
+        "pick": 58,
+        "team": "Texans",
+        "player": "Jaylon Guilbeau",
+        "position": "CB",
+        "college": "Texas",
+        "slug": "jaylon-guilbeau"
+      },
+      {
+        "pick": 59,
+        "team": "49ers",
+        "player": "Harold Perkins Jr",
+        "position": "LB",
+        "college": "LSU",
+        "slug": "harold-perkins-jr"
+      },
+      {
+        "pick": 60,
+        "team": "Jaguars",
+        "player": "Deontae Lawson",
+        "position": "LB",
+        "college": "Alabama",
+        "slug": "deontae-lawson"
+      },
+      {
+        "pick": 61,
+        "team": "Rams",
+        "player": "Lander Barton",
+        "position": "LB",
+        "college": "Utah",
+        "slug": "lander-barton"
+      },
+      {
+        "pick": 62,
+        "team": "Patriots",
+        "player": "John Michael Gyllenborg",
+        "position": "TE",
+        "college": "Wyoming",
+        "slug": "john-michael-gyllenborg"
+      },
+      {
+        "pick": 63,
+        "team": "Broncos",
+        "player": "Connor Lew",
+        "position": "C",
+        "college": "Auburn",
+        "slug": "connor-lew"
+      },
+      {
+        "pick": 64,
+        "team": "Seahawks",
+        "player": "Jake Slaughter",
+        "position": "C",
+        "college": "Florida",
+        "slug": "jake-slaughter"
+      },
+      {
+        "pick": 65,
+        "team": "Cardinals",
+        "player": "Trinidad Chambliss",
+        "position": "QB",
+        "college": "Ole Miss",
+        "slug": "trinidad-chambliss"
+      },
+      {
+        "pick": 66,
+        "team": "Titans",
+        "player": "Kyle Louis",
+        "position": "LB",
+        "college": "Pittsburgh",
+        "slug": "kyle-louis"
+      },
+      {
+        "pick": 67,
+        "team": "Raiders",
+        "player": "Jude Bowry",
+        "position": "T",
+        "college": "Boston College",
+        "slug": "jude-bowry"
+      },
+      {
+        "pick": 68,
+        "team": "Eagles",
+        "player": "Gennings Dunker",
+        "position": "T",
+        "college": "Iowa",
+        "slug": "gennings-dunker"
+      },
+      {
+        "pick": 69,
+        "team": "Texans",
+        "player": "Demond Claiborne",
+        "position": "HB",
+        "college": "Wake Forest",
+        "slug": "demond-claiborne"
+      },
+      {
+        "pick": 70,
+        "team": "Browns",
+        "player": "Fernando Carmona Jr",
+        "position": "G",
+        "college": "Arkansas",
+        "slug": "fernando-carmona-jr"
+      },
+      {
+        "pick": 71,
+        "team": "Commanders",
+        "player": "Keyron Crawford",
+        "position": "ED",
+        "college": "Auburn",
+        "slug": "keyron-crawford"
+      },
+      {
+        "pick": 72,
+        "team": "Bengals",
+        "player": "Keon Sabb",
+        "position": "S",
+        "college": "Alabama",
+        "slug": "keon-sabb"
+      },
+      {
+        "pick": 73,
+        "team": "Saints",
+        "player": "Amare Farrell",
+        "position": null,
+        "college": null,
+        "slug": "amare-farrell"
+      },
+      {
+        "pick": 74,
+        "team": "Chiefs",
+        "player": "Zachariah Branch",
+        "position": "WR",
+        "college": "Georgia",
+        "slug": "zachariah-branch"
+      },
+      {
+        "pick": 75,
+        "team": "Dolphins",
+        "player": "Drew Allar",
+        "position": "QB",
+        "college": "Penn State",
+        "slug": "drew-allar"
+      },
+      {
+        "pick": 76,
+        "team": "Steelers",
+        "player": "Antonio Williams",
+        "position": "WR",
+        "college": "Clemson",
+        "slug": "antonio-williams"
+      },
+      {
+        "pick": 77,
+        "team": "Buccaneers",
+        "player": "Christian Gray",
+        "position": "CB",
+        "college": "Notre Dame",
+        "slug": "christian-gray"
+      },
+      {
+        "pick": 78,
+        "team": "Colts",
+        "player": "Elijah Pritchett",
+        "position": "T",
+        "college": "NEBRASKA",
+        "slug": "elijah-pritchett"
+      },
+      {
+        "pick": 79,
+        "team": "Falcons",
+        "player": "Aaron Anderson",
+        "position": "WR",
+        "college": "LSU",
+        "slug": "aaron-anderson"
+      },
+      {
+        "pick": 80,
+        "team": "Ravens",
+        "player": "Ethan Onianwa",
+        "position": "G",
+        "college": "Ohio State",
+        "slug": "ethan-onianwa"
+      },
+      {
+        "pick": 81,
+        "team": "Jaguars",
+        "player": "Jacob Rodriguez",
+        "position": "LB",
+        "college": "Texas Tech",
+        "slug": "jacob-rodriguez"
+      },
+      {
+        "pick": 82,
+        "team": "Vikings",
+        "player": "Kamari Ramsey",
+        "position": "S",
+        "college": "USC",
+        "slug": "kamari-ramsey"
+      },
+      {
+        "pick": 83,
+        "team": "Panthers",
+        "player": "Derrick Moore",
+        "position": "ED",
+        "college": "Michigan",
+        "slug": "derrick-moore"
+      },
+      {
+        "pick": 84,
+        "team": "Packers",
+        "player": "Javon Kilgore",
+        "position": "TBD",
+        "college": "TBD",
+        "slug": "javon-kilgore"
+      },
+      {
+        "pick": 85,
+        "team": "Steelers",
+        "player": "Chase Bisontis",
+        "position": "G",
+        "college": "Texas A&M",
+        "slug": "chase-bisontis"
+      },
+      {
+        "pick": 86,
+        "team": "Chargers",
+        "player": "Lee Hunter",
+        "position": "DI",
+        "college": "Texas Tech",
+        "slug": "lee-hunter"
+      },
+      {
+        "pick": 87,
+        "team": "Dolphins",
+        "player": "Chris Brazzell II",
+        "position": "WR",
+        "college": "Tennessee",
+        "slug": "chris-brazzell-ii"
+      },
+      {
+        "pick": 88,
+        "team": "Jaguars",
+        "player": "Zane Durant",
+        "position": "DI",
+        "college": "Penn State",
+        "slug": "zane-durant"
+      },
+      {
+        "pick": 89,
+        "team": "Bears",
+        "player": "DeMonte Capehart",
+        "position": "DI",
+        "college": "Clemson",
+        "slug": "demonte-capehart"
+      },
+      {
+        "pick": 90,
+        "team": "Dolphins",
+        "player": "Romello Height",
+        "position": "ED",
+        "college": "Texas Tech",
+        "slug": "romello-height"
+      },
+      {
+        "pick": 91,
+        "team": "Bills",
+        "player": "Darrell Jackson Jr",
+        "position": "DI",
+        "college": "Florida State",
+        "slug": "darrell-jackson-jr"
+      },
+      {
+        "pick": 92,
+        "team": "49ers",
+        "player": "Quintrevion Wisner",
+        "position": null,
+        "college": null,
+        "slug": "quintrevion-wisner"
+      },
+      {
+        "pick": 93,
+        "team": "Rams",
+        "player": "Dillon Thieneman",
+        "position": "S",
+        "college": "Oregon",
+        "slug": "dillon-thieneman"
+      },
+      {
+        "pick": 94,
+        "team": "Broncos",
+        "player": "Emmanuel McNeil-Warren",
+        "position": "S",
+        "college": "Toledo",
+        "slug": "emmanuel-mcneil-warren"
+      },
+      {
+        "pick": 95,
+        "team": "Patriots",
+        "player": "Max Iheanachor",
+        "position": "T",
+        "college": "Arizona State",
+        "slug": "max-iheanachor"
+      },
+      {
+        "pick": 96,
+        "team": "Seahawks",
+        "player": "Domani Jackson",
+        "position": "CB",
+        "college": "Alabama",
+        "slug": "domani-jackson"
+      }
+    ],
+    "Yates": [
+      {
+        "pick": 1,
+        "team": "Raiders",
+        "player": "Fernando Mendoza",
+        "position": "QB",
+        "college": "Indiana",
+        "slug": "fernando-mendoza"
+      },
+      {
+        "pick": 2,
+        "team": "Jets",
+        "player": "Arvell Reese",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "arvell-reese"
+      },
+      {
+        "pick": 3,
+        "team": "Cardinals",
+        "player": "Francis Mauigoa",
+        "position": "T",
+        "college": "Miami (FL)",
+        "slug": "francis-mauigoa"
+      },
+      {
+        "pick": 4,
+        "team": "Titans",
+        "player": "David Bailey",
+        "position": "ED",
+        "college": "Texas Tech",
+        "slug": "david-bailey"
+      },
+      {
+        "pick": 5,
+        "team": "Giants",
+        "player": "Caleb Downs",
+        "position": "S",
+        "college": "Ohio State",
+        "slug": "caleb-downs"
+      },
+      {
+        "pick": 6,
+        "team": "Browns",
+        "player": "Spencer Fano",
+        "position": "T",
+        "college": "Utah",
+        "slug": "spencer-fano"
+      },
+      {
+        "pick": 7,
+        "team": "Commanders",
+        "player": "Carnell Tate",
+        "position": "WR",
+        "college": "Ohio State",
+        "slug": "carnell-tate"
+      },
+      {
+        "pick": 8,
+        "team": "Saints",
+        "player": "Jordyn Tyson",
+        "position": "WR",
+        "college": "Arizona State",
+        "slug": "jordyn-tyson"
+      },
+      {
+        "pick": 9,
+        "team": "Chiefs",
+        "player": "Jeremiyah Love",
+        "position": "HB",
+        "college": "Notre Dame",
+        "slug": "jeremiyah-love"
+      },
+      {
+        "pick": 10,
+        "team": "Bengals",
+        "player": "Rueben Bain Jr",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "rueben-bain-jr"
+      },
+      {
+        "pick": 11,
+        "team": "Dolphins",
+        "player": "Mansoor Delane",
+        "position": "CB",
+        "college": "LSU",
+        "slug": "mansoor-delane"
+      },
+      {
+        "pick": 12,
+        "team": "Cowboys",
+        "player": "Sonny Styles",
+        "position": "LB",
+        "college": "Ohio State",
+        "slug": "sonny-styles"
+      },
+      {
+        "pick": 13,
+        "team": "Rams",
+        "player": "Jermod McCoy",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "jermod-mccoy"
+      },
+      {
+        "pick": 14,
+        "team": "Ravens",
+        "player": "Makai Lemon",
+        "position": "WR",
+        "college": "USC",
+        "slug": "makai-lemon"
+      },
+      {
+        "pick": 15,
+        "team": "Buccaneers",
+        "player": "Cashius Howell",
+        "position": "ED",
+        "college": "Texas A&M",
+        "slug": "cashius-howell"
+      },
+      {
+        "pick": 16,
+        "team": "Jets",
+        "player": "Caleb Banks",
+        "position": "DI",
+        "college": "Florida",
+        "slug": "caleb-banks"
+      },
+      {
+        "pick": 17,
+        "team": "Lions",
+        "player": "Monroe Freeling",
+        "position": "T",
+        "college": "Georgia",
+        "slug": "monroe-freeling"
+      },
+      {
+        "pick": 18,
+        "team": "Vikings",
+        "player": "Brandon Cisse",
+        "position": "CB",
+        "college": "South Carolina",
+        "slug": "brandon-cisse"
+      },
+      {
+        "pick": 19,
+        "team": "Panthers",
+        "player": "Akheem Mesidor",
+        "position": "ED",
+        "college": "Miami (FL)",
+        "slug": "akheem-mesidor"
+      },
+      {
+        "pick": 20,
+        "team": "Cowboys",
+        "player": "Keldric Faulk",
+        "position": "ED",
+        "college": "Auburn",
+        "slug": "keldric-faulk"
+      },
+      {
+        "pick": 21,
+        "team": "Steelers",
+        "player": "Ty Simpson",
+        "position": "QB",
+        "college": "Alabama",
+        "slug": "ty-simpson"
+      },
+      {
+        "pick": 22,
+        "team": "Chargers",
+        "player": "Olaivavega Ioane",
+        "position": "G",
+        "college": "Penn State",
+        "slug": "olaivavega-ioane"
+      },
+      {
+        "pick": 23,
+        "team": "Eagles",
+        "player": "Max Iheanachor",
+        "position": "T",
+        "college": "Arizona State",
+        "slug": "max-iheanachor"
+      },
+      {
+        "pick": 24,
+        "team": "Browns",
+        "player": "Denzel Boston",
+        "position": "WR",
+        "college": "Washington",
+        "slug": "denzel-boston"
+      },
+      {
+        "pick": 25,
+        "team": "Bears",
+        "player": "Zion Young",
+        "position": "ED",
+        "college": "Missouri",
+        "slug": "zion-young"
+      },
+      {
+        "pick": 26,
+        "team": "Bills",
+        "player": "Peter Woods",
+        "position": "DI",
+        "college": "Clemson",
+        "slug": "peter-woods"
+      },
+      {
+        "pick": 27,
+        "team": "49ers",
+        "player": "KC Concepcion",
+        "position": "WR",
+        "college": "Texas A&M",
+        "slug": "kc-concepcion"
+      },
+      {
+        "pick": 28,
+        "team": "Texans",
+        "player": "Kadyn Proctor",
+        "position": "T",
+        "college": "Alabama",
+        "slug": "kadyn-proctor"
+      },
+      {
+        "pick": 29,
+        "team": "Rams",
+        "player": "Colton Hood",
+        "position": "CB",
+        "college": "Tennessee",
+        "slug": "colton-hood"
+      },
+      {
+        "pick": 30,
+        "team": "Patriots",
+        "player": "Kenyon Sadiq",
+        "position": "TE",
+        "college": "Oregon",
+        "slug": "kenyon-sadiq"
+      },
+      {
+        "pick": 31,
+        "team": "Broncos",
+        "player": "Caleb Lomu",
+        "position": "T",
+        "college": "Utah",
+        "slug": "caleb-lomu"
+      },
+      {
+        "pick": 32,
+        "team": "Seahawks",
+        "player": "Chase Bisontis",
+        "position": "G",
+        "college": "Texas A&M",
+        "slug": "chase-bisontis"
+      }
+    ]
+  },
+  "mock_dates": {
+    "Bleacher": "2026-02-09 00:00:00",
+    "Brugler": "2026-01-15 00:00:00",
+    "Campbell": "2026-02-09 00:00:00",
+    "CBS": "2026-02-09 00:00:00",
+    "Jeremiah": "2026-01-26 00:00:00",
+    "Kiper": "2026-01-21 00:00:00",
+    "Lance": "2026-02-02 00:00:00",
+    "McShay": "2026-02-09 00:00:00",
+    "Miller": "2024-03-27 00:00:00",
+    "NFL": "2026-02-09 00:00:00",
+    "PFF": "2026-02-10 00:00:00",
+    "Reid": "2026-01-06 00:00:00",
+    "Tankathon": "2026-01-26 00:00:00",
+    "TDN": "2026-01-29 00:00:00",
+    "TWSN": "2026-02-09 00:00:00",
+    "Walter": "2026-02-11 00:00:00",
+    "Yates": "2026-02-10 00:00:00"
+  }
+}

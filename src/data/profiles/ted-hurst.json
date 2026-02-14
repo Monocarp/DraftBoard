@@ -1,0 +1,422 @@
+{
+  "name": "Ted Hurst",
+  "slug": "ted-hurst",
+  "overview": {
+    "POS": "WR",
+    "College": "Georgia State",
+    "Height": "6' 3\"",
+    "Weight": "195",
+    "Age": "0",
+    "DOB": "00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "24",
+    "Snaps": "1429",
+    "24/7 Sports": "0",
+    "ESPN": "TBD",
+    "Draft Buzz": "82.0 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.4",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "Georgia State",
+  "height": "6' 3\"",
+  "weight": "195",
+  "age": 0.0,
+  "dob": "00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 24,
+  "snaps": 1429,
+  "site_ratings": {
+    "24/7 Sports": "0",
+    "ESPN": "TBD",
+    "Draft Buzz": "82.0 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.4",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "82",
+      "percentile": 0.658
+    },
+    "2024 Grade": {
+      "value": "74.1",
+      "percentile": 0.5
+    },
+    "2023 Grade": {
+      "value": "55",
+      "percentile": 0.053
+    },
+    "Receiving Grade": {
+      "value": "82",
+      "percentile": 0.526
+    },
+    "Yards/ Routes Run": {
+      "value": "2.42",
+      "percentile": 0.395
+    },
+    "Drop %": {
+      "value": "9",
+      "percentile": 0.053
+    },
+    "Contested Catch": {
+      "value": "59.3",
+      "percentile": 0.632
+    },
+    "Grade vs Man": {
+      "value": "71.5",
+      "percentile": 0.368
+    },
+    "YAC/Reception": {
+      "value": "5.3",
+      "percentile": 0.5
+    },
+    "Missed Tkls Forced": {
+      "value": "18",
+      "percentile": 0.789
+    },
+    "ADOT": {
+      "value": "12.6",
+      "percentile": 0.789
+    },
+    "Deep Yards": {
+      "value": "377",
+      "percentile": 0.842
+    },
+    "Touchdowns": {
+      "value": "6",
+      "percentile": 0.289
+    },
+    "Elusiveness": {
+      "value": null,
+      "percentile": null
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 126.4,
+      "positional_rank": "16.333333333333332"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 143.0,
+      "positional_rank": "23"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 62.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 64.0,
+      "positional_rank": "14"
+    },
+    {
+      "source": "Jeremiah",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 176.0,
+      "positional_rank": "27"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 187.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Tankathon",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Jeremiah": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "Tankathon": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "5TH",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "0",
+    "Bleacher": "0",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 80.7,
+    "Hands": 0.61,
+    "Short Receiving": 0.76,
+    "Med Routes": 0.8,
+    "Deep Threat": 0.83,
+    "Blocking": 0.64
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 72,
+      "career": 164
+    },
+    "Wide": {
+      "2025": 370,
+      "career": 815
+    }
+  },
+  "skills_traits": {
+    "Character/Mentality": {
+      "positives": null,
+      "negatives": null
+    },
+    "Receiving Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technique": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Blocking/Other": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nTed Hurst arrived at Georgia State in 2024 after spending two seasons at Valdosta State, where the Savannah native carved out a role as a productive deep threat in Division II football. At Sol C. Johnson High School, Hurst earned First Team All-Region honors in Class 3A while hauling in 41 catches for 591 yards and six touchdowns as a senior. He also excelled on the basketball court, averaging 16.6 points per game, though football remained his primary focus. The transition from D-II to FBS competition didn't faze him one bit.\n\nHurst wasted no time making his presence felt with the Panthers, immediately establishing himself as the team's number one receiving option in 2024. He grabbed 56 passes for 961 yards and set a Georgia State single-season record with nine touchdown catches. The breakout performance came against Vanderbilt when he snagged two scores, including the game-winning touchdown with 15 seconds left that lifted Georgia State to a shocking upset. His 76-yard scoring strike against Georgia Southern stood as the longest reception by any Panther all season, and he eclipsed 100 yards four times, peaking with a career-best 173 yards on nine grabs against Arkansas State. That production earned him Second Team All-Sun Belt honors and College Football Network First Team All-Sun Belt recognition.\n\nThe senior year brought even more accolades and production. Hurst became the first Georgia State player ever named to Bruce Feldman's College Freaks List for The Athletic, recognizing his blend of size and athleticism. He landed on the Biletnikoff Award watchlist and collected First Team All-Sun Belt honors after hauling in 71 receptions for 1,004 yards and six touchdowns. His 172-yard explosion against Murray State placed him ninth in the program's single-game record book, while his 10 catches and two touchdowns in that contest ranked second all-time. By season's end, Hurst had etched his name throughout Georgia State's career records, finishing fourth in receiving yards (1,965), fifth in receptions (127), fourth in yards per catch (15.5), fourth in touchdowns (15), and fourth in 100-yard games (8). Nationally, he ranked 12th in total receiving yards, 16th in receiving yards per game, and 15th in receptions per game. The Senior Bowl extended an invitation to showcase his talents against the nation's best.\n\nHurst brings enough intriguing traits to warrant selection somewhere in the middle rounds as a developmental outside receiver with legitimate upside. His combination of size, ball skills, and route-running polish gives offensive coordinators a chess piece who can operate from multiple alignments. The acceleration he shows working vertically and his understanding of how to uncover against zone concepts translate well to NFL passing games that emphasize creating windows rather than just outrunning defenders. Where he needs the most work is surviving physical coverage at the line, as NFL corners will punish his lean frame and limited hand usage far more than Sun Belt defensive backs did.\n\n\n    \n    The fit makes most sense in systems that feature movement at the snap and don't ask receivers to consistently win against press-man looks. Offenses built around rhythm passing, quick game concepts, and intelligent route combinations will maximize what he does well while minimizing his weaknesses. Think about how he could function in schemes that create free releases through formations and motion, then let him work his route-running skills and reliable hands in space. His red zone utility gives him added value, particularly in situations where size and ball skills matter more than separation. The blocking limitations mean he's best utilized on obvious passing downs early in his career.\n\n\n    \n    Give him a year in an NFL strength program to add 10 pounds of functional muscle, work with receivers coaches on expanding his release repertoire, and let him carve out a role as a rotational outside receiver who can contribute on third downs and in the red zone. By year two, there's legitimate starter potential if the physical development comes along and he shows improvement beating press looks. The floor is a quality depth piece who gives you size, hands, and route-running ability. The ceiling is a number two or three receiver who moves the chains and wins contested catches. For a team picking in the fifth or sixth round, that's a worthwhile gamble on a player whose tape shows more promise than his testing numbers might suggest."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.4,
+    "grade_indicator": null,
+    "overall_rank": 64,
+    "position_rank": null,
+    "pro_comparison": null,
+    "projected_round": null
+  },
+  "injury_history": []
+}

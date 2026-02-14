@@ -1,0 +1,422 @@
+{
+  "name": "DJ Campbell",
+  "slug": "dj-campbell",
+  "overview": {
+    "POS": "IOL",
+    "College": "TEXAS",
+    "Height": "6' 3\"",
+    "Weight": "321",
+    "Age": "22.4",
+    "DOB": "37888",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "48",
+    "Snaps": "2573",
+    "24/7 Sports": "98",
+    "ESPN": "TBD",
+    "Draft Buzz": "81.3 / 100",
+    "NFL.com": "TBD",
+    "BR": "TBD",
+    "Gridiron": null
+  },
+  "position": "IOL",
+  "college": "TEXAS",
+  "height": "6' 3\"",
+  "weight": "321",
+  "age": 22.4,
+  "dob": "37888",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 48,
+  "snaps": 2573,
+  "site_ratings": {
+    "24/7 Sports": "98",
+    "ESPN": "TBD",
+    "Draft Buzz": "81.3 / 100",
+    "NFL.com": "TBD",
+    "BR": "TBD",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "72.4",
+      "percentile": 0.4
+    },
+    "2024 Grade": {
+      "value": "68.3",
+      "percentile": 0.3
+    },
+    "2023 Grade": {
+      "value": "63.5",
+      "percentile": 0.3
+    },
+    "Run Block Grade": {
+      "value": "74.3",
+      "percentile": 0.4
+    },
+    "Pass Block Grade": {
+      "value": "76.2",
+      "percentile": 0.4
+    },
+    "True Pass Set Grade": {
+      "value": "68.1",
+      "percentile": 0.2
+    },
+    "Pass Block Efficiency": {
+      "value": "97.9",
+      "percentile": 0.15
+    },
+    "Zone Grade": {
+      "value": "83.3",
+      "percentile": 0.8
+    },
+    "Gap Grade": {
+      "value": "62",
+      "percentile": 0.2
+    },
+    "Sacks Allowed": {
+      "value": "1",
+      "percentile": 0.5
+    },
+    "Hits Allowed": {
+      "value": "6",
+      "percentile": 0.0
+    },
+    "Hurries Allowed": {
+      "value": "11",
+      "percentile": 0.2
+    },
+    "Pressures Allowed": {
+      "value": "18",
+      "percentile": 0.1
+    },
+    "Penalties": {
+      "value": "9",
+      "percentile": 0.05
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 158.0,
+      "positional_rank": "4.5"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 123.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "0"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 193.0,
+      "positional_rank": "34"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "5TH",
+    "Bleacher": "TBD"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Ed INGRAM",
+    "Bleacher": "TBD",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.87,
+    "Run Blocking Grade": 0.81
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 0,
+      "career": 0
+    },
+    "LG": {
+      "2025": 0,
+      "career": 0
+    },
+    "C": {
+      "2025": 0,
+      "career": 0
+    },
+    "RG": {
+      "2025": 830,
+      "career": 2505
+    },
+    "RT": {
+      "2025": 1,
+      "career": 810
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nDJ Campbell, a 6'3\", 343-pound road grader out of Texas, dominated the high school trenches in Arlington. Five-star blue-chip recruit across the board, Campbell topped guard prospect rankings nationally. Under Armour All-American and MaxPreps All-America First Team selection.\n\nAt Texas, Campbell quickly cemented his spot. After spot duty as a freshman, he locked down the right guard position for all 14 games in his sophomore campaign. Joe Moore Award semifinalist, Campbell anchored a line that sprung a 1,000-yard rusher and fueled multiple 500+ yard offensive explosions against ranked competition.\n\nCampbell's nastiness shone brightest in the trenches against Alabama (454 total yards) and in a ground-and-pound clinic versus Texas Tech (302 rushing yards). Integral cog in Texas' Big 12 Championship victory, where QB Ewers shredded defenses for 452 yards and 4 TDs through the air.\n\nCampbell profiles as a day-two prospect with starting guard upside. Scheme fit favors power-run offenses where he can maximize his people-moving ability. Pass pro flashes potential but requires significant technical refinement to handle NFL-caliber interior rush.\n\n\nImmediate impact likely comes in the ground game while pass protection skills develop. Scheme versatility adds value, fitting both gap and zone concepts. Decision-makers must weigh mauler potential against clear areas for improvement, particularly lateral mobility and technique polish.\n\n\nTrack record against top-tier competition and physical tools point to starting-caliber ceiling. Development arc suggests potential long-term interior line solution for a team willing to invest in his growth and leverage his run-blocking prowess.    \n\n                                        \n                                            \n                                                Written By:\n                                                Eli Cooper (Big 12)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "injury_history": []
+}

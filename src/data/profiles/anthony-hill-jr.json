@@ -1,0 +1,447 @@
+{
+  "name": "Anthony HIll Jr",
+  "slug": "anthony-hill-jr",
+  "overview": {
+    "POS": "LB",
+    "College": "Texas",
+    "Height": "6' 3\"",
+    "Weight": "238",
+    "Age": "20.9",
+    "DOB": null,
+    "Year": null,
+    "Prj. Rd": null,
+    "Games": null,
+    "Snaps": null,
+    "24/7 Sports": null,
+    "ESPN": "83",
+    "Draft Buzz": null,
+    "NFL.com": null,
+    "Bleacher": "7.3",
+    "Gridiron": null
+  },
+  "position": "LB",
+  "college": "Texas",
+  "height": "6' 3\"",
+  "weight": "238",
+  "age": 20.9,
+  "dob": null,
+  "year": null,
+  "projected_round": null,
+  "games": null,
+  "snaps": null,
+  "site_ratings": {
+    "24/7 Sports": null,
+    "ESPN": "83",
+    "Draft Buzz": null,
+    "NFL.com": null,
+    "Bleacher": "7.3",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "73.1",
+      "percentile": 0.1
+    },
+    "24 Grade": {
+      "value": "72.9",
+      "percentile": 0.3
+    },
+    "23 Grade": {
+      "value": "60.1",
+      "percentile": 0.0
+    },
+    "Pass Rush Grade": {
+      "value": "66.9",
+      "percentile": 0.4
+    },
+    "Run Def. Grade": {
+      "value": "79.7",
+      "percentile": 0.3
+    },
+    "Run Stop %": {
+      "value": "8.6",
+      "percentile": 0.5
+    },
+    "Tackles": {
+      "value": "47",
+      "percentile": 0.2
+    },
+    "Tackling Grade": {
+      "value": "88.8",
+      "percentile": 0.9
+    },
+    "Missed Tkl Rate": {
+      "value": "4.5",
+      "percentile": 0.9
+    },
+    "ADORT": {
+      "value": "2.4",
+      "percentile": 0.2
+    },
+    "Coverage": {
+      "value": "63.6",
+      "percentile": 0.4
+    },
+    "Coverage Stops": {
+      "value": "11",
+      "percentile": 0.2
+    },
+    "Recs/Tgts": {
+      "value": "0",
+      "percentile": 0.5
+    },
+    "Completion %": {
+      "value": "71.4",
+      "percentile": 0.9
+    },
+    "TD / INT": {
+      "value": "0 / 2",
+      "percentile": null
+    },
+    "Forced Inc Rate": {
+      "value": "3.6",
+      "percentile": 0.2
+    },
+    "Pass Rat. All.": {
+      "value": "62.1",
+      "percentile": 1.0
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 43.9,
+      "positional_rank": "4.857142857142857"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 38.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 52.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 56.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 11.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 83.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 44.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 36.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 36.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 42.0,
+      "positional_rank": "3"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 40.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 30.0,
+    "Bleacher": null,
+    "Walter": 47.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "TBD",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Kenneth Murray",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": null,
+    "Pass Rush": null,
+    "Run Defense": null,
+    "Coverage": null
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 43,
+      "career": 198
+    },
+    "Slot": {
+      "2025": 100,
+      "career": 268
+    },
+    "Corner": {
+      "2025": 3,
+      "career": 12
+    },
+    "Box": {
+      "2025": 417,
+      "career": 1495
+    },
+    "Deep": {
+      "2025": 0,
+      "career": 2
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Anthony Hill Jr is a highly instinctual linebacker who looks like a significant contributor as a run defender in the NFL. Hill is listed at 6'3\", 238 pounds and went to Texas as a 5—star recruit in the 2023 class, per 247Sports.\n\nHe made an immediate impact by recording 67 tackles, eight tackles for loss and five sacks to earn Freshman All—American and honorable mention All—Big 12 honors in addition to being the conference's co—Defensive Freshman of the Year.\n\nAs a sophomore in 2024, he was one of the most productive linebackers in the country, racking up 113 tackles, 17 TFLs (led the SEC) and eight sacks. That resulted in a second—team All—American and second—team All—SEC bids."
+        },
+        {
+          "title": "Positives",
+          "text": "— Good size with a thick build and carries his frame well with no bad weight. Also, appears to have good arm length.\n\n— Quick to key and diagnose running plays, constantly putting himself in a position to take on blocks or shoot gaps. Instinctual, consistently in the right spot and/or around the ball. Sniffs out screens well, too.\n\n— Shown impressive lateral quickness and movement skills to move gap—to—gap on the second level or slip blocks with a shoulder dip move.\n\n— Takes on blocks with his hands and has some upper body strength and the arm length to get extension against offensive linemen.\n\n— Sure tackler who wraps up and rarely misses, long arms also increase his tackle radius.\n\n— Still young, will be 21 years old on Feb. 14."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Doesn't make much of an impact in coverage, primarily just a spot—dropper in zone coverage.\n\n— Shown some hip stiffness, impacting his ability to turn and run when playing Cover 2 or stay in phase against running backs on choice routes.\n\n— Questionable eyes in zone coverage, will get caught staring into the backfield and doesn't locate threats coming into his area well.\n\n— Hasn't shown the ability to consistently stack and shed as a run defender.\n\n— Tackles high which can lead to extra yards after contact from physical running backs."
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": null,
+    "prospect_grade_indicator": "Likely Needs Time In Developmental League",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": null,
+    "eligibility": "Junior",
+    "nfl_rank": 42,
+    "nfl_pos_rank": 3
+  },
+  "bleacher_profile": {
+    "grade": 7.3,
+    "grade_indicator": null,
+    "overall_rank": 83,
+    "position_rank": null,
+    "pro_comparison": "Kenneth Murray",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

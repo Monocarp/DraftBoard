@@ -1,0 +1,450 @@
+{
+  "name": "Keionte Scott",
+  "slug": "keionte-scott",
+  "overview": {
+    "POS": "CB",
+    "College": "Miami (FL)",
+    "Height": "6' 0\"",
+    "Weight": "194",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": "43",
+    "Snaps": "2021",
+    "24/7 Sports": "90",
+    "ESPN": "86",
+    "Draft Buzz": "84.9 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.8",
+    "Gridiron": "TBD"
+  },
+  "position": "CB",
+  "college": "Miami (FL)",
+  "height": "6' 0\"",
+  "weight": "194",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": 43,
+  "snaps": 2021,
+  "site_ratings": {
+    "24/7 Sports": "90",
+    "ESPN": "86",
+    "Draft Buzz": "84.9 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.8",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "90.7",
+      "percentile": 0.882
+    },
+    "24 Grade": {
+      "value": "48.1",
+      "percentile": 0.0
+    },
+    "23 Grade": {
+      "value": "72.3",
+      "percentile": 0.611
+    },
+    "Coverage Grade": {
+      "value": "90",
+      "percentile": 0.833
+    },
+    "Passer Rating": {
+      "value": "65.7",
+      "percentile": 0.5
+    },
+    "Interceptions": {
+      "value": "2",
+      "percentile": 0.667
+    },
+    "Forced Incom.": {
+      "value": "5",
+      "percentile": 0.167
+    },
+    "Forced Inc. Rate": {
+      "value": "10.2",
+      "percentile": 0.111
+    },
+    "Dropped Picks": {
+      "value": "1",
+      "percentile": 0.667
+    },
+    "Completion %": {
+      "value": "69.4",
+      "percentile": 0.111
+    },
+    "Man Coverage": {
+      "value": "80.3",
+      "percentile": 0.861
+    },
+    "Zone Coverage": {
+      "value": "83.2",
+      "percentile": 0.889
+    },
+    "% In Man": {
+      "value": "21.5",
+      "percentile": 0.167
+    },
+    "% In Zone": {
+      "value": "63.7",
+      "percentile": 0.722
+    },
+    "Coverage Stops": {
+      "value": "17",
+      "percentile": 1.0
+    },
+    "Tackling": {
+      "value": "52.7",
+      "percentile": 0.056
+    },
+    "Missed Tackles": {
+      "value": "15",
+      "percentile": 0.0
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Arm Length": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Hand Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Speed": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Explosive": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Agility": {
+      "result": "TBD",
+      "grade": null
+    },
+    "10 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "20 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "40 Time": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Vertical": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Broad": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "3 Cone": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Bench": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Height": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Weight": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Gridiron": {
+      "result": "TBD",
+      "grade": "TBD"
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 85.14285714285714,
+      "positional_rank": "10.333333333333334"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 54.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 39.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 76.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "10"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 136.0,
+      "positional_rank": "23"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 73.0,
+      "positional_rank": "18"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 183.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 56.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 56.0,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "0",
+    "Bleacher": "Alontae Taylor",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR Allowed": 80.8,
+    "Tackling": 0.56,
+    "Run Defense": 0.9,
+    "Cov Grade": 0.86,
+    "Zone Coverage": 0.79,
+    "Man/Press": 0.84
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 53,
+      "career": 76
+    },
+    "Slot": {
+      "2025": 398,
+      "career": 756
+    },
+    "Corner": {
+      "2025": 3,
+      "career": 180
+    },
+    "Box": {
+      "2025": 164,
+      "career": 281
+    },
+    "Deep": {
+      "2025": 2,
+      "career": 33
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Coverage Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Mental/Discipline Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nKeionte Scott (6'0\", 192 lbs, DOB: 2001) took the road less traveled from San Diego to the NFL Draft conversation. The Helix High School product went unrecruited despite catching 36 passes for 563 yards and 10 touchdowns while grabbing four interceptions as a senior, then spent two seasons dominating at Snow College. He earned NJCAA All-American first-team honors twice, served as team captain, and became the nation's top-ranked JUCO cornerback with three interceptions, 10 pass breakups, and 5.5 tackles for loss in 2021. His track background included a 10.94 converted 100-meter dash and 23-4 long jump.\n\nAuburn brought him in as a four-star transfer (0.900 grade, 247Sports) in 2022, and Scott made an immediate impact as the Tigers' starting nickel with 54 tackles, a sack, four pass breakups, and an interception. He led the SEC in punt return average (14.8) in 2023 while earning All-SEC second-team honors, highlighted by a 74-yard punt return touchdown against Arkansas. After Auburn moved him outside in 2024 with mixed results, Scott transferred to Houston then landed at Miami for his final season under cornerbacks coach Zac Etheridge, who had previously coached him at Auburn.\n\nThe 2025 season at Miami became Scott's coming-out party as one of the nation's most disruptive slot defenders. He posted career highs with 54 tackles and five sacks while adding a 38-yard interception return for touchdown. Scott's physicality and blitzing prowess made him the heart of Miami's defense alongside top-10 pick Rueben Bain Jr, earning him Thorpe Award semifinalist recognition. A foot injury in late November threatened to end his season, but Scott battled back for the College Football Playoff when Miami needed him most.\n\nScott's defining moment came in the College Football Playoff when he returned from a foot injury to demolish Texas A&M with 10 tackles, three tackles for loss, two sacks, and a forced fumble. He followed that with a 72-yard pick-six against Ohio State, earning Defensive Player of the Game honors. Across 41 college games and 1,898 defensive snaps, he compiled 115 tackles, six tackles for loss, and nine pass breakups between Auburn and Miami.\n\nSCOUTING REPORT: SUMMARY\nScott's calling card is his willingness to be nasty in a phone booth, and that's exactly what NFL defenses need from their nickel corners in today's pass-heavy league. His ability to blitz effectively gives defensive coordinators a real weapon in sub-packages, and that five-sack season at Miami wasn't a fluke. The burst and timing are legitimate, and he finishes when he gets there. His run defense is NFL-ready right now, which separates him from pure coverage guys who get swallowed up when offenses attack the slot with power concepts.\n\nHere's the deal though: Scott has to clean up the tackling. You can't miss one out of every five attempts in the NFL and expect to stay on the field. The diving at legs works sometimes in college when you've got help, but pro running backs will make you pay for poor angles and lazy technique. His coverage skills are solid enough in the slot where he can use his physicality and instincts, but there's a reason Auburn moved him back inside after trying him outside in 2024. He's not going to win consistently on an island against bigger receivers, and NFL offensive coordinators will attack that matchup if they see it. The good news is he doesn't have to be that guy. Scott's best football comes when he's playing downhill, using his athleticism to erase crossing routes, and creating havoc as an extra rusher.\n\nThe film shows a ready-made nickel defender who can contribute immediately in a defense that values aggression and versatility. His experience playing in big games against elite competition gives him a mental edge, and his physical style translates well to Sundays. Teams looking for a slot defender who can hold up against the run, pressure the quarterback, and handle underneath responsibilities in zone will appreciate what Scott brings. The tackling inconsistency and age concerns will drop him down some boards, but make no mistake: this is a football player who knows how to get after it and has proven he can perform when the lights are brightest. Day three is where he'll likely land, but don't be shocked if a team falls in love with his nasty streak and takes him earlier than expected."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Keionte Scott is a defensive weapon working from the slot, particularly as a blitzer. His foot—speed and rush—lane processing help him close on quarterbacks and ballcarriers in the blink of an eye. He brings juice every time he steps onto the field and gets his teammates fired up with every tackle. His playmaking outshines his size and makes him an impactful defender.\n\nThe former 4—star JUCO recruit and Auburn transfer made his presence felt at his final collegiate stop by piling up 13 tackles for loss to go with 64 total tackles (42 solo), five sacks, two interceptions, five passes defensed and two fumbles forced and recovered. He's an electric presence at the nickel and provides an energy that can't be coached.\n\n— Scott makes a living triggering downhill, using his foot—speed and explosiveness to limit runs and screens. He knifes his way under and around blocks to generate negative plays."
+        },
+        {
+          "title": "Positives",
+          "text": "— Scott makes a living triggering downhill, using his foot—speed and explosiveness to limit runs and screens. He knifes his way under and around blocks to generate negative plays.\n\n— He plays with an aggressive mindset from the slot and a shows a willingness to not only help out in the run game but to also take on blocks. His physical presence is noticeable on a down—by—down basis.\n\n— Gets the job done as a zone—match defender with good depth and stays responsibility sound. Scott is at his best as a shallow zone defender aligned close to the line of scrimmage.\n\n— The 6'0\", 195—pound nickel is the class' best blitzing defensive back. He can be used as part of disguised blitzes up the middle or off the edge thanks to excellent timing and speed toward the quarterback."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Scott's coverage capabilities are limited, with average instincts to feel route concepts unfold and deter quarterbacks from throwing the football, resulting in lower ball production numbers.\n\n— In man coverage, he struggles to mirror receivers' movements, opens his hips too quickly against good releases or stems and displays a slight hitch during route breaks, which creates unwanted separation.\n\n— He looks uncomfortable turning and running with receivers, then locating the football down the field at the same time. Subpar recovery athleticism and a lack of length hinder his ability to make plays on the football at the catch point."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.8,
+    "grade_indicator": null,
+    "overall_rank": 136,
+    "position_rank": null,
+    "pro_comparison": "Alontae Taylor",
+    "projected_round": null
+  },
+  "injury_history": []
+}

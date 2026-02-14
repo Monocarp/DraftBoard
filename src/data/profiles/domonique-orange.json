@@ -1,0 +1,447 @@
+{
+  "name": "Domonique Orange",
+  "slug": "domonique-orange",
+  "overview": {
+    "POS": "DT",
+    "College": "Iowa State",
+    "Height": "6' 4\"",
+    "Weight": "325",
+    "Age": "21.1",
+    "DOB": "2004-03-11 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "50",
+    "Snaps": "1575",
+    "24/7 Sports": "87",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.8 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "position": "DT",
+  "college": "Iowa State",
+  "height": "6' 4\"",
+  "weight": "325",
+  "age": 21.1,
+  "dob": "2004-03-11 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 50,
+  "snaps": 1575,
+  "site_ratings": {
+    "24/7 Sports": "87",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.8 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "68.3",
+      "percentile": 0.111
+    },
+    "24 Grade": {
+      "value": "82.6",
+      "percentile": 0.778
+    },
+    "23 Grade": {
+      "value": "74.8",
+      "percentile": 0.722
+    },
+    "Pass Rush Grade": {
+      "value": "62.8",
+      "percentile": 0.417
+    },
+    "True Pass Rush": {
+      "value": "66.3",
+      "percentile": 0.611
+    },
+    "PR Win Rate": {
+      "value": "6.9",
+      "percentile": 0.472
+    },
+    "Run Def. Grade": {
+      "value": "67.4",
+      "percentile": 0.056
+    },
+    "Run Stop %": {
+      "value": "6.9",
+      "percentile": 0.389
+    },
+    "Sacks": {
+      "value": "0",
+      "percentile": 0.167
+    },
+    "Hits": {
+      "value": "3",
+      "percentile": 0.778
+    },
+    "Hurries": {
+      "value": "10",
+      "percentile": 0.417
+    },
+    "Batted Balls": {
+      "value": "0",
+      "percentile": 0.222
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.444
+    },
+    "Tackling Grade": {
+      "value": "27.2",
+      "percentile": 0.056
+    },
+    "Missed Tackle Rate": {
+      "value": "25",
+      "percentile": 0.056
+    },
+    "Total Pressures": {
+      "value": "13",
+      "percentile": 0.417
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 74.28571428571429,
+      "positional_rank": "7.6"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 64.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 71.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 79.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 99.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 76.0,
+      "positional_rank": "17"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 43.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 66.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 54.0,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "McKinnley JACKSON",
+    "Bleacher": "T.J. Slaton",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.38,
+    "Pass Rush": 0.74,
+    "Run Defense": 0.71
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 412,
+      "career": 945
+    },
+    "B GAP": {
+      "2025": 92,
+      "career": 233
+    },
+    "Over Tackle": {
+      "2025": 27,
+      "career": 123
+    },
+    "Outside Tkl": {
+      "2025": 12,
+      "career": 50
+    },
+    "Off Ball": {
+      "2025": 4,
+      "career": 5
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nDomonique Orange arrived at Iowa State as a three-star recruit carrying big expectations and an even bigger frame. The North Kansas City High School standout earned his stripes early, garnering two All-State selections and three All-District honors while establishing himself as one of Missouri's premier interior defenders. His senior year brought finalist recognition for the prestigious Buck Buchanan Award, reserved for the Kansas City area's elite linemen and linebackers.\n\nOrange's college journey began immediately with meaningful snaps as a true freshman in 2022, appearing in all 12 games while accumulating eight tackles and showing flashes of the disruptive force he'd become. His sophomore campaign in 2023 expanded his role significantly with five starts among 13 appearances, doubling his tackle production to 16 stops including two for loss. The breakthrough arrived during his junior season when Orange emerged as a legitimate force, earning All-Big 12 honorable mention recognition while starting seven of 13 games and recording 24 tackles with 4.5 for loss and his first career sack.\n\nThe defensive tackle's academic excellence paralleled his on-field development, earning Academic All-Big 12 honors in 2024 and multiple appearances on the Big 12 Commissioner's Honor Roll. His most memorable moments came in the biggest games - stuffing a goal-line play against Iowa, registering his breakthrough sack in the Big 12 Championship against Arizona State, and contributing two tackles plus a pass breakup in Iowa State's historic Pop-Tarts Bowl victory over Miami. Orange's nickname \"Big Citrus\" reflects both his imposing presence and the swagger he brings to Iowa State's defensive front.\n\nSCOUTING REPORT: SUMMARY\nThe evaluation of Orange reveals a player whose powerful frame and penetrating ability create genuine disruption potential, though technical flaws and inconsistency cloud his pro outlook. His devastating upper body strength makes him a legitimate threat to collapse interior pockets, yet the same aggressive approach that generates his best moments often abandons the gap discipline that defensive coordinators demand from their interior players.\n\nOrange's remarkable physical transformation demonstrates the kind of commitment that translates well to professional environments, but his limited arm length and rising pad level expose fundamental technical deficiencies that become magnified against NFL-caliber competition. While his run defense shows flashes of dominance when properly leveraged, his struggles against double teams and tendency to create running lanes reveal a player still learning to balance aggression with responsibility. The pass rush upside remains intriguing given his closing speed and power, though his ceiling appears capped by bend limitations and inconsistent hand usage.\n\nThe path forward hinges on Orange's ability to refine his technique while maintaining the aggressive mindset that makes him disruptive. His floor as a rotational interior defender provides value in specific packages, particularly on obvious passing downs where his penetration skills can shine without exposing gap integrity concerns. However, the technical limitations that plague his consistency suggest a longer development timeline than his physical tools might initially indicate, making him a project worth pursuing for patient organizations willing to invest in his substantial but unpolished skill set."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Dominique Orange is a densely—built nose tackle and a boulder against the run. The 6'4\", 325—pound defensive lineman, who's nicknamed \"Big Citrus,\" has impressive strength at the point of attack, making him impossible to move with one—on—one blocks and a gap—filler against double—teams.\n\nOrange went to Iowa State as a 3—star recruit in the 2022 class and became an immediate contributor, playing in a rotational role as a true freshman. He turned into a spot starter during his second year on campus, collecting 16 tackles and two tackles for loss before earning the full—time job as a junior, totaling 24 tackles, 4.5 TFLs and a sack.\n\nThe Cyclone has earned honorable mention All—Big 12 honors in both the 2023 and '24 campaigns."
+        },
+        {
+          "title": "Positives",
+          "text": "— Thick build and good size for an NFL nose tackle.\n\n— Good initial quickness to get penetration when shooting gaps.\n\n— Impressive pop in Orange's hands, with accompanying upper body strength, to generate knockback power and reset the line of scrimmage when taking on blocks.\n\n— Plays with good pad—level and attacks the man he's lined up across to help stay in his gap assignment when taking on double—team blocks.\n\n— Runs his feet to help avoid getting reached or scooped.\n\n— Can make tackles with offensive linemen hanging onto him.\n\n— Active hands as a pass—rusher."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Appears to have shorter arms, limiting Orange's extension on blocks, thus making it difficult for him to disengage and escape.\n\n— Struggles to break down in the backfield and often runs too far up the field upon gaining penetration.\n\n— Plays with a narrow base, which can get him in trouble against combo blocks if the offensive linemen can survive initial contact.\n\n— Minimal pass—rush production. Orange isn't an effective bull—rusher to consistently collapse the pocket. Projects as a two—down player at the next level."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.3,
+    "grade_indicator": null,
+    "overall_rank": 79,
+    "position_rank": null,
+    "pro_comparison": "T.J. Slaton",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

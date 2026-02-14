@@ -1,0 +1,419 @@
+{
+  "name": "Omar Cooper Jr",
+  "slug": "omar-cooper-jr",
+  "overview": {
+    "POS": "WR",
+    "College": "Indiana",
+    "Height": "6' 0\"",
+    "Weight": "204",
+    "Age": "TBD",
+    "DOB": null,
+    "Year": "RS Jr",
+    "Prj. Rd": null,
+    "Games": "TBD",
+    "Snaps": "TBD",
+    "24/7 Sports": "TBD",
+    "ESPN": "81",
+    "Draft Buzz": "TBD",
+    "NFL.com": "TBD",
+    "Bleacher": "7.55",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "Indiana",
+  "height": "6' 0\"",
+  "weight": "204",
+  "age": null,
+  "dob": null,
+  "year": "RS Jr",
+  "projected_round": null,
+  "games": null,
+  "snaps": null,
+  "site_ratings": {
+    "24/7 Sports": "TBD",
+    "ESPN": "81",
+    "Draft Buzz": "TBD",
+    "NFL.com": "TBD",
+    "Bleacher": "7.55",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "88.1",
+      "percentile": 0.842
+    },
+    "2024 Grade": {
+      "value": "77.9",
+      "percentile": 0.737
+    },
+    "2023 Grade": {
+      "value": "68.5",
+      "percentile": 0.474
+    },
+    "Receiving Grade": {
+      "value": "86.2",
+      "percentile": 0.842
+    },
+    "Yards/ Routes Run": {
+      "value": "2.66",
+      "percentile": 0.842
+    },
+    "Drop %": {
+      "value": "4.7",
+      "percentile": 0.316
+    },
+    "Contested Catch": {
+      "value": "50",
+      "percentile": 0.474
+    },
+    "Grade vs Man": {
+      "value": "76.2",
+      "percentile": 0.579
+    },
+    "YAC/Reception": {
+      "value": "7.1",
+      "percentile": 0.737
+    },
+    "Missed Tkls Forced": {
+      "value": "24",
+      "percentile": 0.947
+    },
+    "ADOT": {
+      "value": "9.7",
+      "percentile": 0.368
+    },
+    "Deep Yards": {
+      "value": "274",
+      "percentile": 0.579
+    },
+    "Touchdowns": {
+      "value": "12",
+      "percentile": 0.895
+    },
+    "Elusiveness": {
+      "value": null,
+      "percentile": null
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 63.142857142857146,
+      "positional_rank": "8.4"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 59.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 60.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 27.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 60.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 86.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 120.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 36.5,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 43.0,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "TBD",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Julian Edelman",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": null,
+    "Hands": null,
+    "Short Receiving": null,
+    "Med Routes": null,
+    "Deep Threat": null,
+    "Blocking": null
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 280,
+      "career": 325
+    },
+    "Wide": {
+      "2025": 55,
+      "career": 386
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Omar Cooper Jr from Indiana... huge part of their national championship winning team... dirty worker... blocker... selfless... compete every single snap... catches everything... runs routes extremely precisely... patient when the ball is in his hands... tough... contact balance... professional receiver... clutch... toe tapping almost gravity defying catch against Penn State... good size, good strength... starting wide receiver in the NFL... second round pick... gets you a lot of YAC... competes really hard... does all the dirty work... nobody works harder... break some tackles... slippery... get him in the third or fourth round... help your offense immensely."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Omar Cooper Jr emerged as one of college football's toughest and most clutch wide receivers during the 2025 campaign.\n\nAs part of Indiana's explosive offense, Cooper became a proven, versatile target who did the necessary dirty work. He's a fearless competitor who is not afraid of contact or making collision catches.\n\nCooper joined the Hoosiers' roster as a former 4—star recruit in the 2022 class and became Indiana's leading receiver this fall, while sharing targets with fellow NFL prospect Elijah Sarratt."
+        },
+        {
+          "title": "Positives",
+          "text": "— Cooper is a compactly built wide receiver. He excels working over the middle of the field on digs, crossers and slant routes. He displays good contact—balance to absorb hits and keep working upfield. His ability to generate yards after the catch opens up diverse ways to deploy him as part of the offensive game plan.\n\n— The Hoosiers' leading receiver turns into a running back once the football is in his hands. He reads blocks well on screens and manufactured touches.\n\n— Good tempo and pacing as a route—runner. Cooper adds an element of deception to keep defenders' backs off—balance. He attacks coverage by varying his speed based on the defender's leverage.\n\n— Cooper exhibits outstanding body control when high—pointing passes. When working near the sideline, he controls his body well to get his feet/toes inbounds for a completed pass.\n\n— He excels working against zone coverage. Cooper finds the voids and nestles into them thanks to excellent football IQ."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Cooper lacks the requisite explosiveness to project as a vertical winner in the NFL outside the numbers. He is more adept at creating explosives out of the slot.\n\n— Although he has made some of the best catches in college football during the 2025 campaign, he does not offer a great catch radius on passes outside of his frame. His actual radius is functional but limited, making contested catches more difficult against longer—armed NFL corners.\n\n— Cooper will benefit from expanding his route—tree. He runs what the offense requires of him, but his current route—tree is limited based on Indiana's RPO—heavy scheme."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.55,
+    "grade_indicator": null,
+    "overall_rank": 60,
+    "position_rank": null,
+    "pro_comparison": "Julian Edelman",
+    "projected_round": "2nd Round"
+  },
+  "injury_history": []
+}

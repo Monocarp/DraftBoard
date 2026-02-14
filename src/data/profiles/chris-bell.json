@@ -1,0 +1,486 @@
+{
+  "name": "Chris Bell",
+  "slug": "chris-bell",
+  "overview": {
+    "POS": "WR",
+    "College": "Louisville",
+    "Height": "6' 2\"",
+    "Weight": "220",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": "Early 2nd",
+    "Games": "46",
+    "Snaps": "2012",
+    "24/7 Sports": "87",
+    "ESPN": "86",
+    "Draft Buzz": "85.8 / 100",
+    "NFL.com": "6.2",
+    "Bleacher": "7.3",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "Louisville",
+  "height": "6' 2\"",
+  "weight": "220",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Sr",
+  "projected_round": "Early 2nd",
+  "games": 46,
+  "snaps": 2012,
+  "site_ratings": {
+    "24/7 Sports": "87",
+    "ESPN": "86",
+    "Draft Buzz": "85.8 / 100",
+    "NFL.com": "6.2",
+    "Bleacher": "7.3",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "81.8",
+      "percentile": 0.579
+    },
+    "2024 Grade": {
+      "value": "67",
+      "percentile": 0.263
+    },
+    "2023 Grade": {
+      "value": "62.5",
+      "percentile": 0.211
+    },
+    "Receiving Grade": {
+      "value": "83.3",
+      "percentile": 0.632
+    },
+    "Yards/ Routes Run": {
+      "value": "2.55",
+      "percentile": 0.632
+    },
+    "Drop %": {
+      "value": "4",
+      "percentile": 0.421
+    },
+    "Contested Catch": {
+      "value": "50",
+      "percentile": 0.474
+    },
+    "Grade vs Man": {
+      "value": "87",
+      "percentile": 0.789
+    },
+    "YAC/Reception": {
+      "value": "5.2",
+      "percentile": 0.368
+    },
+    "Missed Tkls Forced": {
+      "value": "9",
+      "percentile": 0.421
+    },
+    "ADOT": {
+      "value": "9.4",
+      "percentile": 0.289
+    },
+    "Deep Yards": {
+      "value": "115",
+      "percentile": 0.105
+    },
+    "Touchdowns": {
+      "value": "6",
+      "percentile": 0.289
+    },
+    "Elusiveness": {
+      "value": null,
+      "percentile": null
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 47.5,
+      "positional_rank": "10.142857142857142"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 36.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 40.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 53.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "10"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 85.0,
+      "positional_rank": "16"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 38.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 33.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 35.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 35.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 50.0,
+      "positional_rank": "11"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 47.333333333333336,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 62.0,
+    "Bleacher": null,
+    "Walter": 35.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - MID",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "Miller": "TBD",
+    "DraftBuzz": "Elic AYOMANOR",
+    "Bleacher": "Xavier Legette",
+    "WF": "A.J. Brown."
+  },
+  "strengths": "• Excellent Heigh, Weight, Frame\n• Impressive Build Up Speed\n• Dangerous YAC, Hard to Bring Down\n• Adjusts To Throws Well\n• Elite In-Breaking Route Receiver\n• Huge Performance in Miami Upset",
+  "weaknesses": "• Lacks Short Area Quickness\n• Unrefined Route Runner\n• Late Season ACL Tear\n• Struggles to Beat Press W/Footwork\n• Avg At Best Ball Skills\n• Not A Natural Hands Catcher",
+  "accolades": null,
+  "player_summary": "Bell is a big body receiver who excells over the middle and loves to compete after the catch, making him very valuable for offenses looking for a guy they can hit for short/medium gains with a true threat to become home run plays. While he lacks serious burst and his short area footwork is lacking, once he gets going he builds up speed fast. Really curious to get his testing back because some conflicting reports on how fast he can really be. While he's definitely competitive and uses his size well, his contested catch ability isn't what you'd hope for. His lack of natural hands catching ability and general ball skills show up there the most. He is not a polish route runner either, hopefully something that can improve in the NFL, but not likely to ever really generate seperation with it given his lack of twitch/footwork. Overall, expect him to go early Day 2, especially with the ACL tear, but someone that could do a lot of damage in the NFL in the right offense.",
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 113.0,
+    "Hands": 0.82,
+    "Short Receiving": 0.85,
+    "Med Routes": 0.9,
+    "Deep Threat": 0.9,
+    "Blocking": 0.68
+  },
+  "projected_role": "Outside WR2",
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 55,
+      "career": 89
+    },
+    "Wide": {
+      "2025": 320,
+      "career": 969
+    }
+  },
+  "skills_traits": {
+    "Character/Mentality": {
+      "positives": "Improved Production each year (NFL)\nKills anything in his way (NFLSE)\nHuge performance over Miami (WF)",
+      "negatives": null
+    },
+    "Receiving Skills": {
+      "positives": "Makes Athletic adjustments to throws (NFL)",
+      "negatives": "Below avg ball skills and catch focus when contested (NFL)\nNot a natural hands catcher (BR)"
+    },
+    "Technique": {
+      "positives": "Difficult to bring down on the move (NFL)\nVery Good After the catch (FD)",
+      "negatives": "Struggles to beat press W/ Footwork (NFL)\nRoute running lacks salesmanship and disguise (NFL)\nDoesn't really run a lot of legit routes (NFLSE)"
+    },
+    "Physical Traits": {
+      "positives": "Impressive Build Up Speed, Big Physical Target (NFL)\nNFL Frame (NFL)\nExcellent Height, Weight, Speed (FD)",
+      "negatives": "Lacks Short area quickness (NFL)\nNot Elite Speed (WF)"
+    },
+    "Blocking/Other": {
+      "positives": null,
+      "negatives": "Late Season ACL Tear"
+    }
+  },
+  "media_links": [
+    {
+      "description": "2025 Highlights",
+      "source": "YT - ACC Network",
+      "url": "https://www.youtube.com/watch?v=DeVeOia4akI"
+    },
+    {
+      "description": "Scouting Report",
+      "source": "YT - Scrambling Armchair",
+      "url": "https://www.youtube.com/watch?v=Pp0qIWEShLs"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Possession receiver coming off of his most productive year and a late-season ACL tear. Bell’s scores frequently came as a move target across the hashes, where he was able to use impressive build-up speed to eliminate angles and outrun everyone in the secondary to the paint. He’s average at eluding press and separating from tight man underneath. Improving his catch focus and positioning when contested will be critical. Bell lacks dynamic qualities and his ACL tear could impact his draft slotting, but he's a big, physical target with room to improve. He has a chance to become an average WR2/3 in time."
+        },
+        {
+          "title": "Strengths",
+          "text": "Big, boundary target with an NFL frame. | Stair-stepped production in each season he played. | Battles back against handsy coverage at the top of the route. | Speed-builder capable of turning crossers into long gains. | Squares his numbers to quarterback on in-breaking routes. | Makes athletic adjustments to throws on his back hip. | Resilient post-catch and difficult to bring down on the move."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Suffered an ACL tear late in 2025 season. | Struggles to beat press cleanly with his footwork. | Route running lacks salesmanship and disguise. | Lacks short-area quickness in and out of breaks. | Will slow his feet when turning to locate the throw. | Below-average ball skills and catch focus when contested."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nChris Bell grew up in Yazoo City, Mississippi before transferring to Greenville Christian School, where he developed into a state championship contributor. At Greenville Christian, Bell showcased the explosive play ability that would define his college career, hauling in touchdown catches of 65 and 71 yards during his senior season while also contributing three receptions for 52 yards and a score in the 3A MAIS state title game. His track background produced a 22.5 second 200-meter dash, offering an early glimpse of the long speed that would make him one of the ACC's most dangerous vertical threats. Despite recruiting interest from Mississippi State, Ole Miss, and Florida State, Bell ultimately chose Louisville, where he would spend the next four years developing into a legitimate NFL prospect.\n\nBell's freshman campaign in 2022 served as an apprenticeship of sorts, with seven catches for 105 yards providing a taste of what was to come. A 29-yard grab against Pittsburgh stood out as his longest play of that debut season. When Jeff Brohm arrived in 2023, Bell began receiving more consistent opportunities in the passing game. He responded with 26 receptions for 386 yards and two touchdowns across 13 appearances, including a breakout performance against NC State where he grabbed three passes for 85 yards and scored the only touchdown in a 13-10 victory. That score against the Wolfpack signaled Bell's growing importance to the Louisville offense and hinted at his capacity to deliver in tight games.\n\nBell's junior season in 2024 announced him to draft scouts nationwide. Starting all 13 games, he collected 43 receptions for 737 yards and four touchdowns at an impressive 17.1 yards per catch. Two particular games illustrated his big-play capability: he torched Pittsburgh for 101 yards on just two catches, including a 68-yard touchdown, and followed that with a nine-reception, 112-yard effort against Stanford. His six-catch, 60-yard contribution in the Sun Bowl win over Washington capped a season that established Bell as a legitimate early-round prospect. Entering 2025 as a senior, Bell earned first-team All-ACC recognition and Biletnikoff Award semifinalist honors after posting career highs of 72 catches for 917 yards and six touchdowns across 11 games. His peak stretch came in mid-October, when he earned three consecutive ACC Receiver of the Week awards with performances of 10-135-1 against Pitt, 12-170-2 against Virginia, and 9-136-2 at Miami. Unfortunately, a torn ACL suffered in the loss at SMU on November 22nd ended his college career prematurely. Bell, finished his Louisville tenure with 148 career receptions for 2,145 yards and 12 touchdowns.\n\nBell has the look and feel of a true X receiver at the NFL level. That size and speed combination at 6-foot-2, 220 pounds with a 4.4 forty is precisely what teams covet when building around a franchise quarterback. You can line him up on the boundary, ask him to win one-on-one against a team's best corner, and trust that he possesses the physical tools to come down with the football. Smaller, quicker corners will struggle to match his physicality at the catch point, while bigger press-man defenders will find themselves in foot races they cannot win once Bell builds up a head of steam. That two-way threat is what separates potential WR1s from the rest of the receiver class.\n\n\n\nHis skill set translates to multiple offensive systems, though he fits most naturally in schemes that feature vertical shots and explosive plays over the middle. Crossing routes, deep overs, and option routes where he can catch the ball with momentum allow Bell to weaponize his combination of power and acceleration. While his primary value comes as an outside receiver who can anchor the X spot, he also possesses the versatility to slide into the slot and create mismatches against nickel corners giving up forty pounds. Quick game concepts that get the ball in his hands early complement his skill set, as his yards-after-catch ability turns short throws into chunk plays.\n\n\n\nThe elephant in the room is the torn ACL suffered against SMU in late November. There is no way to sugarcoat what that injury means for Bell's draft stock and immediate NFL future. He will miss the entire pre-draft workout circuit, leaving teams unable to verify the speed and explosiveness that define his game. For a receiver whose value depends heavily on his athletic profile, that uncertainty is significant. Medical evaluations will carry enormous weight, and any concerns about the ligament or his recovery timeline could push him down boards considerably. The injury also clouds his rookie year outlook, as Bell may not be fully healthy until midway through his first professional season. Teams drafting him need to accept they are likely investing in 2027 production rather than expecting immediate returns. The talent is real, and when healthy, Bell projects as a starting caliber X receiver with Pro Bowl upside. But that ACL changes the calculus entirely, transforming what would have been a clear first-round selection into a riskier proposition that requires patience and a long-term perspective."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "\"we have one more wide receiver...The wide receiver is Chris Bell from Louisville...If I'm getting off the bus and I want one guy to lead the way, it's Chris Bell from Louisville...Chris Bell has excellent and I mean excellent height, weight, speed. We're talking about a six foot 2, 215 pound type of wide receiver. Probably gonna run somewhere in the what? 4.4, 4.5 range based off of at least his tape...do you see a player consistently using his weight, his speed, his explosiveness to his advantage? And that has been the case for Chris Ball for much of this season. He is very good after the catch. You can find ways to scheme him opportunities to put that freight train body to work. Chris Bell, another guy...who I think by the time we get down to it is probably somewhere in the early to midday two range as well.\"\n\nChris Bell... Louisville... ACL late in the year... three game stretch... unbelievable... 10 catches against Pitt... 12 against Virginia... nine against Miami... tore his ACL... final game... against Kentucky... late... November... complicating factor... draft value... national TV game... showing out... moves at that size... powerful... pistons for legs... back at some point during his rookie season... injury... late day two, early day three... guy who... could have gone in the top 50... first early to mid second round discussion... 6 2, 220... big... thick... heck of a year... shame... injury... three game stretch... pretty good teams... nine catches, two touchdowns... against the hurricanes... tore the ACL on November 22nd... timetable."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Chris Bell has become arguably the most impactful wide receiver in college football. He's the perfect height, weight and speed receiver for NFL teams to bet on early in the draft process.\n\nBell is a physically imposing receiver, who puts defenses in conflict after the catch. He is built as an outside receiver but brings usage and alignment versatility to an offense.\n\nBell joined Louisville as a 3—star recruit in the 2022 class. He displayed his playmaking ability last season with 43 receptions for 737 yards and four receiving touchdowns. A late—season torn ACL can cause Bell's NFL Draft stock to plummet."
+        },
+        {
+          "title": "Positives",
+          "text": "— Bell is a powerful pass—catcher who welcomes contact. He possesses a physical and dense frame, allowing him to pinball off would—be tackles in space. He is a glue—guy receiver who is fearless working in the middle of the defense, where the linebackers roam.\n\n— He is an explosive athlete after the catch. When Bell secures a pass in the open field, he shifts gears quickly and erases pursuit angles. He displays strong spatial awareness during the transition from receiver to runner.\n\n— He is best—used as an in—breaking route runner. Bell excels at locating and occupying free space in the middle of the field. He decelerates well to hit his landmarks on time for his quarterback. Bell can dominate as a between—the—hashes receiver.\n\n— Bell plays to his strong frame when attacking the football in contested situations. He makes combat or collision catches with defenders, initiating contact with his body. He possesses good ball skills and hand—eye coordination, allowing him to track the ball effectively before making a play on it. Bell has outstanding body control to decelerate and adjust to the ball's trajectory, such as back—shoulder fades and underthrown passes.\n\n— His alignment versatility will assist the offense in manufacturing advantageous matchups to exploit. He presents a difficult matchup for small nickel corners to cover with a two—way go out of the slot.\n\n— Bell displays good football IQ. He comprehends how to attack different coverages. He locates and attacks Cover 3/bail—technique cornerbacks' blind spot. He pushes corners off the ball before working across their face on in—breaking routes."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Bell is not a natural hands—catcher. He has moments of double—catching passes and trapping them into his pads. This can be an issue against the active—handed NFL cornerbacks who will punch through the receiver's hands.\n\n— He displays lateral rigidness within his release package at the line of scrimmage. This causes limitations in defeating press coverage quickly.\n\n— He can benefit from better run blocking technique and effectiveness on the perimeter.\n\n— He is a solid route—runner, but needs to improve his ability to separate from man coverage. Handsy and physical cornerbacks are difficult to disengage from in the contact window."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "With Louisville, Bell contributed in 2023 (29-407-2) and 2024 (43-737-4) before becoming one of the best wide receivers in college football in 2025. Bell had his season shortened by injury, but he was dominating defenses, including a huge performance to lead an upset over Miami. In 2025, Bell had 72 catches for 917 yards and six touchdowns but had a late-season ACL tear.\nWhat really sets Bell apart is what he can do as a possession receiver. Bell is a dangerous receiver who is not a burner with elite speed, but he makes up for it with polish, physicality, and strength. With good route-running and strong, reliable hands, Bell is a chain mover that does the dirty work in the short to intermediate part of the field.\nBell is very dangerous with the ball in his hands. He uses his strong frame to break tackles and is very difficult for a lot of defensive backs to get on the ground. His strength to run through their hands makes it difficult for them to get a hold of him. While he isnâ€™t super elusive and is more straight-line, Bell does have the feet to dodge some tacklers in the open field. For the NFL, Bell has yards after the catch potential, and he could be a great fit in a West Coast offense. Bell is fantastic running the core routes of slants, digs, and crossers in the short-to-intermediate part of the field.\nWith his strength and ability to catch the ball in traffic, Bell is a nice weapon in the red zone. Bell tracks the ball well while using late hands to make the reception. He flashes his strength to make contested catches and win 50-50 passes.\nIn the 2026 NFL Draft, Bell looked like a first-round pick prior to the torn ACL. After the injury, he will probably get selected on day two."
+        },
+        {
+          "title": "Strengths",
+          "text": "Tough receiver\nStrong\nThick frame to push defensive backs around\nPhysical\nWilling to go across the middle\nGood route runner\nStrong hands\nDangerous after the catch\nElusive\nHigh points the ball\nGritty receiver\nSudden out of breaks\nGenerates separation\nReliable, rarely drops passes\nTracks the ball well\nAdjusts well\nLate hands\nGood technique\nAdept at finding soft spots in zone\nReady to contribute immediately"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Coming off ACL injury\nLacks elite speed\nLacks deep speed\nCan be straight line after the catch"
+        },
+        {
+          "title": "Player Comp",
+          "text": "A.J. Brown. Bell reminds me of Brown coming out of Ole Miss. They are of similar size, strength, and speed. Brown was a steal after the first round, and Bell could be as well."
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.2,
+    "prospect_grade_indicator": "Will Eventually Be Average Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": null,
+    "eligibility": "Senior",
+    "nfl_rank": 50,
+    "nfl_pos_rank": 11
+  },
+  "bleacher_profile": {
+    "grade": 7.3,
+    "grade_indicator": null,
+    "overall_rank": 85,
+    "position_rank": null,
+    "pro_comparison": "Xavier Legette",
+    "projected_round": "3rd Round"
+  },
+  "walter_profile": {
+    "player_comp": "A.J. Brown. Bell reminds me of Brown coming out of Ole Miss. They are of similar size, strength, and speed. Brown was a steal after the first round, and Bell could be as well."
+  },
+  "injury_history": [
+    {
+      "detail": "ACL Tear",
+      "recovery_time": "Season Ending",
+      "year": "2025"
+    }
+  ]
+}

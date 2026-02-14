@@ -1,0 +1,447 @@
+{
+  "name": "Gracen Halton",
+  "slug": "gracen-halton",
+  "overview": {
+    "POS": "DT",
+    "College": "Oklahoma",
+    "Height": "6' 2\"",
+    "Weight": "292",
+    "Age": "22",
+    "DOB": "2004-01-27 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "45",
+    "Snaps": "989",
+    "24/7 Sports": "91",
+    "ESPN": "81",
+    "Draft Buzz": "81.0 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "position": "DT",
+  "college": "Oklahoma",
+  "height": "6' 2\"",
+  "weight": "292",
+  "age": 22.0,
+  "dob": "2004-01-27 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 45,
+  "snaps": 989,
+  "site_ratings": {
+    "24/7 Sports": "91",
+    "ESPN": "81",
+    "Draft Buzz": "81.0 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "84.7",
+      "percentile": 0.833
+    },
+    "24 Grade": {
+      "value": "75.4",
+      "percentile": 0.611
+    },
+    "23 Grade": {
+      "value": "76.2",
+      "percentile": 0.778
+    },
+    "Pass Rush Grade": {
+      "value": "76.9",
+      "percentile": 0.944
+    },
+    "True Pass Rush": {
+      "value": "72.7",
+      "percentile": 0.833
+    },
+    "PR Win Rate": {
+      "value": "10.4",
+      "percentile": 0.833
+    },
+    "Run Def. Grade": {
+      "value": "86.9",
+      "percentile": 0.889
+    },
+    "Run Stop %": {
+      "value": "10.2",
+      "percentile": 0.833
+    },
+    "Sacks": {
+      "value": "5",
+      "percentile": 1.0
+    },
+    "Hits": {
+      "value": "3",
+      "percentile": 0.778
+    },
+    "Hurries": {
+      "value": "22",
+      "percentile": 1.0
+    },
+    "Batted Balls": {
+      "value": "1",
+      "percentile": 0.611
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.444
+    },
+    "Tackling Grade": {
+      "value": "65.9",
+      "percentile": 0.667
+    },
+    "Missed Tackle Rate": {
+      "value": "14.3",
+      "percentile": 0.389
+    },
+    "Total Pressures": {
+      "value": "30",
+      "percentile": 1.0
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 191.8,
+      "positional_rank": "11.75"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 237.0,
+      "positional_rank": "19"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 62.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 151.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "Jeremiah",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 206.0,
+      "positional_rank": "45"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 303.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Tankathon",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Jeremiah": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "Tankathon": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "6TH",
+    "Bleacher": "5th Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Howard CROSS III",
+    "Bleacher": "Colby Wooden",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.72,
+    "Pass Rush": 0.9,
+    "Run Defense": 0.84
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 75,
+      "career": 163
+    },
+    "B GAP": {
+      "2025": 287,
+      "career": 603
+    },
+    "Over Tackle": {
+      "2025": 34,
+      "career": 92
+    },
+    "Outside Tkl": {
+      "2025": 25,
+      "career": 52
+    },
+    "Off Ball": {
+      "2025": 1,
+      "career": 6
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nGracen Halton made his name at St. Augustine High School in San Diego, where he played both sides of the ball and accumulated 75 tackles, 20 tackles for loss, and 5.5 sacks as a senior. He also contributed offensively with 14 receptions for 195 yards and five touchdowns. His two-way ability earned consensus four-star recognition from major recruiting services, with ESPN ranking him 264th overall in their top 300 and 24th among defensive ends nationally.\n\nOklahoma secured Halton's commitment after he decommitted from Oregon, beating out Miami, USC, and others for his services. He appeared in 10 games as a true freshman in 2022, recording 10 tackles and one tackle for loss. His sophomore season saw increased involvement with 11 tackles and 3.5 tackles for loss across 11 games. Halton's junior year in 2024 marked his true breakout campaign, starting three games while totaling 30 tackles, six tackles for loss, five sacks, two forced fumbles, and a safety.\n\nThe safety came in a crucial moment against Houston and earned him SEC Defensive Lineman of the Week recognition. Halton has appeared in 32 games over three seasons, accumulating 567 defensive snaps while showing steady development in Oklahoma's rotation.\n\nSCOUTING REPORT: SUMMARY\nHalton's film reveals a player caught between two worlds - his pass-rushing ability jumps off the screen with consistent pressure generation and disruptive timing, yet his run defense shows the growing pains of a smaller interior lineman learning to handle bigger bodies. The contrast becomes apparent when watching him split guards on passing downs versus getting washed out by double teams on early downs. His 291-pound frame creates natural limitations against power running schemes, but that same compact build generates the leverage and quickness that makes him dangerous as a rusher.\n\nThe modern NFL's emphasis on sub-package usage should benefit Halton significantly, as his skill set aligns perfectly with nickel and dime formations where pass rush takes precedence over two-gap responsibilities. His versatility across multiple spots gives defensive coordinators options, though his size constraints mean he'll likely find his niche in specific situations rather than as an every-down contributor early in his career.\n\nA mid-round investment makes sense for a player whose ceiling involves becoming a productive rotational pass rusher with spot starting capability. His floor remains relatively safe given his proven ability to generate pressure and create splash plays, though teams will need patience as he develops the strength and technique necessary to handle increased snaps against professional-level competition. The evaluation ultimately hinges on whether his exceptional pass-rushing traits can overcome his physical limitations in run defense - a question that will define his pro trajectory."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Gracen Halton is an impressive athlete who can contribute as an interior pass—rusher in the NFL. He has the agility and quickness to be effective on stunts/line games and has shown a swim move that he can win with. However, Halton likes to play a finesse game at a violent position.\n\nThe 6'2\", 292—pound defensive lineman went to Oklahoma as a 4—star recruit in the 2022 class. He played sparingly during years one and two in Norman before becoming a rotational player/spot starter as a junior. That season, he logged 30 tackles, six tackles for loss, five sacks and two forced fumbles.\n\nHalton made a few more starts in 2025 but was still in more of a rotational role on the Sooners' defensive line. As of Dec. 15, he's posted 31 tackles, seven TFLs, 3.5 sacks, two passes defended, and one FF this season."
+        },
+        {
+          "title": "Positives",
+          "text": "— Halton shows good overall quickness and athleticism for an interior defensive lineman.\n\n— Quickness and agility allow him to be an effective looper in line games, testing opposing offensive linemen's reaction times and taking efficient paths to the quarterback.\n\n— Has show a solid swim move that he can win with as a pass—rusher.\n\n— Good motor as a pass—rusher to get coverage/clean up sacks.\n\n— Impressive upper body strength and pop in his hands to stun offensive linemen when he uses his hands to take on blocks against the run."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Halton lacks the ideal length for an NFL defensive tackle, listed at just 6'2\" and appearing to have shorter arms.\n\n— Often false steps out of his stance, leading to inefficient initial footwork.\n\n— Late to recognize reach blocks, frequently getting scooped out of his gap despite the impressive movement skills.\n\n— Plays high and takes on blocks with a narrow base, causing him issues anchoring against double teams/combos, base blocks from stronger offensive linemen and down blocks.\n\n— Pad level issues also make it difficult for him to consistently collapse the pocket when bull rushing.\n\n— Accuracy with his hands as a pass—rusher is inconsistent; he'll often miss with his initial chops and has issues playing the offensive lineman's hands."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.5,
+    "grade_indicator": null,
+    "overall_rank": 151,
+    "position_rank": null,
+    "pro_comparison": "Colby Wooden",
+    "projected_round": "5th Round"
+  },
+  "injury_history": []
+}

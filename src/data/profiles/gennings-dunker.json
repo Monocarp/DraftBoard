@@ -1,0 +1,438 @@
+{
+  "name": "Gennings Dunker",
+  "slug": "gennings-dunker",
+  "overview": {
+    "POS": "OT",
+    "College": "Iowa",
+    "Height": "6' 5\"",
+    "Weight": "315",
+    "Age": "22.8",
+    "DOB": "2003-05-08 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "44",
+    "Snaps": "2164",
+    "24/7 Sports": "88",
+    "ESPN": "83",
+    "Draft Buzz": "85.2 / 100",
+    "NFL.com": "TBD",
+    "BR": "7",
+    "Gridiron": null
+  },
+  "position": "OT",
+  "college": "Iowa",
+  "height": "6' 5\"",
+  "weight": "315",
+  "age": 22.8,
+  "dob": "2003-05-08 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 44,
+  "snaps": 2164,
+  "site_ratings": {
+    "24/7 Sports": "88",
+    "ESPN": "83",
+    "Draft Buzz": "85.2 / 100",
+    "NFL.com": "TBD",
+    "BR": "7",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "82.2",
+      "percentile": 0.5
+    },
+    "2024 Grade": {
+      "value": "90.2",
+      "percentile": 0.9
+    },
+    "2023 Grade": {
+      "value": "69.5",
+      "percentile": 0.778
+    },
+    "Run Block Grade": {
+      "value": "80.7",
+      "percentile": 0.7
+    },
+    "Pass Block Grade": {
+      "value": "75.8",
+      "percentile": 0.2
+    },
+    "True Pass Set Grade": {
+      "value": "60.3",
+      "percentile": 0.2
+    },
+    "Pass Block Efficiency": {
+      "value": "98",
+      "percentile": 0.2
+    },
+    "Zone Grade": {
+      "value": "89.4",
+      "percentile": 1.0
+    },
+    "Gap Grade": {
+      "value": "60.2",
+      "percentile": 0.3
+    },
+    "Sacks Allowed": {
+      "value": "2",
+      "percentile": 0.35
+    },
+    "Hits Allowed": {
+      "value": "1",
+      "percentile": 0.7
+    },
+    "Hurries Allowed": {
+      "value": "7",
+      "percentile": 0.45
+    },
+    "Pressures Allowed": {
+      "value": "10",
+      "percentile": 0.65
+    },
+    "Penalties": {
+      "value": "3",
+      "percentile": 0.7
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 62.875,
+      "positional_rank": "7.833333333333333"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 44.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 51.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 84.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 109.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 62.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 24.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 48.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 67.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": 68.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Sean RHYAN",
+    "Bleacher": "Mason McCormick",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.83,
+    "Run Blocking Grade": 0.91
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 0,
+      "career": 0
+    },
+    "LG": {
+      "2025": 0,
+      "career": 0
+    },
+    "C": {
+      "2025": 0,
+      "career": 0
+    },
+    "RG": {
+      "2025": 0,
+      "career": 0
+    },
+    "RT": {
+      "2025": 729,
+      "career": 1441
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nGennings Dunker grew up in Lena, Illinois, where he was a two-way force who helped his team capture state championships as a freshman and junior while reaching the semifinals as a sophomore. The program went 39-2 during his three seasons before COVID-19 wiped out his senior year entirely. Standing 6'5\" and 320 pounds (born May 8, 2003), Dunker was also a track athlete and wrestler who earned all-state honors as a junior and first-team all-conference recognition on both sides of the ball. Despite the raw tools and dominance against smaller-school competition, he flew somewhat under the national radar as a three-star recruit.\n\nIowa brought Dunker into their 2021 class with the understanding that development takes time in their system. He redshirted his true freshman year without seeing game action due to injury, then appeared in 11 games as a redshirt freshman in 2022, earning his first career start at right guard in the Music City Bowl win over Kentucky. From 2023 onward, Dunker owned the right tackle spot, starting 13 games that year and helping the Hawkeyes rush for 254 yards against Western Michigan. The 2024 season saw him earn second-team All-Big Ten honors from the coaches while anchoring a line that averaged 197.2 rushing yards per game, the program's best mark since 2002.\n\nHis final collegiate season in 2025 was his best. Dunker started all 13 games at right tackle, pushing his career total to 38 starts, and was named first-team All-Big Ten by the media. More importantly, the offensive line won the Joe Moore Award as the nation's best unit. He helped pave the way for 200-plus rushing yard performances in five different games, including a 310-yard explosion against UAlbany in the season opener. Dunker also earned CSC second-team Academic All-America recognition, the Forest Evashevski Academic Achievement Award, and the Hayden Fry Award for offense. His Senior Bowl performance only reinforced his standing as one of the class's premier interior offensive line prospects.\n\nDunker's combination of raw power, grip strength, and sheer nastiness makes him a legitimate tone-setter up front. The issue is that phone booth needs to be pretty small. His movement limitations and modest length create real concerns about whether he can hold up against NFL-caliber speed rushers on the edge. The tackle tape is fun, but the guard projection makes the most sense for his skill set at the next level.\n\n\n\nInside at guard, Dunker's game translates beautifully. He's built for gap and duo schemes where he can fire off the ball and put his hands on people in tight quarters. His ability to generate initial movement on double teams and then climb to the second level with force is exactly what offensive coordinators want from their interior linemen. Run-heavy offenses that lean on play-action concepts coming off the ground game will love what he brings to the table. He doesn't need to cover much grass to be effective, which plays directly into his strengths.\n\n\n\nThe floor here is high. Dunker has the makeup to crack a starting lineup during his rookie contract if placed in the right scheme. Teams that want to establish the run and protect their quarterback through controlling the line of scrimmage rather than winning one-on-one pass protection battles will find real value. He's not going to be the guy sliding out to handle elite edge talent in obvious passing situations, but between the tackles, there are few prospects in this class who play with more controlled violence. The ceiling is a decade-long starter at guard for a physical, run-first offense."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Gennings Dunker is a rugged, powerful in—line blocker built with the right stuff, but will need to kick inside to guard to mitigate his middling movement skills. He has the traits to carve out a role and crack a lineup on his rookie deal in a run—first, play—action—heavy offense.\n\nDunker is a 6'5\", 315—pound offensive line prospect, who entered the Iowa program as a 3—star recruit in the 2021 class.\n\nDunker started 11 games in 2024 at right tackle, earning second—team All—Big Ten honors. He started 11 games at RT during the '23 season and one in '22 at right guard."
+        },
+        {
+          "title": "Positives",
+          "text": "— Thick, rugged build and playing style with the power to back it up.\n\n— Excels at creating lift to pry open and displace defenders on base and angle—drive blocks, with very good upper—body strength and leg drive.\n\n— Delivers knock—back power upon contact that can jar second—level targets and knock them off of their feet.\n\n— Does a solid job bracing and finding his anchor to maintain the width of the pocket."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Rigid, lumbering mover who struggles redirecting and staying in front of defenders as a pass protector.\n\n— Mediocre foot quickness creates short corners that will necessitate a move inside to guard instead of staying at offensive tackle.\n\n— Too easily pulled into overextension when defenders are able to stack, move their feet and change the blocking angle."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.0,
+    "grade_indicator": null,
+    "overall_rank": 109,
+    "position_rank": null,
+    "pro_comparison": "Mason McCormick",
+    "projected_round": null
+  },
+  "injury_history": []
+}

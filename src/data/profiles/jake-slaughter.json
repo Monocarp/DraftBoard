@@ -1,0 +1,443 @@
+{
+  "name": "Jake Slaughter",
+  "slug": "jake-slaughter",
+  "overview": {
+    "POS": "IOL",
+    "College": "Florida",
+    "Height": "6' 4\"",
+    "Weight": "303",
+    "Age": "23.1",
+    "DOB": "2002-12-12 00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": "39",
+    "Snaps": "2145",
+    "24/7 Sports": "85",
+    "ESPN": "76",
+    "Draft Buzz": "85.8 / 100",
+    "NFL.com": "TBD",
+    "BR": "7",
+    "Gridiron": null
+  },
+  "position": "IOL",
+  "college": "Florida",
+  "height": "6' 4\"",
+  "weight": "303",
+  "age": 23.1,
+  "dob": "2002-12-12 00:00:00",
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": 39,
+  "snaps": 2145,
+  "site_ratings": {
+    "24/7 Sports": "85",
+    "ESPN": "76",
+    "Draft Buzz": "85.8 / 100",
+    "NFL.com": "TBD",
+    "BR": "7",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "79.8",
+      "percentile": 0.7
+    },
+    "2024 Grade": {
+      "value": "82",
+      "percentile": 0.9
+    },
+    "2023 Grade": {
+      "value": "77.8",
+      "percentile": 1.0
+    },
+    "Run Block Grade": {
+      "value": "80.3",
+      "percentile": 0.8
+    },
+    "Pass Block Grade": {
+      "value": "85.9",
+      "percentile": 0.6
+    },
+    "True Pass Set Grade": {
+      "value": "78.5",
+      "percentile": 0.6
+    },
+    "Pass Block Efficiency": {
+      "value": "99.4",
+      "percentile": 0.95
+    },
+    "Zone Grade": {
+      "value": "81.7",
+      "percentile": 0.7
+    },
+    "Gap Grade": {
+      "value": "65.1",
+      "percentile": 0.6
+    },
+    "Sacks Allowed": {
+      "value": "1",
+      "percentile": 0.5
+    },
+    "Hits Allowed": {
+      "value": "1",
+      "percentile": 0.5
+    },
+    "Hurries Allowed": {
+      "value": "2",
+      "percentile": 0.75
+    },
+    "Pressures Allowed": {
+      "value": "4",
+      "percentile": 0.7
+    },
+    "Penalties": {
+      "value": "7",
+      "percentile": 0.3
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 77.77777777777777,
+      "positional_rank": "5.666666666666667"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 77.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 86.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 83.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 113.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 34.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 88.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 43.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 65.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 57.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": 64.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - MID",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Sedrick VAN PRAN",
+    "Bleacher": "Chase Roullier",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.93,
+    "Run Blocking Grade": 0.88
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 0,
+      "career": 0
+    },
+    "LG": {
+      "2025": 0,
+      "career": 0
+    },
+    "C": {
+      "2025": 748,
+      "career": 2120
+    },
+    "RG": {
+      "2025": 0,
+      "career": 0
+    },
+    "RT": {
+      "2025": 0,
+      "career": 0
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nJake Slaughter grew up in Sparr, a rural pocket of Marion County, where he first snapped a football at age six during flag football games at Wrigley Field Park. By the time he reached Trinity Catholic High School in Ocala, he'd developed into one of the region's most reliable interior linemen, earning All-County first team honors as a senior while helping pave the way for a 2,200-yard rusher. Slaughter initially committed to Florida State before flipping to Florida once the Gators offered, and his high school coach John Brantley (whose son played quarterback in Gainesville) helped prepare him for the rigors of SEC football. Entering as a three-star recruit in 2021, Slaughter redshirted his first season after making his collegiate debut against Samford, then spent 2022 contributing primarily on special teams across all 13 games.\n\nThe 2023 campaign marked Slaughter's breakthrough as he appeared in all 12 games with eight starts at center, posting a 75.9 overall grade that ranked 14th nationally among centers across 622 snaps. He seized the starting job permanently that fall and never relinquished it, drawing starts in each of Florida's final three contests against LSU, Missouri and Florida State. His senior season in 2024 elevated him into elite company as he started all 13 games, leading the Gators offensive line with 800 snaps while earning AP All-American First Team, PFF All-American First Team and AP All-SEC First Team recognition. Slaughter's pass blocking grade jumped to 83.9 (allowing just one sack all season) while his 79.0 run blocking mark ranked seventh nationally among centers and his 81.1 overall offense grade placed fifth in the country at the position. The three-time SEC Academic Honor Roll member and Chi Alpha Sigma National College Athlete Honor Society inductee graduated with a degree in Agricultural Education and Communication in spring 2025.\n\nSlaughter returned for the 2025 season as a team captain and continued his dominance despite Florida's 4-8 record, starting all 12 games against what amounted to a gauntlet of top-tier defenses. Facing the nation's toughest strength of schedule for the second consecutive year, he logged 748 offensive snaps with an 87.1 pass blocking grade (first in the SEC, eighth nationally) and an 82.2 run blocking grade (fourth nationally among centers). His competition level proved absurd: Georgia's fourth-ranked rushing defense allowing just 79.2 yards per game, Texas' top-10 unit surrendering 98.1 per contest, Miami's seventh-ranked rush defense giving up 86.8 yards, Ole Miss' sixth-ranked total defense, Tennessee's sixth-ranked total defense and Texas A&M's nation-leading third down defense. Slaughter posted pass blocking grades above 70.0 in 11 of 12 games while allowing only one sack and one quarterback hit across 422 pass protection reps, earning Rimington Trophy Finalist honors, The Athletic Second Team All-American, USA Today Second Team All-American and AP All-SEC First Team recognition. His performance at the Senior Bowl reinforced his projection, with CBS Sports highlighting his consistent wins in one-on-ones and team periods.\n\nSlaughter's footwork in his kick slide is clean, his hands are quick enough to reset when rushers try to cross his face, and he understands how to use angles to his advantage in tight spaces. The one sack allowed in 800 snaps wasn't a fluke - this guy knows what he's doing when the ball's in the air. He diagnosed Georgia's pressures, handled Texas' interior stunts and kept his quarterback upright against Ole Miss' best pass rushers. That's legitimate NFL-ready stuff right there. The mental side is advanced too. He makes the calls, adjusts the protection and rarely looks confused even when defenses show exotic looks late. Teams running quick game concepts or drop-back passing attacks will love how he handles business in pass pro.\n\n\n\n    Here's the thing though - the run blocking doesn't quite match up. He's good enough to get the job done, generates decent movement when he catches defenders clean and works to climb to backers, but there's a noticeable gap between his pass protection grade and what he does in the run game. Against elite defensive tackles who can shoot gaps and play with quick hands, he struggles to sustain and finish blocks the way top centers need to. The reach blocks on outside zone don't come natural and he gets a little lungy when defenders move on him. It's not bad by any means, just not at the same level as his pass pro. He fits better in gap schemes or inside zone where he can work vertically rather than asking him to reach laterally on stretch plays. Add some functional weight to his lower half and he'll hold up better against bigger bodies, but right now there are reps where he gets pushed around more than you'd like from a guy going in the third round.\n\n\n\n    This is a late first or early second round center who should start from day one. His floor is an immediate quality starter who handles pass protection at a high level, and the ceiling includes Pro Bowl selections if he develops the run game to match his pass blocking. Teams that value pass protection and intelligence over pure run blocking power will have him in the late first round conversation. The Senior Bowl showed he can compete against other draft-eligible prospects and his consistency over three years as Florida's starter matters. He might not be Creed Humphrey or Jason Kelce, but he's a safe pick who should anchor the position for a decade if he stays healthy. That's worth a premium pick for teams looking to upgrade the center position with a plug-and-play starter.\n\n                                        \n                                            \n                                                Written By:\n                                                Bill Miller (SEC)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Jake Slaughter from Florida... anchor... veteran... super smart... great leader... team guy... alert... recognizing stunts... strong anchor... consistent... battle tested... SEC... third round, fourth round... day one starter... top five centers... probably center only... length to play guard... hardest workers... consistent week in and week out."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Jake Slaughter is an efficient, battle—tested blocker who operates with solid movement skills, play strength, and urgency to cover up, re—leverage, and seal off defenders. Slaughter won't overwhelm NFL defenders, but he has enough traits to compete for a pivot job during his rookie contract and become a functional starter.\n\nSlaughter is a 6'4\", 303—pound center prospect who entered the Florida program as a 3—star recruit in the 2021 class.\n\nSlaughter started 33 career games at center for the Gators as a two—time team captain. He earned AP All—SEC First Team honors in 2024 and 2025. Slaughter turned 23 years old in December."
+        },
+        {
+          "title": "Positives",
+          "text": "— Solid play strength to clench, close space and wall off down linemen on base, back and double—team overtake blocks.\n\n— Sound anchor technique to get his hips back, hands on and reset to grind down power and die slowly.\n\n— Alert and spatially aware in pass protection keeps him square and on the same level with his guards to keep the 'A' gaps shored up.\n\n— Fluid enough on the move to intersect targets on climbs and screens.\n\n— Two—time team captain."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Adequate mass, length and power make it a chore to own and command ground when isolated against long, hulking defensive tackles.\n\n— Vulnerable to getting push—pulled into overextension.\n\n— Mediocre redirect skills creates soft, accessible edges if forced to adjust mid—rep."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.0,
+    "grade_indicator": null,
+    "overall_rank": 113,
+    "position_rank": null,
+    "pro_comparison": "Chase Roullier",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

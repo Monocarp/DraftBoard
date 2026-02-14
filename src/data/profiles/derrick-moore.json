@@ -1,0 +1,447 @@
+{
+  "name": "Derrick Moore",
+  "slug": "derrick-moore",
+  "overview": {
+    "POS": "ED",
+    "College": "Michigan",
+    "Height": "6' 3\"",
+    "Weight": "260",
+    "Age": "23.1",
+    "DOB": "2002-12-06 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "52",
+    "Snaps": "1542",
+    "24/7 Sports": "95",
+    "ESPN": "79",
+    "Draft Buzz": "84.3 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.4",
+    "Gridiron": null
+  },
+  "position": "ED",
+  "college": "Michigan",
+  "height": "6' 3\"",
+  "weight": "260",
+  "age": 23.1,
+  "dob": "2002-12-06 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 52,
+  "snaps": 1542,
+  "site_ratings": {
+    "24/7 Sports": "95",
+    "ESPN": "79",
+    "Draft Buzz": "84.3 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.4",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "89.9",
+      "percentile": 0.8
+    },
+    "24 Grade": {
+      "value": "78.9",
+      "percentile": 0.45
+    },
+    "23 Grade": {
+      "value": "77.8",
+      "percentile": 0.9
+    },
+    "Pass Rush Grade": {
+      "value": "92.3",
+      "percentile": 0.9
+    },
+    "True Pass Rush": {
+      "value": "93.8",
+      "percentile": 1.0
+    },
+    "PR Win Rate": {
+      "value": "19.8",
+      "percentile": 0.711
+    },
+    "Run Def. Grade": {
+      "value": "77.4",
+      "percentile": 0.5
+    },
+    "Run Stop %": {
+      "value": "5.5",
+      "percentile": 0.25
+    },
+    "Sacks": {
+      "value": "11",
+      "percentile": 0.842
+    },
+    "Hits": {
+      "value": "8",
+      "percentile": 0.632
+    },
+    "Hurries": {
+      "value": "22",
+      "percentile": 0.368
+    },
+    "Batted Balls": {
+      "value": "3",
+      "percentile": 0.947
+    },
+    "Forced Fumbles": {
+      "value": "2",
+      "percentile": 0.605
+    },
+    "Tackling Grade": {
+      "value": "76.2",
+      "percentile": 0.85
+    },
+    "Missed Tackle Rate": {
+      "value": "10.3",
+      "percentile": 0.842
+    },
+    "Total Pressures": {
+      "value": "41",
+      "percentile": 0.526
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 83.77777777777777,
+      "positional_rank": "11.166666666666666"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 76.0,
+      "positional_rank": "14"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 75.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 52.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 65.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 60.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 44.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 155.0,
+      "positional_rank": "22"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 92.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 75.5,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": 83.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "3RD",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Jalyx HUNT",
+    "Bleacher": "Boye Mafe",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.77,
+    "Pass Rush": 0.77,
+    "Run Defense": 0.95
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 0,
+      "career": 0
+    },
+    "B GAP": {
+      "2025": 8,
+      "career": 25
+    },
+    "Over Tackle": {
+      "2025": 3,
+      "career": 59
+    },
+    "Outside Tkl": {
+      "2025": 413,
+      "career": 1209
+    },
+    "Off Ball": {
+      "2025": 16,
+      "career": 37
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nA two-time All-Big Ten selection who has appeared in 40 games for the Wolverines, Derrick Moore enters his senior season as Michigan's lone returning starter on the defensive line. The Baltimore native has steadily improved each season in Ann Arbor, evolving from a rotational piece as a freshman into a key defensive contributor who has racked up 15 tackles for loss and 11 sacks over his three-year career. Moore began at St. Frances Academy in Maryland, where he dominated as a senior with 55 tackles (24 for loss) and 12 sacks, earning MaxPreps Maryland High School Football Player of the Year honors. His performance in the Under Armour All-American Game, where he claimed MVP honors with a two-sack performance, solidified his status as an elite four-star recruit across all major services. After playing in every game as a freshman in 2022, Moore took a significant step forward as a sophomore, appearing in all 15 games during Michigan's national championship run. His junior campaign saw him earn his first 12 starts at edge rusher, where he continued to develop despite battling injuries. As he enters his senior season, defensive coordinator Wink Martindale has praised Moore's selfless play and believes the edge rusher \"will have another gear\" in 2025.\n\nSCOUTING REPORT: SUMMARY\nRaw power matched with lightning quickness off the edge defines Moore's game, but technical refinement stands between him and consistent production at the next level. His pass rush approach often hits a wall when initial burst doesn't win, leaving him without counters when tackles anchor against his primary moves. The motor never quits, though. Moore runs with the kind of relentless energy that defensive coaches covet, chasing down plays from the backside and fighting through trash to affect quarterbacks. This effort partially masks technique deficiencies, particularly against the run where his pad level rises and compromises his leverage advantage. What makes Moore tantalizing is the foundation of physical gifts that can't be taught - the bend, the burst, the frame. These traits will earn him early opportunities as a designated pass rusher while his every-down skillset develops. Creative defensive schemes will maximize his versatility by moving him around the formation, creating favorable matchups that leverage his athletic testing against less mobile blockers. Moore's ceiling ultimately depends on how quickly he can translate his natural tools into refined technique - something that will determine whether he becomes an impact starter or remains a situational player at the next level.\nWRITTEN BY:\nK.C. MARTINEZ (BIG TEN)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Derrick Moore is a well—put—together pass—rusher who did an excellent job of expanding his repertoire this season to have an impressive senior year. The 6'3\", 260—pound edge defender went from winning almost exclusively with speed to power to adding a nice inside counter move and becoming more explosive this season.\n\nMoore went to Michigan as a 4—star recruit in the 2022 class and was a contributor off the bench, collecting a couple of sacks as a true freshman.\n\nHe got more playing time in Year 2, becoming an honorable mention All—Big Ten selection with 34 tackles, six tackles for loss, five sacks and two passes defended for the National Champs."
+        },
+        {
+          "title": "Positives",
+          "text": "— Moore has solid size and frame, and appears to have at least decent arm length.\n\n— Acceleration off the line of scrimmage improved in 2025 to help threaten offensive tackles with speed and get them to open their hips.\n\n— Good at turning speed to power as a pass—rusher, using good pad level and tight hands to get three points of contact on the offensive tackle. Also, keeps his feet moving through contact to collapse the pocket.\n\n— Has shown a solid long arm move as a change up to shorten the corner around the edge, and has the change of direction to win with an inside counter move.\n\n— Decent at working the offensive lineman's hands to win inside or outside against tackles.\n\n— Comfortable dropping into coverage and has enough athleticism to spot drop occassionally.\n\n— Against the run, he's physical at the point of attack and has enough strength to beat blocks from tight ends.\n\n— Solid speed and doesn't get too far up the field to make tackles near the line of scrimmage when unblocked on the backside of zone runs."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Isn't much of a factor as a run defender; Michigan often took Moore out of the game in key run situations.\n\n— Doesn't have much pop behind his hands when taking on blocks as a run defender, making it difficult for him to get extension against offensive tackles.\n\n— Will struggle to set the edge consistently against offensive linemen at the next level. While he's good at turning speed to power as a pass—rusher, he has subpar strength when he can't build up a head of steam and has to take on blocks at the line of scrimmage.\n\n— The lack of extension and subpar strength can also lead to him getting stuck on blocks against offensive linemen.\n\n— Hips and ankles look a little stiff, leading to questionable bend to corner at the top of the rush."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.4,
+    "grade_indicator": null,
+    "overall_rank": 65,
+    "position_rank": null,
+    "pro_comparison": "Boye Mafe",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

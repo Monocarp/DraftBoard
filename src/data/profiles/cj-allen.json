@@ -1,0 +1,511 @@
+{
+  "name": "CJ Allen",
+  "slug": "cj-allen",
+  "overview": {
+    "POS": "LB",
+    "College": "Georgia",
+    "Height": "6' 1\"",
+    "Weight": "235",
+    "Age": "20.11",
+    "DOB": "2005-03-01 00:00:00",
+    "Year": null,
+    "Prj. Rd": null,
+    "Games": "40",
+    "Snaps": "1610",
+    "24/7 Sports": "97",
+    "ESPN": "88",
+    "Draft Buzz": "86.3 / 100",
+    "NFL.com": "6.29",
+    "Bleacher": "7.8",
+    "Gridiron": null
+  },
+  "position": "LB",
+  "college": "Georgia",
+  "height": "6' 1\"",
+  "weight": "235",
+  "age": 20.11,
+  "dob": "2005-03-01 00:00:00",
+  "year": null,
+  "projected_round": null,
+  "games": 40,
+  "snaps": 1610,
+  "site_ratings": {
+    "24/7 Sports": "97",
+    "ESPN": "88",
+    "Draft Buzz": "86.3 / 100",
+    "NFL.com": "6.29",
+    "Bleacher": "7.8",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "76.4",
+      "percentile": 0.5
+    },
+    "24 Grade": {
+      "value": "73.6",
+      "percentile": 0.4
+    },
+    "23 Grade": {
+      "value": "64.6",
+      "percentile": 0.25
+    },
+    "Pass Rush Grade": {
+      "value": "68",
+      "percentile": 0.5
+    },
+    "Run Def. Grade": {
+      "value": "89.5",
+      "percentile": 0.8
+    },
+    "Run Stop %": {
+      "value": "10.7",
+      "percentile": 0.7
+    },
+    "Tackles": {
+      "value": "71",
+      "percentile": 0.85
+    },
+    "Tackling Grade": {
+      "value": "84.1",
+      "percentile": 0.7
+    },
+    "Missed Tkl Rate": {
+      "value": "7.8",
+      "percentile": 0.7
+    },
+    "ADORT": {
+      "value": "3.3",
+      "percentile": 0.7
+    },
+    "Coverage": {
+      "value": "55.6",
+      "percentile": 0.3
+    },
+    "Coverage Stops": {
+      "value": "14",
+      "percentile": 0.35
+    },
+    "Recs/Tgts": {
+      "value": "0",
+      "percentile": 0.5
+    },
+    "Completion %": {
+      "value": "67.4",
+      "percentile": 1.0
+    },
+    "TD / INT": {
+      "value": "1 / 0",
+      "percentile": null
+    },
+    "Forced Inc Rate": {
+      "value": "7",
+      "percentile": 0.7
+    },
+    "Pass Rat. All.": {
+      "value": "93.9",
+      "percentile": 0.7
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 26.692307692307693,
+      "positional_rank": "3"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 28.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 27.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 32.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 23.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 14.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 33.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 30.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 16.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 41.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 24.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 22.0,
+      "positional_rank": "2"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 30.0,
+    "PFF": 30.0,
+    "ESPN": null,
+    "Brugler": 31.0,
+    "Kiper": 19.0,
+    "Miller": 46.0,
+    "Bleacher": null,
+    "Walter": 31.0,
+    "TDN": 26.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - EARLY",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "Zaire Franklin",
+    "Miller": "TBD",
+    "DraftBuzz": "Chris PAUL Jr",
+    "Bleacher": "Daiyan Henley",
+    "WF": "TBD",
+    "Ringer": "Devin White",
+    "NFL.com": "Zaire Franklin"
+  },
+  "strengths": "• High End Speed, Great Athlete\n• Ball Skills, Vertical\n• High Motor, Violent Player\n• Very Sure Tackling Ability\n• Side to Sideline Range\n• Improving Pass Rush Ability",
+  "weaknesses": "• Lacks Size/Pop\n• Struggles with Processing/Play Recognition\n• Key Mental Lapses in Coverage\n• Mixed Reviews on overall Cov. Ability",
+  "accolades": null,
+  "player_summary": "CJ Allen, a \"green dot\" off-ball linebacker and team captain, projects as a dependable three-down Mike with leadership intangibles and high character. He sorts run fits patiently, mirrors backs with leverage, secures gaps when engaged, pops off blocks with hand strikes, disguises A/B-gap blitzes effectively, and finishes tackles with rare consistency and body control while closing quickly to limit YAC in zone. His toughness, instincts, and run-defense productivity make him a floor-raiser who arrives with force and understands play development. Limitations include average trigger quickness, pursuit speed hampered by hip tightness and stride length, post-meniscus injury stiffness/reduced confidence, shorter arms that hinder block shedding, infrequent high-value splash plays or cross-LOS disruption, and restricted ball production in man coverage. Allen lacks elite athleticism or playmaking upside but offers immediate starting reliability.",
+  "draftbuzz_grades": {
+    "Tackling": 0.91,
+    "Pass Rush": 0.74,
+    "Run Defense": 0.97,
+    "Coverage": 0.58
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 3,
+      "career": 8
+    },
+    "Slot": {
+      "2025": 53,
+      "career": 120
+    },
+    "Corner": {
+      "2025": 6,
+      "career": 19
+    },
+    "Box": {
+      "2025": 517,
+      "career": 1461
+    },
+    "Deep": {
+      "2025": 0,
+      "career": 1
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [
+    {
+      "description": "Scouting Report",
+      "source": "YT - A to Z Sports",
+      "url": "https://www.youtube.com/watch?v=rBaLx3IyXzE"
+    },
+    {
+      "description": "Career Highlights",
+      "source": "YT - Prospects",
+      "url": "https://www.youtube.com/watch?v=T_o7NUjcpMI"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "“Green dot” linebacker and team captain more capable of rowing the boat than making big splashes. Allen plays with toughness and control, sorting through run fits with patience and leverage in pursuit. He has average trigger quickness and pursuit speed, which forces him to work harder to get to junction points when facing climbing blockers. He has adequate size and strength with good hand strikes to play off blocks. He doesn’t blow up blocks or disrupt on the other side of the line all that often, though. He’s an effective blitzer with average man-cover talent and is capable on all three downs. Allen is a dependable starting Mike ‘backer who raises the floor of a defense."
+        },
+        {
+          "title": "Strengths",
+          "text": "Doesn’t unnecessarily rush through his scrape process. | Mirrors running backs from his perch with proper leverage. | Usually secures gap leverage when taking on blocks. | Pops and plays off the block to make tackles. | Disguises and times up his blitz take-offs in A- and B-gaps. | Technique and body control provide rare tackle-finishing success. | Stays square and keeps eyes on the prize through the tackle. | Quick close-outs from zone limit yards after the catch."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Isn’t going to make as many high-value plays as you might expect. | Average anticipation to play ahead of blocks. | Needs to meet lead blocks deeper in the hole. | Hip tightness inhibits stride length and pursuit speed. | Needs to slip more blocks to make more tackles. | Will have trouble making plays on the ball in man coverage."
+        },
+        {
+          "title": "Sources Tell Us",
+          "text": "“Gets them lined up, is tough and is a great leader.” -- NFC national scout"
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "CJ Allen is a high-IQ alpha linebacker who plays downhill and delivers physical blows to ball carriers, setting a physical tone defensively."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nChristian Jamar Allen grew up in Barnesville, Georgia, a small town about two hours south of Athens, where he became a local legend at Lamar County High School. Born in March 2004, Allen was a true two-way force for the Trojans, lining up at both linebacker and running back while also competing in basketball and track. His senior season saw him pile up 84 tackles on defense while gashing opponents for over 1,600 rushing yards and 26 touchdowns on the other side of the ball. That versatility earned him 2021 Region 3-AA Player of the Year honors, an invitation to the All-American Bowl, and a consensus four-star rating from every major recruiting service.\n\nAllen enrolled early at Georgia in January 2023 and immediately worked his way into the rotation as a true freshman. Injuries opened the door, and when he got his first start against Ole Miss, he responded with nine tackles and a sack to claim SEC Freshman of the Week. He finished that season with 41 stops across 14 games, including five starts, with his performance in the Orange Bowl win over Florida State (six tackles, 1.5 for loss) showing he belonged on the big stage. By year two, he had locked down a starting spot, appearing in all 14 contests and racking up 76 tackles, an interception against Florida, and a career-high 10 stops in that wild eight-overtime finish against Georgia Tech.\n\nThe 2025 campaign represented Allen's coronation as the heartbeat of Georgia's defense. Standing 6-foot-1 and 235 pounds, he led the Bulldogs in tackles (88), tackles for loss (8.0), and sacks (3.5) while forcing two fumbles that swung games. His 11-tackle effort keyed the overtime win at Tennessee, and he came up with crucial forced fumbles against both Kentucky and Auburn. The accolades piled up accordingly: Butkus Award finalist, Lott IMPACT Trophy finalist, SEC Coaches All-SEC First Team, and a spot on watch lists for the Bednarik Award. Allen also served on both the SEC Student-Athlete Leadership Council and Football Leadership Council, cementing his reputation as much more than just a playmaker.\n\nSCOUTING REPORT: SUMMARY\nAllen represents exactly what defensive coordinators covet in a modern off-ball linebacker: a player who can be trusted to do his job on every single snap without freelancing himself out of position. His calling card is run defense, and here is the deal with that skill set: it is legitimately elite. He reads and reacts faster than most college linebackers, fills gaps with proper leverage, and brings enough pop to stack blocks and disengage. The tackling numbers are not inflated by cleanup stats either; he meets runners in the hole and wraps up with fundamentals that NFL coaches will appreciate from day one.\n\nThe coverage question is the one that will determine his ceiling at the next level. Right now, Allen can handle zone responsibilities without embarrassing himself, and his closing speed from the second level will limit damage on underneath throws. But asking him to match up with athletic tight ends or versatile backs on man coverage assignments will put stress on his hip fluidity and transition quickness. Coordinators will need to scheme around those limitations early in his career, using him in bracket situations or keeping his coverage responsibilities simple while his technique develops.\n\nWhat makes Allen a safe selection is the total package beyond the physical traits. The leadership, the football intelligence, the experience in a pro-style system under Kirby Smart, and the three years of high-level SEC production all point toward a player who will start from Week 1 and anchor a defense for a long time. He is not going to wow anyone with splash plays or highlight-reel moments, but he will show up every Sunday, get the defense lined up, and rarely beat himself. Teams building a defense around reliability and culture will find a foundational piece here."
+        },
+        {
+          "title": "Overview",
+          "text": "Do-everything linebacker who brings an intimidating presence against the run and good range in coverage.\n\nAllen is a versatile, rangy linebacker who plays with a high-intensity style against both the run and pass. A three-year contributor at Georgia, he’s a leader in the middle of the Bulldogs defense, helping establish the unit’s physical, tough identity. He has a well-built, muscular frame and shows the strength to take on blocks while bringing plenty of stopping power to stymie ballcarriers in the run game. Allen has good vision to sort through the mass of bodies and still keep his eyes on the target. He stays clean to avoid being blocked out of the play and is a reliable tackler with very good closing speed. He’s comfortable in space and shows a knack for positioning himself to get into passing lanes and disrupt throws. Allen flashes the athleticism to run step-for-step with tight ends on vertical routes in coverage and brings some pop when he closes on a pass catcher, laying hits to try to dislodge the pass. He’s an absolute pile driver as a blitzer, showing the ability to knock running backs into the pocket and into the quarterback’s lap.\n\nAllen lacks top-tier agility and appears a little bit stiff at moments, especially in man-to-man coverage. He can lose a step to shiftier pass catchers. He occasionally allows himself to get blocked out of the play, and at times takes poor angles to the ball. He can be lured out of position by ball fakes."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "CJ Allen, off ball, linebacker, his character. Love his toughness, love his productivity. Three down linebacker. I had him going to Carolina, it picked number 20... So I'm locked into CJ Allen in the first... CJ Allen just a sensational inside linebacker who I think could go as high as number 19 overall to the Carolina Panthers. But I think he is a lock to make it into the first round."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "CJ Allen is a top—tier athlete who is great in coverage and has enormous potential at just 20 years old (turns 21 in March) to develop into a linebacker who never has to come off the field in the NFL.\n\nAllen is 6'1\", 235 pounds, and went to Georgia as a 4—star recruit in the 2023 class, per 247Sports. He immediately saw the field as a true freshman, participating in all 14 games with five starts to collect 40 tackles, three tackles for loss, a sack and two passes defended.\n\nHe was a full—time starter as a sophomore and racked up 76 tackles, three TFLs, an interception and four passes defended."
+        },
+        {
+          "title": "Positives",
+          "text": "— Very good athlete and smooth mover to cover tight ends and running backs when playing man coverage or tighten throwing windows in zone.\n\n— Impressive hand—eye coordination and vertical jump to make plays on the ball in the air that most linebackers won't.\n\n— Good speed to help carry wide receivers on vertical routes when playing Tampa 2 and gives him sideline—to—sideline range against the run.\n\n— As a run defender, Allen can defeat blocks with his athleticism and a shoulder dip move.\n\n— Also, he takes on blocks with his hands and has good pad level to get some extension and be solid at holding his ground.\n\n— Sure tackler who wraps up and consistently brings running backs to the ground, has had very few misses in his career."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Doesn't have much pop behind his pads when coming downhill, offensive linemen can absorb contact from him. Allen could afford to add some extra mass.\n\n— Can be slow to key and diagnose run plays, leading to him getting caught in the trash or offensive linemen beating him to the spot.\n\n— Late run—pass transitions against play action, leaving the middle of the field open.\n\n— Showed a few mental lapses in coverage, occasionally playing the wrong assignment and leaving his man or area open, or taking the cheese on checkdowns in zone coverage."
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Do-everything linebacker who brings an intimidating presence against the run and good range in coverage.\n\nAllen is a versatile, rangy linebacker who plays with a high-intensity style against both the run and pass. A three-year contributor at Georgia, he’s a leader in the middle of the Bulldogs defense, helping establish the unit’s physical, tough identity. He has a well-built, muscular frame and shows the strength to take on blocks while bringing plenty of stopping power to stymie ballcarriers in the run game. Allen has good vision to sort through the mass of bodies and still keep his eyes on the target. He stays clean to avoid being blocked out of the play and is a reliable tackler with very good closing speed. He’s comfortable in space and shows a knack for positioning himself to get into passing lanes and disrupt throws. Allen flashes the athleticism to run step-for-step with tight ends on vertical routes in coverage and brings some pop when he closes on a pass catcher, laying hits to try to dislodge the pass. He’s an absolute pile driver as a blitzer, showing the ability to knock running backs into the pocket and into the quarterback’s lap.\n\nAllen lacks top-tier agility and appears a little bit stiff at moments, especially in man-to-man coverage. He can lose a step to shiftier pass catchers. He occasionally allows himself to get blocked out of the play, and at times takes poor angles to the ball. He can be lured out of position by ball fakes."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Do-everything linebacker"
+        },
+        {
+          "title": "Traits",
+          "text": "Relentless Motor"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former four-star recruit out of Barnesville, Georgia. Was the no. 5 linebacker and the no. 70 overall player in the 2023 class. Enrolled at Georgia in 2023 and worked into the linebacker rotation early in his career before taking on a larger role by his sophomore season. Finished his career with 29 starts. This past season, he suffered a meniscus injury against Texas on November 15 that required surgery. Returned 13 days later against Georgia Tech."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "Was on the SEC Student-Athlete Leadership Council and the SEC Football Leadership Council in 2025.\nAlso played running back in high school, and finished with 1,628 yards rushing and 26 touchdowns his senior year. Also ran track and played basketball.\nGeorgia HC Kirby Smart on Allen: “He’s one of the best leaders we’ve had in this program at linebacker. … He’s a relentless worker and a relentless competitor.\nHis go-to night-before-the-game treat is a strawberry cookie and cream smoothie.\nAfter his career ends, he envisions getting himself into the chicken wings business. “I’m a mild lemon pepper guy.”"
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF DEVIN WHITE"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.29,
+    "prospect_grade_indicator": "Will Eventually Be Average Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Zaire Franklin",
+    "eligibility": "Junior",
+    "nfl_rank": 22,
+    "nfl_pos_rank": 2
+  },
+  "bleacher_profile": {
+    "grade": 7.8,
+    "grade_indicator": null,
+    "overall_rank": 33,
+    "position_rank": null,
+    "pro_comparison": "Daiyan Henley",
+    "projected_round": "2nd Round"
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF DEVIN WHITE",
+    "traits": "Relentless Motor"
+  },
+  "injury_history": []
+}

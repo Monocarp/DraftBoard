@@ -1,0 +1,447 @@
+{
+  "name": "Gabe Jacas",
+  "slug": "gabe-jacas",
+  "overview": {
+    "POS": "ED",
+    "College": "Illinois",
+    "Height": "6' 3\"",
+    "Weight": "270",
+    "Age": "0",
+    "DOB": "00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "49",
+    "Snaps": "2224",
+    "24/7 Sports": null,
+    "ESPN": "TBD",
+    "Draft Buzz": null,
+    "NFL.com": "TBD",
+    "Bleacher": "7.6",
+    "Gridiron": null
+  },
+  "position": "ED",
+  "college": "Illinois",
+  "height": "6' 3\"",
+  "weight": "270",
+  "age": 0.0,
+  "dob": "00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 49,
+  "snaps": 2224,
+  "site_ratings": {
+    "24/7 Sports": null,
+    "ESPN": "TBD",
+    "Draft Buzz": null,
+    "NFL.com": "TBD",
+    "Bleacher": "7.6",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "78.1",
+      "percentile": 0.375
+    },
+    "24 Grade": {
+      "value": "69.2",
+      "percentile": 0.15
+    },
+    "23 Grade": {
+      "value": "67.6",
+      "percentile": 0.45
+    },
+    "Pass Rush Grade": {
+      "value": "88.5",
+      "percentile": 0.55
+    },
+    "True Pass Rush": {
+      "value": "86.3",
+      "percentile": 0.632
+    },
+    "PR Win Rate": {
+      "value": "14.9",
+      "percentile": 0.316
+    },
+    "Run Def. Grade": {
+      "value": "63.9",
+      "percentile": 0.05
+    },
+    "Run Stop %": {
+      "value": "7",
+      "percentile": 0.5
+    },
+    "Sacks": {
+      "value": "12",
+      "percentile": 0.974
+    },
+    "Hits": {
+      "value": "7",
+      "percentile": 0.553
+    },
+    "Hurries": {
+      "value": "22",
+      "percentile": 0.368
+    },
+    "Batted Balls": {
+      "value": "0",
+      "percentile": 0.158
+    },
+    "Forced Fumbles": {
+      "value": "3",
+      "percentile": 0.895
+    },
+    "Tackling Grade": {
+      "value": "57",
+      "percentile": 0.15
+    },
+    "Missed Tackle Rate": {
+      "value": "21.2",
+      "percentile": 0.316
+    },
+    "Total Pressures": {
+      "value": "41",
+      "percentile": 0.526
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 61.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 39.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 57.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 47.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Jeremiah",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 66.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 102.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 33.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Tankathon",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 49.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 60.0,
+    "Bleacher": null,
+    "Jeremiah": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "Tankathon": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "TBD",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Jonathan Greenard",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.6,
+    "Pass Rush": 0.88,
+    "Run Defense": 0.66
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 0,
+      "career": 1
+    },
+    "B GAP": {
+      "2025": 5,
+      "career": 85
+    },
+    "Over Tackle": {
+      "2025": 48,
+      "career": 164
+    },
+    "Outside Tkl": {
+      "2025": 471,
+      "career": 1497
+    },
+    "Off Ball": {
+      "2025": 5,
+      "career": 20
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nGabe Jacas arrived at Illinois from Fort Pierce Central High School as a three-star recruit with a wrestling background. The Florida native was a state champion wrestler who drew offers from programs like Mississippi State, Tennessee, and South Florida before choosing the Fighting Illini. His athletic foundation translated well to football, as he became the first Illinois true freshman to earn FWAA Freshman All-American honors in 2022.\n\nJacas made an immediate impact during his freshman season, starting eight games and recording 35 tackles, 5.0 tackles for loss, and 4.0 sacks. His 13 quarterback hits tied for the national lead among freshmen according to Pro Football Focus, and he earned multiple True Freshman All-American honors from ESPN, 247Sports, and College Football News. His two-sack performance against Virginia marked the first time an Illinois true freshman had accomplished that feat since 2017.\n\nFollowing a developmental sophomore campaign where he split time between outside linebacker and defensive line, Jacas had his most productive season as a junior in 2024. Starting all 13 games, he totaled 74 tackles, 13.0 tackles for loss, 8.0 sacks, and three forced fumbles. His efforts earned him All-Big Ten Third Team honors and Phil Steele All-America Third Team recognition. Notable performances included a 13-tackle, 2.5-sack showing against Michigan and three tackles for loss in Illinois' Citrus Bowl victory over South Carolina.\n\nSCOUTING REPORT: SUMMARY\nThere's genuine NFL-caliber ability in Jacas' game, though teams will need to carefully evaluate what they're getting versus what they hope he can become. His wrestling background creates a foundation that translates beautifully to the trenches - the hand placement, leverage, and body control are already well ahead of most prospects his age. That physicality shows up most prominently as a pass rusher, where his power and initial burst can overwhelm tackles, but his lack of a refined pass-rushing plan beyond bull rushing creates obvious limitations against seasoned NFL tackles who've seen every power move imaginable.\n\nThe versatility factor cuts both ways in his evaluation. While defensive coordinators will appreciate his ability to line up in multiple spots and contribute against the run, his coverage limitations prevent him from being the every-down linebacker that modern NFL defenses increasingly demand. His motor and pursuit never quit, yet his straight-line athleticism won't wow anyone in combine drills or when chasing down mobile quarterbacks on scrambles. The wrestling strength that makes him effective also comes with some natural stiffness that shows up in space.\n\nWhat makes Jacas intriguing is the combination of his youth and the specific skill set he already possesses. Edge defenders who can anchor against the run while providing consistent interior push are valuable commodities, even if they're not elite pass rushers. His developmental curve suggests there's more to unlock, particularly if he can add technical refinement to complement his natural power. The question isn't whether he can play in the NFL - it's whether he can evolve beyond a rotational run-stopper into someone who consistently wins on obvious passing downs. That answer will likely determine if he hears his name called on Day 2 or Day 3.\nWRITTEN BY:\nK.C. MARTINEZ (BIG TEN)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Gabe Jacas is a highly productive college pass—rusher whose combination of size (6'3\", 270 pounds) and athleticism will help him translate to the NFL. He wins primarily by turning speed to power and has the movement skills to beat offensive tackles across their faces as an inside counter.\n\nJacas went to Illinois as a 3—star recruit and became a starter about halfway through his true freshman season. He ended up finishing with 35 tackles, five tackles for loss and four sacks to earn All—Big Ten honorable mention and Freshman All—American honors.\n\nIn year two, the Port St. Lucie, Florida native was a regular starter and recorded 31 tackles, four TFLs, four sacks, a pass defended and a forced fumble but did not receive postseason recognition."
+        },
+        {
+          "title": "Positives",
+          "text": "— Jacas has good size and carries his frame well with little to no bad weight.\n\n— Impressive pass—rush production with 27 career sacks in 50 games (as of Dec. 4).\n\n— Has the combination of strength and change of direction skills to be very effective when turning speed to power as a pass—rusher.\n\n— Good quickness for his size to beat offensive tackles across their faces and take advantage of oversets or use as a counter move to his ability to turn speed to power.\n\n— Recognizes when he's even with the quarterback and has a solid inside spin move to avoid rushing too far up the field and get pressure.\n\n— Good pass—rush motor, allowing him to get coverage sacks.\n\n— Solid at running his feet to avoid getting reached in the run game.\n\n— Can create stalemates against pullers as the force player in run fits."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Jacas is a below—average run defender, Illinois would often take him out of the game on key run downs.\n\n— Not very physical at the point of attack when taking on blocks against the run.\n\n— Plays high and has issues anchoring against down blocks or when setting the edge versus offensive tackles who play with good leverage.\n\n— Appears to have subpar arm length, limiting the extension he can get on blocks and making it difficult for him to shed/escape.\n\n— Lacks some explosion off the line of scrimmage to threaten offensive tackles with speed as a pass—rusher.\n\n— Use of hands when rushing the passer is a work in progress, he's often late and isn't good at working the offensive lineman's hands."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.6,
+    "grade_indicator": null,
+    "overall_rank": 47,
+    "position_rank": null,
+    "pro_comparison": "Jonathan Greenard",
+    "projected_round": "2nd Round"
+  },
+  "injury_history": []
+}

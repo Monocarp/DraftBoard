@@ -1,0 +1,430 @@
+{
+  "name": "Kamari Ramsey",
+  "slug": "kamari-ramsey",
+  "overview": {
+    "POS": "SAF",
+    "College": "USC",
+    "Height": "6' 0\"",
+    "Weight": "205",
+    "Age": "21.5",
+    "DOB": "2004-08-24 00:00:00",
+    "Year": "RS Jr",
+    "Prj. Rd": null,
+    "Games": "33",
+    "Snaps": "1745",
+    "24/7 Sports": "93",
+    "ESPN": "75",
+    "Draft Buzz": "84.9 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.7",
+    "Gridiron": "TBD"
+  },
+  "position": "SAF",
+  "college": "USC",
+  "height": "6' 0\"",
+  "weight": "205",
+  "age": 21.5,
+  "dob": "2004-08-24 00:00:00",
+  "year": "RS Jr",
+  "projected_round": null,
+  "games": 33,
+  "snaps": 1745,
+  "site_ratings": {
+    "24/7 Sports": "93",
+    "ESPN": "75",
+    "Draft Buzz": "84.9 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.7",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "72.6",
+      "percentile": 0.182
+    },
+    "24 Grade": {
+      "value": "77.4",
+      "percentile": 0.4
+    },
+    "23 Grade": {
+      "value": "79.4",
+      "percentile": 0.6
+    },
+    "Coverage Grade": {
+      "value": "77.1",
+      "percentile": 0.182
+    },
+    "Interceptions": {
+      "value": "0",
+      "percentile": 0.0
+    },
+    "Forced Inc. Rate": {
+      "value": "9.7",
+      "percentile": 0.273
+    },
+    "Passer Rating Alwd": {
+      "value": "96.2",
+      "percentile": 0.0
+    },
+    "TD Allowed/Ints": {
+      "value": "2 / 0",
+      "percentile": null
+    },
+    "Coverage Stops": {
+      "value": "3",
+      "percentile": 0.045
+    },
+    "Run Def Grade": {
+      "value": "65.1",
+      "percentile": 0.182
+    },
+    "Run Stops": {
+      "value": "2",
+      "percentile": 0.0
+    },
+    "Tackling Grade": {
+      "value": "89.7",
+      "percentile": 1.0
+    },
+    "Tackles": {
+      "value": "20",
+      "percentile": 0.0
+    },
+    "Assisted Tackles": {
+      "value": "10",
+      "percentile": 0.0
+    },
+    "Missed Tackles": {
+      "value": "1",
+      "percentile": 1.0
+    },
+    "Missed Tackle Rate": {
+      "value": "3.2",
+      "percentile": 1.0
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 58.57142857142857,
+      "positional_rank": "6"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 55.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 88.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 40.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 37.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 45.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 47.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 54.333333333333336,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 40.0,
+    "Bleacher": null,
+    "Walter": 82.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Taron Johnson",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Targeted": 94.4,
+    "Tackling": 0.0,
+    "Run Defense": 0.65,
+    "Coverage Grade": 0.86,
+    "Zone Coverage": 0.83,
+    "Man/Press": 0.8
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 251,
+      "career": 251
+    },
+    "Box": {
+      "2025": 103,
+      "career": 103
+    },
+    "Corner": {
+      "2025": 7,
+      "career": 7
+    },
+    "Deep": {
+      "2025": 93,
+      "career": 93
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nKamari Ramsey grew up in Palmdale, California and attended Sierra Canyon High School in Chatsworth, where he developed into one of the West Coast's premier defensive back prospects. Standing 6'0\" and weighing 199 pounds, Ramsey earned four-star status across all major recruiting services during the 2022 cycle. His senior campaign at Sierra Canyon produced 58 tackles, three tackles for loss, a sack, two interceptions, seven passes defensed, a forced fumble, and two fumble recoveries as the team captured the Gold Coast League championship. Originally committed to Stanford, Ramsey flipped his decision late in the process and signed with UCLA.\n\nThe transition to college ball required patience. Ramsey redshirted as a true freshman in 2022, appearing in just four games and recording six tackles. His breakout arrived the following season when he started all 11 games for the Bruins, posting 40 tackles, 2.5 tackles for loss, four pass breakups, two quarterback hurries, and his first career interception against Cal. The steady production and growing tape caught the attention of USC's new defensive coordinator D'Anton Lynn, who was building his staff across town. When Lynn took the job with the Trojans, Ramsey followed him through the transfer portal to join the rival program for the 2024 campaign.\n\nThe crosstown move paid dividends immediately. Ramsey became the heartbeat of USC's revamped secondary in 2024, tallying 60 tackles, 5.5 tackles for loss, two sacks, five pass breakups, one interception, and two forced fumbles across 11 starts. His standout performance against LSU (nine tackles, LOTT Impact Player of the Week) and a 10-tackle effort versus Penn State demonstrated his ability to rise in marquee matchups. He earned All-Big Ten Honorable Mention honors and appeared destined for early draft entry before announcing his return for 2025. That final season was disrupted by a knee injury against Iowa in mid-November, limiting him to nine games and 27 tackles. Ramsey finishes his collegiate career with 100 total tackles, eight tackles for loss, two sacks, nine pass breakups, and three interceptions across 33 games.\n\nWatch USC's games from 2025 and you see a player who was asked to do something different. Injuries forced Ramsey into the nickel spot for roughly half his starts, moving him away from the deep safety role where he thrived in 2024. The results were mixed. His production dropped significantly with just 27 tackles and two pass deflections across nine games before the knee injury ended his season. The man coverage reps at nickel exposed some limitations, as receivers found ways to create separation in one-on-one matchups. Yet his eyes remained elite throughout, reading quarterback intentions and triggering on routes with the same quick-twitch instincts that made him special the year before. Teams evaluating Ramsey need to separate the 2025 film from the circumstances that created it.\n\n\n\nThe concerns from his final college season are real but contextual. Ramsey recorded only two run stops all year and his run defense grades remained a weak point regardless of alignment. His tackling numbers improved dramatically (one missed tackle versus fifteen in 2024), though the smaller sample size and different role make direct comparisons difficult. The knee injury that sidelined him against Oregon, UCLA, and the bowl game adds another variable to the evaluation. What remained consistent was his coverage instincts and ability to process information quickly. Even playing out of position, Ramsey showed the diagnostic ability that makes him attractive to NFL coordinators building versatile defensive backfields.\n\n\n\nTeams running split-safety schemes with heavy nickel packages will find real value here. Ramsey profiles as a starting two-high safety who can roll down into the box on passing downs and match up with tight ends in man coverage. The nickel experiment in 2025 showed he can handle the role in a pinch, but his bread and butter remains playing deep and using his eyes to attack the football. A defensive coordinator who keeps him at his natural position while maximizing his coverage recognition will get the best version of this player. The ceiling depends on his knee responding well and his run defense developing consistency at the next level."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Kamari Ramsey is an exceptional read—and—react defensive back who consistently identifies route combinations, receiver tells and triggers to the football.\n\nThe versatility showcased by Ramsey allows him to flow from a two—high alignment to a robber and into the nickel, making him a defensive chess piece. His ability to achieve proper depth and mirror while maintaining his zone responsibility is an elite trait that transitions seamlessly to the NFL.\n\nRamsey is a former 4—star recruit and transfer from UCLA to USC, where he's playing in his second season as a key piece of the Trojans' defense. He made his impact felt immediately after his transfer with 60 tackles (43 solo), five and a half tackles for loss, two sacks, five passes defensed, an interception, and two forced fumbles."
+        },
+        {
+          "title": "Positives",
+          "text": "— Ramsey has fantastic eyes in zone coverage and his instincts take him to the football regularly. His athleticism allows him to mirror the quarterback and stay in phase beautifully.\n\n— He does a great job recognizing plays and route concepts, allowing him to find the football and attack quickly. He's always around the play whether it's a run or pass.\n\n— As an off coverage defender, he reads route breaks and receiver deceleration in an instant. He triggers downhill or to the receiver while regularly attacking the catch point.\n\n— His athleticism is an asset and allows him to maintain backpedal speed and flip his hips while reading leverage and the quarterback's eyes. He sinks his hips to decelerate quickly, too.\n\n— He's a willing participant downhill in the screen and run game. His quick trigger let's him flow in the direction of the ball carrier/throw before other defenders."
+        },
+        {
+          "title": "Negatives",
+          "text": "— When Ramsey gets stacked vertically, his recovery speed is questionable and receivers can gain separation. His lateral burst to turn and run can be late, putting him behind speedy receivers.\n\n— While he's a willing participant in the run game, he must improve his tackling technique to not fall off as many tackles.\n\n— His upside as a nickel defender is limited by his short area lateral burst, effectiveness as a man defender and tackling ability in the run game can still create an impact."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.7,
+    "grade_indicator": null,
+    "overall_rank": 40,
+    "position_rank": null,
+    "pro_comparison": "Taron Johnson",
+    "projected_round": null
+  },
+  "injury_history": []
+}

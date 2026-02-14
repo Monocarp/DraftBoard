@@ -1,0 +1,446 @@
+{
+  "name": "Will Lee III",
+  "slug": "will-lee-iii",
+  "overview": {
+    "POS": "CB",
+    "College": "Texas A&M",
+    "Height": "6' 1\"",
+    "Weight": "189",
+    "Age": "TBD",
+    "DOB": "TBD",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "TBD",
+    "Snaps": "TBD",
+    "24/7 Sports": "TBD",
+    "ESPN": "TBD",
+    "Draft Buzz": "TBD",
+    "NFL.com": "TBD",
+    "Bleacher": "7.4",
+    "Gridiron": "TBD"
+  },
+  "position": "CB",
+  "college": "Texas A&M",
+  "height": "6' 1\"",
+  "weight": "189",
+  "age": null,
+  "dob": "TBD",
+  "year": "Sr",
+  "projected_round": null,
+  "games": null,
+  "snaps": null,
+  "site_ratings": {
+    "24/7 Sports": "TBD",
+    "ESPN": "TBD",
+    "Draft Buzz": "TBD",
+    "NFL.com": "TBD",
+    "Bleacher": "7.4",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "66.5",
+      "percentile": 0.059
+    },
+    "24 Grade": {
+      "value": "68.1",
+      "percentile": 0.278
+    },
+    "23 Grade": {
+      "value": "76.2",
+      "percentile": 0.722
+    },
+    "Coverage Grade": {
+      "value": "68.5",
+      "percentile": 0.111
+    },
+    "Passer Rating": {
+      "value": "106.6",
+      "percentile": 0.056
+    },
+    "Interceptions": {
+      "value": "0",
+      "percentile": 0.083
+    },
+    "Forced Incom.": {
+      "value": "9",
+      "percentile": 0.611
+    },
+    "Forced Inc. Rate": {
+      "value": "15.3",
+      "percentile": 0.333
+    },
+    "Dropped Picks": {
+      "value": "0",
+      "percentile": 0.194
+    },
+    "Completion %": {
+      "value": "54.2",
+      "percentile": 0.5
+    },
+    "Man Coverage": {
+      "value": "76.6",
+      "percentile": 0.722
+    },
+    "Zone Coverage": {
+      "value": "56.3",
+      "percentile": 0.0
+    },
+    "% In Man": {
+      "value": "24.1",
+      "percentile": 0.278
+    },
+    "% In Zone": {
+      "value": "57.8",
+      "percentile": 0.5
+    },
+    "Coverage Stops": {
+      "value": "13",
+      "percentile": 0.917
+    },
+    "Tackling": {
+      "value": "61.2",
+      "percentile": 0.111
+    },
+    "Missed Tackles": {
+      "value": "9",
+      "percentile": 0.111
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Arm Length": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Hand Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Speed": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Explosive": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Agility": {
+      "result": "TBD",
+      "grade": null
+    },
+    "10 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "20 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "40 Time": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Vertical": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Broad": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "3 Cone": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Bench": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Height": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Weight": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Gridiron": {
+      "result": "TBD",
+      "grade": "TBD"
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 92.16666666666667,
+      "positional_rank": "13"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 103.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 74.0,
+      "positional_rank": "14"
+    },
+    {
+      "source": "Jeremiah",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 67.0,
+      "positional_rank": "24"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 173.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Tankathon",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 43.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Jeremiah": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "Tankathon": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "TBD",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "DJ Turner",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR Allowed": null,
+    "Tackling": null,
+    "Run Defense": null,
+    "Cov Grade": null,
+    "Zone Coverage": null,
+    "Man/Press": null
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 1,
+      "career": 57
+    },
+    "Slot": {
+      "2025": 28,
+      "career": 55
+    },
+    "Corner": {
+      "2025": 646,
+      "career": 1606
+    },
+    "Box": {
+      "2025": 54,
+      "career": 107
+    },
+    "Deep": {
+      "2025": 1,
+      "career": 5
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Coverage Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Mental/Discipline Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Will Lee has the man—coverage tools and techniques to be a true shutdown corner in the NFL.\n\nHis long, athletic frame is a tremendous asset when mirroring receivers on the outside while running their routes for them. Then, he uses his length and eyes to attack the catch point with well—timed strikes to break up catches while driving on break points.\n\nThe 6'1\", 189—pound corner is a former 3—star JUCO prospect and 4—star transfer from Kansas State to Texas A&M, and is coming off his best collegiate season. Lee is continuing to show collegiate offenses that he's a ballhawk and should be challenged at their own risk."
+        },
+        {
+          "title": "Positives",
+          "text": "— Lee is a premier man coverage corner with the size, speed, and length to transition seamlessly to the next level. He's patient in press coverage and uses his impressive short—area twitch to turn and run.\n\n— Mirroring receiver movements to run routes with and for them is where he excels. Reading intention, sinking his hips to decelerate, and closing the gap allow him to stay attached.\n\n— He tracks the football well in the air and looks to get his head around down the field. When driving on throws, his length is an asset to break up potential catches by attacking the catch point.\n\n— Footwork in press coverage match well with his hands to throw off timing of the route and transition to pursuit.\n\n—When pursuing the ball carrier, he flashes the ability to deliver technical, big hits at speed. Closes on targeted receivers quick and wraps up to limit yards after the catch."
+        },
+        {
+          "title": "Negatives",
+          "text": "— In zone, Lee's eyes wander leading to open receivers underneath due to not recognizing route combinations. His instincts come into question in off coverage with hesitant play.\n\n— He tends to get grabby in man when he's late to turn and run and gets stacked vertically. Tugging on receivers could lead to more penalties in the NFL.\n\n— There's far too many instances of avoiding coming downhill in the run game, taking a poor angle to a ball carrier with speed, and out leveraging himself to make a tackle on the running back."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.4,
+    "grade_indicator": null,
+    "overall_rank": 74,
+    "position_rank": null,
+    "pro_comparison": "DJ Turner",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

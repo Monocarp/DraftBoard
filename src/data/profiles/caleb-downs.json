@@ -1,0 +1,550 @@
+{
+  "name": "Caleb Downs",
+  "slug": "caleb-downs",
+  "overview": {
+    "POS": "SAF",
+    "College": "Ohio State",
+    "Height": "6' 0\"",
+    "Weight": "205",
+    "Age": "21.1",
+    "DOB": "2004-12-10 00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": "Top 10",
+    "Games": "42",
+    "Snaps": "2354",
+    "24/7 Sports": "99",
+    "ESPN": "92",
+    "Draft Buzz": "92.0 / 100",
+    "NFL.com": "6.47",
+    "Bleacher": "9.3",
+    "Gridiron": "TBD"
+  },
+  "position": "SAF",
+  "college": "Ohio State",
+  "height": "6' 0\"",
+  "weight": "205",
+  "age": 21.1,
+  "dob": "2004-12-10 00:00:00",
+  "year": "Jr",
+  "projected_round": "Top 10",
+  "games": 42,
+  "snaps": 2354,
+  "site_ratings": {
+    "24/7 Sports": "99",
+    "ESPN": "92",
+    "Draft Buzz": "92.0 / 100",
+    "NFL.com": "6.47",
+    "Bleacher": "9.3",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "87.6",
+      "percentile": 0.636
+    },
+    "24 Grade": {
+      "value": "87.9",
+      "percentile": 0.9
+    },
+    "23 Grade": {
+      "value": "85.6",
+      "percentile": 0.8
+    },
+    "Coverage Grade": {
+      "value": "89.6",
+      "percentile": 0.818
+    },
+    "Interceptions": {
+      "value": "2",
+      "percentile": 0.545
+    },
+    "Forced Inc. Rate": {
+      "value": "7.7",
+      "percentile": 0.182
+    },
+    "Passer Rating Alwd": {
+      "value": "54.5",
+      "percentile": 0.909
+    },
+    "TD Allowed/Ints": {
+      "value": "0 / 2",
+      "percentile": null
+    },
+    "Coverage Stops": {
+      "value": "14",
+      "percentile": 1.0
+    },
+    "Run Def Grade": {
+      "value": "83.7",
+      "percentile": 0.909
+    },
+    "Run Stops": {
+      "value": "21",
+      "percentile": 0.909
+    },
+    "Tackling Grade": {
+      "value": "78.4",
+      "percentile": 0.545
+    },
+    "Tackles": {
+      "value": "58",
+      "percentile": 0.591
+    },
+    "Assisted Tackles": {
+      "value": "11",
+      "percentile": 0.091
+    },
+    "Missed Tackles": {
+      "value": "9",
+      "percentile": 0.455
+    },
+    "Missed Tackle Rate": {
+      "value": "11.5",
+      "percentile": 0.455
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 3.6923076923076925,
+      "positional_rank": "1"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 1.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 5.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 4.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 6.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 1.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 1.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 4.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 2.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 2.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 2.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 10.0,
+      "positional_rank": "1"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 7.769230769230769,
+    "PFF": 10.0,
+    "ESPN": null,
+    "Brugler": 9.0,
+    "Kiper": 10.0,
+    "Miller": 7.0,
+    "Bleacher": 6.0,
+    "Walter": 4.0,
+    "TDN": 2.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 7.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - TOP 5",
+    "Bleacher": "1st Round"
+  },
+  "player_comps": {
+    "NFL": "Jalen Pitre",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Eric Berry",
+    "WF": "Xavier McKinney.",
+    "Ringer": "Minkah Fitzpatrick",
+    "NFL.com": "Jalen Pitre"
+  },
+  "strengths": "• 3 Year Starter since Freshman\n• Excellent Tackler, esp. in open Field\n• Elite instincs, read & react\n• Superb range, speed, movement\n• Rare coverage ability for Safety\n• Anticipates Routes, Mirrors, Prevents Seperation\n• Vocal Leader, Grinder\n• Experienced/Successful Against Top Programs",
+  "weaknesses": "• Undersized, May Affect Tackling NFL\n• Pursuit Angles Could Improve\n• Gambles too often\n•",
+  "accolades": "• 2024 All American\n• 2024 Big 10 DBOTY",
+  "player_summary": "Downs brings 3 years of starting exp including high-stakes games and a National Title, brings strong productivity. A versatile defender, he excels in run support with twitchy C.O.D., body control, and open-field tackling to mirror slashing runners and limit perimeter gains, while his elite instincts, read-and-react skills, and awareness allow him to process route combos, deny leverage in off-man coverage, stay sticky in transitions, and disrupt plays near the LOS without frequent false steps or susceptibility to misdirection. In coverage, he shows fluid hips in man, excellent range and burst to cover ground or close, and the ability to limit yards after catch, though he occasionally focuses too much on receivers rather than locating the ball, lacks ideal length for contesting jump balls downfield, and may struggle with larger \"Y\" tight ends. Drawbacks include below-average size/strength , inconsistent wrap-up , a tendency to gamble downhill, and hints of caution that reduce plays on the ball.",
+  "draftbuzz_grades": {
+    "QBR When Targeted": 55.0,
+    "Tackling": 0.71,
+    "Run Defense": 0.96,
+    "Coverage Grade": 1.0,
+    "Zone Coverage": 1.0,
+    "Man/Press": 0.91
+  },
+  "projected_role": null,
+  "ideal_scheme": "Versatile",
+  "alignments": {
+    "Slot": {
+      "2025": 146,
+      "career": 146
+    },
+    "Box": {
+      "2025": 241,
+      "career": 241
+    },
+    "Corner": {
+      "2025": 9,
+      "career": 9
+    },
+    "Deep": {
+      "2025": 240,
+      "career": 240
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": "Freshman Starter at Bama, over Exp options, led team in tackles.\nPunt Return TDs in first two seasons\nExperienced, Successful against top programs\nGreat communicator in the secondary (BR)\nBrings immense juice on each snap (NFL)",
+      "negatives": null
+    },
+    "Tackling/Run Game": {
+      "positives": "Excellent tackler…superb in the open field (WF)\nDiagnoses quickly and breaks downfield fast (WF)\nQuick to close and strike underneath (NFL)\n\"Agent of disruption near LOS\" (NFL)",
+      "negatives": "Size may affect tackling at the NFL Level (WF)\nWraps up instead of levelling (BR)\nPursuit Angles (BR)"
+    },
+    "Coverage Skills": {
+      "positives": "Doesn’t Take False Steps (WF)\nExcellent Range, Natural FS (WF)\nCan Cover TE's and Slot in Man (WF)\nAnticpates routes and mirrors to prevent seperation (WF)\nRare coverage ability as a safety (WF)",
+      "negatives": "Minimal Turnover Production"
+    },
+    "Mental/Discipline Traits": {
+      "positives": "Off the charts instincts (WF)\nElite Read and React abilit y(WF)\nVersatile Skillset, Chesspeice (BR)",
+      "negatives": null
+    },
+    "Athleticism/Phsyical Traits": {
+      "positives": "Phenomenal Speed, extremely fast, tremendous playspeed (WF)\nAthleticism to smoothly transition from zone to man and COD (BR)",
+      "negatives": "Limited size (WF)"
+    }
+  },
+  "media_links": [
+    {
+      "description": "Deep Dive W/ Joe Goodberry",
+      "source": "YT - First Star Media",
+      "url": "https://www.youtube.com/watch?v=1KZN1S6a4rc"
+    },
+    {
+      "description": "Career Highlights",
+      "source": "YT - Big Ten Football",
+      "url": "https://www.youtube.com/watch?v=K0Pzn7YEbMw"
+    },
+    {
+      "description": "Film Breakdown",
+      "source": "YT - Crown Global Media",
+      "url": "https://www.youtube.com/watch?v=ngGoXq6zgFg"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Productive, high-effort safety with three years of starting experience in big games at Alabama and Ohio State. Downs is an alpha who brings immense juice on each snap. He’s at his best when deployed near the line as a box safety or big nickel back. He’ll gamble a little bit as a run defender, but he makes more than enough disruptive plays near the line of scrimmage to make up for it. He’s fluent in man or zone over the first two levels and is rarely fooled by play-action or misdirection. While he’s quick to close and strike underneath, there are hints of caution that prevent him from making more plays on the football. Downs isn’t the biggest, fastest or most versatile player, but he consistently puts his stamp on games."
+        },
+        {
+          "title": "Strengths",
+          "text": "Agent of disruption near the line of scrimmage. | Does not hesitate to step up in run support. | Mirrors slashing runners with twitchy change of direction and body control. | Becomes tackle magnet once the run spills outside the tackle box. | Disciplined in processing stacks, bunches and route combinations. | Denies receiver leverage from off-man coverage. | Explodes laterally to mirror breaks and stays sticky through transitions. | Plays with outstanding awareness and is hard to con with misdirection. | Good instincts and burst to close on crossers and digs. | Quick finisher from short zone and consistently limits YAC against the quick game."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Races off the edge and dives wildly into the backfield. | Downhill appetite can get him trapped in the trash. | Inconsistent wrapping and running through tackles. | Focuses too much on the receiver instead of locating the ball. | Lacks length to defend jump balls downfield. | Has some trouble with the size of “Y” tight ends in man coverage."
+        },
+        {
+          "title": "Sources Tell Us",
+          "text": "“He plays a lot like Budda (Baker) when he was coming out of Washington. Similar mentality and playing style.” – NFC scouting director"
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Caleb Downs is a versatile ballhawk who makes plays all over the field and is capable of making impact plays."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nCaleb Downs was born into football royalty. His father Gary spent time with the Giants, Broncos, and Falcons as a running back, while his uncle Dre Bly carved out a two-time Pro Bowl career at cornerback and collected a Super Bowl ring with the Rams. His older brother Josh currently runs routes for the Colts. The Downs family tree reads like a NFL personnel directory, and Caleb appears destined to add his own chapter to that legacy. Standing 6'0\" and weighing 205 pounds, he arrived at Alabama in 2023 as the consensus No. 1 safety in America, a five-star recruit with a 6.1 Rivals grade and 0.99 rating from 247Sports.\n\nThat true freshman season in Tuscaloosa set the tone for everything that followed. Downs became the first freshman in Alabama history to lead the team in tackles, racking up 107 stops along with 3.5 tackles for loss, two picks, and a forced fumble. The SEC coaches named him Freshman of the Year, and Pro Football Focus gave him first-team All-American honors before he had even attended his first college spring practice as a sophomore. He also found time to take a punt 85 yards to the house. When Nick Saban retired that offseason, Downs entered the transfer portal as its most coveted prize and landed in Columbus.\n\nThe move paid immediate dividends for Ryan Day's program. Downs earned unanimous All-American status in 2024 while helping the Buckeyes capture a national championship, finishing with 82 tackles, two interceptions (including one to seal the Cotton Bowl win over Texas), and six pass breakups. He also housed another punt return, this time a 79-yarder against Indiana that marked Ohio State's first punt return touchdown in a decade. His 2025 campaign brought the Jim Thorpe Award as the nation's best defensive back, a ninth-place finish in Heisman voting, and Big Ten Defensive Player of the Year honors. He departs Columbus with 257 career tackles, six interceptions, 12 pass deflections, and three forced fumbles across three seasons at college football's highest level.\n\nDowns plays the safety position the way it was designed to be played in the modern NFL: with versatility, intelligence, and an ability to handle any assignment a defensive coordinator throws at him. He can drop into a deep half and take away half the field. He can rotate down into the box and play like an extra linebacker against the run. He can follow a tight end across the formation and blanket him in man coverage. That kind of flexibility is invaluable in a league where offenses constantly try to create mismatches through personnel and motion.\n\n\n\nThe football bloodlines show up in his anticipation and feel for the game. He processes information the way his father and uncle did, recognizing concepts before they fully develop and putting himself in position to make plays. His communication skills are refined beyond his years, and he walks into any defensive meeting room ready to contribute from a mental standpoint immediately. He will need some time to adjust to NFL speed like every rookie, but his processing ability and instincts give him a significant head start on the learning curve.\n\n\n\nHere is the deal: Downs projects as a Day One starter who could reasonably compete for Defensive Rookie of the Year honors. His floor is a reliable, versatile starter who makes the players around him better through his preparation and communication. His ceiling is perennial All-Pro caliber and a defensive centerpiece for the next decade. The safety position does not typically command premium draft capital, but Downs is the type of prospect who transcends positional value discussions. He is a football player in the truest sense, and he will make whatever defense selects him significantly better the moment he steps on the field."
+        },
+        {
+          "title": "Overview",
+          "text": "Hyper-versatile defensive back with a built-in homing beacon and incredible instincts against both the run and pass.\n\nDowns is just a football player, man; a safety/nickelback/de facto linebacker, he plays with incredible anticipation in coverage and has a knack for always being around the ball in run support. The brother of Colts receiver Josh Downs and a former five-star prospect, he started his career under Nick Saban at Alabama and then transferred to Ohio State in 2024. He quickly established himself as a leader and impact player for the Buckeyes, proving to be a tackling machine with top-tier ball skills. Downs racked up 257 combined tackles, 16.0 tackles for a loss, 1.5 sacks, six picks, 12 passes defensed, three forced fumbles, and a pair of punt return touchdowns in his three seasons in college—and gave up exactly zero touchdowns in coverage in his time at Ohio State, per PFF.\n\nHis versatility is one of the first things that stands out: He split his time at deep safety, over the slot, in the box, and on the line, and he even took a handful of snaps outside at corner. He is adept at reading the quarterback’s eyes to react quickly and jump into throwing lanes. He keeps his head on a swivel and shows awareness for developing routes, working himself into position to undercut the receiver and get to a spot where he can make a play on the ball. He’s sticky in coverage when playing in man, and he understands spacing in zone, showing a feel for splitting the difference between two different receivers so he can still make a play on either. Downs is lightning quick as a blitzer, exploding through gaps in the line to arrive at the quarterback or ballcarrier. He takes good angles to the ball and chops his feet to gather himself and make the tackle. He’s a good form tackler, staying low and wrapping up. He communicates with teammates and gets them lined up in the right spot. As a bonus, he offers punt return value.\n\nDowns has room to improve his consistency in finishing his tackles; he’ll go for the big hit and occasionally whiff or end up diving at ankles instead of wrapping up. He works to get off blocks but can be sealed away from the play by linemen and tight ends. He doesn’t have a ton of experience in single-high looks, so his ability to play that role could be a question for teams."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Caleb Downs...would be the first safety taken since Jamal Adams went sixth overall back in 2017...a rarity for its safety to go this high...the rare player...on the list of zero weakness players in this year's draft class...not quite the same level of dominant this year as it was the year prior and it was still really darn good. He's extremely experienced. He's played at Alabama for a season and then two years at Ohio State. He's played under Nick Saban...Matt Patricia...played in high level schemes...He can be a factor in the box defending the run. He can be a factor in the box disrupting the quarterback a little bit. He can play the deep middle portion of the field as well. Versatility. He is a physical safety as well. Sets the tone.\n\nCaleb Banks's draft stock affected by him only playing about two or three games a season... I saw he went at the end of the first, in your first Mock draft, but is that his ceiling or where else could he land... The ceiling for Caleb Banks is probably higher than you feel like it is right now. I think it's as high as around the 15th pick in the draft. I think though he probably settles in somewhere in the final 10 picks of the first round... Caleb Banks coming off the Senior Bowl reminded everybody of just how dominant of a player he can be. 6 6 3 30 pounds, 35 inch arms. He was excellent during some of the past rush drills during the Senior bowl practices... As you mentioned, three games played last year, small sample size. However, we do have five years of college ball from Caleb Banks. He has overwhelming physical traits. I think scouts are still turning to the site for just how much field for the game he might have on a snap in snap out basis. But it would not surprise me if we hear his name called somewhere in the range of picks 23 to 32... I'm thinking 30 to Denver... I would've been great if he'd had the whole season, then you would've been talking almost guaranteed top 15 overall. But with the injury this year, obviously getting back on the field at the senior old practice, I still think late first round for him. But it, it could go a little higher. It's gonna be a, he's gonna be one of those wild cards in the draft. Caleb Banks will be, those."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nDowns became the first Alabama freshman to lead the team in tackles in 2023 and Ohio State's 39th unanimous All-American in 2024. HeÃ•s an interchangeable safety who plays in the box, over the slot and deep. He excels at matching up with tight ends, too. Downs closes and recovers well in coverage, with the ability to jump routes. He can also limit production after the catch and fly down the alley in run support. Downs has good stopping power, recording 7.5 tackles for loss in 2024. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Caleb Downs is the single best prospect for the 2026 draft cycle. With his experience in Matt Patricia's defense, he's going to hit the ground running for whatever NFL team drafts him.\n\nDowns is a former 5—star recruit and transfer from Alabama after the 2023 season.\n\nHe was tapped as a unanimous All—American, Big Ten Conference's Tatum—Woodson Defensive Back of the Year and all—Big Ten in 2024 after being named the Shaun Alexander National Freshman of the Year after his 2023 campaign."
+        },
+        {
+          "title": "Positives",
+          "text": "— Understands how best to use his abilities with body positioning and physicality.\n\n— Sees route concepts unfold and matches them with the quarterback's eyes to break on routes.\n\n— A great communicator in the secondary when it comes to passing of routes and lining up the defense.\n\n— Versatile skillset to succeed wherever a defense needs him, making him the ultimate chess piece.\n\n— Athleticism to smoothly transition from zone to running in man coverage and changing direction."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Looking to wrap up at speed when tackling instead of lowering the shoulder for a big hit.\n\n— Adjusting pursuit angles and running through tackles to not fall to the ball carrier's ankles.\n\n— Show more from a single—high skillset with speed and range moving backward. The instincts are there, but seeing more proof of concept would help."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Downs was a star recruit who landed at Alabama, and despite a lot of more experienced talent on the roster, Downs became a freshman starter for the Crimson Tide. Downs was a freshman sensation, leading the team in tackles and all over the field for the Crimson Tide. He totaled 107 tackles with 3.5 tackles for a loss, one forced fumble, two interceptions, and three passes defended. After the season, head coach Nick Saban retired, and Downs transferred from Alabama to Ohio State. In 2024, Downs had 81 tackles with six passes broken up, one forced fumble, and two interceptions while helping the Buckeyes win a National Championship. In each season, Downs had a punt returned for a touchdown with long returns of 85 and 79 yards.\nIn 2025, Downs played well for Ohio State. Downs totaled 68 tackles with one pass batted, one sack, two forced fumbles, and two interceptions. Even though the Buckeyes lost and were eliminated, Downs played really well against Miami in the college football playoff.\nIn the passing-driven NFL, there are always teams that are looking for problem solvers in the secondary, and that is what Downs brings to his defense. With off-the-charts instincts, Downs is all over the field and a problem for offenses as he has an innate ability to sniff out plays and be around the ball to keep plays from producing the intended yardage for an offense. Downs is an extremely smart defender who doesnâ€™t take false steps in coverage, knows when to fire downhill, and has elite read-and-react skills. With his natural ability to snuff out and disrupt, Downs is an elite defender for the back end of his defense.\nIn pass coverage, Downs has excellent range and is natural as a deep free safety. He can lock down the deep part of the field and cover a ton of ground. With phenomenal speed, Downs can get to the sideline from the middle of the field, and he explodes to eat up ground in a blur. Downs is extremely fast, and his play speed is tremendous. Downs will be valuable to shut down the deep part of the field from speed receivers and will be valuable to help his cornerbacks over the top. On top of being dynamic in zone, Downs can line up and play man coverage on tight ends and slot receivers. He shows fluid movement to flip his hips and run while doing a very good job of running the route to prevent separation. Downs is dynamic in coverage and has rare cover ability for a safety.\nAs a run defender, Downs is an excellent tackler and is superb at making tackles in the open field. He diagnoses, runs quickly, and flies downfield to cut the legs out from underneath backs. Downs is dynamic in defending perimeter runs and screens. The only real knock on Downs is that he is not big, and his size is perhaps a little below average for tackling at the pro level. Downs could add strength in a pro strength and conditioning program.\nDowns also showed an ability to return kicks in college, but his pro team wonâ€™t use him for that and will protect their asset from unnecessary hits or injury risk by returning punts on special teams.\nDowns looks like a stud for the NFL with the ability to be one of the best safeties in the NFL. He could be a worthy high first-round pick, and few safeties grade out that high. Downs has that potential."
+        },
+        {
+          "title": "Strengths",
+          "text": "Excellent instincts\nVery smart\nElite read-and-react skills\nGood tackler\nSuperb open field tackler\nFast\nEats up ground in a hurry\nFlies downhill\nDoesnâ€™t take false steps\nCan play man coverage on slot receivers, tight ends\nNatural zone coverage safety\nCan cover the deep part of the field as a free safety\nCovers up receivers well in zone\nCapable strong safety in the short part of the field\nFunctions well as the 8th man in the box\nAthletic ability\nTracks the ball well\nReady to contribute immediately\nExperienced and successful against good college programs"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Not big, could stand to add strenght"
+        },
+        {
+          "title": "Player Comp",
+          "text": "Xavier McKinney. In terms of style of play, Downs reminds me of the versatile McKinney. McKinney has been a superb safety as a run defender, covers well in pass coverage, and makes big plays. I could see Downs being a similar pro."
+        }
+      ]
+    },
+    {
+      "source": "ESPN",
+      "sections": [
+        {
+          "title": "Analysis",
+          "text": "Downs became the first Alabama freshman to lead the team in tackles in 2023 and Ohio State's 39th unanimous All-American in 2024. HeÃ•s an interchangeable safety who plays in the box, over the slot and deep. He excels at matching up with tight ends, too. Downs closes and recovers well in coverage, with the ability to jump routes. He can also limit production after the catch and fly down the alley in run support. Downs has good stopping power, recording 7.5 tackles for loss in 2024. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Hyper-versatile defensive back with a built-in homing beacon and incredible instincts against both the run and pass.\n\nDowns is just a football player, man; a safety/nickelback/de facto linebacker, he plays with incredible anticipation in coverage and has a knack for always being around the ball in run support. The brother of Colts receiver Josh Downs and a former five-star prospect, he started his career under Nick Saban at Alabama and then transferred to Ohio State in 2024. He quickly established himself as a leader and impact player for the Buckeyes, proving to be a tackling machine with top-tier ball skills. Downs racked up 257 combined tackles, 16.0 tackles for a loss, 1.5 sacks, six picks, 12 passes defensed, three forced fumbles, and a pair of punt return touchdowns in his three seasons in college—and gave up exactly zero touchdowns in coverage in his time at Ohio State, per PFF.\n\nHis versatility is one of the first things that stands out: He split his time at deep safety, over the slot, in the box, and on the line, and he even took a handful of snaps outside at corner. He is adept at reading the quarterback’s eyes to react quickly and jump into throwing lanes. He keeps his head on a swivel and shows awareness for developing routes, working himself into position to undercut the receiver and get to a spot where he can make a play on the ball. He’s sticky in coverage when playing in man, and he understands spacing in zone, showing a feel for splitting the difference between two different receivers so he can still make a play on either. Downs is lightning quick as a blitzer, exploding through gaps in the line to arrive at the quarterback or ballcarrier. He takes good angles to the ball and chops his feet to gather himself and make the tackle. He’s a good form tackler, staying low and wrapping up. He communicates with teammates and gets them lined up in the right spot. As a bonus, he offers punt return value.\n\nDowns has room to improve his consistency in finishing his tackles; he’ll go for the big hit and occasionally whiff or end up diving at ankles instead of wrapping up. He works to get off blocks but can be sealed away from the play by linemen and tight ends. He doesn’t have a ton of experience in single-high looks, so his ability to play that role could be a question for teams."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Hyper-versatile defensive back"
+        },
+        {
+          "title": "Traits",
+          "text": "Rare Versatility\nInstinctual Playmaking"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former five-star recruit out of Hoschton, Georgia. Was the no. 1 safety and the no. 7 overall player in the 2023 class and also earned USA Today Defensive Football Player of the Year honors as a senior in high school. Began his college career at Alabama in 2023, where he was named SEC Freshman of the Year and led the team in tackles (by 40)—the first freshman to do so at Alabama. Transferred to Ohio State in 2024. Was named Jim Thorpe Award winner (nation’s top defensive back), Big Ten Defensive Player of the Year, Big Ten Defensive Back of the Year, first-team All–Big Ten, and a unanimous first-team All-American for two seasons in a row. Also finished ninth in Heisman Trophy voting."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "In high school, he would spend hours at his kitchen table watching videos of former star NFL safeties such as Brian Dawkins, Charles Woodson, and Ed Reed. “I really wanted to figure out what it meant to be great.”\nHe is the younger brother of Indianapolis Colts WR Josh Downs. His father, Gary, played running back for NC State and was a third-round draft pick for the Giants in 1994. He also played for the Broncos and Falcons.\nDowns’s uncle is retired All-Pro corner Dré Bly, who’s an assistant defensive backs coach for the Jets.\nPregame routine consists of gospel music, a sermon, and YouTube videos.\nWore no. 24 as a kid because his favorite athlete was Kobe Bryant.\nStarted drawing up plays with football action figures when he was 4 years old and started watching film when he was 8.\nHosts a YouTube show with his brother."
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF MINKAH FITZPATRICK"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.47,
+    "prospect_grade_indicator": "Will Become Good Starter Within Two Years",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Jalen Pitre",
+    "eligibility": "Junior",
+    "nfl_rank": 10,
+    "nfl_pos_rank": 1
+  },
+  "bleacher_profile": {
+    "grade": 9.3,
+    "grade_indicator": null,
+    "overall_rank": 1,
+    "position_rank": null,
+    "pro_comparison": "Eric Berry",
+    "projected_round": "1st Round"
+  },
+  "walter_profile": {
+    "player_comp": "Xavier McKinney. In terms of style of play, Downs reminds me of the versatile McKinney. McKinney has been a superb safety as a run defender, covers well in pass coverage, and makes big plays. I could see Downs being a similar pro."
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF MINKAH FITZPATRICK",
+    "traits": "Rare Versatility\nInstinctual Playmaking"
+  },
+  "injury_history": []
+}

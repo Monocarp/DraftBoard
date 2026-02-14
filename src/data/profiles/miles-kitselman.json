@@ -1,0 +1,390 @@
+{
+  "name": "Miles Kitselman",
+  "slug": "miles-kitselman",
+  "overview": {
+    "POS": "TE",
+    "College": "TENNESSEE",
+    "Height": "6' 5\"",
+    "Weight": "255",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "27",
+    "Snaps": "1189",
+    "24/7 Sports": null,
+    "ESPN": "TBD",
+    "Draft Buzz": "80.0 / 100",
+    "NFL.com": "TBD",
+    "BR": "TBD",
+    "Gridiron": "TBD"
+  },
+  "position": "TE",
+  "college": "TENNESSEE",
+  "height": "6' 5\"",
+  "weight": "255",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 27,
+  "snaps": 1189,
+  "site_ratings": {
+    "24/7 Sports": null,
+    "ESPN": "TBD",
+    "Draft Buzz": "80.0 / 100",
+    "NFL.com": "TBD",
+    "BR": "TBD",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "62.8",
+      "percentile": 0.2
+    },
+    "2024 Grade": {
+      "value": "76.6",
+      "percentile": 0.6
+    },
+    "2023 Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "Receiving Grade": {
+      "value": "62.9",
+      "percentile": 0.2
+    },
+    "Drop %": {
+      "value": "15.6",
+      "percentile": 0.0
+    },
+    "Cont. Catch Ratio": {
+      "value": "25",
+      "percentile": 0.05
+    },
+    "Yards Per Route Run": {
+      "value": "1.28",
+      "percentile": 0.3
+    },
+    "YAC Per Reception": {
+      "value": "5.4",
+      "percentile": 0.5
+    },
+    "Missed Tkles Forced": {
+      "value": "0",
+      "percentile": 0.05
+    },
+    "Pass Block Grade": {
+      "value": "68.3",
+      "percentile": 0.5
+    },
+    "Run Block Grade": {
+      "value": "57.6",
+      "percentile": 0.5
+    },
+    "Touchdowns": {
+      "value": "2",
+      "percentile": 0.25
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 144.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 144.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "6TH",
+    "Bleacher": "TBD"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "0",
+    "Bleacher": "TBD",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 81.1,
+    "Hands": 0.62,
+    "Short Receiving": 0.78,
+    "Intermediate Routes": 0.84,
+    "Deep Threat": 0.67,
+    "Blocking": 0.66
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot Snaps": {
+      "2025": 93,
+      "career": null
+    },
+    "Inline Snaps": {
+      "2025": 152,
+      "career": null
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nMiles Kitselman, the 6-foot-5, 255-pound pass catcher spent his high school days playing offensive tackle and defensive end at Lyndon High School before his father and uncle convinced him to try his hand at tight end. That position change happened at Hutchinson Community College, where he played just three games during the 2021 season before Alabama came calling with a late scholarship offer for the 2022 recruiting class.\n\nKitselman's time in Tuscaloosa was defined by patience rather than production. He caught two passes for 18 yards in his debut against Utah State and then essentially vanished from the offensive game plan, appearing in six games as a sophomore and all 13 as a junior without recording a single statistic during that 2023 campaign. When the opportunity came to transfer to Tennessee for the 2024 season, Kitselman seized it with both hands. Despite being ranked just the 50th-best tight end in the transfer portal by 247Sports, he outperformed four-star addition Holden Staes and locked down the starting job immediately.\n\nThe 2024 campaign validated every bit of that decision. Kitselman started all 13 games for Tennessee's College Football Playoff squad, catching 22 passes for 301 yards and four touchdowns while adding a rushing score against Georgia from a fullback alignment. He was named to the 2025 Senior Bowl Top 300 List and earned a spot on the 2023 Fall SEC Academic Honor Roll. An NCAA waiver granted him a fifth year of eligibility, allowing him to return to Knoxville for 2025, where he added 26 receptions for 253 yards and two more scores before a lower-body injury ended his regular season against New Mexico State in November.\n\nKitselman profiles as a TE2 in the NFL who can develop into a legitimate starter for organizations that prioritize the run game and value reliability over explosiveness. His willingness to get his nose dirty in the blocking game separates him from the pass-catching specialists who dominate modern tight end conversations, and his leadership qualities will resonate with coaching staffs looking to establish culture.\n\n\n\nHere's the deal with Kitselman: he's not going to win your fantasy league or show up on highlight reels, but he's going to show up every single Sunday and do exactly what's asked of him. His receiving limitations are real, and the ball security concerns from 2025 need to be monitored, but one rough patch after years of clean hands doesn't define a player. The physical tools are there for a productive NFL career if he lands in a system that utilizes multiple tight end sets and values in-line blocking.\n\n\n\nThe ideal landing spot pairs him with a dominant receiving tight end where Kitselman can operate as the complement rather than the featured weapon. He has experience lining up in-line, from the slot, and as an H-back, which gives coordinators flexibility in how they deploy him. His game translates best to gap-scheme offenses that want to run the ball downhill and use play-action to create easy completions over the middle. He's a Day 3 tight end who could outperform his draft slot with the right opportunity."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "injury_history": []
+}

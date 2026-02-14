@@ -1,0 +1,450 @@
+{
+  "name": "Chandler Rivers",
+  "slug": "chandler-rivers",
+  "overview": {
+    "POS": "CB",
+    "College": "Duke",
+    "Height": "5' 10\"",
+    "Weight": "185",
+    "Age": "22.3",
+    "DOB": "2003-10-17 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "51",
+    "Snaps": "3113",
+    "24/7 Sports": "86",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.6 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.8",
+    "Gridiron": "TBD"
+  },
+  "position": "CB",
+  "college": "Duke",
+  "height": "5' 10\"",
+  "weight": "185",
+  "age": 22.3,
+  "dob": "2003-10-17 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 51,
+  "snaps": 3113,
+  "site_ratings": {
+    "24/7 Sports": "86",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.6 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.8",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "78.6",
+      "percentile": 0.412
+    },
+    "24 Grade": {
+      "value": "90.7",
+      "percentile": 1.0
+    },
+    "23 Grade": {
+      "value": "77.6",
+      "percentile": 0.833
+    },
+    "Coverage Grade": {
+      "value": "79.8",
+      "percentile": 0.5
+    },
+    "Passer Rating": {
+      "value": "86.2",
+      "percentile": 0.222
+    },
+    "Interceptions": {
+      "value": "2",
+      "percentile": 0.667
+    },
+    "Forced Incom.": {
+      "value": "10",
+      "percentile": 0.778
+    },
+    "Forced Inc. Rate": {
+      "value": "16.1",
+      "percentile": 0.444
+    },
+    "Dropped Picks": {
+      "value": "1",
+      "percentile": 0.667
+    },
+    "Completion %": {
+      "value": "71",
+      "percentile": 0.056
+    },
+    "Man Coverage": {
+      "value": "74.2",
+      "percentile": 0.611
+    },
+    "Zone Coverage": {
+      "value": "73.9",
+      "percentile": 0.444
+    },
+    "% In Man": {
+      "value": "37.2",
+      "percentile": 0.722
+    },
+    "% In Zone": {
+      "value": "53.2",
+      "percentile": 0.222
+    },
+    "Coverage Stops": {
+      "value": "10",
+      "percentile": 0.722
+    },
+    "Tackling": {
+      "value": "67.9",
+      "percentile": 0.306
+    },
+    "Missed Tackles": {
+      "value": "12",
+      "percentile": 0.056
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Arm Length": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Hand Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Speed": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Explosive": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Agility": {
+      "result": "TBD",
+      "grade": null
+    },
+    "10 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "20 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "40 Time": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Vertical": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Broad": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "3 Cone": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Bench": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Height": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Weight": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Gridiron": {
+      "result": "TBD",
+      "grade": "TBD"
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 82.4,
+      "positional_rank": "9.5"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 67.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 88.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 34.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 91.0,
+      "positional_rank": "14"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 132.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "3RD",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Max MELTON",
+    "Bleacher": "Skinny Trent McDuffie",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR Allowed": 79.1,
+    "Tackling": 0.69,
+    "Run Defense": 0.7,
+    "Cov Grade": 0.8,
+    "Zone Coverage": 0.76,
+    "Man/Press": 0.78
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 21,
+      "career": 46
+    },
+    "Slot": {
+      "2025": 155,
+      "career": 487
+    },
+    "Corner": {
+      "2025": 591,
+      "career": 1853
+    },
+    "Box": {
+      "2025": 64,
+      "career": 145
+    },
+    "Deep": {
+      "2025": 29,
+      "career": 46
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Coverage Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Mental/Discipline Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nChandler Rivers capped off his Duke career with First Team All-ACC honors in 2024, recording 52 total tackles, 7.5 tackles for loss, three interceptions, and nine pass breakups. His junior season included a pick-six against Florida State in Week 8 - his second straight season with an interception return touchdown against the Seminoles - along with crucial interceptions against SMU and Miami. The 5'10\", 180-pound cornerback from Beaumont, Texas established himself as a defensive mainstay over three seasons in Durham.\n\nRivers' college career spanned 26 games with 19 starts, accumulating 110 tackles, 5.0 TFL, two interceptions, and 13 pass breakups. After enrolling early in January 2022, he made an immediate impact as a freshman, earning Honorable Mention Freshman All-America honors from College Football News while appearing in all 13 games. His sophomore campaign saw him record a career-high 11 tackles against Clemson and earn Birmingham Bowl MVP honors after notching 2.0 TFL and three pass breakups against Troy.\n\nPrior to Duke, Rivers was a standout multi-sport athlete at Beaumont United under coach Marcus Graham. A three-star prospect across major recruiting services, he was ranked as the No. 51 cornerback nationally by ESPN.com. His high school career included over 307 tackles, 25 interceptions, and 40 pass breakups on defense, while also contributing offensively with 85 receptions for 1,715+ yards. Beyond football, Rivers earned four letters in track & field, finishing second in the state in long jump, and was part of Beaumont United's 2021 5A Texas state championship basketball team.\n\nSCOUTING REPORT: SUMMARY\nRivers could be an immediate contributor as a nickel corner with the athleticism and football IQ to develop into a potential starter. His combination of short-area quickness, ball skills, and route recognition ability makes him an ideal fit for zone-heavy schemes that allow him to read and react. Teams running pattern-match coverages will particularly value his ability to process route combinations on the fly.\n\nThe lack of prototypical size will likely push him inside at the next level, but his experience playing outside against ACC competition proves he can hang with bigger receivers in a pinch. His special teams background and competitive toughness will earn him an active roster spot early while he develops into a defensive role. Scheme versatility and football character make him an attractive Day 2 target.\n\nRivers reminds me of Kenny Moore coming out of Valdosta State - another undersized but instinctive corner who developed into one of the NFL's better nickels. Like Moore, Rivers compensates for his lack of length with exceptional processing speed and competitive toughness. His ceiling will ultimately be determined by how well he holds up physically against NFL receivers, but the floor is solid backup corner with core special teams value."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Chandler Rivers jumps off the screen with his zone prowess and ability to read quarterbacks. The way he sees the field and uncovers route concepts make him a dangerous defender to target for any offense.\n\nRivers was a 3—star recruit who has played all four of his collegiate seasons at Duke University. Entering his senior season, Rivers compiled 164 tackles, 12.5 tackles for loss, one and a half sacks, five interceptions, two forced fumbles, one fumble recovery, and 21 pass breakups in 39 games with 32 starts.\n\nHe's a highly experienced cornerback who showcases that intelligence and comfort every time he steps on the field."
+        },
+        {
+          "title": "Positives",
+          "text": "— Rivers excels in zone coverage where he can see the quarterback and read the field. His feel for space and ability to jump routes with anticipation can spark a defense.\n\n— His versatility to play in zone and man with proper footwork and technique pairs well with his inside and outside positional flexability.\n\n— He possess a natural feel for where the football is going. Those instincts help create incompletions and turnovers for the defense.\n\n— Hip and ankle flexability allow him to turn and run to carry receivers downfield. He sinks his hips to decelerate and change direction quickly, too.\n\n— Plays with an aggressive mindset when triggering on quick throws to the flat. He doesn't avoid tackling despite his smaller stature at the position (5'10\", 185)."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Rivers isn't afraid to man up against bigger tight ends and receivers, but he needs to time his hands and jumps more consistently at the catch point to disrupt throws.\n\n— He tends to be a touch late opening his gate to open up with receivers who stack him vertically. His recovery speed to close that space is lacking.\n\n— While he doesn't avoid the run game, he could bring the same mentality downhill that he does blowing up screens. Improving his technique to square and wrap up ball carriers in space will help his all—around impact."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.8,
+    "grade_indicator": null,
+    "overall_rank": 34,
+    "position_rank": null,
+    "pro_comparison": "Skinny Trent McDuffie",
+    "projected_round": null
+  },
+  "injury_history": []
+}

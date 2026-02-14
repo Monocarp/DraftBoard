@@ -1,0 +1,431 @@
+{
+  "name": "Albert Regis",
+  "slug": "albert-regis",
+  "overview": {
+    "POS": "DT",
+    "College": "Texas A&M",
+    "Height": "6' 1\"",
+    "Weight": "317",
+    "Age": "22.8",
+    "DOB": "2003-05-17 00:00:00",
+    "Year": "G",
+    "Prj. Rd": null,
+    "Games": "51",
+    "Snaps": "1505",
+    "24/7 Sports": "90",
+    "ESPN": "TBD",
+    "Draft Buzz": "81.8 / 100",
+    "NFL.com": null,
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "position": "DT",
+  "college": "Texas A&M",
+  "height": "6' 1\"",
+  "weight": "317",
+  "age": 22.8,
+  "dob": "2003-05-17 00:00:00",
+  "year": "G",
+  "projected_round": null,
+  "games": 51,
+  "snaps": 1505,
+  "site_ratings": {
+    "24/7 Sports": "90",
+    "ESPN": "TBD",
+    "Draft Buzz": "81.8 / 100",
+    "NFL.com": null,
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "72.8",
+      "percentile": 0.5
+    },
+    "24 Grade": {
+      "value": "74.5",
+      "percentile": 0.5
+    },
+    "23 Grade": {
+      "value": "64",
+      "percentile": 0.222
+    },
+    "Pass Rush Grade": {
+      "value": "58",
+      "percentile": 0.056
+    },
+    "True Pass Rush": {
+      "value": "64.1",
+      "percentile": 0.444
+    },
+    "PR Win Rate": {
+      "value": "4.2",
+      "percentile": 0.194
+    },
+    "Run Def. Grade": {
+      "value": "83.1",
+      "percentile": 0.722
+    },
+    "Run Stop %": {
+      "value": "9",
+      "percentile": 0.722
+    },
+    "Sacks": {
+      "value": "1",
+      "percentile": 0.472
+    },
+    "Hits": {
+      "value": "0",
+      "percentile": 0.167
+    },
+    "Hurries": {
+      "value": "12",
+      "percentile": 0.528
+    },
+    "Batted Balls": {
+      "value": "2",
+      "percentile": 0.889
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.444
+    },
+    "Tackling Grade": {
+      "value": "61.9",
+      "percentile": 0.556
+    },
+    "Missed Tackle Rate": {
+      "value": "9.8",
+      "percentile": 0.694
+    },
+    "Total Pressures": {
+      "value": "13",
+      "percentile": 0.417
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 153.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 117.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 180.0,
+      "positional_rank": "42"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 162.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "5TH",
+    "Bleacher": "TBD"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "0",
+    "Bleacher": "TBD",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.67,
+    "Pass Rush": 0.85,
+    "Run Defense": 0.63
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 65,
+      "career": 184
+    },
+    "B GAP": {
+      "2025": 397,
+      "career": 927
+    },
+    "Over Tackle": {
+      "2025": 4,
+      "career": 65
+    },
+    "Outside Tkl": {
+      "2025": 1,
+      "career": 47
+    },
+    "Off Ball": {
+      "2025": 2,
+      "career": 7
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nAlbert Regis arrived at Texas A&M as a four-star recruit from La Porte High School, where he showcased the kind of versatility that catches your attention on film. Playing both sides of the ball, Regis earned first-team all-district honors at tight end as a junior and was named District 21-6A Sophomore of the Year, displaying the athleticism that would eventually translate to the defensive interior. His high school track background (11.53 in the 100 meters as a sophomore) hinted at lateral quickness you don't typically find in a 300-plus-pound frame. After a redshirt season in 2021, Regis made his presence felt immediately as a freshman in 2022, appearing in 11 games with a start against Miami and earning the team's Most Improved Defender award with 16 tackles and a pass breakup.\n\nHis college career built steadily over four seasons, accumulating 1,505 offensive snaps across 51 games for the Aggies. As a sophomore in 2023, Regis played in 12 games and started the Texas Bowl against Oklahoma State, recording 15 tackles including 1.5 for loss against Arkansas. The real breakout came during his junior year in 2024, when he started all 13 games at defensive tackle and finished third among SEC defensive linemen with six pass breakups, adding 36 tackles and 3.0 tackles for loss. Pro Football Focus recognized his dominance against the run with an 84.2 grade that ranked fifth-highest in the conference. His senior season in 2025 saw Regis anchor the Aggies' interior defense as their primary nose tackle across 13 starts, posting 49 tackles (18 solo), three tackles for loss, two sacks, and three pass breakups while maintaining his elite-level run defense.\n\nOff the field, Regis has been just as active. Named to the 2024 SEC Community Service Team, he dedicated over 40 hours at Twin City Mission in Bryan and participated in gift distribution to pediatric cancer patients at MD Anderson Hospital in Houston. He's also spent time speaking to elementary schools about the importance of education and effort, earning the team's Academic Excellence Award at the 2024 banquet.\n\nSCOUTING REPORT: SUMMARY\nPut the tape on and you see a classic space-eating nose tackle who can anchor a run defense but won't give you much as a pass rusher. Regis profiles as a rotational interior defender who can contribute immediately in run-stuffing situations, particularly for teams running odd fronts where they need a big body to occupy blockers and keep linebackers clean. His elite run defense grades and consistent motor translate to early special teams value while he develops into a more complete player. The concern is whether he can ever become more than a two-down thumper given his height disadvantage and limited pass rush development after four years of Power Four football.\n\nHere's the deal: teams looking for immediate help against physical running games will find value in what Regis offers. His ability to hold the point, pursue outside his gap, and disrupt passing lanes from the interior gives him a defined role in base packages and short-yardage situations. The athleticism from his high school days still flashes in his lateral movement and chase ability, suggesting there's untapped potential if a defensive line coach can refine his hand usage and expand his pass rush repertoire. He's the kind of player who can eat 20-25 snaps per game and do exactly what you ask without beating himself.\n\nThe path forward requires significant development as a pass rusher if Regis wants to become a three-down player. His strength and motor give him the foundation, but without improved hand technique, better initial burst, and a more diverse rush plan, he'll struggle to justify staying on the field in passing situations. Teams that value run defense and cultural fit will appreciate what he brings, but his ceiling appears limited unless he makes substantial technical improvements. He's a fifth-round investment with the character and work ethic to maximize his physical tools, offering solid depth value for a team that needs interior reinforcements and isn't expecting him to be a primary pass rush threat."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "injury_history": []
+}

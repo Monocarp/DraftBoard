@@ -1,0 +1,414 @@
+{
+  "name": "Elijah Sarratt",
+  "slug": "elijah-sarratt",
+  "overview": {
+    "POS": "WR",
+    "College": "Indiana",
+    "Height": "6' 2\"",
+    "Weight": "213",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "51",
+    "Snaps": "2714",
+    "24/7 Sports": "0",
+    "ESPN": "78",
+    "Draft Buzz": "85.6 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.5",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "Indiana",
+  "height": "6' 2\"",
+  "weight": "213",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 51,
+  "snaps": 2714,
+  "site_ratings": {
+    "24/7 Sports": "0",
+    "ESPN": "78",
+    "Draft Buzz": "85.6 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.5",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "85.1",
+      "percentile": 0.789
+    },
+    "2024 Grade": {
+      "value": "80",
+      "percentile": 0.842
+    },
+    "2023 Grade": {
+      "value": "89.9",
+      "percentile": 1.0
+    },
+    "Receiving Grade": {
+      "value": "85.9",
+      "percentile": 0.763
+    },
+    "Yards/ Routes Run": {
+      "value": "2.52",
+      "percentile": 0.579
+    },
+    "Drop %": {
+      "value": "5.2",
+      "percentile": 0.211
+    },
+    "Contested Catch": {
+      "value": "39.1",
+      "percentile": 0.105
+    },
+    "Grade vs Man": {
+      "value": "88.4",
+      "percentile": 0.895
+    },
+    "YAC/Reception": {
+      "value": "5.2",
+      "percentile": 0.368
+    },
+    "Missed Tkls Forced": {
+      "value": "8",
+      "percentile": 0.316
+    },
+    "ADOT": {
+      "value": "9.4",
+      "percentile": 0.289
+    },
+    "Deep Yards": {
+      "value": "146",
+      "percentile": 0.158
+    },
+    "Touchdowns": {
+      "value": "13",
+      "percentile": 0.974
+    },
+    "Elusiveness": {
+      "value": null,
+      "percentile": null
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 67.75,
+      "positional_rank": "13.2"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 65.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 80.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 65.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 62.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 47.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 46.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 76.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 63.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 63.0,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - MID",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Tre HARRIS",
+    "Bleacher": "Keenan Allen",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 133.3,
+    "Hands": 0.83,
+    "Short Receiving": 0.94,
+    "Med Routes": 0.98,
+    "Deep Threat": 0.99,
+    "Blocking": 0.64
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 43,
+      "career": 126
+    },
+    "Wide": {
+      "2025": 264,
+      "career": 970
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nElijah Sarratt played his prep ball at St. Frances Academy in Baltimore under head coach Messay Hailemariam, earning all-state honors as a defensive back during his junior year at Colonial Forge before transferring. Standing 6'2\" and weighing 209 pounds, Sarratt began his collegiate career at FCS Saint Francis (Pa.) in 2022, where he wasted no time making an impact. As a true freshman, he hauled in 42 catches for 700 yards and tied the program's single-season record with 13 receiving touchdowns, earning FCS Freshman All-America and first-team All-Northeast Conference recognition.\n\nThe production only grew from there. Sarratt transferred to James Madison for the 2023 season and flourished in the Sun Belt, posting 82 receptions for 1,191 yards and eight touchdowns while earning first-team all-conference honors. His 1,191 yards ranked 11th nationally that year. When Curt Cignetti left JMU for Indiana, Sarratt followed, and the decision paid dividends for both parties. During his first season in Bloomington in 2024, he caught 53 passes for 957 yards and eight scores, including a record-setting 165-yard performance against Purdue in the Old Oaken Bucket rivalry game. The Hoosiers finished 11-2 and reached the College Football Playoff. Sarratt earned third-team All-Big Ten honors from both the coaches and media panels, with the Associated Press tabbing him second-team.\n\nHis 2025 senior campaign added another chapter to an already impressive resume. Despite missing two games due to injury, Sarratt caught 52 passes for 802 yards and 15 touchdowns across 13 appearances, tying for second in Indiana single-season history for receiving scores. He delivered in the biggest moments, catching game-winning touchdowns on the road against both Iowa and Oregon, then posting seven catches, 75 yards, and two scores against Oregon in the Peach Bowl semifinal. For his career across three programs and four seasons, Sarratt totaled 239 receptions for 3,649 yards and 44 touchdowns, leading all active FBS receivers in career touchdown catches. His brother Josh currently plays safety at James Madison.\n\nWhen you watch Sarratt work, you see a receiver who understands exactly what he is and maximizes every tool in his arsenal. He is never going to be the guy who takes a slant 70 yards to the house or runs past coverage down the boundary. What he will do is catch everything thrown his way, find the soft spot in zone coverage on third-and-7, and come down with contested balls in the red zone when the quarterback needs a bailout option. That last part matters more than people realize. Forty-four career receiving touchdowns leading all active FBS receivers tells you he knows how to finish drives. His 15 scores in 2025 alone, despite missing two games, shows a player who becomes even more dangerous inside the 20.\n\n\n\nThe scheme fit matters here. Sarratt belongs in an offense that emphasizes timing and precision, one that features back-shoulder throws, dig routes, and concepts designed to attack the middle of the field. His value spikes in the red zone where his body control, strong hands, and ability to box out defenders at the catch point make him a go-to target when real estate shrinks. He can work as a traditional X receiver in systems that value contested-catch ability over speed separation, though some teams may view him as a big slot option depending on how he tests this spring. The lack of explosiveness will limit his role in offenses built around vertical shots and after-catch production, but coordinators who want a reliable chain-mover and touchdown scorer with size and toughness will find plenty to like.\n\n\n\nHere is the deal: Sarratt profiles as a high-floor receiver with legitimate starter potential who should contribute from day one in the right system. His ceiling depends on usage and role rather than raw athletic upside, which makes landing spot critical. He carries some Jakobi Meyers in his game, winning through detail, toughness, and consistency rather than flash. That style translates to the NFL for receivers who understand their identity and play to their strengths. Sarratt has done exactly that at every stop of his career."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Elijah Sarratt has emerged as a high—volume target and late—game playmaker to become a difference—maker in the NFL.\n\nSarratt's game combines strong hands, route—running, and an infectious desire to make impactful plays when his team needs them.\n\nSarratt is a well—traveled pass catcher who began his career at St. Francis, transferred to JMU, and finished his career with Indiana. He is a former 0—star recruit in the 2022 class."
+        },
+        {
+          "title": "Positives",
+          "text": "— Controlled and crafty route running. Sarratt specializes in remaining under control at the breaking point of his routes. His salesmanship is believable to push defensive backs vertically. He forces DBs to open their hips (gate) before intended, creating more segmented coverage reps.\n\n— The Indiana transfer will excel on in—breaking routes at the NFL level. Whether shallow crossers, deep overs, slants, or dig routes (dagger concept), Sarratt is comfortable working across the field. He does a good job attacking inside leverage on these routes to stack the DB and place them out of phase and in trail position.\n\n— Sarratt is comfortable playing through contact during his routes. Good use of hands (UOH) to dislodge the DB's punches to prevent latching and timing disruption. Effectively fighting through early contact in his reps will translate well to the NFL.\n\n— The Hoosiers' top receiver displays the requisite body control to uncover from man coverage at any moment. Sarratt is a threat on back shoulder and slot fades. The combination of strong hands, patience, and body control is key to his success. He knows how to separate late in reps as the ball arrives, especially in the red zone.\n\n— Reliability in late—game situations has become Sarratt's calling card. Against both Iowa and Oregon this season on the road, he caught the game—winning touchdowns. Even on the final offensive drives, he was pivotal to their success, driving down the field and into scoring range. Mentally, he relishes the big moments with the game on the line."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Lacks explosiveness and top—end speed. Sarratt will possess essential athletic traits that are unchecked during the pre—draft process. He is not a dynamic vertical threat to win foot races down the sideline. This could limit how specific teams plan to deploy him and where they value his overall skill set during the draft.\n\n— Sarratt's wingspan/arm length appears to be functional but may not be the longest. Raising issues or challenges in contested catch situations when he doesn't own the size advantage. He isn't expected to be a springy leaper, and this will limit his ability to high—point passes over the top of defenders on the outside.\n\n— The development of his release package and craft to quickly overcome physical DBs in the NFL. Since he is not the most outstanding athlete, continuing his development as a craftsman will only benefit him.\n\n— Positional role in the NFL will be questioned if he does not test well this draft season. It is possible that teams prefer to place him inside as a power slot rather than a traditional X or Z receiver."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.5,
+    "grade_indicator": null,
+    "overall_rank": 62,
+    "position_rank": null,
+    "pro_comparison": "Keenan Allen",
+    "projected_round": "2nd Round"
+  },
+  "injury_history": []
+}

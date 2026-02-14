@@ -1,0 +1,447 @@
+{
+  "name": "Rayshaun Benny",
+  "slug": "rayshaun-benny",
+  "overview": {
+    "POS": "DT",
+    "College": "Michigan",
+    "Height": "6' 4\"",
+    "Weight": "305",
+    "Age": "23.8",
+    "DOB": "2002-05-08 00:00:00",
+    "Year": "G",
+    "Prj. Rd": null,
+    "Games": "53",
+    "Snaps": "1205",
+    "24/7 Sports": "91",
+    "ESPN": "TBD",
+    "Draft Buzz": "80.9 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "position": "DT",
+  "college": "Michigan",
+  "height": "6' 4\"",
+  "weight": "305",
+  "age": 23.8,
+  "dob": "2002-05-08 00:00:00",
+  "year": "G",
+  "projected_round": null,
+  "games": 53,
+  "snaps": 1205,
+  "site_ratings": {
+    "24/7 Sports": "91",
+    "ESPN": "TBD",
+    "Draft Buzz": "80.9 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "79",
+      "percentile": 0.722
+    },
+    "24 Grade": {
+      "value": "83.1",
+      "percentile": 0.833
+    },
+    "23 Grade": {
+      "value": "69.5",
+      "percentile": 0.333
+    },
+    "Pass Rush Grade": {
+      "value": "65.5",
+      "percentile": 0.667
+    },
+    "True Pass Rush": {
+      "value": "64.2",
+      "percentile": 0.528
+    },
+    "PR Win Rate": {
+      "value": "7.8",
+      "percentile": 0.611
+    },
+    "Run Def. Grade": {
+      "value": "84.3",
+      "percentile": 0.778
+    },
+    "Run Stop %": {
+      "value": "7.5",
+      "percentile": 0.5
+    },
+    "Sacks": {
+      "value": "2",
+      "percentile": 0.667
+    },
+    "Hits": {
+      "value": "3",
+      "percentile": 0.778
+    },
+    "Hurries": {
+      "value": "13",
+      "percentile": 0.639
+    },
+    "Batted Balls": {
+      "value": "2",
+      "percentile": 0.889
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.444
+    },
+    "Tackling Grade": {
+      "value": "58.2",
+      "percentile": 0.389
+    },
+    "Missed Tackle Rate": {
+      "value": "10.8",
+      "percentile": 0.611
+    },
+    "Total Pressures": {
+      "value": "18",
+      "percentile": 0.667
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 142.0,
+      "positional_rank": "12.25"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 209.0,
+      "positional_rank": "18"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 100.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 161.0,
+      "positional_rank": "14"
+    },
+    {
+      "source": "Jeremiah",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 58.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 208.0,
+      "positional_rank": "41"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 116.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Tankathon",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Jeremiah": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "Tankathon": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "6TH",
+    "Bleacher": "5th Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Kris JENKINS",
+    "Bleacher": "Maurice Hurst",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.66,
+    "Pass Rush": 0.88,
+    "Run Defense": 0.69
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 22,
+      "career": 30
+    },
+    "B GAP": {
+      "2025": 334,
+      "career": 739
+    },
+    "Over Tackle": {
+      "2025": 70,
+      "career": 172
+    },
+    "Outside Tkl": {
+      "2025": 24,
+      "career": 78
+    },
+    "Off Ball": {
+      "2025": 8,
+      "career": 10
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nBorn and raised in Michigan, Rayshaun Benny arrived at the University of Michigan as a coveted four-star recruit out of Oak Park High School, where he dominated on both sides of the trenches. The in-state product showed remarkable resilience early in his career, bouncing back from knee surgery that sidelined him for five games as a high school senior to help Oak Park win four playoff games. His tenacity translated to the collegiate level, where he gradually worked his way up Michigan's loaded defensive tackle rotation behind future first-rounders Mason Graham and Kenneth Grant while contributing to two national championship teams.\n\nBenny's patience was tested throughout his college career as he consistently displayed flashes of brilliance in limited snaps. After spending three seasons primarily as a rotational piece, the Michigan native suffered a broken fibula in the 2024 Rose Bowl victory over Alabama, which hampered his development during the following season. Though he appeared in 11 games with just two starts in 2024, Benny's impact was felt particularly in the trenches against Fresno State (eight tackles, two TFLs, one sack) and in crucial Big Ten matchups. His gradual recovery saw him regain form mid-season, setting the stage for his fifth-year breakout.\n\nThe veteran defensive tackle enters the 2025 campaign as Michigan's most experienced interior defender with 42 career games under his belt. Showing steady progression, Benny has accumulated 72 tackles, 9.0 TFLs, and 2.5 sacks over four seasons while developing into a stout run defender. With Graham and Grant now in the NFL as first-round selections, Benny finally has the opportunity to showcase his complete skill set as the unquestioned anchor of Michigan's defensive line, positioning himself to be the program's next defensive tackle drafted in the early rounds.\n\nSCOUTING REPORT: SUMMARY\nThe tape shows a defensive tackle whose game is built on power and leverage rather than flash and finesse. Benny dominates as a run defender, displaying consistent ability to maintain gap discipline and anchor against double teams - skills that translate immediately to Sundays. However, his one-dimensional pass rush approach will limit his ceiling unless he develops secondary moves beyond the bull rush during his fifth year at Michigan.\n\nBenny's instincts when diagnosing plays make him valuable in the modern NFL where offenses constantly employ misdirection, but his average first-step quickness will prevent him from being a consistent backfield disruptor against elite interior offensive linemen. The medical evaluation of his previously broken fibula remains a significant consideration, though his return to form late last season suggests resilience. Teams will need to determine if his limited statistical production was more a product of Michigan's deep rotation or a reflection of his ultimate ceiling.\n\nWhat makes Benny intriguing is the untapped potential still lurking beneath the surface. Five years in a championship-caliber program has refined his technique without maxing out his development curve. His blend of power, technical savvy, and experience positions him as a potential day-one contributor with room to grow into something more if he can translate his run-stuffing prowess into more consistent pocket collapse."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Rayshaun Benny is a solid overall athlete for a defensive tackle, with the quickness and some lateral movement skills to be an interesting Day 3 prospect in the 2026 NFL draft. Also, he put in the work this past offseason to add some size and strength, helping him improve against the run.\n\nThe 6'4\", 305—pound defensive lineman was a 4—star recruit in the 2021 prep class, playing in three games as a true freshman at Michigan. He started to work into the defensive line rotation during the following season, participating in 13 contests and logging 13 total tackles.\n\nAs a junior, Benny developed into a regular contributor off the bench as part of the Wolverines' national championship—winning squad, collecting 27 tackles, 5.5 tackles for loss, a sack and two passes defended. However, he missed the championship game after breaking his right fibula, which also caused him to miss the following spring's practices."
+        },
+        {
+          "title": "Positives",
+          "text": "— Benny is a solid overall athlete, showing decent quickness and agility for a defensive tackle. this profile allows him to be effective when slanting and making offensive linemen miss to get penetration.\n\n— decent get—off. he reacts to the snap well and has some burst when one—gapping.\n\n— has the strength to stack and shed when he lands his hands as a run—defender.\n\n— Showed a Good arm—over move that he can defeat blocks with in the run game.\n\n— Good bend and flexibility in his lower body to work flat down the line of scrimmage and make tackles for loss or short gains after getting penetration."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Benny provided limited production throughout his collegiate career, even after becoming a starter.\n\n— Plays with high pad—level and a narrow base, making it difficult for him to anchor and stay in his gap against combo and down blocks.\n\n— At the point of attack, he could be more physical. Matters are compounded thanks to wide hand placement that exposes his chest.\n\n— Subpar block recognition, leading to him getting trapped and caught off guard by down blocks or reached.\n\n— Use of hands as a pass—rusher is a big work in progress, as he's often late and misses. He doesn't have a go—to pass—rush move.\n\n— Potential medical red flags. In addition to the broken fibula in 2023, he was in a car accident during his senior year in high school that resulted in knee surgery."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.4,
+    "grade_indicator": null,
+    "overall_rank": 161,
+    "position_rank": null,
+    "pro_comparison": "Maurice Hurst",
+    "projected_round": "5th Round"
+  },
+  "injury_history": []
+}

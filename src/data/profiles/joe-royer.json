@@ -1,0 +1,406 @@
+{
+  "name": "Joe Royer",
+  "slug": "joe-royer",
+  "overview": {
+    "POS": "TE",
+    "College": "Cincinnati",
+    "Height": "6' 5\"",
+    "Weight": "250",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": "33",
+    "Snaps": "1316",
+    "24/7 Sports": "92",
+    "ESPN": "84",
+    "Draft Buzz": "84.5 / 100",
+    "NFL.com": "TBD",
+    "BR": "6.6",
+    "Gridiron": "TBD"
+  },
+  "position": "TE",
+  "college": "Cincinnati",
+  "height": "6' 5\"",
+  "weight": "250",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": 33,
+  "snaps": 1316,
+  "site_ratings": {
+    "24/7 Sports": "92",
+    "ESPN": "84",
+    "Draft Buzz": "84.5 / 100",
+    "NFL.com": "TBD",
+    "BR": "6.6",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "57.8",
+      "percentile": 0.0
+    },
+    "2024 Grade": {
+      "value": "66.1",
+      "percentile": 0.3
+    },
+    "2023 Grade": {
+      "value": "56.2",
+      "percentile": 0.111
+    },
+    "Receiving Grade": {
+      "value": "62.4",
+      "percentile": 0.1
+    },
+    "Drop %": {
+      "value": "0",
+      "percentile": 0.95
+    },
+    "Cont. Catch Ratio": {
+      "value": "66.7",
+      "percentile": 0.85
+    },
+    "Yards Per Route Run": {
+      "value": "1.5",
+      "percentile": 0.5
+    },
+    "YAC Per Reception": {
+      "value": "8.9",
+      "percentile": 1.0
+    },
+    "Missed Tkles Forced": {
+      "value": "4",
+      "percentile": 0.3
+    },
+    "Pass Block Grade": {
+      "value": "72.4",
+      "percentile": 0.7
+    },
+    "Run Block Grade": {
+      "value": "48.8",
+      "percentile": 0.1
+    },
+    "Touchdowns": {
+      "value": "4",
+      "percentile": 0.6
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 121.5,
+      "positional_rank": "6.8"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 115.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 48.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 147.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 70.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 213.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 95.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "3RD",
+    "Bleacher": "4th round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Jeremy RUCKERT",
+    "Bleacher": "Noah Gray",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 121.4,
+    "Hands": 0.77,
+    "Short Receiving": 0.69,
+    "Intermediate Routes": 0.73,
+    "Deep Threat": 0.7,
+    "Blocking": 0.58
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot Snaps": {
+      "2025": 175,
+      "career": null
+    },
+    "Inline Snaps": {
+      "2025": 161,
+      "career": null
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nBorn in Ohio and raised in the Cincinnati area, Joe Royer has come full circle in his collegiate journey. The 6'5\", 255-pound tight end from Elder High School began his career at Ohio State where he appeared in 14 games over three seasons before transferring back to his hometown Cincinnati Bearcats. His return home proved transformational as Royer exploded onto the national scene in 2024, breaking the Cincinnati single-season reception record for tight ends with 50 catches - surpassing the previous mark set by future Hall of Famer Travis Kelce (45).\n\nRoyer's journey has been marked by perseverance through personal struggles, including the devastating loss of his mother during his time at Ohio State. His return to Cincinnati represented more than just a football decision - it was a homecoming that rekindled his passion for the game. Under the guidance of tight ends coach Jordan Stepp, Royer found his footing again, crediting the coach with \"helping save his football career\" after he \"lost the love of the game for a while.\"\n\nThe former consensus four-star recruit and top-10 player in Ohio has flourished in Cincinnati's tight-end heavy offense, earning All-Big 12 First Team honors in 2024. Despite having opportunities to enter the 2025 NFL Draft with invitations to the Shrine Bowl and Senior Bowl, Royer elected to return for his final season at Nippert Stadium with the goal of being the first tight end selected in the 2026 NFL Draft. His decision speaks to his commitment to development and his belief that his best football is still ahead of him.\n\nRoyer is a matchup problem that defensive coordinators will lose sleep over. His natural receiving ability shows up most prominently on medium routes where he displays veteran-like understanding of leveraging his frame against smaller defenders. Despite this prowess in the passing game, his development as a blocker remains a work in progress - he'll need dedicated coaching to improve his hand placement and leverage at the point of attack. \n\n\nThe former Buckeye turned Bearcat brings a competitive fire to every snap, fighting through tackles with a determination that sometimes borders on recklessness. This double-edged sword was evident when he fumbled in the endzone against Miami while battling for extra yards. His route running shows promise but inconsistency - at times displaying nuanced footwork that freezes linebackers, while occasionally rounding off breaks that savvy NFL defensive backs will jump. \n\n\nRoyer's ceiling will ultimately be determined by how quickly he can elevate his blocking to match his receiving talents. If he continues on his current developmental trajectory, he has the athletic profile and competitive mentality to become a three-down tight end who stays on the field in any situation."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Joe Royer is an experienced tight end prospect, who shreds zone defense by always finding soft spots underneath and locating space after the catch. He plays with great timing in the offense and showcases fantastic hands, with an impressive catch radius for a shorter—armed tight end.\n\nHe's a former 4—star recruit and transfer from Ohio State. He wanted to be more involved in an offense after four catches for 24 yards during his time with the Buckeyes. His 2024 output changed drastically, with 50 catches for 523 yards and three touchdowns in Cincinnati's offense. The Bearcats offense already caught more touchdown passes this fall.\n\n— Royer displays excellent football IQ to locate space in zone coverage. He's a trusted safety valve over the middle of the field."
+        },
+        {
+          "title": "Positives",
+          "text": "— Royer displays excellent football IQ to locate space in zone coverage. He's a trusted safety valve over the middle of the field.\n\n— He manipulates defenders with route intention, head usage and speed variation. His sell on the vertical stem is a big part of his game, and he plays with good timing.\n\n— The first—team All—Big 12 performer is a vacuum when the ball is anywhere near him. He displays strong hands through contact and plucks the ball out of the air.\n\n— He's an alignment versatile tight end, who has plenty of in—line reps, but does his best blocking work in pass protection. When blocking down in the run game, he consistently creates rushing lanes."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Royer needs to add functional strength as a blocker to be more effective. By playing with better hand location and not letting defenders inside his chest, Royer can improve in this area.\n\n— His overall blocking technique needs work. He leads with his shoulder, is too passive and gets out—leveraged by defenders. He needs to play with a stronger base and better leverage.\n\n— He's a limited athlete, which impairs his ability to separate against man coverage and consistently create after the catch. By getting into his route faster, he can help make selling those routes more effective."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.6,
+    "grade_indicator": null,
+    "overall_rank": 147,
+    "position_rank": null,
+    "pro_comparison": "Noah Gray",
+    "projected_round": "4th round"
+  },
+  "injury_history": []
+}

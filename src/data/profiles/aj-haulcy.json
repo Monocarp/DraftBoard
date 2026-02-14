@@ -1,0 +1,430 @@
+{
+  "name": "A.J. Haulcy",
+  "slug": "aj-haulcy",
+  "overview": {
+    "POS": "SAF",
+    "College": "LSU",
+    "Height": "6' 0\"",
+    "Weight": "222",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "47",
+    "Snaps": "2823",
+    "24/7 Sports": "81",
+    "ESPN": "80",
+    "Draft Buzz": "85.2 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.4",
+    "Gridiron": "TBD"
+  },
+  "position": "SAF",
+  "college": "LSU",
+  "height": "6' 0\"",
+  "weight": "222",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 47,
+  "snaps": 2823,
+  "site_ratings": {
+    "24/7 Sports": "81",
+    "ESPN": "80",
+    "Draft Buzz": "85.2 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.4",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "87.7",
+      "percentile": 0.727
+    },
+    "24 Grade": {
+      "value": "80.5",
+      "percentile": 0.6
+    },
+    "23 Grade": {
+      "value": "69.4",
+      "percentile": 0.4
+    },
+    "Coverage Grade": {
+      "value": "88.8",
+      "percentile": 0.636
+    },
+    "Interceptions": {
+      "value": "3",
+      "percentile": 0.818
+    },
+    "Forced Inc. Rate": {
+      "value": "13.2",
+      "percentile": 0.636
+    },
+    "Passer Rating Alwd": {
+      "value": "57.5",
+      "percentile": 0.818
+    },
+    "TD Allowed/Ints": {
+      "value": "1 / 3",
+      "percentile": null
+    },
+    "Coverage Stops": {
+      "value": "8",
+      "percentile": 0.5
+    },
+    "Run Def Grade": {
+      "value": "76.9",
+      "percentile": 0.545
+    },
+    "Run Stops": {
+      "value": "12",
+      "percentile": 0.545
+    },
+    "Tackling Grade": {
+      "value": "67.3",
+      "percentile": 0.273
+    },
+    "Tackles": {
+      "value": "66",
+      "percentile": 1.0
+    },
+    "Assisted Tackles": {
+      "value": "19",
+      "percentile": 0.5
+    },
+    "Missed Tackles": {
+      "value": "16",
+      "percentile": 0.091
+    },
+    "Missed Tackle Rate": {
+      "value": "15.8",
+      "percentile": 0.273
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 64.85714285714286,
+      "positional_rank": "5.166666666666667"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 41.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 74.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 58.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 67.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 63.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 87.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 57.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 57.0,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Xavier Watts",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Targeted": 59.6,
+    "Tackling": 0.79,
+    "Run Defense": 0.85,
+    "Coverage Grade": 1.0,
+    "Zone Coverage": 0.89,
+    "Man/Press": 0.96
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 68,
+      "career": 68
+    },
+    "Box": {
+      "2025": 134,
+      "career": 134
+    },
+    "Corner": {
+      "2025": 6,
+      "career": 6
+    },
+    "Deep": {
+      "2025": 484,
+      "career": 484
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nA.J. Haulcy the Fort Bend Marshall product dominated Texas high school football with 12 interceptions as a senior-three returned for touchdowns-while adding 47 tackles and earning First Team All-State honors. Despite the gaudy numbers, major programs passed, and Haulcy landed at New Mexico as a three-star recruit in 2022. He wasted no time making an impression, tying for the team lead with two interceptions and two forced fumbles while recording 87 tackles across 12 games. His signature performance came against Fresno State when he posted 24 tackles and an interception, marking the 16th time in 23 years an FBS player reached that total and the most since Oklahoma's Kenneth Murray racked up 28 against Army in 2018.\n\nThe Houston Cougars grabbed Haulcy as a mid-year enrollee in January 2023, and he immediately took over as the defense's heartbeat. His sophomore campaign saw him lead the team with 98 tackles and 73 solo stops-Houston's highest marks since 2018-while starting all 12 games split between free and strong safety. The 6.1 solo tackles per game ranked fourth nationally, and he became the lone Power 5 player with four games registering double-digit solo tackles. His consistency and production earned Big 12 Honorable Mention Defensive Newcomer of the Year recognition and established him as one of the conference's most reliable defensive backs heading into 2024.\n\nHaulcy's junior season at Houston transformed him from productive starter to All-Conference performer. Recording 74 tackles across 703 defensive snaps, he tied for the Big 12 lead with five interceptions while finishing second in the conference with 13 passes defended. His two-interception performance at TCU earned him Big 12 Defensive Player of the Week and Thorpe Award National Defensive Back of the Week honors, making him the only Big 12 defender with multiple picks in a conference road game that season. First Team All-Big 12 selections from coaches, the Associated Press, and Phil Steele followed, along with Phil Steele All-American Honorable Mention status. When LSU's secondary struggled in 2024 and the Tigers lost Sage Ryan to the transfer portal, Brian Kelly pounced on the opportunity to add Haulcy during the May 2025 spring window. Haulcy is currently in his first season at LSU, though he missed the first half against Clemson due to a suspension carried over from his ejection for fighting in Houston's loss to BYU last November.\n\nHaulcy's evaluation comes down to a simple question: how much do you value elite zone coverage instincts and ball production versus athletic limitations and technical concerns? His zone work is legitimately special-not just good for a mid-round prospect, but elite relative to the entire safety class. When you watch him read quarterbacks, break on throws, and create turnovers, you're seeing NFL-caliber skills that translate immediately. Seven interceptions over two seasons isn't an accident, and the five-pick junior campaign came against quality Big 12 competition. Defenses running two-high shells and zone-heavy schemes will see a Day 1 starter who can quarterback the backend, communicate coverages, and make game-changing plays on the football. His 2,100-plus snaps across three different programs and conferences demonstrate he can handle the processing demands and adjustment speed the NFL requires.\n\n\n\nThe warts are real and can't be coached away entirely. That very average speed shows up on tape when receivers threaten him vertically, and there will be NFL moments where he simply can't make up ground. Man coverage is a legitimate weakness-not just a work-in-progress but a significant hole that offensive coordinators will attack. The tackling inconsistency creates splash plays for opponents, and missed tackles in space get punished ruthlessly at the next level. At 6'0\", he's conceding size advantages in contested situations against bigger tight ends and physical receivers. These limitations mean he won't be an every-down player for every scheme, and certain defensive coordinators will view him as a specialist rather than a three-down safety who handles all situations.\n\n\n\nThe projection sits somewhere in rounds three through four. That feels right for a prospect with his profile-elite skills in specific areas balanced against real concerns that limit his versatility. Teams running quarters coverage or two-high safety structures will view him as a potential immediate starter who fills a critical need. Zone-heavy defenses looking for turnover production and intelligent processing will see excellent value. His LSU tape this season matters significantly-SEC competition will provide the clearest picture of how his game holds up against elite speed and route running. The ceiling is a quality NFL starter who creates 3-4 turnovers annually and anchors a zone-based secondary for five-plus years. The floor is a rotational safety who plays specific packages and contributes on special teams without ever becoming a full-time starter. Most likely outcome? He carves out a starting role in the right system within his first two seasons and becomes a solid, if unspectacular, safety who makes plays on the ball and helps defenses that play to his considerable strengths."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "AJ Haulcy looks like a linebacker playing safety, but his zone instincts and impressive downhill click and close speed give him a unique skillset at the top of defenses. Best as a split—field safety or robber, he operates quickly and efficiently, moving toward the line of scrimmage with great instincts and play development eyes.\n\nThe former 3—star recruit and transfer from Houston and New Mexico has made a name for himself with his nose for the football. He's put up 347 tackles (203 solo), four tackles for loss, ten interceptions, 19 passes defensed, and four forced fumbles in his collegiate career. He's always around the football, and those instincts pay off in more ways than one.\n\n— Haulcy is a top—down playmaker who excels at reading out plays, exploding downhill, and playing through the whistle. He's a physical hitter and wants to set the tone early against the run or pass."
+        },
+        {
+          "title": "Positives",
+          "text": "— Haulcy is a top—down playmaker who excels at reading out plays, exploding downhill, and playing through the whistle. He's a physical hitter and wants to set the tone early against the run or pass.\n\n— His prowess as a zone defender is special to witness, with trust to pass off, track route concepts development, and instincts to trigger on throws with anticipation. He mirrors the quarterback's eyes and shows off his impressive ball skills and timing.\n\n— The 6'0\", 222—pound defender held many responsibilities for the LSU defense as a senior and never panicked, showcasing a \"never say die\" mentality. He showcased his leadership through communication and effort.\n\n— He can play down around the line of scrimmage and isn't afraid to stick his nose into the fire. A willing participant in the run and screen game, Haulcy is always around the football.\n\n—Showcased better ability to carry tight ends in man coverage while at LSU, and improved footwork to match quicker movements. There's upside as a big slot with his skill set."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Haulcy leads with his shoulder and tends to fall off tackles far too often. He has many shoestring tackles on tape and can take poor angles to the football. Needs to wrap up consistently to be a trusted last line of defense.\n\n— His short area movement against quicker receivers sees him get stacked quickly and unable to keep pace down the field, particularly from the slot.\n\n— He will out—leverage himself as a post safety, committing too much space to one side based on the quarterback's eyes and putting himself out of position with his recovery speed."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.4,
+    "grade_indicator": null,
+    "overall_rank": 67,
+    "position_rank": null,
+    "pro_comparison": "Xavier Watts",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

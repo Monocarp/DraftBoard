@@ -1,0 +1,431 @@
+{
+  "name": "David Oke",
+  "slug": "david-oke",
+  "overview": {
+    "POS": "DT",
+    "College": "ARKANSAS",
+    "Height": "6' 2\"",
+    "Weight": "314",
+    "Age": "0",
+    "DOB": "00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "37",
+    "Snaps": "1311",
+    "24/7 Sports": "83",
+    "ESPN": "TBD",
+    "Draft Buzz": "82.2 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "position": "DT",
+  "college": "ARKANSAS",
+  "height": "6' 2\"",
+  "weight": "314",
+  "age": 0.0,
+  "dob": "00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 37,
+  "snaps": 1311,
+  "site_ratings": {
+    "24/7 Sports": "83",
+    "ESPN": "TBD",
+    "Draft Buzz": "82.2 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "69.6",
+      "percentile": 0.167
+    },
+    "24 Grade": {
+      "value": "78.7",
+      "percentile": 0.667
+    },
+    "23 Grade": {
+      "value": "66.6",
+      "percentile": 0.278
+    },
+    "Pass Rush Grade": {
+      "value": "53.7",
+      "percentile": 0.0
+    },
+    "True Pass Rush": {
+      "value": "55.9",
+      "percentile": 0.0
+    },
+    "PR Win Rate": {
+      "value": "0",
+      "percentile": 0.0
+    },
+    "Run Def. Grade": {
+      "value": "76.7",
+      "percentile": 0.5
+    },
+    "Run Stop %": {
+      "value": "6.5",
+      "percentile": 0.333
+    },
+    "Sacks": {
+      "value": "0",
+      "percentile": 0.167
+    },
+    "Hits": {
+      "value": "0",
+      "percentile": 0.167
+    },
+    "Hurries": {
+      "value": "0",
+      "percentile": 0.0
+    },
+    "Batted Balls": {
+      "value": "0",
+      "percentile": 0.222
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.444
+    },
+    "Tackling Grade": {
+      "value": "74.6",
+      "percentile": 0.944
+    },
+    "Missed Tackle Rate": {
+      "value": "0",
+      "percentile": 1.0
+    },
+    "Total Pressures": {
+      "value": "0",
+      "percentile": 0.0
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 150.5,
+      "positional_rank": "12"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 136.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Jeremiah",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 165.0,
+      "positional_rank": "35"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Tankathon",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Jeremiah": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "Tankathon": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "TBD"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Jalen REDMOND",
+    "Bleacher": "TBD",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.58,
+    "Pass Rush": 0.92,
+    "Run Defense": 0.63
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 17,
+      "career": 475
+    },
+    "B GAP": {
+      "2025": 32,
+      "career": 551
+    },
+    "Over Tackle": {
+      "2025": 13,
+      "career": 71
+    },
+    "Outside Tkl": {
+      "2025": 0,
+      "career": 29
+    },
+    "Off Ball": {
+      "2025": 0,
+      "career": 0
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nDavid Oke's football journey took him from Houston's high school gridirons through the FCS ranks before landing in the SEC for his final collegiate campaign. The 312-pound interior force initially chose Abilene Christian over a collection of Group of Five programs including Houston, North Texas, and UTSA, where he developed into one of the most disruptive defensive tackles in the Southland Conference. During his time with the Wildcats, Oke methodically built his resume from a promising freshman who notched a sack against Missouri to a dominant junior who terrorized opposing backfields with 63 tackles and nearly ten stops behind the line of scrimmage.\n\nThe 2024 season marked Oke's breakthrough performance at Abilene Christian, where he accumulated an impressive stat line that included six quarterback hurries, two batted passes, and the versatility to block a field goal while forcing and recovering fumbles. His dominant tape against FCS competition caught the attention of power conference programs, ultimately leading to his December 2024 commitment to Arkansas over USC, Texas Tech, and North Carolina. The three-star recruit from his high school days had transformed into one of the most sought-after defensive line transfers in the portal.\n\nUnfortunately, Oke's lone season at Arkansas began with adversity as a knee injury sidelined him for the first two games of 2025 before making his SEC debut against Ole Miss. Despite the limited action in Fayetteville, where he appeared in just a handful of games and accumulated modest statistics, Oke's body of work across 35 collegiate contests showcased the raw talent and technical development that has NFL evaluators intrigued.\n\nSCOUTING REPORT: SUMMARY\nOke profiles as a developmental nose tackle who could carve out a valuable role as an early-down run stuffer while he refines his pass rush repertoire. His film shows a player who understands leverage and gap integrity at an advanced level, but the transition from dominating FCS competition to handling NFL guards will require significant technical refinement. The combination of his run defense prowess and special teams value should earn him a roster spot immediately, even if his snap count remains limited initially.\n\nThe ideal landing spot would be a defensive system that values two-gapping interior defenders who can control the A-gaps and free up linebackers to flow. Think about how teams like Baltimore and Pittsburgh deploy their nose tackles â€“ that's where Oke could thrive once he adjusts to the speed and power of NFL offensive lines. His ability to anchor against double teams while maintaining gap discipline fits perfectly into odd-front schemes where the nose tackle must command respect and occupy blockers.\n\nThe fourth-round grade feels appropriate given his dominant run defense metrics balanced against limited high-level experience and injury questions. Smart defensive coordinators will appreciate his above-average athleticism for the position - that speed at 312 pounds shows legitimate movement skills that translate to his ability to pursue plays laterally. With proper development and a year to add more pass rush moves to his toolbox, Oke has the foundation to develop into a reliable rotation piece who could eventually earn 300 plus snaps annually as a run-down specialist with upside for more."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "injury_history": []
+}

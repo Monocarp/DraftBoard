@@ -1,0 +1,436 @@
+{
+  "name": "Jacob Rodriguez",
+  "slug": "jacob-rodriguez",
+  "overview": {
+    "POS": "LB",
+    "College": "Texas Tech",
+    "Height": "6' 1\"",
+    "Weight": "235",
+    "Age": "23.5",
+    "DOB": "2002-09-06 00:00:00",
+    "Year": null,
+    "Prj. Rd": null,
+    "Games": "42",
+    "Snaps": "1890",
+    "24/7 Sports": "88",
+    "ESPN": "75",
+    "Draft Buzz": "84.5 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.9",
+    "Gridiron": null
+  },
+  "position": "LB",
+  "college": "Texas Tech",
+  "height": "6' 1\"",
+  "weight": "235",
+  "age": 23.5,
+  "dob": "2002-09-06 00:00:00",
+  "year": null,
+  "projected_round": null,
+  "games": 42,
+  "snaps": 1890,
+  "site_ratings": {
+    "24/7 Sports": "88",
+    "ESPN": "75",
+    "Draft Buzz": "84.5 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.9",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "93",
+      "percentile": 1.0
+    },
+    "24 Grade": {
+      "value": "82.5",
+      "percentile": 0.9
+    },
+    "23 Grade": {
+      "value": "76.3",
+      "percentile": 0.75
+    },
+    "Pass Rush Grade": {
+      "value": "61.4",
+      "percentile": 0.2
+    },
+    "Run Def. Grade": {
+      "value": "94.8",
+      "percentile": 1.0
+    },
+    "Run Stop %": {
+      "value": "15.3",
+      "percentile": 1.0
+    },
+    "Tackles": {
+      "value": "94",
+      "percentile": 1.0
+    },
+    "Tackling Grade": {
+      "value": "65.5",
+      "percentile": 0.1
+    },
+    "Missed Tkl Rate": {
+      "value": "13.9",
+      "percentile": 0.2
+    },
+    "ADORT": {
+      "value": "2.8",
+      "percentile": 0.4
+    },
+    "Coverage": {
+      "value": "92.3",
+      "percentile": 1.0
+    },
+    "Coverage Stops": {
+      "value": "27",
+      "percentile": 1.0
+    },
+    "Recs/Tgts": {
+      "value": "0",
+      "percentile": 0.5
+    },
+    "Completion %": {
+      "value": "82.1",
+      "percentile": 0.6
+    },
+    "TD / INT": {
+      "value": "2 / 4",
+      "percentile": null
+    },
+    "Forced Inc Rate": {
+      "value": "4.5",
+      "percentile": 0.3
+    },
+    "Pass Rat. All.": {
+      "value": "84.3",
+      "percentile": 0.9
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 106.16666666666667,
+      "positional_rank": "9.166666666666666"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 0.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 89.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 64.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 118.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 72.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 169.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 73.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 61.0,
+    "Bleacher": null,
+    "Walter": 81.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "3RD",
+    "Bleacher": "4th Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Marte MAPU",
+    "Bleacher": "Jack Sanborn",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.7,
+    "Pass Rush": 0.74,
+    "Run Defense": 0.98,
+    "Coverage": 0.96
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 26,
+      "career": 42
+    },
+    "Slot": {
+      "2025": 61,
+      "career": 155
+    },
+    "Corner": {
+      "2025": 3,
+      "career": 7
+    },
+    "Box": {
+      "2025": 678,
+      "career": 1547
+    },
+    "Deep": {
+      "2025": 3,
+      "career": 8
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nJacob Rodriguez took the field at Rider High School in Wichita Falls, Texas as a dual-threat quarterback, leading his team to back-to-back Class 5A Division II state semifinals during his sophomore and senior seasons. The four-sport athlete compiled 7,085 passing yards and 68 touchdowns through the air while adding 3,051 rushing yards and 38 scores on the ground across his prep career. ESPN rated him a four-star recruit and the nation's third-best dual-threat quarterback, while Rivals and 247Sports both handed him three-star grades. Rodriguez chose Virginia over offers from Baylor, Houston, Iowa State, Kansas State and his eventual destination, Texas Tech.\n\nRodriguez spent his freshman year at Virginia playing multiple offensive positions - quarterback, receiver, tight end and running back - totaling 56 rushing yards and 65 receiving yards across 12 games. After transferring to Texas Tech in 2022, he switched to linebacker and recorded 29 tackles while contributing on special teams. His junior season in 2023 ended almost before it started when he suffered a significant injury in the season opener at Wyoming, though he returned for November action and earned Radiance Technologies Independence Bowl Defensive MVP honors with eight tackles and two fourth-quarter turnovers against Cal.\n\nThe 235-pound linebacker put together a dominant redshirt junior campaign in 2024, leading the Big 12 with 127 total tackles - the highest single-season total by a Red Raider since 2002. Rodriguez earned All-Big 12 First Team selections from both the conference coaches and Associated Press, along with Phil Steele All-America honorable mention recognition. He recorded 10.5 tackles for loss including five sacks, forced three fumbles, recovered two more, and added an interception while serving as a team captain. Texas Tech named him to their captains circle again for 2025, and the conference coaches selected him as the Big 12 Preseason Defensive Player of the Year heading into his final collegiate season.\n\nSCOUTING REPORT: SUMMARY\nWhen you watch Rodriguez work between the tackles, you're seeing a linebacker who maximizes every ounce of his 235-pound frame through technique and anticipation. His film shows a player who understands leverage, timing, and angles at a level that typically translates well to the next level. While he won't blow anyone away with his measurables, the tape reveals someone who consistently finds himself around the football - you can't teach that nose for the ball that leads to 127 tackles in a season.\n\nThe modern NFL game might challenge Rodriguez in obvious passing situations where he'd need to cover athletic tight ends or running backs split wide, but his value as a run defender and blitzer gives him a clear path to contributing snaps early in his career. His quarterback background provides an intangible edge in recognizing offensive tendencies and making pre-snap adjustments that defensive coordinators covet. Teams running traditional 3-4 fronts where inside linebackers can flow freely to the ball should have Rodriguez high on their board, as his skill set aligns perfectly with that aggressive, downhill style.\n\nThe best-case scenario sees Rodriguez developing into a steady rotational piece who earns significant snaps on early downs and becomes a core special teams contributor immediately. His leadership intangibles and film study habits suggest he'll maximize whatever athletic ability he possesses, potentially outplaying his draft position like many productive college linebackers before him. While he may never become an every-down player in today's pass-heavy league, Rodriguez brings enough versatility, production, and football character to carve out a lengthy career as a valuable depth piece who coaches trust in crucial situations."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Jacob Rodriguez was hands—down the best linebacker in college football this season. The Butkus Award winner is a turnover machine with impressive instincts as a run defender. However, he lacks NFL length/size (listed at 6'1\", 235 pounds) and traits to be a high—level prospect in the 2026 draft class.\n\nA 3—star recruit as an athlete in the 2021 class, Rodriguez's college career began at Virginia, and on the other side of the ball. He lined up at several positions for the Cavaliers: quarterback, running back, wide receiver, and tight end, before transferring to Texas Tech and moving to linebacker the following year.\n\nThe Red Raider was a rotational player during his first season in Lubbock, and he began the 2023 campaign as a starter. However, a Lisfranc sprain and bone bruise in his foot limited him to just five games, 32 tackles, one tackle for loss, an interception, two passes defended and two forced fumbles."
+        },
+        {
+          "title": "Positives",
+          "text": "— Great production over the last two seasons.\n\n— Good instincts against the run to quickly key and diagnose plays, putting himself in positions to make tackles for short gains.\n\n— Sifts through trash and mirrors running backs well.\n\n— Solid lateral movement skills to make offensive linemen miss in space.\n\n— Decent tackler who wraps up and brings his feet with him. Also has decent pad level.\n\n— Has mastered the \"Peanut Punch\" to create turnovers, evidenced by his 13 career forced fumbles.\n\n— Good at recognizing play—action passes and has solid hip fluidity to turn and ROBOT, also showing a decent ability to locate threats when ROBOTing.\n\n— Impressive ability to track the ball and has good hands for a linebacker to get interceptions. Wide receiver/tight end background helps him here."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Rodriguez lacks the ideal height and appears to have shorter arms for an NFL linebacker.\n\n— Combination of arm length and below—average strength limits his extension and leads to him getting stuck on blocks from offensive linemen.\n\n— Also doesn't have much knockback power when coming downhill, either when taking on blocks or making tackles against bigger running backs. The latter can lead to extra yards after contact.\n\n— Struggles to anchor when taking on blocks from offensive linemen.\n\n— Subpar speed, limiting his sideline—to—sideline range and making him a liability when playing Tampa 2.\n\n— Eye discipline and awareness in zone coverage are lacking, too often he leaves threats open in his area and covers grass."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.9,
+    "grade_indicator": null,
+    "overall_rank": 118,
+    "position_rank": null,
+    "pro_comparison": "Jack Sanborn",
+    "projected_round": "4th Round"
+  },
+  "injury_history": []
+}

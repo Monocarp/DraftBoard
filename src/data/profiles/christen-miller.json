@@ -1,0 +1,492 @@
+{
+  "name": "Christen Miller",
+  "slug": "christen-miller",
+  "overview": {
+    "POS": "DT",
+    "College": "Georgia",
+    "Height": "6' 4\"",
+    "Weight": "310",
+    "Age": "21.6",
+    "DOB": "2004-08-05 00:00:00",
+    "Year": "RS Jr",
+    "Prj. Rd": "2nd Rd",
+    "Games": "43",
+    "Snaps": "1076",
+    "24/7 Sports": "94",
+    "ESPN": "82",
+    "Draft Buzz": "86.0 / 100",
+    "NFL.com": "6.34",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "position": "DT",
+  "college": "Georgia",
+  "height": "6' 4\"",
+  "weight": "310",
+  "age": 21.6,
+  "dob": "2004-08-05 00:00:00",
+  "year": "RS Jr",
+  "projected_round": "2nd Rd",
+  "games": 43,
+  "snaps": 1076,
+  "site_ratings": {
+    "24/7 Sports": "94",
+    "ESPN": "82",
+    "Draft Buzz": "86.0 / 100",
+    "NFL.com": "6.34",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "84.9",
+      "percentile": 0.889
+    },
+    "24 Grade": {
+      "value": "82.2",
+      "percentile": 0.722
+    },
+    "23 Grade": {
+      "value": "69.8",
+      "percentile": 0.417
+    },
+    "Pass Rush Grade": {
+      "value": "70.8",
+      "percentile": 0.833
+    },
+    "True Pass Rush": {
+      "value": "71.7",
+      "percentile": 0.778
+    },
+    "PR Win Rate": {
+      "value": "11.7",
+      "percentile": 0.944
+    },
+    "Run Def. Grade": {
+      "value": "90.2",
+      "percentile": 0.944
+    },
+    "Run Stop %": {
+      "value": "7.4",
+      "percentile": 0.444
+    },
+    "Sacks": {
+      "value": "0",
+      "percentile": 0.167
+    },
+    "Hits": {
+      "value": "2",
+      "percentile": 0.528
+    },
+    "Hurries": {
+      "value": "17",
+      "percentile": 0.833
+    },
+    "Batted Balls": {
+      "value": "0",
+      "percentile": 0.222
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.444
+    },
+    "Tackling Grade": {
+      "value": "47.3",
+      "percentile": 0.167
+    },
+    "Missed Tackle Rate": {
+      "value": "19.2",
+      "percentile": 0.111
+    },
+    "Total Pressures": {
+      "value": "19",
+      "percentile": 0.75
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 37.111111111111114,
+      "positional_rank": "4.571428571428571"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 30.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 57.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 37.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 45.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 41.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 21.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 27.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 37.0,
+      "positional_rank": "4"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 41.5,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 52.0,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 31.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - EARLY",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "Miller": "TBD",
+    "DraftBuzz": "Kris JENKINS",
+    "Bleacher": "Kenny Clark",
+    "WF": "TBD"
+  },
+  "strengths": "• Ideal Frame - Plus Size & Strength\n• Movement Skills, Short Area Quicks\n• Disciplined Pad Level, Natural Base\n• Recognizes Down Blocks",
+  "weaknesses": "• Often Late Snap Reaction\n• No Go To Pass Rush Moveset\n• Finishing Reps in PR\n• Minimal Production\n• Poor Tackling Grade",
+  "accolades": null,
+  "player_summary": "Miller is a UGA DT , redshirted as a 2022 freshman behind first-round talents before breaking out with a strong 2025 season that addressed concerns and placed him in first-round discussions. Built for even-front nose duties, he rattles pads at the point with hip explosion, heavy hand strikes for knock-back pop, sturdy balance rarely yielding ground, quick lock-out/peek/shed against singles, and active hustle across gaps to squeeze lanes while recognizing play design. His size-strength-movement blend offers three-worthy three-down potential as a consistent interior starter. Limitations include insufficient mass/girth to reliably anchor doubles or function as a pure space-eater/gap hog—shown when displaced by powerful interiors like Tennessee—and average lateral matching plus anticipation as a two-gapper. Further bulking should enhance reliability, positioning him as a solid rather than dominant pro contributor.",
+  "draftbuzz_grades": {
+    "Tackling": 0.6,
+    "Pass Rush": 0.98,
+    "Run Defense": 0.78
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 113,
+      "career": 278
+    },
+    "B GAP": {
+      "2025": 298,
+      "career": 606
+    },
+    "Over Tackle": {
+      "2025": 23,
+      "career": 133
+    },
+    "Outside Tkl": {
+      "2025": 2,
+      "career": 11
+    },
+    "Off Ball": {
+      "2025": 1,
+      "career": 3
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [
+    {
+      "description": "Career Highlights",
+      "source": "YT - NFL Film Room",
+      "url": "https://www.youtube.com/watch?v=DzA-N553zsQ&t=1s"
+    },
+    {
+      "description": "Prospect Profile",
+      "source": "YT - The Draft Hub",
+      "url": "https://www.youtube.com/watch?v=AIkHFdFR908"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Miller is an even-front nose tackle who can rattle pads and gain early advantages at the point of attack. He has good stack-and-shed against single blocks but lacks the prototypical mass of a space-eater. He will lose his anchor to double teams and strong angle blocks at times. He’s average at matching lateral movement off the snap but is generally aware of play design and hustles across gaps to squeeze run lanes. He’ll continue to bulk up and should become a good starter who is more consistent than dominant along the interior."
+        },
+        {
+          "title": "Strengths",
+          "text": "Sturdy and square at the point of attack. | Power emanates from hip explosion into contact. | Brings knock-back pop behind heavy hand strikes. | Upper-body power prevents blockers from controlling him. | Quick to lock out, peek in and shed blockers as a two-gapper. | Good balance through contact and rarely seen on the ground. | Active down the line to squeeze run lanes."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Lacks mass and girth of the typical odd-front zero-technique. | Saw his feet moved by the big, strong interior of Tennessee. | Doesn’t function as a pure gap hog in the middle. | Average anticipation and feel for the back as a two-gapper. | Must prove he can anchor and occupy NFL double teams."
+        },
+        {
+          "title": "Sources Tell Us",
+          "text": "“He’s solid and tough and that’s a valuable position, so he probably goes earlier than you think.” -- NFC regional scout"
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nChristen Miller came out of Cedar Grove High School in Ellenwood, Georgia as one of the most decorated defensive linemen in the 2022 recruiting class. Miller earned four-star status from every major recruiting service and was selected to play in the prestigious All-American Bowl. His high school resume spoke volumes: two Georgia Class 3A state championships, a third-round playoff appearance, and the Atlanta Journal-Constitution's Class 3A Defensive Player of the Year honor as a senior.\n\nMiller stayed home to play for the Bulldogs and took the patient route to playing time. He redshirted as a true freshman in 2022, appearing in just four games while the defending national champions rolled through another dominant season. His 2023 campaign saw expanded action across 13 contests as a rotational piece, totaling 14 tackles with four for loss and a sack. The production was modest, but the tape showed flashes of a player who could eventually become a starter. That opportunity came in 2024 when Miller locked down 10 starting assignments, recording 27 tackles, 3.5 for loss, and 1.5 sacks while turning in a career-best five-tackle performance against Notre Dame in the Sugar Bowl Quarterfinal.\n\nHis 2025 senior season showed steady production with 20 tackles, 3.0 for loss, and 1.5 sacks across 13 starts. The numbers were similar to previous years, but Miller's presence in the middle of Georgia's defense was undeniable. He earned preseason All-America recognition from multiple outlets including ESPN and the Associated Press, landed on the All-SEC First Team by both the media and coaches, and was named to watch lists for the Outland Trophy and Bednarik Award. Miller finished his collegiate career with 1,076 defensive snaps over 43 games, establishing himself as a reliable anchor in one of college football's most productive defensive line factories.\n\nSCOUTING REPORT: SUMMARY\nPut the tape on and you see a defensive tackle who can absolutely wreck a running game. Miller's ability to hold the point of attack, absorb double teams, and maintain gap integrity translates immediately to the professional level. He plays the game the way old-school defensive coordinators dream about: low pad level, heavy hands, relentless motor. The run defense grades speak for themselves, and any team looking to shore up their interior against the ground game will find a ready-made solution here.\n\nHere's the deal, though: Miller's ceiling depends entirely on whether he can develop as a pass rusher. The traits are there. He has the explosiveness to win early and the hand strength to control blockers. But the lack of a refined pass rush plan means he wins almost exclusively on effort and athleticism right now. That can work as a rotational piece, but becoming an every-down starter requires growth in that area. The good news is that he showed incremental improvement each season at Georgia, and the right defensive line coach could unlock something special with the raw tools he brings.\n\nHis fit works best in a scheme that values versatility along the defensive front. He can play the nose in an odd front and eat up space, or he can kick out to three-technique in sub packages and use his quickness to penetrate gaps. Teams running multiple fronts get the most value from his skill set. The shoulder injury warrants attention during medicals, but assuming he checks out physically, Miller profiles as a high-floor interior defender who contributes from day one against the run with legitimate upside to become more if his pass rush develops."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Christen Miller has had a strong start to the 2025 season answering a lot of concerns about him as an NFL draft prospect to firmly be in the first—round discussion.\n\nThe Georgia defensive tackle is one of those rare players who combines size, strength and movement skills to have the potential to make an impact on every down at the next level.\n\nMiller is listed at 6'4\", 310 pounds and entered the Bulldogs' program as a 4—star recruit in the 2022 class. He redshirted as a true freshman, playing behind first—round picks Jordan Davis, Devonte Wyatt and Jalen Carter."
+        },
+        {
+          "title": "Positives",
+          "text": "— Miller has good size and carries his weight well. Also shows impressive quickness and movement skills.\n\n— Quick to get his hands up against the run and has very good upper body strength to gain control of and shed blocks.\n\n— Takes on blocks from interior offensive linemen with good pad level and a wide base to stay in his gap when left one—on—one. Is also quick to recognize down blocks to avoid getting washed inside.\n\n— Has the agility and quickness to fill his gap and cross the offensive lineman's face to make tackles in the adjacent gap. Agility also helps him avoid getting reached and be an effective looper as a pass—rusher.\n\n— Potential to develop as a pass rusher, he has shown flashes of winning with a bull rush and a decent swim move.\n\n— Experience playing several alignments on the defensive line from a 0—technique nose tackle to a 4i—technique defensive end. He has some position versatility in the pros."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Often late to react to the snap, hurting Miller's get—off and effectiveness/consistency when bull rushing.\n\n— Doesn't anticipate double teams and combo blocks well, resulting in him getting pushed out of his gap against better competition.\n\n— Isn't gap disciplined against the run, he'll often get set up by running backs and leave his assignment early to try and make a play.\n\n— Hands are often late as a pass—rusher, allowing offensive linemen to get into his chest. He doesn't have a go—to pass—rush move that he can win with yet.\n\n— Minimal production, he's never had 30 or more tackles or two full sacks in a single season, as of Oct. 9, 2025."
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.34,
+    "prospect_grade_indicator": "Will Eventually Be Plus Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": null,
+    "eligibility": "Junior (RS)",
+    "nfl_rank": 37,
+    "nfl_pos_rank": 4
+  },
+  "bleacher_profile": {
+    "grade": 7.6,
+    "grade_indicator": null,
+    "overall_rank": 45,
+    "position_rank": null,
+    "pro_comparison": "Kenny Clark",
+    "projected_round": "2nd Round"
+  },
+  "injury_history": [
+    {
+      "detail": "Shoulder Injury",
+      "recovery_time": "2 Games",
+      "year": "2024"
+    },
+    {
+      "detail": "Lower Body",
+      "recovery_time": "1 Game",
+      "year": "2023"
+    }
+  ]
+}

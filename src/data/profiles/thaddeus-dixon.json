@@ -1,0 +1,442 @@
+{
+  "name": "Thaddeus Dixon",
+  "slug": "thaddeus-dixon",
+  "overview": {
+    "POS": "CB",
+    "College": "North Carolina",
+    "Height": "6' 1\"",
+    "Weight": "185",
+    "Age": "0",
+    "DOB": "00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": "34",
+    "Snaps": "1473",
+    "24/7 Sports": "86",
+    "ESPN": "TBD",
+    "Draft Buzz": "80.2 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.8",
+    "Gridiron": "TBD"
+  },
+  "position": "CB",
+  "college": "North Carolina",
+  "height": "6' 1\"",
+  "weight": "185",
+  "age": 0.0,
+  "dob": "00:00:00",
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": 34,
+  "snaps": 1473,
+  "site_ratings": {
+    "24/7 Sports": "86",
+    "ESPN": "TBD",
+    "Draft Buzz": "80.2 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.8",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "69.5",
+      "percentile": 0.118
+    },
+    "24 Grade": {
+      "value": "78.2",
+      "percentile": 0.778
+    },
+    "23 Grade": {
+      "value": "57.8",
+      "percentile": 0.0
+    },
+    "Coverage Grade": {
+      "value": "70.6",
+      "percentile": 0.25
+    },
+    "Passer Rating": {
+      "value": "100",
+      "percentile": 0.111
+    },
+    "Interceptions": {
+      "value": "0",
+      "percentile": 0.083
+    },
+    "Forced Incom.": {
+      "value": "5",
+      "percentile": 0.167
+    },
+    "Forced Inc. Rate": {
+      "value": "20.8",
+      "percentile": 0.778
+    },
+    "Dropped Picks": {
+      "value": "1",
+      "percentile": 0.667
+    },
+    "Completion %": {
+      "value": "58.3",
+      "percentile": 0.222
+    },
+    "Man Coverage": {
+      "value": "62.9",
+      "percentile": 0.278
+    },
+    "Zone Coverage": {
+      "value": "72.3",
+      "percentile": 0.333
+    },
+    "% In Man": {
+      "value": "42.6",
+      "percentile": 1.0
+    },
+    "% In Zone": {
+      "value": "54.1",
+      "percentile": 0.333
+    },
+    "Coverage Stops": {
+      "value": "3",
+      "percentile": 0.167
+    },
+    "Tackling": {
+      "value": "45.9",
+      "percentile": 0.0
+    },
+    "Missed Tackles": {
+      "value": "4",
+      "percentile": 0.611
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Arm Length": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Hand Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Speed": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Explosive": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Agility": {
+      "result": "TBD",
+      "grade": null
+    },
+    "10 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "20 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "40 Time": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Vertical": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Broad": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "3 Cone": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Bench": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Height": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Weight": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Gridiron": {
+      "result": "TBD",
+      "grade": "TBD"
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 154.66666666666666,
+      "positional_rank": "19.5"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 137.0,
+      "positional_rank": "18"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 130.0,
+      "positional_rank": "21"
+    },
+    {
+      "source": "Jeremiah",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 197.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Tankathon",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Jeremiah": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "Tankathon": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "6TH",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "0",
+    "Bleacher": "0",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR Allowed": 84.6,
+    "Tackling": 0.59,
+    "Run Defense": 0.71,
+    "Cov Grade": 0.76,
+    "Zone Coverage": 0.72,
+    "Man/Press": 0.76
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 5,
+      "career": 9
+    },
+    "Slot": {
+      "2025": 59,
+      "career": 122
+    },
+    "Corner": {
+      "2025": 290,
+      "career": 1220
+    },
+    "Box": {
+      "2025": 33,
+      "career": 98
+    },
+    "Deep": {
+      "2025": 9,
+      "career": 23
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Coverage Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Mental/Discipline Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nThaddeus Dixon bounced between Paramount High and La Mirada High during his prep years, and when the recruiting process wrapped up, he didn't have a single Division I offer waiting for him. Academic concerns and maturity questions scared programs off. So Dixon landed at Long Beach City College, where he finally got his shot to prove himself on the field.\n\nTwo productive seasons with the Vikings changed everything. Dixon racked up 76 tackles, five interceptions, and a touchdown while earning recognition as a top-50 junior college prospect nationally. ESPN had him as their fifth-ranked JUCO corner, and 247Sports slotted him at eighth. Washington came calling in December 2022, and Dixon jumped at the chance. His first season in Seattle saw him contribute in 14 of 15 games during the Huskies' national championship run, recording 26 tackles, six pass breakups, and a pick. He made two tackles in the title game loss to Michigan.\n\nThe 2024 campaign brought a starting role and legitimate recognition. Dixon locked down 12 starts, finished with 69 tackles across his Washington tenure, posted 16 pass deflections, two interceptions, three tackles for loss, and a forced fumble. The coaches rewarded him with honorable mention All-Big Ten honors, and his teammates voted him Washington's defensive skill player of the year. When Bill Belichick took the North Carolina job and brought defensive coordinator Steve Belichick with him, Dixon followed his DC to Chapel Hill in January 2025. Ranked as the third-best cornerback transfer in the nation by 247Sports, Dixon entered his final college season as one of four Tar Heels nominated for preseason All-ACC honors.\n\nThe 2025 campaign at UNC proved challenging. Dixon started the first five games and looked like the lockdown presence Chapel Hill needed, recording 14 tackles and three pass deflections while allowing just nine catches on 16 targets. Then came the Clemson game on October 4th, where he snagged an interception but suffered an upper-body injury that sidelined him for over a month. He returned for the Duke game in late November and finished the season, but the injury-shortened year limited his production to 20 total tackles and six passes defended across seven games. The Tar Heels finished 4-8, going 2-6 in ACC play during Belichick's first season at the helm.\n\nSCOUTING REPORT: SUMMARY\nWatch Dixon play and you'll see a corner who has earned everything he's gotten. His journey from overlooked recruit to All-Big Ten honorable mention tells you about his makeup, but his film shows a player with legitimate tools to carve out a role at the next level. The length plays. The physicality translates. The willingness to match up against an offense's best target, wherever they line up, gives coordinators flexibility in how they deploy him. The 2025 season at UNC was a mixed bag: he looked like a true lockdown corner in those first five starts before the injury derailed things, but the limited sample leaves questions about his ceiling.\n\nHere's the deal: Dixon's ceiling hinges entirely on his ability to clean up the technical flaws that show up against quicker receivers. When he trusts his feet and plays with patience, he's a disruptive cover man who can handle press responsibilities or sit in off coverage and drive on routes. When he panics, the hands come out, the flags fly, and offensive coordinators start attacking him. The tackling needs work too. You can live with a corner who struggles occasionally in run support, but the missed tackles in space will get exposed against NFL playmakers. The injury that cost him half his senior season adds another layer of uncertainty for medical staffs to evaluate.\n\nTeams will need to have honest conversations about decision-making and maturity. Academic and maturity concerns kept him out of Division I football coming out of high school. The talent is real, and his experience under Steve Belichick's scheme should translate well to pro defenses that ask corners to communicate and adjust. But front offices will weigh whether the juice is worth the squeeze on a Day 3 corner with red flags. He's got starter potential if he puts it all together, but he's going to need structure and accountability to maximize that ceiling."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.8,
+    "grade_indicator": null,
+    "overall_rank": 130,
+    "position_rank": null,
+    "pro_comparison": null,
+    "projected_round": null
+  },
+  "injury_history": []
+}

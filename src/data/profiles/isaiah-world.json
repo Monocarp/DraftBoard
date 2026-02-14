@@ -1,0 +1,447 @@
+{
+  "name": "Isaiah World",
+  "slug": "isaiah-world",
+  "overview": {
+    "POS": "OT",
+    "College": "Oregon",
+    "Height": "6' 8\"",
+    "Weight": "318",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": "51",
+    "Snaps": "3241",
+    "24/7 Sports": "81",
+    "ESPN": "78",
+    "Draft Buzz": "84.8 / 100",
+    "NFL.com": "TBD",
+    "BR": "6.2",
+    "Gridiron": null
+  },
+  "position": "OT",
+  "college": "Oregon",
+  "height": "6' 8\"",
+  "weight": "318",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": 51,
+  "snaps": 3241,
+  "site_ratings": {
+    "24/7 Sports": "81",
+    "ESPN": "78",
+    "Draft Buzz": "84.8 / 100",
+    "NFL.com": "TBD",
+    "BR": "6.2",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "66.6",
+      "percentile": 0.0
+    },
+    "2024 Grade": {
+      "value": "70.2",
+      "percentile": 0.2
+    },
+    "2023 Grade": {
+      "value": "54.8",
+      "percentile": 0.0
+    },
+    "Run Block Grade": {
+      "value": "67.3",
+      "percentile": 0.3
+    },
+    "Pass Block Grade": {
+      "value": "65.5",
+      "percentile": 0.0
+    },
+    "True Pass Set Grade": {
+      "value": "57.1",
+      "percentile": 0.0
+    },
+    "Pass Block Efficiency": {
+      "value": "98",
+      "percentile": 0.2
+    },
+    "Zone Grade": {
+      "value": "56.3",
+      "percentile": 0.0
+    },
+    "Gap Grade": {
+      "value": "73.2",
+      "percentile": 0.7
+    },
+    "Sacks Allowed": {
+      "value": "1",
+      "percentile": 0.6
+    },
+    "Hits Allowed": {
+      "value": "4",
+      "percentile": 0.1
+    },
+    "Hurries Allowed": {
+      "value": "10",
+      "percentile": 0.3
+    },
+    "Pressures Allowed": {
+      "value": "15",
+      "percentile": 0.2
+    },
+    "Penalties": {
+      "value": "7",
+      "percentile": 0.05
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 74.625,
+      "positional_rank": "10.75"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 93.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 79.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 182.0,
+      "positional_rank": "15"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 50.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 21.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 51.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 42.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 53.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": 48.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Tyler GUYTON",
+    "Bleacher": "Ja'Wuan James",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": 0.73,
+    "Run Blocking Grade": 0.69
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 794,
+      "career": 2460
+    },
+    "LG": {
+      "2025": 1,
+      "career": 1
+    },
+    "C": {
+      "2025": 0,
+      "career": 0
+    },
+    "RG": {
+      "2025": 0,
+      "career": 0
+    },
+    "RT": {
+      "2025": 14,
+      "career": 14
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Isaiah World is as intangibly rich as any lineman in this class. He’s the perfect canvas to develop a franchise tackle from."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nStanding at a towering 6-foot-8 and weighing 312 pounds, Isaiah World spent four formative years at Nevada before transferring to Oregon for his final collegiate season. A three-star recruit coming out of high school, World transformed himself from the nation's 211th-ranked player into the No. 1 overall transfer in the portal according to 247Sports ahead of his move to Eugene.\n\nAt Nevada, World steadily climbed the depth chart, redshirting as a freshman before earning 10 starts at right tackle in 2022. He transitioned to left tackle in 2023, where he started all 12 games, earning All-Mountain West Honorable Mention honors. His development continued in 2024 when he again started all 13 games at left tackle, repeating as an All-Mountain West Honorable Mention while posting an impressive 82.3 pass blocking grade from PFF. His performance against top competition caught the attention of powerhouse programs, ultimately leading to his transfer to Oregon.\n\nWorld's single season at Oregon represented his greatest challenge and opportunity. Tasked with protecting the blindside for a less mobile quarterback in Dante Moore, World stepped into the shoes of NFL draftee Josh Conerly Jr and performed admirably. Coaches praised his \"great spirit\" and work ethic, while noting his basketball background had helped him develop the athleticism and body control that complemented his imposing frame. Going against elite edge talent like Matayo Uiagalelei (the Big Ten's sack leader) in practice helped World refine his technique against top-tier competition he hadn't consistently faced in the Mountain West.\n\nAny NFL team adding World to their roster will be investing in a high-ceiling, developmental tackle who could blossom into a quality starter with time and proper coaching. His film shows a prospect with excellent pass protection instincts but a work-in-progress as a run blocker - making him a perfect fit for pass-first offensive systems that emphasize vertical sets where his length and improving lateral movement can shine immediately.\n\n\nThe stark contrast between World's pass and run blocking abilities suggests a specialized role early in his career, likely as a swing tackle who can provide immediate value in obvious passing situations. Coaches will need to focus on lowering his pad level, improving hand placement, and eliminating the penalty issues that have followed him throughout his career. His basketball background has blessed him with rare coordination for his size, but also means he's still developing the consistent power and leverage techniques required in the run game.\n\n\nWhat makes World intriguing is how much untapped potential remains. The improvement shown during his transfer year at Oregon against higher-caliber competition indicates his development trajectory is still pointing sharply upward. His fifth-year growth suggests a player who responds well to coaching and elevated competition. While he may require seasoning before taking over a starting role, World possesses the physical tools and technical foundation to develop into an above-average NFL tackle by his second or third season, particularly on the right side where his pass protection skills could truly flourish."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nWorld is a redshirt senior who started 35 games at Nevada and transferred to Oregon in 2025. HeÃ•s primarily a left tackle, but he played 628 snaps at right tackle in 2023. He gets good depth kicking out to meet pass rushers, and he delivers a strong punch at the top of his pass sets. World quickly resets his hands and digs in when he starts to give ground. HeÃ•s quick, with the foot speed and range to develop into an effective zone run blocker. As a drive blocker, he's big and strong enough to wall off. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Isaiah World is a tools—y, loose mover with an explosive first step and jarring hands. Those traits are overshadowed by too many quick, glaring losses due to an unrefined skill—set. World's combination of physical tools and flashes warrant a Day 3 draft pick, and he can work toward a role over the course of his rookie contract.\n\nWorld is a 6'8\", 318—pound tackle prospect, who entered the Nevada program as a 3—star recruit in the 2021 class before transferring to Oregon in 2025.\n\nWorld started 35 games primarily at left tackle while at Nevada from 2021—2024."
+        },
+        {
+          "title": "Positives",
+          "text": "— Good upper—body strength with heavy hands to deliver a jolt on contact.\n\n— Explosive first step to reach his spot in his pass sets and surge into defenders on drive blocks.\n\n— Good arm length with flashes of establishing first meaningful contact and playing long to keep rushers off of his frame.\n\n— Has the quickness and speed to intersect targets on screens."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Raw, unrefined hand usage, positional leverage and sustain skills.\n\n— Slow to adapt and recover out of compromising positions.\n\n— Overly reliant on striking with heavy hands leads to whiffs and glaring losses."
+        }
+      ]
+    },
+    {
+      "source": "ESPN",
+      "sections": [
+        {
+          "title": "Analysis",
+          "text": "World is a redshirt senior who started 35 games at Nevada and transferred to Oregon in 2025. HeÃ•s primarily a left tackle, but he played 628 snaps at right tackle in 2023. He gets good depth kicking out to meet pass rushers, and he delivers a strong punch at the top of his pass sets. World quickly resets his hands and digs in when he starts to give ground. HeÃ•s quick, with the foot speed and range to develop into an effective zone run blocker. As a drive blocker, he's big and strong enough to wall off. -- Steve Muench"
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.2,
+    "grade_indicator": null,
+    "overall_rank": 182,
+    "position_rank": null,
+    "pro_comparison": "Ja'Wuan James",
+    "projected_round": null
+  },
+  "injury_history": []
+}

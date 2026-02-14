@@ -1,0 +1,428 @@
+{
+  "name": "Josiah Trotter",
+  "slug": "josiah-trotter",
+  "overview": {
+    "POS": "LB",
+    "College": "Missouri",
+    "Height": "6' 2\"",
+    "Weight": "237",
+    "Age": "20.9",
+    "DOB": "2005-04-15 00:00:00",
+    "Year": null,
+    "Prj. Rd": null,
+    "Games": "24",
+    "Snaps": "1144",
+    "24/7 Sports": "88",
+    "ESPN": "TBD",
+    "Draft Buzz": "85.0 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.4",
+    "Gridiron": null
+  },
+  "position": "LB",
+  "college": "Missouri",
+  "height": "6' 2\"",
+  "weight": "237",
+  "age": 20.9,
+  "dob": "2005-04-15 00:00:00",
+  "year": null,
+  "projected_round": null,
+  "games": 24,
+  "snaps": 1144,
+  "site_ratings": {
+    "24/7 Sports": "88",
+    "ESPN": "TBD",
+    "Draft Buzz": "85.0 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.4",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "74",
+      "percentile": 0.3
+    },
+    "24 Grade": {
+      "value": "68.9",
+      "percentile": 0.0
+    },
+    "23 Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "Pass Rush Grade": {
+      "value": "81.6",
+      "percentile": 1.0
+    },
+    "Run Def. Grade": {
+      "value": "89.3",
+      "percentile": 0.7
+    },
+    "Run Stop %": {
+      "value": "11.1",
+      "percentile": 0.8
+    },
+    "Tackles": {
+      "value": "58",
+      "percentile": 0.4
+    },
+    "Tackling Grade": {
+      "value": "79.8",
+      "percentile": 0.5
+    },
+    "Missed Tkl Rate": {
+      "value": "10",
+      "percentile": 0.5
+    },
+    "ADORT": {
+      "value": "2.7",
+      "percentile": 0.3
+    },
+    "Coverage": {
+      "value": "50.8",
+      "percentile": 0.0
+    },
+    "Coverage Stops": {
+      "value": "9",
+      "percentile": 0.1
+    },
+    "Recs/Tgts": {
+      "value": "0",
+      "percentile": 0.5
+    },
+    "Completion %": {
+      "value": "87.1",
+      "percentile": 0.0
+    },
+    "TD / INT": {
+      "value": "1 / 0",
+      "percentile": null
+    },
+    "Forced Inc Rate": {
+      "value": "0",
+      "percentile": 0.0
+    },
+    "Pass Rat. All.": {
+      "value": "109.3",
+      "percentile": 0.2
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 68.6,
+      "positional_rank": "6.8"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 61.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 66.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 77.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 95.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "0",
+    "Bleacher": "0",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.88,
+    "Pass Rush": 0.82,
+    "Run Defense": 0.93,
+    "Coverage": 0.52
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 21,
+      "career": 34
+    },
+    "Slot": {
+      "2025": 43,
+      "career": 71
+    },
+    "Corner": {
+      "2025": 3,
+      "career": 3
+    },
+    "Box": {
+      "2025": 449,
+      "career": 1033
+    },
+    "Deep": {
+      "2025": 0,
+      "career": 3
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nFootball bloodlines run deep in the Trotter family. Josiah is the son of Jeremiah Trotter Sr, a four-time Pro Bowler and two-time All-Pro who anchored the Philadelphia Eagles defense for the better part of a decade. His older brother, Jeremiah Jr, won a ring with those same Eagles following the 2024 season after earning back-to-back All-American honors at Clemson. Growing up in Philadelphia, Josiah starred at St. Joseph's Prep, where he helped the program capture two PIAA Class 6A state titles and earned recognition as the 2021 All-Eastern PA Co-Player of the Year. Recruiting services pegged him as a four-star prospect and one of the top players in Pennsylvania.\n\nTrotter signed with West Virginia and promptly suffered a lower leg injury that forced him to redshirt the entire 2023 season. He bounced back in a big way as a redshirt freshman in 2024, piling up 92 tackles, 4.0 tackles for loss, and an interception while earning Big 12 Defensive Freshman of the Year and Freshman All-America honors. After one productive season in Morgantown, he entered the transfer portal and landed at Missouri, where he immediately took over as the starting middle linebacker.\n\nThe move paid dividends. Trotter led the Tigers with 84 tackles in 2025, adding 13.0 tackles for loss and two sacks while anchoring a defense that ranked 10th nationally in total defense. He earned First Team All-SEC honors from the coaches and Second Team recognition from the Associated Press. His best performances came in the biggest moments: 11 tackles against South Carolina when Missouri held the Gamecocks to minus-9 rushing yards, eight stops against Alabama, and a season-high 13 tackles against Oklahoma. He closed his Mizzou career with 10 tackles and two sacks against Arkansas before a minor knee injury held him out of the Gator Bowl.\n\nSCOUTING REPORT: SUMMARY\nThis is an old-school thumper who will make a coordinator smile the first time he watches the tape. Trotter plays the game with a physicality and temperament that feels increasingly rare at the linebacker position. He trusts his eyes, triggers downhill without hesitation, and delivers violent blows to anyone who gets in his way. The run defense skills are legitimate, and the processing speed puts him a step ahead of offensive linemen trying to climb to the second level. He is going to find the ball and make the tackle.\n\nThe fit matters for a player with this skill set. Trotter profiles best as a strong-side inside linebacker in an odd front where his gap integrity and contact balance can shine between the tackles. He is not going to chase receivers across the field in dime packages, and asking him to match up with dynamic tight ends in man coverage is probably a losing proposition. But on early downs when defenses need to set edges and stuff the run, Trotter brings legitimate value. The pass rush flashes suggest there is more to unlock if creative coaches turn him loose.\n\nThe bloodlines are impossible to ignore, but Trotter is not riding his father's coattails. He has earned his draft stock through two productive college seasons and a clear understanding of his role. Teams that want to hit people and control the line of scrimmage will find a willing accomplice here. The coverage limitations cap his ceiling somewhat, but the floor is a quality starter who can anchor a run defense at the pro level."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.4,
+    "grade_indicator": null,
+    "overall_rank": 77,
+    "position_rank": null,
+    "pro_comparison": null,
+    "projected_round": null
+  },
+  "injury_history": []
+}

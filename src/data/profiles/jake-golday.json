@@ -1,0 +1,462 @@
+{
+  "name": "Jake Golday",
+  "slug": "jake-golday",
+  "overview": {
+    "POS": "LB",
+    "College": "Cincinnati",
+    "Height": "6' 4\"",
+    "Weight": "240",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": null,
+    "Prj. Rd": null,
+    "Games": "38",
+    "Snaps": "1752",
+    "24/7 Sports": "0",
+    "ESPN": "87",
+    "Draft Buzz": "84.7 / 100",
+    "NFL.com": "6.34",
+    "Bleacher": "7.6",
+    "Gridiron": null
+  },
+  "position": "LB",
+  "college": "Cincinnati",
+  "height": "6' 4\"",
+  "weight": "240",
+  "age": null,
+  "dob": "00:00:00",
+  "year": null,
+  "projected_round": null,
+  "games": 38,
+  "snaps": 1752,
+  "site_ratings": {
+    "24/7 Sports": "0",
+    "ESPN": "87",
+    "Draft Buzz": "84.7 / 100",
+    "NFL.com": "6.34",
+    "Bleacher": "7.6",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "82.1",
+      "percentile": 0.7
+    },
+    "24 Grade": {
+      "value": "80.9",
+      "percentile": 0.8
+    },
+    "23 Grade": {
+      "value": "76.5",
+      "percentile": 0.875
+    },
+    "Pass Rush Grade": {
+      "value": "61.1",
+      "percentile": 0.1
+    },
+    "Run Def. Grade": {
+      "value": "90.7",
+      "percentile": 0.9
+    },
+    "Run Stop %": {
+      "value": "7.8",
+      "percentile": 0.3
+    },
+    "Tackles": {
+      "value": "70",
+      "percentile": 0.7
+    },
+    "Tackling Grade": {
+      "value": "83.1",
+      "percentile": 0.6
+    },
+    "Missed Tkl Rate": {
+      "value": "9",
+      "percentile": 0.6
+    },
+    "ADORT": {
+      "value": "3.4",
+      "percentile": 0.8
+    },
+    "Coverage": {
+      "value": "76.7",
+      "percentile": 0.7
+    },
+    "Coverage Stops": {
+      "value": "19",
+      "percentile": 0.9
+    },
+    "Recs/Tgts": {
+      "value": "0",
+      "percentile": 0.5
+    },
+    "Completion %": {
+      "value": "72.2",
+      "percentile": 0.8
+    },
+    "TD / INT": {
+      "value": "2 / 0",
+      "percentile": null
+    },
+    "Forced Inc Rate": {
+      "value": "8.3",
+      "percentile": 0.8
+    },
+    "Pass Rat. All.": {
+      "value": "107.1",
+      "percentile": 0.3
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 55.25,
+      "positional_rank": "4.142857142857143"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 46.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 37.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 47.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 48.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 83.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 108.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 47.0,
+      "positional_rank": "4"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 51.333333333333336,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 39.0,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": 30.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "3RD",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "Malik Harrison",
+    "Miller": "TBD",
+    "DraftBuzz": "0",
+    "Bleacher": "Quay Walker",
+    "WF": "TBD",
+    "NFL.com": "Malik Harrison"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.79,
+    "Pass Rush": 0.59,
+    "Run Defense": 0.86,
+    "Coverage": 0.75
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 117,
+      "career": 256
+    },
+    "Slot": {
+      "2025": 248,
+      "career": 514
+    },
+    "Corner": {
+      "2025": 1,
+      "career": 2
+    },
+    "Box": {
+      "2025": 314,
+      "career": 960
+    },
+    "Deep": {
+      "2025": 1,
+      "career": 3
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Golday is a big, explosive linebacker with a game best suited for work near the line of scrimmage. He attacks climbing blockers with heavy, aggressive hands. He also shows the strength to stack, compress gaps and finish with authority. While his performance at the point of attack stands out, he can be a little late diagnosing play design and needs to work with a more preemptive downhill trigger at times. He’s more powerful than elusive as a blitzer and is average in coverage. Golday’s traits, explosiveness and field demeanor should make him an early special teams standout with the potential to eventually start at Sam or inside linebacker."
+        },
+        {
+          "title": "Strengths",
+          "text": "Explosive athlete with impressive size. | Attacks blocks and constricts run flow with heavy hands. | Scrapes with tempo alterations to leverage the run. | Effective use of hands to play off blockers and make sudden tackles. | Comes to balance and has good stopping power as a tackler. | Not easily manipulated out of his zone by the quarterback’s eyes. | Can immediately step in as a kick-cover talent."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Average quickness to diagnose and read the play design. | Will work under blocks and lose the angle on occasion. | Needs a quicker downhill trigger to blow up the blocking scheme. | Long legs with average short-area agility in coverage. | Could struggle covering running backs if asked. | Linear pass rusher with below-average elusiveness."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nJake Golday's path to NFL consideration reads like something from a recruiting coordinator's nightmare-turned-dream scenario. The Arlington, Tennessee native entered college as an unranked prospect in 2021, landing at Central Arkansas where he spent three seasons converting from defensive end to linebacker while compiling 125 tackles, 12 tackles for loss, and 5.5 sacks across 26 games at the FCS level. His parents and brother all played college basketball, so the athletic bloodlines were there even if the football pedigree wasn't screaming power conference starter.\n\nThe 6'4\", 240-pound defender made the jump to Cincinnati in 2024 and immediately cracked the starting lineup in the Big 12, finishing second on the team with 58 tackles and seven tackles for loss despite battling through injuries over the final three games. His defining moment came in a road win at UCF where he tallied six tackles, 2.5 TFLs, 1.5 sacks, forced a fumble and recovered it to kill a Knights scoring drive and set up Cincinnati's first points. Pro Football Focus graded him as the Big 12's second-best linebacker that season, earning him honorable mention All-Big 12 recognition. His 2025 campaign cemented his status as a legitimate NFL prospect with 80 tackles, 3.5 TFLs, 3.5 sacks, two pass deflections, and a forced fumble through eleven games, landing him on Bruce Feldman's annual \"Freaks\" list and earning multiple Big 12 weekly honors.\n\nGolday brings a rare physical profile to the linebacker position with his length and explosive athleticism - his 4.24-second short shuttle would've bested every linebacker at the 2025 combine, while his 10'7\" broad jump would've ranked second and his 36-inch vertical stands out among the position group. He repped 225 pounds twenty-four times and maxed at 365 on bench press, completed 19 pull-ups, and hit 22.16 mph on GPS tracking. That kind of testing portfolio explains why he's drawn significant draft buzz despite the unconventional background, but the tape tells a more complicated story about readiness for the pro game.\n\nSCOUTING REPORT: SUMMARY\nGolday enters the league as a developmental linebacker with tantalizing physical tools but real questions about his processing speed and technical refinement. His athletic profile suggests he could eventually develop into a three-down defender, but that outcome depends heavily on landing in the right system with patient coaching. The transition from Cincinnati's unconventional 3-3-5 scheme where he spent extensive time in overhang roles to a traditional NFL defense will require significant adjustmentâ€”he'll need to become more disciplined in his zone drops, sharper with his keys, and stronger taking on blockers in conventional two-gap responsibilities.\n\nHis best early-career role likely comes as a situational weakside linebacker in a 4-3 scheme that emphasizes zone coverage and allows him to use his speed rather than asking him to consistently take on and defeat blocks. The pass rush background gives him immediate special teams value and third-down utility as a blitzer, which could be his fastest path to the field while he develops the instincts and strength needed for base downs. His closing speed and tackling reliability in space translate well to modern NFL offenses that spread formations and attack horizontally, but coordinators will need to minimize his exposure in man coverage until his technique catches up to his athleticism.\n\nThe developmental curve matters significantly here because Golday only has one full season playing traditional off-ball linebacker responsibilities at a high level. His trajectory from 2024 to 2025 showed real growth in his ability to process faster and play through contact more effectively, suggesting he's coachable and capable of continued improvement. Teams investing in him are betting on projection over production, gambling that his athletic ceiling and work ethic can overcome the technical gaps created by his late start at the position. That's a reasonable bet given the testing numbers and flashes on tape, but it's also one that requires development time rather than expecting immediate Year One contributions."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Jake Goldey from Cincinnati (via Central Arkansas)... versatility... bring pressure... drop into coverage... good open field tackler... 6-4 240... fly to the football... compete hard from day one... impact defense... production undeniable... mid to late round two... value pick."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Jake Golday is a high—level athlete and a potential three—down linebacker in the NFL because of his size (6'4\", 240 lbs), strength and athleticism. His biggest flaws can be chalked up to not having much experience playing off the ball.\n\nLightly recruited in the 2021 class, Golday was an unranked high school prospect whose college career began as an edge—defender at Central Arkansas, an FCS school. He spent three years with the Bears, redshirting as a true freshman and collecting 125 total tackles, 12 tackles for loss and 5.5 sacks in 26 games.\n\nIn 2024, the Arlington, Tennessee native transferred to Cincinnati and immediately became a starter, racking up 58 tackles, seven TFLs, 1.5 sacks, two passes defended and two forced fumbles. His performance was good enough for an honorable mention All—Big 12 bid."
+        },
+        {
+          "title": "Positives",
+          "text": "— Golday has good size and length with room for growth. Also, he's a very good athlete for the linebacker position.\n\n— Fluid hips and impressive speed to turn and run in coverage, allowing him to quickly get depth against play—action passes or carry vertical routes. Loose hips can also help him stay in phase or recover when playing man—coverage.\n\n— Use his hands and gets physical in zone coverage to help force reroutes against wide receivers.\n\n— Accelerates really well to be quite effective when closing in coverage.\n\n— Against the run, Golday takes on blocks with his hands, plays physically and presents solid strength to get extension and escape from offensive linemen. He has little—to—no issues stacking and shedding against tight ends.\n\n— Has some pop behind his pads when coming downhill.\n\n— Plenty of speed for impressive sideline—to—sideline range.\n\n— A sure—tackler who wraps up and rarely misses, while also being decent and breaking down when tackling in space.\n\n— Offers value as a blitzer on third downs thanks to his background as an edge—rusher, with a repertoire to win with ghost, long—arm and stick moves."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Golday's awareness in zone coverage is poor; he'll drift out of his zone and miss opportunities to help his teammates.\n\n— Covers grass instead of adjusting to route concepts too often when playing in space.\n\n— Gets caught with his eyes in the backfield as the hook defender and isn't good at reading the quarterback's eyes to anticipate throws and/or tighten windows.\n\n— Instincts as a run—defender are subpar, as he's a tick slow to key and diagnose, making it difficult for him to beat offensive linemen to the spot.\n\n— Could afford to add lower—body strength to anchor against bigger offensive linemen."
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.34,
+    "prospect_grade_indicator": "Will Eventually Be Plus Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Malik Harrison",
+    "eligibility": "Senior",
+    "nfl_rank": 47,
+    "nfl_pos_rank": 4
+  },
+  "bleacher_profile": {
+    "grade": 7.6,
+    "grade_indicator": null,
+    "overall_rank": 48,
+    "position_rank": null,
+    "pro_comparison": "Quay Walker",
+    "projected_round": "2nd Round"
+  },
+  "injury_history": []
+}

@@ -1,0 +1,539 @@
+{
+  "name": "Akheem Mesidor",
+  "slug": "akheem-mesidor",
+  "overview": {
+    "POS": "ED",
+    "College": "Miami (FL)",
+    "Height": "6' 3\"",
+    "Weight": "280",
+    "Age": "24.7",
+    "DOB": "2000-01-01 00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": "1st Round",
+    "Games": "63",
+    "Snaps": "2565",
+    "24/7 Sports": "86",
+    "ESPN": "90",
+    "Draft Buzz": "85.1 / 100",
+    "NFL.com": "6.41",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "position": "ED",
+  "college": "Miami (FL)",
+  "height": "6' 3\"",
+  "weight": "280",
+  "age": 24.7,
+  "dob": "2000-01-01 00:00:00",
+  "year": "RS Sr",
+  "projected_round": "1st Round",
+  "games": 63,
+  "snaps": 2565,
+  "site_ratings": {
+    "24/7 Sports": "86",
+    "ESPN": "90",
+    "Draft Buzz": "85.1 / 100",
+    "NFL.com": "6.41",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "92.7",
+      "percentile": 0.9
+    },
+    "24 Grade": {
+      "value": "75.5",
+      "percentile": 0.35
+    },
+    "23 Grade": {
+      "value": "76.6",
+      "percentile": 0.7
+    },
+    "Pass Rush Grade": {
+      "value": "91.8",
+      "percentile": 0.8
+    },
+    "True Pass Rush": {
+      "value": "93.7",
+      "percentile": 0.947
+    },
+    "PR Win Rate": {
+      "value": "21.2",
+      "percentile": 0.895
+    },
+    "Run Def. Grade": {
+      "value": "90.6",
+      "percentile": 1.0
+    },
+    "Run Stop %": {
+      "value": "5.1",
+      "percentile": 0.15
+    },
+    "Sacks": {
+      "value": "11",
+      "percentile": 0.842
+    },
+    "Hits": {
+      "value": "4",
+      "percentile": 0.395
+    },
+    "Hurries": {
+      "value": "46",
+      "percentile": 0.947
+    },
+    "Batted Balls": {
+      "value": "0",
+      "percentile": 0.158
+    },
+    "Forced Fumbles": {
+      "value": "3",
+      "percentile": 0.895
+    },
+    "Tackling Grade": {
+      "value": "64",
+      "percentile": 0.575
+    },
+    "Missed Tackle Rate": {
+      "value": "21.3",
+      "percentile": 0.263
+    },
+    "Total Pressures": {
+      "value": "61",
+      "percentile": 0.895
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 41.36363636363637,
+      "positional_rank": "4.857142857142857"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 33.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 18.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 19.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 24.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 30.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 49.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 137.0,
+      "positional_rank": "21"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 61.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 18.0,
+      "positional_rank": "5"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 24.181818181818183,
+    "PFF": 31.0,
+    "ESPN": null,
+    "Brugler": 30.0,
+    "Kiper": 20.0,
+    "Miller": 36.0,
+    "Bleacher": 17.0,
+    "Walter": 32.0,
+    "TDN": 15.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2nd - Late",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "Jonathan Greenard",
+    "Miller": "TBD",
+    "DraftBuzz": "Byron Young",
+    "Bleacher": "Byron Young",
+    "WF": "TBD",
+    "Ringer": "Jim Carrey In 'The Cable Guy'",
+    "NFL.com": "Jonathan Greenard"
+  },
+  "strengths": "• Tenacious, Rabid, Tone Setter\n• Great PR Move Set, Elite Hand Usage\n• Cosntantly Countering, Adapts\n• Guick, Impressive COD/Movement\n• Great Bend At Top of Rushes\n• Phsyical Edge Setter\n• Versatile Exp, Can Kick Inside\n• Disciplined in Spying QBs\n• True Playmaker Ability",
+  "weaknesses": "• Injury History (Foot), Age (25 Yr Rook)\n• Average Speed to Power\n• Lacks Desired Height/Weight\n• Can Struggle To Disengage in Run\n• Subpar Strength vs Strong Anchor",
+  "accolades": "• 2025 1st Team All ACC\n• 2025 Cornish Finalst\n• 2024 HM All ACC\n• 2022 HM All ACC\n• 2021 HM Big 12\n• 2020 2nd Team All Big 12",
+  "player_summary": "Mesidor is an older prospect, will be 25 in his rookie season. This is due in part to an injury history, largely foot injuries. However, his skills in pass rush are undeniable. He has that phenomenal combination of deep pass rush skills, real awareness of how to beat his opponent, adapt as needed, and a truly ruthless demeanor that doesn't take a snap off. He also shows ability to spy mobile QBs. His ability in the run game is less documented and will need further analysis. His run defense grade is high at 90, but run stop % is low and missed tackle is high. He is noted to be a valuable edge setter. He also has the ability and experience to kick inside and be truly versatile. Overall, he seems like an early high end contributor, limited by his size, age, and injury concerns, but he's shown just about everything you're looking for from a guy with those limitations.",
+  "draftbuzz_grades": {
+    "Tackling": 0.65,
+    "Pass Rush": 0.9,
+    "Run Defense": 0.89
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 0,
+      "career": 43
+    },
+    "B GAP": {
+      "2025": 10,
+      "career": 184
+    },
+    "Over Tackle": {
+      "2025": 96,
+      "career": 212
+    },
+    "Outside Tkl": {
+      "2025": 585,
+      "career": 809
+    },
+    "Off Ball": {
+      "2025": 8,
+      "career": 15
+    }
+  },
+  "skills_traits": {
+    "Instincts/Processing/Production": {
+      "positives": "Snaps, Effort, hardest playing player…never comes off the field (McShay)\nLots of versatility, can kick inside (FD) Played as NT for a stretch (NFLSE)\nTrue playmaker (FD)\nSuper tenancious, tone setter (Ringer)\nInstinctive, high effort rusher (NFL)\nRabid determination (NFL)\nDisciplined in spying QB (NFL)",
+      "negatives": null
+    },
+    "Physical Traits": {
+      "positives": null,
+      "negatives": "Lacks desired height/length (NFL)\nSubpar strength to beat OTs with a good anchor (BR)"
+    },
+    "Athletic Ability": {
+      "positives": "Conistently launching off the front foot (NFLSE)\nQuick, impressive COD, movement skills (BR)\nGood bend at the top of the rush (BR))",
+      "negatives": "Speed to power conversion is NFL Average (NFL)\nBase narrows through engagment, causes imbalance (NFL)"
+    },
+    "Pass Rush Skills": {
+      "positives": "No false steps (NFLSE)\nHandwork is unbelievable tos tay clean (NFLSE)\nSo many pass rush moves (NFLSE)\nStrings moves together w/ effortless mid-rush adjustments (NFL)\nCan use finess or power to win (NFL)\nRecognizes oversets by OT's and attacks accordingly (NFL)\nConstantly countering (NFL)\nActive hands, very good hand usage (BR)",
+      "negatives": null
+    },
+    "Run Defense Skills": {
+      "positives": "A Physical edge setter (WF)",
+      "negatives": "Struggles to disengage blocks in run (BR)"
+    }
+  },
+  "media_links": [
+    {
+      "description": "Interview",
+      "source": "YT - Fanatics View",
+      "url": "https://www.youtube.com/watch?v=dCKSAbBzPik&t=962s"
+    },
+    {
+      "description": "Scouting Report",
+      "source": "YT - NFL Draft Talk",
+      "url": "https://www.youtube.com/watch?v=edMDG3esikY"
+    },
+    {
+      "description": "Film Breakdown",
+      "source": "YT - Daft on Draft",
+      "url": "https://www.youtube.com/watch?v=tYwFBZxL60w"
+    },
+    {
+      "description": "Highlights",
+      "source": "YT - ACC Digital Network",
+      "url": "https://www.youtube.com/watch?v=0NEAv5BOY7o"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Mesidor is an instinctive, high-effort edge rusher with a fluid rush style and a deep toolbox. He bursts upfield and can shrink the corner while punishing oversetting tackles with inside counters. He strings moves together with effortless mid-rush adjustments, utilizing harmonious hands and feet to carve efficient tracks into the pocket. He’s a problem for guards when reduced inside, too. His urgency shows up in run defense, where he uses play strength and short-area quickness to disrupt blocking schemes and stay around the football. He won’t be as long as most edge-setters and his anchor at the point is just average. The talent and motor are obvious, but his age and injury history could push some teams to discount his grade below what the tape shows."
+        },
+        {
+          "title": "Strengths",
+          "text": "Blends rabid determination with coaching from Hall of Famer Jason Taylor. | Uses finesse or power depending on approach and opponent. | Appears to gain momentum and speed at the turn. | Effective inside-outside Euro step helps shrink the corner. | Recognizes oversets by tackle and attacks them accordingly. | Constantly countering once he feels momentum wain. | Disciplined in spying quarterback on boot action. | Eager to find the football and make a play in run game. | Pursues wide with adequate speed and smart angles. | Keeps hustle dialed in when chasing plays down the field."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Lacks desired height/length as an NFL edge. | Speed-to-power conversion is average by league standards. | Base narrows through engagement, leading to imbalance. | Desire to chase play direction sets him up for counters. | Foot injury limited him to three games in 2023. | Will be a 25-year-old rookie."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Hailing from Ottawa, Ontario, Akheem Mesidor has taken a unique path to the NFL Draft. After a stint at the Royal Imperial Collegiate of Canada, Mesidor made waves at Clearwater Academy International in Florida, racking up 92 tackles and 10 sacks in his senior year. His dominance caught the eye of college recruiters, earning him a 4-star rating from ESPN.\n\nMesidor's college career began at West Virginia, where he quickly established himself as a defensive standout. In just two seasons with the Mountaineers, he amassed 70 tackles, 14.5 tackles for loss, and 9.5 sacks. His freshman campaign was particularly impressive, earning him spots on multiple Freshman All-America teams and All-Big 12 Second Team honors.\n\nTransferring to Miami (FL) for his junior season, Mesidor continued to wreak havoc in the backfield. Despite an injury-shortened 2023 campaign, his 2022 performance showcased his potential, notching 38 tackles, 10.5 tackles for loss, and a team-leading seven sacks. His standout game against Virginia Tech, where he recorded 3.5 sacks, earned him national recognition as the Walter Camp National FBS Defensive Player of the Week.\n\nMesidor projects as a versatile defensive lineman who can contribute in both 3-4 and 4-3 schemes at the next level. His ability to rush the passer from multiple positions will be highly valued by NFL coordinators looking to create mismatches along the line of scrimmage. While his size may limit him in some aspects, his quickness and tenacity should allow him to carve out a significant role as a rotational player early in his career.\n\nTeams running aggressive, one-gap defensive schemes will likely view Mesidor as an intriguing prospect. His first-step quickness and ability to penetrate make him an ideal fit for systems that prioritize disruption over gap control. However, he'll need to prove he can hold up against the run consistently to become an every-down player in the NFL.\n\nMesidor's draft stock will hinge on how teams view his medical reports following his injury-shortened 2023 season. If he can demonstrate that he's fully healthy and hasn't lost any of his explosive qualities, he possibly could be a day two selection with the potential to outperform his draft position. His combination of production, versatility, and high motor make him an enticing prospect for teams looking to bolster their defensive line rotation."
+        },
+        {
+          "title": "Overview",
+          "text": "Super-tenacious, tone-setting defender with some Chip Douglas in him on the field; his power and physicality make him a nightmare to line up against.\n\nMesidor is going to get dinged for being 25 years old on draft night, but it’s tough to dislike anything else about him. He’s a ruggedly built, high-energy pass rusher who plays with his hair on fire each and every snap—and the production follows. In 2025 he racked up 12.5 sacks (tied for third most nationally) and 55 pressures (ninth, per PFF). His 36 percent win rate in true pass rush situations ranked ninth best among edge players with 100-plus rushes. Mesidor is a sixth-year senior who played two years at West Virginia and another four at Miami, and brings experience lining up at just about every spot on the defensive line. He rushes with an explosive first step, firing out of his stance to quickly threaten the edge, and he likes to utilize a Euro-step move that really gives tackles trouble. He can convert speed to power on his bull rush and overwhelm tackles with brute force, but also brings an effective swim move, cross chop, and long-arm stab move. He shows good bend to shoot back into the pocket. He brings power and quick feet when rushing from the inside, giving guards trouble thanks to his first-step burst and superior leverage. Mesidor shows quick recognition of screens, instantaneously stopping his rush to chase down the target or disrupt the throwing lane and mess up timing. He’s tough and physical playing the run; he fires his hands into his opponent’s chest and stacks him, keeping his eye on the back so he can make a play. He stonewalls pulling linemen and blows up move blocks. He brings some experience dropping back into zones and shows a decent feel for spacing.\n\nMesidor’s aggressive nature can be a double-edged sword at times. He will lose track of the ball when locking horns with a blocker and allow the run to spill or go through his gap. His lack of length could cause him to be viewed as a bit of a tweener type, with some teams seeing him as an edge while others project him as an interior rusher. And his age could cause teams to question his overall upside and growth trajectory. Is he maxed out where he is now, or can he continue to improve?"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Akheem Mesidor... Bain's teammate... number three... Miami? He's a really good player... you can kick him inside. He's got a lot of versatility. He's a true defensive playmaker gets after the quarterback... wrecked that game the other night... Meador just completely wrecked the game the other night... Bain Jr Went at eight... a guy that can play outside, inside, he can move him around and a pass rusher... Big time performer... having a guy with the versatility and the skillset and the production... just like with Rueben, Bain... was right there with him. So equally as good... how he tests, how Bain tests... not much of a gap there at all... Bain Jr at 19, Mesidor at 21... moving up based on what we've seen so far in the playoffs... makes sense at this point in the draft... absolutely love the player... based off what you've seen during the college football playoff... the big question... He's 25 or he will be 25 when the draft... three weeks before the draft. He turns 25... Dante Moore at 20 years old when the draft takes place and Mesidor at 25... four plus years apart... notable gap there for guys going in the first round... not every guy gets to a second contract, but if you're a first round pick, who's 25... ideal is you're drafting a guy who might extend him on a second deal at the age of 26 or something as opposed to 30... love the player... that's going to factor into how high Mesidor goes... done everything he can to put the age question mark aside for right now. He'll turn 25 in early April... a few weeks before we're all in Pittsburgh."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Akheem Mesidor... projected first rounders... some Scout [teams] who have a second on... Mesidor... the league consensus... very probable first rounders... how many games they've played... 16... how hard those suckers played... two of the hardest playing players... snaps effort chasing all, I would put those two guys on the list... give gimme my helmet back. Lemme go... Miami's not rotating players... that's just not a thing for that Miami team... snaps... gotta be a high number... those guys seem like they're never coming off the field... rare... Akheem Mesidor from Miami seeing Mobile... these your rankings?... Those are my top four in that order... A lot of them are gonna be in Mobile...\nESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Akheem Mesidor is a very intriguing pass—rusher who combines quickness and athleticism with excellent use of hands to beat offensive tackles around the edge or across their faces. The 6'3\", 265—pounder does leave something to be desired against the run, but will be an asset on third downs early on in the NFL.\n\nA 3—star recruit in the 2020 class, Mesidor's college career began at West Virginia. He spent two seasons with the Mountaineers, collecting 70 tackles, 14.5 tackles for loss and 9.5 sacks in 23 games to earn second—Team Freshman All—American and All—Big 12 honors in 2020 and a Big 12 Honorable Mention selection in 2021.\n\nThe native Canadian transferred to Miami in 2022 and logged 38 tackles, 10.5 TFLs, seven sacks, and a forced fumble, resulting in All—ACC Honorable Mention recognition during his first season in South Florida. Unfortunately, a foot injury limited him to just three games the following year."
+        },
+        {
+          "title": "Positives",
+          "text": "— Mesidor is a good overall athlete who is quick and has impressive change—of—direction skills to beat offensive tackles across their faces as a pass—rusher.\n\n— Solid at setting up his pass rush moves by stemming to one direction and using his movement skills to win in on the other side of the offensive lineman.\n\n— Very good use of hands as a pass—rusher, he has active hands and has shown the ability to consistently \"beat the hands to beat the man\". This allows him to have effective double—hand swipe and cross chop moves.\n\n— Also has shown a solid bull to rip move and a non—stop pass—rush motor, constantly working counter moves if he doesn't win initially.\n\n— Good bend at the top of the rush to corner and take efficient paths to the quarterback.\n\n— Can be an effective looper on line game with his athleticism and bend.\n\n— Has shown the ability to beat guards and offensive tackles as a pass—rusher, giving him some inside/outside versatility on third downs."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Mesidor will be an older rookie, turning 25 years old on April 5, which will limit his perceived ceiling for some teams.\n\n— Has subpar strength to beat offensive tackles who have good anchors when trying to win with power or turn speed to power as a pass—rusher.\n\n— Turns his shoulders perpendicular to the line of scrimmage when setting the edge, pointing to a lack of strength.\n\n— Likes to duck inside blocks and loses edge contain, both against the run and as a pass—rusher.\n\n— Struggles to disengage from blocks in the run game.\n\n— Balance is an issue, often falls when breaking through into the backfield.\n\n— Lacks awareness in zone to be relied on to drop in coverage.\n\n— Has a lingering foot injury, missing the majority of the 2023 season before having surgery in 2024 and sitting out for one game in 2025."
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Super-tenacious, tone-setting defender with some Chip Douglas in him on the field; his power and physicality make him a nightmare to line up against.\n\nMesidor is going to get dinged for being 25 years old on draft night, but it’s tough to dislike anything else about him. He’s a ruggedly built, high-energy pass rusher who plays with his hair on fire each and every snap—and the production follows. In 2025 he racked up 12.5 sacks (tied for third most nationally) and 55 pressures (ninth, per PFF). His 36 percent win rate in true pass rush situations ranked ninth best among edge players with 100-plus rushes. Mesidor is a sixth-year senior who played two years at West Virginia and another four at Miami, and brings experience lining up at just about every spot on the defensive line. He rushes with an explosive first step, firing out of his stance to quickly threaten the edge, and he likes to utilize a Euro-step move that really gives tackles trouble. He can convert speed to power on his bull rush and overwhelm tackles with brute force, but also brings an effective swim move, cross chop, and long-arm stab move. He shows good bend to shoot back into the pocket. He brings power and quick feet when rushing from the inside, giving guards trouble thanks to his first-step burst and superior leverage. Mesidor shows quick recognition of screens, instantaneously stopping his rush to chase down the target or disrupt the throwing lane and mess up timing. He’s tough and physical playing the run; he fires his hands into his opponent’s chest and stacks him, keeping his eye on the back so he can make a play. He stonewalls pulling linemen and blows up move blocks. He brings some experience dropping back into zones and shows a decent feel for spacing.\n\nMesidor’s aggressive nature can be a double-edged sword at times. He will lose track of the ball when locking horns with a blocker and allow the run to spill or go through his gap. His lack of length could cause him to be viewed as a bit of a tweener type, with some teams seeing him as an edge while others project him as an interior rusher. And his age could cause teams to question his overall upside and growth trajectory. Is he maxed out where he is now, or can he continue to improve?"
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Super-tenacious, tone-setting defender with some Chip Douglas in him on the field"
+        },
+        {
+          "title": "Traits",
+          "text": "Instinctual Playmaking\nRelentless Motor\nGot That Dog in Him"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A sixth-year redshirt senior and former three-star recruit out of Clearwater, Florida. Was the no. 69 strongside defensive end and the no. 636 overall player in the 2020 class. Started his college career at West Virginia before transferring to Miami in 2022. Named first-team All-ACC in 2025."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "Grew up in Ottawa, Ontario, and played high school football there until moving to Florida for his senior year.\nDealt with narcolepsy growing up. “I’d fall asleep everywhere. On the stairs, I’d be outside falling asleep. … The doctor didn’t even know if I was going to be able to drive.”\nPlayed men’s volleyball in high school.\nSpeaks French.\nSays his favorite teams are the Steelers, Bengals, and Ravens.\nOn being coached by Jason Taylor: “He’s like a big brother to me. … I’ve been able to pick his brain and see what he would do against different looks.”"
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF JIM CARREY IN 'THE CABLE GUY'"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.41,
+    "prospect_grade_indicator": "Will Become Good Starter Within Two Years",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Jonathan Greenard",
+    "eligibility": "Senior",
+    "nfl_rank": 18,
+    "nfl_pos_rank": 5
+  },
+  "bleacher_profile": {
+    "grade": 7.8,
+    "grade_indicator": null,
+    "overall_rank": 30,
+    "position_rank": null,
+    "pro_comparison": "Byron Young",
+    "projected_round": "2nd Round"
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF JIM CARREY IN 'THE CABLE GUY'",
+    "traits": "Instinctual Playmaking\nRelentless Motor\nGot That Dog in Him"
+  },
+  "injury_history": [
+    {
+      "detail": "Foot",
+      "recovery_time": "Season Ending",
+      "year": "2023"
+    },
+    {
+      "detail": "Foot",
+      "recovery_time": "1 Game",
+      "year": "2025"
+    }
+  ]
+}

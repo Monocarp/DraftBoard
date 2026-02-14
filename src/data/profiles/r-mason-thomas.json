@@ -1,0 +1,514 @@
+{
+  "name": "R Mason Thomas",
+  "slug": "r-mason-thomas",
+  "overview": {
+    "POS": "ED",
+    "College": "Oklahoma",
+    "Height": "6' 2\"",
+    "Weight": "249",
+    "Age": "21.5",
+    "DOB": "2004-08-25 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": "2nd Rd",
+    "Games": "41",
+    "Snaps": "1289",
+    "24/7 Sports": "92",
+    "ESPN": "85",
+    "Draft Buzz": "87.5 / 100",
+    "NFL.com": "6.25",
+    "Bleacher": "7.5",
+    "Gridiron": null
+  },
+  "position": "ED",
+  "college": "Oklahoma",
+  "height": "6' 2\"",
+  "weight": "249",
+  "age": 21.5,
+  "dob": "2004-08-25 00:00:00",
+  "year": "Sr",
+  "projected_round": "2nd Rd",
+  "games": 41,
+  "snaps": 1289,
+  "site_ratings": {
+    "24/7 Sports": "92",
+    "ESPN": "85",
+    "Draft Buzz": "87.5 / 100",
+    "NFL.com": "6.25",
+    "Bleacher": "7.5",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "85.3",
+      "percentile": 0.65
+    },
+    "24 Grade": {
+      "value": "72.3",
+      "percentile": 0.25
+    },
+    "23 Grade": {
+      "value": "67.2",
+      "percentile": 0.35
+    },
+    "Pass Rush Grade": {
+      "value": "90.3",
+      "percentile": 0.675
+    },
+    "True Pass Rush": {
+      "value": "86.5",
+      "percentile": 0.684
+    },
+    "PR Win Rate": {
+      "value": "20.2",
+      "percentile": 0.789
+    },
+    "Run Def. Grade": {
+      "value": "79.4",
+      "percentile": 0.65
+    },
+    "Run Stop %": {
+      "value": "6.2",
+      "percentile": 0.4
+    },
+    "Sacks": {
+      "value": "6",
+      "percentile": 0.474
+    },
+    "Hits": {
+      "value": "3",
+      "percentile": 0.289
+    },
+    "Hurries": {
+      "value": "19",
+      "percentile": 0.263
+    },
+    "Batted Balls": {
+      "value": "1",
+      "percentile": 0.5
+    },
+    "Forced Fumbles": {
+      "value": "1",
+      "percentile": 0.368
+    },
+    "Tackling Grade": {
+      "value": "64",
+      "percentile": 0.575
+    },
+    "Missed Tackle Rate": {
+      "value": "17.4",
+      "percentile": 0.421
+    },
+    "Total Pressures": {
+      "value": "28",
+      "percentile": 0.263
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 41.8,
+      "positional_rank": "6.714285714285714"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 37.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 42.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 35.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 51.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 24.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 36.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 30.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 51.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 35.0,
+      "positional_rank": "7"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 31.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 47.0,
+    "Bleacher": null,
+    "Walter": 24.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - MID",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "Dee Ford",
+    "Miller": "TBD",
+    "DraftBuzz": "Arnold EBIKETIE",
+    "Bleacher": "Nik Bonitto",
+    "WF": "TBD",
+    "NFL.com": "Dee Ford"
+  },
+  "strengths": "• Explosive, Quick, Exceptional Speed\n• Athletic, Bendy, Ankle Flexion\n• Effective Speed to Power\n• Great Natural Leverage, Pad Level\n• Upper Body Strength\n• Shows a Solid PR Move Variety\n• Non Stop Pass Rush Motor",
+  "weaknesses": "• Significant Injury Past, Both Ankles\n• Lower Body Strength, Limited Frame\n• Lacks Ability To Set The Edge\n• Length Gets Him Trapped in Blocks\n• Handwork Needs Polished\n• Seems Limited to Stand Up LB",
+  "accolades": "• 2025 1st Team All SEC\n• 2025 2nd Team All American\n• 2025 Bednarik Semi-Finalist\n• 2024 2nd Team All SEC",
+  "player_summary": "Thomas is an experienced pass rusher with a variety of ways to win with his natural athleticism, explosiveness, and a solid group of PR moves. He'salso shown the ability to win consistently by converting speed to power. His short frame limits his upside, and he lacks the lower body strength to anchor and set an edge effectively. However, for a team looking for a passing down stand up pass rusher, his size, leverage, and quickness allows him to get under taller tackles, and his relentless motor combined with a natural athelticism to bend and recover give him a really solid floor for that fit. He's had a long history of injuries to both ankles, which will push him down boards.",
+  "draftbuzz_grades": {
+    "Tackling": 0.67,
+    "Pass Rush": 0.82,
+    "Run Defense": 0.97
+  },
+  "projected_role": "Stand Up PR Specialist",
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 0,
+      "career": 1
+    },
+    "B GAP": {
+      "2025": 6,
+      "career": 18
+    },
+    "Over Tackle": {
+      "2025": 37,
+      "career": 97
+    },
+    "Outside Tkl": {
+      "2025": 322,
+      "career": 931
+    },
+    "Off Ball": {
+      "2025": 7,
+      "career": 29
+    }
+  },
+  "skills_traits": {
+    "Instincts/Processing/Production": {
+      "positives": "Non stop PR motor (BR)",
+      "negatives": null
+    },
+    "Physical Traits": {
+      "positives": "pound for pount, super strong, great leg drive (NFLSE)\nFreak when it comes to strength (NFLSE)\nFunctional strength to fight off blocks (WF)",
+      "negatives": "Smaller (NFLSE)\nLack of size and strength  at POA (NFL)\nGets hung up on base blocks due to lack of length (NFL)\nSubpar lower body strength to anchor against the run (BR)"
+    },
+    "Athletic Ability": {
+      "positives": "explosiveness (NFLSE)\nWon with his athleticism (NFLSE)\nSerious speed off the edge (WF)\nHigh octane rusher with explosiev take off (NFL)\nHas the bend and ankle flexion  to dip under taller tackles (NFL)\nExceptional pursuit speed (NFL)\nImpressive athlete with good quickness, twitch, acceleration and COD (BR)",
+      "negatives": null
+    },
+    "Pass Rush Skills": {
+      "positives": "Power  & quickness that he has in his hands (NFLSE)\nShown some variety in moves (WF)\nExplosive speed rusher (NFL)\nCan convert speed to power effectively (NFL)\nRecovers from awkward angles to tackle (NFL)",
+      "negatives": "Hand fighting could use more polish (NFL)"
+    },
+    "Run Defense Skills": {
+      "positives": "Great natural leverage (NFLSE)\nExcellent pad level (NFL)\ntakes on blocks W/ physicality and low pad level (BR)",
+      "negatives": "Will struggle to set the edge in the NFL (BR)"
+    }
+  },
+  "media_links": [
+    {
+      "description": "CFP Post Game Interview",
+      "source": "YT - OU Insider",
+      "url": "https://www.youtube.com/watch?v=gPYYTlD2uiw"
+    },
+    {
+      "description": "Scouting Report/Film Study",
+      "source": "YT - Under The Radar",
+      "url": "https://www.youtube.com/watch?v=rLZf2ni3xrA"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Twitched-up rush linebacker whose lack of size and length at the point of attack could be offset by his rush talent. Thomas has added good mass over the years but still gets engulfed and displaced by big, downhill blockers. He’s more dangerous on the move, slipping into gaps and disrupting edges before they’re set. He’s an explosive speed rusher with the ability to shave the edge tightly or create surprising push with leverage and speed-to-power conversion. He needs to improve his hand work to create openings and counter long, athletic tackles with quick pass slides. Thomas should benefit from a wider alignment as an odd-front edge with the potential to earn a starting job within his first two seasons."
+        },
+        {
+          "title": "Strengths",
+          "text": "High-octane rusher with explosive take-off up the field. | First three steps to the top of the rush are fast and furious. | Has the bend and ankle flexion to dip under taller tackles. | Will surprise tackles with his ability to convert speed to power. | Carves out a more shallow path into the pocket against plodding tackles. | Darts across blocker’s face and into gaps with excellent pad level. | Able to chase and capture running backs with exceptional pursuit speed. | Recovers from awkward angles to tackle."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Gets hung up on base blocks due to lack of length. | Has trouble maintaining his hand stack and holding his ground. | Was engulfed and pushed around in Oklahoma’s loss to Texas. | Long tackles are able to widen out his entry points on vertical rushes. | Hand fighting could use more polish at the junction point. | Missed multiple games in 2022, 2023 and 2025."
+        },
+        {
+          "title": "Sources Tell Us",
+          "text": "“He gets beat up for being small and not long enough but I think he’s going to be a nightmare for tall tackles because he can bend and he’s really explosive.” – NFC scouting director"
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "R Mason Thomas is a swift and elusive pass-rusher with double-digit sack-per-year upside."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nR Mason Thomas comes from Fort Lauderdale, Florida, where he wreaked havoc at Cardinal Gibbons High School before heading to Norman. His father Harvey played defensive end at Florida in the early 1990s, and the athletic bloodline shows. Thomas piled up 109 tackles, 36 tackles for loss, and 19 sacks across his junior and senior prep seasons while helping Cardinal Gibbons capture back-to-back Florida 4A state titles in 2020 and 2021. He also ran track in the 100m, 200m, and 400m. Originally committed to Iowa State, he flipped to Oklahoma and arrived as a four-star recruit according to 247Sports and On3, with a three-star rating from ESPN and Rivals.\n\nThe first two years in Norman were rough. Thomas missed multiple games as a true freshman in 2022 with a high-ankle sprain, finishing with just seven tackles and half a sack across 10 appearances. Another high-ankle sprain, this time to his other ankle, limited him to nine games in 2023. He posted nine tackles, 2.5 tackles for loss, and one sack in a rotational role that year. Two seasons, two ankles, two surgeries. Not exactly the start anyone envisioned.\n\nThomas finally broke through as a junior in 2024. He started 11 of 13 games and finished with 23 tackles, 12.5 tackles for loss, and 9.0 sacks. Six of those sacks came in the fourth quarter with Oklahoma protecting leads. He forced two fumbles, recovered two others, and returned one nine yards for a touchdown against LSU. The coaches named him All-SEC Second Team, and he picked up Bronko Nagurski National Defensive Player of the Week honors after the Auburn win. His senior campaign in 2025 brought more production and more hardware: 6.5 sacks, 28 pressures, a 14.6% pressure rate, and a 20.2% pass rush win rate. He earned First Team All-SEC, All-American Second Team, and Bednarik Award semifinalist recognition. A quad and hamstring injury suffered during a 70-plus yard fumble recovery touchdown cost him several games, but he returned for the finale against Alabama and logged three pressures on 23 pass rush snaps.\n\nSCOUTING REPORT: SUMMARY\nHere is the deal with Thomas: the pass rush traits are legitimate. That first step, the bend, the ability to convert speed to power. Those are NFL traits. He is going to give tackles problems from day one because he attacks with violence and keeps coming. Watch the tape and you see a guy who knows how to get to the quarterback and does it in different ways.\n\nThe concerns are just as real. He is undersized for the position and the injury history is hard to ignore. Three separate seasons with significant time missed. Teams will need to see clean medicals before they feel comfortable investing premium draft capital. His run defense is serviceable but not a strength, and that limits his value as an every-down player right now. He needs to add functional strength and refine his technique against the run before coordinators trust him on early downs.\n\nThe fit matters here. Thomas belongs in an aggressive system that turns him loose as a pass rusher and limits his run game responsibilities. An odd-front scheme that aligns him wider gives him space to operate and reduces the number of double teams he faces. A team that rotates its edge rushers and deploys him heavily on passing downs can maximize his impact while protecting him from situations that expose his weaknesses. He has the ceiling to develop into an every-down player, but the floor is a high-end situational rusher who can wreck game plans on third down. Either outcome justifies the investment for a team that knows how to use him."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "R Mason Thomas, Oklahoma... nicked up... the injury the end of the year... don't know that he's gonna play, but he was invited... at one point... gonna try to play…\nESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "R Mason Thomas is a twitched—up pass rusher who combines athleticism, physicality and scrappiness to be very good at turning speed—to—power and getting to the quarterback. These traits should help the 6'2\", 249—pound edge defender become a productive third—down rusher at the next level despite lacking NFL size and length.\n\nThomas entered Oklahoma as a 4—star recruit in the 2022 class but played in a limited role as a true freshman and sophomore, due in part to missing seven games with a high—ankle sprain on each ankle during those seasons.\n\nWith a clean bill of health in 2024, the Fort Lauderdale, Florida native burst onto the scene by becoming a regular starter and collecting nine sacks and 12.5 tackles for loss to earn second—team All—SEC honors. He's picked up where he left off this season."
+        },
+        {
+          "title": "Positives",
+          "text": "— Impressive athlete with Good quickness/twitch, acceleration and change of direction skills.\n\n— has a Good get—off and burst off the line of scrimmage to threaten offensive tackles with speed around the edge.\n\n— change—of—direction skills, suddenness and physicality make him very Good at turning speed to power as a pass—rusher. Also, Thomas keeps his Feet moving through contact to collapse the pocket against offensive tackles.\n\n— Good bend and angles as a pass—rusher to take efficient paths to the quarterback.\n\n— has shown a solid ghost rush as a counter move to his Ability to turn speed to power.\n\n— Non—stop pass—rush motor with a decent spin move to get back in the picture and either force quarterbacks out of the pocket or pickup coverage sacks.\n\n— against the run, he takes on blocks with physicality and low pad level to gain a leverage advatange.\n\n— has solid upper body strength to get some extension against blocks from weaker offensive tackles."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Sawed—off frame and appears to have short arms.\n\n— lack of arm length limits how much extension he can get on blocks, making it difficult for him to escape or shed.\n\n— Combined with often being late and inaccurate with his hands, the shorter arms often allow offensive tackles to make the first significant contact and get into his body when rushing the passer.\n\n— subpar lower body strength to anchor against the run, especially when taking on down blocks or combos. Thomas is going to struggle setting the edge against better/stronger competition in the NFL.\n\n— Also, the lower body strength issues will lead to him getting washed inside when offensive tackles can stay on balance when he tries to turn speed to power.\n\n— injury history with a High—ankle sprain in each ankle is concerning."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "In his third season, Thomas had a breakout season and was one of the most dangerous pass rushers in the SEC. In 2024, he totaled nine sacks with one forced fumble, one pass batted, and 23 tackles.  In 2025, Thomas had 26 tackles with 6.5 sacks, a forced fumble, and a pass batted while missing some time with injuries.\nAs a pass rusher, Thomas is a nightmare for offensive tackles, and he has some serious rush ability. Thomas is lightning fast around the corner with an explosive burst off the ball. Thomas has the speed to blow by tackles, but also has a developed set of moves with some functional strength to show speed to power and use a rip move to get leverage. After his quick first step to get upfield, Thomas uses his hands and feet at the same time nicely with agility to redirect to the inside or sink his hips while running the loop on the outside. Thomas has a dangerous bending ability, and tall tackles can really struggle with him. He has a dangerous speed cut to the inside and a lightning spin move to fire past tackles. Thomas has excellent closing speed to eat up space in a blur. As a pro, Thomas has the potential to be a dangerous double-digit sack producer.\nAt his size, Thomas has limitations as a run defender, as he can get covered up and pushed around sometimes by offensive tackles. NFL offensive tackles are going to outweigh him by 50-80 pounds, so Thomas could have problems holding up as a three-down edge defender going against pro tackles. That is not surprising considering his lack of height, length, and weight. As a pro, he could get rotated out a fair amount in running situations, and he might end up being a designated pass rusher only.\nIn the 2026 NFL Draft, Thomas could bea late first-round or early second-round pick."
+        },
+        {
+          "title": "Strengths",
+          "text": "Fast speed rusher\nBurst off ball\nSpeed to run the arc and get around the corner\nSpeed to power rush ability\nStrong rip move\nImpressive set of pass rushing moves\nCan fire to the inside\nHas a burst to close on the quarterback\nAbility to use hands and feet at the same time\nGives a second effort\nAgile, not stiff\nEasy bending ability\nCan dip underneath tackles\nLoose hips\nNice ability to redirect\nGood instincts\nAdvanced rush plan\nPlays hard\nCan be a scary presence as a rusher\nReady to compete immediately\nExperienced and successful against quality competition"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Undersized\nLacks weight\nLacks strength\nLacks length\nLimited as a run defender\nCould struggle to be an every-down edge defender\nCan get pushed around in the ground game"
+        },
+        {
+          "title": "Player Comp",
+          "text": "Harold Landry. With his skill set, size, and natural rush ability, Thomas reminds me of Landry. Also like Landry, Thomas has limitations as a run defender because of his size."
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.25,
+    "prospect_grade_indicator": "Will Eventually Be Average Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Dee Ford",
+    "eligibility": "Senior",
+    "nfl_rank": 35,
+    "nfl_pos_rank": 7
+  },
+  "bleacher_profile": {
+    "grade": 7.5,
+    "grade_indicator": null,
+    "overall_rank": 51,
+    "position_rank": null,
+    "pro_comparison": "Nik Bonitto",
+    "projected_round": "2nd Round"
+  },
+  "walter_profile": {
+    "player_comp": "Harold Landry. With his skill set, size, and natural rush ability, Thomas reminds me of Landry. Also like Landry, Thomas has limitations as a run defender because of his size."
+  },
+  "injury_history": [
+    {
+      "detail": "High Ankle Sprain",
+      "recovery_time": "3 Games",
+      "year": "2022"
+    },
+    {
+      "detail": "High Ankle Sprain",
+      "recovery_time": "4 Games",
+      "year": "2023"
+    },
+    {
+      "detail": "Quad/Hamstring",
+      "recovery_time": "3 Games",
+      "year": "2025"
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+{
+  "name": "Brian Parker II",
+  "slug": "brian-parker-ii",
+  "overview": {
+    "POS": "IOL",
+    "College": "Duke",
+    "Height": "6' 5\"",
+    "Weight": "305",
+    "Age": "TBD",
+    "DOB": null,
+    "Year": "RS Jr",
+    "Prj. Rd": null,
+    "Games": null,
+    "Snaps": null,
+    "24/7 Sports": null,
+    "ESPN": "TBD",
+    "Draft Buzz": null,
+    "NFL.com": "TBD",
+    "BR": "7",
+    "Gridiron": null
+  },
+  "position": "IOL",
+  "college": "Duke",
+  "height": "6' 5\"",
+  "weight": "305",
+  "age": null,
+  "dob": null,
+  "year": "RS Jr",
+  "projected_round": null,
+  "games": null,
+  "snaps": null,
+  "site_ratings": {
+    "24/7 Sports": null,
+    "ESPN": "TBD",
+    "Draft Buzz": null,
+    "NFL.com": "TBD",
+    "BR": "7",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "84.6",
+      "percentile": 0.9
+    },
+    "2024 Grade": {
+      "value": "78.9",
+      "percentile": 0.7
+    },
+    "2023 Grade": {
+      "value": "70.8",
+      "percentile": 0.8
+    },
+    "Run Block Grade": {
+      "value": "82.5",
+      "percentile": 0.9
+    },
+    "Pass Block Grade": {
+      "value": "83.4",
+      "percentile": 0.5
+    },
+    "True Pass Set Grade": {
+      "value": "76.9",
+      "percentile": 0.4
+    },
+    "Pass Block Efficiency": {
+      "value": "97.7",
+      "percentile": 0.0
+    },
+    "Zone Grade": {
+      "value": "87.2",
+      "percentile": 0.9
+    },
+    "Gap Grade": {
+      "value": "56.7",
+      "percentile": 0.1
+    },
+    "Sacks Allowed": {
+      "value": "3",
+      "percentile": 0.0
+    },
+    "Hits Allowed": {
+      "value": "2",
+      "percentile": 0.3
+    },
+    "Hurries Allowed": {
+      "value": "15",
+      "percentile": 0.0
+    },
+    "Pressures Allowed": {
+      "value": "20",
+      "percentile": 0.0
+    },
+    "Penalties": {
+      "value": "4",
+      "percentile": 0.5
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 103.4,
+      "positional_rank": "9.5"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 100.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 105.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 75.0,
+      "positional_rank": "21"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 123.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "TBD",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Ryan Bates",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": null,
+    "Run Blocking Grade": null
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 0,
+      "career": 370
+    },
+    "LG": {
+      "2025": 0,
+      "career": 0
+    },
+    "C": {
+      "2025": 0,
+      "career": 0
+    },
+    "RG": {
+      "2025": 0,
+      "career": 0
+    },
+    "RT": {
+      "2025": 899,
+      "career": 1123
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Brian Parker II is a hard—nosed, athletic blocker with strong hands and excellent competitive toughness. His sawed—off frame makes him an easy projection inside as a high—quality swing interior backup with starter upside.\n\nParker is a 6'5\", 300—pound prospect, who entered the Duke program as a 3—star recruit in the 2022 class.\n\nParker started 13 games in 2024 (12 at right tackle/one at left) for Duke, earning All—ACC first—team. He started seven games during the 2023 season (four at LT/three at RT) as a redshirt freshman."
+        },
+        {
+          "title": "Positives",
+          "text": "— Very good quickness, burst and agility.\n\n— Accurate, tight hand placement with very good grip strength and lower half mobility to latch, re—leverage and sustain blocks.\n\n— Surges into contact with aggressiveness and physicality before consistently running his feet and straining to finish.\n\n— Skilled, efficient zone run blocker who hits his landmarks and aiming points on backside cut—offs, overtakes and releases to the second—level."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Sawed—off frame with below—average arm length creates soft edges and leaves Parker too easily stacked.\n\n— Mediocre mass, girth and square power.\n\n— Will drop his eyes and dip his head into contact, leaving him vulnerable to whiffing against movement across his face."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.0,
+    "grade_indicator": null,
+    "overall_rank": 105,
+    "position_rank": null,
+    "pro_comparison": "Ryan Bates",
+    "projected_round": null
+  },
+  "injury_history": []
+}

@@ -1,0 +1,447 @@
+{
+  "name": "Zxavian Harris",
+  "slug": "zxavian-harris",
+  "overview": {
+    "POS": "DT",
+    "College": "Ole Miss",
+    "Height": "6' 8\"",
+    "Weight": "330",
+    "Age": "TBD",
+    "DOB": null,
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": null,
+    "Snaps": null,
+    "24/7 Sports": null,
+    "ESPN": "TBD",
+    "Draft Buzz": null,
+    "NFL.com": null,
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "position": "DT",
+  "college": "Ole Miss",
+  "height": "6' 8\"",
+  "weight": "330",
+  "age": null,
+  "dob": null,
+  "year": "Sr",
+  "projected_round": null,
+  "games": null,
+  "snaps": null,
+  "site_ratings": {
+    "24/7 Sports": null,
+    "ESPN": "TBD",
+    "Draft Buzz": null,
+    "NFL.com": null,
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "73.5",
+      "percentile": 0.611
+    },
+    "24 Grade": {
+      "value": "74.4",
+      "percentile": 0.444
+    },
+    "23 Grade": {
+      "value": "56",
+      "percentile": 0.0
+    },
+    "Pass Rush Grade": {
+      "value": "62.4",
+      "percentile": 0.333
+    },
+    "True Pass Rush": {
+      "value": "64.2",
+      "percentile": 0.528
+    },
+    "PR Win Rate": {
+      "value": "7",
+      "percentile": 0.556
+    },
+    "Run Def. Grade": {
+      "value": "77.8",
+      "percentile": 0.556
+    },
+    "Run Stop %": {
+      "value": "8.6",
+      "percentile": 0.583
+    },
+    "Sacks": {
+      "value": "3",
+      "percentile": 0.833
+    },
+    "Hits": {
+      "value": "3",
+      "percentile": 0.778
+    },
+    "Hurries": {
+      "value": "16",
+      "percentile": 0.778
+    },
+    "Batted Balls": {
+      "value": "2",
+      "percentile": 0.889
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.444
+    },
+    "Tackling Grade": {
+      "value": "60.5",
+      "percentile": 0.5
+    },
+    "Missed Tackle Rate": {
+      "value": "11.1",
+      "percentile": 0.556
+    },
+    "Total Pressures": {
+      "value": "22",
+      "percentile": 0.889
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 143.5,
+      "positional_rank": "17"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 175.0,
+      "positional_rank": "15"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 189.0,
+      "positional_rank": "17"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 62.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "TBD",
+    "Bleacher": "5th Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Eyioma Uwazurike",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": null,
+    "Pass Rush": null,
+    "Run Defense": null
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 52,
+      "career": 187
+    },
+    "B GAP": {
+      "2025": 410,
+      "career": 831
+    },
+    "Over Tackle": {
+      "2025": 114,
+      "career": 164
+    },
+    "Outside Tkl": {
+      "2025": 49,
+      "career": 66
+    },
+    "Off Ball": {
+      "2025": 5,
+      "career": 8
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "At 6'8\" and 330 pounds, Zxavian Harris is a massive defensive tackle with the size and flashes of strength to intrigue defensive line coaches as a potential Day 3 pick.\n\nHowever, he plays tall and gets pushed around too much for a prospect of his build, not including significant character concerns that could take him off some teams' draft boards altogether. Harris has been previously arrested twice, once in 2023 for DUI and felony fleeing and in 2024 for domestic violence and obstructing arrest, per ESPN.\n\nThe Ole Miss product was a 4—star recruit in the 2022 high school class and received limited playing time as a true freshman. He became a part of the Rebels' defensive line rotation during the '20'23 campaign, eventually developing into a starter and accumulating 30 tackles, 3.5 tackles for loss and a sack."
+        },
+        {
+          "title": "Positives",
+          "text": "— Harris has great size and length, giving him a rare frame and unique traits to develop.\n\n— When he does get his hands up against the run, he has the strength to hold his gap against base blocks and shed to make tackles in his gap.\n\n— A good swim move that he defeat blocks with.\n\n— Effective as the spike on run stunts, showing the physicality to catch offensive linemen off guard and create havoc in the backfield by picking off offensive linemen.\n\n— When he doesn't win as a pass—rusher, he gets his hands up and bats passes down at the line of scrimmage.\n\n— Experience playing several defensive line alignments. Ole Miss used Harris anywhere from a 4i—technique to a 0—tech nose tackle."
+        },
+        {
+          "title": "Negatives",
+          "text": "— During the pre—draft process, Harris must answer questions about his character and off—the—field issues after his two arrests.\n\n— Slow off the ball. Lacks quickness and agility. Harris doesn't even have good block recognition, leading to him getting reached or scooped out of his gap. Also, he lacks the rotational strength to prevent his shoulders from getting turned against reach and scoop blocks.\n\n— Plays tall and with little knee bend, making it difficult for him to anchor against down blocks and combo blocks.\n\n— Doesn't have any pass—rush moves than he can win with consistently. Pad level and lack of a get—off kill his bull—rush, and he's often late with his hands when working finesse moves.\n\n— Balance is an issue. He struggles to break down in the backfield, leading to missed tackles, and gets knocked off his path easily, ending up on the ground too much for someone of his size."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.1,
+    "grade_indicator": null,
+    "overall_rank": 189,
+    "position_rank": null,
+    "pro_comparison": "Eyioma Uwazurike",
+    "projected_round": "5th Round"
+  },
+  "injury_history": []
+}

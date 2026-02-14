@@ -1,0 +1,536 @@
+{
+  "name": "Denzel Boston",
+  "slug": "denzel-boston",
+  "overview": {
+    "POS": "WR",
+    "College": "Washington",
+    "Height": "6' 4\"",
+    "Weight": "209",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": "Mid 1st",
+    "Games": "37",
+    "Snaps": "1540",
+    "24/7 Sports": "86",
+    "ESPN": "89",
+    "Draft Buzz": "87.5 / 100",
+    "NFL.com": "6.4",
+    "Bleacher": "7.7",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "Washington",
+  "height": "6' 4\"",
+  "weight": "209",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Jr",
+  "projected_round": "Mid 1st",
+  "games": 37,
+  "snaps": 1540,
+  "site_ratings": {
+    "24/7 Sports": "86",
+    "ESPN": "89",
+    "Draft Buzz": "87.5 / 100",
+    "NFL.com": "6.4",
+    "Bleacher": "7.7",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "88.5",
+      "percentile": 0.895
+    },
+    "2024 Grade": {
+      "value": "76.6",
+      "percentile": 0.632
+    },
+    "2023 Grade": {
+      "value": "61.5",
+      "percentile": 0.158
+    },
+    "Receiving Grade": {
+      "value": "87.8",
+      "percentile": 0.895
+    },
+    "Yards/ Routes Run": {
+      "value": "2.44",
+      "percentile": 0.474
+    },
+    "Drop %": {
+      "value": "3.1",
+      "percentile": 0.526
+    },
+    "Contested Catch": {
+      "value": "76.9",
+      "percentile": 0.947
+    },
+    "Grade vs Man": {
+      "value": "89.7",
+      "percentile": 1.0
+    },
+    "YAC/Reception": {
+      "value": "4.9",
+      "percentile": 0.263
+    },
+    "Missed Tkls Forced": {
+      "value": "7",
+      "percentile": 0.211
+    },
+    "ADOT": {
+      "value": "14.4",
+      "percentile": 0.842
+    },
+    "Deep Yards": {
+      "value": "293",
+      "percentile": 0.737
+    },
+    "Touchdowns": {
+      "value": "11",
+      "percentile": 0.816
+    },
+    "Elusiveness": {
+      "value": null,
+      "percentile": null
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 25.384615384615383,
+      "positional_rank": "4.714285714285714"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 20.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 24.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 25.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 18.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 22.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 32.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 29.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 34.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 27.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 21.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 20.0,
+      "positional_rank": "4"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 23.083333333333332,
+    "PFF": 21.0,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": 21.0,
+    "Miller": 24.0,
+    "Bleacher": 27.0,
+    "Walter": 26.0,
+    "TDN": 27.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 20.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - MID",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "Puka Nacua",
+    "Miller": "TBD",
+    "DraftBuzz": "Cedric TILLMAN",
+    "Bleacher": "Keon Coleman",
+    "WF": "Drake London.",
+    "Ringer": "Courtland Sutton",
+    "NFL.com": "Puka Nacua"
+  },
+  "strengths": "• Big Bodied, Competitive, Tough\n• Wingspan, Elite Hand Strength\n• Ball Tracking, Adjustments\n• RZ Threat W/ Proven Production\n• Allignment Versatile, Diverse Tree\n• Elite Ball Skils\n• Fluid Route Running, Good Burst",
+  "weaknesses": "• Lacks Top End Speed\n• Linear Press Release\n• Production Dipped Against Quality Opponents",
+  "accolades": null,
+  "player_summary": "Denzel Boston is the prototype of a big, competitive, possession receiver. He may have trouble creating seperation with his lack of high end speed, but he's got the burst and route savvy to get open consistently enough, and his elite ball skills will make him a coveted receiving option for a number of teams. With his ability to track the ball, make adjustments, and use his high end grip strength and competitiveness to win at the catch point, NFL Teams aren't going to be super worried about his ability to seperate. He brings an edge to his game that also shows up in the run game where hes a willing and capable blocker. His lack of athleticism does show up in some in breaking routes, and the longer routes go the more he'll lose ground, but his possession skills will make him a mid day 1 pick.",
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 111.2,
+    "Hands": 0.83,
+    "Short Receiving": 0.86,
+    "Med Routes": 0.89,
+    "Deep Threat": 0.87,
+    "Blocking": 0.71
+  },
+  "projected_role": "Versatile",
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 65,
+      "career": 131
+    },
+    "Wide": {
+      "2025": 300,
+      "career": 751
+    }
+  },
+  "skills_traits": {
+    "Character/Mentality": {
+      "positives": "Outstanding Competitive Toughness (NFL)\nAllingment Versatility (NFLSE)",
+      "negatives": "Production dipped against quality oponents (NFL)"
+    },
+    "Receiving Skills": {
+      "positives": "Elite Ball Skills (NFL)\nWins Jump Balls and contested catches (NFL)\nRed Zone Threat With Proven Production There(NFL)\nElite Hand Strength (NFL)\nBall Tracking and adjustments are top notch (NFL)",
+      "negatives": null
+    },
+    "Technique": {
+      "positives": "Runs routes with good fluidity (NFL)\nStrong with RAC ability (NFL)\nDiverse Route Tree (FD)",
+      "negatives": "Linear Press Release (NFL)"
+    },
+    "Physical Traits": {
+      "positives": "Good Burst, plays faster than timed speed (NFL)\nBig bodied target who plays to his size (NFL)",
+      "negatives": "Athletic, Speed Limitations (NFL)\nLacks second gear of speed (NFL)"
+    },
+    "Blocking": {
+      "positives": "Best Run Blocking receiver in the draft (NFLSE)",
+      "negatives": null
+    }
+  },
+  "media_links": [
+    {
+      "description": "Highlights",
+      "source": "YT - Big Ten Football",
+      "url": "https://www.youtube.com/watch?v=_6pehvgmZsw"
+    },
+    {
+      "description": "Scouting Report",
+      "source": "YT - NFL Draft Big Boards",
+      "url": "https://www.youtube.com/watch?v=XIUd5BjMsA0"
+    },
+    {
+      "description": "All 22 Film",
+      "source": "YT - Jets Film Room",
+      "url": "https://www.reddit.com/r/nyjets/comments/1phrfrj/denzel_boston_all22_film_breakdown_is_he_the/"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Two-year starter with elite ball skills that should supersede athletic/speed limitations. A Puka Nacua comparison might feel strong, but like Nacua, Boston enters the draft with speed/separation concerns and outstanding competitive toughness. Boston gets off the line with good burst and maintains his top speed throughout the route. He could have issues beating press, but releases can also be schemed. He’s very skilled when it comes to winning jump balls and contested throws. Boston also knows how to win in the red zone. Acclimating to NFL competition could take a year, but Boston has the makeup to become a productive possession target with above-average red-zone value."
+        },
+        {
+          "title": "Strengths",
+          "text": "Good early acceleration and plays faster than timed speed. | Runs routes with good fluidity. | Big-bodied target who plays to his size. | Leans on defenders without sacrificing catch readiness. | Scored 20 TDs over the last two seasons, proving himself a red-zone mismatch. | Pro-caliber ball skills with elite hand strength to finish. | Extends for off-frame throws with a spider web-like catch radius. | Ball tracking and adjustment timing are top notch. | Competitive and strong with his run-after-catch ability."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Production dipped when the competition level rose. | Press release is linear and will give NFL CBs opportunities to get hands on him. | Flashes early burst but lacks a true second gear. | Routes lose steam when he digs his foot in on route turns. | Earned separation closes as the route progresses. | Might need formation help and stacks/motion to free his releases."
+        },
+        {
+          "title": "Sources Tell Us",
+          "text": "“I don’t think speed concerns are valid. Anyway, you don’t have to be fast when you are as good as he is when guarded.” – NFC scouting director"
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nDenzel Boston grew up in Puyallup, Washington, where he starred at Emerald Ridge High School for four varsity seasons. Over his prep career, he hauled in 105 receptions for 1,572 yards and 23 touchdowns, earning first-team All-South Puget Sound League honors as a senior and landing on the Tacoma News-Tribune's all-area second team as a junior. ESPN ranked him the 71st receiver nationally in his class, a three-star prospect who chose to stay home and compete for the Huskies.\n\nBoston arrived at Washington in 2022 and showed patience most young receivers simply don't possess. With Rome Odunze, Jalen McMillan, and Ja'Lynn Polk ahead of him, he appeared in just four games as a true freshman and totaled seven catches over his first two seasons combined. Rather than seeking a transfer, he continued developing behind three future NFL Draft picks. That decision paid dividends when his number was finally called in 2024, and he delivered a 63-catch, 834-yard, nine-touchdown campaign that earned him honorable mention All-Big Ten recognition from both coaches and media.\n\nHis 2025 season built on that foundation with 62 receptions for 881 yards and 11 touchdowns, securing third-team All-Big Ten honors at receiver while also earning honorable mention as a return specialist. Boston's 11 receiving touchdowns tied for sixth in Washington single-season history, and his 20 career scores rank eighth all-time in program history. He capped his collegiate career with a monster performance in the L.A. Bowl against Boise State, catching six passes for 126 yards and a 78-yard touchdown while also completing a pass. Named Washington's Offensive Skill Player of the Year in back-to-back seasons, Boston leaves Seattle having proven himself as a legitimate NFL prospect after two years of dominant production.\n\nBoston isn't going to run past NFL corners with pure speed, but he plays the position with intelligence and physicality that should translate. His best work comes when he can use his length to high-point footballs in contested situations, and the 20 touchdowns he scored over two seasons weren't a fluke. He knows how to get open in the red zone, he knows how to win at the catch point, and he knows how to use his body to create separation on the intermediate stuff.\n\n\n\nHere's the deal on scheme fit: Boston projects best as a primary X receiver in an offense that values size and contested-catch ability on the boundary. He can also kick inside to the slot against smaller nickel corners, creating legitimate mismatches with his frame and route-running efficiency. West Coast concepts that feature back-shoulder throws, slants, and crossing routes will maximize his skill set, though he can absolutely stretch the field vertically as a positional winner who tracks the deep ball exceptionally well. The blocking willingness adds real value in run-heavy schemes.\n\n\n\nThe adjustment period at the next level will center on his release package and ability to defeat press coverage consistently. Physical NFL corners will test him early, and he'll need to develop more variety and craftiness off the line to avoid getting rerouted. That said, his ball skills are legitimate, his hands are reliable, and his competitive makeup suggests he'll put in the work. Boston profiles as a receiver who might not dominate immediately but has the tools and mentality to develop into a productive starter who wins his share of one-on-one opportunities."
+        },
+        {
+          "title": "Overview",
+          "text": "Ball-winning big-play receiver with the speed to go deep and the physicality to dominate at the catch point.\n\nBoston is a big-bodied pass catcher who plays with a hard-to-find combination of fluidity and power; he boasts rare body control and seems to levitate in the air to pull down passes in traffic and erase inaccuracies from the quarterback. A two-year starter for the Huskies with a nose for the end zone, Boston caught 20 touchdowns in his college career, adding a rushing score and a punt return TD to his résumé. He lined up primarily outside for Washington, bringing the size and play strength to beat press and get downfield. But he flashed the ability to play out of the slot, too, and could be utilized as a mismatch threat over the middle. He’s a smooth mover who has the ability to gear down quickly and change directions on comeback routes or digs. He transitions from catch to run seamlessly, showing the ability to go up, spin, come down, and keep rolling without losing his balance. Boston brings excellent awareness of the sideline to get his feet in bounds, and he has a penchant for the acrobatic catch; he will go down low to scoop a pass or up high to pluck it at its highest point. He’s tough over the middle, showing the focus to see the ball into his hands and secure it even when he knows a hit is coming. And he’s a monster in tight-coverage situations; he caught 10 of 13 contested catch opportunities in 2025, per PFF, and tallied just two total drops last year. He works hard at blocking, using his big frame to wall off defenders and stay engaged. He is a surprisingly good punt returner for a larger-bodied receiver.\n\nBoston is a physical player but needs to be more consistent getting off the line cleanly; there are times when he’s slowed at the line, disrupting timing. He brings build-up speed on deep routes but is not the most explosive or agile in the short area. He lacks top-tier separation skills and will need to work on expanding his release package and his route-tree repertoire."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Denzel Boston is one hell of a player. Okay, advanced route runner, all the things he can do snatching the ball and he can run anything you want in terms of the route tree and he can go get it in traffic. So Denzel Boston is gonna be right up there as well... Splitting hairs. Guys between Lemon Tyson and also Tate and I'll throw in Denzel Boston at it list as well... Who do you place at number four?... It's six foot 4, 209 pound Denzel Boston from the University of Washington kid who stayed loyal to jet fish and that program, he's actually from Washington 20 touchdowns over the past two seasons for Denzel Boston. He had 11 this season, including three separate games with two touchdowns in them over his four years at Washington. Hit four total drops, very natural catch radius both inside and outside of the frame... You think six foot four... 209 pounds, you're saying to yourself playing on the perimeter, running all the vertical routes, the comebacks, the out cutts. Yeah, he does a lot of that. He also is fluid enough to play inside as a big slot, which we have seen some receivers really thrive in that role... I'm not saying Denzel Boston is that level of player, but very natural playing inside as well... The question mark here for Denzel Boston, and I think this is one that we might not get an answer to because so few players now are running these days, at least at the top of the draft scouts aren't convinced this is a 4, 3 7 type of guy speed wise. But the big question is he more 4 4 7 or is he more 4 5 2... Denzel Boston loved the player to me a first round lock... Denzel Boston was a very impressive player to watch. I thought he could get down maybe into that 21 spot to the Pittsburgh Steelers in the last Mock. He was gonna be interesting because if the top three go and where we expect them to go by say 14, then you get Denzel Boston right in that mix... There's not much separating the top three from Denzel Boston... In terms of Boston, I think the underrated part is you just put it in the area, he will make the very difficult catch... Boston will make that low or high grab... We'll see Denzel Boston is a player I think we're expecting to go in round one.\n\n\"Denzel Boston...Denzel Boston has been awesome for the Huskies this season. He has outstanding size. He is buttery smooth as a route runner. He has very, very good hands as well. He can win on the perimeter. I like his versatility to win as a big slot as well...Denzel Boston can play in the slot as well...Plays in a great offense...Wouldn't surprise me if he's a top 20 pick as well. On top of the height, the weight, the speed, excellent young man as well. To me, a first round wide receiver all day long.\""
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Denzel Boston is what NFL teams want in a boundary X—receiver. However, his lack of instantaneous explosiveness and twitch may hold him back a bit in the NFL.\n\nDenzel Boston is a former 3—star recruit in the 2022 class, per 247Sports. Instead of transferring for more play time, he patiently waited for his turn behind future NFL draftees, Rome Odunze, Jalen McMillan and Ja'Lynn Polk. Boston had a good first year in 2024, reeling in 63 receptions for 834 yards and nine touchdowns.\n\nDame Parson is the lead host of the Locked On NFL Draft podcast. He also serves as co—host of the Scouting Room NFL Podcast alongside Daniel Harms."
+        },
+        {
+          "title": "Positives",
+          "text": "— Boston is known for his outstanding body control and ball skills, which enable him to consistently win contested catches. Boston tracks the football well as he works further down the field. He is a red—zone weapon on fade throws, getting his head and eyes around to the football quickly once he has gained upfield leverage on the defensive back. He is a savvy pass catcher who flashes his hands late as the football arrives.\n\n— For a receiver of his size and stature, Boston is surprisingly quick. He runs efficient double moves, displaying his ability to sink his hips and drive out of the break to pull away from defenders. Boston's routes are run with intent. As a result, he creates separation against man—to—man coverage. His short—area quickness as a route—runner places defensive backs in conflict when left on an island.\n\n— Boston stresses defense with his blend of size, physicality, and alignment versatility. He is a matchup nightmare for smaller nickel cornerbacks when aligned in the slot. He uses his strong frame to box defenders out at the catch point on in—breaking routes and is a quarterback—friendly target.\n\n— Boston is a physical and willing run blocker on the perimeter. He seals off cornerbacks to create lanes for his running backs. Due to his frame and strength, he is deployed as a crack blocker against defensive ends, outside linebackers, and stand—up edge rushers."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Defeating bump and run press corners at the line of scrimmage. Boston is a bigger target, and physical defensive backs want to slow him down with early contact. He can get stuck in the early phases of his routes.\n\n— Boston does not possess immense twitch or explosion off the line of scrimmage to quickly threaten defensive backs vertically. He can stride past defensive backs if his progress isn't impeded. Although physical contact will slow down his momentum.\n\n— An expanded release package will be an important part of Boston's development. More variety and craftiness at the line of scrimmage will free him from physical coverage more quickly, allowing him to enter his route phase.\n\n— Boston must continue to display his ability to run a diverse route—tree. He is a physical route—runner, but adding more finesse can enhance his game."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "In 2022 and 2023, Boston was stuck behind Rome Odunze as he was the primary receiver in the Washington offense. Aside from Odunze, there were other early-round talents like Jalen McMillan and Jaâ€™Lynn Polk ahead of Boston. After that trio moved on to the NFL, Boston got an opportunity and had a breakout 2024 season with 63 catches for 834 yards and nine touchdowns.  In 2025, Boston had 62 catches for 881 yards and 11 touchdowns.\nIn the passing-driven NFL, teams are always on the lookout for mismatch receivers, and Boston brings that type of ability. Boston is a tall receiver with a large wingspan who presents a large catch radius for his quarterback. With his height, length, and leaping ability, Boston is a problem for defenses even when he is blanketed in coverage, as he will make big plays with leaping grabs over defensive backs. Boston is a red zone weapon that looks like an outside receiver to attack defenses. In the condensed part of the field, Boston is a real weapon, and his 20 touchdowns over the past two seasons are not a fluke. He can box out, leap over, and uncover to get open for his quarterback. Boston should be a real asset for his team to produce touchdowns.\nAside from his size mismatch, Boston has other strengths that make him a viable prospect for the NFL. He shows some nice suddenness and twitch out of his break for a big receiver.  Boston tracks passes very well downfield and attacks the ball with late hands that make it more difficult for defensive backs to break up receptions. Boston high points the ball well and has an excellent feel to finish the reception. Boston flashed some run-after-the-catch ability in college, but he could stand to be more physical as a runner. Boston also has very good hands and has had very few drops during his first season as a starter.\nIn the 2026 NFL Draft, Boston looks like a first-round pick. The success of similar receivers could help Boston rise in the lead-up to the draft."
+        },
+        {
+          "title": "Strengths",
+          "text": "Mismatch size\nSure-handed\nHigh points the bal\nHas suddenness and twitch for a big receiver\nTracks the ball well\nHigh points the ball well\nRed zone weapon\nScoring threat\nReliable hands\nLate hands to make receptions\nNatural hands catcher\nMakes contested catches\nConcentration\nReady to contribute immediately\nExperienced and successful against good college programs\nCreates mismatches out of the slot"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Lacks elite speed\nCould be a more physical runner after the catch"
+        },
+        {
+          "title": "Player Comp",
+          "text": "Drake London. Boston is similar to other receivers like London and Tet McMillan."
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Ball-winning big-play receiver with the speed to go deep and the physicality to dominate at the catch point.\n\nBoston is a big-bodied pass catcher who plays with a hard-to-find combination of fluidity and power; he boasts rare body control and seems to levitate in the air to pull down passes in traffic and erase inaccuracies from the quarterback. A two-year starter for the Huskies with a nose for the end zone, Boston caught 20 touchdowns in his college career, adding a rushing score and a punt return TD to his résumé. He lined up primarily outside for Washington, bringing the size and play strength to beat press and get downfield. But he flashed the ability to play out of the slot, too, and could be utilized as a mismatch threat over the middle. He’s a smooth mover who has the ability to gear down quickly and change directions on comeback routes or digs. He transitions from catch to run seamlessly, showing the ability to go up, spin, come down, and keep rolling without losing his balance. Boston brings excellent awareness of the sideline to get his feet in bounds, and he has a penchant for the acrobatic catch; he will go down low to scoop a pass or up high to pluck it at its highest point. He’s tough over the middle, showing the focus to see the ball into his hands and secure it even when he knows a hit is coming. And he’s a monster in tight-coverage situations; he caught 10 of 13 contested catch opportunities in 2025, per PFF, and tallied just two total drops last year. He works hard at blocking, using his big frame to wall off defenders and stay engaged. He is a surprisingly good punt returner for a larger-bodied receiver.\n\nBoston is a physical player but needs to be more consistent getting off the line cleanly; there are times when he’s slowed at the line, disrupting timing. He brings build-up speed on deep routes but is not the most explosive or agile in the short area. He lacks top-tier separation skills and will need to work on expanding his release package and his route-tree repertoire."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Ball-winning big-play receiver"
+        },
+        {
+          "title": "Traits",
+          "text": "Instinctual Playmaking\nGot That Dog in Him\nPrototypical Frame"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former three-star recruit out of Puyallup, Washington. Was the no. 146 wide receiver and the no. 893 overall player in the 2022 class. Played in 18 games over his first two seasons before becoming a full-time starter in 2024, when he recorded 63 catches for 834 yards and nine touchdowns. Named third-team All–Big Ten as a wide receiver and honorable mention All–Big Ten as a return specialist in 2025."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "Majored in comparative history of ideas at Washington, which is described as a “one-of-a-kind department where students enjoy the freedom of an interdisciplinary liberal arts degree within the context of a renowned research university.”\nPlayed with three current NFL receivers—Rome Odunze, Ja’Lynn Polk, and Jalen McMillan—during his time at Washington. “They definitely brought me in under their wings. Each and every one of them. I feel like I have a piece from each person.”\nOn his mindset each time he’s targeted: “When the ball is in the air, I think it’s mine. There’s just no way I don’t come down with the ball.”"
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF COURTLAND SUTTON"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.4,
+    "prospect_grade_indicator": "Will Become Good Starter Within Two Years",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Puka Nacua",
+    "eligibility": "Junior (RS)",
+    "nfl_rank": 20,
+    "nfl_pos_rank": 4
+  },
+  "bleacher_profile": {
+    "grade": 7.7,
+    "grade_indicator": null,
+    "overall_rank": 32,
+    "position_rank": null,
+    "pro_comparison": "Keon Coleman",
+    "projected_round": "2nd Round"
+  },
+  "walter_profile": {
+    "player_comp": "Drake London. Boston is similar to other receivers like London and Tet McMillan."
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF COURTLAND SUTTON",
+    "traits": "Instinctual Playmaking\nGot That Dog in Him\nPrototypical Frame"
+  },
+  "injury_history": [
+    {
+      "detail": "Double Hernia",
+      "recovery_time": "Pre-Season",
+      "year": "2025"
+    },
+    {
+      "detail": "Ankle",
+      "recovery_time": "1 Game",
+      "year": "2025"
+    }
+  ]
+}

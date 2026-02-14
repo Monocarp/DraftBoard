@@ -1,0 +1,481 @@
+{
+  "name": "Kenyon Sadiq",
+  "slug": "kenyon-sadiq",
+  "overview": {
+    "POS": "TE",
+    "College": "Oregon",
+    "Height": "6' 3\"",
+    "Weight": "245",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": "1st Round",
+    "Games": "35",
+    "Snaps": "1187",
+    "24/7 Sports": "96",
+    "ESPN": "91",
+    "Draft Buzz": "87.6 / 100",
+    "NFL.com": "6.42",
+    "BR": "8",
+    "Gridiron": "TBD"
+  },
+  "position": "TE",
+  "college": "Oregon",
+  "height": "6' 3\"",
+  "weight": "245",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Jr",
+  "projected_round": "1st Round",
+  "games": 35,
+  "snaps": 1187,
+  "site_ratings": {
+    "24/7 Sports": "96",
+    "ESPN": "91",
+    "Draft Buzz": "87.6 / 100",
+    "NFL.com": "6.42",
+    "BR": "8",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "72.7",
+      "percentile": 0.8
+    },
+    "2024 Grade": {
+      "value": "80.4",
+      "percentile": 0.9
+    },
+    "2023 Grade": {
+      "value": "60.5",
+      "percentile": 0.556
+    },
+    "Receiving Grade": {
+      "value": "71.2",
+      "percentile": 0.6
+    },
+    "Drop %": {
+      "value": "11.5",
+      "percentile": 0.2
+    },
+    "Cont. Catch Ratio": {
+      "value": "58.3",
+      "percentile": 0.6
+    },
+    "Yards Per Route Run": {
+      "value": "1.74",
+      "percentile": 0.6
+    },
+    "YAC Per Reception": {
+      "value": "4.8",
+      "percentile": 0.2
+    },
+    "Missed Tkles Forced": {
+      "value": "8",
+      "percentile": 0.8
+    },
+    "Pass Block Grade": {
+      "value": "76.7",
+      "percentile": 0.9
+    },
+    "Run Block Grade": {
+      "value": "66.3",
+      "percentile": 0.8
+    },
+    "Touchdowns": {
+      "value": "8",
+      "percentile": 1.0
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 18.153846153846153,
+      "positional_rank": "1"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 24.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 13.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 20.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 14.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 18.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 16.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 10.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 12.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 22.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 25.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 21.0,
+      "positional_rank": "1"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 21.615384615384617,
+    "PFF": 23.0,
+    "ESPN": null,
+    "Brugler": 18.0,
+    "Kiper": 15.0,
+    "Miller": 23.0,
+    "Bleacher": 15.0,
+    "Walter": 19.0,
+    "TDN": 9.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 19.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - MID",
+    "Bleacher": "1st Round"
+  },
+  "player_comps": {
+    "NFL": "Trey McBride",
+    "Miller": "TBD",
+    "DraftBuzz": "Sam LAPORTA",
+    "Bleacher": "George Kittle",
+    "WF": "Evan Engram.",
+    "Ringer": "Sam Laporta",
+    "NFL.com": "Trey McBride"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 139.7,
+    "Hands": 0.64,
+    "Short Receiving": 0.78,
+    "Intermediate Routes": 0.82,
+    "Deep Threat": 0.85,
+    "Blocking": 0.71
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot Snaps": {
+      "2025": 210,
+      "career": null
+    },
+    "Inline Snaps": {
+      "2025": 105,
+      "career": null
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "A versatile tight end with a shredded physique and alluring potential as a volume target, Sadiq’s route tree will be full of branches. His athleticism and break quickness should allow him to uncover against man coverage on all three levels. He’s talented after the catch, with the ability to make things easier for play-callers and quarterbacks looking to move the sticks. He has the body control and hand strength to win contested catches but will occasionally allow balls to hit the ground on lower-difficulty plays. He’s adequate as a blocker, giving good effort in-line and locating and landing on linebackers as a move blocker. Teams looking to diversify their passing game options with a talented pass-catching tight end could make Sadiq a priority."
+        },
+        {
+          "title": "Strengths",
+          "text": "Built like a bodyguard with a compact, well-defined frame. | Capable of running a robust route tree. | Gets in and out of breaks with good snap and separation. | Vandalizes defensive seams with impunity against man coverage. | Survives collisions with catches thanks to his hand strength. | Shows off agility and acceleration after the catch. | Fits up run blocks with proper positioning and base width. | Grips and presses forward with moving feet to stay connected."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Shows some drift in his feet on zone-beater routes. | Inconsistent catch focus on throws above his numbers. | Average acceleration and pop into contact as a lead blocker. | Defensive ends will play across his face when he’s based up. | Needs to avoid leaning as a point-of-attack blocker."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Kenyon Sadiq has a rare combination of explosiveness, versatility, and plus-level run blocking ability, which projects him as a top-tier tight end in the NFL."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nKenyon Sadiq grew up in Idaho Falls, Idaho, where he became a folk hero at Skyline High School. Standing 6-foot-3 and weighing 245 pounds (born in 2004), Sadiq was a do-everything weapon who led the Grizzlies to three consecutive state championships from 2020 to 2022. His senior year was ridiculous: 62 catches for 1,303 yards and 18 touchdowns receiving, plus another 233 yards and four scores on the ground. He even contributed on defense with two interceptions and a sack. One game against Sandpoint in the state semifinals, he went off for 246 yards and five touchdowns on just six catches. That performance earned him MaxPreps Idaho High School Football Player of the Year and back-to-back 4A All-Idaho Player of the Year honors.\n\nThe recruiting services took notice. Sadiq pulled consensus four-star ratings across the board: a 0.96 grade from 247Sports (No. 78 nationally), four stars from ESPN and Rivals, and top-10 athlete rankings from multiple outlets. He was the unquestioned best player in Idaho regardless of position. Despite interest from programs like Texas, Michigan, Colorado, and Oklahoma State, Sadiq committed to Oregon and arrived in Eugene as a 220-pound project at a position the Ducks develop as well as anyone in the country.\n\nHis first two seasons required patience. As a true freshman in 2023, Sadiq caught just five passes for 24 yards across 14 games, though he did find the end zone in the Fiesta Bowl against Liberty. In 2024, his role expanded to 25 catches for 307 yards and two touchdowns, including both scores in the Big Ten Championship against Penn State. Then came the breakout. In 2025, Sadiq seized the starting job and ran with it, finishing with 51 receptions for 560 yards and eight touchdowns while leading all FBS tight ends in scoring catches. His three-year totals at Oregon: 80 catches, 892 yards, 11 touchdowns. Along the way, he transformed his body, going from 220 to 255 pounds while dropping to around 10 percent body fat. This offseason, he posted a 41.5-inch vertical, power cleaned 365 pounds, and benched 435. The raw tools have always been there. Now the production matches.\n\nWatch any Oregon game and you'll will see a tight end built for the modern NFL passing game. Sadiq wins with speed, separation, and the ability to create mismatches all over the formation. At 4.55 in the forty with that kind of body control and hand strength, he is going to give linebackers and safeties nightmares trying to stay with him on vertical routes and crossing patterns. The contested catch ability is real. The athleticism after the catch is real. When defenses have to account for a guy who can beat them at every level of the field from multiple alignments, it opens up everything else for an offense.\n\n\n\nHere is the deal, though. Sadiq is not walking into the league as a complete tight end. The blocking is adequate and improving, but it is not a strength. Teams that want to feature him need to be comfortable using him primarily as a receiving weapon and working in the blocking responsibilities gradually. He gives effort in the run game and has the base and positioning to hold up at the second level, but asking him to block defensive ends on their way upfield is going to be a problem early in his career. His lower body strength and leverage need work before he can be a true every-down player.\n\n\n\nThis is a first-round talent with the ceiling of a Pro Bowl caliber receiving tight end. Offensive coordinators who want to diversify their passing attack and create matchup problems with a dynamic seam threat should be circling his name. His best fit comes in systems that will split him out and move him around rather than leaving him on the line play after play. The upside is tantalizing: an athletic freak who can dominate a game as a receiver and who showed the ability to step up when his team needed him most. The questions are about rounding out his game, not about whether he has the tools to be a difference-maker."
+        },
+        {
+          "title": "Overview",
+          "text": "Athletic, versatile tight end with the speed to threaten the seams, the strength to win contested catches, and the physicality to make an impact as a blocker.\n\nSadiq isn’t your typical undersized “move” tight end; yes, he’s a mismatch threat as a receiver and sports explosive movement skills to run after the catch, but he also brings a workmanlike mentality as a blocker and flashes the ability to create movement in the run game. A two-year contributor for the Ducks, he has a rocked-up frame (his biceps have biceps) and runs routes with a smooth, explosive gait. He flashes the ability to chew up ground up the seam and get over the top of second-level defenders. He can separate when given one-on-one opportunities against linebackers, and he makes plays after the catch, showcasing the agility to avoid tackles and leap over defenders (214 of his 560 receiving yards came after the catch last year). Sadiq has a big catch radius and very strong hands; he frequently goes up in traffic to pluck the football and squeezes it through contact to come down with a catch. He’s an enthusiastic blocker, showing good hand placement and grip strength to seal defenders out of the play and to sustain long enough to get the job done.\n\nSadiq is a promising blocker, but he is undersized by NFL standards and may struggle in an in-line role at the next level. He can be overly aggressive as a blocker and end up lunging and missing his target. As a receiver, drops became an issue for him in 2025 (after notching just one drop the year before); he notched six drops on 54 targets, per PFF, for a concerning 12 percent drop rate. He never posted top-end production in the passing game. He is still developing as a route runner and will need to expand his tree and clean up his technique at the next level."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Kenyon Sadiq... Kenyan Sadiq... some question about whether TJ Hockenson will be back... they absolutely love as a blocking tight end what they get from Josh Oliver... a difference maker... reliable young tight end would do the trick... premier athlete for that tight end spot... some question about how his frame is, he might be just a shade under six foot two... actual measurements... one of those players that... reminds me of... guys like Malachi Corley and Harold Fannin Jr a play caller who is an innovator who's gonna design opportunities for these players... Unbelievable after the catch... So good. After the catch... masterfully deploy... I hope... would do the same thing.\n\n\"there is another guy's gonna be catching the ball. It's not a wide receiver that will go higher than some of these wide receivers...And that's Kenon Sik...Kenyon Sik is worthy of being...when you see what you know Tyler Warren's doing, you see what Cols and Loveland are doing and you watch Kenon Sadique, he's not gonna catch a hundred balls...But over the last two games he has what 14 catches, three touchdowns...He's outstanding...I think when you look at a guy like Kenyon, Sade, he is such a gifted athlete and he is such a great character kid with enormous talent...he's gotta be in a top 10 to 12 discussion...after all said and done with how he'll come into the league right away and start being productive and helping an of offense immensely...This is the question that I have on Kenyon Sadik. He is on the shortlist for best run after catch players in the entire class. Has had some breathtaking moments over the past couple of weeks...He and Dante more of a special, special connection...He's probably gonna check in around six foot two...He an hvac, is he a movable chess piece? Is he a conventional tight end?...Sadik goes somewhere maybe more in the late first than the early first...But he has made his case over these past couple of weeks...if you wanna do a conversation about like the most enjoyable players to study on Tape Canyon Sadique certainly has a case to be on that list...the over under for Kenyon Sadique and the draft Yep. Is 16 and a half...I'm gonna go under meaning later than 16 and a half. So 17 or later...I'm gonna go before that, I'm gonna go, he goes inside. I'm gonna say he goes inside at 16...we've covered Jeremiah love Jordan, Tyson Carne, Tate Mackay, lemon Zacharia Branch, Denzel Boston, and Kenyan Sadique.\""
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Kenyon Sadiq is one of the most physical and impactful blockers in the entire class.\n\nAdd in his explosive ability down the field and after the catch to maximize any passing attack, and he's the TE1 in this class. Sadiq is a former 4—star recruit, and his athletic ability as a multi—sport standout has transitioned to the football field, showcasing his incredible potential as a pass catcher.\n\nHe's been working behind the scenes at Oregon and took over as the No. 1 tight end for the Ducks after the Los Angeles Rams selected Terrance Ferguson during the 2024 draft. Pay attention as he showcases why he's the best tight end in the country."
+        },
+        {
+          "title": "Positives",
+          "text": "— Uses superior physicality and multi—functional utility as a blocker to open up the run and screen games.\n\n— Alignment versatility to create mismatches in the passing game.\n\n— His athletic ability creates missed tackles with the ball in his hands.\n\n— He's a speed threat down the seam and after the catch who alters pursuit angles with burst."
+        },
+        {
+          "title": "Negatives",
+          "text": "— His frame and anchor will be tested at the NFL level against bigger and stronger athletes.\n\n— Growing as a route salesman to win when superior athleticism is matched.\n\n— Showcases the ability to consistently win contested catch situations.\n\n— Football IQ in reading leverage and zone defenses to create throwing lanes for his quarterback."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Over the past two seasons, Sadiq was a dangerous receiving weapon for the Ducks. Oregon did not feature him as much as they should have, but Sadiq still produced well when given the opportunity. In 2024, he had 24 catches for 308 yards and two touchdowns. In 2025, Sadiq played well, catching 46 passes for 531 yards and eight touchdowns.\nAs a receiver, Sadiq is a mismatch asset for his offense. He is a fast route runner with fluid athleticism to get open in the middle of the field. Sadiq has the speed to get down the seam and accelerate to find soft spots in zone coverage. With excellent body control and agility, Sadiq makes difficult catches using his body to box out defensive backs and make leaping grabs over them. Sadiq is a true mismatch weapon as he is too fast and athletic for linebackers; he will burn them in man coverage. Sadiq is also too big for defensive backs with his ability to make catches over them. Sadiq is a dangerous run-after-the-catch tight end as well, with good moves to dodge tacklers along with size to finish his plays well.\nAs a blocker, Sadiq is better than one would think from the eyeball test. Many receiving tight ends donâ€™t like blocking, but Sadiq blocks his tail off. He will fight, hit, and scrap with defenders through the whistle. He will look to finish defenders when given the chance. Many pro coaches just want their tight ends to give an effort and get a draw, and Sadiq can do that. A tight end has to be able to help in pass protection and block the c-gap to be a true three-down starter, and Sadiq has the ability to do it. Given his size, he will always have some limitations taking on NFL defensive ends, but Sadiq fights hard, and thatâ€™s half the battle for a tight end.\nIn the 2026 NFL Draft, Sadiq looks like a first-round pick. He could be an asset as a mismatch weapon as soon as his rookie year. Sadiq looks like a good starter for many years to come."
+        },
+        {
+          "title": "Strengths",
+          "text": "Mismatch receiving weapon\nDangerous yards after the catch runner\nToo fast for linebackers\nToo big for defensive backs\nGood speed\nExcellent size\nGood route-runner\nQuick through his route\nFluid athlete\nQuick down the seam\nAccelerates into soft spots in zone\nCan win 50-50 passes\nLeaping ability\nTracks the ball well\nGood ball adjustment\nAdvanced body control\nReliable hands\nLate hands to make receptions\nNatural hands catcher\nMakes contested catches\nImpressive blocker for his size\nFights hard, gets physical\nPlus blocker for a receiving tight end\nReady to contribute immediately\nExperienced and successful against good college programs"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "A little undersized\nBlocking limitations against pro defenders"
+        },
+        {
+          "title": "Player Comp",
+          "text": "Evan Engram. In terms of style of play, Sadiq reminds me of Engram. Both are athletic, fast, dangerous receivers, and of similar size. Sadiq is a better blocker entering the NFL. Engram was a top-20 pick, and Sadiq could be as well."
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Athletic, versatile tight end with the speed to threaten the seams, the strength to win contested catches, and the physicality to make an impact as a blocker.\n\nSadiq isn’t your typical undersized “move” tight end; yes, he’s a mismatch threat as a receiver and sports explosive movement skills to run after the catch, but he also brings a workmanlike mentality as a blocker and flashes the ability to create movement in the run game. A two-year contributor for the Ducks, he has a rocked-up frame (his biceps have biceps) and runs routes with a smooth, explosive gait. He flashes the ability to chew up ground up the seam and get over the top of second-level defenders. He can separate when given one-on-one opportunities against linebackers, and he makes plays after the catch, showcasing the agility to avoid tackles and leap over defenders (214 of his 560 receiving yards came after the catch last year). Sadiq has a big catch radius and very strong hands; he frequently goes up in traffic to pluck the football and squeezes it through contact to come down with a catch. He’s an enthusiastic blocker, showing good hand placement and grip strength to seal defenders out of the play and to sustain long enough to get the job done.\n\nSadiq is a promising blocker, but he is undersized by NFL standards and may struggle in an in-line role at the next level. He can be overly aggressive as a blocker and end up lunging and missing his target. As a receiver, drops became an issue for him in 2025 (after notching just one drop the year before); he notched six drops on 54 targets, per PFF, for a concerning 12 percent drop rate. He never posted top-end production in the passing game. He is still developing as a route runner and will need to expand his tree and clean up his technique at the next level."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Athletic, versatile tight end"
+        },
+        {
+          "title": "Traits",
+          "text": "Rare Versatility\nField-Tilting Speed\nInstinctual Playmaking"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former four-star recruit out of Idaho Falls, Idaho. Was the no. 4 athlete and the no. 122 overall player in the 2023 recruiting class. Began his college career at Oregon in 2023 and steadily increased his role in the Ducks offense. In 2025, ranked first among FBS tight ends in receiving touchdowns and was named first-team All–Big Ten and Big Ten Tight End of the Year."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "From quarterback Dante Moore: “That’s Superman. … Having Kenyon at tight end, his speed, his awareness, and his confidence in route running, I just love to have him.”\nBroke Oregon’s single-season receptions record for a tight end during the Ducks’ College Football Playoff run in 2026."
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF SAM LAPORTA"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.42,
+    "prospect_grade_indicator": "Will Become Good Starter Within Two Years",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Trey McBride",
+    "eligibility": "Junior",
+    "nfl_rank": 21,
+    "nfl_pos_rank": 1
+  },
+  "bleacher_profile": {
+    "grade": 8.0,
+    "grade_indicator": null,
+    "overall_rank": 16,
+    "position_rank": null,
+    "pro_comparison": "George Kittle",
+    "projected_round": "1st Round"
+  },
+  "walter_profile": {
+    "player_comp": "Evan Engram. In terms of style of play, Sadiq reminds me of Engram. Both are athletic, fast, dangerous receivers, and of similar size. Sadiq is a better blocker entering the NFL. Engram was a top-20 pick, and Sadiq could be as well."
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF SAM LAPORTA",
+    "traits": "Rare Versatility\nField-Tilting Speed\nInstinctual Playmaking"
+  },
+  "injury_history": []
+}

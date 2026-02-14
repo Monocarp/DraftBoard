@@ -1,0 +1,450 @@
+{
+  "name": "Julian Neal",
+  "slug": "julian-neal",
+  "overview": {
+    "POS": "CB",
+    "College": "Arkansas",
+    "Height": "6' 2\"",
+    "Weight": "208",
+    "Age": "0",
+    "DOB": "00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": "36",
+    "Snaps": "1447",
+    "24/7 Sports": "84",
+    "ESPN": "82",
+    "Draft Buzz": "84.8 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.4",
+    "Gridiron": "TBD"
+  },
+  "position": "CB",
+  "college": "Arkansas",
+  "height": "6' 2\"",
+  "weight": "208",
+  "age": 0.0,
+  "dob": "00:00:00",
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": 36,
+  "snaps": 1447,
+  "site_ratings": {
+    "24/7 Sports": "84",
+    "ESPN": "82",
+    "Draft Buzz": "84.8 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.4",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "79.4",
+      "percentile": 0.471
+    },
+    "24 Grade": {
+      "value": "70.3",
+      "percentile": 0.5
+    },
+    "23 Grade": {
+      "value": "69.1",
+      "percentile": 0.333
+    },
+    "Coverage Grade": {
+      "value": "76.5",
+      "percentile": 0.389
+    },
+    "Passer Rating": {
+      "value": "82.5",
+      "percentile": 0.333
+    },
+    "Interceptions": {
+      "value": "2",
+      "percentile": 0.667
+    },
+    "Forced Incom.": {
+      "value": "8",
+      "percentile": 0.417
+    },
+    "Forced Inc. Rate": {
+      "value": "16.7",
+      "percentile": 0.5
+    },
+    "Dropped Picks": {
+      "value": "2",
+      "percentile": 0.972
+    },
+    "Completion %": {
+      "value": "56.3",
+      "percentile": 0.333
+    },
+    "Man Coverage": {
+      "value": "66.3",
+      "percentile": 0.333
+    },
+    "Zone Coverage": {
+      "value": "78.2",
+      "percentile": 0.778
+    },
+    "% In Man": {
+      "value": "29",
+      "percentile": 0.5
+    },
+    "% In Zone": {
+      "value": "51.8",
+      "percentile": 0.167
+    },
+    "Coverage Stops": {
+      "value": "8",
+      "percentile": 0.389
+    },
+    "Tackling": {
+      "value": "86.6",
+      "percentile": 0.944
+    },
+    "Missed Tackles": {
+      "value": "3",
+      "percentile": 0.778
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Arm Length": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Hand Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Speed": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Explosive": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Agility": {
+      "result": "TBD",
+      "grade": null
+    },
+    "10 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "20 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "40 Time": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Vertical": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Broad": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "3 Cone": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Bench": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Height": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Weight": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Gridiron": {
+      "result": "TBD",
+      "grade": "TBD"
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 77.14285714285714,
+      "positional_rank": "10.2"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 85.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 56.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 71.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "Jeremiah",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 77.0,
+      "positional_rank": "19"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 107.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Tankathon",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Jeremiah": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "Tankathon": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - LATE",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Martin EMERSON",
+    "Bleacher": "Riq Woolen",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR Allowed": 72.7,
+    "Tackling": 0.9,
+    "Run Defense": 0.93,
+    "Cov Grade": 0.82,
+    "Zone Coverage": 0.77,
+    "Man/Press": 0.82
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 6,
+      "career": 12
+    },
+    "Slot": {
+      "2025": 15,
+      "career": 28
+    },
+    "Corner": {
+      "2025": 687,
+      "career": 1264
+    },
+    "Box": {
+      "2025": 63,
+      "career": 130
+    },
+    "Deep": {
+      "2025": 0,
+      "career": 0
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Coverage Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Mental/Discipline Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nThe San Francisco native's college football journey has taken more twists than a Lombard Street tourist bus, but Julian Neal has emerged stronger at each stop. Growing up in the Mission District, Neal was a three-way star at Mission High School, showcasing his versatility as a receiver, defensive end, and defensive back while earning All-City honors. His basketball skills on the hardwood translated beautifully to the gridiron, where that court-honed footwork would become his calling card in coverage.\n\nAfter committing to Fresno State out of high school, Neal spent his early years learning the cornerback craft, redshirting as a freshman before gradually working his way into the rotation. The 2024 season marked his breakout campaign with the Bulldogs, where he started four games and appeared in all twelve, hauling in two interceptions while breaking up six passes and recording 35 tackles. His dominant performance against Hawaii, where he notched a sack and two pass breakups, caught the attention of power conference programs, leading to a brief flirtation with Stanford during the winter transfer window before ultimately landing at Arkansas.\n\nNeal's lone season in Fayetteville has been his most productive yet, stepping into a starting role from day one and never looking back. Through the 2025 campaign, he's already matched his career interception total while setting personal bests in pass breakups. The redshirt senior collected eleven tackles, an interception, and two pass breakups in Arkansas's blowout victory over Arkansas State, becoming just the third Razorback defensive back since 1997 to accomplish that statistical trifecta in a single game. Despite the team's struggles in SEC play, Neal has been a consistent bright spot in the secondary, bringing physicality and reliability to a unit that desperately needed both\n\nSCOUTING REPORT: SUMMARY\nNeal's tape tells the story of a corner who maximizes every ounce of his ability through physicality and football smarts. His combination of size, run defense excellence, and zone coverage instincts make him the type of depth piece that defensive coordinators covet for their backend rotation. The reality is that his pedestrian speed shows up too often against SEC receivers, and that's going to limit his ceiling at the next level. He'll thrive in specific packages where teams need a big body to match up against possession receivers or come downhill against the run, but asking him to travel with speedsters on an island is a recipe for disaster.\n\nThe film reveals a player who understands leverage and positioning at an advanced level, using his basketball background to stay balanced through contact and maintain phase in tight quarters. His value will come in sub-packages and red zone situations where the field shrinks and his physicality becomes an asset rather than a crutch for lacking recovery speed. Zone-heavy teams that rotate their corners and don't ask them to run vertically for 60 snaps will find a reliable contributor who rarely busts assignments and brings a nasty edge to their run fits.\n\nLooking at the draft landscape, Neal profiles as a late third or early fourth round selection who carves out a niche role immediately before potentially developing into a serviceable starter down the road. His combine performance will be fascinating to watch - if he somehow tests better athletically than his tape suggests, he could hear his name called earlier on day three. But the smart money says he's a developmental corner who finds his home as a core special teamer and situational defender for his first few seasons. Teams drafting him are banking on his character, toughness, and technical refinement compensating for athletic limitations. In a passing league that increasingly demands corners who can run, Neal will need to be strategic about his role and continue honing his craft to stick beyond his rookie contract."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Julian Neal has a physical mindset and long, powerful arms to match as a boundary corner. For a defense that struggled mightily all season long, the Fresno State transfer showed up week after week, impacting the game in all phases, and made life difficult for opposing wide receivers. He had a stretch of five straight weeks with a pass breakup in 2025 and proved he belonged on the SEC stage against some of the best competition.\n\nThe former 3—star recruit played four seasons at Fresno State, only making four starts in his time there before transferring to Arkansas and making an immediate impact. He started all 12 games for the Razorbacks and set career highs across the board, making 55 tackles (32 solo), two tackles for loss, two interceptions, and an impressive ten passes defensed. His quick ascent into an impact player shows the hard work he's been putting in.\n\n— Neal is a proficient man—coverage boundary corner with the ideal body type who uses his length and powerful stab to re—route receivers and throw off their timing. He's comfortable with both hard and soft presses, giving him multiple ways to attack."
+        },
+        {
+          "title": "Positives",
+          "text": "— Neal is a proficient man—coverage boundary corner with the ideal body type who uses his length and powerful stab to re—route receivers and throw off their timing. He's comfortable with both hard and soft presses, giving him multiple ways to attack.\n\n— The 6'2\", 208—pound corner has loose hips for his size, enabling him to turn and run with receivers at all three levels. He does a good job maintaining connection in man coverage through the route with his length and taking throws away.\n\n— His ability to impact the catch point jumps off the screen, not just with his length, but the timing and quickness with which he throws his hands. Shows off some quick tracking when the ball is in the air with good ball skills to match.\n\n— Physicality in every phase helps him be a contributor in the run and screen game. He attacks blocks on the perimeter and maintains outside leverage to drive ball carriers inside. Neal is a sure and intimidating tackler as well."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Neal's instincts and route recognition are still developing; he's late to pass off routes to safety help and take underneath routes entering his zone, giving up big plays. Maintaining eye discipline and film study will be important.\n\n— He has good movement skills for his size, but he struggles to decelerate and change direction at high speeds. There's a hitch in his trigger, downhill and accelerating after flipping his hips.\n\n— His press technique and overall consistency are lacking in regard to jam timing and using the proper hand. He tends to lock his hips with a cross—body jam, which can give receivers an easier release when the jam timing is off."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.4,
+    "grade_indicator": null,
+    "overall_rank": 71,
+    "position_rank": null,
+    "pro_comparison": "Riq Woolen",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

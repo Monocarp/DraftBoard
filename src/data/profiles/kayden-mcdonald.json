@@ -1,0 +1,529 @@
+{
+  "name": "Kayden McDonald",
+  "slug": "kayden-mcdonald",
+  "overview": {
+    "POS": "DT",
+    "College": "Ohio State",
+    "Height": "6' 3\"",
+    "Weight": "326",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": "1st Round",
+    "Games": "34",
+    "Snaps": "679",
+    "24/7 Sports": "94",
+    "ESPN": "90",
+    "Draft Buzz": "87.4 / 100",
+    "NFL.com": "6.39",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "position": "DT",
+  "college": "Ohio State",
+  "height": "6' 3\"",
+  "weight": "326",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Jr",
+  "projected_round": "1st Round",
+  "games": 34,
+  "snaps": 679,
+  "site_ratings": {
+    "24/7 Sports": "94",
+    "ESPN": "90",
+    "Draft Buzz": "87.4 / 100",
+    "NFL.com": "6.39",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "86.5",
+      "percentile": 0.944
+    },
+    "24 Grade": {
+      "value": "68.9",
+      "percentile": 0.0
+    },
+    "23 Grade": {
+      "value": "63.6",
+      "percentile": 0.167
+    },
+    "Pass Rush Grade": {
+      "value": "62.8",
+      "percentile": 0.417
+    },
+    "True Pass Rush": {
+      "value": "67.2",
+      "percentile": 0.667
+    },
+    "PR Win Rate": {
+      "value": "4",
+      "percentile": 0.111
+    },
+    "Run Def. Grade": {
+      "value": "91.2",
+      "percentile": 1.0
+    },
+    "Run Stop %": {
+      "value": "13.8",
+      "percentile": 1.0
+    },
+    "Sacks": {
+      "value": "2",
+      "percentile": 0.667
+    },
+    "Hits": {
+      "value": "0",
+      "percentile": 0.167
+    },
+    "Hurries": {
+      "value": "12",
+      "percentile": 0.528
+    },
+    "Batted Balls": {
+      "value": "1",
+      "percentile": 0.611
+    },
+    "Forced Fumbles": {
+      "value": "2",
+      "percentile": 1.0
+    },
+    "Tackling Grade": {
+      "value": "78.1",
+      "percentile": 1.0
+    },
+    "Missed Tackle Rate": {
+      "value": "3.3",
+      "percentile": 0.944
+    },
+    "Total Pressures": {
+      "value": "14",
+      "percentile": 0.528
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 26.22222222222222,
+      "positional_rank": "2.142857142857143"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 21.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 19.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 26.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 17.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 25.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 31.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 39.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 33.0,
+      "positional_rank": "2"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 27.555555555555557,
+    "PFF": 25.0,
+    "ESPN": null,
+    "Brugler": 25.0,
+    "Kiper": 25.0,
+    "Miller": 33.0,
+    "Bleacher": 31.0,
+    "Walter": 30.0,
+    "TDN": 16.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 25.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - MID",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "DJ Reader",
+    "Miller": "TBD",
+    "DraftBuzz": "Nazir STACKHOUSE",
+    "Bleacher": "Vince Wilfork",
+    "WF": "Daron Payne.",
+    "Ringer": "An Event Horizon",
+    "NFL.com": "DJ Reader"
+  },
+  "strengths": "• Good Size, Thick Build, Massive Legs\n• Natural Leverage Under Interior\n• Athleticism Boosts Recovery Well\n• Excellent Run Defender\n• Can Consume Double Teams\n• Solid Pocket Collapser",
+  "weaknesses": "• Block Recognition\n• Poor PR Motor and Technique\n• Below Average Height/Length\n• Little Upside in PR\n• Reliance on Athleticism Fails Against Higher Competition",
+  "accolades": null,
+  "player_summary": "McDonald is a thickly built DT from OSU, broke out as a 2025 starter after limited 2024 backup duty, posting high interior production (47-65 tackles, 8 TFL, 3 sacks, 2 forced fumbles). He dominates run defense with natural leverage, knock-back jolt on contact, excellent recognition, gap penetration, disruption of wide-zone schemes, accurate sheds to defend both gaps, and strong rally/tracking—leveraging rare size-strength-athleticism to recover from poor positions as fundamentals improved late-season. Pass rush shows bull-rush power, active hands, and closing burst but remains underdeveloped: slow hands/power activation, no quick-win moves, limited lateral width/edge threat, and ooze rather than collapse. Vulnerable to displacement (up to 3 yards) by doubles or hip-to-hip blocks when pads rise. McDonald projects as a run-focused even-front nose tackle with starting potential; 1st-round upside if technique refines further.",
+  "draftbuzz_grades": {
+    "Tackling": 0.85,
+    "Pass Rush": 1.0,
+    "Run Defense": 0.7
+  },
+  "projected_role": "NT",
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 175,
+      "career": 210
+    },
+    "B GAP": {
+      "2025": 249,
+      "career": 455
+    },
+    "Over Tackle": {
+      "2025": 20,
+      "career": 24
+    },
+    "Outside Tkl": {
+      "2025": 1,
+      "career": 3
+    },
+    "Off Ball": {
+      "2025": 3,
+      "career": 3
+    }
+  },
+  "skills_traits": {
+    "Character/Processing/Instincts": {
+      "positives": null,
+      "negatives": "Subpar block recognition (BR)\nRecovery ability fails against higher competition (BR)"
+    },
+    "Athleticism/Physical Traits": {
+      "positives": "Good size and thick build, massive legs (BR)\nPlenty of power at POA to reset LOS (BR)\nCombo of Strenght, athelticism, and quicks help recovery (BR)\nUsually strongest player on the field (MM)\nNatural Leverage (MM)",
+      "negatives": "Below average hieght and length (MM)\nQuicker than he is fast (MM)"
+    },
+    "Pass Rush": {
+      "positives": "Solid get off, quick snap reaction, decent acceleration (BR)",
+      "negatives": "Keeps hands too low (BR)\nOffers little in pass rush due to hands, pad level (BR)\nPR Motor is poor (BR)"
+    },
+    "Run Defense/Tackling": {
+      "positives": "Size to absord contact as a run defender (BR)\nPhysical gifts to recover and make tackles at LOS (BR)",
+      "negatives": null
+    }
+  },
+  "media_links": [
+    {
+      "description": "Career Highlights",
+      "source": "YT - Prospects",
+      "url": "https://www.youtube.com/watch?v=AKeVGHkY_24"
+    },
+    {
+      "description": "Prospect Profile",
+      "source": "YT - The Draft Hub",
+      "url": "https://www.youtube.com/watch?v=q_SwyeUVrjg"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "A talented run defender, McDonald plays with natural leverage and rattles pads with his initial contact. He’s quick to locate ball-carriers, play off of blocks and rally to the action. His technique is a bit underdeveloped and he’s not a natural drain-clogger against double teams, but he still managed an unusually high tackle rate as an interior defender. Quicker hand strikes should allow for more efficient reps and earlier wins at the point. He offers limited rush value, so his money will be made by giving grief to centers and guards as an even-front nose tackle with starting potential."
+        },
+        {
+          "title": "Strengths",
+          "text": "Rare tackle/TFL production for interior defender. | Built with well-proportioned thickness. | Jolts blockers with his knock-back power. | Uses leverage to pierce gaps and disrupt play design. | Excellent run-game recognition from early in the snap. | Fights to maintain run fits against wide zone blocking schemes. | Plays around blocks with his eyes to locate and track ball-carriers. | Makes accurate shed choices to defend both gaps. | Very good change-of-direction quickness in small spaces."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "More of an ooze rusher than a pocket collapser. | Doesn’t gain enough width on lateral slide steps to threaten edges as a rusher. | Displaced up to three yards by hip-to-hip blocks. | Plays with slow power, making it tougher to quickly shed. | Delayed in activating hands and getting them into blockers."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nKayden McDonald arrived at Ohio State in June 2023 as one of Georgia's most decorated high school defensive linemen, a four-star recruit out of North Gwinnett High School in Suwanee who had left a trail of destruction through opposing offenses. His prep career was nothing short of absurd: 234 tackles, a school-record 46 sacks, and 131 tackles for loss across 40 games. During his junior season alone, he racked up 19 sacks and 58 tackles for loss, then followed it up with 13 sacks and 40 TFLs as a senior. At one point, he registered seven sacks in a single playoff game. He was also productive enough on offense to tote the rock 77 times for 409 yards and 11 touchdowns his final year at North Gwinnett, a testament to the athletic versatility that made him the nation's No. 12 ranked defensive tackle and earned him Gwinnett Daily Post Defensive Player of the Year honors along with Georgia High School Association all-state recognition.\n\nThe transition to Columbus required patience. McDonald saw limited action as a true freshman in 2023, appearing in seven games and notching one tackle for loss while also moonlighting as a short-yardage fullback in the Goodyear Cotton Bowl. His sophomore campaign in 2024 kept him behind Tyleik Williams, who would go on to become a first-round pick, but McDonald contributed as a rotational piece across all 16 games of Ohio State's national championship run, finishing with 16 tackles and 1.5 tackles for loss. Born February 8, 2005, the 6-foot-3, 326-pound nose tackle spent those first two years learning the system and developing his technique while maintaining his commitment to academics as a two-time OSU Scholar-Athlete and Academic All-Big Ten honoree majoring in communications.\n\nEverything clicked for McDonald in 2025. Thrust into a starting role following the departure of last year's draft class, he anchored a Buckeyes defense that finished No. 1 nationally in total defense, scoring defense, and rushing defense, allowing just 9.3 points per game. His stat line told the story: 65 tackles, 8 tackles for loss, 3 sacks, and 2 forced fumbles across another dominant Ohio State campaign. He was named a unanimous All-American and the Big Ten's Defensive Lineman of the Year while earning semifinalist recognition for the Outland Trophy. His best performances came on the biggest stages, including a career-high eight tackles against top-ranked Texas in the season opener and another eight-tackle effort against Penn State. Off the field, McDonald has served as an ambassador for Ronald McDonald House Charities of Central Ohio, demonstrating the character and maturity that NFL organizations covet in their locker rooms.\n\nSCOUTING REPORT: SUMMARY\nMcDonald is a throwback nose tackle in an era obsessed with pass rushers, and there is real value in that. Watch his film against Washington and you will see a man who simply refuses to be moved, absorbing double teams like they are minor inconveniences while collapsing running lanes from the inside. His run defense grades out as elite, and that is not an exaggeration. Offensive coordinators will abandon their ground game by halftime when he is controlling the A-gaps, and that kind of disruption changes how defenses can operate. He is the guy who makes third-and-one feel like third-and-five for opposing offenses.\n\nThe question with McDonald is whether his pass rush can develop enough to keep him on the field for three downs. Right now, his interior pressure comes almost exclusively from bull rushing, and NFL guards will diagnose that quickly. His pass rush grades out closer to average, reflecting a player who is effective in certain situations but limited in his overall toolkit. The good news is that his functional strength is so overwhelming that even when his technique falters, he can push the pocket backward and take away the quarterback's ability to step up. Smart defensive coordinators will pair him with explosive edge rushers who can feast on one-on-ones while McDonald eats up blocks inside.\n\nMcDonald profiles as a high-floor nose tackle who can immediately upgrade any team's run defense while developing into a more complete player. His combination of elite run-stopping ability, championship experience, and the athletic upside to potentially expand his passing down contributions makes him the type of prospect that contending teams covet. He is not a scheme-specific player either. Whether it is a 3-4 as a true nose or a 4-3 as a one-technique, his skill set translates because he does the dirty work that does not always show up on highlight reels but absolutely shows up in playoff wins. The team that lands him is getting a foundational piece up front who will command attention from opposing offensive lines from day one."
+        },
+        {
+          "title": "Overview",
+          "text": "Massive defender who functions like a black hole on the defensive line; there’s no escape for light, radiation, or running backs once they get close enough.\n\nMcDonald has a beer-keg build and dominates against the run. The Big Ten Defensive Lineman of the Year in 2025, he racked up 30 stops (tied for first among interior defenders), per PFF, with only two missed tackles last season. McDonald has a strong punch and brings tremendous upper-body strength to wrench blockers off his frame. He’s quick-footed and fires out of his stance with good leverage, stonewalling blocks and taking on double-teams in the run game. He resets the line of scrimmage and can disrupt running backs before they get downhill. He brings the lateral agility to string the play out on zone runs, keeping his feet moving when disengaging from blocks so he can maintain his gap and still make the play. He shows good hustle to chase down plays from the backside, and his motor runs hot; he’s always looking to mix things up when he has the chance. He flashes the ability to create push and collapse the pocket, sending offensive linemen into their quarterback’s lap.\n\nMcDonald is more of a run-stuffing specialist right now, and his lack of pass rush production (three sacks in three seasons) could cause him to drop a bit. There are times when he gets stuck on blocks, fails to disengage, and doesn’t react quickly enough to make a stop. He occasionally pops up too upright, loses his leverage, and gets pushed back."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Kayden McDonald from Ohio State... talented run stuffer... impactful behind the line... freed up linebackers."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "While Kayden McDonald's technique is a work in progress, he displays a unique ability to get himself out of bad positions and dominate against the run thanks to his rare combination of size (6'3\", 326 lbs), strength and athleticism. Also, his fundamentals have improved down the stretch of this past season.\n\nMcDonald went to Ohio State as a 4—star recruit in the 2023 class and saw the field sparingly as a true freshman. In Year 2, he was stuck behind Tyleik Williams, who later became a first—round draft pick, but contributed as part of the Buckeyes' defensive line rotation, collecting 19 tackles, 1.5 for loss and a pass defended in 16 games.\n\nDuring the 2025 campaign, the Georgia native experienced breakout season, taking command of the starting nose tackle job and recording 47 tackles, eight TFLs, three sacks and two forced fumbles."
+        },
+        {
+          "title": "Positives",
+          "text": "— McDonald presents Good size and a Thick build with massive legs to help him absorb contact as a run—defender.\n\n— solid get—off, quick reaction to the snap and decent acceleration off the line of scrimmage.\n\n— Plenty of strength and power at the point of attack to stand up interior offensive linemen and reset the line of scrimmage when he plays with Good pad—level.\n\n— solid at running his Feet and moving laterally to avoid getting reached.\n\n— when he Gets out of position or loses his gap against the run, his combination of strength, athleticism and quickness can help him recover and still make tackles near the line of scrimmage.\n\n— has the quickness and a hump—move to escape blocks.\n\n— Showed the Ability to Use his quickness and athleticism to make offensive linemen miss a change of pace, keeping linemen on their toes throughout the game."
+        },
+        {
+          "title": "Negatives",
+          "text": "— McDonald plays with his hands down, allowing offensive linemen to get into his chest, thus preventing him from getting extension on blocks. However, he did show growth in this area down the stretch of last season.\n\n— Block recognition is subpar, causing him to get into bad positions.\n\n— His ability to recover isn't as effective against higher—level competition. Penn State's Olaivavega Ioane, a potential first—round guard, was able to stay attached and prevent him from making tackles.\n\n— Has a habit of standing up out of his stance and playing with a narrow base, causing issues holding his gap against double—teams.\n\n— Offers little as a pass—rusher. His wide hands and inconsistent pad—level hurt the effectiveness of his bull rush.\n\n— Pass—rush motor isn't good, either. McDonald often stops rushing when his first move doesn't work."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "In 2024, McDonald was a backup on the Buckeyes championship team, recording 19 tackles with a pass batted. After sitting behind some future NFL pros, McDonald was a disruptive force and a dynamic run defender for the Buckeyes in 2025. He totaled 65 tackles with three sacks, two forced fumbles, and a pass batted.\nAs a pass rusher, McDonald has a nice skill set to attack offensive linemen. He has a strong build with active hands and the power to shed blocks at the point of attack. McDonald has power in his bull rush to knock blockers back and can get penetration into the pocket. To go along with power, McDonald has a burst to close and impressive speed for a big interior lineman. McDonald has the upside and the ability to be a quality interior pass rusher in the NFL.\nIn the ground game, McDonald is strong and stout at the point of attack. He holds his gap well with the power in his base to stonewall downhill runs coming straight at him. McDonald is also disruptive to blowing runs up in the backfield by getting penetration through his strength or using his quickness to fire his gap and get into the backfield. McDonald gets in trouble when he plays too high, so maintaining his pad level and leverage will be important for holding his ground against NFL offensive linemen.\nIn the 2026 NFL Draft, McDonald could be picked in the first round. Check out where he is currently projected inmy latest 2026 NFL Mock Draft."
+        },
+        {
+          "title": "Strengths",
+          "text": "Disruptive interior defender\nGood skill set\nBig\nStrong\nAthletic\nQuick\nAgile\nCapable inside rusher\nPowerful bull rush to push through blockers\nStrong to shed blocks\nHas some variety in pass rush moves\nUses hands and feet at same time\nStrong run defender\nHolds his gap\nCan shed blocks and chase\nCan absorb double teams\nAnchors without problems\nQuality lateral anchor\nReady to contribute immediately\nExperienced and successful against good college programs\nCreates mismatches out of the slot"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Conditioning could need improvement\nGets in trouble when he plays too high"
+        },
+        {
+          "title": "Player Comp",
+          "text": "Daron Payne. In terms of style of play, McDonald reminds me of Payne coming out of Alabama."
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Massive defender who functions like a black hole on the defensive line; there’s no escape for light, radiation, or running backs once they get close enough.\n\nMcDonald has a beer-keg build and dominates against the run. The Big Ten Defensive Lineman of the Year in 2025, he racked up 30 stops (tied for first among interior defenders), per PFF, with only two missed tackles last season. McDonald has a strong punch and brings tremendous upper-body strength to wrench blockers off his frame. He’s quick-footed and fires out of his stance with good leverage, stonewalling blocks and taking on double-teams in the run game. He resets the line of scrimmage and can disrupt running backs before they get downhill. He brings the lateral agility to string the play out on zone runs, keeping his feet moving when disengaging from blocks so he can maintain his gap and still make the play. He shows good hustle to chase down plays from the backside, and his motor runs hot; he’s always looking to mix things up when he has the chance. He flashes the ability to create push and collapse the pocket, sending offensive linemen into their quarterback’s lap.\n\nMcDonald is more of a run-stuffing specialist right now, and his lack of pass rush production (three sacks in three seasons) could cause him to drop a bit. There are times when he gets stuck on blocks, fails to disengage, and doesn’t react quickly enough to make a stop. He occasionally pops up too upright, loses his leverage, and gets pushed back."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Massive defender who functions like a black hole on the defensive line"
+        },
+        {
+          "title": "Traits",
+          "text": "Bulldozer Power\nRelentless Motor"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former four-star recruit out of Suwanee, Georgia. Was the no. 38 defensive lineman and the no. 269 overall player in the 2023 class. Was named a first-team All-American and the Big Ten Defensive Lineman of the Year in 2025."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "Former Ohio State defensive coordinator Jim Knowles on McDonald: “He’s a guy that, particularly when you put him in those situations where he’s just head up on the center and his job is just to knock that guy back, I think he’s showing to have the ability to really change the game and change the line of scrimmage.”\nOn his favorite fast food chains: “If you live in Georgia, Chick-fil-A or Waffle House gotta be tops. That’s law. That Deluxe Chicken Sandwich and Mac-n-Cheese.”"
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF AN EVENT HORIZON"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.39,
+    "prospect_grade_indicator": "Will Eventually Be Plus Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "DJ Reader",
+    "eligibility": "Junior",
+    "nfl_rank": 33,
+    "nfl_pos_rank": 2
+  },
+  "bleacher_profile": {
+    "grade": 7.9,
+    "grade_indicator": null,
+    "overall_rank": 25,
+    "position_rank": null,
+    "pro_comparison": "Vince Wilfork",
+    "projected_round": "3rd Round"
+  },
+  "walter_profile": {
+    "player_comp": "Daron Payne. In terms of style of play, McDonald reminds me of Payne coming out of Alabama."
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF AN EVENT HORIZON",
+    "traits": "Bulldozer Power\nRelentless Motor"
+  },
+  "injury_history": []
+}

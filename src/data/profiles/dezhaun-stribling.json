@@ -1,0 +1,430 @@
+{
+  "name": "DeZhaun Stribling",
+  "slug": "dezhaun-stribling",
+  "overview": {
+    "POS": "WR",
+    "College": "OLE MISS",
+    "Height": "6' 2\"",
+    "Weight": "210",
+    "Age": "0",
+    "DOB": "00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "56",
+    "Snaps": "3008",
+    "24/7 Sports": "83",
+    "ESPN": "TBD",
+    "Draft Buzz": "78.9 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.4",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "OLE MISS",
+  "height": "6' 2\"",
+  "weight": "210",
+  "age": 0.0,
+  "dob": "00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 56,
+  "snaps": 3008,
+  "site_ratings": {
+    "24/7 Sports": "83",
+    "ESPN": "TBD",
+    "Draft Buzz": "78.9 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.4",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "75.9",
+      "percentile": 0.158
+    },
+    "2024 Grade": {
+      "value": "77.7",
+      "percentile": 0.684
+    },
+    "2023 Grade": {
+      "value": "71.6",
+      "percentile": 0.632
+    },
+    "Receiving Grade": {
+      "value": "75",
+      "percentile": 0.105
+    },
+    "Yards/ Routes Run": {
+      "value": "2.12",
+      "percentile": 0.158
+    },
+    "Drop %": {
+      "value": "2",
+      "percentile": 0.789
+    },
+    "Contested Catch": {
+      "value": "50",
+      "percentile": 0.474
+    },
+    "Grade vs Man": {
+      "value": "69.9",
+      "percentile": 0.316
+    },
+    "YAC/Reception": {
+      "value": "7.6",
+      "percentile": 0.842
+    },
+    "Missed Tkls Forced": {
+      "value": "10",
+      "percentile": 0.5
+    },
+    "ADOT": {
+      "value": "8.4",
+      "percentile": 0.158
+    },
+    "Deep Yards": {
+      "value": "192",
+      "percentile": 0.474
+    },
+    "Touchdowns": {
+      "value": "6",
+      "percentile": 0.289
+    },
+    "Elusiveness": {
+      "value": null,
+      "percentile": null
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 141.66666666666666,
+      "positional_rank": "16.5"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 108.0,
+      "positional_rank": "18"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 70.0,
+      "positional_rank": "15"
+    },
+    {
+      "source": "Jeremiah",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 247.0,
+      "positional_rank": "37"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Tankathon",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Jeremiah": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "Tankathon": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "6TH",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Marcus ROSEMY-JACKSAINT",
+    "Bleacher": "Romeo Doubs",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 119.9,
+    "Hands": 0.87,
+    "Short Receiving": 0.82,
+    "Med Routes": 0.88,
+    "Deep Threat": 0.86,
+    "Blocking": 0.69
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 68,
+      "career": 116
+    },
+    "Wide": {
+      "2025": 295,
+      "career": 753
+    }
+  },
+  "skills_traits": {
+    "Character/Mentality": {
+      "positives": null,
+      "negatives": null
+    },
+    "Receiving Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technique": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Blocking/Other": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nDe'Zhaun Stribling began his collegiate career at Washington State in 2021, where he immediately made an impact as a true freshman with 44 catches for 471 yards and five touchdowns. His sophomore campaign saw continued growth with 51 receptions for 602 yards and five scores, establishing himself as the Cougars' primary receiving threat and earning All-Pac-12 honorable mention recognition as a freshman.\n\nA transfer to Oklahoma State in 2023 initially derailed when a hand injury limited him to just four games, but Stribling's resilience shone through in 2024. He bounced back with his most productive season to date, hauling in 52 catches for 882 yards and six touchdowns while averaging a career-high 17.0 yards per reception. His breakout performance came against Tulsa, where he torched the defense for seven catches and 174 yards with two touchdowns, showcasing both his jump-ball ability on a goal-line fade and his deep speed on a 63-yard scoring strike after beating coverage with a double move.\n\nFollowing another transfer portal entry in December 2024, Stribling committed to Ole Miss, drawn by Lane Kiffin's explosive offensive system and the program's track record of developing NFL-caliber receivers. At 23 years old (born February 15, 2002), he arrives in Oxford with 41 career games under his belt and over 2,200 offensive snaps, bringing both production and experience to a receiving corps that lost significant talent from the previous season. His high school credentials as a three-star recruit who caught 64 passes for 872 yards as a senior, plus his selection to the Polynesian Bowl, hint at the raw ability that has continued to develop throughout his college career.\n\nStribling's tape tells the story of a receiver who maximizes every ounce of his ability through precise route-running and an innate understanding of how to create separation. His performance against Kansas State perfectly encapsulates his skill set - the 77-yard touchdown came on a perfectly executed crossing route where he sold the initial move, waited for the safety to bite on play-action, then exploded past the secondary with surprising acceleration. This isn't a receiver who wins with raw athleticism; he wins with craft and timing, though that same approach may limit his upside against more athletic NFL defensive backs.\n\n\n\nThe challenge facing Stribling lies in translating his college success to a league where his physical limitations become more pronounced. While his run-blocking prowess and reliable hands create immediate value, questions about his ability to separate consistently against press coverage and his injury history temper expectations. The multiple transfers and late-blooming nature of his development suggest both resilience and potential red flags that teams will need to weigh carefully. His route-running precision in intermediate zones stands out on tape, yet his modest testing numbers indicate he may struggle to create the explosive plays that define NFL receiving corps.\n\n\n\nThe path forward for Stribling involves finding the right offensive system that emphasizes his strengths while minimizing exposure to his weaknesses. His blocking ability alone makes him valuable in run-heavy schemes, and his sure hands provide a security blanket for young quarterbacks. However, the same measured approach that served him well in college - winning through technique rather than athleticism - may prove insufficient when facing cornerbacks who possess both skill and superior physical tools. Organizations seeking a complementary receiver who understands his role and executes assignments cleanly will find value, but those hoping for a game-changing weapon may look elsewhere. \n\n                                        \n                                            \n                                                Written By:\n                                                Eli Cooper (Big 12)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "De'Zhaun Stribling emerged as Ole Miss's biggest playmaker and most complete wide receiver as the 2025 season progressed. His impact was felt consistently during the last month—plus.\n\nStribling possesses the play—strength, size and athleticism to fill the X—receiver spot among NFL offenses.\n\nStribling began his career with Washington State as a former 3—star recruit in the 2021 class. He finished his final season as the Rebels' second—leading receiver, with over 800 yards for the second consecutive season, including 199 combined yards in his two College Football Playoff appearances."
+        },
+        {
+          "title": "Positives",
+          "text": "— Stribling is a long—strider, who eats up cushion quickly versus off—man coverage or bail techniques. He sells vertical routes well.\n\n— A good combination of size, strength and hand—eye coordination to high—point, and secure contested catches. Stribling possesses the height and weight to be a true outside receiver.\n\n— The native Hawaiian is a three—level threat.\n\n— Stribling is effective on over—the—ball, hitch, curl and comeback routes. He plays with good pacing to reach his designed spots. Whether facing man or zone coverage, he separates well and finds the soft spots to exploit.\n\n— He showcases the skill set to defeat press—man alignment. Stribling uses his feet to move or freeze the defensive back, then delivers well—timed punches to clear their hands and get into his route.\n\n— With the ball in flight, he has strong ball—tracking, field awareness and ball skills to convert for explosive downfield plays.\n\n— Stribling plays with good spatial awareness. He has a good feel for where defenders are to spin away and immediately go north and south for yards after catch."
+        },
+        {
+          "title": "Negatives",
+          "text": "— short—area quickness in the contact window Versus press alignment. Patient and athletic cornerbacks can mirror his releases. Stribling needs to expand his release package for consistent execution when pressed.\n\n— first—step explosiveness to force the corner off the ball.\n\n— Stribling possesses build—up speed rather than instantaneous, which takes him a little Longer to get into his routes and stack defenders."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.4,
+    "grade_indicator": null,
+    "overall_rank": 70,
+    "position_rank": null,
+    "pro_comparison": "Romeo Doubs",
+    "projected_round": null
+  },
+  "injury_history": []
+}

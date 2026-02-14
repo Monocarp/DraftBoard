@@ -1,0 +1,431 @@
+{
+  "name": "Skyler Gill-Howard",
+  "slug": "skyler-gill-howard",
+  "overview": {
+    "POS": "DT",
+    "College": "Texas Tech",
+    "Height": "6' 1\"",
+    "Weight": "290",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "32",
+    "Snaps": "906",
+    "24/7 Sports": "0",
+    "ESPN": "73",
+    "Draft Buzz": "82.7 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "position": "DT",
+  "college": "Texas Tech",
+  "height": "6' 1\"",
+  "weight": "290",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 32,
+  "snaps": 906,
+  "site_ratings": {
+    "24/7 Sports": "0",
+    "ESPN": "73",
+    "Draft Buzz": "82.7 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "88.6",
+      "percentile": 1.0
+    },
+    "24 Grade": {
+      "value": "83.8",
+      "percentile": 0.944
+    },
+    "23 Grade": {
+      "value": "73.1",
+      "percentile": 0.556
+    },
+    "Pass Rush Grade": {
+      "value": "90",
+      "percentile": 1.0
+    },
+    "True Pass Rush": {
+      "value": "90",
+      "percentile": 1.0
+    },
+    "PR Win Rate": {
+      "value": "14.4",
+      "percentile": 1.0
+    },
+    "Run Def. Grade": {
+      "value": "70.4",
+      "percentile": 0.222
+    },
+    "Run Stop %": {
+      "value": "11.7",
+      "percentile": 0.889
+    },
+    "Sacks": {
+      "value": "1",
+      "percentile": 0.472
+    },
+    "Hits": {
+      "value": "3",
+      "percentile": 0.778
+    },
+    "Hurries": {
+      "value": "7",
+      "percentile": 0.167
+    },
+    "Batted Balls": {
+      "value": "1",
+      "percentile": 0.611
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.444
+    },
+    "Tackling Grade": {
+      "value": "62.1",
+      "percentile": 0.611
+    },
+    "Missed Tackle Rate": {
+      "value": "13.3",
+      "percentile": 0.5
+    },
+    "Total Pressures": {
+      "value": "11",
+      "percentile": 0.25
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 151.75,
+      "positional_rank": "9.5"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 107.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 94.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 156.0,
+      "positional_rank": "38"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 250.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "TBD"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "0",
+    "Bleacher": "TBD",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.72,
+    "Pass Rush": 0.85,
+    "Run Defense": 0.88
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 4,
+      "career": 7
+    },
+    "B GAP": {
+      "2025": 69,
+      "career": 756
+    },
+    "Over Tackle": {
+      "2025": 84,
+      "career": 124
+    },
+    "Outside Tkl": {
+      "2025": 8,
+      "career": 18
+    },
+    "Off Ball": {
+      "2025": 0,
+      "career": 1
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nSkyler Gill-Howard started his college career as a walk-on linebacker at Division II Upper Iowa in 2021, playing in a town of 800 people after being barely recruited out of Greenfield High School despite All-State honors. After one season, he transferred to Northern Illinois as a walk-on, packed on over 50 pounds, and switched to defensive tackle. That redshirt year in 2022 earned him NIU's Defensive Futures Player of the Year award, and the transformation was underway.\n\nThe 2024 season at Northern Illinois put Gill-Howard on the map. He led all Huskies defensive linemen with 51 tackles while adding 8.5 tackles for loss and 5.0 sacks, earning Third Team All-MAC honors and a team captain designation. Pro Football Focus graded him at 84.0 overall, ranking 10th among FBS interior linemen, with his run defense grade of 88.7 placing sixth nationally. His seven-tackle, three-tackle-for-loss performance against Bowling Green earned MAC Co-Defensive Player of the Week honors and caught the attention of major programs. Texas Tech won his services, and he became the emotional heartbeat of one of college football's best defenses in 2025.\n\nGill-Howard's senior season at Texas Tech lasted just six games before an ankle injury against Kansas ended his year, but he made every snap count. He posted nine tackles with 2.5 tackles for loss, six quarterback hits, and a 55-yard pick-six off a tipped pass against Kent State that earned him Big 12 Defensive Player of the Week. Pro Football Focus rated him the fourth-best defensive tackle in the country before the injury. A two-time Wisconsin state wrestling finalist in high school, Gill-Howard credits that background for teaching him leverage, hand placement, and how to keep blockers off balance.\n\nSCOUTING REPORT: SUMMARY\nGill-Howard brings the kind of interior quickness and gap penetration that defensive coordinators dream about when they draw up stunts and games at three in the morning. He's not built like a traditional nose tackle who's going to eat double teams all day, but in today's NFL where defenses need multiple interior rushers to collapse pockets and disrupt timing, his skill set carries legitimate value. The wrestling background and low center of gravity give him a technical foundation that should help offset some of the size concerns, though he'll need to continue adding functional strength to handle the week-in, week-out physicality of facing NFL guards and centers. His best role early comes as a rotational three-technique in an attacking one-gap scheme where he can shoot gaps and create havoc rather than holding the point.\n\nThe injury history and limited film against elite competition will give some teams pause, but his production speaks for itself when he was healthy. Getting graded as the fourth-best defensive tackle in college football through six games isn't something that happens by accident. Teams running even-front defenses that value penetration over two-gapping will see him as a potential contributor on passing downs from day one, with the upside to carve out a larger role if he can prove his body holds up. The motor and leadership qualities that made him a captain at both Northern Illinois and Texas Tech aren't going to disappear at the next level, and those intangibles matter when you're evaluating players who might need time to develop physically.\n\nThe path forward requires landing with an organization that understands what they're getting and doesn't try to force him into a role that doesn't fit. He's not replacing Quinnen Williams anytime soon, but as a mid-round selection who can provide quality snaps in sub packages and interior pass rush situations, the value proposition makes sense. If he stays healthy and continues refining his craft, there's a solid rotational defensive tackle here who can give you 400-500 quality snaps per season. The ceiling might not be Pro Bowl starter, but the floor as a dependable contributor with ace special teams potential is pretty secure given everything he's already overcome to get this far."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "injury_history": []
+}

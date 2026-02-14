@@ -1,0 +1,563 @@
+{
+  "name": "Avieon Terrell",
+  "slug": "avieon-terrell",
+  "overview": {
+    "POS": "CB",
+    "College": "Clemson",
+    "Height": "5' 11\"",
+    "Weight": "180",
+    "Age": "21",
+    "DOB": "2005-01-11 00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": "1st Round",
+    "Games": "35",
+    "Snaps": "1860",
+    "24/7 Sports": "88",
+    "ESPN": "89",
+    "Draft Buzz": "87.8 / 100",
+    "NFL.com": "6.43",
+    "Bleacher": "7.9",
+    "Gridiron": "TBD"
+  },
+  "position": "CB",
+  "college": "Clemson",
+  "height": "5' 11\"",
+  "weight": "180",
+  "age": 21.0,
+  "dob": "2005-01-11 00:00:00",
+  "year": "Jr",
+  "projected_round": "1st Round",
+  "games": 35,
+  "snaps": 1860,
+  "site_ratings": {
+    "24/7 Sports": "88",
+    "ESPN": "89",
+    "Draft Buzz": "87.8 / 100",
+    "NFL.com": "6.43",
+    "Bleacher": "7.9",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "83.5",
+      "percentile": 0.647
+    },
+    "24 Grade": {
+      "value": "82.3",
+      "percentile": 0.833
+    },
+    "23 Grade": {
+      "value": "77",
+      "percentile": 0.778
+    },
+    "Coverage Grade": {
+      "value": "76.8",
+      "percentile": 0.444
+    },
+    "Passer Rating": {
+      "value": "95.2",
+      "percentile": 0.167
+    },
+    "Interceptions": {
+      "value": "0",
+      "percentile": 0.083
+    },
+    "Forced Incom.": {
+      "value": "9",
+      "percentile": 0.611
+    },
+    "Forced Inc. Rate": {
+      "value": "17",
+      "percentile": 0.556
+    },
+    "Dropped Picks": {
+      "value": "1",
+      "percentile": 0.667
+    },
+    "Completion %": {
+      "value": "56.6",
+      "percentile": 0.278
+    },
+    "Man Coverage": {
+      "value": "66.6",
+      "percentile": 0.389
+    },
+    "Zone Coverage": {
+      "value": "74.9",
+      "percentile": 0.556
+    },
+    "% In Man": {
+      "value": "40.3",
+      "percentile": 0.889
+    },
+    "% In Zone": {
+      "value": "49.2",
+      "percentile": 0.0
+    },
+    "Coverage Stops": {
+      "value": "11",
+      "percentile": 0.806
+    },
+    "Tackling": {
+      "value": "77.6",
+      "percentile": 0.5
+    },
+    "Missed Tackles": {
+      "value": "5",
+      "percentile": 0.361
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Arm Length": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Hand Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Speed": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Explosive": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Agility": {
+      "result": "TBD",
+      "grade": null
+    },
+    "10 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "20 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "40 Time": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Vertical": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Broad": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "3 Cone": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Bench": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Height": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Weight": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Gridiron": {
+      "result": "TBD",
+      "grade": "TBD"
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 19.90909090909091,
+      "positional_rank": "3"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 18.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 22.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 18.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 18.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 25.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 14.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 20.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 17.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 30.0,
+      "positional_rank": "4"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 21.09090909090909,
+    "PFF": 18.0,
+    "ESPN": null,
+    "Brugler": 20.0,
+    "Kiper": 23.0,
+    "Miller": 21.0,
+    "Bleacher": 18.0,
+    "Walter": 21.0,
+    "TDN": 29.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 23.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - MID",
+    "Bleacher": "2nd round"
+  },
+  "player_comps": {
+    "Miller": "TBD",
+    "DraftBuzz": "Jalen PITRE",
+    "Bleacher": "DJ Turner",
+    "WF": "A.J. Terrell.",
+    "Ringer": "Like If A.J. Terrell Had A Little Brother"
+  },
+  "strengths": "• Tremendous Man Coverage\n• Has Instincts/Feel to Excel in Zone\n• Willing Tackler, Competitive Nature\n• Reads Plays/Routes and QB's Eyes\n• Very Good Ball Skills\n• Route Mirroring prevents seperation\n• Very Fast, Easy Speed, Twitchy, Agile",
+  "weaknesses": "• Undersized, underweight\n• Deep ball locating is slow\n• Soft Press game needs work\n• Urgency breaking downhill in run",
+  "accolades": null,
+  "player_summary": "A polished CB and brother of Falcons 1st-rounder A.J., offers athletic fluidity, loose hips, twitchy transitions, and sufficient speed to mirror releases and stay in phase on verticals, excelling in press-man by crowding routes and disrupting at the catch point with elite timing—evidenced by 8 career fumbles (including ACC-leading marks) and consistent PBU production (25+ PBU across three seasons).He reads routes/QB well in zone, closes explosively, and contributes willing downhill run support with urgency off perimeter blocks. Primary concerns stem from a slender 180-lb frame that yields ground on 50/50 balls to bigger receivers, loses trail positioning on bendy routes, shows reactive rather than proactive anticipation, average short-zone eye discipline, and modest stopping power against larger ball-carriers. Despite size limitations, his man-coverage polish, ball skills, and competitiveness project him as an early NFL starter in schemes emphasizing press and zone versatility.",
+  "draftbuzz_grades": {
+    "QBR Allowed": 85.7,
+    "Tackling": 0.75,
+    "Run Defense": 0.91,
+    "Cov Grade": 0.8,
+    "Zone Coverage": 0.75,
+    "Man/Press": 0.8
+  },
+  "projected_role": "TBD",
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 10,
+      "career": 17
+    },
+    "Slot": {
+      "2025": 110,
+      "career": 165
+    },
+    "Corner": {
+      "2025": 463,
+      "career": 1525
+    },
+    "Box": {
+      "2025": 67,
+      "career": 141
+    },
+    "Deep": {
+      "2025": 2,
+      "career": 9
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": "Competitive, Battles late (WF)\nA lot of Exp for his age (BR)\nGreat competitive nature (WF)",
+      "negatives": null
+    },
+    "Tackling": {
+      "positives": "Willing Tackler (WF)\nContributes in the run game (WF)",
+      "negatives": "Needs more urgency breaking downhill (BR)"
+    },
+    "Coverage Skills": {
+      "positives": "Tremendous Man Coverage Skills (WF)\nRoute Mirroring, Prevents Seperation (WF)\nVery good ball skills, well timed breakups (WF)",
+      "negatives": "Locating the ball deep (BR)\nSoft press is a tick too slow (BR)"
+    },
+    "Mental/Discipline Traits": {
+      "positives": "Insticts to be an excellent zone corner (WF)\nReadys Plays, good vision, reading QB's Eyes (WF)",
+      "negatives": null
+    },
+    "Athleticism/Phsyical Traits": {
+      "positives": "Very Fast, Easy Speed, Twitchy, Tremendous agility (WF)\nExtremely loose, Zero Stiffness (WF)\nPlayers stronger than size (WF)",
+      "negatives": "Lacks Strength to re-route receivers (WF)\nA little shorter than ideal, lacks needed mass (WF)"
+    }
+  },
+  "media_links": [
+    {
+      "description": "2025 Highlights",
+      "source": "YT - ACC Digital Network",
+      "url": "https://www.youtube.com/watch?v=ziEHHm5aRgU"
+    },
+    {
+      "description": "Career Hightlights",
+      "source": "YT - Prospects",
+      "url": "https://www.youtube.com/watch?app=desktop&v=-vwSeq0TJgY"
+    },
+    {
+      "description": "Scouting Profile",
+      "source": "YT - 2 Minute Drill",
+      "url": "https://www.youtube.com/watch?v=y-lM_3zEI1E"
+    },
+    {
+      "description": "Interview",
+      "source": "YT - ClemsonTigerNet",
+      "url": "https://www.youtube.com/watch?v=g-6PH9S20Xw"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Avieon shares the same bloodlines and coverage temperament as his brother, A.J., a first-round pick of the Atlanta Falcons in 2020. Avieon Terrell is an athletic, fluid mover with clean transitions and enough speed to stay in phase on most vertical routes. He’s most effective in press-man coverage, where he mirrors releases with timing and discipline, staying crowded to the route. He concedes 50/50s to bigger targets at times, but is a constant catch irritant with good technique on all three levels. He can play wide or inside and is willing in run support, but he lacks ideal size. Terrell projects as an early starter thanks to his polish, ball skills and coverage versatility."
+        },
+        {
+          "title": "Strengths",
+          "text": "Blend of athleticism and size to play inside or outside. | Stays low and balanced when matching the release. | Guards against losing desired cover leverage at all times. | Smooth hip flip with quick acceleration into top speed. | Competitive energy makes route running laborious for the receiver. | Crowds receiver’s chest and finds the football downfield. | Closes quickly into the passing lane to harass the catch point. | Pulls and rips at the football, forcing eight fumbles during his career. | Good effort and urgency playing off perimeter blocks. | Triggers downhill with control to do his part in run support."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Slender build gives ground to bigger wideouts on 50/50 balls. | Loses feel for bendy routes from trail positioning. | More reactive than proactive in anticipating receiver's break point. | Average eye balance and route awareness from short zones. | Will take some losses tackling bigger backs in run support."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nAvieon Terrell grew up in Atlanta, Georgia, where football runs deep in the family bloodline. His older brother A.J. Terrell starred at Clemson before becoming a first-round pick of the Atlanta Falcons in 2020, and Avieon followed that same path from Westlake High School to Death Valley. Standing 5-foot-11 and weighing 180 pounds, Terrell arrived as a consensus four-star recruit with an ESPN rating of 80 and a Rivals grade of 5.9 out of 6.1. Born into a football family, the younger Terrell carried expectations from day one.\n\nHis freshman campaign in 2023 served as a baptism by fire, appearing in all 13 games with five starts while logging 375 snaps. Terrell recorded 18 tackles, six pass breakups, and snagged his first career interception on a one-handed grab against Georgia Tech. The learning curve was steep, but the tools were obvious. By his sophomore season, everything clicked. He started all 14 games and put together a stat line that announced his arrival: 64 tackles, 13 pass breakups (tying the Clemson sophomore record), two interceptions, three forced fumbles, two fumble recoveries, and a sack across 816 defensive snaps. That 2024 campaign earned him second-team All-ACC honors from multiple outlets.\n\nHis junior year cemented his status as one of the nation's premier corners. Terrell earned Jim Thorpe Award semifinalist recognition and was named a second-team AP All-American, becoming the first Clemson cornerback to receive AP All-American honors since Cordrea Tankersley in 2016. He finished with 46 tackles, 3.0 sacks (the first Clemson defensive back under Dabo Swinney to record 2.0 sacks in a single game came against Florida State), 11 pass breakups, and five forced fumbles that set a school single-season record for a defensive back. His career total of eight forced fumbles tied him for third in Clemson history overall and broke the program record for defensive backs. First-team All-ACC selections from both the conference and AP followed, and in January 2026, Terrell declared for the NFL Draft.\n\nSCOUTING REPORT: SUMMARY\nTerrell is a starting caliber NFL corner who should contribute from day one. His combination of elite ball skills, fluid athleticism, and proven production against ACC competition translates cleanly to the professional level. The coverage instincts are advanced, the competitive temperament is ideal, and the turnover production is scheme-agnostic. What you see at Clemson will show up in the pros.\n\nHere's the deal. Terrell fits best in a system that emphasizes press-man principles and trusts its corners to work in isolation. His hip fluidity and mirror skills shine brightest when he can funnel receivers toward help and use his closing burst to disrupt timing routes. Zone-heavy schemes will still find value in his eye discipline and route recognition, but aggressive man coverage is where he makes his money. Defensive coordinators who want corners to attack the football and create turnovers will fall in love with what he puts on tape.\n\nThe weight will be a talking point through the draft process, and rightfully so. But Terrell plays bigger than his measurements in contested situations, and his ball production speaks for itself. Eight forced fumbles and multiple interceptions at Clemson came from technique and instinct, not luck. His brother A.J. dealt with similar concerns coming out, and it hasn't stopped him from becoming one of the better corners in the NFL. Avieon has the same DNA, the same competitive edge, and the same ability to separate receivers from the football."
+        },
+        {
+          "title": "Overview",
+          "text": "Fearless, tone-setting cornerback who plays with outsize physicality and always seems to be near the ball.\n\nTerrell is a tenacious and infectiously feisty competitor at cornerback; whether he’s in coverage, playing the run, or blitzing off the edge, he is in the action on seemingly every snap. The younger brother of NFL cornerback A.J. Terrell, Avieon was a three-year contributor for the Tigers and filled up the stat sheet there, racking up 125 tackles, four sacks, 40 stops, three picks, 17 pass breakups, and an impressive eight forced fumbles over his career. Terrell played primarily on the outside at Clemson but also saw significant snaps in the slot and in the box. He plays low in his stance, always ready to change direction and pounce on a route. He likes to play in press, crowding opposing receivers off the line. He mirrors well and attaches himself to the opposing receiver’s hip, showing smooth footwork in his transition from a backpedal to a trailing position. Terrell has a good sense for looking back for the ball when it’s in the air. He’s an excellent blitzer who flies in off the edge and arrives at the quarterback in a flash. And in the run game, he’s a forceful tackler who regularly sticks his face in the fan to stop a running back or ballcarrier. He rips and swipes and clubs at the ball, hoping to cause a fumble.\n\nTerrell has a slim, wiry build, and his lack of size could be a concern for some teams. There are times when his aggressiveness can be a double-edged sword. He flies downhill too fast and overruns the play. He needs to be more consistent about finishing as a tackler. He occasionally loses track of his responsibility in zone coverage."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTerrell became the first Clemson player under Dabo Swinney to finish a season with at least three forced fumbles, multiple interceptions and multiple fumble recoveries in 2024. HeÃ•s a competitive press corner with a good frame. He can turn, run and stay in phase. Terrell closes well breaking on passes, and he splits high-low route combinations effectively in zone. He has intercepted just three passes in 27 games, but he ranked third in the ACC with 14 passes defended in 2024. His timing and technique breaking up passes stand out on tape. Terrell is also willing to step up and wrap up as a run defender. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Avieon Terrell is a competitor and showcases the best zone—coverage eyes among the nation's corners.\n\nHe also brings NFL bloodlines as the younger brother of former Clemson corner A.J. Terrell.\n\nHe's a true junior and piled up 19 starts across 27 games played for the Tigers, and brings a ton of college football experience for a 20—year—old. He racked up 82 tackles, 4.5 for loss, 19 pass breakups, three interceptions, three forced fumbles, two fumble recoveries and a sack in his first two seasons."
+        },
+        {
+          "title": "Positives",
+          "text": "— Terrell gets proper depth in zone coverage and uses exceptional eyes to break on route concepts and throws.\n\n—He's has a great competitive nature across the board and won't back down to anyone. He's improved strength and leverage understanding to deliver hits and get off blocks.\n\n— Smooth backpedal and hip—flip to match to maintain connectivity in man coverage and zone match principles.\n\n— Breaks on the football quickly and regularly attacks the catch point with his hands and ball tracking skills."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Terrell shows the ability, but there needs to be more urgent to attack downhill against the run.\n\n— Locating the football down the field against bigger receivers will improve his ability to disrupt the catch point.\n\n— Soft press technique can be slightly slow, leading to quicker receivers beating him quickly across his face."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Clemson enjoyed a great career from cornerback A.J. Terrell. After impressing with the Tigers, Terrell was a first-round pick of the Atlanta Falcons and has turned into a very good pro. With that pedigree, there were big expectations and excitement for Avieon Terrell to turn into a good player for Clemson. Terrell worked his way onto the field as a freshman and had five starts. He recorded 19 tackles with four passes broken up and an interception. In 2024, Terrell started every game and totaled 58 tackles with two interceptions, 12 passes broken up, three forced fumbles, and 4.5 tackles for a loss. While Clemson had a disappointing 2025 season, Terrell played well with 48 tackles, four forced fumbles, a sack, and nine passes batted.\nIn the passing-driven NFL, teams are always looking for cornerbacks who can play man coverage and shut down pro receivers. Some teams feel that some corners arenâ€™t a good fit for man coverage, and that limits the schemes and teams those players can play for. With tremendous man coverage skills, Terrell looks like a future asset as a man-to-man cover corner in the NFL.\nTerrell is a superb cornerback to run the route and prevent separation. In off-man coverage or press-man coverage, Terrell is very fast and has easy speed to run with wideouts and carry verticals down the field. Terrell is extremely loose, has zero stiffness, and is a very twitchy cornerback. With tremendous agility, Terrell can flip his hips and turn to stay in phase with receivers. When he is in off-man coverage, he shows impressive instincts to read the route and then explode to cover up the receiver after they make their break. Terrell is not strong enough to reroute NFL receivers in press man, but he has no problem turning and running with them downfield, blanketing them, and not allowing them to get open.\nTerrellâ€™s excellent speed, twitchy athleticism, and instincts make him an excellent zone corner. He reads plays well and shows good vision for diagnosing routes while also reading the eyes of the quarterback. Terrellâ€™s twitch lets him explode to eat up ground and cover up receivers. He is very natural in zone coverage.\nThe big knock on Terrell for the NFL is his size. While he is a little shorter than ideal, Terrellâ€™s weight is a bigger concern, and he is listed at only 180 pounds. Terrell plays stronger than his listed numbers, and he is a willing tackler. Terrell will fly downhill and into the backfield to make tackles, throwing his shoulder into ball carriers. Terrell also battles receivers hard, and he has very good ball skills. He times his breakups extremely well to smack the ball out. While Terrell is not tall or big, he battles receivers really well on 50-50 passes and has a knack for winning with a pass breakup. Terrell has impressive ball skills and is a threat to pick off passes. He is also very instinctive and ball aware to break out a â€œPeanut Punchâ€ on ball carriers and strip them of the ball."
+        },
+        {
+          "title": "Strengths",
+          "text": "Excellent corner to run the route and prevent separation\nSuperb at forcing fumbles\nExceptional instincts\nVery fast\nLoose hips\nGreat agility, no stiffness\nTwitchy\nCan flip his hips with ease\nMaintains coverage in and out of breaks\nTracks the ball well\nGood ball adjustment\nAdvanced body control\nQuality ball skills\nTimes breakups well\nCompetitive, battles receivers\nEffective fighter on 50-50 passes\nAdvanced route recognition\nWilling tackler\nNot afraid to get physical\nContributes in run defense\nReady to compete immediately\nExperienced and successful against good college competition"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Small, very undersized\nShort\nLight\nDurability?\nLimited to slot?"
+        },
+        {
+          "title": "Player Comp",
+          "text": "A.J. Terrell. Avieon Terrell is like a smaller version of his brother A.J.."
+        }
+      ]
+    },
+    {
+      "source": "ESPN",
+      "sections": [
+        {
+          "title": "Analysis",
+          "text": "Terrell became the first Clemson player under Dabo Swinney to finish a season with at least three forced fumbles, multiple interceptions and multiple fumble recoveries in 2024. HeÃ•s a competitive press corner with a good frame. He can turn, run and stay in phase. Terrell closes well breaking on passes, and he splits high-low route combinations effectively in zone. He has intercepted just three passes in 27 games, but he ranked third in the ACC with 14 passes defended in 2024. His timing and technique breaking up passes stand out on tape. Terrell is also willing to step up and wrap up as a run defender. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Fearless, tone-setting cornerback who plays with outsize physicality and always seems to be near the ball.\n\nTerrell is a tenacious and infectiously feisty competitor at cornerback; whether he’s in coverage, playing the run, or blitzing off the edge, he is in the action on seemingly every snap. The younger brother of NFL cornerback A.J. Terrell, Avieon was a three-year contributor for the Tigers and filled up the stat sheet there, racking up 125 tackles, four sacks, 40 stops, three picks, 17 pass breakups, and an impressive eight forced fumbles over his career. Terrell played primarily on the outside at Clemson but also saw significant snaps in the slot and in the box. He plays low in his stance, always ready to change direction and pounce on a route. He likes to play in press, crowding opposing receivers off the line. He mirrors well and attaches himself to the opposing receiver’s hip, showing smooth footwork in his transition from a backpedal to a trailing position. Terrell has a good sense for looking back for the ball when it’s in the air. He’s an excellent blitzer who flies in off the edge and arrives at the quarterback in a flash. And in the run game, he’s a forceful tackler who regularly sticks his face in the fan to stop a running back or ballcarrier. He rips and swipes and clubs at the ball, hoping to cause a fumble.\n\nTerrell has a slim, wiry build, and his lack of size could be a concern for some teams. There are times when his aggressiveness can be a double-edged sword. He flies downhill too fast and overruns the play. He needs to be more consistent about finishing as a tackler. He occasionally loses track of his responsibility in zone coverage."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Fearless, tone-setting cornerback"
+        },
+        {
+          "title": "Traits",
+          "text": "Coverage chops\nGot That Dog in Him\nInstinctual Playmaking"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former four-star recruit out of Atlanta, Georgia. Was the no. 28 cornerback and the no. 244 overall player in the 2023 class. His older brother, A.J., also played corner at Clemson and has spent six seasons with the Atlanta Falcons after being a first-round pick in 2020. He was named second-team All-ACC and earned All-American honorable mention recognition."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "His older brother, A.J., on Avieon in 2024: “I feel like he was ahead of me at every phase of football at every age. … Nothing he does surprises me.”\nWas on his high school’s 6A state title 4×100 relay team.\nListens to King Von before games, but the last song he listens to before taking the field is “My God Is Awesome.”\nWent to high school and Clemson with Ravens cornerback and 2024 first-rounder Nate Wiggins."
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF LIKE IF A.J. TERRELL HAD A LITTLE BROTHER"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.43,
+    "prospect_grade_indicator": "Will Become Good Starter Within Two Years",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": null,
+    "eligibility": "Junior",
+    "nfl_rank": 30,
+    "nfl_pos_rank": 4
+  },
+  "bleacher_profile": {
+    "grade": 7.9,
+    "grade_indicator": null,
+    "overall_rank": 18,
+    "position_rank": null,
+    "pro_comparison": "DJ Turner",
+    "projected_round": "2nd round"
+  },
+  "walter_profile": {
+    "player_comp": "A.J. Terrell. Avieon Terrell is like a smaller version of his brother A.J.."
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF LIKE IF A.J. TERRELL HAD A LITTLE BROTHER",
+    "traits": "Coverage chops\nGot That Dog in Him\nInstinctual Playmaking"
+  },
+  "injury_history": [
+    {
+      "detail": "Quad",
+      "recovery_time": "1 Game",
+      "year": "2025"
+    },
+    {
+      "detail": "Concussion/Ankle",
+      "recovery_time": "Spring Training",
+      "year": "2024"
+    }
+  ]
+}

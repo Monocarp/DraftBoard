@@ -1,0 +1,406 @@
+{
+  "name": "Michael Trigg",
+  "slug": "michael-trigg",
+  "overview": {
+    "POS": "TE",
+    "College": "Baylor",
+    "Height": "6' 4\"",
+    "Weight": "240",
+    "Age": "23.7",
+    "DOB": "2002-06-27 00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": "37",
+    "Snaps": "1447",
+    "24/7 Sports": "91",
+    "ESPN": "TBD",
+    "Draft Buzz": "83.3 / 100",
+    "NFL.com": "TBD",
+    "BR": "7.4",
+    "Gridiron": "TBD"
+  },
+  "position": "TE",
+  "college": "Baylor",
+  "height": "6' 4\"",
+  "weight": "240",
+  "age": 23.7,
+  "dob": "2002-06-27 00:00:00",
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": 37,
+  "snaps": 1447,
+  "site_ratings": {
+    "24/7 Sports": "91",
+    "ESPN": "TBD",
+    "Draft Buzz": "83.3 / 100",
+    "NFL.com": "TBD",
+    "BR": "7.4",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "72.4",
+      "percentile": 0.7
+    },
+    "2024 Grade": {
+      "value": "71.5",
+      "percentile": 0.5
+    },
+    "2023 Grade": {
+      "value": "58.7",
+      "percentile": 0.444
+    },
+    "Receiving Grade": {
+      "value": "77.2",
+      "percentile": 0.8
+    },
+    "Drop %": {
+      "value": "12.3",
+      "percentile": 0.1
+    },
+    "Cont. Catch Ratio": {
+      "value": "38.9",
+      "percentile": 0.2
+    },
+    "Yards Per Route Run": {
+      "value": "2.18",
+      "percentile": 0.8
+    },
+    "YAC Per Reception": {
+      "value": "4.5",
+      "percentile": 0.1
+    },
+    "Missed Tkles Forced": {
+      "value": "17",
+      "percentile": 1.0
+    },
+    "Pass Block Grade": {
+      "value": "62.3",
+      "percentile": 0.2
+    },
+    "Run Block Grade": {
+      "value": "46",
+      "percentile": 0.0
+    },
+    "Touchdowns": {
+      "value": "6",
+      "percentile": 0.8
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 87.5,
+      "positional_rank": "4.4"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 74.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 91.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 68.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 138.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 89.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Sam LAPORTA",
+    "Bleacher": "Evan Engram",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 96.8,
+    "Hands": 0.6,
+    "Short Receiving": 0.82,
+    "Intermediate Routes": 0.86,
+    "Deep Threat": 0.82,
+    "Blocking": 0.56
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot Snaps": {
+      "2025": 265,
+      "career": null
+    },
+    "Inline Snaps": {
+      "2025": 104,
+      "career": null
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nMichael Trigg burst onto the recruiting scene at Seffner Christian, where he dominated both sides of the ball - hauling in passes on offense while terrorizing quarterbacks as a defensive end, racking up 1,902 all-purpose yards and 29 touchdowns. His versatility extended beyond the gridiron, averaging over 20 points per game on the hardwood as a sophomore and junior, showcasing the athletic foundation that would make him a consensus four-star recruit and Under Armour All-American.\n\nAfter a freshman campaign at USC where he flashed his potential with a 46-yard touchdown grab against Colorado, Trigg took his talents to Oxford, joining Ole Miss as the nation's top-rated tight end transfer. The Rebels saw glimpses of brilliance, including a school-record three receiving touchdowns against Central Arkansas in 2022, though injuries limited his availability. Following limited action in 2023 to preserve eligibility, Trigg found his home in Waco, where everything finally clicked in his redshirt junior season.\n\nThe 2024 campaign marked Trigg's arrival as a legitimate NFL prospect, earning Second-Team All-Big 12 honors while hauling in 30 catches for 395 yards and three scores for the Bears. His 96-yard performance against Houston showcased the game-breaking ability that had scouts circling back to watch his film. Now in his fifth collegiate season, the 6-foot-4, 240-pound pass-catcher has already surpassed his previous career highs through just six weeks of 2025, accumulating 439 yards on 29 receptions with four touchdowns, including a historic 155-yard performance against Kansas State that set a Baylor single-game record for tight ends.\n\nWhen you watch Trigg work between the numbers, you see a weapon that defensive coordinators can lose sleep over. He's got that deceptive twitch for a bigger body, setting up linebackers with subtle head fakes before breaking them off at the top of his routes. The Kansas State film showed what happens when he's locked in - defenders literally couldn't get him on the ground, and he turned a routine crossing pattern into a 71-yard explosive that flipped the entire game. That's the kind of play that gets offensive coordinators excited about manufacturing touches in space.\n\n\n    \n    The elephant in the room remains his blocking and the whispers about his approach to the game. You can't survive as a one-dimensional tight end in today's NFL unless you're Travis Kelce, and Trigg hasn't shown that elite receiving consistency yet. His blocking film alternates between pancaking linebackers and whiffing on basic assignments - there's no middle ground. Teams drafting him will need patience and probably a veteran tight end room where he can develop without immediate pressure. The physical tools suggest he could evolve into a Jordan Reed-type flex weapon who wins from the slot and creates personnel headaches, but he'll need to prove he wants it badly enough to maximize that talent.\n\n\n    \nHe most likely will be initially deploy as a move tight end, splitting him out wide or in the slot where his route-running sophistication can exploit slower linebackers. If he embraces the dirty work and shows the same intensity blocking that he displays tracking deep balls, Trigg could develop into a complete tight end worthy of three-down snaps. Teams with established tight end rooms and creative passing game coordinators should be circling his name as a chess piece who could pay immediate dividends in the red zone while developing into something more.\n     \n\n                                        \n                                            \n                                                Written By:\n                                                Eli Cooper (Big 12)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Michael Trigg is a matchup problem for defenses. The hybrid target already displays the nuance and route detail to immediately contribute in an NFL offense.\n\nTrigg was a 4—star recruit, who entered his redshirt—senior season having played for USC, Ole Miss, and Baylor. After dealing with injuries at Ole Miss, Trigg transferred to Baylor and looked to improve upon his 2024 campaign, where he totaled 30 receptions for 395 yards and three touchdowns.\n\nThe tight end prospect blossomed into a premium weapon during his final season on campus.\n\n— Trigg is a true matchup problem, who presents alignment versatility. He has the physical gifts to create space against a multitude of defenders."
+        },
+        {
+          "title": "Positives",
+          "text": "— Trigg is a true matchup problem, who presents alignment versatility. He has the physical gifts to create space against a multitude of defenders.\n\n— He's a route craftsman, who uses explosive movements in the stem to attack leverage. He manipulates defenders well and his feel at the top of routes is clean.\n\n— Showcases the tracking, ball skills and timing to routinely make plays outside of his frame and down the field in contested windows.\n\n— Trigg is an explosive mover in his routes and after the catch with enough speed to threaten the seams. Shows toughness after the catch to fight for yards."
+        },
+        {
+          "title": "Negatives",
+          "text": "— While Trigg shows physicality after the catch, his all—around game needs more. He must impose his will as a blocker and move people.\n\n— He particularly needs to improve his technique as a blocker in the run game. He plays with high pad level and regularly opens his chest for defenders to gain control.\n\n— Concentration drops are littered throughout his tape. The oversized wide receiver needs to attack the ball in the air and not let it travel into the body.\n\n— He'll need to learn how to mitigate defensive contact at the top of the route by being more aggressive and using his length to increase separation."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.4,
+    "grade_indicator": null,
+    "overall_rank": 68,
+    "position_rank": null,
+    "pro_comparison": "Evan Engram",
+    "projected_round": null
+  },
+  "injury_history": []
+}

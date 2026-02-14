@@ -1,0 +1,446 @@
+{
+  "name": "Keith Abney II",
+  "slug": "keith-abney-ii",
+  "overview": {
+    "POS": "CB",
+    "College": "Arizona State",
+    "Height": "6' 0\"",
+    "Weight": "190",
+    "Age": "TBD",
+    "DOB": "TBD",
+    "Year": "Jr",
+    "Prj. Rd": null,
+    "Games": "TBD",
+    "Snaps": "TBD",
+    "24/7 Sports": "TBD",
+    "ESPN": "TBD",
+    "Draft Buzz": "TBD",
+    "NFL.com": "TBD",
+    "Bleacher": "7.1",
+    "Gridiron": "TBD"
+  },
+  "position": "CB",
+  "college": "Arizona State",
+  "height": "6' 0\"",
+  "weight": "190",
+  "age": null,
+  "dob": "TBD",
+  "year": "Jr",
+  "projected_round": null,
+  "games": null,
+  "snaps": null,
+  "site_ratings": {
+    "24/7 Sports": "TBD",
+    "ESPN": "TBD",
+    "Draft Buzz": "TBD",
+    "NFL.com": "TBD",
+    "Bleacher": "7.1",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "86.3",
+      "percentile": 0.765
+    },
+    "24 Grade": {
+      "value": "66.2",
+      "percentile": 0.167
+    },
+    "23 Grade": {
+      "value": "71.9",
+      "percentile": 0.556
+    },
+    "Coverage Grade": {
+      "value": "85.3",
+      "percentile": 0.722
+    },
+    "Passer Rating": {
+      "value": "46.1",
+      "percentile": 0.778
+    },
+    "Interceptions": {
+      "value": "2",
+      "percentile": 0.667
+    },
+    "Forced Incom.": {
+      "value": "10",
+      "percentile": 0.778
+    },
+    "Forced Inc. Rate": {
+      "value": "13.9",
+      "percentile": 0.222
+    },
+    "Dropped Picks": {
+      "value": "1",
+      "percentile": 0.667
+    },
+    "Completion %": {
+      "value": "44.4",
+      "percentile": 0.833
+    },
+    "Man Coverage": {
+      "value": "71.1",
+      "percentile": 0.5
+    },
+    "Zone Coverage": {
+      "value": "81.7",
+      "percentile": 0.833
+    },
+    "% In Man": {
+      "value": "20.7",
+      "percentile": 0.083
+    },
+    "% In Zone": {
+      "value": "66.6",
+      "percentile": 0.778
+    },
+    "Coverage Stops": {
+      "value": "8",
+      "percentile": 0.389
+    },
+    "Tackling": {
+      "value": "87.6",
+      "percentile": 1.0
+    },
+    "Missed Tackles": {
+      "value": "2",
+      "percentile": 0.917
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Arm Length": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Hand Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Speed": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Explosive": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Agility": {
+      "result": "TBD",
+      "grade": null
+    },
+    "10 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "20 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "40 Time": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Vertical": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Broad": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "3 Cone": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Bench": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Height": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Weight": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Gridiron": {
+      "result": "TBD",
+      "grade": "TBD"
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 60.833333333333336,
+      "positional_rank": "9.25"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 35.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 59.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 95.0,
+      "positional_rank": "17"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 71.0,
+      "positional_rank": "8"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 58.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 51.0,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": 51.0,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "TBD",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Michael Carter II",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR Allowed": null,
+    "Tackling": null,
+    "Run Defense": null,
+    "Cov Grade": null,
+    "Zone Coverage": null,
+    "Man/Press": null
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 6,
+      "career": 12
+    },
+    "Slot": {
+      "2025": 13,
+      "career": 26
+    },
+    "Corner": {
+      "2025": 725,
+      "career": 1526
+    },
+    "Box": {
+      "2025": 41,
+      "career": 137
+    },
+    "Deep": {
+      "2025": 0,
+      "career": 0
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Coverage Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Mental/Discipline Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Keith Abney is a true competitor who fights for every inch and then some to make plays on the football field. He sees the game quickly and fluidly while communicating with his teammates and triggering throwing motions and route breaks.\n\nThe 6'0\", 190—pound former 3—star recruit has enjoyed another great performance in his junior season with the Sun Devils after breaking out as a sophomore. In 2024, Abney compiled 52 tackles (34 solo), three interceptions, and nine passes defensed.\n\nCompeting at the catch point is a hallmark of his game, and it's shown up every time he's tested by opposing quarterbacks, eclipsing the number of passes defensed he put up last season. Abney's work ethic shows in his improvement in both the physical and mental games, and NFL teams will see that."
+        },
+        {
+          "title": "Positives",
+          "text": "— Abney can align as a boundary or nickel corner and shows good technique from multiple zone and man coverages. He plays with sound footwork, smooth hip transitions, and focused eyes in coverage.\n\n— The former speed skating champion has a track background that allows him to turn and run downfield in man and click and close downhill with urgency. He disrupts catch points regularly with his quickness and ID skills.\n\n— Communication, route recognition, and sound technique give him the tools to see plays as they happen, pass off routes into other zones, while maintaining proper depth, and take options away from quarterbacks.\n\n— Plays with a physical and competitive style in man coverage through the route stem and down the field. His processing gets him in the right spots and then he attacks the catch point with great timing."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Abney's physicality can translate to holds and interference calls at the top of routes and down the field when he can't locate the football. There are moments of ball—tracking lapses when his instinct is to grab the receiver.\n\n— Overcommitting to releases and route intention causes his hips to open prematurely downfield, giving a receiver easier paths to getting open.\n\n— While he isn't afraid to throw his body around in the run game or downhill, he gets caught on blocks and struggles to disengage."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.1,
+    "grade_indicator": null,
+    "overall_rank": 95,
+    "position_rank": null,
+    "pro_comparison": "Michael Carter II",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

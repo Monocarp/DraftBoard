@@ -1,0 +1,523 @@
+{
+  "name": "Cashius Howell",
+  "slug": "cashius-howell",
+  "overview": {
+    "POS": "ED",
+    "College": "Texas A&M",
+    "Height": "6' 2\"",
+    "Weight": "248",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": "55",
+    "Snaps": "1831",
+    "24/7 Sports": "80",
+    "ESPN": "88",
+    "Draft Buzz": "87.5 / 100",
+    "NFL.com": "6.38",
+    "Bleacher": "8",
+    "Gridiron": null
+  },
+  "position": "ED",
+  "college": "Texas A&M",
+  "height": "6' 2\"",
+  "weight": "248",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": 55,
+  "snaps": 1831,
+  "site_ratings": {
+    "24/7 Sports": "80",
+    "ESPN": "88",
+    "Draft Buzz": "87.5 / 100",
+    "NFL.com": "6.38",
+    "Bleacher": "8",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "81.2",
+      "percentile": 0.55
+    },
+    "24 Grade": {
+      "value": "81.6",
+      "percentile": 0.6
+    },
+    "23 Grade": {
+      "value": "72.7",
+      "percentile": 0.6
+    },
+    "Pass Rush Grade": {
+      "value": "90.3",
+      "percentile": 0.675
+    },
+    "True Pass Rush": {
+      "value": "86.2",
+      "percentile": 0.579
+    },
+    "PR Win Rate": {
+      "value": "19.8",
+      "percentile": 0.711
+    },
+    "Run Def. Grade": {
+      "value": "73.6",
+      "percentile": 0.4
+    },
+    "Run Stop %": {
+      "value": "3.1",
+      "percentile": 0.0
+    },
+    "Sacks": {
+      "value": "12",
+      "percentile": 0.974
+    },
+    "Hits": {
+      "value": "2",
+      "percentile": 0.132
+    },
+    "Hurries": {
+      "value": "27",
+      "percentile": 0.632
+    },
+    "Batted Balls": {
+      "value": "3",
+      "percentile": 0.947
+    },
+    "Forced Fumbles": {
+      "value": "1",
+      "percentile": 0.368
+    },
+    "Tackling Grade": {
+      "value": "79.6",
+      "percentile": 0.95
+    },
+    "Missed Tackle Rate": {
+      "value": "11.1",
+      "percentile": 0.763
+    },
+    "Total Pressures": {
+      "value": "41",
+      "percentile": 0.526
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 23.727272727272727,
+      "positional_rank": "4"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 15.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 26.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 29.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 22.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 28.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 27.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 28.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 19.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 17.0,
+      "positional_rank": "4"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 22.916666666666668,
+    "PFF": 20.0,
+    "ESPN": null,
+    "Brugler": 26.0,
+    "Kiper": 31.0,
+    "Miller": 31.0,
+    "Bleacher": 20.0,
+    "Walter": 25.0,
+    "TDN": 31.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - MID",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "Will McDonald IV",
+    "Miller": "TBD",
+    "DraftBuzz": "Arnold EBIKETIE",
+    "Bleacher": "Harold Landry III",
+    "WF": "TBD",
+    "Ringer": "Byron Young",
+    "NFL.com": "Will McDonald IV"
+  },
+  "strengths": "• Burst off the line\n• Solid Group of PR Moves\n• C.O.D., Bend, Smooth Movement\n• Ideal Motor, Relentless\n• Consisteny PRWR in SEC for 2 Years\n• Twitched Up, Flexibile",
+  "weaknesses": "• Undersized, Cant Hold POA\n• One Dimensional PR Specialist\n• Cannot Set an Edge\n• PR Plan Needs Variety, Refinement",
+  "accolades": "• 2025 SEC DPOTY\n• 2025 1st Team All SEC\n• 2025 1st Team All American\n• 2025 Finalist for Lombardi, Bednarik, and Nagurski Awards",
+  "player_summary": "Howell is a small but athletic pass rush specialist in the NFL. Lacks size, instincts, ability to contirbute in the run game, but has a a decent grouping of PR moves to contibute on third down right away. Showed consistent success in PRWR against the SEC for two years in a row, but did disappear in big games against elite fronts. His handwork has room to improve and needs to diversify his cadence, move selection. He's got the right temperment to succeed, absolute competitor when rushing the passer. He's got the moves to start with and athleticism to improve. Hard to see him going super high given his limitation to one down, but could be a real contributor early.",
+  "draftbuzz_grades": {
+    "Tackling": 0.84,
+    "Pass Rush": 0.8,
+    "Run Defense": 0.99
+  },
+  "projected_role": "Designated PR",
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 0,
+      "career": 0
+    },
+    "B GAP": {
+      "2025": 0,
+      "career": 0
+    },
+    "Over Tackle": {
+      "2025": 0,
+      "career": 4
+    },
+    "Outside Tkl": {
+      "2025": 570,
+      "career": 1547
+    },
+    "Off Ball": {
+      "2025": 21,
+      "career": 57
+    }
+  },
+  "skills_traits": {
+    "Instincts/Processing/Production": {
+      "positives": "The motor and speed is great, doesn’t stop (NFLSE)\nAbsolute demon when asked to PR (NFLSE)\nSerious Production in SEC (NFLSE)\nInstinctual Play maker, relentless motor (Ringer)",
+      "negatives": "Dissappeared against good fronts (NFLSE)\nOccasional indecisiveness in attacking run blocks (NFL)"
+    },
+    "Physical Traits": {
+      "positives": null,
+      "negatives": "Short Arms and Light Weight (NFLSE)\nNot enough sand in his pants ot hold ground at POA (NFL)"
+    },
+    "Athletic Ability": {
+      "positives": "Twitched up, very flexible to get outside (NFLSE)\nSo fast off the line (NFLSE)\nBurst and elusiveness (NFL)\nCan bend, corner, and flatten into pockets (NFL)\nAbove average COD (NFL)",
+      "negatives": null
+    },
+    "Pass Rush Skills": {
+      "positives": "Consistently Good PRWR last few years (NFLSE)\nInside Spin Counter (NFL)\nAlready has a series of go-to moves (NFL)",
+      "negatives": "PR could use more cohesive sequenceing and better hand work (NFL)\nLacks speed variance and diversified set up (NFL)\nHands need more schooling (NFL)"
+    },
+    "Run Defense Skills": {
+      "positives": "Looks comfortable making tackles in space (BR)",
+      "negatives": "Short Arms and Light Weight hurts run defense (NFLSE)\nDoesn’t set a hard edge (NFLSE)\nFrequently knocked around at POA and struggles to consistenyl execute task as edge setter (NFL)"
+    }
+  },
+  "media_links": [
+    {
+      "description": "Career Highlights",
+      "source": "YT - NFL Film Room",
+      "url": "https://youtu.be/iJnTRFkweWA"
+    },
+    {
+      "description": "Scouting Report",
+      "source": "YT - Crown Global Media",
+      "url": "https://www.youtube.com/shorts/Eh4kdpOjaHU"
+    },
+    {
+      "description": "Scouting Report",
+      "source": "YT - Locked on NFL Draft",
+      "url": "https://www.youtube.com/watch?v=5xjDPPGKBLI"
+    },
+    {
+      "description": "Interview",
+      "source": "YT - Texas A&M Athletics",
+      "url": "https://www.youtube.com/watch?v=Fn2gu_aymSE"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Bendy edge rusher with standout sack totals. Burst and elusiveness are on Howell’s rush menu and he pairs it with a refreshing inside spin counter. Though threatening, his rush could use more cohesive sequencing and better hand work to fully unlock its potential. As a run defender he’s frequently knocked around at the point and struggles to consistently execute tasks asked of an NFL edge-setter. Howell might not be a three-down player right away, but his ability to create pressure sets him up for a role as a designated rusher, at minimum."
+        },
+        {
+          "title": "Strengths",
+          "text": "Three straight seasons of impressive pressure and sack totals. | Can bend, corner and flatten into pockets. | Creates smart rush distance, avoiding punch by long tackles. | Already working with a series of go-to moves in his bag. | A wicked inside spin counter can defeat tackles. | Long hop helps gain positioning advantage on vertical rush. | Major problem for quarterbacks with undisciplined drop depth. | Trigger quickness to knife into B-gap and blow up play design. | Above-average change direction and pursuit burst from the back side."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Not enough sand in his pants to hold his ground at the point. | Requires better technique for competent edge-setting. | Drops eyes and ducks his helmet into first contact. | Displays occasional indecisiveness in attacking run blocks. | Pass rush lacks speed variance and diversified setup. | Hands need more schooling to unlock NFL rush potential."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nCashius Howell took the long road to becoming one of the most feared pass rushers in the SEC. Howell played his high school ball at Rockhurst High School, where he terrorized opposing offenses with 21 career sacks and more than 150 tackles. His 14-sack junior campaign set school records and should have had Power Five programs knocking down his door. Instead, the 6-foot-2, 248-pound edge rusher fielded offers from MAC schools, Arkansas State, and Wyoming. Three-star ratings from ESPN (73) and 247Sports (0.80) told the story of a prospect overlooked by the big boys, and Howell landed at Bowling Green with something to prove.\n\nThe Falcons got every ounce of that chip on his shoulder. After a redshirt season and limited action in 2022, Howell exploded as a redshirt sophomore in 2023 with 9.5 sacks, tying for first in the MAC and ranking sixth nationally among linebackers. That production, combined with game-wrecking plays like a strip-sack of Ohio's Kurtis Rourke, caught the attention of Mike Elko's staff at Texas A&M. Howell made the jump to College Station and spent 2024 learning behind future NFL picks Nic Scourton and Shemar Stewart, still managing 40 tackles, four sacks, an interception, and seven passes defended while playing the hybrid \"Jack\" position.\n\nWith those teammates gone to the league, Howell seized his moment in 2025. He finished with 31 tackles, 14 tackles for loss, 11.5 sacks, and 41 quarterback pressures, earning unanimous All-American honors, becoming just the 11th player in Texas A&M history to achieve that distinction. He was named SEC Defensive Player of the Year and became a finalist for the Ted Hendricks, Lombardi, Bednarik, and Nagurski awards. The three consecutive sacks against Utah State early in the season announced his arrival, and a stretch of at least one sack in six straight games cemented his status as the conference's most disruptive defender. The pre-exercise science major who once had to prove himself in the MAC now sits among the top defensive prospects in the country.\n\nSCOUTING REPORT: SUMMARY\nThat first step is legitimate, the bend is there, and when Howell puts it all together on a rush, offensive tackles look like they are moving in mud. He already has three consecutive seasons of impressive pressure totals, including 9.5 sacks in the MAC and 11.5 in the SEC, proving his production translates as competition increases. The inside spin move is a weapon that will translate immediately, and his ability to get his hands up when the rush fails gives him a baseline impact even on plays where he does not get home.\n\nHere is the deal, though. Howell is going to have to earn his snaps on early downs. Right now, he gets pushed around too easily against the run, and NFL offensive coordinators will attack that weakness relentlessly if he is on the field in obvious rushing situations. His edge-setting technique needs work, and the tendency to duck his head into contact is a habit that better running backs will exploit. The 248-pound frame gives him his quickness but limits his anchor, and adding functional strength without losing that explosiveness will determine whether he becomes a three-down player or gets pigeonholed as a sub-package specialist.\n\nThe ceiling here is a high-end designated pass rusher who develops enough run defense capability to stay on the field for 60 percent of defensive snaps. Teams running aggressive four-man rush schemes will love his ability to generate pressure without extra help, and his coverage reps at Texas A&M suggest he can handle occasional drops in complex defensive packages. The floor is a situational rusher who dominates on third down but watches from the sideline when opponents line up to run. His motor runs hot, the production is real, and the athletic tools are special. Whether he becomes a complete player depends on how quickly he adds strength and cleans up his technique against the run.\nWRITTEN BY:\nWYATT BROOKS (SEC)"
+        },
+        {
+          "title": "Overview",
+          "text": "Explosive, productive pass rusher with a tireless, balls-to-the-wall demeanor against both the pass and the run.\n\nHowell lacks prototypical height and length, but he’s a high-motor, explosive pass rusher who wins with a variety of moves off the edge. He’s a fifth-year senior who played three seasons at Bowling Green before transferring to Texas A&M in 2024, and he finished his college career strong last season, racking up 11.5 sacks, 14.0 tackles for a loss, 41 pressures, and 21 stops, per PFF, with just three missed tackles on the year. Howell has a shredded, muscular frame and is an agile athlete who can change direction on a dime. He rushes with good burst at the snap, using his speed and explosiveness to set up his pass rush moves. He converts speed to power with a long-arm stab and bull-rush move and employs a hump move when offensive tackles set too far to the edge. He uses a whirling spin move that leaves tackles lunging and likes to utilize a bounding Euro-step move and cross chop to win the edge. Howell is a fluid mover with top-shelf closing speed to finish his rush. He shows good bend and can duck and get under blocks before flattening to the quarterback. Against the run, he’s tenacious setting the edge and refuses to get blocked; he rips, clubs, and swipes his way out of blocks to make the tackle. He’s a mindful player who does a good job reading the quarterback’s eyes to anticipate where throws are going, and he consistently gets his hands up to knock down throws.\n\nHowell’s lack of length shows up when tackles get him into their grasp; he can struggle to disengage. His aggressiveness can be used against him, and there are times when he overruns the play and gets out of position."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Cashius Howell was one of the most underrated NFL draft prospects heading into the season and has proven why he should be a first—round pick in the 2026 class during the early stages of the campaign.\n\nHowell is a 6'4\", 245—pound edge defender who originally went to Bowling Green as a 3—star recruit, per 247Sports. He didn't see the field much during his first two years before bursting onto the scene as a redshirt sophomore with a MAC—leading 9.5 sacks and 11 tackles for loss to earn third—team all—conference honors in 2023.\n\nThe following year, Howell transferred to Texas A&M and played behind 2025 draft picks Shemar Stewart and Nic Scourton but still managed to record 40 tackles, four sacks, nine TFLs, an interception and seven passes defended."
+        },
+        {
+          "title": "Positives",
+          "text": "— Impressive athlete overall, who wins with quickness and has smooth movement skills.\n\n— Can win as a pass—rusher in a handful of ways, including turning speed to power, cross—chop and inside spin moves.\n\n— Good bend to corner at the top of the rush.\n\n— Gets his hands up to bat passes at the line of scrimmage when Howell doesn't win as a pass—rusher.\n\n— Physical and displays decent strength at the point of attack against the run, can set the edge against tight ends.\n\n— Good speed to make tackles near the line of scrimmage when unblocked on the backside of zone runs.\n\n— Athletic enough to drop in coverage occasionally as a 34 outside linebacker. Also, looks comfortable dropping in coverage and can make tackles in space."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Lean frame, could afford to add some size and strength to help anchor as a run defender against bigger offensive linemen.\n\n— Turns his shoulders perpendicular to the line of scrimmage when setting the edge.\n\n— Likes to gamble and duck inside blocks against the run, making him susceptible to getting reached.\n\n— Despite being athletic and quick, Howell doesn't threaten offensive tackles with speed of the line of scrimmage as a pass—rusher."
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Explosive, productive pass rusher with a tireless, balls-to-the-wall demeanor against both the pass and the run.\n\nHowell lacks prototypical height and length, but he’s a high-motor, explosive pass rusher who wins with a variety of moves off the edge. He’s a fifth-year senior who played three seasons at Bowling Green before transferring to Texas A&M in 2024, and he finished his college career strong last season, racking up 11.5 sacks, 14.0 tackles for a loss, 41 pressures, and 21 stops, per PFF, with just three missed tackles on the year. Howell has a shredded, muscular frame and is an agile athlete who can change direction on a dime. He rushes with good burst at the snap, using his speed and explosiveness to set up his pass rush moves. He converts speed to power with a long-arm stab and bull-rush move and employs a hump move when offensive tackles set too far to the edge. He uses a whirling spin move that leaves tackles lunging and likes to utilize a bounding Euro-step move and cross chop to win the edge. Howell is a fluid mover with top-shelf closing speed to finish his rush. He shows good bend and can duck and get under blocks before flattening to the quarterback. Against the run, he’s tenacious setting the edge and refuses to get blocked; he rips, clubs, and swipes his way out of blocks to make the tackle. He’s a mindful player who does a good job reading the quarterback’s eyes to anticipate where throws are going, and he consistently gets his hands up to knock down throws.\n\nHowell’s lack of length shows up when tackles get him into their grasp; he can struggle to disengage. His aggressiveness can be used against him, and there are times when he overruns the play and gets out of position."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Explosive, productive pass rusher"
+        },
+        {
+          "title": "Traits",
+          "text": "Instinctual Playmaking\nPass-Rush Talent\nRelentless Motor"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former three-star recruit out of Kansas City, Missouri. Was the no. 170 athlete in the 2023 class. Began his college career at Bowling Green, where he spent three seasons before transferring to Texas A&M in 2024. Named SEC Defensive Player of the Year, first-team All-SEC, and a unanimous first-team All-American in 2025."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "Was the first Texas A&M player to record multiple three-sack games in a season since Von Miller in 2009.\nWent viral for his intensity in this clip from a game against LSU.\nConsiders himself a Chiefs fan.\nAggies head coach Mike Elko on coaching Howell: “It’s really fun. He eats it up. He’s really put himself in a position to not only be one of the most dominant players in college football, but also to be great beyond college football.”"
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF BYRON YOUNG"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.38,
+    "prospect_grade_indicator": "Will Eventually Be Plus Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Will McDonald IV",
+    "eligibility": "Senior",
+    "nfl_rank": 17,
+    "nfl_pos_rank": 4
+  },
+  "bleacher_profile": {
+    "grade": 8.0,
+    "grade_indicator": null,
+    "overall_rank": 22,
+    "position_rank": null,
+    "pro_comparison": "Harold Landry III",
+    "projected_round": null
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF BYRON YOUNG",
+    "traits": "Instinctual Playmaking\nPass-Rush Talent\nRelentless Motor"
+  },
+  "injury_history": []
+}

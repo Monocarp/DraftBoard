@@ -1,0 +1,414 @@
+{
+  "name": "JaKobi Lane",
+  "slug": "jakobi-lane",
+  "overview": {
+    "POS": "WR",
+    "College": "USC",
+    "Height": "6' 4\"",
+    "Weight": "200",
+    "Age": "21.6",
+    "DOB": "38204",
+    "Year": "Jr",
+    "Prj. Rd": null,
+    "Games": "TBD",
+    "Snaps": "TBD",
+    "24/7 Sports": "92",
+    "ESPN": "82",
+    "Draft Buzz": "84.9 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.2",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "USC",
+  "height": "6' 4\"",
+  "weight": "200",
+  "age": 21.6,
+  "dob": "38204",
+  "year": "Jr",
+  "projected_round": null,
+  "games": null,
+  "snaps": null,
+  "site_ratings": {
+    "24/7 Sports": "92",
+    "ESPN": "82",
+    "Draft Buzz": "84.9 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.2",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "77.6",
+      "percentile": 0.316
+    },
+    "2024 Grade": {
+      "value": "71.5",
+      "percentile": 0.421
+    },
+    "2023 Grade": {
+      "value": "64.9",
+      "percentile": 0.316
+    },
+    "Receiving Grade": {
+      "value": "81.8",
+      "percentile": 0.474
+    },
+    "Yards/ Routes Run": {
+      "value": "2.42",
+      "percentile": 0.395
+    },
+    "Drop %": {
+      "value": "7.5",
+      "percentile": 0.158
+    },
+    "Contested Catch": {
+      "value": "43.5",
+      "percentile": 0.158
+    },
+    "Grade vs Man": {
+      "value": "75.7",
+      "percentile": 0.5
+    },
+    "YAC/Reception": {
+      "value": "4.8",
+      "percentile": 0.211
+    },
+    "Missed Tkls Forced": {
+      "value": "11",
+      "percentile": 0.579
+    },
+    "ADOT": {
+      "value": "12.5",
+      "percentile": 0.737
+    },
+    "Deep Yards": {
+      "value": "277",
+      "percentile": 0.632
+    },
+    "Touchdowns": {
+      "value": "4",
+      "percentile": 0.053
+    },
+    "Elusiveness": {
+      "value": null,
+      "percentile": null
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 56.57142857142857,
+      "positional_rank": "12.333333333333334"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 69.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 54.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 91.0,
+      "positional_rank": "17"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 58.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 22.0,
+      "positional_rank": "3"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 48.0,
+      "positional_rank": "10"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 54.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 38.5,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": 42.0,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "TBD",
+    "Bleacher": "3rd Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Corey Davis",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 111.1,
+    "Hands": 0.68,
+    "Short Receiving": 0.83,
+    "Med Routes": 0.91,
+    "Deep Threat": 0.89,
+    "Blocking": 0.52
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 64,
+      "career": 128
+    },
+    "Wide": {
+      "2025": 271,
+      "career": 617
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Ja'Kobi Lane is a big-bodied receiver who thrives at making difficult contested catches in clutch moments."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nJa'Kobi Lane's path to becoming college football's premier touchdown artist started at Red Mountain High School, where he tormented defenses to the tune of 76 catches for 990 yards and 14 scores as a junior before following up with 65 grabs for 823 yards and 11 touchdowns his senior year. Those numbers earned him the National Football Foundation Arizona Chapter's J.D. Hill Wide Receiver of the Year Award and put him on Lincoln Riley's radar as a four-star recruit.\n\nLane touched down in Los Angeles and immediately started making noise, though his freshman year in 2023 was more about learning the speed of the game - just seven catches in six appearances. But something clicked during that Holiday Bowl against Louisville when he hauled in two touchdown passes, giving everyone a preview of what was coming. The dam broke completely in 2024 when this 6-foot-4, 200-pound weapon absolutely terrorized Big Ten secondaries.\n\nHis sophomore explosion was something to behold - 43 catches transformed into 525 yards and a conference-wrecking 12 touchdowns that had him fifth nationally in scoring grabs. The crescendo came at the Las Vegas Bowl where he obliterated Texas A&M with seven catches for 127 yards and three scores, earning MVP honors and an AP All-Bowl Team nod. That performance alone had NFL scouts scrambling to pull up more film, watching a receiver who'd become USC's most dangerous weapon in the red zone while suiting up for all 13 games with eight starts.\n\nWhen you watch Lane work, you're seeing a receiver who understands exactly what he brings to the table and maximizes every inch of his frame. This isn't your typical speedster who's going to blow the top off defenses - instead, he's that chess piece offensive coordinators dream about when they get inside the opponent's 20-yard line. The way he tracks the football and adjusts his body reminds you of those old school possession receivers who made their living winning when it mattered most, except Lane brings more athleticism to the equation than guys from that era.\n\n\n\nHis NFL translation depends heavily on finding the right system that values what he does well rather than trying to make him something he's not. Smart offensive minds will deploy him as their primary red zone target while mixing in intermediate crossers and dig routes where his size advantage really shows against nickel corners. The concerns about his deep speed are legitimate, but teams drafting him aren't looking for another field-stretcher - they want someone who moves the chains on third down and catches touchdowns when the field shrinks. Put him with an accurate quarterback who trusts contested windows and you've got yourself a consistent 8-10 touchdown threat annually.\n\n\n\nThe tape shows a receiver who wins ugly sometimes but wins nonetheless, and that matters more than style points when Sunday comes around. His floor sits comfortably as a productive WR3 who specializes in situational football, but don't be shocked if the right marriage of system and development pushes him toward WR2 production. Teams picking in rounds two through three should be circling his name if they need someone who can immediately upgrade their red zone package while developing the finer points of route running. Give him a full NFL offseason program to add functional strength and expand his route inventory, and you might be looking at one of those guys who outperforms his draft slot by a wide margin."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Ja'Kobi Lane is a prototypical X—receiver with outstanding ball skills to dominate the catch point, similar to Dallas Cowboys receiver George Pickens.\n\nLane is equipped with the frame and wingspan to thrive as a high—point specialist in the NFL.\n\nLane is a former 4—star recruit in the 2023 class. He is coming off his best season of college football in 2025. Lane has never eclipsed 800 yards receiving in a single season."
+        },
+        {
+          "title": "Positives",
+          "text": "— Lane has an outstanding combination of ball skills, body control, and acrobatics at the catch point. He excels at dominating the catch point, turning 50/50 passes into 80/20 in his favor.\n\n— USC's second—leading receiver uses his frame to box defenders out at the catch point on slants, hitches, and fade routes.\n\n— He flashes deceptive route running to fool out defenders with head fakes at the top of his routes, especially on double moves.\n\n— Lane displays high football IQ, understanding how to out—leverage defensive backs in off and zone coverages."
+        },
+        {
+          "title": "Negatives",
+          "text": "— lane struggles to pull away from defenders on vertical, downfield routes. his top—end speed is questionable. this puts more onus on his release package for quick wins.\n\n— his frame is Lean and susceptible to being rerouted in press—man situations. he will benefit from adding counters in the contact window to lessen its effectiveness.\n\n— his routes lack urgency from a salesmanship standpoint. he gives indicators of his breaks to tip off the defensive backs."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.2,
+    "grade_indicator": null,
+    "overall_rank": 91,
+    "position_rank": null,
+    "pro_comparison": "Corey Davis",
+    "projected_round": "3rd Round"
+  },
+  "injury_history": []
+}

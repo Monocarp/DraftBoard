@@ -1,0 +1,532 @@
+{
+  "name": "KC Concepcion",
+  "slug": "kc-concepcion",
+  "overview": {
+    "POS": "WR",
+    "College": "Texas A&M",
+    "Height": "5' 11\"",
+    "Weight": "190",
+    "Age": "21.4",
+    "DOB": "2004-09-24 00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": "Late 1st",
+    "Games": "38",
+    "Snaps": "1783",
+    "24/7 Sports": "88",
+    "ESPN": "87",
+    "Draft Buzz": "86.9 / 100",
+    "NFL.com": "6.4",
+    "Bleacher": "8.05",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "Texas A&M",
+  "height": "5' 11\"",
+  "weight": "190",
+  "age": 21.4,
+  "dob": "2004-09-24 00:00:00",
+  "year": "Jr",
+  "projected_round": "Late 1st",
+  "games": 38,
+  "snaps": 1783,
+  "site_ratings": {
+    "24/7 Sports": "88",
+    "ESPN": "87",
+    "Draft Buzz": "86.9 / 100",
+    "NFL.com": "6.4",
+    "Bleacher": "8.05",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "78.4",
+      "percentile": 0.368
+    },
+    "2024 Grade": {
+      "value": "60.6",
+      "percentile": 0.053
+    },
+    "2023 Grade": {
+      "value": "78.5",
+      "percentile": 0.842
+    },
+    "Receiving Grade": {
+      "value": "79.9",
+      "percentile": 0.368
+    },
+    "Yards/ Routes Run": {
+      "value": "2.46",
+      "percentile": 0.526
+    },
+    "Drop %": {
+      "value": "10.3",
+      "percentile": 0.0
+    },
+    "Contested Catch": {
+      "value": "66.7",
+      "percentile": 0.816
+    },
+    "Grade vs Man": {
+      "value": "78.2",
+      "percentile": 0.632
+    },
+    "YAC/Reception": {
+      "value": "7.2",
+      "percentile": 0.789
+    },
+    "Missed Tkls Forced": {
+      "value": "14",
+      "percentile": 0.684
+    },
+    "ADOT": {
+      "value": "12.2",
+      "percentile": 0.684
+    },
+    "Deep Yards": {
+      "value": "240",
+      "percentile": 0.526
+    },
+    "Touchdowns": {
+      "value": "9",
+      "percentile": 0.632
+    },
+    "Elusiveness": {
+      "value": "67.6",
+      "percentile": 0.75
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 30.2,
+      "positional_rank": "5.142857142857143"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 26.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 38.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 22.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "8"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 17.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 22.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 65.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 37.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 22.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 32.0,
+      "positional_rank": "5"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 27.0,
+    "PFF": 26.0,
+    "ESPN": null,
+    "Brugler": 24.0,
+    "Kiper": null,
+    "Miller": 26.0,
+    "Bleacher": 21.0,
+    "Walter": 33.0,
+    "TDN": 21.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 21.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - LATE",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "NFL": "Doug Baldwin",
+    "Miller": "TBD",
+    "DraftBuzz": "Kayshon BOUTTE",
+    "Bleacher": "Luther Burden III",
+    "WF": "Deebo Samuel.",
+    "Ringer": "Khalil Shakir",
+    "NFL.com": "Doug Baldwin"
+  },
+  "strengths": "• High End Burst, Acceleration\n• Savvy Route Running to Separate\n• Elite Short Area Footwork\n• Very TD Productive\n• Elite After The Catch Ability\n• Return Ability\n• Hard To Square up/tackle\n• Ball Tracking, Balance, Timing",
+  "weaknesses": "• Lacks Speed Variance, Top End Speed\n• Focus Drops\n• Run Blocking\n• Less Experienced as WR",
+  "accolades": null,
+  "player_summary": "Conception is a smaller receiver out of Texas A&M who uses his burst, shiftiness, and evasion skills to be a true big play threat at any time. He's hard to square up and his elite short area quickness makes it hard to capture him. He seemed to play more as a general athlete early in his career, taking lots of snaps out of the backfield. This shows up in his ability to vary route speeds and be more consistent bringing the ball in. But he's shown his ability to truly improve an offense with his touchdown production and his high YAC. In this class, would be suprised to see him fall out of the first, definitely doesnt fall out of the top 40.",
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 100.7,
+    "Hands": 0.61,
+    "Short Receiving": 0.82,
+    "Med Routes": 0.86,
+    "Deep Threat": 0.87,
+    "Blocking": 0.68
+  },
+  "projected_role": "Z or Slot",
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 136,
+      "career": 812
+    },
+    "Wide": {
+      "2025": 258,
+      "career": 331
+    }
+  },
+  "skills_traits": {
+    "Character/Mentality": {
+      "positives": "Very productive TDs (FD)\nPlayed out of the backfield plenty (FD, NFLSE)",
+      "negatives": null
+    },
+    "Receiving Skills": {
+      "positives": "Ball tracking, balance, timing (BR, WF)",
+      "negatives": "Drop issues working in contact (NFL)\nAdjusting to throws at varied speeds (NFL)\nConcentration Drops (FD)"
+    },
+    "Technique": {
+      "positives": "Elusive in beating press (NFL)\nSnaps off routes with alarming suddeness (NFL)\nInstinctive against Zone (NFL)\nQuickness makes him an asset after the catch (NFL)\nCreates leverage with route running (NFL)\nHard to square/wrap up (NFL)",
+      "negatives": "Routes lack setup and speed variance (NFL)"
+    },
+    "Physical Traits": {
+      "positives": "Immediate burst and seperation into space (NFL)\nOutstanding Acceleration (NFL)\nElite short area footwork (NFL)\nExtremely Explosive player (FD)",
+      "negatives": "One speed approach - average Top end speed (NFL)"
+    },
+    "Blocking/Other": {
+      "positives": "2 Punt Return TDs (FD)",
+      "negatives": "No value in blocking (NFL)"
+    }
+  },
+  "media_links": [
+    {
+      "description": "Highlights",
+      "source": "YT - Prospects",
+      "url": "https://www.youtube.com/watch?v=GZiN-m7t8ZQ"
+    },
+    {
+      "description": "Scouting Report",
+      "source": "YT - NFL Draft Big Boards",
+      "url": "https://m.youtube.com/watch?v=VTjhkZyy2vw&pp=0gcJCZQKAYcqIYzv"
+    },
+    {
+      "description": "Interview",
+      "source": "YT - ESPN College Football",
+      "url": "https://www.youtube.com/watch?v=bQABUzGeink"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Concepcion offers immediate burst and separation into space. He’s elusive in beating press and getting into breaks with minimum damage from handsy coverage. While he has a one-speed approach, he can snap off routes with alarming suddenness, making him extremely difficult to match at leveraged break points. He’s instinctive against zone. He’s also a nightmare for man coverage on choice routes and near the goal line. He’s quicker than fast, with more value on utility throws utilizing run after catch. Concepcion’s ability to quickly uncover should be very appealing to teams with spotty protection and a young quarterback."
+        },
+        {
+          "title": "Strengths",
+          "text": "Outstanding acceleration over the first 15 yards of the route. | Punishes missed jam attempts with a big vertical window. | Elite short-area footwork and separation quickness. | Can run every route well over the first two levels. | Maintains distance from grabby coverage at break points. | Separation burst is multiplied by his creation of route leverage. | Probes zone pockets with awareness and opens quickly to quarterback. | Hard to square and wrap up on run-after-catch throws underneath. | Good vision and north/south mentality with the ball in his hands."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Possesses average top-end speed. | Routes are fast but lack setup and speed variance. | Higher drop total working into the teeth of the defense. | Has trouble adjusting to throws at varied speeds. | Won’t add much value with run blocking from the slot."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nKenneth Charles Concepcion grew up in Charlotte, North Carolina, where he starred at Julius L. Chambers High School under head coach Brandon Wiggins. During his final two prep seasons, he tallied 65 receptions for 977 yards and 12 touchdowns while also flashing his return ability with three punt return scores as a junior. Recruiting services were split on his projection, with Rivals rating him a 4-star prospect and the No. 8 overall player in North Carolina, while ESPN and 247Sports each tagged him as a 3-star recruit. He committed to NC State in the spring of his senior year.\n\nConcepcion wasted no time making his presence felt in Raleigh. As a true freshman in 2023, he started 11 of 12 games and rewrote the Wolfpack record books, posting 71 catches for 839 yards and 10 touchdowns while adding a surprising wrinkle as a ball carrier with 41 rushes for 320 yards. That performance earned him ACC Rookie of the Year, ACC Offensive Rookie of the Year, and Freshman All-America recognition from the FWAA. His sophomore campaign in 2024 saw a statistical dip with 53 receptions for 460 yards and six scores, though he remained a consistent contributor in NC State's offense.\n\nFollowing the 2024 season, Concepcion entered the transfer portal and landed at Texas A&M, where he formed a dynamic tandem with fellow wideout Mario Craver. His 2025 campaign in College Station was his best yet: 61 catches for 919 yards and nine touchdowns while averaging a career-best 15.1 yards per reception. The 2025 season also showcased his return ability with two punt return touchdowns, and he capped the year by winning the Paul Hornung Award as college football's most versatile player. Following the Aggies' loss to Miami in the postseason, Concepcion declared for the 2026 NFL Draft with a career total of 185 receptions for 2,218 yards and 25 receiving touchdowns across 38 games at two Power Five programs.\n\nThe explosiveness is real and rare. Concepcion can threaten any blade of grass within 15 yards of the line of scrimmage, and his ability to separate at the break point gives quarterbacks an easy target on timing routes. His college production across two different programs and his versatility lining up both outside and in the slot speak to a player who understands how to get open regardless of scheme or alignment. His 2025 campaign showed growth, averaging 15.1 yards per catch compared to 8.7 the year prior, suggesting he has learned to complement his short-area quickness with deeper route-running. That adaptability, combined with his return ability, gives him multiple avenues to contribute from day one.\n\n\n\nThe concerns are legitimate but workable. His frame and drop issues mean he probably will not develop into a true alpha receiver who can win the toughest reps in contested situations. But not every offense needs that. For a team built around quick-rhythm passing concepts, play-action shots, and manufactured touches, Concepcion becomes a weapon. He thrives when the ball arrives on time to a spot where he can catch and create. Offenses that utilize motion, jet sweeps, and screens will get the most out of his skill set. His ability to work all three levels also makes him useful as a complementary piece alongside a bigger-bodied primary target.\n\n\n\nHere's the deal on Concepcion: he is not going to bully press corners or make circus grabs over the top of safeties. That is not his game. What he will do is consistently separate, consistently find grass, and consistently turn short completions into longer gains. His quickness and acceleration are legitimate NFL traits, and his production profile across multiple offensive systems shows a player who figures out how to be effective. For teams with shaky pass protection or a young quarterback who needs receivers to win early in routes, Concepcion offers real value. The twitch and football instincts are there, and in the right offensive environment, he can be a high-volume contributor who makes an impact both as a receiver and in the return game."
+        },
+        {
+          "title": "Overview",
+          "text": "Rugged, versatile playmaker with the quickness and agility to elude coverage and the gyroscopic balance to make hay after the catch.\n\nConcepcion is a tough, dynamic pass catcher with a wide catch radius and turbo-boosted acceleration. A transfer to Texas A&M in 2025 after a two-season stint at NC State, he took his game to a whole new level for the Aggies, proving he can operate as a three-level playmaker from anywhere in the formation. After playing mostly in the slot as an underneath option for the Wolfpack (in his final season there he saw an average depth of target of just 6.9 yards), Concepcion shifted primarily to the outside for Texas A&M, pushing his aDOT to a career-best 12.3 yards while reeling in 61 catches for 919 yards and 10 total touchdowns (nine receiving, one as a rusher). He brings suddenness as a route runner, using lightning-quick footwork to shake defenders off the line and at the route break. He sells routes with jukes and shoulder fakes before cutting sharply to create separation on digs and slants. He shows a good feel for finding space against zone coverage and makes sure to come back to the quarterback on scramble-drill plays. He brings a big catch radius and shows excellent concentration at the catch point (grabbing 10 of 15 contested catch opportunities last year, per PFF). He plays above the rim, elevating over defenders to snag high passes. He’s one of the better run-after-the-catch receivers in this draft, with 440 of his 919 receiving yards last season coming after the catch (and he averaged 7.2 yards after the catch per reception, with 14 missed tackles forced, per PFF). He’s a top-tier accelerator, mashing the gas pedal to sprint away from defenders and break tackles. His open-field prowess comes in handy when he’s returning punts, too; he averaged 18.2 yards per punt return last year, with two touchdowns on 25 returns.\n\nConcepcion lacks top-tier size and could struggle to beat press coverage from bigger, more physical corners at the NFL level. Drops were a bit of an issue in college—he had a 10 percent drop rate in 2025 and notched a 9.3 percent drop rate over his career. He’ll have to work to clean up inconsistencies there. He also needs to get stronger as a blocker in the run game."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "KC Concepcion 5'11\" 190 pounds... began his college career at NC State for two seasons, ends up at Texas A&M as part of that big wide receiver portal class this past season... instant offense... two punt return touchdowns this past season for the Aggies... touchdown maker... 10 receiving touchdowns during his freshman season at NC State... 25 receiving touchdowns in total... 70 rushing attempts during his college career... big play waiting to happen... stretch the field... throw the football, drive it down the field... fast... instant offense... bubble first round pick... concentration drops... be a little more consistent with the hands... drops will kill you... eliminate those... late first, early to mid second... fear factor player... both are gonna play in the NFL and... play a long time... really effective players.\n\n\"you got a guy who was dynamic...I saw him as a freshman at NC State. Yep. He was spectacular...the South Carolina game for KC Conce. Right. South Carolina game...he had a drop in the end zone...he had a punt return where he was dynamic...he's got two punt returns for touchdowns...Now. And his first time he's really doing it in terms of the punt return game is this year at Texas a and m...Casey Conce owned to began his college career at NC State...This is the all explosive team. Casey Conception makes big plays down the field every single week. That's why he is averaging now 15.9 yards per catch...So conception a guy that I think finds his way into that second round mix. He has been excellent for Texas a and m this season. Really good vertical threat. Can play a little bit of that. Not big slot, not a gigantic guy can play some in slide as well though. So some has some positional versatility if he comes out...indications from scouts...continue to be, that's conception will declare for this year's draft. I think he's the top 50 pick.\""
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "KC Concepcion changed the narrative from being a gadget—specific receiver into one of college football's most explosive run—after—catch weapons. He is an \"instant\" offensive threat for NFL teams.\n\nConcepcion is a dynamic, open—field weapon who can go beyond manufactured touches and easy completions. He's developing into a well—rounded, high—impact receiver with a high ceiling as an NFL option.\n\nThe wide receiver's career began at North Carolina State, where he joined the program as a former 3—star recruit in the 2023 class. After two seasons with the Wolfpack, Concepcion transferred to Texas A&M, where he posted a career year after displaying three—level receiving traits."
+        },
+        {
+          "title": "Positives",
+          "text": "— Concepcion is an explosive playmaker in space. Once he secures the football, he places defenders in conflict. He excels in creating plays after the catch with his toughness, elusiveness and explosiveness. His versatility opens up the playbook, because he's also dangerous on bubble screens, pre—snap motion, jet sweeps and handoffs.\n\n— He is a deceptive and sudden route—runner, who effectively attacks both man and zone coverages. Concepcion has a strong release package using quick lateral footwork to suddenly move his defender in the contact window. Against zone, he finds the open void quickly and stems his routes to manipulate second—level spot droppers. He reads zone defenders' leverage well, locating the soft spots in coverage.\n\n— At Texas A&M, his usage allowed him to display vertical ability. Concepcion is an explosive athlete with top—end speed. Paired with his short—area quickness, he takes the top off the defense from the slot and working on the outside. Once he clears a defensive back in the contact window, he stacks his guy with ease.\n\n— With the ball in the air, the dynamic transfer receiver shines. He tracks the ball's trajectory without breaking stride or losing balance when working down the field. He will go up and make a play as it begins to descend.\n\n— Concepcion fits the mold as a dynamic do—it—all, run—after—catch receiver in today's NFL. West Coast offenses will fit him like a glove because of his effectiveness in the short and intermediate levels since he's a threat to convert short receptions into much larger gains."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Concepcion has experienced focus drops throughout his career. he transitions from receiver to runner quickly. Sometimes, he will take his eyes off the ball before properly securing the catch. by slowing down his process to ensure the ball is secure, he then turns into a playmaker.\n\n— his wingspan is functional but appears to be limited. Longer and more adept playmaking corners in the NFL can create issues in contested—catch situations.\n\n— he is a Leaner receiver who could add a few more pounds without sacrificing his dynamic speed and acceleration. some added bulk will help combat the physicality NFL corners employ at the next level. some teams may pigeonhole him as a slot—only receiver.\n\n— run—blocking consistency. Improving his technique when attacking perimeter defenders at the point of attack."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Concepcion started out his collegiate career at N.C. State and quickly established himself as a dangerous playmaker. In 2023, he had 71 catches for 839 yards with 10 touchdowns while also carrying the ball 41 times for 320 yards. He had a respectable 2024 season (53-460-6 receiving, 19-36-2 rushing) before deciding to enter the transfer portal. In 2025, Concepcion was a dynamic playmaker for Texas A&M as he caught 61 passes for 919 yards with nine touchdowns. He had 10 carries for 75 yards and a touchdown. He returned an average of 17.5 yards per punt return with two punts returned for touchdowns.\nAs a receiver, Concepcion is impressive. His speed and playmaking skills with the ball in his hands eclipse the fact that he is a really talented wideout. He runs good routes and consistently uses his speed to get separation. Concepcion is very dangerous on quick slants and running go routes down the sideline. When the ball is in the air, Concepcion is very adept at tracking it and plays the ball well in the air. He high points the ball and times his hands well to make catches over defensive backs. Concepcion has soft hands and naturally catches the ball. Concepcion is an aggressive receiver and isnâ€™t afraid of contact.\nWhat really sets Concepcion apart is that he is very dangerous with the ball in his hands. He has excellent vision to weave around defenders and uses his speed to rip off yards in chunks. He has quick feet, the ability to stop-start and stutter-step, and a strong frame to run through arm tackles. When the ball hits Concepcion on the run, he is a big problem for defenders as he is tough to grab in the open field with his shifty moves. Concepcion has enough speed to run away from defenders and take a catch at a distance. Concepcion can take carries out of the backfield with dangerous ability to hurt defenses as a runner.\nOn top of being a good receiver, Concepcion is a dangerous returner who could contribute on special teams. Concepcion could line up as an outside and slot receiver in the NFL.\nIn the 2026 NFL Draft, Concepcion looks like a second-rounder with a shot at sneaking into the first round."
+        },
+        {
+          "title": "Strengths",
+          "text": "Explosive playmaker\nThreat to score and rip off long gains on any touch\nVery good route-runner\nConsistently creates separation\nFirst-step quickness\nTwitchy in and out of breaks\nSudden\nTracks the ball well\nDeep-threat receiver\nStretches a defense vertically\nExcellent with the ball in his hands\nVery good vision\nElusive runner, dangerous moves in the open field\nStrong hands\nNatural hands\nGood athlete\nDangerous returner\nExperienced and successful against good college programs\nMakes big plays in the clutch\nReady to contribute immediately"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Small, undersized\nDurability\nLimited to slot?"
+        },
+        {
+          "title": "Player Comp",
+          "text": "Deebo Samuel. Concepcion reminds me of Samuel at South Carolina. They each were gritty playmakers with dangerous ability with the ball in their hands. As a pro, I think Concepcion could be a similar style player to Samuel."
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Rugged, versatile playmaker with the quickness and agility to elude coverage and the gyroscopic balance to make hay after the catch.\n\nConcepcion is a tough, dynamic pass catcher with a wide catch radius and turbo-boosted acceleration. A transfer to Texas A&M in 2025 after a two-season stint at NC State, he took his game to a whole new level for the Aggies, proving he can operate as a three-level playmaker from anywhere in the formation. After playing mostly in the slot as an underneath option for the Wolfpack (in his final season there he saw an average depth of target of just 6.9 yards), Concepcion shifted primarily to the outside for Texas A&M, pushing his aDOT to a career-best 12.3 yards while reeling in 61 catches for 919 yards and 10 total touchdowns (nine receiving, one as a rusher). He brings suddenness as a route runner, using lightning-quick footwork to shake defenders off the line and at the route break. He sells routes with jukes and shoulder fakes before cutting sharply to create separation on digs and slants. He shows a good feel for finding space against zone coverage and makes sure to come back to the quarterback on scramble-drill plays. He brings a big catch radius and shows excellent concentration at the catch point (grabbing 10 of 15 contested catch opportunities last year, per PFF). He plays above the rim, elevating over defenders to snag high passes. He’s one of the better run-after-the-catch receivers in this draft, with 440 of his 919 receiving yards last season coming after the catch (and he averaged 7.2 yards after the catch per reception, with 14 missed tackles forced, per PFF). He’s a top-tier accelerator, mashing the gas pedal to sprint away from defenders and break tackles. His open-field prowess comes in handy when he’s returning punts, too; he averaged 18.2 yards per punt return last year, with two touchdowns on 25 returns.\n\nConcepcion lacks top-tier size and could struggle to beat press coverage from bigger, more physical corners at the NFL level. Drops were a bit of an issue in college—he had a 10 percent drop rate in 2025 and notched a 9.3 percent drop rate over his career. He’ll have to work to clean up inconsistencies there. He also needs to get stronger as a blocker in the run game."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Rugged, versatile playmaker"
+        },
+        {
+          "title": "Traits",
+          "text": "Instinctual Playmaking\nShort-Area Quickness\nSmooth Footwork"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former four-star recruit out of Charlotte, North Carolina. Was the no. 82 wide receiver and the no. 567 overall player in the 2023 class. Began his college career at NC State, where he earned ACC Freshman of the Year honors in 2023 before transferring to Texas A&M ahead of the 2025 season. Named first-team All-SEC, a consensus All-American, and a Biletnikoff Award finalist with the Aggies this past season."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "Invites the entire team over for meals at his place and considers cooking his outlet. “Food is very important to the idea of family. I just try to create that environment.”\nWears custom cleats every week.\nUsed to be a big gamer. Was a fan of Call of Duty and 2K."
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF KHALIL SHAKIR"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.4,
+    "prospect_grade_indicator": "Will Become Good Starter Within Two Years",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Doug Baldwin",
+    "eligibility": "Junior",
+    "nfl_rank": 32,
+    "nfl_pos_rank": 5
+  },
+  "bleacher_profile": {
+    "grade": 8.05,
+    "grade_indicator": null,
+    "overall_rank": 17,
+    "position_rank": null,
+    "pro_comparison": "Luther Burden III",
+    "projected_round": "2nd Round"
+  },
+  "walter_profile": {
+    "player_comp": "Deebo Samuel. Concepcion reminds me of Samuel at South Carolina. They each were gritty playmakers with dangerous ability with the ball in their hands. As a pro, I think Concepcion could be a similar style player to Samuel."
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF KHALIL SHAKIR",
+    "traits": "Instinctual Playmaking\nShort-Area Quickness\nSmooth Footwork"
+  },
+  "injury_history": [
+    {
+      "detail": "Hamstring",
+      "recovery_time": "Returned To Game",
+      "year": "2025"
+    },
+    {
+      "detail": "Foot",
+      "recovery_time": "Played Thru, Lingering",
+      "year": "2024"
+    }
+  ]
+}

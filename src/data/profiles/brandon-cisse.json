@@ -1,0 +1,511 @@
+{
+  "name": "Brandon Cisse",
+  "slug": "brandon-cisse",
+  "overview": {
+    "POS": "CB",
+    "College": "South Carolina",
+    "Height": "6' 0\"",
+    "Weight": "190",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": "2nd Round",
+    "Games": "33",
+    "Snaps": "1001",
+    "24/7 Sports": "89",
+    "ESPN": "88",
+    "Draft Buzz": "86.0 / 100",
+    "NFL.com": "6.27",
+    "Bleacher": "7.5",
+    "Gridiron": "TBD"
+  },
+  "position": "CB",
+  "college": "South Carolina",
+  "height": "6' 0\"",
+  "weight": "190",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Jr",
+  "projected_round": "2nd Round",
+  "games": 33,
+  "snaps": 1001,
+  "site_ratings": {
+    "24/7 Sports": "89",
+    "ESPN": "88",
+    "Draft Buzz": "86.0 / 100",
+    "NFL.com": "6.27",
+    "Bleacher": "7.5",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "74.7",
+      "percentile": 0.353
+    },
+    "24 Grade": {
+      "value": "74.1",
+      "percentile": 0.722
+    },
+    "23 Grade": {
+      "value": "69.8",
+      "percentile": 0.389
+    },
+    "Coverage Grade": {
+      "value": "70.6",
+      "percentile": 0.25
+    },
+    "Passer Rating": {
+      "value": "78.9",
+      "percentile": 0.389
+    },
+    "Interceptions": {
+      "value": "1",
+      "percentile": 0.306
+    },
+    "Forced Incom.": {
+      "value": "8",
+      "percentile": 0.417
+    },
+    "Forced Inc. Rate": {
+      "value": "21.1",
+      "percentile": 0.833
+    },
+    "Dropped Picks": {
+      "value": "1",
+      "percentile": 0.667
+    },
+    "Completion %": {
+      "value": "47.4",
+      "percentile": 0.778
+    },
+    "Man Coverage": {
+      "value": "60.3",
+      "percentile": 0.111
+    },
+    "Zone Coverage": {
+      "value": "72.1",
+      "percentile": 0.278
+    },
+    "% In Man": {
+      "value": "32",
+      "percentile": 0.667
+    },
+    "% In Zone": {
+      "value": "59.1",
+      "percentile": 0.556
+    },
+    "Coverage Stops": {
+      "value": "2",
+      "percentile": 0.083
+    },
+    "Tackling": {
+      "value": "67.9",
+      "percentile": 0.306
+    },
+    "Missed Tackles": {
+      "value": "5",
+      "percentile": 0.361
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Arm Length": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Hand Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Speed": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Explosive": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Agility": {
+      "result": "TBD",
+      "grade": null
+    },
+    "10 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "20 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "40 Time": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Vertical": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Broad": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "3 Cone": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Bench": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Height": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Weight": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Gridiron": {
+      "result": "TBD",
+      "grade": "TBD"
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 36.666666666666664,
+      "positional_rank": "5.285714285714286"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 32.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 30.0,
+      "positional_rank": "5"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 41.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "3"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 50.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 13.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 50.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 38.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 31.0,
+      "positional_rank": "5"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 24.142857142857142,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": 22.0,
+    "Kiper": 32.0,
+    "Miller": 15.0,
+    "Bleacher": null,
+    "Walter": 18.0,
+    "TDN": 32.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "2ND - EARLY",
+    "Bleacher": "2nd Round"
+  },
+  "player_comps": {
+    "Miller": "TBD",
+    "DraftBuzz": "0",
+    "Bleacher": "Jaycee Horn",
+    "WF": "TBD",
+    "Ringer": "Jaylon Johnson"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR Allowed": 80.4,
+    "Tackling": 0.79,
+    "Run Defense": 0.96,
+    "Cov Grade": 0.78,
+    "Zone Coverage": 0.74,
+    "Man/Press": 0.78
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 10,
+      "career": 15
+    },
+    "Slot": {
+      "2025": 35,
+      "career": 214
+    },
+    "Corner": {
+      "2025": 408,
+      "career": 641
+    },
+    "Box": {
+      "2025": 32,
+      "career": 121
+    },
+    "Deep": {
+      "2025": 6,
+      "career": 7
+    }
+  },
+  "skills_traits": {
+    "Character/Mental/Discipline": {
+      "positives": null,
+      "negatives": null
+    },
+    "Tackling/Run Game": {
+      "positives": null,
+      "negatives": null
+    },
+    "Coverage Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Athleticism": {
+      "positives": null,
+      "negatives": null
+    },
+    "Phsyical Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Teams will be willing to take a chance on Cisse’s explosive athleticism and upside, but a refinement runway might be needed to smooth some of the rougher edges. He’s scheme-versatile in coverage and is an A-rated run supporter. Work ethic and athletic testing will work in his favor. However, a lack of instincts and break anticipation could cost him in coverage against quality route runners. His press will become a more effective weapon with technical work and his route recognition should improve with more reps. Cisse’s traits and competitiveness are clear selling points, but a lack of on-ball production and coverage consistency create a more volatile floor."
+        },
+        {
+          "title": "Strengths",
+          "text": "Explosive athletic ability. | Has length and strength to become more disruptive in press. | Sits on short routes and squeezes work space from off-man. | Quick dig-and-trigger to the throw from the top of his drop. | Imposes size on catch point when he’s tight in coverage. | Long speed to stay in-phase with deep routes. | Supports the run like a box safety. | Beats blockers with quickness and meets runners at or near the line."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Below-average in route recognition and break matching from off. | Struggles to find playmaking positioning with back to the ball. | Below-average tracking and adjustments on downfield 50/50 balls. | Needs to more consistently read/react to quarterback’s eyes/operation. | Ordinary career production on the ball."
+        },
+        {
+          "title": "Sources Tell Us",
+          "text": "“You draft him more for tomorrow’s tools and not for today’s tape. The bad reps are going to get corrected. I like his makeup and his speed.” – AFC national scout"
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nBrandon Cisse graduated from Lakewood High School in December 2022, where he played both defensive back and wide receiver under head coach Larry Cornelius. As a senior, Cisse recorded 37 tackles, one interception, 13 pass breakups, two forced fumbles, and two fumble recoveries on defense while hauling in 42 catches for 764 yards and eight touchdowns on offense. His junior year numbers were similarly impressive: 33 tackles, three interceptions, two fumble recoveries, one forced fumble, plus 22 receptions for 297 yards and three scores. He also competed in basketball and track, posting personal bests of 11.12 in the 100-meter and 22.09 in the 200-meter dash. ESPN rated him a three-star recruit with a 76 grade out of 100, while 247Sports ranked him No. 505 nationally and Rivals pegged him at No. 448 overall in the 2023 class.\n\nCisse enrolled at NC State in January 2023 and went through spring drills before appearing in all 13 games as a true freshman, primarily in the Wolfpack's dime package. He logged 142 defensive snaps and 82 special teams snaps, recording 10 tackles and sealing a victory over Miami with a late interception. His sophomore campaign in 2024 saw him appear in nine contests with 28 tackles, 1.5 tackles for loss, and five pass breakups, including a season-high six stops versus Northern Illinois and a career-high 73 snaps against Georgia Tech. After transferring to South Carolina in January 2025, Cisse made an immediate impact in Columbia, earning Newcomer of the Spring honors for defense and co-Newcomer of the Spring accolades for special teams under defensive backs coach Torrian Gray. He started all 12 games at cornerback for the Gamecocks, tallying 27 tackles (19 solo), 1.5 tackles for loss, two quarterback hurries, five pass breakups, one interception, and one forced fumble. He served as a game captain against both Kentucky and Ole Miss before declaring for the 2026 NFL Draft following his junior season.\n\nSCOUTING REPORT: SUMMARY\nWhen you watch his tape you quickly notice first-round talentespecially when you watch Cisse operate in man coverage situations. He's got that rare combination of length, speed, and hip fluidity that translates immediately to Sundays, where receivers are faster and route trees are more complex. His ability to mirror releases and close on throws at the catch point gives him a legitimate foundation to build on, and the physical tools are absolutely there for him to develop into a lockdown boundary corner who can erase half the field. The explosiveness he shows triggering downhill on screens and perimeter runs adds value as a force player in the run game, even if his tackling technique needs serious refinement. Defensive coordinators will love his willingness to press and jam at the line, knowing he's got the recovery wheels to make up for occasional lapses in technique.\n\nThe concerns are real but fixable with proper coaching and development time. His zone awareness is currently a liability, and the grabbing issues need to be coached out of him before they become a penalty problem at the next level. The mental side of the position hasn't caught up to his physical gifts yet - he's biting on misdirection, overcommitting his hips, and making the game harder than it needs to be. That's typical for a corner with limited starting experience who transferred schools and only has one full season as a starter under his belt. The missed tackles and diving attempts are correctable with better fundamentals, but it'll take commitment from both player and coaching staff to get him comfortable wrapping up in space. The injury history isn't catastrophic, but it's something NFL teams will monitor closely during the pre-draft medical process.\n\nBottom line: Cisse projects as a Day One starter who can line up outside and play press-man in Cover 1 and Cover 3 schemes right away. His ceiling is a legitimate CB1 who can travel with opposing team's top receivers, but he needs another year or two of technical refinement to reach that level consistently. The physical traits are already thereâ€”the mental processing and discipline will determine whether he becomes a good NFL corner or a great one. For teams picking in the late first round who need immediate help at corner and have strong defensive backs coaching, Cisse represents excellent value with massive upside."
+        },
+        {
+          "title": "Overview",
+          "text": "Twitched-up, long-levered cornerback who plays with physicality at the catch point.\n\nCisse pairs explosive speed with excellent length and plays with a tenacious, aggressive edge. A transfer to South Carolina in 2025 after two seasons at NC State, he notched one pick, five passes defensed, and a forced fumble for the Gamecocks last season, giving up just one touchdown in coverage, per PFF. He’s comfortable in man coverage and likes to jam and reroute receivers and make his presence known. He’s sticky in coverage, but when he loses a step, he has the makeup speed to quickly close the gap. He has a good feel in zone looks, playing with anticipation to break on the ball and knock it away at the catch point. He’s a smooth mover with quick feet and instantaneous reaction speed to drive on the ball in a blink. Cisse is tough and very physical at the catch point; he smothers receivers and makes it hard for opponents to secure the ball even when he’s a beat late to arrive. In the run game, he does a good job of avoiding getting sealed and ducks under blocks to get to the ballcarrier. He likes to mix it up as a tackler.\n\nThere are times when Cisse’s aggressive nature borders on recklessness. He takes rough, overly ambitious angles in run support, overplays the ballcarrier, and ends up out of position. He occasionally fails to effectively turn the ball back inside. He occasionally lets himself get flat-footed in his transition from a backpedal to trailing coverage and loses a step."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Brandon Cisse has exceptional lateral and downhill explosion that he uses to trigger on perimeter runs/screens and maintain sticky man coverage. The willingness and physicality to jam in press coverage give him multiple tools to be a menace as a boundary corner.\n\nThe transfer from NC State has shone, taking away deep routes from opposing receivers with his length and recovery speed to close when he gets stacked vertically.\n\nA former 3—star prospect and 4—star transfer, he accumulated 65 tackles (41 solo), three tackles for loss, two interceptions, ten passes defensed, and one forced fumble in his three—year collegiate career. The ball production is low, but the upside for a player of Cisse's natural talent is immense."
+        },
+        {
+          "title": "Positives",
+          "text": "— Cisse brings a physical and explosive presence to the boundary of any defense. His length aids jamming in press—man coverage and allows him to throw off route timing.\n\n— The 6'0\", 190—pound corner looks the part on the field and on paper. His footwork is quick, while he keeps his center of gravity low to flip his hips and run downfield when he needs to.\n\n— He sees the perimeter game quickly, run or pass, and explodes downhill to contribute and blow plays up. His athleticism is an asset when flipping his hips or mirroring receivers' movements in man coverage.\n\n— From hard/soft press to catch technique and trail, his array of man coverage tools gives him different ways to win on any given rep.\n\n— He attacks the catch point with his arms both down the field and triggering underneath, dislodging footballs and making it difficult for quarterbacks to sneak it in tight windows."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Cisse's zone instincts are lacking, and he does better when he can focus on one receiver or the quarterback. Adding more for his eyes to monitor throws off his reaction time.\n\n— While he's willing to click downhill in run and screen support, he's not always willing to wrap up and tackle. Too many misses and avoidances in his tape to go with his inability to stack and shed blocks.\n\n— He tends to open his hips early in release packages, relying on his natural gifts to recover. Quicker, more nuanced receivers take advantage of that, putting him out of position and making him susceptible to double moves and quick breaks."
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Twitched-up, long-levered cornerback who plays with physicality at the catch point.\n\nCisse pairs explosive speed with excellent length and plays with a tenacious, aggressive edge. A transfer to South Carolina in 2025 after two seasons at NC State, he notched one pick, five passes defensed, and a forced fumble for the Gamecocks last season, giving up just one touchdown in coverage, per PFF. He’s comfortable in man coverage and likes to jam and reroute receivers and make his presence known. He’s sticky in coverage, but when he loses a step, he has the makeup speed to quickly close the gap. He has a good feel in zone looks, playing with anticipation to break on the ball and knock it away at the catch point. He’s a smooth mover with quick feet and instantaneous reaction speed to drive on the ball in a blink. Cisse is tough and very physical at the catch point; he smothers receivers and makes it hard for opponents to secure the ball even when he’s a beat late to arrive. In the run game, he does a good job of avoiding getting sealed and ducks under blocks to get to the ballcarrier. He likes to mix it up as a tackler.\n\nThere are times when Cisse’s aggressive nature borders on recklessness. He takes rough, overly ambitious angles in run support, overplays the ballcarrier, and ends up out of position. He occasionally fails to effectively turn the ball back inside. He occasionally lets himself get flat-footed in his transition from a backpedal to trailing coverage and loses a step."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Twitched-up, long-levered cornerback"
+        },
+        {
+          "title": "Traits",
+          "text": "Field-Tilting Speed\nPrototypical Frame\nCoverage chops"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former three-star recruit out of Sumter, South Carolina. Was the no. 51 cornerback and the no. 505 overall player in the 2023 class. Spent his first two college seasons at NC State before transferring to South Carolina in 2025."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "Nicknamed “Glitch” by teammates at South Carolina because of his speed, burst, and change of direction.\nSouth Carolina HC Shane Beamer has called Cisse a “football junkie,” saying: “He loves football. He’s really smart, and that’s been a great addition to not just our secondary and not just our defense, but our football team … his mentality, the way that he practices, the speed that he plays with. I think he’s getting ready to have a really, really productive year for us.”\nFavorite NFL CB of all time is Stephon Gilmore.\nHis favorite coverage is Cover-1."
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF JAYLON JOHNSON"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.27,
+    "prospect_grade_indicator": "Will Eventually Be Average Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": null,
+    "eligibility": "Junior",
+    "nfl_rank": 31,
+    "nfl_pos_rank": 5
+  },
+  "bleacher_profile": {
+    "grade": 7.5,
+    "grade_indicator": null,
+    "overall_rank": 50,
+    "position_rank": null,
+    "pro_comparison": "Jaycee Horn",
+    "projected_round": "2nd Round"
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF JAYLON JOHNSON",
+    "traits": "Field-Tilting Speed\nPrototypical Frame\nCoverage chops"
+  },
+  "injury_history": []
+}

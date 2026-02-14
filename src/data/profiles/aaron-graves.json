@@ -1,0 +1,442 @@
+{
+  "name": "Aaron Graves",
+  "slug": "aaron-graves",
+  "overview": {
+    "POS": "DT",
+    "College": "Iowa",
+    "Height": "6'4\"",
+    "Weight": "300",
+    "Age": "22.6",
+    "DOB": "2003-07-14 00:00:00",
+    "Year": "SR",
+    "Prj. Rd": null,
+    "Games": "51",
+    "Snaps": "1807",
+    "24/7 Sports": "94",
+    "ESPN": "TBD",
+    "Draft Buzz": "81.8 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "position": "DT",
+  "college": "Iowa",
+  "height": "6'4\"",
+  "weight": "300",
+  "age": 22.6,
+  "dob": "2003-07-14 00:00:00",
+  "year": "SR",
+  "projected_round": null,
+  "games": 51,
+  "snaps": 1807,
+  "site_ratings": {
+    "24/7 Sports": "94",
+    "ESPN": "TBD",
+    "Draft Buzz": "81.8 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": null,
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "24 Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "23 Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "Pass Rush Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "True Pass Rush": {
+      "value": null,
+      "percentile": null
+    },
+    "PR Win Rate": {
+      "value": null,
+      "percentile": null
+    },
+    "Run Def. Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "Run Stop %": {
+      "value": null,
+      "percentile": null
+    },
+    "Sacks": {
+      "value": null,
+      "percentile": null
+    },
+    "Hits": {
+      "value": null,
+      "percentile": null
+    },
+    "Hurries": {
+      "value": null,
+      "percentile": null
+    },
+    "Batted Balls": {
+      "value": null,
+      "percentile": null
+    },
+    "Forced Fumbles": {
+      "value": null,
+      "percentile": null
+    },
+    "Tackling Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "Missed Tackle Rate": {
+      "value": null,
+      "percentile": null
+    },
+    "Total Pressures": {
+      "value": null,
+      "percentile": null
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 166.25,
+      "positional_rank": "21"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 225.0,
+      "positional_rank": "21"
+    },
+    {
+      "source": "Jeremiah",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 96.0,
+      "positional_rank": "9"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 179.0,
+      "positional_rank": "37"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 165.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Tankathon",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Jeremiah": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "Tankathon": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "5TH",
+    "Bleacher": "7th Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Zacch PICKENS",
+    "Bleacher": "Matt Dickerson",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.62,
+    "Pass Rush": 0.63,
+    "Run Defense": 0.9
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": null,
+      "career": null
+    },
+    "B GAP": {
+      "2025": null,
+      "career": null
+    },
+    "Over Tackle": {
+      "2025": null,
+      "career": null
+    },
+    "Outside Tkl": {
+      "2025": null,
+      "career": null
+    },
+    "Off Ball": {
+      "2025": null,
+      "career": null
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits & Abilities": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nThe commitment story reads like something from college football's past - Aaron Graves pledged to Iowa as a high school freshman, before he could even drive without supervision. What followed was a journey that exemplifies the old-school values of loyalty and development within one program. The Dayton, Iowa native carried four-star recruiting credentials from all major services, with ESPN rating him an 82 and both 247Sports and Rivals giving him four-star status, indicating he was always viewed as a legitimate Power Five prospect.\n\nGraves wasted no time making his mark in Iowa City, bypassing a redshirt year to contribute immediately as a true freshman in 2022. That debut campaign saw him collect 14 tackles across 12 games, including his first career sack against Nevada. The foundation was laid for what would become a three-year starter's career in the heart of Iowa's defense. His sophomore season in 2023 brought expanded responsibilities, playing in all 14 games and nearly doubling his production with 37 tackles, 4.5 tackles for loss, and 2.5 sacks while helping anchor a defense that consistently ranked among the nation's best.\n\nThe 2024 campaign marked Graves' arrival as a premier Big Ten interior defender, earning Honorable Mention All-Big Ten recognition from both coaches and media while starting all 13 games at left tackle. His 33 tackles included six sacks that ranked 14th in the conference, eight tackles for loss, and a team-leading three forced fumbles that also topped the Big Ten. Academic excellence accompanied his on-field success, earning CSC Academic All-American honors and landing on multiple academic recognition lists. The combination of his career 84 tackles, 18.5 tackles for loss, and 10.5 sacks reflects a player who has steadily elevated his game while maintaining the consistency Iowa's defense demands from its interior presence.\n\nSCOUTING REPORT: SUMMARY\nAaron Graves is a player caught between two identities - his natural pass-rush instincts suggest interior pocket pressure could be his calling card, yet inconsistencies in technique and finishing ability raise questions about whether he can consistently win against NFL-caliber guards. Graves has clearly found success rushing the passer at Iowa, generating consistent pressure up the middle with solid hand placement and leverage, but his limited move arsenal beyond the bull rush creates predictability that professional offensive lines will exploit. His wrestling background translates beautifully to hand fighting and balance, giving him an edge in initial contact, though he sometimes struggles to convert that early advantage into impactful plays.\n\nWhat makes Graves intriguing is his ability to impact multiple phases while showing clear areas for improvement that aren't necessarily deal-breakers. His run defense displays the kind of gap integrity and strength that defensive coordinators need from interior players, yet he can get washed out when offensive lines create movement, limiting his effectiveness against more athletic blocking schemes. The motor and pursuit that have served him well in college football should translate, but his tackling in space remains suspect and could become more problematic at the next level where skill position players are more elusive.\n\nGraves represents the type of interior defender who could develop into a valuable rotational piece with the right coaching, though his path to becoming an every-down player faces legitimate obstacles. His durability and reliability suggest he can contribute immediately in certain packages, but the technical refinements needed in his pass-rush repertoire and run defense consistency will determine whether he becomes a core contributor or remains a depth piece. The foundation is solid enough to warrant investment, yet realistic enough expectations are required given the developmental timeline his skill set suggests."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "At 6'5\", 295 pounds, Aaron Graves combines size and solid athleticism to be an intriguing late—round 2026 NFL draft prospect or as a priority free—agent signing. His quickness and movement skills give him potential as a pass—rusher, and he has the upper—body strength to get extension on blocks when working against the run.\n\nGraves went to Iowa as a 4—star recruit in the 2022 class, getting playing time as a true freshman and becoming a full—time starter during his junior year. He played in 52 games for the Hawkeyes, racking up 122 tackles, 25 tackles for loss, 16.5 sacks, four forced fumbles, a sack and five passes defended over four seasons.\n\nThat production resulted in honorable mention (2024) and second—team (2025) All—Big selections for the Iowa native."
+        },
+        {
+          "title": "Positives",
+          "text": "— Graves has good size and appears to have long arms. Fits the physical profile for an NFL 4i—technique.\n\n— Decent overall athlete who shows solid quickness, giving him potential to develop as a pass—rusher.\n\n— Sets up his pass—rush moves well by stemming outside to open up an inside lane or vice versa.\n\n— Has flashed a solid swim—move that he can win with as a pass—rusher or use to escape blocks in the run game.\n\n— When he picks his hand straight up from the ground, he has the upper—body strength and length to get extension blocks in the run game.\n\n— Solid at moving his feet and using his agility to avoid getting reached."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Graves is a waist—bender, not a knee—bender, hindering his lower—body strength and Ability to stay in his gap. he ends up losing gap control against one—on—one blocks from offensive linemen, who play with Good leverage, and Gets blown off the ball by combo blocks.\n\n— waist bending Also causes issues with his balance, as he ends up with his nose over his toes often.\n\n— hands are often late and wide as a run defender, exposing his chest and leading to getting stuck on blocks often.\n\n— late to recognize and struggles to sink his hips against down blocks, leading to him getting washed inside.\n\n— Use of hands as a pass—rusher is Poor, showing issues with Timing and accuracy, which makes it difficult for him to win consistently."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 5.6,
+    "grade_indicator": null,
+    "overall_rank": 225,
+    "position_rank": null,
+    "pro_comparison": "Matt Dickerson",
+    "projected_round": "7th Round"
+  },
+  "injury_history": []
+}

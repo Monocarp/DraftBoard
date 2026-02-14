@@ -1,0 +1,532 @@
+{
+  "name": "Carnell Tate",
+  "slug": "carnell-tate",
+  "overview": {
+    "POS": "WR",
+    "College": "Ohio State",
+    "Height": "6' 3\"",
+    "Weight": "195",
+    "Age": "21",
+    "DOB": "2005-01-19 00:00:00",
+    "Year": "Jr",
+    "Prj. Rd": "Top 10",
+    "Games": "35",
+    "Snaps": "1394",
+    "24/7 Sports": "98",
+    "ESPN": "91",
+    "Draft Buzz": "88.9 / 100",
+    "NFL.com": "6.75",
+    "Bleacher": "8.3",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "Ohio State",
+  "height": "6' 3\"",
+  "weight": "195",
+  "age": 21.0,
+  "dob": "2005-01-19 00:00:00",
+  "year": "Jr",
+  "projected_round": "Top 10",
+  "games": 35,
+  "snaps": 1394,
+  "site_ratings": {
+    "24/7 Sports": "98",
+    "ESPN": "91",
+    "Draft Buzz": "88.9 / 100",
+    "NFL.com": "6.75",
+    "Bleacher": "8.3",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "88.6",
+      "percentile": 0.947
+    },
+    "2024 Grade": {
+      "value": "70.1",
+      "percentile": 0.316
+    },
+    "2023 Grade": {
+      "value": "64.1",
+      "percentile": 0.263
+    },
+    "Receiving Grade": {
+      "value": "89",
+      "percentile": 0.947
+    },
+    "Yards/ Routes Run": {
+      "value": "3.03",
+      "percentile": 0.895
+    },
+    "Drop %": {
+      "value": "0",
+      "percentile": 1.0
+    },
+    "Contested Catch": {
+      "value": "85.7",
+      "percentile": 1.0
+    },
+    "Grade vs Man": {
+      "value": "75.2",
+      "percentile": 0.421
+    },
+    "YAC/Reception": {
+      "value": "4.5",
+      "percentile": 0.158
+    },
+    "Missed Tkls Forced": {
+      "value": "6",
+      "percentile": 0.105
+    },
+    "ADOT": {
+      "value": "14.6",
+      "percentile": 0.895
+    },
+    "Deep Yards": {
+      "value": "453",
+      "percentile": 0.895
+    },
+    "Touchdowns": {
+      "value": "9",
+      "percentile": 0.632
+    },
+    "Elusiveness": {
+      "value": "50.9",
+      "percentile": 0.625
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 11.076923076923077,
+      "positional_rank": "1.7142857142857142"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 8.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 11.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 10.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 5.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 15.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 11.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 19.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 17.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 13.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 13.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 9.0,
+      "positional_rank": "2"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 9.692307692307692,
+    "PFF": 6.0,
+    "ESPN": null,
+    "Brugler": 4.0,
+    "Kiper": 5.0,
+    "Miller": 5.0,
+    "Bleacher": 13.0,
+    "Walter": 13.0,
+    "TDN": 6.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 14.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - TOP 10",
+    "Bleacher": "1st Round"
+  },
+  "player_comps": {
+    "NFL": "Chris Olave",
+    "Miller": "TBD",
+    "DraftBuzz": "Rome ODUNZE",
+    "Bleacher": "Michael Thomas",
+    "WF": "Quentin Johnston.",
+    "Ringer": "'Tony Hawk'S Pro Skater'",
+    "NFL.com": "Chris Olave"
+  },
+  "strengths": "• Elite Consistency, Ultra Reliable\n• Long Strider, Size Mismatch\n• Super Polished Route Running\n• Contested Catch Machine\n• Timing, Body Control, Adjustments\n• Some Nice YAC Ability\n• Creates Seperation with Burst\n• Spatial Awareness\n• Attacks the Football",
+  "weaknesses": "• Lacks Needed Strength to be WR1\n• Good Speed, Not Elite\n• Average Blocker\n• Kind of a Nerd",
+  "accolades": "• 2024 Big 10 Distinguished Scholar\n• 2025 Academic All American\n• 2025 All Big 10\n• 2025 2nd Team All American\n• 5 Star Recruit",
+  "player_summary": "Physically, Tate brings good size with long arms and a wide catch radius, making him a reliable red-zone and contested-catch weapon who excels on jump balls, uses body control and timing to win in traffic, tracks deep balls at full speed, adjusts to throws effectively, and works back to secure them away from defenders. He displays surprising speed and twitch for his frame, building momentum quickly on intermediate and deep routes, generating separation with route savvy, burst, tempo changes, and a second gear to threaten all levels or create after the catch, including on screens. His hands are soft, strong, and reliable, with effortless pass-catching and polish rare for his age; he consistently extends the catch point away from his frame, plucks the ball cleanly, and climbs the ladder over defenders when needed. While he could add play strength and bulk to better handle physical corners, his overall traits project him as a Day 1 starter and a strong No. 2 receiver.",
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 145.3,
+    "Hands": 0.93,
+    "Short Receiving": 0.9,
+    "Med Routes": 0.96,
+    "Deep Threat": 0.96,
+    "Blocking": 0.68
+  },
+  "projected_role": "Z or X Rec.",
+  "ideal_scheme": "Any",
+  "alignments": {
+    "Slot": {
+      "2025": 30,
+      "career": 107
+    },
+    "Wide": {
+      "2025": 265,
+      "career": 744
+    }
+  },
+  "skills_traits": {
+    "Character/Mentality": {
+      "positives": "Tracks throws at top speed (NFL)\nGood spaital awareness against zone (NFL, WF)\nAttacks the football (WF)",
+      "negatives": null
+    },
+    "Receiving Skills": {
+      "positives": "makes adjustments to the ball (NFL)\nTiming, body control, and catch radius, consistently wins CC (NFL)\nElite high point timing and hand strength (NFL)\nNot dropping any passes (FD)\nVice Grip hands (FD)\nPhenomenal with Jump balls (WF)",
+      "negatives": null
+    },
+    "Technique": {
+      "positives": "Can win over the top on verticals or separate with route savvy (NFL)\nRare polish for his age (NFL)\nLeverages defnders with routes (NFL)\nroute running consistency, very effortless player (FD)\nSome Nice YAC ability (WF)",
+      "negatives": "Chest/pads rsie, giving break clues (NFL)"
+    },
+    "Physical Traits": {
+      "positives": "Good Size, builds momentum quickly on intermediate/deep routes (NFL)\nCreates seperationg with burst (NFL)\nPlus agility and speed (NFL)\nSurprising speed for his size, red zone weapon, size mismatch (WF)\nLong strides (WF)",
+      "negatives": "Could add strength, lacks ideal build and frame for WR1 (NFL)\nMay not blow you away with his speed (FD)\nGood, not elite speed (WF)"
+    },
+    "Blocking": {
+      "positives": "Unselfish blocking (FD)\nBig 10 Distinguished Scholar",
+      "negatives": "Average run blocker (NFL)\nCalf Strain 2025,missed three games"
+    }
+  },
+  "media_links": [
+    {
+      "description": "2025 Highlights",
+      "source": "YT - CFB on FOX",
+      "url": "https://www.youtube.com/watch?v=U5Com8KXY04"
+    },
+    {
+      "description": "2025 Highlights",
+      "source": "YT - Prospects",
+      "url": "https://www.youtube.com/watch?v=TyOrQgTEG84"
+    },
+    {
+      "description": "Scouting Report",
+      "source": "YT - Crown Global Media",
+      "url": "https://www.youtube.com/shorts/TCmNgnWE_ik"
+    },
+    {
+      "description": "Interview",
+      "source": "YT - Fanatics",
+      "url": "https://www.youtube.com/watch?v=dOOw6QPh4Rk"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Ascending “Z” receiver who continues to step out from the shadow of Ohio State teammate Jeremiah Smith. Tate has good size but would benefit from more play strength. He builds momentum quickly on intermediate and deep routes, utilizing speed and tempo to pressure cornerbacks. He can win over the top on verticals or separate over the first two levels with route savvy and separation burst. Tate tracks throws at top speed and makes his adjustments to run under them. He combines timing, body control and catch radius to dominate air space and consistently lands on the winning side of contested catches. Pass catching comes effortlessly with soft, strong hands and he consistently works back on throws to keep ballhawks from hawking. Tate displays rare polish for a player his age and has the talent to become a heralded pro within his first three seasons."
+        },
+        {
+          "title": "Strengths",
+          "text": "Plus agility, speed and body control. | Slips press and gets into stride quickly for vertical advantage. | Consistent route runner who leverages defenders out of position. | Route tempo and play speed overwhelms lesser corners. | No wasted motion; smooth turnover and a burst to separate. | Works back on most throws, eliminating playmaking angles for defenders. | Good spatial awareness against zone. | Impressive win rate when contested. | Outstanding ball tracking and catch focus downfield. | Dominates air space with elite high-point timing and hand strength. | Late fade adjustments prevent face-guarders from reading his hands."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Lacks ideal build and frame as a WR1 candidate. | Long press corners can limit some early release advantages. | Chest/pads rise, giving break clues on stop routes and comebacks. | Average run block strain by NFL standards. | Missed three games in 2025 with a calf strain."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Carnell Tate utilizes his smooth route running and IQ to be a versatile and effective receiver working the intermediate portions of the field."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nCarnell Tate grew up in Chicago before making the move to IMG Academy in Bradenton, Florida for his final two years of high school ball. At Marist High School, he flashed early with 28 catches, 444 yards, and five touchdowns as a freshman in 2019. The jump to IMG put him against elite competition daily, and he delivered, averaging 20.3 yards per catch as a senior while racking up 750 receiving yards and eight touchdowns over just eight games. A performance against powerhouse St. Frances Academy stood out on the recruiting trail, and by signing day, Tate held five-star status from both Rivals (6.1 grade) and 247Sports, with a composite ranking of No. 62 nationally and No. 10 among receivers.\n\nHe arrived in Columbus and wasted no time making an impact. As a true freshman in 2023, Tate appeared in all 13 games and hauled in 18 receptions for 264 yards and a touchdown, numbers that actually topped the freshman seasons of former Ohio State greats Chris Olave, Marvin Harrison Jr, and Jaxon Smith-Njigba. The 2024 campaign saw him step into a full-time starting role during the Buckeyes' national championship run. Playing opposite eventual first-round pick Emeka Egbuka and alongside freshman phenom Jeremiah Smith, Tate contributed 52 catches for 733 yards and four touchdowns across 15 starts. He turned in clutch performances when it mattered most, recording seven receptions for 87 yards against Texas in the Cotton Bowl semifinal, with five of those catches moving the chains.\n\nThe 2025 season, however, is when Tate truly arrived as a featured weapon. Despite missing three games with a calf strain, he posted career-best numbers across the board: 51 receptions for 875 yards and nine touchdowns, averaging 17.2 yards per catch. He became a legitimate big-play threat, averaging 32.5 yards per touchdown reception with five of his scores covering more than 40 yards. His nine-catch, 183-yard explosion against Minnesota showcased the ceiling. The numbers earned him second-team All-American recognition from multiple outlets, and he entered the NFL Draft having recorded at least one catch in 26 of 28 career games as a Buckeye. Beyond the field, Tate is a two-time OSU Scholar-Athlete, Academic All-Big Ten honoree, and first-team Academic All-American carrying a 3.50 GPA in sport industry. He declared for the draft on January 6, looking to become the fifth consecutive Ohio State receiver selected in the first round.\n\nWatch Tate's tape and you see a receiver who wins with precision, body control, and an understanding of how to attack coverage rather than pure athleticism. Tate profiles as a classic X or movement-Z receiver who will thrive in the intermediate areas where timing and route discipline matter most. His ability to manipulate defenders at the stem, track deep throws, and come down with contested catches gives him a clear path to starting snaps early in his career. The question scouts will debate is whether he represents a true alpha receiver or an elite complementary piece.\n\n\n\nScheme fit matters here. West Coast systems and timing-based offenses will get the most out of what he does well. Tate excels in that 10-to-20-yard range where he can work against zone coverage, find soft spots, and convert third downs. His game reminds me more of Chris Olave than Garrett Wilson when looking at recent Ohio State products. He is a technician who separates with nuance, not a receiver who is going to run past NFL corners consistently. That is not necessarily a limitation, but it does define his role. The combine and pro day will be massive for his draft stock. If that 4.6 number holds up in Indianapolis, it could push him out of the top 15. But if he runs in the low 4.5s and proves the stopwatch wrong, watch his name climb boards in a hurry.\n\n\n\nThe production, the pedigree, and the polish are all there. Tate played opposite elite talent throughout his college career and still commanded targets when defenses had every reason to take him away. His championship experience, academic profile, and leadership qualities add to the package. There is a floor here that should comfort any team selecting him, even if the ceiling may not quite reach the special category. He is a Day 1 contributor with third-down value who should settle in as a productive starter for years."
+        },
+        {
+          "title": "Overview",
+          "text": "Wiry, somewhat gangly pass catcher with weirdly incredible body control; goes up high to to snag passes in traffic—then somehow ends up on his feet.\n\nTate is a wily route technician with excellent length and body control and damn near automatic hands that he uses to dominate at the catch point. A former five-star recruit and two-year starter for the Buckeyes, he is a tall, deft athlete with a sinewy frame and long arms. He shows good burst off the line to create early separation, quickly eating up a corner’s cushion to threaten over the top. He is a technician as a route runner, sets up and sells double moves expertly, and shows the ability to drop his hips to cut on a dime on in-breakers or out routes. He tracks the ball well down the field and gives himself a great chance to reel in tightly contested passes by showing his hands as late as possible. He brings the gazelle-like speed to beat defenders over the top and was a big-play threat for Ohio State, averaging 17.5 yards per reception last year. He brings Stickum-equipped hands and notched zero drops on 58 targets in 2025. More than that, he has an uncommon catching ability: With canny, unflappable concentration and excellent body control, he regularly goes up high to snag passes in traffic, showing Tee Higgins–type ball skills. He reeled in 12 of 14 contested catches last season and went 22-of-32 in his college career, per PFF. He can line up all across the formation.\n\nTate has a wiry build and lacks top-tier strength as a route runner; he could struggle to fight off tough press coverage against bigger, stronger corners at the next level. He could stand to add some bulk to deal with the physicality in the NFL. He brings solid speed but lacks true explosive traits; he may be viewed as a no. 2 receiver rather than a prototypical no. 1."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "When you really look at at where we are right now in terms of Carnell Tate, the character, the blocking, the unselfishness, the hands not dropping any passes route, running consistency, everything you want in a very safe pick at wide receivers Carnell Tate, he will be that guy... Carnell Tate has the height to give those smaller corners a lot of trouble and he does not. He's got those Velcro hands... and he is open a lot... That average per catch over 17 yard average per catch... Carnell Tate to me is worthy based on grade of being a pick at number five to the New York Giants... The thing to me that always stands out about watching Carnell Tate, it never looks like he is efforting whatsoever. It looks very natural to him, right? He has incredible vice grip hands, he does a great job of controlling his body towards the sideline and make him catch us both inside and outside of his frame... I wouldn't say that we, I would not say that we have seen a ton of dynamic run after the catch stuff from Carnell Tate, but that's okay... He is a professional, I think he is amongst the most pro ready prospects regardless of position in the class. He can postop as a perimeter receiver, he can run a pretty diverse route tree. Great hands... No reason to believe that Carnell Tate won't make that tradition a reality very early on in the class... I think Joey and the other fans in New Jersey of the Giants will be very disappointed if Carnell Tate winds up sliding past five in this class... That brings us to the second best receiver in this class... I think it's neck and neck between Carnell Tate and Jordan Tyson from Arizona State.\n\n\nCarnell Tate...a player who was the number two wide receiver on his own team...his number one wide receiver was Jeremiah Smith who could be a top three pick next year...Carnell Tate may not blow you away with his speed...probably be solid...not gonna be 4, 2, 9...He's on the shortlist...for most pro ready players in the class, pristine route runner didn't drop a single pass all season this year. Good vertical threat as well. Smart instinctive down the field, very reliable...the kind of guy that should be a day one starter...somebody can catch the football on a regular basis...that's what Tate does.\n\n\"I think it's Carne Tate and Jordan Tyson kind of vying...it's Tyson and Tate vying for that...all three are tough 15 picks...I don't have 15 players graded higher than those three...Jordan Tyson and Carne Tate because of their combination of size and likely speed as well will end up going a little bit higher...Carne Tate...Unbelievably professional wide receiver already is carne Tate route running pristine catch radius outstanding. His ability to make catches that are extraordinary look ordinary speaks for itself. Good size, good speed, he is terrific...you think about Car Tate getting back and Tyson coming back. These guys have been banged up a little bit...the hamstring with Tate out with three games will be back from Michigan...now Car take Jordan Tyson...Those three guys...top 15 field. I'd be surprised if those three got outta the top 10 to 12...and we have Carne Tate and you talked about him\""
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Carnell Tate is next in the Ohio State pipeline of secondary wide receivers capable of emerging as a primary target at the NFL level.\n\nTate's height and wingspan offer a quarterback—friendly target. He extends the catch point away from his frame and plucks the ball from the air. Tate is a bouncy athlete who can climb the ladder over defenders at the catch point. He has soft, reliable hands and excellent ball tracking skills.\n\nTate joined Ohio State's program as a 5—star recruit in the 2023 class, per 247Sports. Tate thrives in the WR2 role in the Ohio State Buckeyes' offense. Last season, he caught 52 passes for 733 yards and four touchdowns."
+        },
+        {
+          "title": "Positives",
+          "text": "— Savvy and crafty route—running profile. Tate is nuanced and detailed with his ability to separate from opposing defenders. He is an excellent vertical route salesman by pushing defensive backs with a strong vertical takeoff and stem, giving the illusion he is running a deep route. Versus off—coverage, he stems his routes with intent to manipulate and move the defender off their spot to free him space at the break point. Tate is a long strider, who eats up grass with free releases.\n\n— Body control and ball skills to attack the football in flight. Tate can extend at the catch point with the best of them. He utilizes his whole frame and wingspan to make a play on the football that enters his zip code.\n\n— Toughness as a perimeter blocker. Tate is not afraid to throw his frame into the action and make blocks to spring his teammates. He picks off linebackers and safeties on outside run concepts to seal the edge for the running back.\n\n— Tate has a high football IQ that is displayed with his route running against both man and zone coverages. In addition to his ability to line up at any receiver position. His versatility assists playcallers in creating advantageous opportunities and matchups for their quarterback. With Tate's size and skill set, he would be a difficult cover for most nickel defenders to stay in phase with given he'd have a two—way go from the slot position."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Tate is a leggy athlete who Lacks the explosiveness off the line to be a constant vertical separator against athletic press corners. he does not possess Great top—end speed to take the top of the defense, though. this places more emphasis on his approach and technical prowess in defeating press corners.\n\n— Tate is a smooth and fluid mover, but his Ability to create after the catch in the NFL may be limited. he creates extra yards with angles to hit open space after the catch. if those angles are cut off by defenders, he will struggle to make defenders miss in congestion.\n\n— due to his long legs, there are instances where Tate experiences segmented breaks at the top of his routes. These issues can tip his hand against cornerbacks with an aggressive downhill trigger.\n\n— Improving his play strength will be necessary for Tate. he can allow handsy corners to stay attached too long in his routes. playing better and stronger through contact will force defensive penalties and afford him more free releases."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Ohio State has been a factory for NFL receiver talent in recent years, and Tate will continue that tradition in 2026. With the Buckeyes, Tate was never the true No. 1 receiver, as Marvin Harrison Jr and Jeremiah Smith were the featured receivers. However, like Emeka Egbuka, Tate has still impressed with a good set. Tate flashed as a freshman in 2023, catching 18 passes for 264 yards and a touchdown. In 2024, Tate had 50 receptions for 698 yards and four touchdowns as the No. 3 receiver behind Smith and Egbuka. In 2025, Smith was the starter across from Smith and had an impressive season. In 2025, Tate had 51 receptions for 875 yards with nine touchdowns\nFor the NFL, Tate is a tall, long receiver with surprising speed for a big receiver. With his size, Tate is a red-zone weapon and provides a size mismatch to make leaping catches over defensive backs. Tate is phenomenal on jump balls, using his height, long arms, and leaping ability to make acrobatic catches over defensive backs.\nWhile Tate has good size, he has enough speed to generate separation and some surprising twitch for a tall wide out. Tate can run well to work on defenses downfield and threaten them at all levels. He is a long-strider with a second gear that can explode in the open field with the sheer speed to run away from defenders. Tate shows some nice run-after-the-catch ability and is a threat on screens. In the NFL, his speed will be diminished somewhat, but there is no doubt that Tate has above-average speed for a big wideout.\nIn the 2026 NFL Draft, Tate looks like a first-round pick and could be starting as soon as his rookie season. As a pro, he may not be a No. 1 receiver but should be a very good No. 2, similar to Tee Higgins."
+        },
+        {
+          "title": "Strengths",
+          "text": "Mismatch height and length\nQuick, can stretch a defense vertically\nPlaymaker, threat to score with size or speed\nStrong hands\nNatural hands catcher\nImpressive body control\nVery good along the sideline\nSkilled at making contested catches over defensive backs\nBig target\nLeaping ability\nPhysical with corners\nAttacks the football\nAdept at finding soft spots in zone\nRed zone weapon\nPresents a size mismatch\nRun after the catch skills\nGood route-runner\nEnough quickness to get separation\nSecond gear after the catch\nThird down weapon\nOutside receiver\nUpside\nGood football character\nReady to compete quickly\nExperienced and successful against good college programs"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "More of a No. 2\nGood but not elite speed"
+        },
+        {
+          "title": "Player Comp",
+          "text": "Quentin Johnston. In terms of style of play, Tate reminds me of Johnston coming out of TCU, except Tate has much better hands. Tate and Johnston are similar-sized, speed receivers. Depending on where he lands, Tate could be a comparable pro to Johnston."
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Wiry, somewhat gangly pass catcher with weirdly incredible body control; goes up high to to snag passes in traffic—then somehow ends up on his feet.\n\nTate is a wily route technician with excellent length and body control and damn near automatic hands that he uses to dominate at the catch point. A former five-star recruit and two-year starter for the Buckeyes, he is a tall, deft athlete with a sinewy frame and long arms. He shows good burst off the line to create early separation, quickly eating up a corner’s cushion to threaten over the top. He is a technician as a route runner, sets up and sells double moves expertly, and shows the ability to drop his hips to cut on a dime on in-breakers or out routes. He tracks the ball well down the field and gives himself a great chance to reel in tightly contested passes by showing his hands as late as possible. He brings the gazelle-like speed to beat defenders over the top and was a big-play threat for Ohio State, averaging 17.5 yards per reception last year. He brings Stickum-equipped hands and notched zero drops on 58 targets in 2025. More than that, he has an uncommon catching ability: With canny, unflappable concentration and excellent body control, he regularly goes up high to snag passes in traffic, showing Tee Higgins–type ball skills. He reeled in 12 of 14 contested catches last season and went 22-of-32 in his college career, per PFF. He can line up all across the formation.\n\nTate has a wiry build and lacks top-tier strength as a route runner; he could struggle to fight off tough press coverage against bigger, stronger corners at the next level. He could stand to add some bulk to deal with the physicality in the NFL. He brings solid speed but lacks true explosive traits; he may be viewed as a no. 2 receiver rather than a prototypical no. 1."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Wiry, somewhat gangly pass catcher with weirdly incredible body control"
+        },
+        {
+          "title": "Traits",
+          "text": "Smooth Footwork\nSure Hands\nGot That Dog in Him"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former five-star recruit out of Chicago. Was the no. 9 wide receiver and the no. 58 overall player in the 2023 class. Signed with Ohio State out of IMG Academy and contributed early in his career before taking on an expanded role by his junior season. Missed multiple games late in the 2025 campaign due to a lower-body injury and calf tightness."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "Has lowered his drop rate each season (10 percent in 2023, 5.5 percent in 2024, and 0 percent in 2025) while increasing his contested catch rate each year (from 50 to 60 to 85.7 percent).\nWas named a Big Ten Conference Distinguished Scholar (which requires a 3.7 or better grade point average) in the 2024-25 academic year.\nSays that if he could watch just one movie for the rest of his life, it would be The Fate of the Furious."
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF 'TONY HAWK'S PRO SKATER'"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.75,
+    "prospect_grade_indicator": "Year 1 Starter",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Chris Olave",
+    "eligibility": "Junior",
+    "nfl_rank": 9,
+    "nfl_pos_rank": 2
+  },
+  "bleacher_profile": {
+    "grade": 8.3,
+    "grade_indicator": null,
+    "overall_rank": 11,
+    "position_rank": null,
+    "pro_comparison": "Michael Thomas",
+    "projected_round": "1st Round"
+  },
+  "walter_profile": {
+    "player_comp": "Quentin Johnston. In terms of style of play, Tate reminds me of Johnston coming out of TCU, except Tate has much better hands. Tate and Johnston are similar-sized, speed receivers. Depending on where he lands, Tate could be a comparable pro to Johnston."
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF 'TONY HAWK'S PRO SKATER'",
+    "traits": "Smooth Footwork\nSure Hands\nGot That Dog in Him"
+  },
+  "injury_history": [
+    {
+      "detail": "Calf Strain",
+      "recovery_time": "3 Games",
+      "year": "2025"
+    }
+  ]
+}

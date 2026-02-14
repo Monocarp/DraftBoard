@@ -1,0 +1,430 @@
+{
+  "name": "CJ Daniels",
+  "slug": "cj-daniels",
+  "overview": {
+    "POS": "WR",
+    "College": "MIAMI FL",
+    "Height": "6' 2\"",
+    "Weight": "205",
+    "Age": "0",
+    "DOB": "00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": "64",
+    "Snaps": "2790",
+    "24/7 Sports": "79",
+    "ESPN": "TBD",
+    "Draft Buzz": "83.0 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.3",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "MIAMI FL",
+  "height": "6' 2\"",
+  "weight": "205",
+  "age": 0.0,
+  "dob": "00:00:00",
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": 64,
+  "snaps": 2790,
+  "site_ratings": {
+    "24/7 Sports": "79",
+    "ESPN": "TBD",
+    "Draft Buzz": "83.0 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.3",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "74.6",
+      "percentile": 0.105
+    },
+    "2024 Grade": {
+      "value": "65.7",
+      "percentile": 0.105
+    },
+    "2023 Grade": {
+      "value": "87.1",
+      "percentile": 0.947
+    },
+    "Receiving Grade": {
+      "value": "76",
+      "percentile": 0.158
+    },
+    "Yards/ Routes Run": {
+      "value": "1.86",
+      "percentile": 0.105
+    },
+    "Drop %": {
+      "value": "4.5",
+      "percentile": 0.368
+    },
+    "Contested Catch": {
+      "value": "75",
+      "percentile": 0.895
+    },
+    "Grade vs Man": {
+      "value": "64.1",
+      "percentile": 0.053
+    },
+    "YAC/Reception": {
+      "value": "3.9",
+      "percentile": 0.0
+    },
+    "Missed Tkls Forced": {
+      "value": "4",
+      "percentile": 0.0
+    },
+    "ADOT": {
+      "value": "10.4",
+      "percentile": 0.447
+    },
+    "Deep Yards": {
+      "value": "167",
+      "percentile": 0.263
+    },
+    "Touchdowns": {
+      "value": "7",
+      "percentile": 0.447
+    },
+    "Elusiveness": {
+      "value": null,
+      "percentile": null
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 125.25,
+      "positional_rank": "19.5"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 73.0,
+      "positional_rank": "11"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 174.0,
+      "positional_rank": "28"
+    },
+    {
+      "source": "Jeremiah",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 69.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 185.0,
+      "positional_rank": "20"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Tankathon",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Jeremiah": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "Tankathon": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "5th Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Luke MCCAFFREY",
+    "Bleacher": "Van Jefferson",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 106.7,
+    "Hands": 0.81,
+    "Short Receiving": 0.74,
+    "Med Routes": 0.79,
+    "Deep Threat": 0.81,
+    "Blocking": 0.56
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 37,
+      "career": 197
+    },
+    "Wide": {
+      "2025": 223,
+      "career": 733
+    }
+  },
+  "skills_traits": {
+    "Character/Mentality": {
+      "positives": null,
+      "negatives": null
+    },
+    "Receiving Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technique": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Blocking/Other": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "CJ Daniels is a crafty receiver who has a high IQ and understanding of how to get open and be an available target for a quarterback."
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nCJ Daniels emerged as a dynamic playmaker at Liberty, culminating in a breakout 2023 campaign with 1,067 yards and 10 touchdowns. The 6'1\", 195-pound wideout played four seasons for the Flames before transferring to LSU for his final year of eligibility. Daniels' journey began at Parkview High School in Georgia, where he earned all-region honors and helped secure two regional titles.\n\nAt Liberty, Daniels steadily improved his production, overcoming an injury-shortened 2022 season to become a second-team All-Conference USA selection in 2023. His explosive play-making ability was evident, averaging an impressive 19.4 yards per catch. Daniels showcased his big-play potential with five 100-yard games, including a career-high 157 yards against both Sam Houston State and New Mexico State in the Conference USA Championship Game.\n\nDaniels capped his tenure at Liberty with a strong showing in the Fiesta Bowl against Oregon, hauling in 8 receptions for 79 yards. His transfer to LSU for the 2024 season positioned him to fill the void left by NFL-bound receivers in a high-powered offense, though he faced stiff competition for playing time in spring practice.\n\nDaniels profiles as a potential Day 3 selection with upside as a complementary receiver in an NFL offense. His ability to create big plays and find the end zone will intrigue teams looking to add explosiveness to their passing attack. Daniels fits best in a spread offense that can utilize his ability to stretch the field and work the intermediate areas.\n\n\nWhile he may not possess the elite traits of a number-one receiver, Daniels has the skill set to develop into a reliable second or third option. His experience in both outside and slot alignments adds versatility to his pro prospects. Daniels will need to continue refining his route running and improving his play strength to maximize his potential at the next level.\n\n\nTeams employing vertical passing schemes will likely view Daniels as an intriguing developmental prospect.   \n\n                                        \n                                            \n                                                Written By:\n                                                Wyatt Brooks (SEC)"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "CJ Daniels has proven to be a reliable pass—catcher when given the opportunity to make plays.\n\nHe has the size, frame and ball skills to make a living on the outside and in contested—catch situations.\n\nDaniels initially enrolled at Liberty and spent four seasons there. The 3—star recruit in the 2020 class then transferred to LSU in 2024 before leaving to join Miami ahead of the 2025 season."
+        },
+        {
+          "title": "Positives",
+          "text": "— Maximizes his wingspan at the catch point, using full extension to make plays on the ball.\n\n— makes plays with the ball in the air, flashing late hands and Good Tracking ability.\n\n— Tempos his releases with speed alterations while Staying square before attacking leverage.\n\n— uses his head and shoulders well as a route—runner and salesman.\n\n— follows blocks on wide receiver and tunnel screens into daylight."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Lacks explosiveness and speed to race past press—aligned cornerbacks. release package and Ability to win clean and quickly at the line of scrimmage are pivotal as a result.\n\n— average yards—after—catch target. Lacks creativity to make defenders miss in space.\n\n— does not separate at a High level to project as an impact target for NFL offenses. relies too much on contested catches."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.3,
+    "grade_indicator": null,
+    "overall_rank": 174,
+    "position_rank": null,
+    "pro_comparison": "Van Jefferson",
+    "projected_round": "5th Round"
+  },
+  "injury_history": []
+}

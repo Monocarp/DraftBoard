@@ -1,0 +1,523 @@
+{
+  "name": "Francis Mauigoa",
+  "slug": "francis-mauigoa",
+  "overview": {
+    "POS": "OT",
+    "College": "Miami (FL)",
+    "Height": "6' 6\"",
+    "Weight": "315",
+    "Age": "TBD",
+    "DOB": null,
+    "Year": "Jr",
+    "Prj. Rd": "1st Round",
+    "Games": null,
+    "Snaps": null,
+    "24/7 Sports": null,
+    "ESPN": "92",
+    "Draft Buzz": null,
+    "NFL.com": "6.48",
+    "BR": "8",
+    "Gridiron": null
+  },
+  "position": "OT",
+  "college": "Miami (FL)",
+  "height": "6' 6\"",
+  "weight": "315",
+  "age": null,
+  "dob": null,
+  "year": "Jr",
+  "projected_round": "1st Round",
+  "games": null,
+  "snaps": null,
+  "site_ratings": {
+    "24/7 Sports": null,
+    "ESPN": "92",
+    "Draft Buzz": null,
+    "NFL.com": "6.48",
+    "BR": "8",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "84.4",
+      "percentile": 0.8
+    },
+    "2024 Grade": {
+      "value": "70.7",
+      "percentile": 0.3
+    },
+    "2023 Grade": {
+      "value": "68.1",
+      "percentile": 0.667
+    },
+    "Run Block Grade": {
+      "value": "80.2",
+      "percentile": 0.6
+    },
+    "Pass Block Grade": {
+      "value": "87.2",
+      "percentile": 0.9
+    },
+    "True Pass Set Grade": {
+      "value": "85",
+      "percentile": 0.9
+    },
+    "Pass Block Efficiency": {
+      "value": "98.6",
+      "percentile": 0.7
+    },
+    "Zone Grade": {
+      "value": "75.3",
+      "percentile": 0.4
+    },
+    "Gap Grade": {
+      "value": "75.5",
+      "percentile": 0.8
+    },
+    "Sacks Allowed": {
+      "value": "2",
+      "percentile": 0.35
+    },
+    "Hits Allowed": {
+      "value": "3",
+      "percentile": 0.3
+    },
+    "Hurries Allowed": {
+      "value": "6",
+      "percentile": 0.75
+    },
+    "Pressures Allowed": {
+      "value": "11",
+      "percentile": 0.5
+    },
+    "Penalties": {
+      "value": "7",
+      "percentile": 0.05
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 10.076923076923077,
+      "positional_rank": "1.7142857142857142"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 19.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 8.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 11.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 10.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 10.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 15.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 11.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 5.0,
+      "positional_rank": "2"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 6.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 5.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 13.0,
+      "positional_rank": "2"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 5.6923076923076925,
+    "PFF": 3.0,
+    "ESPN": null,
+    "Brugler": 6.0,
+    "Kiper": 3.0,
+    "Miller": 3.0,
+    "Bleacher": 5.0,
+    "Walter": 6.0,
+    "TDN": 5.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 3.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "TBD",
+    "Bleacher": "1st Round"
+  },
+  "player_comps": {
+    "NFL": "Taliese Fuaga",
+    "Miller": "TBD",
+    "DraftBuzz": "TBD",
+    "Bleacher": "Taliese Fuaga",
+    "WF": "TBD",
+    "Ringer": "Darnell Wright",
+    "NFL.com": "Taliese Fuaga"
+  },
+  "strengths": "• Explosive, Violent Player\n• Strong, Independent Hand Usage\n• Elite Anchor, Strength Profile\n• Knee Bender, Fluid Lower Body\n• Body Control, Recovery Ability\n• Natural Mirror, Feel for Timing",
+  "weaknesses": "• Just Adequate Foot Speed\n• Limited Range in Pass Pro\n• Overaggressive, Leaves Feet Behind\n• Processing Against Blitz\n• May Not Have Length for Tackle",
+  "accolades": "• 2023 Freshman All Am. \n• 2024 2nd Team All ACC\n• 2024 #5 Freaks List\n• 5 Star Recruit\n• Top Tackle HS Prospect\n• NFL Bloodlines",
+  "player_summary": "Francis Mauigoa, a durable three-year starter and 2025 captain at right tackle with 26 consecutive starts, combines a dense, broad, powerfully muscled frame—more guard-like than typical tackle—with surprising movement and athleticism for the position. He plays with high football IQ, excellent contact balance, and a strong core, delivering firm initial pop and torque on run blocks while patiently sliding, latching, and redirecting rushers in pass protection. Mauigoa rarely loses to speed, anchors well against power, maintains pocket depth, and smothers momentum at the turn. In the run game, he walls off defenders with a wide base and shows destructive finishing power. Primary concerns are excessive leaning that erodes leverage and sustain on drive blocks, vulnerability to spin counters, average range reaching outside-zone landmarks, and shorter arms that limit recovery on stacked or late moves. He's an early Day 1 starter at right tackle with guard versatility and a high ceiling.",
+  "draftbuzz_grades": {
+    "Pass Blocking Grade": null,
+    "Run Blocking Grade": null
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "LT": {
+      "2025": 0,
+      "career": 0
+    },
+    "LG": {
+      "2025": 0,
+      "career": 0
+    },
+    "C": {
+      "2025": 0,
+      "career": 0
+    },
+    "RG": {
+      "2025": 10,
+      "career": 10
+    },
+    "RT": {
+      "2025": 877,
+      "career": 1743
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Upper Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body": {
+      "positives": null,
+      "negatives": null
+    },
+    "Technical Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Ability": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [
+    {
+      "description": "Career Highlights",
+      "source": "YT - NFL Film Room",
+      "url": "https://www.youtube.com/watch?v=EmRrCMVEKIo"
+    },
+    {
+      "description": "Scouting Report",
+      "source": "YT - Crown Global Media",
+      "url": "https://www.youtube.com/shorts/KUxqcHgNsnI"
+    },
+    {
+      "description": "Interview",
+      "source": "YT - InsideTheU",
+      "url": "https://www.youtube.com/watch?v=rSh055c5WzA"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Highly touted prospect who met expectations as a durable three-year starter at right tackle. Mauigoa has a guard's broad build, but he moves like a tackle in pass sets. He’s highly experienced with an impressive football IQ that pops on tape. He has good contact balance and a strong core. He delivers firm first contact but excessive leaning diminishes not only his leverage and sustain as a run blocker but also his ability to deal with spin counters when protecting. He’s good at trapping rushers at the turn and can smother their momentum. He has the footwork, anchor and punch timing to diversify his pass-set approach. He works with an innate feel for pocket depth and is rarely out-paced to the top by speed. Mauigoa has a high ceiling but the leaning must be eradicated. He’ll be an early starter at right tackle but a move to guard could be on the table in the future."
+        },
+        {
+          "title": "Strengths",
+          "text": "Three-year starter and 2025 team captain. | Dense build with broad frame and outstanding lean muscle mass. | Well-balanced delivering pop on contact into the opponent's frame. | Generates torque from hips to clear kick-out blocks from gaps. | Fits the block and cranks up his foot chop to push the sled. | Good hip-to-hip positioning working double-teams. | Unlocks hips and digs in with in-steps to door-jamb bull rush. | Hands are patient during smooth, measured pass slides. | Latches in and runs the rush around the pocket. | Has anchor for vertical sets and range to hit diagonal set points."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Average range getting to angles and landmarks in outside zone. | Too much leaning and not enough bending as a drive blocker. | Falls off the block when feet lag behind his pads. | Spin counters are a mounting concern in pass pro. | Lack of length limits rush redirection when beaten. | Could struggle staying connected to stacked moves."
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "You know exactly what you’re getting with Francis Mauigoa: Power, explosiveness, and violence. He’s a day-one, decade-long starter"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "Mauling, wide-bodied offensive lineman who blocks with a combination of savvy positioning and people-moving power.\n\nMauioga is a big, battle-tested blocker with top-tier power and nimble feet. A three-year starter for the Hurricanes, he played his whole career at right tackle—and could stay there in the pros—but brings intriguing upside as a potential guard convert, as well. Sporting a thick, burly frame with a powerful lower half, he punches with plenty of pop in pass protection, shocking defenders to neutralize their initial attack. He’s a relatively easy mover for his size, showing quickness and agility out of his stance. He’s a savvy player who understands positioning and blocking angles, first squeezing down when his linemate needs help before picking up looping rushers to the edge. He’s physical but brings a calm, collected, and methodical style as a blocker. Even when he gets beaten initially, he never panics. In the run game, he fires out of his stance and uproots defenders. He can clear lanes on down blocks, washing defenders down the line. He looks for work when he’s uncovered; he never wants an opponent to have an easy snap.\n\nMauigoa lacks top-tier athleticism, length, and foot speed and could struggle to match speedy rushers at the next level. He is late to punch occasionally, which leads to balance issues in pass protection. He’s occasionally a beat slow to react to stunts. He leans into run blocks too much at times, which opens him up to rips and push-pull moves. Some teams may view him as a guard in the NFL."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Francis Mauigoa...entertaining to watch...the ability athletically to do what he can do, whether it's going to...down the field or whether it's going towards the sideline doesn't even matter. This kid can move and he's a destructive run blocker...Did a heck of a job keeping that defensive end...at bay and Pass Pro as well. Keeps that frame between the defensive end and the quarterback on a regular basis...he has a powerhouse...will mall you...a great right tackle...a great guard. Forget about the whole Evan Neil thing...a stud...excellent pass protector road grader in the running game. He has just got an unbelievable build. He is a big thick dude who has played a lot of football."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nMauigoa has started all 26 games of his college career at right tackle. He quickly gets to depth and reaches landmarks kicking out to meet speed rushers. He works his hands inside and latches on to defenders. When Mauigoa must mirror defenders, he stays balanced and changes direction well enough to stay in front of them. He gets off the ball well in the run game and is big enough to wall off defenders with a wide base. He has the traits to develop into an effective zone blocker with improved footwork. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Francis Mauigoa is a densely—built, stout presence with very good play strength and square power to anchor and create movement on day one in the NFL. His adequate range in pass protection signals a classic quality collegiate tackle—to—guard convert in the mold of recent draft picks Jonah Savaiinaea and Steve Avila.\n\nMauigoa is a 6'6\", 335—pound tackle prospect, who entered the Miami program as a 5—star recruit in the 2023 class.\n\nMauigoa was a second—team All—ACC selection in 2024 after starting 13 games at right tackle. He was also an All—ACC freshman team selection in 2023 after starting 13 games at right tackle."
+        },
+        {
+          "title": "Positives",
+          "text": "— Thick, sturdy and well—rounded build with very good play strength and square power.\n\n— Delivers knock—back power at the point of attack with good grip strength and leg drive to uproot defenders on angle—drive, double—team and pin blocks.\n\n— Good body control and fluidity allow him to reposition, reset and recover better than most players his size.\n\n— Shows a good feel on spacing and timing in the zone run game to timely overtake/release off of combo blocks and 'collect' movement across his face.\n\n— Commanding, elite—level anchor to halt the bull—rush.\n\n— Utilizes independent, active hands in pass protection to bait and disrupt rushers."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Adequate foot quickness and range on an island in pass protection result in a short corner once rushers get perpendicular to his frame.\n\n— Feet do not always come with him during the 'drive' portion of run blocks, leaving him overextended and susceptible to getting slipped clean late in the rep."
+        }
+      ]
+    },
+    {
+      "source": "ESPN",
+      "sections": [
+        {
+          "title": "Analysis",
+          "text": "Mauigoa has started all 26 games of his college career at right tackle. He quickly gets to depth and reaches landmarks kicking out to meet speed rushers. He works his hands inside and latches on to defenders. When Mauigoa must mirror defenders, he stays balanced and changes direction well enough to stay in front of them. He gets off the ball well in the run game and is big enough to wall off defenders with a wide base. He has the traits to develop into an effective zone blocker with improved footwork. -- Steve Muench"
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Mauling, wide-bodied offensive lineman who blocks with a combination of savvy positioning and people-moving power.\n\nMauioga is a big, battle-tested blocker with top-tier power and nimble feet. A three-year starter for the Hurricanes, he played his whole career at right tackle—and could stay there in the pros—but brings intriguing upside as a potential guard convert, as well. Sporting a thick, burly frame with a powerful lower half, he punches with plenty of pop in pass protection, shocking defenders to neutralize their initial attack. He’s a relatively easy mover for his size, showing quickness and agility out of his stance. He’s a savvy player who understands positioning and blocking angles, first squeezing down when his linemate needs help before picking up looping rushers to the edge. He’s physical but brings a calm, collected, and methodical style as a blocker. Even when he gets beaten initially, he never panics. In the run game, he fires out of his stance and uproots defenders. He can clear lanes on down blocks, washing defenders down the line. He looks for work when he’s uncovered; he never wants an opponent to have an easy snap.\n\nMauigoa lacks top-tier athleticism, length, and foot speed and could struggle to match speedy rushers at the next level. He is late to punch occasionally, which leads to balance issues in pass protection. He’s occasionally a beat slow to react to stunts. He leans into run blocks too much at times, which opens him up to rips and push-pull moves. Some teams may view him as a guard in the NFL."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Mauling, wide-bodied offensive lineman"
+        },
+        {
+          "title": "Traits",
+          "text": "Bulldozer Power\nSmooth Footwork\nGot That Dog in Him"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former five-star recruit out of IMG Academy in Bradenton, Florida. Was the no. 1 offensive tackle and the no. 9 overall player in the 2023 class. Started at right tackle every season he was at Miami. Named consensus first-team All-American, first-team All-ACC, and the ACC Jacobs Blocking Trophy winner in 2025."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "His brother Francisco played linebacker at Washington State and Miami before being picked by the Jets in the fifth round of the 2025 draft.\nCaught a big-man TD against Syracuse this past season.\nHis first sport growing up was volleyball. He also played rugby.\nHis pregame meal consists of rice, two steaks, one chicken, and some green beans."
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF DARNELL WRIGHT"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 6.48,
+    "prospect_grade_indicator": "Will Become Good Starter Within Two Years",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": "Taliese Fuaga",
+    "eligibility": "Junior",
+    "nfl_rank": 13,
+    "nfl_pos_rank": 2
+  },
+  "bleacher_profile": {
+    "grade": 8.0,
+    "grade_indicator": null,
+    "overall_rank": 15,
+    "position_rank": null,
+    "pro_comparison": "Taliese Fuaga",
+    "projected_round": "1st Round"
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF DARNELL WRIGHT",
+    "traits": "Bulldozer Power\nSmooth Footwork\nGot That Dog in Him"
+  },
+  "injury_history": []
+}

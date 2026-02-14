@@ -1,0 +1,406 @@
+{
+  "name": "Justin Joly",
+  "slug": "justin-joly",
+  "overview": {
+    "POS": "TE",
+    "College": "NC State",
+    "Height": "6' 3\"",
+    "Weight": "263",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "48",
+    "Snaps": "1901",
+    "24/7 Sports": "78",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.3 / 100",
+    "NFL.com": "TBD",
+    "BR": "7.1",
+    "Gridiron": "TBD"
+  },
+  "position": "TE",
+  "college": "NC State",
+  "height": "6' 3\"",
+  "weight": "263",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 48,
+  "snaps": 1901,
+  "site_ratings": {
+    "24/7 Sports": "78",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.3 / 100",
+    "NFL.com": "TBD",
+    "BR": "7.1",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "76.3",
+      "percentile": 0.9
+    },
+    "2024 Grade": {
+      "value": "70.5",
+      "percentile": 0.4
+    },
+    "2023 Grade": {
+      "value": "70.4",
+      "percentile": 0.889
+    },
+    "Receiving Grade": {
+      "value": "80.7",
+      "percentile": 0.9
+    },
+    "Drop %": {
+      "value": "2",
+      "percentile": 0.8
+    },
+    "Cont. Catch Ratio": {
+      "value": "57.1",
+      "percentile": 0.5
+    },
+    "Yards Per Route Run": {
+      "value": "1.78",
+      "percentile": 0.7
+    },
+    "YAC Per Reception": {
+      "value": "3.6",
+      "percentile": 0.0
+    },
+    "Missed Tkles Forced": {
+      "value": "6",
+      "percentile": 0.55
+    },
+    "Pass Block Grade": {
+      "value": "67.5",
+      "percentile": 0.4
+    },
+    "Run Block Grade": {
+      "value": "54.6",
+      "percentile": 0.3
+    },
+    "Touchdowns": {
+      "value": "7",
+      "percentile": 0.9
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 123.2,
+      "positional_rank": "4.5"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 87.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 87.0,
+      "positional_rank": "4"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "2"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 100.0,
+      "positional_rank": "6"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 147.0,
+      "positional_rank": "7"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 195.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "3RD",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Dallin HOLKER",
+    "Bleacher": "Isaiah Likely",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 102.5,
+    "Hands": 0.77,
+    "Short Receiving": 0.8,
+    "Intermediate Routes": 0.86,
+    "Deep Threat": 0.86,
+    "Blocking": 0.61
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot Snaps": {
+      "2025": 158,
+      "career": null
+    },
+    "Inline Snaps": {
+      "2025": 149,
+      "career": null
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nJustin Joly, born January 2004, the 6'3\", 251-pound tight end from Brewster, New York cut his teeth at Iona Prep High School under coach Joe Spagnolo, where he dominated varsity competition for three years. His 123 catches for 1,827 yards and 22 touchdowns helped propel Iona Prep to an 11-1 senior campaign, yet major programs barely noticed-ESPN rated him a modest three-star prospect while both 247 Sports and Rivals saw just two stars worth of potential.\n\nJoly landed at UConn as a 215-pound tweener, somewhere between receiver and tight end, and immediately went to work reshaping both his body and his game. His freshman year brought modest production with 18 grabs for 250 yards and two scores, but sophomore year saw the metamorphosis accelerate-56 catches for 578 yards announced his arrival as a legitimate receiving threat. The production caught eyes beyond Storrs, and when Joly entered the transfer portal, NC State came calling with promises of bigger stages and better competition.\n\nThe gamble paid off handsomely for both parties in 2024. Despite facing significantly tougher defenses in ACC play, Joly erupted for 43 catches and a team-leading 661 yards, averaging an eye-popping 15.4 yards per reception-fourth best among all FBS tight ends. Those 43 receptions marked the fifth-highest single-season total for a tight end in Wolfpack history, while his yardage ranked fourth all-time at the position. The Mackey Award watchlist nod before the season proved prophetic, as Joly transformed from transfer question mark to offensive centerpiece, adding over 20 pounds of functional strength along the way while maintaining the movement skills that make him special.\n\nJoly's  ability to win contested catches at a ridiculous clip speaks to the kind of possession receiver teams covet on third downs and in the red zone. Watch him work against press coverage and you see a player who understands leverage, timing, and how to use his hands to create just enough separation. That basketball mentality when the ball arrives translates directly to back-shoulder throws and situations where quarterbacks need someone to bail them out.\n\n\n    \n    The blocking concerns are real but somewhat overblown when you consider how most teams deploy their receiving tight ends in today's game. Sure, he'll never be mistaken for a sixth offensive lineman, but his willingness to mix it up and improving technique suggest he can become functional enough to stay on the field for all three downs. Teams running heavy 12 personnel with motion and misdirection will savor his ability to stress linebackers horizontally while threatening the seam vertically. His youth-barely 21 years old-combined with his dramatic physical development from high school through college indicates there's still untapped potential in that frame.\n\n\n    \n    Round four feels like his sweet spot, though a strong Senior Bowl showing could push him higher in conversations. Offensive coordinators who prioritize creating favorable matchups will fall in love with his versatility and production against quality competition. He profiles as an immediate contributor in the passing game who can develop into a complete player with pro coaching and another year in an NFL strength program."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Justin Joly has incredibly strong hands with an impressive catch radius to be a weapon at tight end. He's a tactician running routes and brings a workman's mentality after the catch. A smooth—moving chess piece, Joly lines up all over a formation, adds as a move—blocker in the run game and is a surprising pass protector.\n\nThe former 2—star recruit and UConn transfer set career—highs this past season in catches (49) and touchdown receptions (seven) but didn't create the same explosive impact from 2024 when he averaged nearly 15.5 yards per reception. Instead, the first—team All—ACC performer became a security blanket for an underwhelming North Carolina State offense and showcased his playmaking ability.\n\n— While predominantly used as a detached tight end, Joly creates mismatch opportunities from multiple alignments, while adding value as a blocker."
+        },
+        {
+          "title": "Positives",
+          "text": "— While predominantly used as a detached tight end, Joly creates mismatch opportunities from multiple alignments, while adding value as a blocker.\n\n— The 6'3\", 251—pound tight end shows off excellent manipulation tactics at the top of his routes to move defenders where he wants.\n\n— His receiving prowess extends to recognizing zone defense and reading leverage to settle and exploit soft spots. He's a smart player with a physical presence after the catch, too.\n\n— Joly has fantastic hands. His ball skills and catch radius make him a red—zone threat, helping him score eleven touchdowns over the last two seasons. He times jumps well and contact at the catch point doesn't stop him from completing the process."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Joly needs to improve his functional strength to help him block more consistently and play through contact in man coverage.\n\n— The 21—year—old prospect will become a viable in—line option by cleaning up his blocking technique, high pad level and wide base.\n\n— He isn't a very explosive mover. At the top of his routes, Joly's quickness is inconsistent. An increased emphasis on foot—speed and explosion through route—breaks will create more separation across his route tree."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.1,
+    "grade_indicator": null,
+    "overall_rank": 100,
+    "position_rank": null,
+    "pro_comparison": "Isaiah Likely",
+    "projected_round": null
+  },
+  "injury_history": []
+}

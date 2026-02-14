@@ -1,0 +1,555 @@
+{
+  "name": "Arvell Reese",
+  "slug": "arvell-reese",
+  "overview": {
+    "POS": "LB",
+    "College": "Ohio State",
+    "Height": "6' 4\"",
+    "Weight": "243",
+    "Age": "20.5",
+    "DOB": "2005-08-30 00:00:00",
+    "Year": null,
+    "Prj. Rd": "Top 10",
+    "Games": "28",
+    "Snaps": "948",
+    "24/7 Sports": "92",
+    "ESPN": "92",
+    "Draft Buzz": "89.0 / 100",
+    "NFL.com": "7.04",
+    "Bleacher": "8.5",
+    "Gridiron": null
+  },
+  "position": "LB",
+  "college": "Ohio State",
+  "height": "6' 4\"",
+  "weight": "243",
+  "age": 20.5,
+  "dob": "2005-08-30 00:00:00",
+  "year": null,
+  "projected_round": "Top 10",
+  "games": 28,
+  "snaps": 948,
+  "site_ratings": {
+    "24/7 Sports": "92",
+    "ESPN": "92",
+    "Draft Buzz": "89.0 / 100",
+    "NFL.com": "7.04",
+    "Bleacher": "8.5",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "75.7",
+      "percentile": 0.4
+    },
+    "24 Grade": {
+      "value": "76.4",
+      "percentile": 0.6
+    },
+    "23 Grade": {
+      "value": null,
+      "percentile": null
+    },
+    "Pass Rush Grade": {
+      "value": "72.1",
+      "percentile": 0.9
+    },
+    "Run Def. Grade": {
+      "value": "86.5",
+      "percentile": 0.5
+    },
+    "Run Stop %": {
+      "value": "6.4",
+      "percentile": 0.2
+    },
+    "Tackles": {
+      "value": "37",
+      "percentile": 0.1
+    },
+    "Tackling Grade": {
+      "value": "85.6",
+      "percentile": 0.8
+    },
+    "Missed Tkl Rate": {
+      "value": "6",
+      "percentile": 0.8
+    },
+    "ADORT": {
+      "value": "1.9",
+      "percentile": 0.05
+    },
+    "Coverage": {
+      "value": "54.5",
+      "percentile": 0.2
+    },
+    "Coverage Stops": {
+      "value": "16",
+      "percentile": 0.6
+    },
+    "Recs/Tgts": {
+      "value": "0",
+      "percentile": 0.5
+    },
+    "Completion %": {
+      "value": "82.8",
+      "percentile": 0.4
+    },
+    "TD / INT": {
+      "value": "0 / 0",
+      "percentile": null
+    },
+    "Forced Inc Rate": {
+      "value": "3.4",
+      "percentile": 0.1
+    },
+    "Pass Rat. All.": {
+      "value": "99.9",
+      "percentile": 0.5
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 4.6923076923076925,
+      "positional_rank": "1"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 3.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": 2.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": 1.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": 3.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": 5.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 6.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": 5.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 6.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 14.0,
+      "positional_rank": "1"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 6.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": 3.0,
+      "positional_rank": "1"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 2.230769230769231,
+    "PFF": 2.0,
+    "ESPN": null,
+    "Brugler": 2.0,
+    "Kiper": 2.0,
+    "Miller": 2.0,
+    "Bleacher": 4.0,
+    "Walter": 2.0,
+    "TDN": 3.0,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": 2.0
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "1ST - TOP 10",
+    "Bleacher": "1st Round"
+  },
+  "player_comps": {
+    "Miller": "TBD",
+    "DraftBuzz": "Jihaad CAMPBELL",
+    "Bleacher": "Demario Davis",
+    "WF": "Jihaad Campbell.",
+    "Ringer": "Jihaad Campbell"
+  },
+  "strengths": "• Phsyically Elite, Ideal Build\n• Top End Closing Speed\n• Speed to Cover in Zone\n• Good pursuit angles/leverage\n• Solid PR Repetoir\n• Dynamic Depolyment Potential",
+  "weaknesses": "• Avg Change of Direction\n• Lack of Exp Shows Up in Diagnosing\n• Fooled by Play Action/misdirection\n• Upper Body Strength\n• Still Needs to Fill Out Frame",
+  "accolades": "• Academic All Big 10 2024\n• BIg10 LB OTY 2025\n• 1st Team All Big10 2025\n• 2025 Concensus All American",
+  "player_summary": "Reese is a stand up linebacker who can play both in coverage or as a true edge. Likely needs to pick one and sprinkle the other in, most likely will be an edge rusher. He's very young but has had great coaching from Patricia and Lauranitus, but there are still some growing pains as he needs to learn how to diagnose quicker. His elite athleticism and trigger allows him to make up for some of that right now, and he should only improve with time. He's got that ideal frame, but needs to fill out more and focus on building upper body strength. He's got the traits to be an effective edge setter with time. But he's got a great tackle radius, consistent wrap up technique, top end closing speed, and has a solid pass rush repetoire to start with. His second half of the season in 2025 really hurt his numbers, but he showed enough improvements and his young age offset a lot of these concerns. He's an easy pick in the top of this draft with his potential and early returns.",
+  "draftbuzz_grades": {
+    "Tackling": 0.93,
+    "Pass Rush": 0.82,
+    "Run Defense": 0.95,
+    "Coverage": 0.65
+  },
+  "projected_role": "3 Down LB",
+  "ideal_scheme": "Versatile",
+  "alignments": {
+    "D-Line": {
+      "2025": 327,
+      "career": 333
+    },
+    "Slot": {
+      "2025": 34,
+      "career": 55
+    },
+    "Corner": {
+      "2025": 2,
+      "career": 2
+    },
+    "Box": {
+      "2025": 286,
+      "career": 566
+    },
+    "Deep": {
+      "2025": 0,
+      "career": 0
+    }
+  },
+  "skills_traits": {
+    "Character/Processing/Instincts": {
+      "positives": "\"Plays Physically\" (WF)\nShows good instincts against the run to consistently be in the right spot. (BR)\nReads plays quickly and covers a lot of ground in zone (WF)\nYoung, Ascending player (NFL)\nDynamic deployment potential (NFL)",
+      "negatives": "bad eyes in zone coverage and often ends up covering grass. (BR)\nLack of exp shows up in diagnosing (NFL)\nAffected by misdirection (NFL)"
+    },
+    "Athleticism/Physical Traits": {
+      "positives": "most physically impressive linebacker in the class (BR)\nPhysical and elite strength at the point of attack (BR)\nGreat size and carries his frame well with no bad weight, giving him room for growth if need be (BR)\nimpressive closing speed on the quarterback (BR)\ndangerous speed rusher off the edge (WF)\nTwitchy laterally (NFL)",
+      "negatives": "change of direction, lateral movement skills and lack of short—area quickness (BR)\nStill growing into his frame (NFL)\nUpper body strenght (NFL)"
+    },
+    "Pass Rush": {
+      "positives": "Tone setting hand strikes (NFL)\nAlready has 3 - 4 go-to PR moves (NFL)",
+      "negatives": "Needs better hand work and a counter (NFL)"
+    },
+    "Run Defense/Tackling": {
+      "positives": "very effective run defender (BR)\n In pursuit, he maintains proper leverage on ball carriers, has good speed to increase his range and breaks down to make tackles in space. (BR)\nSure tackler...wraps up ...large radius (BR)\nExperience playing in an NFL—level defensive scheme (BR)\ngood at making tackles in space (WF)\nHas the tools to be an edge setter (NFL)",
+      "negatives": "has a habit of taking blocks square instead of getting on an edge, causing him to occasionally lose gap control. (BR)\nAverage Run diagnosis/attack angles (NFL)"
+    },
+    "Pass Coverage": {
+      "positives": "projects to be an asset defending receiving TEs (WF)\ncould be utilized as a subpackage edge rusher (WF)",
+      "negatives": "Slow/late to get depth against play—action passes (BR)\nLooks comfortable in coverage but with less time on task and experience, he doesn't always display a feel for developing routes behind him (SI)\nInconsistent route awareness in zone (NFL)"
+    }
+  },
+  "media_links": [
+    {
+      "description": "Highlights",
+      "source": "Youtube - Prospects",
+      "url": "https://youtu.be/eBqPuLoj_b0?si=omI3IhZu-I9XzYpZ"
+    },
+    {
+      "description": "2025 Highlights",
+      "source": "Youtube - JDINGER",
+      "url": "https://youtu.be/kemwcNl-63Y?si=rsPEC_5mcHwtjG3Q"
+    }
+  ],
+  "commentary": [
+    {
+      "source": "Lance Zierlein (NFL.com)",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "At 20 years old, Reese is still growing into his frame and his game, but learning from James Laurinaitis (linebackers coach) and Matt Patricia (defensive coordinator) should give him a head start in acclimating to the pro game. He plays off-ball linebacker and stand-up edge with the talent to post impact production from either spot. His third-down versatility adds alignment variety and helps camouflage defensive intent. His run diagnosis and angles of attack are average, but he flows quickly once he triggers, using assertive hands to stack and play off blocks. He’s fast in pursuit and his tackle finishing could become elite. His rush is kinetic and tough for tackles to mirror. It’s under construction, but Reese has already sprouted go-to moves and rush plans that need more refinement. He might need some runway to hit his stride, but his rare blend of traits, explosiveness and versatility could become a perfect storm of chaos once a defense decides how to deploy him."
+        },
+        {
+          "title": "Strengths",
+          "text": "Dynamic deployment potential as a Mike or hybrid Will linebacker. | Still in the process of filling out his frame. | Improved patience, diagnosis and downhill flow as season progressed. | Hands stay active to help play off, through and around blocks. | Has all the tools to become an NFL edge-setter. | Tone-setting hand strikes explode into his targets. | Length and speed provide playmaking range a city block wide. | Already has three or four go-to rush moves under construction. | Pairs a run-and-dip edge move with a speed-bull counter. | Fluid and fast to maximize his attack on two-way goes. | Comes to balance with good timing and in a tackle-ready stance. | Twitchy laterally to bring down slashers in space. | Can rush, spy and smother man-cover targets underneath."
+        },
+        {
+          "title": "Weaknesses",
+          "text": "Upper-body strength will need more attention. | Lack of experience shows itself in reaction time when diagnosing. | Needs to cut his hands loose quicker when striking blockers. | Affected by post-snap eye candy and misdirection. | Needs better hand work and a counter at the top of his rush. | Inconsistent route awareness in his zone drops."
+        },
+        {
+          "title": "Sources Tell Us",
+          "text": "“He can play from depth or rush, but in my opinion, you need to choose one and build from there. – AFC executive"
+        }
+      ]
+    },
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nArvell Reese grew up in Cleveland, Ohio, where he became the heartbeat of Glenville High School's defense. As a senior in 2022, he anchored a unit that pitched six consecutive shutouts in league play, earned Division IV Defensive Player of the Year honors from the Ohio Prep Sportswriters Association, and led his team to a state championship. It was Glenville's first title and the first for any Cleveland Metropolitan School District program. Reese sealed the championship game with an interception against Wyoming, the kind of play that put him on every major program's radar. By signing day, he was the fifth-ranked player in Ohio, the 19th linebacker nationally according to 247Sports, a finalist for the prestigious High School Butkus Award, and an Army All-American.\n\nReese enrolled at Ohio State in June 2023 and learned quickly that patience would be required. His freshman year was limited to six games, all 58 snaps coming on special teams. A Week 2 concussion against Youngstown State sidelined him for about a month and slowed his early development in a crowded linebacker room. Year two brought real defensive reps. He played all 16 games, started four, and finished with 43 tackles, 3.5 tackles-for-loss, and a half sack on just over 300 defensive snaps. That taste of action set the stage for what came next.\n\nThe 2025 season belonged to Reese. He recorded 69 tackles, 10 tackles-for-loss, and 6.5 sacks across 14 games while playing roughly half his snaps on the defensive line and the other half in the box. The numbers earned him Big Ten Linebacker of the Year, first-team All-Big Ten, and consensus All-American honors. Born September 29, 2004, he stands 6-foot-4 and 243 pounds with long arms built for disruption. Off the field, Reese is a two-time Ohio State Scholar-Athlete and Academic All-Big Ten honoree, majoring in human development and family science. He declared for the 2026 NFL Draft following his junior campaign.\n\nSCOUTING REPORT: SUMMARY\nReese is a heat-seeking missile against the run with the kind of closing speed that makes offensive coordinators cringe when they see him flying toward their running back. The question for NFL teams is simple: where does he fit? He played roughly half his snaps as an edge rusher in 2025 and the other half in the box. Both produced decent numbers. His best football probably comes as a weak-side linebacker in a scheme that turns him loose to attack gaps, chase plays sideline to sideline, and get after the quarterback on third down. When he can see it and go, he is a nightmare.\n\nTeams looking at Reese as a full-time edge rusher need to pump the brakes. His pass rush production comes from athleticism, not instinct. He does not yet have the feel for timing, the ability to set up blockers, or the refined technique to win consistently against NFL tackles. That does not mean the upside is capped, but it does mean he is not a day-one starter on the edge. He needs time to develop a true pass rush toolkit before any team can count on him in that role every snap. The coverage concerns are also legitimate. Zone assignments suit him better than man duties against quick slot players or athletic tight ends. His short-area change of direction cannot match his straight-line burst, so asking him to mirror routes all game is setting him up for frustration.\n\nHere is the deal with Reese: he has the physical tools, the production, and the mentality to become a three-down linebacker at the next level. The athleticism is rare. The instincts against the run are sharp. The motor never stops. He needs refinement in coverage and significant development as a pass rusher before he can be trusted in either role full-time. What cannot be taught is the way he processes the run game or the way he finishes plays. A defense that deploys him correctly as a linebacker first with occasional rush duties gets an impact player from Week 1 with Pro Bowl upside as the rest of his game catches up to his physical gifts."
+        },
+        {
+          "title": "Overview",
+          "text": "Springy, super-versatile playmaker who makes big-impact plays both on the edge and off the ball.\n\nReese is one of the most exciting players in this draft, a souped-up and multitalented defender who splits his time between off-ball linebacker and edge rusher. He has explosive burst and good playmaking instincts, and at just 20 years old on draft night, he brings incredible upside at the next level. When playing off the ball, Reese is an aggressive and physical tackler, showing good hustle to support the run and chase down plays from the backside. He’s got great range and displays incredible closing speed when tracking down the opposition in space, and he chops his feet to avoid overrunning the ballcarrier. He gets under the pads of blockers and stacks them onto their heels, shedding blocks to avoid being controlled at the point of attack. He has good vision and awareness to fit through gaps and find the ball, and he boasts a wide tackle radius, using his long arms to wrap up and corral the ballcarrier. When playing on the edge, he is comfortable rushing from a two-point stance, showing an explosive first step to threaten offenses vertically. He’s a flexible athlete who can bend and get low to duck under and beat blocks. He sets the edge in the run game. He’s a fluid mover who is comfortable dropping back into zones, and he’s excellent on delayed blitzes, where his acceleration and closing speed show up.\n\nReese may need to add some bulk to his frame at the next level, especially if he ends up playing primarily at edge rusher. He lacks sand in his pants and will need to get stronger to take blocks head-on. He can get sealed out of a play by bigger, stronger linemen. He still needs to develop a wider repertoire of pass rush moves; he is relatively inexperienced on the edge and relies more on his speed and burst than real technical prowess. When playing off the ball, he flashes coverage chops, but there are times when he loses a step or finds himself out of position when defending the pass. He has incredible potential at two positions but could also be looked at as a tweener; he would benefit from landing with a coaching staff that has a clear plan for his role."
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "Arvell Reese the edge rusher linebacker from Ohio State...Reese had a great season this past year. Six and a half sacks. He was kept off the sax stat sheet during the college football playoff...a guy who blossomed this season in 2024...not even a full-time starter...two thirds of his snaps as an inside linebacker this past year, his first year as a full-time starter...two thirds of his snaps playing as an edge rusher. We saw him break out in that regard. He has got excellent length. He's extremely, extremely aggressive and athletic coming off the edge as well. The versatility is there. I would rather him play edge rusher as a default position and sprinkle in linebacker only as needed. Kind of like where Micah Parsons has landed now as a prospect, not the same level but still that sort of archetype...ARL race to be a home run pick."
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nThis is a test"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Arvell Reese is the most physically impressive linebacker in the 2026 draft class. Whether he falls into a hybrid role or converts to being a full—time edge defender, the former Buckeye has a bright future as an impact defender in the NFL.\n\nWith elite strength at the point of attack, he can be a very effective run defender and, at just 20 years old—he turns 21 in late August—the 6'4\", 243—pound 'backer has a bright future and can be a quality player at the next level.\n\nReese entered Ohio State as a 4—star recruit in the 2023 class and contributed in six games as a special teamer."
+        },
+        {
+          "title": "Positives",
+          "text": "— Great size and carries his frame well with no bad weight, giving him room for growth if need be. Also, appears to have very long arms.\n\n— Shows good instincts against the run to consistently be in the right spot.\n\n— Physical and elite strength at the point of attack to stand up offensive linemen when taking on blocks on the second level.\n\n— Impressive speed and pop behind his pads when coming downhill.\n\n— Has experience playing on the edge as a stand—up outside linebacker and has shown the ability to set the edge against offensive tackles or pullers.\n\n— Sure tackler overall who wraps up and has a large radius due to his long arms.\n\n— In pursuit, he maintains proper leverage on ball carriers, has good speed to increase his range and breaks down to make tackles in space.\n\n— Adds value as a blitzer on third downs, strong and physical to beat running backs with power, can execute coffee house stunts and has impressive closing speed on the quarterback.\n\n— Experience playing in an NFL—level defensive scheme with former New England Patriots defensive coordinator and Detroit Lions head coach Matt Patricia taking over as Ohio State's defensive coordinator in 2025."
+        },
+        {
+          "title": "Negatives",
+          "text": "— change of direction, lateral movement skills and lack of short—area quickness hinder his Ability to cover tight ends and running backs in man coverage or make plays on the ball in zone coverage.\n\n— Slow/late to get depth against play—action passes, leaving the middle of the field open.\n\n— bad eyes in zone coverage and often ends up covering grass.\n\n— has a habit of taking blocks square instead of getting on an edge, causing him to occasionally lose gap control."
+        }
+      ]
+    },
+    {
+      "source": "Walter Football",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "It took some time for Reese to become a starter, but the Cleveland, Ohio, product showed a freaky skill set with a special ability to hurt offenses. In 2024, Reese had 43 tackles with .5 sacks as a rotational backup. In 2025, he became a starter and was excellent for the Buckeyes. In 2025, Reese had 69 tackles with 6.5 sacks and two passes broken up.\nThe NFL is a passing-driven league, so for a linebacker to get selected in the first round of the NFL Draft, they must be an asset in defending aerial offenses. Reese is definitely that, and he is a versatile chess piece that can be used in a variety of ways. Reese reads plays quickly and covers a lot of ground in zone. His height and length make him valuable to interrupt passing lanes, and he projects to be an asset to defending receiving tight ends. With his length and quickness, Reese can run down the middle seam and functions well as a Tampa 2 coverage linebacker. On dump-off passes to the flat, Reese is quick enough to get to the ball carrier and is good at making tackles in space. His size and athleticism allow him to have the potential to play some man coverage on tight ends and backs out of the backfield. Reese can be a middle linebacker who covers the seam well with his size, speed, and athleticism.\nAlong with being able to cover, Reese is a dangerous speed rusher off the edge. He is fast and explosive to get upfield to run around offensive tackles. Reese is agile and athletic to dip underneath blockers with the ability to sink his hips to get pointed to the quarterback. Reese could be utilized as a subpackage edge rusher, along with being a pass coverage linebacker.\nIn run defense, Reese is big and physical in the tackle box. He reads his keys quickly and is quick to read his keys to get in position to make tackles. Reese is strong to take on and shed blocks with a quick burst to fire to the ball carrier. With his strength and physical attitude, Reese will hit hard and put ball carriers into the turf with physicality. Reese is fast, big, and strong. He should be a three-down linebacker in the NFL.\nIn the 2026 NFL Draft, Reese looks like a high first-round talent.  He should be a three-down linebacker in the NFL with Pro Bowl potential."
+        },
+        {
+          "title": "Strengths",
+          "text": "Tough run defender\nQuick to the sideline\nGood tackler\nHard hitter\nVery physical\nWill take on blocks\nCan shed blocks and make tackles\nTall, and plays with good leverage\nDiagnosis skills\nRead-and-react skills\nFits a 4-3 or 3-4 defense\nQuick to the flat\nClosing speed\nRangy\nAdvanced pass-coverage linebacker\nCan help cover against tight ends and running backs\nCan drop into zone coverage\nGood vision in zone\nDisrupts passing lanes\nDangerous edge rusher\nFast around the corner\nCan dip under tackles\nStrong, thick build\nBig linebacker, imposing presence\nUpside"
+        },
+        {
+          "title": "Weaknesses",
+          "text": "One-year wonder\nNeeds more experience"
+        },
+        {
+          "title": "Player Comp",
+          "text": "Jihaad Campbell. In terms of skill set and style of play, Reese is very similar to Campbell. Campbell was a very good prospect who slipped in the 2025 NFL Draft due to medical concerns. Both Reese and Campbell should be excellent pro linebackers in their career."
+        }
+      ]
+    },
+    {
+      "source": "ESPN",
+      "sections": [
+        {
+          "title": "Analysis",
+          "text": "This is a test"
+        }
+      ]
+    },
+    {
+      "source": "The Ringer",
+      "sections": [
+        {
+          "title": "Summary",
+          "text": "Springy, super-versatile playmaker who makes big-impact plays both on the edge and off the ball.\n\nReese is one of the most exciting players in this draft, a souped-up and multitalented defender who splits his time between off-ball linebacker and edge rusher. He has explosive burst and good playmaking instincts, and at just 20 years old on draft night, he brings incredible upside at the next level. When playing off the ball, Reese is an aggressive and physical tackler, showing good hustle to support the run and chase down plays from the backside. He’s got great range and displays incredible closing speed when tracking down the opposition in space, and he chops his feet to avoid overrunning the ballcarrier. He gets under the pads of blockers and stacks them onto their heels, shedding blocks to avoid being controlled at the point of attack. He has good vision and awareness to fit through gaps and find the ball, and he boasts a wide tackle radius, using his long arms to wrap up and corral the ballcarrier. When playing on the edge, he is comfortable rushing from a two-point stance, showing an explosive first step to threaten offenses vertically. He’s a flexible athlete who can bend and get low to duck under and beat blocks. He sets the edge in the run game. He’s a fluid mover who is comfortable dropping back into zones, and he’s excellent on delayed blitzes, where his acceleration and closing speed show up.\n\nReese may need to add some bulk to his frame at the next level, especially if he ends up playing primarily at edge rusher. He lacks sand in his pants and will need to get stronger to take blocks head-on. He can get sealed out of a play by bigger, stronger linemen. He still needs to develop a wider repertoire of pass rush moves; he is relatively inexperienced on the edge and relies more on his speed and burst than real technical prowess. When playing off the ball, he flashes coverage chops, but there are times when he loses a step or finds himself out of position when defending the pass. He has incredible potential at two positions but could also be looked at as a tweener; he would benefit from landing with a coaching staff that has a clear plan for his role."
+        },
+        {
+          "title": "Bottom Line",
+          "text": "Springy, super-versatile playmaker"
+        },
+        {
+          "title": "Traits",
+          "text": "Pass-Rush Talent\nInfinite Upside\nInstinctual Playmaking\nRare Versatility"
+        },
+        {
+          "title": "Background",
+          "text": "By Daniel Comer A junior and former four-star recruit out of Cleveland, Ohio. Was the no. 22 linebacker in the 2023 class and the no. 213 player overall. Played in 22 games over his first two seasons before becoming a full-time starter in 2025, when he was named first-team All–Big Ten and a consensus first-team All-American."
+        },
+        {
+          "title": "Fun Facts",
+          "text": "Describes his game as “see ball, get ball.”\nWent to the same high school as Ohio State legends Troy Smith, Ted Ginn Jr, Marshon Lattimore, and Cardale Jones.\nHere is his high school Hudl profile.\nStarted clothing and landscaping side hustles with his brother in high school to make extra money.\nWas at one point practicing with DEs at Ohio State, but then–grad assistant and current linebackers coach James Laurinaitis pushed for him to return to LB. “I was just a voice that he is too natural and moves too well at the second level to put him at just a rush end. … There’s too much ability there.”"
+        },
+        {
+          "title": "Comparison",
+          "text": "SHADES OF JIHAAD CAMPBELL"
+        }
+      ]
+    }
+  ],
+  "nfl_profile": {
+    "prospect_grade": 7.04,
+    "prospect_grade_indicator": "Pro Bowl Talent",
+    "next_gen_grade": null,
+    "next_gen_grade_indicator": null,
+    "production_score": null,
+    "production_score_indicator": null,
+    "athleticism_score": null,
+    "athleticism_score_indicator": null,
+    "total_score": null,
+    "total_score_indicator": null,
+    "nfl_comparison": null,
+    "eligibility": "Junior",
+    "nfl_rank": 3,
+    "nfl_pos_rank": 1
+  },
+  "bleacher_profile": {
+    "grade": 8.5,
+    "grade_indicator": null,
+    "overall_rank": 6,
+    "position_rank": null,
+    "pro_comparison": "Demario Davis",
+    "projected_round": "1st Round"
+  },
+  "walter_profile": {
+    "player_comp": "Jihaad Campbell. In terms of skill set and style of play, Reese is very similar to Campbell. Campbell was a very good prospect who slipped in the 2025 NFL Draft due to medical concerns. Both Reese and Campbell should be excellent pro linebackers in their career."
+  },
+  "ringer_profile": {
+    "comparison": "SHADES OF JIHAAD CAMPBELL",
+    "traits": "Pass-Rush Talent\nInfinite Upside\nInstinctual Playmaking\nRare Versatility"
+  },
+  "injury_history": [
+    {
+      "detail": "Nothing Material",
+      "recovery_time": null,
+      "year": null
+    }
+  ]
+}

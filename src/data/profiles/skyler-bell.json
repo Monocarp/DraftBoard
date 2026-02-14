@@ -1,0 +1,414 @@
+{
+  "name": "Skyler Bell",
+  "slug": "skyler-bell",
+  "overview": {
+    "POS": "WR",
+    "College": "Connecticut",
+    "Height": "6' 0\"",
+    "Weight": "185",
+    "Age": "TBD",
+    "DOB": "00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": "TBD",
+    "Snaps": "TBD",
+    "24/7 Sports": "86",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.7 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.9",
+    "Gridiron": "TBD"
+  },
+  "position": "WR",
+  "college": "Connecticut",
+  "height": "6' 0\"",
+  "weight": "185",
+  "age": null,
+  "dob": "00:00:00",
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": null,
+  "snaps": null,
+  "site_ratings": {
+    "24/7 Sports": "86",
+    "ESPN": "TBD",
+    "Draft Buzz": "84.7 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6.9",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "2025 Grade": {
+      "value": "81.5",
+      "percentile": 0.526
+    },
+    "2024 Grade": {
+      "value": "70.9",
+      "percentile": 0.368
+    },
+    "2023 Grade": {
+      "value": "55.8",
+      "percentile": 0.105
+    },
+    "Receiving Grade": {
+      "value": "85.2",
+      "percentile": 0.684
+    },
+    "Yards/ Routes Run": {
+      "value": "3.13",
+      "percentile": 0.974
+    },
+    "Drop %": {
+      "value": "2.9",
+      "percentile": 0.579
+    },
+    "Contested Catch": {
+      "value": "65",
+      "percentile": 0.737
+    },
+    "Grade vs Man": {
+      "value": "81",
+      "percentile": 0.711
+    },
+    "YAC/Reception": {
+      "value": "8.2",
+      "percentile": 1.0
+    },
+    "Missed Tkls Forced": {
+      "value": "13",
+      "percentile": 0.632
+    },
+    "ADOT": {
+      "value": "8.3",
+      "percentile": 0.105
+    },
+    "Deep Yards": {
+      "value": "170",
+      "percentile": 0.342
+    },
+    "Touchdowns": {
+      "value": "13",
+      "percentile": 0.974
+    },
+    "Elusiveness": {
+      "value": "8.3",
+      "percentile": 0.0
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 122.75,
+      "positional_rank": "16.5"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 80.0,
+      "positional_rank": "13"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 116.0,
+      "positional_rank": "20"
+    },
+    {
+      "source": "Walter",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 89.0,
+      "positional_rank": "19"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 206.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "NFL.com",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Walter": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "NFL.com": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "3RD",
+    "Bleacher": "4th Round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "0",
+    "Bleacher": "Jayden Reed",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR When Tgtd": 119.7,
+    "Hands": 0.75,
+    "Short Receiving": 0.8,
+    "Med Routes": 0.82,
+    "Deep Threat": 0.82,
+    "Blocking": 0.37
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "Slot": {
+      "2025": 158,
+      "career": 520
+    },
+    "Wide": {
+      "2025": 265,
+      "career": 541
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nThe Bronx native took a winding path to becoming UConn's first-ever First Team AP All-American. Bell arrived at Wisconsin as a three-star recruit from The Taft School in Watertown, Connecticut, earning honorable mention Freshman All-American honors from CFB News in 2022 after posting 30 catches for 444 yards and five touchdowns while starting 12 of 13 games. His sophomore campaign saw modest production with 38 receptions for 296 yards and one score across 12 appearances. The transfer to UConn for his redshirt junior season in 2024 sparked his breakout, leading the Huskies with 860 receiving yards and five touchdowns on 50 catches, including a 153-yard, three-touchdown explosion against Buffalo and a season-long 70-yard grab.\n\nBell's redshirt senior season in 2025 turned him into a household name. The Biletnikoff Award finalist shattered UConn records with 101 receptions for 1,278 yards and 13 touchdowns, earning invitations to both the Senior Bowl and East-West Shrine Bowl. His consistency was remarkable - 14 catches against Ball State, 149 yards and three scores against UAB, 158 yards against Rice, and multiple games with double-digit receptions. The New England Gold Helmet Award winner against UAB capped his college career by declining the Fenway Bowl to focus on his professional future, leaving Storrs as the program's most decorated receiver.\n\nBell's recruiting profile was modest - ranked 969th by 247Sports with a 0.86 grade, 993rd by On3, and carrying a 77 grade from ESPN as an unranked three-star. Rivals also pegged him as an unranked three-star with a 5.5 grade. His high school senior season was wiped out by COVID-19, but his junior year showed promise with 34 receptions for 534 yards and seven touchdowns while returning ten kickoffs for 318 yards.\n\nAt 6'0\", 185 pounds with 4.4 wheels, Bell brings legitimate speed to the table - that's the kind of number that translates to taking the top off defenses and winning foot races down the field. What makes him interesting is how he layers that speed with route-running savvy. He understands leverage and timing, knowing when to throttle down and when to hit the gas. The UAB performance where he hauled in 149 yards and three touchdowns showcased his complete toolkit: working the short game, attacking vertically, and making plays after the catch. His 101-reception season wasn't a mirage built on volume against bad competition - he produced consistently against Power Four opponents and showed up in meaningful moments.\n\n\n\nThe concerns are legitimate. His frame is a problem against physical NFL cornerbacks who will jam him at the line and reroute him throughout his routes. The drop rate improving to single digits in 2025 is encouraging, but history suggests consistency catching the football remains questionable. When defenders get hands on him during routes, especially crossing the middle, he loses effectiveness quickly. He's not going to win many contested catches against NFL defensive backs, and his freelancing tendencies need to be coached out of him immediately. The transfer from Wisconsin to UConn, while sparking his production, doesn't help his stock - scouts will wonder if he's a system player who feasted on inferior competition rather than a legitimate NFL prospect.\n\n\n\nBut here's what matters: Bell's speed is NFL-caliber, and that alone opens doors. He can threaten vertically in a way that forces defensive coordinators to account for him, and when you add his route creativity and change-of-direction skills, you've got a receiver who can create separation at multiple levels. He fits best in the slot or as a Z receiver in 11 personnel groupings, giving offensive coordinators flexibility in deployment. Teams running spacing concepts with quick game elements will find value in his ability to win at the stem of routes and generate yards after the catch. The 4.4 speed makes him dangerous on jet sweeps, screens, and any play design that gets him the ball in space with a runway. He won't be a WR1, but there's a legitimate role here as a complementary piece who can move the chains and provide explosive plays. His competitive toughness as a blocker gives him a path to early playing time, and that speed profile makes him a special teams weapon. The Senior Bowl and Shrine Bowl appearances will be critical - if he shows he can compete against legitimate NFL prospects in those settings and tests well, we're talking about a receiver with mid-round appeal. The talent is there, and the speed is real."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Skyler Bell is a small—school wide receiver with a skill set that translates smoothly to the NFL as a slot or movement/motion Z receiver.\n\nHe offers alignment versatility, mismatch creation, and yards after the catch. Against Power—4 competition, he proved he belonged on the same playing field.\n\nBefore transferring to UConn, his career began in Wisconsin as a former 3—star recruit in the 2021 class. Bell is having an outstanding breakout campaign for the Huskies with over 1,200 yards and 13 touchdowns."
+        },
+        {
+          "title": "Positives",
+          "text": "— Bell is a good route runner who creates natural separation from defenders. He uses hard/quick plants and cuts to lose his defensive back and get into an open window. He is effective at stacking and leaning the defender in the opposite direction of his intended breaking point.\n\n— He has good stop/start ability to sell and execute double moves. Good short area quickness to operate out of the slot on choice/option routes. He displays a high football IQ, reading defensive leverage well post—snap.\n\n— He attacks zone coverages with patience, reading the depth of the defender's drop before settling into the void. Bell works well on crossers and mesh concepts, where he can make the catch before transitioning into a runner.\n\n— After the catch, Bell displays the foot quickness and agility to make defenders miss in a phone booth. His lateral movement skills and wiggle make him difficult to track down in the open field.\n\n— Effectiveness on slot fades and vertical routes. With a two—way go, Bell puts defensive backs in conflict with his suddenness and foot speed at the line of scrimmage to get past them quickly."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Bell's frame is slender and lean without much muscle mass. After the catch, he lacks the physicality to break away from defenders if his elusiveness fails.\n\n— Play strength average at best. At the line of scrimmage, UConn's best receiver can struggle to detach from press—man coverage. Physical corners can slow down his route momentum with early contact in his release.\n\n— He must develop a consistent approach against press alignment. His release can be elongated, taking up too much time. He freelances and spends too much time on route fakes instead of being deliberate with every step.\n\n— Playing through contact is not one of Bell's shining traits. Physicality and contact impede his timing and disrupt his process overall. In contested situations, his effectiveness dips noticeably when he is contacted by a defender. On shallow crossers, underneath zone defenders can easily push him off his route path."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.9,
+    "grade_indicator": null,
+    "overall_rank": 116,
+    "position_rank": null,
+    "pro_comparison": "Jayden Reed",
+    "projected_round": "4th Round"
+  },
+  "injury_history": []
+}

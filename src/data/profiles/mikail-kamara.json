@@ -1,0 +1,439 @@
+{
+  "name": "Mikail Kamara",
+  "slug": "mikail-kamara",
+  "overview": {
+    "POS": "ED",
+    "College": "Indiana",
+    "Height": "6' 1\"",
+    "Weight": "262",
+    "Age": "0",
+    "DOB": "00:00:00",
+    "Year": "RS Sr",
+    "Prj. Rd": null,
+    "Games": "52",
+    "Snaps": "2344",
+    "24/7 Sports": "85",
+    "ESPN": "TBD",
+    "Draft Buzz": "83.8 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6",
+    "Gridiron": null
+  },
+  "position": "ED",
+  "college": "Indiana",
+  "height": "6' 1\"",
+  "weight": "262",
+  "age": 0.0,
+  "dob": "00:00:00",
+  "year": "RS Sr",
+  "projected_round": null,
+  "games": 52,
+  "snaps": 2344,
+  "site_ratings": {
+    "24/7 Sports": "85",
+    "ESPN": "TBD",
+    "Draft Buzz": "83.8 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "6",
+    "Gridiron": null
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "74.1",
+      "percentile": 0.25
+    },
+    "24 Grade": {
+      "value": "86.4",
+      "percentile": 0.75
+    },
+    "23 Grade": {
+      "value": "76.9",
+      "percentile": 0.775
+    },
+    "Pass Rush Grade": {
+      "value": "76.2",
+      "percentile": 0.275
+    },
+    "True Pass Rush": {
+      "value": "70.9",
+      "percentile": 0.211
+    },
+    "PR Win Rate": {
+      "value": "17.1",
+      "percentile": 0.474
+    },
+    "Run Def. Grade": {
+      "value": "79.7",
+      "percentile": 0.7
+    },
+    "Run Stop %": {
+      "value": "5.5",
+      "percentile": 0.25
+    },
+    "Sacks": {
+      "value": "2",
+      "percentile": 0.053
+    },
+    "Hits": {
+      "value": "7",
+      "percentile": 0.553
+    },
+    "Hurries": {
+      "value": "45",
+      "percentile": 0.895
+    },
+    "Batted Balls": {
+      "value": "1",
+      "percentile": 0.5
+    },
+    "Forced Fumbles": {
+      "value": "0",
+      "percentile": 0.132
+    },
+    "Tackling Grade": {
+      "value": "74.8",
+      "percentile": 0.8
+    },
+    "Missed Tackle Rate": {
+      "value": "7.4",
+      "percentile": 1.0
+    },
+    "Total Pressures": {
+      "value": "54",
+      "percentile": 0.842
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": null,
+      "grade": null
+    },
+    "Arm Length": {
+      "result": null,
+      "grade": null
+    },
+    "Hand Size": {
+      "result": null,
+      "grade": null
+    },
+    "Size": {
+      "result": null,
+      "grade": null
+    },
+    "Speed": {
+      "result": null,
+      "grade": null
+    },
+    "Explosive": {
+      "result": null,
+      "grade": null
+    },
+    "Agility": {
+      "result": null,
+      "grade": null
+    },
+    "10 Split": {
+      "result": null,
+      "grade": null
+    },
+    "20 Split": {
+      "result": null,
+      "grade": null
+    },
+    "40 Time": {
+      "result": null,
+      "grade": null
+    },
+    "Vertical": {
+      "result": null,
+      "grade": null
+    },
+    "Broad": {
+      "result": null,
+      "grade": null
+    },
+    "3 Cone": {
+      "result": null,
+      "grade": null
+    },
+    "Bench": {
+      "result": null,
+      "grade": null
+    },
+    "Height": {
+      "result": null,
+      "grade": null
+    },
+    "Weight": {
+      "result": null,
+      "grade": null
+    },
+    "Gridiron": {
+      "result": null,
+      "grade": null
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 113.2,
+      "positional_rank": "16.5"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 97.0,
+      "positional_rank": "16"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 195.0,
+      "positional_rank": "17"
+    },
+    {
+      "source": "Jeremiah",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": 55.0,
+      "positional_rank": "12"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 117.0,
+      "positional_rank": "24"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 102.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Tankathon",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": null,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Jeremiah": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "Tankathon": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "4TH",
+    "Bleacher": "0"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Josaiah STEWART",
+    "Bleacher": "0",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "Tackling": 0.73,
+    "Pass Rush": 0.87,
+    "Run Defense": 0.9
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "A GAP": {
+      "2025": 1,
+      "career": 22
+    },
+    "B GAP": {
+      "2025": 40,
+      "career": 220
+    },
+    "Over Tackle": {
+      "2025": 61,
+      "career": 309
+    },
+    "Outside Tkl": {
+      "2025": 447,
+      "career": 1382
+    },
+    "Off Ball": {
+      "2025": 10,
+      "career": 19
+    }
+  },
+  "skills_traits": {
+    "Instincts/Processing/Production": {
+      "positives": null,
+      "negatives": null
+    },
+    "Physical Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Athletic Ability": {
+      "positives": null,
+      "negatives": null
+    },
+    "Pass Rush Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Run Defense Skills": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Bleacher Report Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nKamara followed head coach Curt Cignetti from James Madison after a standout 2023 season. The 6'1\", 260-pound edge rusher collected 52 tackles (27 solo), 17.5 tackles for loss, 6.5 sacks, and three forced fumbles in his final season at JMU, earning HERO Sports Group of Five Third Team All-American and Second Team All-Sun Belt honors.\n\nThrough his 2024 campaign at Indiana, Kamara dominated Big Ten competition, recording 36 pressures and leading the conference in sacks (9.5) and tackles for loss (14.5). His signature performance came against Michigan State, posting 7 tackles, 4.5 tackles for loss, and 2.5 sacks - the most TFLs by a Hoosier since 1997. His 17 combined sacks and QB hits ranked highest among Power Four defenders through eight games.\n\nThe Stone Bridge High School product overcame a season-ending injury in 2021, bouncing back to record 14 tackles and 4.0 sacks in limited action during 2022. His prep career included Region 5A Defensive Player of the Year honors as a senior, collecting 34 tackles for loss and 15 sacks while leading his team to consecutive state championship appearances.\n\nSCOUTING REPORT: SUMMARY\nThe violent hands and explosive first step translate immediately to passing downs at the next level. Shows refined pass rush plan with counter moves and leverage awareness that will create problems for NFL tackles. Dominant production against Big Ten competition validates rush ability translating to Sundays.\n\nBest fit comes as a designated pass rusher in an aggressive 3-4 scheme that allows him to attack from multiple alignments. Natural leverage and play strength compensate for lack of prototypical size. Ability to convert speed to power and win with technique projects well to sub-package situations.\n\nMedicals and frame limitations cap early-down potential, but advanced rush toolkit and proven production against top competition point to immediate contributor on passing downs. Natural leverage and refined hand usage will allow rapid adjustment to NFL speed."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 6.0,
+    "grade_indicator": null,
+    "overall_rank": 195,
+    "position_rank": null,
+    "pro_comparison": null,
+    "projected_round": null
+  },
+  "injury_history": []
+}

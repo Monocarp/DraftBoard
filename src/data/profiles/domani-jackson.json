@@ -1,0 +1,450 @@
+{
+  "name": "Domani Jackson",
+  "slug": "domani-jackson",
+  "overview": {
+    "POS": "CB",
+    "College": "Alabama",
+    "Height": "6' 1\"",
+    "Weight": "196",
+    "Age": "23.2",
+    "DOB": "2002-11-27 00:00:00",
+    "Year": "Sr",
+    "Prj. Rd": null,
+    "Games": "43",
+    "Snaps": "1940",
+    "24/7 Sports": "98",
+    "ESPN": "TBD",
+    "Draft Buzz": "82.1 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.2",
+    "Gridiron": "TBD"
+  },
+  "position": "CB",
+  "college": "Alabama",
+  "height": "6' 1\"",
+  "weight": "196",
+  "age": 23.2,
+  "dob": "2002-11-27 00:00:00",
+  "year": "Sr",
+  "projected_round": null,
+  "games": 43,
+  "snaps": 1940,
+  "site_ratings": {
+    "24/7 Sports": "98",
+    "ESPN": "TBD",
+    "Draft Buzz": "82.1 / 100",
+    "NFL.com": "TBD",
+    "Bleacher": "7.2",
+    "Gridiron": "TBD"
+  },
+  "pff_scores": {
+    "25 Grade": {
+      "value": "73.9",
+      "percentile": 0.294
+    },
+    "24 Grade": {
+      "value": "67.3",
+      "percentile": 0.222
+    },
+    "23 Grade": {
+      "value": "60.7",
+      "percentile": 0.056
+    },
+    "Coverage Grade": {
+      "value": "75",
+      "percentile": 0.333
+    },
+    "Passer Rating": {
+      "value": "108.2",
+      "percentile": 0.0
+    },
+    "Interceptions": {
+      "value": "0",
+      "percentile": 0.083
+    },
+    "Forced Incom.": {
+      "value": "1",
+      "percentile": 0.0
+    },
+    "Forced Inc. Rate": {
+      "value": "4.8",
+      "percentile": 0.0
+    },
+    "Dropped Picks": {
+      "value": "0",
+      "percentile": 0.194
+    },
+    "Completion %": {
+      "value": "76.2",
+      "percentile": 0.0
+    },
+    "Man Coverage": {
+      "value": "62",
+      "percentile": 0.222
+    },
+    "Zone Coverage": {
+      "value": "74.7",
+      "percentile": 0.5
+    },
+    "% In Man": {
+      "value": "20.7",
+      "percentile": 0.083
+    },
+    "% In Zone": {
+      "value": "70.7",
+      "percentile": 1.0
+    },
+    "Coverage Stops": {
+      "value": "9",
+      "percentile": 0.639
+    },
+    "Tackling": {
+      "value": "83.6",
+      "percentile": 0.889
+    },
+    "Missed Tackles": {
+      "value": "3",
+      "percentile": 0.778
+    }
+  },
+  "athletic_scores": {
+    "RAS": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Arm Length": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Hand Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Size": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Speed": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Explosive": {
+      "result": "TBD",
+      "grade": null
+    },
+    "Agility": {
+      "result": "TBD",
+      "grade": null
+    },
+    "10 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "20 Split": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "40 Time": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Vertical": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Broad": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "3 Cone": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Bench": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Height": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Weight": {
+      "result": "TBD",
+      "grade": "TBD"
+    },
+    "Gridiron": {
+      "result": "TBD",
+      "grade": "TBD"
+    }
+  },
+  "rankings": [
+    {
+      "source": "Con",
+      "overall_rank": 102.4,
+      "positional_rank": "20"
+    },
+    {
+      "source": "PFF",
+      "overall_rank": 187.0,
+      "positional_rank": "24"
+    },
+    {
+      "source": "ESPN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Brugler",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Kiper",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Miller",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Bleacher",
+      "overall_rank": 90.0,
+      "positional_rank": "16"
+    },
+    {
+      "source": "Jeremiah",
+      "overall_rank": 0.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "TDN",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "DraftBuzz",
+      "overall_rank": 118.0,
+      "positional_rank": "32"
+    },
+    {
+      "source": "DraftTek",
+      "overall_rank": 64.0,
+      "positional_rank": "Unranked"
+    },
+    {
+      "source": "Tankathon",
+      "overall_rank": null,
+      "positional_rank": "Unranked"
+    }
+  ],
+  "adp_by_source": {
+    "Source": null,
+    "Con": 87.5,
+    "PFF": null,
+    "ESPN": null,
+    "Brugler": null,
+    "Kiper": null,
+    "Miller": null,
+    "Bleacher": null,
+    "Jeremiah": null,
+    "TDN": null,
+    "DraftBuzz": null,
+    "DraftTek": null,
+    "Tankathon": null
+  },
+  "projected_round_by_source": {
+    "PFF": null,
+    "Brugler": "TBD",
+    "NFL": null,
+    "Miller": null,
+    "DraftBuzz": "5TH",
+    "Bleacher": "3rd round"
+  },
+  "player_comps": {
+    "NFL": "TBD",
+    "Miller": "TBD",
+    "DraftBuzz": "Aaron ROBINSON",
+    "Bleacher": "Greedy Williams",
+    "WF": "TBD"
+  },
+  "strengths": null,
+  "weaknesses": null,
+  "accolades": null,
+  "player_summary": null,
+  "draftbuzz_grades": {
+    "QBR Allowed": 82.5,
+    "Tackling": 0.75,
+    "Run Defense": 0.75,
+    "Cov Grade": 0.74,
+    "Zone Coverage": 0.71,
+    "Man/Press": 0.73
+  },
+  "projected_role": null,
+  "ideal_scheme": null,
+  "alignments": {
+    "D-Line": {
+      "2025": 10,
+      "career": 38
+    },
+    "Slot": {
+      "2025": 1,
+      "career": 16
+    },
+    "Corner": {
+      "2025": 457,
+      "career": 1692
+    },
+    "Box": {
+      "2025": 41,
+      "career": 129
+    },
+    "Deep": {
+      "2025": 7,
+      "career": 26
+    }
+  },
+  "skills_traits": {
+    "Character Traits": {
+      "positives": null,
+      "negatives": null
+    },
+    "Lower Body Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Coverage Skills": {
+      "positives": null,
+      "negatives": null
+    },
+    "Mental/Discipline Traits": {
+      "positives": null,
+      "negatives": null
+    }
+  },
+  "media_links": [],
+  "commentary": [
+    {
+      "source": "Major Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "PFF Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD\n\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Dane Brugler \"The Beast \" Comments",
+      "sections": [
+        {
+          "title": "Background",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Lance Zeirlein Comments (NFL.com)",
+      "sections": [
+        {
+          "title": "Player Bio (Chad Reuter)",
+          "text": "TBD"
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Minor Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "Walter Football Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "The Draft Network Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "NFL Draft Buzz Comments",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "DRAFT PROFILE: BIO\nThe son of California, Domani Jackson's football odyssey began at legendary Mater Dei High School in Santa Ana, where he terrorized opposing receivers while simultaneously burning up the track. His sophomore campaign announced his arrival with authority - 48 tackles, nine pass breakups, and MaxPreps Freshman All-America First Team honors that had college scouts circling like vultures. The accolades kept piling up through his junior season, earning MaxPreps All-State recognition while helping the Monarchs capture another national championship. Jackson's athletic prowess extended beyond the gridiron, where he tied California's state record in the 100 meters with a blistering 10.25-second clocking that ranked second nationally in 2021.\n\nHis recruitment became a nationwide spectacle, with Jackson earning unanimous five-star ratings from ESPN (92/100), 247Sports (0.98 composite), and Rivals (6.1 grade) - the kind of numbers reserved for can't-miss prospects. USC won the initial battle for his services, but Jackson's Trojan tenure proved bumpy with limited opportunities over two seasons that yielded just 28 tackles and four pass breakups across 18 games. The transfer portal beckoned, and Alabama's Kalen DeBoer successfully lured Jackson to Tuscaloosa with promises of immediate starting opportunities and championship contention.\n\nJackson's first season in crimson delivered on those promises, as he immediately claimed a starting cornerback role and never relinquished it through 13 games. His 52 tackles, seven pass breakups, and two crucial interceptions - including a game-sealing pick against South Carolina - validated Alabama's faith in the California native. The Crimson Tide coaching staff rewarded his consistency with five weekly defensive player honors, recognizing standout performances against Wisconsin, Georgia, LSU, Mercer, and Auburn. His decision to return for 2025 rather than enter the draft speaks to unfinished business in Tuscaloosa and a desire to further polish his NFL resume.\n\nSCOUTING REPORT: SUMMARY\nJackson's elite speed allows him to recover from coverage mistakes that would doom slower corners, yet his inconsistent route recognition means he's making those mistakes more frequently than his talent suggests he should. His willingness to attack the run game stands out immediately - he triggers downhill with bad intentions and rarely gets pushed around by bigger receivers or tight ends trying to crack block. However, that same aggressive nature sometimes works against him in coverage, where patience and discipline matter more than raw physicality.\n\nThe transition to the pro game will test Jackson's ability to process information quickly while maintaining his natural athletic advantages. His frame and speed combination gives him the tools to handle bigger slot receivers and stretch the field vertically, but his ball skills haven't developed at the same pace as his physical maturity. Teams will appreciate his special teams value immediately - that kind of closing speed makes him dangerous on coverage units and potentially explosive as a returner. Yet the same coaching staff will need to invest significant time developing his coverage instincts, particularly in zone concepts where his average performance suggests discomfort with pattern recognition and help responsibilities.\n\nJackson's final college season becomes a crucial proving ground for translating potential into production. He possesses the measurables that make scouts salivate, but NFL corners need more than speed to survive against top level passing attacks. His run support ability provides immediate value, while his coverage limitations create questions about ceiling and timeline. The right situation could accelerate his development, but expecting immediate impact in pass coverage would be setting unrealistic expectations. Jackson represents the classic high-upside prospect who could become a quality starter with proper development or remain a role player if his technique doesn't catch up to his tools."
+        },
+        {
+          "title": "Overview",
+          "text": "TBD"
+        }
+      ]
+    },
+    {
+      "source": "Individual Commentary Sources",
+      "sections": []
+    },
+    {
+      "source": "First Draft Comments",
+      "sections": []
+    },
+    {
+      "source": "Dane Brugler Comments",
+      "sections": []
+    },
+    {
+      "source": "Todd McShay Comments",
+      "sections": [
+        {
+          "title": null,
+          "text": "ESPN Analysis\nTBD"
+        }
+      ]
+    },
+    {
+      "source": "Jim Nagy Comments",
+      "sections": []
+    },
+    {
+      "source": "Bleacher Report",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "Domani Jackson is a talented press—man cover corner. He shows the versatility and football IQ to flip between Cover 2 and man while staying responsible and sound.\n\nHis physical play style gives wide receivers little room on the vertical plane and triggers downhill with authority. He has the size, length, and skill to be an NFL starter, but questions about his effort level and in—game consistency from the coaching staff will impact his evaluation.\n\nJackson is a former 5—star recruit and transfer from USC who shined in his first season at Alabama. He started all 13 games for the Crimson Tide in 2024 and totaled 52 tackles (27 solo), two tackles for loss, a forced fumble, seven pass breakups and a pair of interceptions. He's hoping to build on a promising campaign that saw him earn All—SEC preseason honors."
+        },
+        {
+          "title": "Positives",
+          "text": "— Jackson is a bigger corner who plays like it with physicality through the route and the length to impact the catch point.\n\n— He is confident as a press—man style cover corner with the footwork and hips to flip and run vertical. He mirrors well from a press alignment and has the athletecism to execute.\n\n— Shows the football IQ to transition from man coverage to Cover 2 or 3 but is more comfortable in two—high. He passes off receivers to the next zone well.\n\n— He's not shy coming downhill against ball carriers. He sniffs out screens and tackles well with his length in pursuit."
+        },
+        {
+          "title": "Negatives",
+          "text": "— Jackson isn't afraid to trigger downhill, but he can be overeager in off—coverage, biting on fakes, which leads to double—moves from the offense.\n\n— He can be grabby downfield, and his being late to turn his head and locate the football creates penalties and losses in one—on—one situations.\n\n— Timing his jam in press coverage will help prevent receivers from crossing his face too quickly and stacking him.\n\n— Recognizing the run game and path of the ball carrier will help keep him in the proper position. He allows runners outside and gives up explosive plays with hesitancy and poor pursuit angles."
+        }
+      ]
+    }
+  ],
+  "bleacher_profile": {
+    "grade": 7.2,
+    "grade_indicator": null,
+    "overall_rank": 90,
+    "position_rank": null,
+    "pro_comparison": "Greedy Williams",
+    "projected_round": "3rd round"
+  },
+  "injury_history": []
+}
