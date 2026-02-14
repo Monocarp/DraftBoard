@@ -82,23 +82,23 @@ export default function BoardTable({
         <table className="w-full">
           <thead>
             <tr className="border-b border-[#2a3a4e] text-left text-xs font-medium uppercase tracking-wider text-gray-500">
-              <th className="px-4 py-3 w-16">#</th>
-              <th className="px-4 py-3">Player</th>
-              <th className="px-4 py-3 w-20">Pos</th>
-              <th className="px-4 py-3">School</th>
-              <th className="px-4 py-3 w-16">Age</th>
-              <th className="px-4 py-3 w-16">Year</th>
+              <th className="px-2 sm:px-4 py-2 sm:py-3 w-10 sm:w-16">#</th>
+              <th className="px-2 sm:px-4 py-2 sm:py-3">Player</th>
+              <th className="px-2 sm:px-4 py-2 sm:py-3 w-16 sm:w-20">Pos</th>
+              <th className="px-2 sm:px-4 py-2 sm:py-3 hidden sm:table-cell">School</th>
+              <th className="px-2 sm:px-4 py-2 sm:py-3 w-16 hidden md:table-cell">Age</th>
+              <th className="px-2 sm:px-4 py-2 sm:py-3 w-16 hidden md:table-cell">Year</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-[#2a3a4e]/50">
             {filtered.map((p, idx) => (
               <tr key={p.slug + idx} className="board-row">
-                <td className="px-4 py-3">
+                <td className="px-2 sm:px-4 py-2 sm:py-3">
                   <span className="text-sm font-bold text-gray-500">
                     {p.rank}
                   </span>
                 </td>
-                <td className="px-4 py-3">
+                <td className="px-2 sm:px-4 py-2 sm:py-3">
                   <Link
                     href={`/player/${p.slug}`}
                     className="text-sm font-semibold text-white hover:text-orange-400 transition-colors"
@@ -106,12 +106,12 @@ export default function BoardTable({
                     {p.player}
                   </Link>
                 </td>
-                <td className="px-4 py-3">
+                <td className="px-2 sm:px-4 py-2 sm:py-3">
                   <PositionBadge position={p.position} />
                 </td>
-                <td className="px-4 py-3 text-sm text-gray-400">{p.school}</td>
-                <td className="px-4 py-3 text-sm text-gray-400">{p.age ?? "-"}</td>
-                <td className="px-4 py-3 text-sm text-gray-400">{p.year ?? "-"}</td>
+                <td className="px-2 sm:px-4 py-2 sm:py-3 text-sm text-gray-400 hidden sm:table-cell">{p.school}</td>
+                <td className="px-2 sm:px-4 py-2 sm:py-3 text-sm text-gray-400 hidden md:table-cell">{p.age ?? "-"}</td>
+                <td className="px-2 sm:px-4 py-2 sm:py-3 text-sm text-gray-400 hidden md:table-cell">{p.year ?? "-"}</td>
               </tr>
             ))}
           </tbody>

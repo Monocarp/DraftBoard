@@ -26,14 +26,14 @@ export default function PlayerDetailView({ profile }: { profile: PlayerProfile }
       </Link>
 
       {/* Player Header */}
-      <div className="rounded-xl border border-[#2a3a4e] bg-[#111827] p-6 mb-4">
+      <div className="rounded-xl border border-[#2a3a4e] bg-[#111827] p-4 sm:p-6 mb-4">
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
           <div>
-            <div className="flex items-center gap-3 mb-2">
-              <h1 className="text-3xl font-bold text-white">{p.name}</h1>
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-2">
+              <h1 className="text-2xl sm:text-3xl font-bold text-white">{p.name}</h1>
               <PositionBadge position={p.position} />
             </div>
-            <p className="text-lg text-gray-400">{p.college}</p>
+            <p className="text-base sm:text-lg text-gray-400">{p.college}</p>
           </div>
           {p.projected_round && (
             <div className="rounded-xl bg-orange-500/10 border border-orange-500/20 px-5 py-3 text-center">
@@ -66,7 +66,7 @@ export default function PlayerDetailView({ profile }: { profile: PlayerProfile }
       {/* Player Comps Row */}
       {Object.keys(p.player_comps).length > 0 && (
         <div className="rounded-xl border border-[#2a3a4e] bg-[#111827] px-5 py-3 mb-2">
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-1">
+          <div className="flex flex-wrap items-center gap-x-3 sm:gap-x-6 gap-y-1">
             <span className="text-xs font-semibold text-orange-400 uppercase tracking-wider">Comps</span>
             {Object.entries(p.player_comps).map(([source, comp]) => (
               <span key={source} className="text-sm text-gray-300">
@@ -79,8 +79,8 @@ export default function PlayerDetailView({ profile }: { profile: PlayerProfile }
 
       {/* Round Projections Row */}
       {Object.keys(p.projected_round_by_source).filter(k => p.projected_round_by_source[k]).length > 0 && (
-        <div className="rounded-xl border border-[#2a3a4e] bg-[#111827] px-5 py-3 mb-4">
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-1">
+        <div className="rounded-xl border border-[#2a3a4e] bg-[#111827] px-3 sm:px-5 py-3 mb-4">
+          <div className="flex flex-wrap items-center gap-x-3 sm:gap-x-6 gap-y-1">
             <span className="text-xs font-semibold text-orange-400 uppercase tracking-wider">Round Projections</span>
             {Object.entries(p.projected_round_by_source).filter(([, v]) => v).map(([source, rd]) => (
               <span key={source} className="text-sm text-gray-300">

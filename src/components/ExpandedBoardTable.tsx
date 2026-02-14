@@ -115,13 +115,13 @@ export default function ExpandedBoardTable({
         <table className="w-full">
           <thead>
             <tr className="border-b border-[#2a3a4e] text-left text-xs font-medium uppercase tracking-wider text-gray-500">
-              <th className="px-4 py-3 w-12"></th>
-              <th className="px-4 py-3 w-16">#</th>
-              <th className="px-4 py-3">Player</th>
-              <th className="px-4 py-3 w-20">Pos</th>
-              <th className="px-4 py-3">School</th>
-              <th className="px-4 py-3 w-16">Age</th>
-              <th className="px-4 py-3 w-16">Year</th>
+              <th className="px-2 sm:px-4 py-2 sm:py-3 w-8 sm:w-12"></th>
+              <th className="px-2 sm:px-4 py-2 sm:py-3 w-10 sm:w-16">#</th>
+              <th className="px-2 sm:px-4 py-2 sm:py-3">Player</th>
+              <th className="px-2 sm:px-4 py-2 sm:py-3 w-16 sm:w-20">Pos</th>
+              <th className="px-2 sm:px-4 py-2 sm:py-3 hidden sm:table-cell">School</th>
+              <th className="px-2 sm:px-4 py-2 sm:py-3 w-16 hidden md:table-cell">Age</th>
+              <th className="px-2 sm:px-4 py-2 sm:py-3 w-16 hidden md:table-cell">Year</th>
             </tr>
           </thead>
           <tbody>
@@ -130,7 +130,7 @@ export default function ExpandedBoardTable({
               return (
                 <>
                   <tr key={p.slug + idx} className="border-b border-[#2a3a4e]/50 board-row">
-                    <td className="px-4 py-3">
+                    <td className="px-2 sm:px-4 py-2 sm:py-3">
                       <button
                         onClick={() => toggleRow(p.slug)}
                         className="text-gray-400 hover:text-orange-400 transition-colors"
@@ -146,12 +146,12 @@ export default function ExpandedBoardTable({
                         </svg>
                       </button>
                     </td>
-                    <td className="px-4 py-3">
+                    <td className="px-2 sm:px-4 py-2 sm:py-3">
                       <span className="text-sm font-bold text-gray-500">
                         {p.rank}
                       </span>
                     </td>
-                    <td className="px-4 py-3">
+                    <td className="px-2 sm:px-4 py-2 sm:py-3">
                       <Link
                         href={`/player/${p.slug}`}
                         className="text-sm font-semibold text-white hover:text-orange-400 transition-colors"
@@ -159,21 +159,21 @@ export default function ExpandedBoardTable({
                         {p.player}
                       </Link>
                     </td>
-                    <td className="px-4 py-3">
+                    <td className="px-2 sm:px-4 py-2 sm:py-3">
                       <PositionBadge position={p.position} />
                     </td>
-                    <td className="px-4 py-3 text-sm text-gray-400">{p.school}</td>
-                    <td className="px-4 py-3 text-sm text-gray-400">{p.age ?? "-"}</td>
-                    <td className="px-4 py-3 text-sm text-gray-400">{p.year ?? "-"}</td>
+                    <td className="px-2 sm:px-4 py-2 sm:py-3 text-sm text-gray-400 hidden sm:table-cell">{p.school}</td>
+                    <td className="px-2 sm:px-4 py-2 sm:py-3 text-sm text-gray-400 hidden md:table-cell">{p.age ?? "-"}</td>
+                    <td className="px-2 sm:px-4 py-2 sm:py-3 text-sm text-gray-400 hidden md:table-cell">{p.year ?? "-"}</td>
                   </tr>
                   {isExpanded && (
                     <tr key={`${p.slug}-expanded`} className="border-b border-[#2a3a4e]/50">
-                      <td colSpan={7} className="px-4 py-4 bg-[#0d1117]">
-                        <div className="flex flex-row gap-6 items-start">
+                      <td colSpan={7} className="px-3 sm:px-4 py-3 sm:py-4 bg-[#0d1117]">
+                        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
                           {/* Grades */}
                           {Object.keys(p.grades).length > 0 && (
-                            <div className="min-w-[110px]">
-                              <h4 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2 text-center">
+                            <div className="w-full sm:w-auto sm:min-w-[110px]">
+                              <h4 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2">
                                 Grades
                               </h4>
                               <div className="space-y-0.5">
@@ -191,8 +191,8 @@ export default function ExpandedBoardTable({
 
                           {/* Ranks */}
                           {Object.keys(p.ranks).length > 0 && (
-                            <div className="min-w-[110px]">
-                              <h4 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2 text-center">
+                            <div className="w-full sm:w-auto sm:min-w-[110px]">
+                              <h4 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2">
                                 Rankings
                               </h4>
                               <div className="space-y-0.5">
@@ -210,8 +210,8 @@ export default function ExpandedBoardTable({
 
                           {/* Summary */}
                           {p.summary && (
-                            <div className="flex-1 min-w-[220px]">
-                              <h4 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2 text-center">
+                            <div className="flex-1 w-full sm:w-auto">
+                              <h4 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2">
                                 Summary
                               </h4>
                               <p className="text-xs text-gray-300 leading-relaxed">

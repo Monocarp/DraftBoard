@@ -50,21 +50,21 @@ export default function PositionBoardsView({
   return (
     <div>
       {/* Header */}
-      <div className="mb-6">
-        <h1 className="text-3xl font-bold text-white">Position Boards</h1>
-        <p className="mt-1 text-gray-400">
+      <div className="mb-4 sm:mb-6">
+        <h1 className="text-2xl sm:text-3xl font-bold text-white">Position Boards</h1>
+        <p className="mt-1 text-sm sm:text-base text-gray-400">
           Detailed positional scouting boards with grades, PFF scores, athletic data, and scouting notes.
         </p>
       </div>
 
       {/* Board selector */}
-      <div className="mb-4 flex items-center gap-3">
+      <div className="mb-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
         <div className="flex flex-wrap gap-1 rounded-lg bg-[#111827] border border-[#2a3a4e] p-1">
           {BOARD_ORDER.filter((pos) => boards[pos]).map((pos) => (
             <button
               key={pos}
               onClick={() => { setActiveBoard(pos); setExpandedRows(new Set()); }}
-              className={`rounded-md px-4 py-2 text-sm font-medium transition-colors ${
+              className={`rounded-md px-2.5 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium transition-colors ${
                 activeBoard === pos
                   ? "bg-orange-500 text-white"
                   : "text-gray-400 hover:text-white"
@@ -88,14 +88,14 @@ export default function PositionBoardsView({
         <table className="w-full">
           <thead className="sticky top-0 z-10 bg-[#111827]">
             <tr className="border-b border-[#2a3a4e] text-left text-xs font-medium uppercase tracking-wider text-gray-500">
-              <th className="px-3 py-3 w-10"></th>
-              <th className="px-3 py-3 w-10">#</th>
-              <th className="px-3 py-3">Player</th>
-              <th className="px-3 py-3">School</th>
-              <th className="px-3 py-3">Ht / Wt</th>
-              <th className="px-3 py-3">Age</th>
-              <th className="px-3 py-3">Prj Round</th>
-              <th className="px-3 py-3">Role</th>
+              <th className="px-2 sm:px-3 py-2 sm:py-3 w-8 sm:w-10"></th>
+              <th className="px-2 sm:px-3 py-2 sm:py-3 w-8 sm:w-10">#</th>
+              <th className="px-2 sm:px-3 py-2 sm:py-3">Player</th>
+              <th className="px-2 sm:px-3 py-2 sm:py-3 hidden sm:table-cell">School</th>
+              <th className="px-2 sm:px-3 py-2 sm:py-3 hidden md:table-cell">Ht / Wt</th>
+              <th className="px-2 sm:px-3 py-2 sm:py-3 hidden md:table-cell">Age</th>
+              <th className="px-2 sm:px-3 py-2 sm:py-3 hidden lg:table-cell">Prj Round</th>
+              <th className="px-2 sm:px-3 py-2 sm:py-3 hidden lg:table-cell">Role</th>
             </tr>
           </thead>
           <tbody>
@@ -138,7 +138,7 @@ function PlayerRow({
   return (
     <>
       <tr className="border-b border-[#2a3a4e]/50 board-row">
-        <td className="px-3 py-3">
+        <td className="px-2 sm:px-3 py-2 sm:py-3">
           <button
             onClick={onToggle}
             className="text-gray-400 hover:text-orange-400 transition-colors"
@@ -154,21 +154,21 @@ function PlayerRow({
             </svg>
           </button>
         </td>
-        <td className="px-3 py-3 text-sm font-bold text-gray-500">{p.pos_rank ?? rank}</td>
-        <td className="px-3 py-3">
+        <td className="px-2 sm:px-3 py-2 sm:py-3 text-sm font-bold text-gray-500">{p.pos_rank ?? rank}</td>
+        <td className="px-2 sm:px-3 py-2 sm:py-3">
           <Link
             href={`/player/${p.slug}`}
-            className="text-sm font-semibold text-white hover:text-orange-400 transition-colors"
+            className="text-xs sm:text-sm font-semibold text-white hover:text-orange-400 transition-colors"
           >
             {p.name}
           </Link>
         </td>
-        <td className="px-3 py-3 text-sm text-gray-400">{p.school}</td>
-        <td className="px-3 py-3 text-xs text-gray-400">
+        <td className="px-2 sm:px-3 py-2 sm:py-3 text-sm text-gray-400 hidden sm:table-cell">{p.school}</td>
+        <td className="px-2 sm:px-3 py-2 sm:py-3 text-xs text-gray-400 hidden md:table-cell">
           {p.height && p.weight ? `${p.height} / ${p.weight}` : p.height || p.weight || "—"}
         </td>
-        <td className="px-3 py-3 text-xs text-gray-400">{p.age || "—"}</td>
-        <td className="px-3 py-3">
+        <td className="px-2 sm:px-3 py-2 sm:py-3 text-xs text-gray-400 hidden md:table-cell">{p.age || "—"}</td>
+        <td className="px-2 sm:px-3 py-2 sm:py-3 hidden lg:table-cell">
           {p.projected_round ? (
             <span className="inline-block px-2 py-0.5 rounded-full text-xs font-medium bg-blue-900/40 text-blue-200 border border-blue-700/50">
               {p.projected_round}
@@ -177,7 +177,7 @@ function PlayerRow({
             <span className="text-xs text-gray-400">—</span>
           )}
         </td>
-        <td className="px-3 py-3 text-xs text-gray-400">{p.projected_role || "—"}</td>
+        <td className="px-2 sm:px-3 py-2 sm:py-3 text-xs text-gray-400 hidden lg:table-cell">{p.projected_role || "—"}</td>
       </tr>
       {isExpanded && (
         <tr className="border-b border-[#2a3a4e]/50">
@@ -237,7 +237,7 @@ function RankingsBlock({
   if (entries.length === 0) return null;
 
   return (
-    <div className="w-24">
+    <div className="w-full sm:w-24">
       <h4 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2 whitespace-nowrap">{title}</h4>
       <div className="space-y-1">
         {entries.map(([label, value]) => {
@@ -281,8 +281,8 @@ function BulletList({ title, text, variant }: { title: string; text: string; var
 
 function ExpandedDetails({ player: p }: { player: PositionBoardPlayer }) {
   return (
-    <div className="bg-[#0d1117] px-6 py-5">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 gap-4">
+    <div className="bg-[#0d1117] px-3 sm:px-6 py-4 sm:py-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-8 gap-4">
         {/* Grades */}
         <StatBlock title="Grades" data={p.grades} />
 

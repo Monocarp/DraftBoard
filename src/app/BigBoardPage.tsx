@@ -11,15 +11,15 @@ export default function BigBoardPage({ board, profileCount }: { board: BigBoard;
   return (
     <div className="flex flex-col items-center w-full">
       {/* Header */}
-      <div className="mb-6 w-full max-w-3xl mx-auto">
-        <h1 className="text-3xl font-bold text-white">2026 NFL Draft Board</h1>
-        <p className="mt-1 text-gray-400">
+      <div className="mb-4 sm:mb-6 w-full max-w-3xl mx-auto">
+        <h1 className="text-2xl sm:text-3xl font-bold text-white">2026 NFL Draft Board</h1>
+        <p className="mt-1 text-sm sm:text-base text-gray-400">
           Comprehensive big board aggregating rankings from 15+ sources.
         </p>
       </div>
 
       {/* Stats row */}
-      <div className="mb-6 grid grid-cols-2 sm:grid-cols-4 gap-3 w-full max-w-3xl mx-auto">
+      <div className="mb-4 sm:mb-6 grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 w-full max-w-3xl mx-auto">
         {[
           { label: "Consensus Board", value: board.consensus.length },
           { label: "Bengals Board", value: board.bengals.length },
@@ -28,45 +28,48 @@ export default function BigBoardPage({ board, profileCount }: { board: BigBoard;
         ].map((stat) => (
           <div
             key={stat.label}
-            className="rounded-xl border border-[#2a3a4e] bg-[#111827] p-4"
+            className="rounded-xl border border-[#2a3a4e] bg-[#111827] p-3 sm:p-4"
           >
-            <p className="text-2xl font-bold text-white">{stat.value}</p>
+            <p className="text-xl sm:text-2xl font-bold text-white">{stat.value}</p>
             <p className="text-xs text-gray-500">{stat.label}</p>
           </div>
         ))}
       </div>
 
       {/* Board tabs */}
-      <div className="mb-4 flex gap-1 rounded-lg bg-[#111827] border border-[#2a3a4e] p-1 w-fit mx-auto">
+      <div className="mb-4 flex flex-wrap gap-1 rounded-lg bg-[#111827] border border-[#2a3a4e] p-1 w-fit mx-auto">
         <button
           onClick={() => setActiveTab("consensus")}
-          className={`rounded-md px-4 py-2 text-sm font-medium transition-colors ${
+          className={`rounded-md px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium transition-colors ${
             activeTab === "consensus"
               ? "bg-orange-500 text-white"
               : "text-gray-400 hover:text-white"
           }`}
         >
-          Consensus Board
+          Consensus
+          <span className="hidden sm:inline"> Board</span>
         </button>
         <button
           onClick={() => setActiveTab("bengals")}
-          className={`rounded-md px-4 py-2 text-sm font-medium transition-colors ${
+          className={`rounded-md px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium transition-colors ${
             activeTab === "bengals"
               ? "bg-orange-500 text-white"
               : "text-gray-400 hover:text-white"
           }`}
         >
-          Bengals Board
+          Bengals
+          <span className="hidden sm:inline"> Board</span>
         </button>
         <button
           onClick={() => setActiveTab("expanded")}
-          className={`rounded-md px-4 py-2 text-sm font-medium transition-colors ${
+          className={`rounded-md px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium transition-colors ${
             activeTab === "expanded"
               ? "bg-orange-500 text-white"
               : "text-gray-400 hover:text-white"
           }`}
         >
-          Expanded Board
+          Expanded
+          <span className="hidden sm:inline"> Board</span>
         </button>
       </div>
 
