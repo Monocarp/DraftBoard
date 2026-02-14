@@ -6,7 +6,7 @@ import ExpandedBoardTable from "@/components/ExpandedBoardTable";
 import type { BigBoard } from "@/lib/types";
 
 export default function BigBoardPage({ board, profileCount }: { board: BigBoard; profileCount: number }) {
-  const [activeTab, setActiveTab] = useState<"consensus" | "bengals" | "expanded">("consensus");
+  const [activeTab, setActiveTab] = useState<"consensus" | "bengals" | "expanded">("bengals");
 
   return (
     <div className="flex flex-col items-center w-full">
