@@ -9,7 +9,7 @@
     "Age": "21.7",
     "DOB": "2004-05-06 00:00:00",
     "Year": "Sr",
-    "Prj. Rd": "2nd Round",
+    "Prj. Rd": null,
     "Games": "51",
     "Snaps": "2407",
     "24/7 Sports": "98",
@@ -26,7 +26,7 @@
   "age": 21.7,
   "dob": "2004-05-06 00:00:00",
   "year": "Sr",
-  "projected_round": "2nd Round",
+  "projected_round": null,
   "games": 51,
   "snaps": 2407,
   "site_ratings": {

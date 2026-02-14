@@ -9,7 +9,7 @@
     "Age": "21.4",
     "DOB": "2004-09-14 00:00:00",
     "Year": "Jr",
-    "Prj. Rd": "3rd Round",
+    "Prj. Rd": null,
     "Games": "40",
     "Snaps": "1913",
     "24/7 Sports": "96",
@@ -26,7 +26,7 @@
   "age": 21.4,
   "dob": "2004-09-14 00:00:00",
   "year": "Jr",
-  "projected_round": "3rd Round",
+  "projected_round": null,
   "games": 40,
   "snaps": 1913,
   "site_ratings": {

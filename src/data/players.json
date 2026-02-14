@@ -524,7 +524,7 @@
     "weight": "190",
     "age": 21.7,
     "year": "Sr",
-    "projected_round": "2nd Round",
+    "projected_round": null,
     "games": 51
   },
   {
@@ -1244,7 +1244,7 @@
     "weight": "188",
     "age": 21.4,
     "year": "Jr",
-    "projected_round": "3rd Round",
+    "projected_round": null,
     "games": 40
   },
   {
