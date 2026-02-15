@@ -768,6 +768,46 @@ function normalizePosition(pos: string): string {
   return p;
 }
 
+/**
+ * Ensure a player's overview is non-empty so they appear as "having a profile".
+ * Seeds overview with basic bio from top-level columns if currently empty.
+ * Returns the (possibly seeded) overview merged with any new keys.
+ */
+async function ensureOverviewSeeded(
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  playerId: string,
+  existingOverview: Record<string, unknown> | null,
+  newOverviewKeys?: Record<string, string | null>,
+): Promise<Record<string, unknown>> {
+  const existing = existingOverview || {};
+  const merged = { ...existing, ...(newOverviewKeys || {}) };
+
+  // If overview is already populated, just merge
+  if (Object.keys(existing).length > 0) return merged;
+
+  // Overview is empty — seed it from top-level player columns
+  const { data: player } = await supabase
+    .from("players")
+    .select("position, college, height, weight, age, dob, year, games, snaps, projected_round")
+    .eq("id", playerId)
+    .single();
+
+  if (player) {
+    if (player.position && !merged["POS"]) merged["POS"] = player.position;
+    if (player.college && !merged["College"]) merged["College"] = player.college;
+    if (player.height && !merged["Height"]) merged["Height"] = player.height;
+    if (player.weight && !merged["Weight"]) merged["Weight"] = String(player.weight);
+    if (player.age && !merged["Age"]) merged["Age"] = String(player.age);
+    if (player.dob && !merged["DOB"]) merged["DOB"] = player.dob;
+    if (player.year && !merged["Year"]) merged["Year"] = player.year;
+    if (player.games && !merged["Games"]) merged["Games"] = String(player.games);
+    if (player.snaps && !merged["Snaps"]) merged["Snaps"] = String(player.snaps);
+    if (player.projected_round && !merged["Prj. Rd"]) merged["Prj. Rd"] = player.projected_round;
+  }
+
+  return merged;
+}
+
 // ─── Import: PFF Scores ─────────────────────────────────────────────────────
 
 async function importPFFScores(
@@ -938,20 +978,29 @@ async function importPFFScores(
     // Fetch existing player data to merge
     const { data: existing } = await supabase
       .from("players")
-      .select("pff_scores, alignments, overview")
+      .select("pff_scores, alignments, overview, age")
       .eq("id", pr.playerId)
       .single();
 
     const mergedPff = { ...(existing?.pff_scores || {}), ...pffScores };
     const mergedAlign = { ...(existing?.alignments || {}), ...pr.alignments };
-    const mergedOverview = { ...(existing?.overview || {}), ...pr.overview };
 
-    // Also update position if not already set
+    // Seed overview if empty, merge new overview keys
+    const mergedOverview = await ensureOverviewSeeded(
+      supabase, pr.playerId, existing?.overview, pr.overview,
+    );
+
     const updateData: Record<string, unknown> = {
       pff_scores: mergedPff,
       alignments: mergedAlign,
       overview: mergedOverview,
     };
+
+    // Also write Age to top-level column if available and not already set
+    if (pr.overview["Age"] && !existing?.age) {
+      const ageNum = parseFloat(pr.overview["Age"]);
+      if (!isNaN(ageNum)) updateData.age = ageNum;
+    }
 
     const { error } = await supabase
       .from("players")
@@ -1042,19 +1091,42 @@ async function importDraftBuzzGrades(
     // Fetch existing to merge
     const { data: existing } = await supabase
       .from("players")
-      .select("draftbuzz_grades, overview")
+      .select("draftbuzz_grades, overview, age, dob, games, snaps")
       .eq("id", playerId)
       .single();
 
     const mergedGrades = { ...(existing?.draftbuzz_grades || {}), ...grades };
-    const mergedOverview = { ...(existing?.overview || {}), ...overview };
+
+    // Seed overview if empty, merge new overview keys
+    const mergedOverview = await ensureOverviewSeeded(
+      supabase, playerId, existing?.overview, overview,
+    );
+
+    const updateData: Record<string, unknown> = {
+      draftbuzz_grades: mergedGrades,
+      overview: mergedOverview,
+    };
+
+    // Write bio fields to top-level columns if available and not already set
+    if (row["age"] && !existing?.age) {
+      const ageNum = parseFloat(row["age"]);
+      if (!isNaN(ageNum)) updateData.age = ageNum;
+    }
+    if (row["DOB"] && !existing?.dob) {
+      updateData.dob = row["DOB"];
+    }
+    if (row["college_games"] && !existing?.games) {
+      const gamesNum = parseInt(row["college_games"], 10);
+      if (!isNaN(gamesNum)) updateData.games = gamesNum;
+    }
+    if (row["college_snaps"] && !existing?.snaps) {
+      const snapsNum = parseInt(row["college_snaps"], 10);
+      if (!isNaN(snapsNum)) updateData.snaps = snapsNum;
+    }
 
     const { error } = await supabase
       .from("players")
-      .update({
-        draftbuzz_grades: mergedGrades,
-        overview: mergedOverview,
-      })
+      .update(updateData)
       .eq("id", playerId);
 
     if (error) {
@@ -1134,15 +1206,20 @@ async function importAthleticScores(
     // Fetch existing to merge
     const { data: existing } = await supabase
       .from("players")
-      .select("athletic_scores")
+      .select("athletic_scores, overview")
       .eq("id", playerId)
       .single();
 
     const merged = { ...(existing?.athletic_scores || {}), ...scores };
 
+    // Seed overview if empty so player appears as "having a profile"
+    const mergedOverview = await ensureOverviewSeeded(
+      supabase, playerId, existing?.overview,
+    );
+
     const { error } = await supabase
       .from("players")
-      .update({ athletic_scores: merged })
+      .update({ athletic_scores: merged, overview: mergedOverview })
       .eq("id", playerId);
 
     if (error) {
@@ -1202,15 +1279,27 @@ async function importSiteRatings(
     // Fetch existing to merge
     const { data: existing } = await supabase
       .from("players")
-      .select("site_ratings")
+      .select("site_ratings, overview")
       .eq("id", playerId)
       .single();
 
     const merged = { ...(existing?.site_ratings || {}), ...ratings };
 
+    // Seed overview if empty so player appears as "having a profile"
+    const mergedOverview = await ensureOverviewSeeded(
+      supabase, playerId, existing?.overview,
+    );
+
+    // Also merge site ratings into overview (NFL.com, ESPN, etc.)
+    for (const [, displayLabel] of ratingCols) {
+      if (ratings[displayLabel]) {
+        (mergedOverview as Record<string, unknown>)[displayLabel] = ratings[displayLabel];
+      }
+    }
+
     const { error } = await supabase
       .from("players")
-      .update({ site_ratings: merged })
+      .update({ site_ratings: merged, overview: mergedOverview })
       .eq("id", playerId);
 
     if (error) {
