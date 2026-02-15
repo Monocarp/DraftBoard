@@ -1515,15 +1515,9 @@ async function importNFLProfiles(
       });
     }
 
-    // ── 5. Player columns (projected_role, eligibility) ─
-    // NOTE: strengths, weaknesses, player_summary are manually authored — never overwrite them from imports
+    // ── 5. Player columns (eligibility only) ─
+    // NOTE: strengths, weaknesses, player_summary, projected_role are manually authored — never overwrite from imports
     const updateData: Record<string, unknown> = {};
-
-    // Prospect Grade Indicator → projected_role
-    const indicator = row[mapping["prospect_grade_indicator"]] || row["Prospect Grade Indicator"];
-    if (indicator?.trim()) {
-      updateData.projected_role = indicator.trim();
-    }
 
     // Eligibility → year via bio_sources
     const eligibility = row[mapping["eligibility"]] || row["Eligibility"];
