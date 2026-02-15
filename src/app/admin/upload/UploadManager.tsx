@@ -143,6 +143,20 @@ const DATA_TYPES: Record<DataType, DataTypeConfig> = {
     ],
     needsSource: false,
   },
+  espn_profiles: {
+    label: "ESPN Profiles",
+    description: "ESPN prospect profiles — overall rank, position rank, grade, and scouting analysis in one shot",
+    requiredColumns: [
+      { key: "player_name", label: "Player Name", required: true },
+      { key: "rank", label: "Rank", required: false },
+      { key: "pos_rank", label: "Pos Rank", required: false },
+      { key: "grade", label: "Grade", required: false },
+      { key: "position", label: "Position", required: false },
+      { key: "school", label: "School", required: false },
+      { key: "analysis", label: "Analysis", required: false },
+    ],
+    needsSource: false,
+  },
 };
 
 // ─── Step Enum ──────────────────────────────────────────────────────────────

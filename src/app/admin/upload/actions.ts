@@ -16,7 +16,8 @@ export type DataType =
   | "athletic_scores"
   | "site_ratings"
   | "nfl_profiles"
-  | "bleacher_profiles";
+  | "bleacher_profiles"
+  | "espn_profiles";
 
 export type ColumnMapping = Record<string, string>; // csv_header → db_column
 
@@ -1686,6 +1687,96 @@ async function importBleacherProfiles(
   return result;
 }
 
+// ─── Import: ESPN Profiles ──────────────────────────────────────────────────
+
+async function importESPNProfiles(
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  rows: Record<string, string>[],
+  mapping: ColumnMapping,
+): Promise<UploadResult> {
+  const result: UploadResult = { success: true, inserted: 0, updated: 0, skipped: 0, errors: [] };
+  const SOURCE = "ESPN";
+
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    const playerName = row[mapping["player_name"]];
+    const rawPos = row[mapping["position"]] || "";
+    const school = row[mapping["school"]] || "";
+
+    if (!playerName?.trim()) { result.skipped++; continue; }
+
+    const playerId = await resolvePlayerId(supabase, playerName, {
+      position: rawPos,
+      college: school,
+    });
+    if (!playerId) {
+      result.errors.push(`Row ${i + 1}: Could not resolve player "${playerName}"`);
+      result.skipped++;
+      continue;
+    }
+
+    // ── 1. Player Rankings (Rank + Pos Rank) ────────────────────────────
+    const rank = row[mapping["rank"]];
+    const posRank = row[mapping["pos_rank"]];
+    if (rank) {
+      const overallRank = parseInt(String(rank), 10);
+      const positionalRank = posRank ? parseInt(String(posRank), 10) : null;
+      if (!isNaN(overallRank)) {
+        await supabase
+          .from("player_rankings")
+          .upsert(
+            {
+              player_id: playerId,
+              source: SOURCE,
+              overall_rank: overallRank,
+              positional_rank: !isNaN(positionalRank ?? NaN) ? positionalRank : null,
+            },
+            { onConflict: "player_id,source" },
+          );
+      }
+    }
+
+    // ── 2. Site Ratings + Overview (Grade) ──────────────────────────────
+    const grade = row[mapping["grade"]];
+    if (grade && String(grade).trim()) {
+      const { data: existing } = await supabase
+        .from("players")
+        .select("site_ratings, overview")
+        .eq("id", playerId)
+        .single();
+
+      const merged = { ...(existing?.site_ratings || {}), [SOURCE]: String(grade) };
+      const mergedOverview = { ...(existing?.overview || {}), [SOURCE]: String(grade) };
+
+      await supabase
+        .from("players")
+        .update({ site_ratings: merged, overview: mergedOverview })
+        .eq("id", playerId);
+    }
+
+    // ── 3. Commentary (Analysis) ────────────────────────────────────────
+    const analysis = row[mapping["analysis"]];
+    if (analysis?.trim() && analysis.trim() !== "N/A") {
+      const sections: { title: string; text: string }[] = [
+        { title: "Analysis", text: analysis.trim() },
+      ];
+
+      await supabase.from("commentary").delete().eq("player_id", playerId).eq("source", SOURCE);
+      await supabase.from("commentary").insert({
+        player_id: playerId,
+        source: SOURCE,
+        sections,
+      });
+    }
+
+    // NOTE: strengths, weaknesses, player_summary, projected_role are manually authored — never overwrite from imports
+
+    result.updated++;
+  }
+
+  return result;
+}
+
 // ─── Main Import Dispatcher ────────────────────────────────────────────────
 
 export async function importData(
@@ -1742,6 +1833,10 @@ export async function importData(
       break;
     case "bleacher_profiles":
       result = await importBleacherProfiles(supabase, rows, mapping);
+      break;
+    case "espn_profiles":
+      result = await importESPNProfiles(supabase, rows, mapping);
+      autoDateType = "ranking";
       break;
     default:
       result = { success: false, inserted: 0, updated: 0, skipped: 0, errors: [`Unknown data type: ${dataType}`] };
