@@ -7,8 +7,10 @@ import {
   deleteCorrection,
   bulkAddCorrections,
   searchPlayersForCorrection,
+  auditCorrections,
+  mergeAllDuplicates,
 } from "./actions";
-import type { NameCorrection } from "./actions";
+import type { NameCorrection, AuditResult, MergeResult } from "./actions";
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
@@ -46,6 +48,38 @@ export function CorrectionsManager({
 
   // Delete state
   const [deleteId, setDeleteId] = useState<string | null>(null);
+
+  // Audit state
+  const [auditing, setAuditing] = useState(false);
+  const [auditResult, setAuditResult] = useState<AuditResult | null>(null);
+  const [merging, setMerging] = useState(false);
+  const [mergeResult, setMergeResult] = useState<MergeResult | null>(null);
+
+  const handleAudit = async () => {
+    setAuditing(true);
+    setAuditResult(null);
+    setMergeResult(null);
+    try {
+      const result = await auditCorrections();
+      setAuditResult(result);
+    } catch (err) {
+      console.error(err);
+    }
+    setAuditing(false);
+  };
+
+  const handleMerge = async () => {
+    setMerging(true);
+    setMergeResult(null);
+    try {
+      const result = await mergeAllDuplicates();
+      setMergeResult(result);
+      setAuditResult(null); // Clear audit since duplicates are resolved
+    } catch (err) {
+      console.error(err);
+    }
+    setMerging(false);
+  };
 
   // Filter corrections
   const filtered = corrections.filter((c) => {
@@ -178,6 +212,95 @@ export function CorrectionsManager({
             + Add Correction
           </button>
         </div>
+      </div>
+
+      {/* Audit & Merge panel */}
+      <div className="rounded-xl border border-[#2a3a4e] bg-[#0d1320] p-5">
+        <div className="flex items-center justify-between mb-1">
+          <div>
+            <h3 className="text-sm font-medium text-white">Database Audit</h3>
+            <p className="text-xs text-gray-500 mt-0.5">
+              Scan for duplicate players created before corrections were added, and merge their data.
+            </p>
+          </div>
+          <button
+            onClick={handleAudit}
+            disabled={auditing}
+            className="rounded-lg border border-[#2a3a4e] px-4 py-2 text-sm text-gray-300 hover:text-white hover:border-white/20 disabled:opacity-50 transition-colors"
+          >
+            {auditing ? "Scanning..." : "Run Audit"}
+          </button>
+        </div>
+
+        {auditResult && (
+          <div className="mt-4 space-y-3">
+            {auditResult.duplicates.length === 0 ? (
+              <div className="rounded-lg bg-green-500/10 border border-green-500/20 px-4 py-3 text-sm text-green-400">
+                ✓ No duplicates found — all corrections are clean.
+              </div>
+            ) : (
+              <>
+                <div className="rounded-lg bg-yellow-500/10 border border-yellow-500/20 px-4 py-3">
+                  <p className="text-sm text-yellow-400 font-medium">
+                    Found {auditResult.duplicates.length} duplicate{auditResult.duplicates.length > 1 ? "s" : ""} — {auditResult.totalRowsToMove} data row{auditResult.totalRowsToMove !== 1 ? "s" : ""} to move
+                  </p>
+                </div>
+
+                <div className="space-y-2">
+                  {auditResult.duplicates.map((dup, i) => (
+                    <div key={i} className="rounded-lg border border-[#2a3a4e] bg-[#141e2e] p-3">
+                      <div className="flex items-center gap-2 text-sm">
+                        <span className="text-red-400 font-mono">{dup.variantName}</span>
+                        <span className="text-gray-600">→</span>
+                        <span className="text-green-400 font-mono">{dup.canonicalName}</span>
+                      </div>
+                      {dup.details.length > 0 ? (
+                        <div className="mt-1.5 flex flex-wrap gap-2">
+                          {dup.details.map((d) => (
+                            <span key={d.table} className="rounded bg-[#0d1320] px-2 py-0.5 text-xs text-gray-400">
+                              {d.table}: <span className="text-white">{d.count}</span>
+                            </span>
+                          ))}
+                        </div>
+                      ) : (
+                        <p className="mt-1 text-xs text-gray-600">No data rows (empty duplicate — will be deleted)</p>
+                      )}
+                    </div>
+                  ))}
+                </div>
+
+                <button
+                  onClick={handleMerge}
+                  disabled={merging}
+                  className="rounded-lg bg-orange-500 px-4 py-2 text-sm font-medium text-white hover:bg-orange-600 disabled:opacity-50 transition-colors"
+                >
+                  {merging ? "Merging..." : `Merge All (${auditResult.duplicates.length} duplicate${auditResult.duplicates.length > 1 ? "s" : ""})`}
+                </button>
+              </>
+            )}
+          </div>
+        )}
+
+        {mergeResult && (
+          <div className="mt-4">
+            <div className={`rounded-lg px-4 py-3 text-sm ${
+              mergeResult.errors.length > 0
+                ? "bg-yellow-500/10 border border-yellow-500/20 text-yellow-400"
+                : "bg-green-500/10 border border-green-500/20 text-green-400"
+            }`}>
+              <p className="font-medium">
+                ✓ Merged {mergeResult.merged} duplicate{mergeResult.merged !== 1 ? "s" : ""} — moved {mergeResult.moved} data row{mergeResult.moved !== 1 ? "s" : ""}, deleted {mergeResult.deleted} player record{mergeResult.deleted !== 1 ? "s" : ""}
+              </p>
+              {mergeResult.errors.length > 0 && (
+                <div className="mt-2 space-y-1">
+                  {mergeResult.errors.map((e, i) => (
+                    <p key={i} className="text-xs text-red-400">• {e}</p>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Import CSV panel */}

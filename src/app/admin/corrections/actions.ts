@@ -154,3 +154,185 @@ export async function searchPlayersForCorrection(
 
   return data ?? [];
 }
+
+// ─── Audit & Merge ─────────────────────────────────────────────────────────
+
+function toSlug(name: string) {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+export interface AuditDuplicate {
+  variantName: string;
+  variantSlug: string;
+  variantId: string;
+  canonicalName: string;
+  canonicalSlug: string;
+  canonicalId: string;
+  /** How many data rows reference the variant player across all tables */
+  rowsToMove: number;
+  /** Breakdown by table */
+  details: { table: string; count: number }[];
+}
+
+export interface AuditResult {
+  duplicates: AuditDuplicate[];
+  totalRowsToMove: number;
+}
+
+const DATA_TABLES_BY_PLAYER_ID = [
+  "rankings",
+  "positional_rankings",
+  "player_rankings",
+  "adp_entries",
+  "mock_picks",
+  "board_entries",
+  "position_board_entries",
+  "player_comps",
+  "projected_rounds",
+  "commentary",
+] as const;
+
+const DATA_TABLES_BY_SLUG = ["rankings", "positional_rankings"] as const;
+
+/**
+ * Scan all corrections for duplicate player records that need merging.
+ */
+export async function auditCorrections(): Promise<AuditResult> {
+  const supabase = await createSupabaseServer();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) throw new Error("Unauthorized");
+
+  const corrections = await getCorrections();
+  const duplicates: AuditDuplicate[] = [];
+
+  for (const c of corrections) {
+    const variantSlug = toSlug(c.variant_name);
+    const canonicalSlug = c.canonical_slug;
+    if (variantSlug === canonicalSlug) continue;
+
+    // Check if both players exist
+    const { data: vPlayers } = await supabase
+      .from("players")
+      .select("id, name, slug")
+      .eq("slug", variantSlug)
+      .limit(1);
+    const { data: cPlayers } = await supabase
+      .from("players")
+      .select("id, name, slug")
+      .eq("slug", canonicalSlug)
+      .limit(1);
+
+    const vp = vPlayers?.[0];
+    const cp = cPlayers?.[0];
+    if (!vp || !cp || vp.id === cp.id) continue;
+
+    // Count data rows on the variant player
+    const details: { table: string; count: number }[] = [];
+    let rowsToMove = 0;
+
+    for (const tbl of DATA_TABLES_BY_PLAYER_ID) {
+      const { count } = await supabase
+        .from(tbl)
+        .select("id", { count: "exact", head: true })
+        .eq("player_id", vp.id);
+      if (count && count > 0) {
+        details.push({ table: tbl, count });
+        rowsToMove += count;
+      }
+    }
+
+    duplicates.push({
+      variantName: vp.name,
+      variantSlug,
+      variantId: vp.id,
+      canonicalName: cp.name,
+      canonicalSlug,
+      canonicalId: cp.id,
+      rowsToMove,
+      details,
+    });
+  }
+
+  return {
+    duplicates,
+    totalRowsToMove: duplicates.reduce((sum, d) => sum + d.rowsToMove, 0),
+  };
+}
+
+export interface MergeResult {
+  merged: number;
+  moved: number;
+  deleted: number;
+  errors: string[];
+}
+
+/**
+ * Merge all duplicate players found by audit.
+ * Moves all data from variant player to canonical player, then deletes variant.
+ */
+export async function mergeAllDuplicates(): Promise<MergeResult> {
+  const supabase = await createSupabaseServer();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) throw new Error("Unauthorized");
+
+  const audit = await auditCorrections();
+  const result: MergeResult = { merged: 0, moved: 0, deleted: 0, errors: [] };
+
+  for (const dup of audit.duplicates) {
+    try {
+      // Move all player_id references from variant to canonical
+      for (const tbl of DATA_TABLES_BY_PLAYER_ID) {
+        const { count } = await supabase
+          .from(tbl)
+          .select("id", { count: "exact", head: true })
+          .eq("player_id", dup.variantId);
+
+        if (count && count > 0) {
+          const { error } = await supabase
+            .from(tbl)
+            .update({ player_id: dup.canonicalId })
+            .eq("player_id", dup.variantId);
+          if (error) {
+            result.errors.push(`${tbl}: ${error.message}`);
+          } else {
+            result.moved += count;
+          }
+        }
+      }
+
+      // Update slug references too
+      for (const tbl of DATA_TABLES_BY_SLUG) {
+        const { error } = await supabase
+          .from(tbl)
+          .update({ slug: dup.canonicalSlug })
+          .eq("slug", dup.variantSlug);
+        if (error) {
+          result.errors.push(`${tbl} slug update: ${error.message}`);
+        }
+      }
+
+      // Delete the variant player record
+      const { error: delError } = await supabase
+        .from("players")
+        .delete()
+        .eq("id", dup.variantId);
+
+      if (delError) {
+        result.errors.push(`Delete player ${dup.variantName}: ${delError.message}`);
+      } else {
+        result.deleted++;
+      }
+
+      result.merged++;
+    } catch (err) {
+      result.errors.push(`${dup.variantName}: ${String(err)}`);
+    }
+  }
+
+  revalidatePath("/admin");
+  revalidatePath("/");
+  return result;
+}
