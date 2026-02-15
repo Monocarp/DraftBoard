@@ -1515,19 +1515,9 @@ async function importNFLProfiles(
       });
     }
 
-    // ── 5. Player columns (strengths, weaknesses, summary, year, projected_role) ─
+    // ── 5. Player columns (projected_role, eligibility) ─
+    // NOTE: strengths, weaknesses, player_summary are manually authored — never overwrite them from imports
     const updateData: Record<string, unknown> = {};
-
-    // Convert pipe-delimited strengths/weaknesses into bullet lists
-    if (strengths?.trim()) {
-      updateData.strengths = strengths.split("|").map((s: string) => s.trim()).filter(Boolean).join("\n");
-    }
-    if (weaknesses?.trim()) {
-      updateData.weaknesses = weaknesses.split("|").map((s: string) => s.trim()).filter(Boolean).join("\n");
-    }
-    if (overview?.trim()) {
-      updateData.player_summary = overview.trim();
-    }
 
     // Prospect Grade Indicator → projected_role
     const indicator = row[mapping["prospect_grade_indicator"]] || row["Prospect Grade Indicator"];
