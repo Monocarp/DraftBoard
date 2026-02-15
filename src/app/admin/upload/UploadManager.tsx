@@ -83,6 +83,42 @@ const DATA_TYPES: Record<DataType, DataTypeConfig> = {
     ],
     needsSource: false,
   },
+  pff_scores: {
+    label: "PFF Scores + Alignments",
+    description: "PFF_Stats sheet — auto-detects position, computes percentiles, imports alignments & overview. Column B must be position.",
+    requiredColumns: [
+      { key: "player_name", label: "Player Name", required: true },
+      { key: "position", label: "Position (Column B)", required: true },
+    ],
+    needsSource: false,
+  },
+  draftbuzz_grades: {
+    label: "DraftBuzz Grades",
+    description: "DraftBuzz position sheet (DB CB, DB DL, etc.). Set Source to the position group (e.g. CB, DL, LB, OL, QB, RB, SAF, TE, WR).",
+    requiredColumns: [
+      { key: "player_name", label: "Player Name", required: true },
+    ],
+    needsSource: true,
+  },
+  athletic_scores: {
+    label: "Athletic Scores (RAS Data)",
+    description: "RAS / Combine data — height, weight, speed, agility, explosiveness scores",
+    requiredColumns: [
+      { key: "player_name", label: "Player Name", required: true },
+      { key: "position", label: "Position", required: false },
+    ],
+    needsSource: false,
+  },
+  site_ratings: {
+    label: "Site Ratings (Grades)",
+    description: "Grades sheet — NFL.com, ESPN, Gridiron, Bleacher ratings per player",
+    requiredColumns: [
+      { key: "player_name", label: "Player Name", required: true },
+      { key: "position", label: "Position", required: false },
+      { key: "college", label: "College/School", required: false },
+    ],
+    needsSource: false,
+  },
 };
 
 // ─── Step Enum ──────────────────────────────────────────────────────────────

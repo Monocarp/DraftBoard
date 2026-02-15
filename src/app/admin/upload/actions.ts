@@ -11,7 +11,11 @@ export type DataType =
   | "adp"
   | "mocks"
   | "player_rankings"
-  | "source_dates";
+  | "source_dates"
+  | "pff_scores"
+  | "draftbuzz_grades"
+  | "athletic_scores"
+  | "site_ratings";
 
 export type ColumnMapping = Record<string, string>; // csv_header → db_column
 
@@ -501,6 +505,724 @@ async function importSourceDates(
   return result;
 }
 
+// ─── PFF Position Config ────────────────────────────────────────────────────
+// Maps template display label → PFF_Stats CSV column header, per position group
+
+type PffColumnMapping = [string, string][]; // [templateLabel, csvColumnHeader]
+
+const PFF_POSITION_COLUMNS: Record<string, PffColumnMapping> = {
+  CB: [
+    ["25 Grade", "25 Grade"], ["24 Grade", "24 Grade"], ["23 Grade", "23 Grade"],
+    ["Coverage Grade", "Coverage Grade"], ["Passer Rating", "Passer Rating Against"],
+    ["Interceptions", "Interceptions"], ["Forced Incom.", "Forced Incom."],
+    ["Forced Inc. Rate", "Forced Incom. Rate"], ["Dropped Picks", "Dropped Picks"],
+    ["Completion %", "Completion % Allowed"], ["Man Coverage", "Man Coverage"],
+    ["Zone Coverage", "Zone Coverage"], ["% In Man", "Man %"], ["% In Zone", "Zone %"],
+    ["Coverage Stops", "Coverage Stops"], ["Tackling", "Tackling Grade"],
+    ["Missed Tackles", "Missed Tackles"], ["Missed Tackle Rate", "Missed Tackle Rate"],
+    ["Run Def Grade", "Run Def Grade"],
+  ],
+  SAF: [
+    ["25 Grade", "25 Grade"], ["24 Grade", "24 Grade"], ["23 Grade", "23 Grade"],
+    ["Coverage Grade", "Coverage Grade"], ["Interceptions", "Interceptions"],
+    ["Forced Inc. Rate", "Forced Incom. Rate"], ["Passer Rating Alwd", "Passer Rating Against"],
+    ["TD Allowed/Ints", "TD Allowed/Ints"], ["Coverage Stops", "Coverage Stops"],
+    ["Run Def Grade", "Run Def Grade"], ["Run Stops", "Run Stops"],
+    ["Tackling Grade", "Tackling Grade"], ["Tackles", "Tackles"],
+    ["Assisted Tackles", "Assisted Tackles"], ["Missed Tackles", "Missed Tackles"],
+    ["Missed Tackle Rate", "Missed Tackle Rate"],
+  ],
+  DT: [
+    ["25 Grade", "25 Grade"], ["24 Grade", "24 Grade"], ["23 Grade", "23 Grade"],
+    ["Pass Rush Grade", "Pass Rush Grade"], ["True Pass Rush", "True Pass Rush"],
+    ["PR Win Rate", "PR Win Rate"], ["Run Def. Grade", "Run Def Grade"],
+    ["Run Stop %", "Run Stop %"], ["Sacks", "Sacks"], ["Hits", "Hits"],
+    ["Hurries", "Hurries"], ["Batted Balls", "Batted Balls"],
+    ["Forced Fumbles", "Forced Fumbles"], ["Tackling Grade", "Tackling Grade2"],
+    ["Missed Tackle Rate", "Missed Tackle Rate2"], ["Total Pressures", "Total Pressures"],
+  ],
+  EDGE: [
+    ["25 Grade", "25 Grade"], ["24 Grade", "24 Grade"], ["23 Grade", "23 Grade"],
+    ["Pass Rush Grade", "Pass Rush Grade"], ["True Pass Rush", "True Pass Rush"],
+    ["PR Win Rate", "PR Win Rate"], ["Run Def. Grade", "Run Def Grade"],
+    ["Run Stop %", "Run Stop %"], ["Sacks", "Sacks"], ["Hits", "Hits"],
+    ["Hurries", "Hurries"], ["Batted Balls", "Batted Balls"],
+    ["Forced Fumbles", "Forced Fumbles"], ["Tackling Grade", "Tackling Grade2"],
+    ["Missed Tackle Rate", "Missed Tackle Rate2"], ["Total Pressures", "Total Pressures"],
+  ],
+  LB: [
+    ["25 Grade", "25 Grade"], ["24 Grade", "24 Grade"], ["23 Grade", "23 Grade"],
+    ["Pass Rush Grade", "Pass Rush Grade"], ["Run Def. Grade", "Run Def Grade"],
+    ["Run Stop %", "Run Stop %"], ["Tackles", "Tackles"],
+    ["Tackling Grade", "Tackling Grade"], ["Missed Tkl Rate", "Missed Tackle Rate"],
+    ["ADORT", "Average Depth of Target Coverage"], ["Coverage", "Coverage Grade"],
+    ["Coverage Stops", "Coverage Stops"], ["Recs/Tgts", "Receptions/Tgts"],
+    ["Completion %", "Completion % Allowed"], ["TD / INT", "TD Allowed/Ints"],
+    ["Forced Inc Rate", "Forced Incom. Rate"], ["Pass Rat. All.", "Passer Rating Against"],
+  ],
+  OL: [
+    ["2025 Grade", "25 Grade"], ["2024 Grade", "24 Grade"], ["2023 Grade", "23 Grade"],
+    ["Run Block Grade", "Run Block Grade"], ["Pass Block Grade", "Pass Block Grade"],
+    ["True Pass Set Grade", "True Pass Set Grade"],
+    ["Pass Block Efficiency", "Pass Block Efficiency"],
+    ["Zone Grade", "Zone Blocking Grade"], ["Gap Grade", "Gap Blocking Grade"],
+    ["Sacks Allowed", "Sacks Allowed"], ["Hits Allowed", "Hits Allowed"],
+    ["Hurries Allowed", "Hurries Allowed"], ["Pressures Allowed", "Pressures Allowed"],
+    ["Penalties", "Penalties"],
+  ],
+  OT: [
+    ["2025 Grade", "25 Grade"], ["2024 Grade", "24 Grade"], ["2023 Grade", "23 Grade"],
+    ["Run Block Grade", "Run Block Grade"], ["Pass Block Grade", "Pass Block Grade"],
+    ["True Pass Set Grade", "True Pass Set Grade"],
+    ["Pass Block Efficiency", "Pass Block Efficiency"],
+    ["Zone Grade", "Zone Blocking Grade"], ["Gap Grade", "Gap Blocking Grade"],
+    ["Sacks Allowed", "Sacks Allowed"], ["Hits Allowed", "Hits Allowed"],
+    ["Hurries Allowed", "Hurries Allowed"], ["Pressures Allowed", "Pressures Allowed"],
+    ["Penalties", "Penalties"],
+  ],
+  IOL: [
+    ["2025 Grade", "25 Grade"], ["2024 Grade", "24 Grade"], ["2023 Grade", "23 Grade"],
+    ["Run Block Grade", "Run Block Grade"], ["Pass Block Grade", "Pass Block Grade"],
+    ["True Pass Set Grade", "True Pass Set Grade"],
+    ["Pass Block Efficiency", "Pass Block Efficiency"],
+    ["Zone Grade", "Zone Blocking Grade"], ["Gap Grade", "Gap Blocking Grade"],
+    ["Sacks Allowed", "Sacks Allowed"], ["Hits Allowed", "Hits Allowed"],
+    ["Hurries Allowed", "Hurries Allowed"], ["Pressures Allowed", "Pressures Allowed"],
+    ["Penalties", "Penalties"],
+  ],
+  QB: [
+    ["23 Grade", "25 Grade"], ["22 Grade", "24 Grade"], ["21 Grade", "23 Grade"],
+    ["Passing Grade", "Passing Grade"], ["Intermediate Grade", "Intermediate Passing Grade"],
+    ["Deep Grade", "Deep Passing Grade"], ["No Pressure Grade", "No Pressure Grade"],
+    ["Pressure Grade", "Pressure Grade"], ["Adjusted Comp %", "Adjusted Comp %"],
+    ["Average DOT", "Passing Average Depth of Target"],
+    ["Big Time Throw", "Big Time Throw"], ["TO Worthy Plays", "TO Worthy Plays"],
+    ["Pressure to Sack", "Pressure to Sack"], ["Avg Time to Throw", "Avg Time to Throw"],
+    ["Deep Yards", "Deep Yards Thrown"], ["Screen Yards", "Screen Yards Thrown"],
+    ["Touchdowns", "Touchdowns Thrown"], ["NFL Passer Rating", "NFL Passer Rating"],
+  ],
+  RB: [
+    ["23 Grade", "25 Grade"], ["22 Grade", "24 Grade"], ["21 Grade", "23 Grade"],
+    ["Rushing Grade", "Rushing Grade"], ["Zone Grade", "Zone Grade Rushing"],
+    ["Gap Grade", "Gap Grade Rushing"], ["Elusiveness", "Elusiveness"],
+    ["YAC per Att.", "YAC per Rush Att"], ["Missed Tkls For", "Missed Tkls Forced Rushing"],
+    ["Runs of 15+", "Runs of 15+"], ["Yds per RR", "Yards/ Routes Run"],
+    ["Breakaway %", "Breakaway Percentage"], ["Drops", "Drop %"],
+    ["Explosive Runs(?)", "Explosive"], ["Fumbles", "Fumbles"],
+    ["Ball Security Grade", "Ball Security"], ["Pass Block Grade", "Pass Block Grade"],
+    ["Touchdowns", "Rushing Touchdowns"], ["Receiving Grade", "Receiving Grade"],
+  ],
+  WR: [
+    ["2025 Grade", "25 Grade"], ["2024 Grade", "24 Grade"], ["2023 Grade", "23 Grade"],
+    ["Receiving Grade", "Receiving Grade"], ["Yards/ Routes Run", "Yards/ Routes Run"],
+    ["Drop %", "Drop %"], ["Contested Catch", "CCR"], ["Grade vs Man", "Grade vs Man"],
+    ["YAC/Reception", "YAC/Reception"],
+    ["Missed Tkls Forced", "Receving Missed Tkls Forced"],
+    ["ADOT", "Receiving Average Depth of Target"],
+    ["Deep Yards", "Deep Yards Receiving"], ["Touchdowns", "Touchdowns Caught"],
+    ["Elusiveness", "Elusiveness"],
+  ],
+  TE: [
+    ["2025 Grade", "25 Grade"], ["2024 Grade", "24 Grade"], ["2023 Grade", "23 Grade"],
+    ["Receiving Grade", "Receiving Grade"], ["Drop %", "Drop %"],
+    ["Cont. Catch Ratio", "CCR"], ["Yards Per Route Run", "Yards/ Routes Run"],
+    ["YAC Per Reception", "YAC/Reception"],
+    ["Missed Tkles Forced", "Receving Missed Tkls Forced"],
+    ["Pass Block Grade", "Pass Block Grade"], ["Run Block Grade", "Run Block Grade"],
+    ["Touchdowns", "Touchdowns Caught"],
+  ],
+};
+
+// Alignment column mapping per position group
+const ALIGNMENT_COLUMNS: Record<string, [string, string, string][]> = {
+  // [templateLabel, csvCol_2025, csvCol_Career]
+  CB: [
+    ["D-Line", "Coverage D-Line Allignment", "Coverage Career D-Line Allignment"],
+    ["Slot", "Coverage Slot Allignment", "Coverage Career Slot Allignment"],
+    ["Corner", "Coverage Corner Allignment", "Coverage Career Corner Allignment"],
+    ["Box", "Coverage Box Allignment", "Coverage Career Box Allignment"],
+    ["Deep", "Coverage Deep Allignment", "Coverage Career Deep Allignment"],
+  ],
+  SAF: [
+    ["Slot", "Coverage Slot Allignment", "Coverage Career Slot Allignment"],
+    ["Box", "Coverage Box Allignment", "Coverage Career Box Allignment"],
+    ["Corner", "Coverage Corner Allignment", "Coverage Career Corner Allignment"],
+    ["Deep", "Coverage Deep Allignment", "Coverage Career Deep Allignment"],
+  ],
+  LB: [
+    ["D-Line", "Coverage D-Line Allignment", "Coverage Career D-Line Allignment"],
+    ["Slot", "Coverage Slot Allignment", "Coverage Career Slot Allignment"],
+    ["Corner", "Coverage Corner Allignment", "Coverage Career Corner Allignment"],
+    ["Box", "Coverage Box Allignment", "Coverage Career Box Allignment"],
+    ["Deep", "Coverage Deep Allignment", "Coverage Career Deep Allignment"],
+  ],
+  DT: [
+    ["A GAP", "Dline A Gap Allignment", "Dline Career A Gap Allignment"],
+    ["B GAP", "Dline B Gap Allignment", "Dline Career B Gap Allignment"],
+    ["Over Tackle", "Dline Over Tackle Allignment", "Dline Career Over Tackle Allignment"],
+    ["Outside Tkl", "Dline Outside Tackle Allignment", "Dline Career Outside Tackle Allignment"],
+    ["Off Ball", "Dline Off Ball Allignment", "Dline Career Offball Allignment"],
+  ],
+  EDGE: [
+    ["A GAP", "Dline A Gap Allignment", "Dline Career A Gap Allignment"],
+    ["B GAP", "Dline B Gap Allignment", "Dline Career B Gap Allignment"],
+    ["Over Tackle", "Dline Over Tackle Allignment", "Dline Career Over Tackle Allignment"],
+    ["Outside Tkl", "Dline Outside Tackle Allignment", "Dline Career Outside Tackle Allignment"],
+    ["Off Ball", "Dline Off Ball Allignment", "Dline Career Offball Allignment"],
+  ],
+  OL: [
+    ["LT", "LT Snaps", "Career LT Snaps"],
+    ["LG", "LG Snaps", "Career LG Snaps"],
+    ["C", "C Snaps", "Career C Snaps"],
+    ["RG", "RG Snaps", "Career RG Snaps"],
+    ["RT", "RT Snaps", "Career RT Snaps"],
+  ],
+  OT: [
+    ["LT", "LT Snaps", "Career LT Snaps"],
+    ["LG", "LG Snaps", "Career LG Snaps"],
+    ["C", "C Snaps", "Career C Snaps"],
+    ["RG", "RG Snaps", "Career RG Snaps"],
+    ["RT", "RT Snaps", "Career RT Snaps"],
+  ],
+  IOL: [
+    ["LT", "LT Snaps", "Career LT Snaps"],
+    ["LG", "LG Snaps", "Career LG Snaps"],
+    ["C", "C Snaps", "Career C Snaps"],
+    ["RG", "RG Snaps", "Career RG Snaps"],
+    ["RT", "RT Snaps", "Career RT Snaps"],
+  ],
+  WR: [
+    ["Slot", "Slot Snaps", "Career Slot Snaps"],
+    ["Wide", "Wide Snaps", "Career Wide Snaps"],
+  ],
+  TE: [
+    ["Slot Snaps", "Slot Snaps", "Career Slot Snaps"],
+    ["Inline Snaps", "Inline Snaps", "Inline Snaps"],
+  ],
+};
+
+// DraftBuzz grade column names per position (CSV header → display label)
+const DRAFTBUZZ_GRADE_COLUMNS: Record<string, [string, string][]> = {
+  // [csvHeader, displayLabel]
+  CB: [
+    ["qbr", "QBR Allowed"], ["Tackling", "Tackling"], ["Run_Defense", "Run Defense"],
+    ["Coverage", "Cov Grade"], ["Zone", "Zone Coverage"], ["Man_Press", "Man/Press"],
+  ],
+  SAF: [
+    ["qbr", "QBR When Targeted"], ["Tackling", "Tackling"], ["Run_Defense", "Run Defense"],
+    ["Coverage", "Coverage Grade"], ["Zone", "Zone Coverage"], ["Man_Press", "Man/Press"],
+  ],
+  DT: [["Tackling", "Tackling"], ["Pass_Rush", "Pass Rush"], ["Run_Defense", "Run Defense"]],
+  EDGE: [["Tackling", "Tackling"], ["Pass_Rush", "Pass Rush"], ["Run_Defense", "Run Defense"]],
+  DL: [["Tackling", "Tackling"], ["Pass_Rush", "Pass Rush"], ["Run_Defense", "Run Defense"]],
+  LB: [
+    ["Tackling", "Tackling"], ["Pass_Rush", "Pass Rush"],
+    ["Run_Defense", "Run Defense"], ["Coverage", "Coverage"],
+  ],
+  OL: [["Pass_Blocking", "Pass Blocking Grade"], ["Run_Blocking", "Run Blocking Grade"]],
+  OT: [["Pass_Blocking", "Pass Blocking Grade"], ["Run_Blocking", "Run Blocking Grade"]],
+  IOL: [["Pass_Blocking", "Pass Blocking Grade"], ["Run_Blocking", "Run Blocking Grade"]],
+  QB: [
+    ["short_passing", "Short Passing"], ["med_passing", "Medium Passing"],
+    ["long_passing", "Long Passing"], ["rush_scramble", "Rush/Scramble"],
+  ],
+  RB: [
+    ["Rushing", "Rushing Grade"], ["Break_Tackles", "Break Tackles"],
+    ["Receiving_Hands", "Receiving/Hands"], ["Pass_Blocking", "Pass Blocking"],
+    ["Run_Blocking", "Run Blocking"],
+  ],
+  WR: [
+    ["qbr", "QBR When Tgtd"], ["Hands", "Hands"], ["Short_Receiving", "Short Receiving"],
+    ["Intermediate_Routes", "Med Routes"], ["Deep_Threat", "Deep Threat"],
+    ["Blocking", "Blocking"],
+  ],
+  TE: [
+    ["qbr", "QBR When Tgtd"], ["Hands", "Hands"], ["Short_Receiving", "Short Receiving"],
+    ["Intermediate_Routes", "Intermediate Routes"], ["Deep_Threat", "Deep Threat"],
+    ["Blocking", "Blocking"],
+  ],
+};
+
+// Map DB sheet name suffix → position group (for auto-detection)
+const DB_SHEET_POSITION_MAP: Record<string, string[]> = {
+  CB: ["CB"],
+  DL: ["DT", "EDGE", "DL"],
+  LB: ["LB"],
+  OL: ["OL", "OT", "IOL"],
+  QB: ["QB"],
+  RB: ["RB"],
+  SAF: ["SAF"],
+  TE: ["TE"],
+  WR: ["WR"],
+};
+
+/** Normalize position string for lookup in config maps */
+function normalizePosition(pos: string): string {
+  const p = pos.trim().toUpperCase();
+  // Map variants to standard keys
+  if (["DE", "ED", "EDGE"].includes(p)) return "EDGE";
+  if (["IDL", "DT", "NT"].includes(p)) return "DT";
+  if (["S", "FS", "SS", "SAF"].includes(p)) return "SAF";
+  if (["OG", "C", "IOL"].includes(p)) return "IOL";
+  if (["OT", "T"].includes(p)) return "OT";
+  return p;
+}
+
+// ─── Import: PFF Scores ─────────────────────────────────────────────────────
+
+async function importPFFScores(
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  rows: Record<string, string>[],
+  mapping: ColumnMapping,
+): Promise<UploadResult> {
+  const result: UploadResult = { success: true, inserted: 0, updated: 0, skipped: 0, errors: [] };
+
+  // Phase 1: Extract raw values per player
+  interface PlayerPffRow {
+    playerId: string;
+    position: string;
+    pffScores: Record<string, string>;
+    alignments: Record<string, { "2025": number | null; career: number | null }>;
+    overview: Record<string, string | null>;
+  }
+  const playerRows: PlayerPffRow[] = [];
+
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    const playerName = row[mapping["player_name"]];
+    const rawPos = row[mapping["position"]] || "";
+
+    if (!playerName?.trim()) { result.skipped++; continue; }
+
+    const pos = normalizePosition(rawPos);
+    const colMap = PFF_POSITION_COLUMNS[pos];
+    if (!colMap) {
+      result.errors.push(`Row ${i + 1}: Unknown position "${rawPos}" for "${playerName}"`);
+      result.skipped++;
+      continue;
+    }
+
+    const playerId = await resolvePlayerId(supabase, playerName, { position: rawPos });
+    if (!playerId) {
+      result.errors.push(`Row ${i + 1}: Could not resolve player "${playerName}"`);
+      result.skipped++;
+      continue;
+    }
+
+    // Extract PFF scores using position-specific column mapping
+    const pffScores: Record<string, string> = {};
+    for (const [label, csvCol] of colMap) {
+      const val = row[csvCol];
+      if (val !== undefined && val !== null && val !== "") {
+        pffScores[label] = val;
+      }
+    }
+
+    // Extract alignments
+    const alignments: Record<string, { "2025": number | null; career: number | null }> = {};
+    const alignCols = ALIGNMENT_COLUMNS[pos];
+    if (alignCols) {
+      for (const [label, col2025, colCareer] of alignCols) {
+        const v2025 = row[col2025];
+        const vCareer = row[colCareer];
+        if ((v2025 && v2025 !== "") || (vCareer && vCareer !== "")) {
+          alignments[label] = {
+            "2025": v2025 ? parseFloat(v2025) || null : null,
+            career: vCareer ? parseFloat(vCareer) || null : null,
+          };
+        }
+      }
+    }
+
+    // Extract overview fields from PFF_Stats
+    const overview: Record<string, string | null> = {};
+    const overviewMap: [string, string][] = [
+      ["Age", "Age"], ["Summary", "Summary"], ["Pros", "Pros"],
+      ["Cons", "Cons"], ["Player Comp", "Player Comp"],
+      ["Bottom Line", "Bottom Line"], ["Round Projection", "Round Projection"],
+    ];
+    for (const [key, csvCol] of overviewMap) {
+      const val = row[csvCol];
+      if (val !== undefined && val !== null && val !== "") {
+        overview[key] = val;
+      }
+    }
+
+    playerRows.push({ playerId, position: pos, pffScores, alignments, overview });
+  }
+
+  // Phase 2: Compute percentile ranks within position groups
+  // Group players by position
+  const byPosition = new Map<string, PlayerPffRow[]>();
+  for (const pr of playerRows) {
+    const group = byPosition.get(pr.position) || [];
+    group.push(pr);
+    byPosition.set(pr.position, group);
+  }
+
+  // For each position group, compute percentiles for each metric
+  type PffWithPercentile = Record<string, { value: string; percentile: number | null }>;
+  const playerPffFinal = new Map<string, PffWithPercentile>();
+
+  for (const [, group] of byPosition) {
+    // Collect all metric keys used in this position
+    const allKeys = new Set<string>();
+    for (const pr of group) {
+      for (const k of Object.keys(pr.pffScores)) allKeys.add(k);
+    }
+
+    // Initialize final objects
+    for (const pr of group) {
+      if (!playerPffFinal.has(pr.playerId)) {
+        playerPffFinal.set(pr.playerId, {});
+      }
+    }
+
+    // For each metric, rank all players and assign percentiles
+    for (const metric of allKeys) {
+      // Collect (playerId, numericValue) pairs
+      const values: [string, number][] = [];
+      for (const pr of group) {
+        const raw = pr.pffScores[metric];
+        if (raw !== undefined) {
+          const num = parseFloat(raw);
+          if (!isNaN(num)) {
+            values.push([pr.playerId, num]);
+          } else {
+            // Non-numeric value — store as-is with no percentile
+            playerPffFinal.get(pr.playerId)![metric] = { value: raw, percentile: null };
+          }
+        }
+      }
+
+      if (values.length < 2) {
+        // Not enough data to rank — store with null percentile
+        for (const [pid, val] of values) {
+          playerPffFinal.get(pid)![metric] = { value: String(val), percentile: null };
+        }
+        continue;
+      }
+
+      // Sort ascending by value
+      values.sort((a, b) => a[1] - b[1]);
+
+      // Assign percentile ranks (0..1) using average rank for ties
+      const n = values.length;
+      const rankMap = new Map<string, number>();
+      let i = 0;
+      while (i < n) {
+        let j = i;
+        while (j < n && values[j][1] === values[i][1]) j++;
+        const avgRank = (i + j - 1) / 2;
+        const percentile = n > 1 ? round3(1 - avgRank / (n - 1)) : 0.5;
+        for (let k = i; k < j; k++) {
+          rankMap.set(values[k][0], percentile);
+        }
+        i = j;
+      }
+
+      // Write back
+      for (const [pid, val] of values) {
+        playerPffFinal.get(pid)![metric] = {
+          value: String(val),
+          percentile: rankMap.get(pid) ?? null,
+        };
+      }
+    }
+  }
+
+  // Phase 3: Write to database (merge with existing data)
+  for (const pr of playerRows) {
+    const pffScores = playerPffFinal.get(pr.playerId) || {};
+
+    // Fetch existing player data to merge
+    const { data: existing } = await supabase
+      .from("players")
+      .select("pff_scores, alignments, overview")
+      .eq("id", pr.playerId)
+      .single();
+
+    const mergedPff = { ...(existing?.pff_scores || {}), ...pffScores };
+    const mergedAlign = { ...(existing?.alignments || {}), ...pr.alignments };
+    const mergedOverview = { ...(existing?.overview || {}), ...pr.overview };
+
+    // Also update position if not already set
+    const updateData: Record<string, unknown> = {
+      pff_scores: mergedPff,
+      alignments: mergedAlign,
+      overview: mergedOverview,
+    };
+
+    const { error } = await supabase
+      .from("players")
+      .update(updateData)
+      .eq("id", pr.playerId);
+
+    if (error) {
+      result.errors.push(`${pr.playerId}: ${error.message}`);
+    } else {
+      result.updated++;
+    }
+  }
+
+  return result;
+}
+
+function round3(n: number): number {
+  return Math.round(n * 1000) / 1000;
+}
+
+// ─── Import: DraftBuzz Grades ───────────────────────────────────────────────
+
+async function importDraftBuzzGrades(
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  rows: Record<string, string>[],
+  mapping: ColumnMapping,
+  sourceName: string,
+): Promise<UploadResult> {
+  const result: UploadResult = { success: true, inserted: 0, updated: 0, skipped: 0, errors: [] };
+
+  // sourceName is used as the DraftBuzz sheet type indicator (e.g. "DB CB", "DB DL", etc.)
+  // Determine which position group this sheet is for
+  const sheetSuffix = sourceName.replace(/^DB\s*/i, "").trim().toUpperCase();
+  const positionGroup = sheetSuffix;
+  const gradeConfig = DRAFTBUZZ_GRADE_COLUMNS[positionGroup] || DRAFTBUZZ_GRADE_COLUMNS[sheetSuffix];
+
+  if (!gradeConfig) {
+    return {
+      success: false, inserted: 0, updated: 0, skipped: 0,
+      errors: [`Unknown DraftBuzz position group: "${sourceName}". Use format "DB CB", "DB DL", etc.`],
+    };
+  }
+
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    const playerName = row[mapping["player_name"]];
+
+    if (!playerName?.trim()) { result.skipped++; continue; }
+
+    const playerId = await resolvePlayerId(supabase, playerName);
+    if (!playerId) {
+      result.errors.push(`Row ${i + 1}: Could not resolve player "${playerName}"`);
+      result.skipped++;
+      continue;
+    }
+
+    // Build draftbuzz_grades object
+    const grades: Record<string, number | null> = {};
+    for (const [csvHeader, displayLabel] of gradeConfig) {
+      const val = row[csvHeader];
+      if (val !== undefined && val !== null && val !== "" && val !== "#N/A") {
+        const num = parseFloat(val);
+        grades[displayLabel] = isNaN(num) ? null : num;
+      }
+    }
+
+    // Build overview fields from DraftBuzz
+    const overview: Record<string, string | null> = {};
+    const overviewFields: [string, string][] = [
+      ["age", "Age"], ["DOB", "DOB"], ["overall_rating", "Draft Buzz"],
+      ["college_games", "Games"], ["college_snaps", "Snaps"],
+      ["espn_rating", "ESPN"], ["rating_247", "24/7 Sports"],
+      ["rivals_rating", "Rivals"], ["projected_role", "Projected Role"],
+      ["Projected Role", "Projected Role"], ["Projected_role", "Projected Role"],
+    ];
+    for (const [csvH, ovKey] of overviewFields) {
+      const val = row[csvH];
+      if (val !== undefined && val !== null && val !== "" && val !== "#N/A") {
+        overview[ovKey] = val;
+      }
+    }
+
+    // Format DraftBuzz rating specially
+    if (row["overall_rating"] && row["overall_rating"] !== "#N/A") {
+      overview["Draft Buzz"] = `${row["overall_rating"]} / 100`;
+    }
+
+    // Fetch existing to merge
+    const { data: existing } = await supabase
+      .from("players")
+      .select("draftbuzz_grades, overview")
+      .eq("id", playerId)
+      .single();
+
+    const mergedGrades = { ...(existing?.draftbuzz_grades || {}), ...grades };
+    const mergedOverview = { ...(existing?.overview || {}), ...overview };
+
+    const { error } = await supabase
+      .from("players")
+      .update({
+        draftbuzz_grades: mergedGrades,
+        overview: mergedOverview,
+      })
+      .eq("id", playerId);
+
+    if (error) {
+      result.errors.push(`Row ${i + 1}: ${error.message}`);
+    } else {
+      result.updated++;
+    }
+  }
+
+  return result;
+}
+
+// ─── Import: Athletic Scores (RAS Data) ─────────────────────────────────────
+
+async function importAthleticScores(
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  rows: Record<string, string>[],
+  mapping: ColumnMapping,
+): Promise<UploadResult> {
+  const result: UploadResult = { success: true, inserted: 0, updated: 0, skipped: 0, errors: [] };
+
+  // RAS Data column mapping: [csvHeader, displayLabel]
+  // Each becomes { result: value, grade: gradeValue }
+  const athleticFields: [string, string, string][] = [
+    // [resultCol, gradeCol, displayLabel]
+    ["RAS", "", "RAS"],
+    ["Composite Size Grade", "", "Size"],
+    ["Height", "Height Score", "Height"],
+    ["Weight", "Weight Score", "Weight"],
+    ["Bench", "Bench Score", "Bench"],
+    ["Composite Speed Grade", "", "Speed"],
+    ["Composite Explosion Grade", "", "Explosive"],
+    ["Composite Agility Grade", "", "Agility"],
+    ["40 Yard Dash", "40 Yard Dash Grade", "40 Time"],
+    ["20 Yard Split", "20 Yard Split Grade", "20 Split"],
+    ["10 Yard Split", "10 Yard Split Grade", "10 Split"],
+    ["Vertical", "Vertical Grade", "Vertical"],
+    ["Broad", "Broad Grade", "Broad"],
+    ["Shuttle", "Shuttle Grade", "Shuttle"],
+    ["3-Cone", "3-Cone Grade", "3 Cone"],
+    ["Hand Size", "", "Hand Size"],
+    ["Arm Length", "", "Arm Length"],
+  ];
+
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    const playerName = row[mapping["player_name"]];
+
+    if (!playerName?.trim()) { result.skipped++; continue; }
+
+    const playerId = await resolvePlayerId(supabase, playerName, {
+      position: row[mapping["position"]] || undefined,
+    });
+    if (!playerId) {
+      result.errors.push(`Row ${i + 1}: Could not resolve player "${playerName}"`);
+      result.skipped++;
+      continue;
+    }
+
+    // Build athletic_scores object
+    const scores: Record<string, { result: string | null; grade: string | null }> = {};
+    for (const [resultCol, gradeCol, label] of athleticFields) {
+      const resultVal = row[resultCol];
+      const gradeVal = gradeCol ? row[gradeCol] : undefined;
+
+      // Only include if at least one value exists
+      if ((resultVal && resultVal !== "") || (gradeVal && gradeVal !== "")) {
+        scores[label] = {
+          result: resultVal && resultVal !== "" ? resultVal : null,
+          grade: gradeVal && gradeVal !== "" ? gradeVal : null,
+        };
+      }
+    }
+
+    if (Object.keys(scores).length === 0) { result.skipped++; continue; }
+
+    // Fetch existing to merge
+    const { data: existing } = await supabase
+      .from("players")
+      .select("athletic_scores")
+      .eq("id", playerId)
+      .single();
+
+    const merged = { ...(existing?.athletic_scores || {}), ...scores };
+
+    const { error } = await supabase
+      .from("players")
+      .update({ athletic_scores: merged })
+      .eq("id", playerId);
+
+    if (error) {
+      result.errors.push(`Row ${i + 1}: ${error.message}`);
+    } else {
+      result.updated++;
+    }
+  }
+
+  return result;
+}
+
+// ─── Import: Site Ratings (Grades sheet) ────────────────────────────────────
+
+async function importSiteRatings(
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  rows: Record<string, string>[],
+  mapping: ColumnMapping,
+): Promise<UploadResult> {
+  const result: UploadResult = { success: true, inserted: 0, updated: 0, skipped: 0, errors: [] };
+
+  // Grades sheet columns: Player, School, Position, NFL, ESPN, Gridiron, Bleacher
+  const ratingCols: [string, string][] = [
+    ["NFL", "NFL.com"],
+    ["ESPN", "ESPN"],
+    ["Gridiron", "Gridiron"],
+    ["Bleacher", "Bleacher"],
+  ];
+
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    const playerName = row[mapping["player_name"]];
+
+    if (!playerName?.trim()) { result.skipped++; continue; }
+
+    const playerId = await resolvePlayerId(supabase, playerName, {
+      position: row[mapping["position"]] || undefined,
+      college: row[mapping["college"]] || undefined,
+    });
+    if (!playerId) {
+      result.errors.push(`Row ${i + 1}: Could not resolve player "${playerName}"`);
+      result.skipped++;
+      continue;
+    }
+
+    // Build site_ratings object
+    const ratings: Record<string, string | null> = {};
+    for (const [csvCol, displayLabel] of ratingCols) {
+      const val = row[csvCol];
+      if (val !== undefined && val !== null && val !== "") {
+        ratings[displayLabel] = val;
+      }
+    }
+
+    if (Object.keys(ratings).length === 0) { result.skipped++; continue; }
+
+    // Fetch existing to merge
+    const { data: existing } = await supabase
+      .from("players")
+      .select("site_ratings")
+      .eq("id", playerId)
+      .single();
+
+    const merged = { ...(existing?.site_ratings || {}), ...ratings };
+
+    const { error } = await supabase
+      .from("players")
+      .update({ site_ratings: merged })
+      .eq("id", playerId);
+
+    if (error) {
+      result.errors.push(`Row ${i + 1}: ${error.message}`);
+    } else {
+      result.updated++;
+    }
+  }
+
+  return result;
+}
+
 // ─── Main Import Dispatcher ────────────────────────────────────────────────
 
 export async function importData(
@@ -544,6 +1266,18 @@ export async function importData(
     case "source_dates":
       result = await importSourceDates(supabase, rows, mapping);
       break;
+    case "pff_scores":
+      result = await importPFFScores(supabase, rows, mapping);
+      break;
+    case "draftbuzz_grades":
+      result = await importDraftBuzzGrades(supabase, rows, mapping, sourceName);
+      break;
+    case "athletic_scores":
+      result = await importAthleticScores(supabase, rows, mapping);
+      break;
+    case "site_ratings":
+      result = await importSiteRatings(supabase, rows, mapping);
+      break;
     default:
       result = { success: false, inserted: 0, updated: 0, skipped: 0, errors: [`Unknown data type: ${dataType}`] };
   }
@@ -579,6 +1313,7 @@ export async function importData(
   revalidatePath("/mocks");
   revalidatePath("/boards");
   revalidatePath("/players");
+  revalidatePath("/player", "layout");
 
   return result;
 }
@@ -601,6 +1336,12 @@ export async function deleteSourceData(
     case "mocks": table = "mock_picks"; break;
     case "player_rankings": table = "player_rankings"; break;
     case "source_dates": table = "source_dates"; break;
+    // Profile importers write to players table JSON fields — no source-based deletion
+    case "pff_scores":
+    case "draftbuzz_grades":
+    case "athletic_scores":
+    case "site_ratings":
+      return { success: false, deleted: 0, error: "Profile data cannot be deleted by source. Edit individual players instead." };
     default: return { success: false, deleted: 0, error: "Unknown data type" };
   }
 
