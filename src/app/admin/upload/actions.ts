@@ -709,6 +709,8 @@ const ALIGNMENT_COLUMNS: Record<string, [string, string, string][]> = {
 // DraftBuzz grade column names per position (CSV header → display label)
 const DRAFTBUZZ_GRADE_COLUMNS: Record<string, [string, string][]> = {
   // [csvHeader, displayLabel]
+  // csvHeaders use snake_case from the Excel workbook; flexGet() handles
+  // the Title Case variants ("Pass Rush", "Run Defense", etc.) from CSV exports.
   CB: [
     ["qbr", "QBR Allowed"], ["Tackling", "Tackling"], ["Run_Defense", "Run Defense"],
     ["Coverage", "Cov Grade"], ["Zone", "Zone Coverage"], ["Man_Press", "Man/Press"],
@@ -1162,6 +1164,24 @@ async function importDraftBuzzGrades(
     };
   }
 
+  // Build a case-insensitive, separator-insensitive lookup for row keys.
+  // DraftBuzz CSVs from the website use "College Games" while the Excel
+  // workbook uses "college_games". This normalizer lets either form work.
+  const normalizeKey = (k: string) => k.toLowerCase().replace(/[\s_]+/g, "");
+  function flexGet(row: Record<string, string>, ...candidates: string[]): string | undefined {
+    // Try exact match first (fast path)
+    for (const c of candidates) {
+      if (row[c] !== undefined) return row[c];
+    }
+    // Fall back to normalized match against all row keys
+    const normCandidates = candidates.map(normalizeKey);
+    for (const key of Object.keys(row)) {
+      const nk = normalizeKey(key);
+      if (normCandidates.includes(nk)) return row[key];
+    }
+    return undefined;
+  }
+
   for (let i = 0; i < rows.length; i++) {
     const row = rows[i];
     const playerName = row[mapping["player_name"]];
@@ -1178,7 +1198,7 @@ async function importDraftBuzzGrades(
     // Build draftbuzz_grades object
     const grades: Record<string, number | null> = {};
     for (const [csvHeader, displayLabel] of gradeConfig) {
-      const val = row[csvHeader];
+      const val = flexGet(row, csvHeader);
       if (val !== undefined && val !== null && val !== "" && val !== "#N/A") {
         const num = parseFloat(val);
         grades[displayLabel] = isNaN(num) ? null : num;
@@ -1186,24 +1206,31 @@ async function importDraftBuzzGrades(
     }
 
     // Build overview fields from DraftBuzz
+    // Each entry: [overviewKey, ...candidateCsvHeaders]
     const overview: Record<string, string | null> = {};
-    const overviewFields: [string, string][] = [
-      ["age", "Age"], ["DOB", "DOB"], ["overall_rating", "Draft Buzz"],
-      ["college_games", "Games"], ["college_snaps", "Snaps"],
-      ["espn_rating", "ESPN"], ["rating_247", "24/7 Sports"],
-      ["rivals_rating", "Rivals"], ["projected_role", "Projected Role"],
-      ["Projected Role", "Projected Role"], ["Projected_role", "Projected Role"],
+    const overviewFields: [string, ...string[]][] = [
+      ["Age", "age", "Age"],
+      ["DOB", "DOB", "Date of Birth"],
+      ["Draft Buzz", "overall_rating", "Overall Rating"],
+      ["Games", "college_games", "College Games"],
+      ["Snaps", "college_snaps", "College Snaps"],
+      ["ESPN", "espn_rating", "ESPN Rating"],
+      ["24/7 Sports", "rating_247", "247 Rating"],
+      ["Rivals", "rivals_rating", "Rivals Rating"],
+      ["Projected Role", "projected_role", "Projected Role", "Projected_role"],
     ];
-    for (const [csvH, ovKey] of overviewFields) {
-      const val = row[csvH];
+    for (const [ovKey, ...candidates] of overviewFields) {
+      const val = flexGet(row, ...candidates);
       if (val !== undefined && val !== null && val !== "" && val !== "#N/A") {
         overview[ovKey] = val;
       }
     }
 
     // Format DraftBuzz rating specially
-    if (row["overall_rating"] && row["overall_rating"] !== "#N/A") {
-      overview["Draft Buzz"] = `${row["overall_rating"]} / 100`;
+    const rawRating = flexGet(row, "overall_rating", "Overall Rating");
+    if (rawRating && rawRating !== "#N/A") {
+      // If it already contains "/ 100" don't double-wrap
+      overview["Draft Buzz"] = rawRating.includes("/") ? rawRating : `${rawRating} / 100`;
     }
 
     // Fetch existing to merge
@@ -1228,10 +1255,14 @@ async function importDraftBuzzGrades(
 
     // Write bio fields through priority-based resolver
     const bioValues: Partial<Record<BioField, string | number | null>> = {};
-    if (row["age"] && row["age"] !== "#N/A") bioValues.age = row["age"];
-    if (row["DOB"] && row["DOB"] !== "#N/A") bioValues.dob = row["DOB"];
-    if (row["college_games"] && row["college_games"] !== "#N/A") bioValues.games = row["college_games"];
-    if (row["college_snaps"] && row["college_snaps"] !== "#N/A") bioValues.snaps = row["college_snaps"];
+    const ageVal = flexGet(row, "age", "Age");
+    const dobVal = flexGet(row, "DOB", "Date of Birth");
+    const gamesVal = flexGet(row, "college_games", "College Games");
+    const snapsVal = flexGet(row, "college_snaps", "College Snaps");
+    if (ageVal && ageVal !== "#N/A") bioValues.age = ageVal;
+    if (dobVal && dobVal !== "#N/A") bioValues.dob = dobVal;
+    if (gamesVal && gamesVal !== "#N/A") bioValues.games = gamesVal;
+    if (snapsVal && snapsVal !== "#N/A") bioValues.snaps = snapsVal;
     await writeBioSources(supabase, playerId, "draftbuzz", bioValues);
 
     if (error) {
