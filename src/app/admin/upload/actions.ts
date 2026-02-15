@@ -518,27 +518,56 @@ export async function importData(
 
   let result: UploadResult;
 
+  // Determine source_type for auto-updating source_dates
+  let autoDateType: "ranking" | "mock" | null = null;
+
   switch (dataType) {
     case "rankings":
       result = await importRankings(supabase, rows, mapping, sourceName);
+      autoDateType = "ranking";
       break;
     case "positional_rankings":
       result = await importPositionalRankings(supabase, rows, mapping, sourceName);
+      autoDateType = "ranking";
       break;
     case "adp":
       result = await importADP(supabase, rows, mapping, sourceName);
       break;
     case "mocks":
       result = await importMocks(supabase, rows, mapping, sourceName);
+      autoDateType = "mock";
       break;
     case "player_rankings":
       result = await importPlayerRankings(supabase, rows, mapping, sourceName);
+      autoDateType = "ranking";
       break;
     case "source_dates":
       result = await importSourceDates(supabase, rows, mapping);
       break;
     default:
       result = { success: false, inserted: 0, updated: 0, skipped: 0, errors: [`Unknown data type: ${dataType}`] };
+  }
+
+  // Auto-update source_dates when importing rankings or mocks
+  if (autoDateType && sourceName && result.inserted + result.updated > 0) {
+    const now = new Date().toISOString();
+    const { data: existing } = await supabase
+      .from("source_dates")
+      .select("id")
+      .eq("source", sourceName)
+      .eq("source_type", autoDateType)
+      .maybeSingle();
+
+    if (existing) {
+      await supabase
+        .from("source_dates")
+        .update({ date: now })
+        .eq("id", existing.id);
+    } else {
+      await supabase
+        .from("source_dates")
+        .insert({ source: sourceName, source_type: autoDateType, date: now });
+    }
   }
 
   // Clear caches after import

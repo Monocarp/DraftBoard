@@ -56,6 +56,12 @@ export default async function AdminLayout({
                   Corrections
                 </Link>
                 <Link
+                  href="/admin/dates"
+                  className="px-3 py-1.5 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-white/5 transition-colors"
+                >
+                  Dates
+                </Link>
+                <Link
                   href="/"
                   className="px-3 py-1.5 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-white/5 transition-colors"
                 >
