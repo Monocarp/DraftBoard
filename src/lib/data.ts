@@ -17,18 +17,19 @@ import type {
 
 /** Supabase caps `.select()` at 1 000 rows by default.
  *  This helper fetches ALL rows in pages of 1 000. */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 async function fetchAll<T>(
   table: string,
   select: string = "*",
-  filter?: (q: ReturnType<ReturnType<typeof supabase.from>["select"]>) => ReturnType<ReturnType<typeof supabase.from>["select"]>,
+  filter?: (q: any) => any,
 ): Promise<T[]> {
   const PAGE = 1000;
   let all: T[] = [];
   let from = 0;
   // eslint-disable-next-line no-constant-condition
   while (true) {
-    let q = supabase.from(table).select(select).range(from, from + PAGE - 1);
-    if (filter) q = filter(q) as typeof q;
+    let q: any = supabase.from(table).select(select).range(from, from + PAGE - 1);
+    if (filter) q = filter(q);
     const { data, error } = await q;
     if (error) throw new Error(`Supabase error (${table}): ${error.message}`);
     if (!data || data.length === 0) break;
