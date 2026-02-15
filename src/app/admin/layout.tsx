@@ -62,6 +62,12 @@ export default async function AdminLayout({
                   Dates
                 </Link>
                 <Link
+                  href="/admin/priorities"
+                  className="px-3 py-1.5 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-white/5 transition-colors"
+                >
+                  Priorities
+                </Link>
+                <Link
                   href="/"
                   className="px-3 py-1.5 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-white/5 transition-colors"
                 >
