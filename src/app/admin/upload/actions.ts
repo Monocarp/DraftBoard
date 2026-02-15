@@ -758,13 +758,15 @@ const DB_SHEET_POSITION_MAP: Record<string, string[]> = {
 
 /** Normalize position string for lookup in config maps */
 function normalizePosition(pos: string): string {
-  const p = pos.trim().toUpperCase();
+  const p = pos.trim().toUpperCase().replace(/\//g, "");
   // Map variants to standard keys
-  if (["DE", "ED", "EDGE"].includes(p)) return "EDGE";
-  if (["IDL", "DT", "NT"].includes(p)) return "DT";
+  if (["DE", "ED", "EDGE", "DEED", "LBED"].includes(p)) return "EDGE";
+  if (["IDL", "DT", "NT", "DI", "DL"].includes(p)) return "DT";
   if (["S", "FS", "SS", "SAF"].includes(p)) return "SAF";
-  if (["OG", "C", "IOL"].includes(p)) return "IOL";
+  if (["OG", "G", "C", "IOL"].includes(p)) return "IOL";
   if (["OT", "T"].includes(p)) return "OT";
+  if (["ILB", "MLB"].includes(p)) return "LB";
+  if (["HB", "FB"].includes(p)) return "RB";
   return p;
 }
 
@@ -945,6 +947,11 @@ async function importPFFScores(
     if (!playerName?.trim()) { result.skipped++; continue; }
 
     const pos = normalizePosition(rawPos);
+    if (!pos || pos === "TBD") {
+      // No position assigned yet — can't determine which metrics to extract
+      result.skipped++;
+      continue;
+    }
     const colMap = PFF_POSITION_COLUMNS[pos];
     if (!colMap) {
       result.errors.push(`Row ${i + 1}: Unknown position "${rawPos}" for "${playerName}"`);
