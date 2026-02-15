@@ -62,18 +62,6 @@ const DATA_TYPES: Record<DataType, DataTypeConfig> = {
     ],
     needsSource: true,
   },
-  player_rankings: {
-    label: "Player Profile Rankings",
-    description: "Rankings shown on player profile pages (overall + positional)",
-    requiredColumns: [
-      { key: "player_name", label: "Player Name", required: true },
-      { key: "overall_rank", label: "Overall Rank", required: true },
-      { key: "positional_rank", label: "Positional Rank", required: false },
-      { key: "position", label: "Position", required: false },
-      { key: "college", label: "College", required: false },
-    ],
-    needsSource: true,
-  },
   source_dates: {
     label: "Source Dates",
     description: "When ranking/mock sources were last updated",

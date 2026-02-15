@@ -10,7 +10,6 @@ export type DataType =
   | "positional_rankings"
   | "adp"
   | "mocks"
-  | "player_rankings"
   | "source_dates"
   | "pff_scores"
   | "draftbuzz_grades"
@@ -263,6 +262,20 @@ async function importRankings(
         }
       }
     }
+
+    // Always sync to player_rankings so profile pages show these ranks
+    const posRankValueForProfile = posRankRaw && String(posRankRaw).trim() ? String(Math.round(parseFloat(posRankRaw))) : null;
+    await supabase
+      .from("player_rankings")
+      .upsert(
+        {
+          player_id: playerId,
+          source: sourceName,
+          overall_rank: rankValue,
+          positional_rank: posRankValueForProfile,
+        },
+        { onConflict: "player_id,source" },
+      );
   }
 
   return result;
@@ -319,6 +332,26 @@ async function importPositionalRankings(
         .insert({ player_id: playerId, source: sourceName, rank_value: rankValue, slug });
       if (error) result.errors.push(`Row ${i + 1}: ${error.message}`);
       else result.inserted++;
+    }
+
+    // Also sync positional_rank to player_rankings so profile pages show it
+    const posRankStr = rankValue != null ? String(Math.round(rankValue)) : null;
+    const { data: existingPR } = await supabase
+      .from("player_rankings")
+      .select("id")
+      .eq("player_id", playerId)
+      .eq("source", sourceName)
+      .maybeSingle();
+
+    if (existingPR) {
+      await supabase
+        .from("player_rankings")
+        .update({ positional_rank: posRankStr })
+        .eq("id", existingPR.id);
+    } else {
+      await supabase
+        .from("player_rankings")
+        .insert({ player_id: playerId, source: sourceName, overall_rank: null, positional_rank: posRankStr });
     }
   }
 
@@ -433,61 +466,6 @@ async function importMocks(
 }
 
 // ─── Import: Player Rankings (profile page) ─────────────────────────────────
-
-async function importPlayerRankings(
-  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
-  rows: Record<string, string>[],
-  mapping: ColumnMapping,
-  sourceName: string,
-): Promise<UploadResult> {
-  const result: UploadResult = { success: true, inserted: 0, updated: 0, skipped: 0, errors: [] };
-
-  for (let i = 0; i < rows.length; i++) {
-    const row = rows[i];
-    const playerName = row[mapping["player_name"]];
-    const overallRaw = row[mapping["overall_rank"]];
-    const positionalRank = mapping["positional_rank"] ? row[mapping["positional_rank"]] || null : null;
-
-    if (!playerName?.trim()) { result.skipped++; continue; }
-
-    const playerId = await resolvePlayerId(supabase, playerName, {
-      position: mapping["position"] ? row[mapping["position"]] : undefined,
-      college: mapping["college"] ? row[mapping["college"]] : undefined,
-    });
-
-    if (!playerId) {
-      result.errors.push(`Row ${i + 1}: Could not resolve player "${playerName}"`);
-      result.skipped++;
-      continue;
-    }
-
-    const overallRank = overallRaw ? parseFloat(overallRaw) : null;
-
-    const { data: existing } = await supabase
-      .from("player_rankings")
-      .select("id")
-      .eq("player_id", playerId)
-      .eq("source", sourceName)
-      .maybeSingle();
-
-    if (existing) {
-      const { error } = await supabase
-        .from("player_rankings")
-        .update({ overall_rank: overallRank, positional_rank: positionalRank })
-        .eq("id", existing.id);
-      if (error) result.errors.push(`Row ${i + 1}: ${error.message}`);
-      else result.updated++;
-    } else {
-      const { error } = await supabase
-        .from("player_rankings")
-        .insert({ player_id: playerId, source: sourceName, overall_rank: overallRank, positional_rank: positionalRank });
-      if (error) result.errors.push(`Row ${i + 1}: ${error.message}`);
-      else result.inserted++;
-    }
-  }
-
-  return result;
-}
 
 // ─── Import: Source Dates ───────────────────────────────────────────────────
 
@@ -1713,10 +1691,6 @@ export async function importData(
       result = await importMocks(supabase, rows, mapping, sourceName);
       autoDateType = "mock";
       break;
-    case "player_rankings":
-      result = await importPlayerRankings(supabase, rows, mapping, sourceName);
-      autoDateType = "ranking";
-      break;
     case "source_dates":
       result = await importSourceDates(supabase, rows, mapping);
       break;
@@ -1794,7 +1768,6 @@ export async function deleteSourceData(
     case "positional_rankings": table = "positional_rankings"; break;
     case "adp": table = "adp_entries"; break;
     case "mocks": table = "mock_picks"; break;
-    case "player_rankings": table = "player_rankings"; break;
     case "source_dates": table = "source_dates"; break;
     // Profile importers write to players table JSON fields — no source-based deletion
     case "pff_scores":
@@ -1842,7 +1815,6 @@ export async function getExistingSources(dataType: DataType): Promise<string[]> 
     case "positional_rankings": table = "positional_rankings"; break;
     case "adp": table = "adp_entries"; break;
     case "mocks": table = "mock_picks"; break;
-    case "player_rankings": table = "player_rankings"; break;
     case "source_dates": table = "source_dates"; break;
     default: return [];
   }
