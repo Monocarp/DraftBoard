@@ -106,9 +106,9 @@ src/
 │       │   └── new/page.tsx     # Create new player
 │       │
 │       ├── upload/              # Data Import System
-│       │   ├── page.tsx         # Upload page with stats cards
+│       │   ├── page.tsx         # Upload page with stats cards (5 stat cards)
 │       │   ├── actions.ts       # 11 importer functions + helpers
-│       │   └── UploadManager.tsx # 5-step wizard UI
+│       │   └── UploadManager.tsx # 5-step wizard UI (11 data type cards)
 │       │
 │       ├── corrections/         # Name Corrections
 │       │   ├── page.tsx         # Corrections page
@@ -420,13 +420,12 @@ The corrections audit system can detect when both a variant and canonical player
 
 #### Relational Importers (write to dedicated tables)
 
-| Type | Target Table | Strategy | Source Required |
+| Type | Target Table(s) | Strategy | Source Required |
 |---|---|---|---|
-| `rankings` | `rankings` | Upsert by slug + source | ✓ |
-| `positional_rankings` | `positional_rankings` | Upsert by slug + source | ✓ |
+| `rankings` | `rankings` + `player_rankings` (+ `positional_rankings` if position_rank mapped) | Upsert by slug + source; auto-syncs overall_rank & positional_rank to `player_rankings` | ✓ |
+| `positional_rankings` | `positional_rankings` + `player_rankings` | Upsert by slug + source; auto-syncs positional_rank to `player_rankings` | ✓ |
 | `adp` | `adp_entries` | Upsert by player_id + source | ✓ |
 | `mocks` | `mock_picks` | Delete-all + reinsert per source | ✓ |
-| `player_rankings` | `player_rankings` | Upsert by player_id + source | ✓ |
 | `source_dates` | `source_dates` | Upsert by source + source_type | ✗ |
 
 #### Profile Importers (write to JSON columns on `players`)
@@ -443,6 +442,7 @@ The corrections audit system can detect when both a variant and canonical player
 | Type | Target Tables | Strategy | Source Required |
 |---|---|---|---|
 | `nfl_profiles` | `player_rankings`, `site_ratings` JSON, `overview` JSON, `player_comps`, `commentary`, `bio_sources` | Writes rankings, grades, comps, scouting commentary, eligibility | ✗ (hardcoded "NFL.com") |
+| `bleacher_profiles` | `player_rankings`, `site_ratings` JSON, `overview` JSON, `player_comps`, `projected_rounds`, `commentary` | Writes rankings, grades, comps, round projections, commentary | ✗ (hardcoded "Bleacher Report") |
 
 ### PFF Import — 3-Phase Process
 
@@ -488,13 +488,44 @@ The `nfl_profiles` importer ingests data from the NFL.com Profiles Excel file (e
 
 **Does NOT write to:** `players.strengths`, `players.weaknesses`, `players.player_summary`, `players.projected_role` — these are manually authored (see Protected Fields).
 
+### Bleacher Report Profiles Import
+
+The `bleacher_profiles` importer ingests data from the Bleacher Report Profiles Excel file (e.g. `Bleacher Profiles 2.14.26.xlsx`). It writes to **5 destinations** while respecting protected fields:
+
+1. **`player_rankings`** — Overall Rank (source "Bleacher Report")
+2. **`site_ratings` JSON + `overview` JSON** — Grade as "Bleacher Report" key
+3. **`player_comps`** — Pro Comparison (source "Bleacher Report", skips "N/A")
+4. **`projected_rounds`** — Projected Round (source "Bleacher Report")
+5. **`commentary`** — Overall, Positives, Negatives as titled sections (source "Bleacher Report")
+
+**Column mappings (8):** player_name, overall_rank, grade, pro_comparison, projected_round, overall, positives, negatives.
+
+**Does NOT write to:** `players.strengths`, `players.weaknesses`, `players.player_summary`, `players.projected_role` — these are manually authored (see Protected Fields).
+
+### Ranking Table Consolidation
+
+Three tables store ranking data, each consumed by different public pages:
+
+| Table | Primary Consumer | Key Columns |
+|---|---|---|
+| `rankings` | `/rankings` page | slug, source, rank, position_rank |
+| `positional_rankings` | `/boards` position boards | slug, source, rank, position |
+| `player_rankings` | `/player/[slug]` profiles | player_id, source, overall_rank, positional_rank |
+
+To keep these in sync, the ranking importers automatically cascade writes:
+
+- **`importRankings()`** writes to `rankings` table, then upserts `player_rankings` with overall_rank. If `position_rank` is mapped and present, also writes to `positional_rankings` and includes positional_rank in the `player_rankings` upsert.
+- **`importPositionalRankings()`** writes to `positional_rankings` table, then upserts/updates `player_rankings` with just the positional_rank field.
+
+This means uploading via either Overall Rankings or Positional Rankings will automatically populate the profile page's ranking display.
+
 ### Source Date Auto-Update
 
 When importing `rankings` or `mocks`, the dispatcher automatically upserts a `source_dates` entry with today's date for that source name. This keeps the "Last Updated" dates current without manual intervention.
 
 ### Upload Manager UI (5 Steps)
 
-1. **Select Data Type** — Grid of 11 cards, each showing label and description
+1. **Select Data Type** — Grid of 11 data type cards, each showing label and description
 2. **Upload File** — Drag-and-drop or click to upload CSV/TSV/XLSX/XLS
 3. **Map Columns** — Auto-maps by fuzzy name matching. Manual dropdown override per required column. Shows unmapped columns.
 4. **Preview & Import** — 20-row table preview. Source name input (if required). Import button.
@@ -576,7 +607,7 @@ All `/admin/*` routes are protected by middleware. Auth is Supabase email/passwo
 | `/admin` | Player list with search, profile filter, Edit links, + Profile buttons |
 | `/admin/player/new` | Create new player form |
 | `/admin/player/[slug]` | Edit player — full form + Create Profile banner if no profile |
-| `/admin/upload` | Data import wizard (10 types) with stats cards |
+| `/admin/upload` | Data import wizard (11 types) with 5 stats cards |
 | `/admin/boards` | Big Board editor (Consensus, Bengals, Expanded) with drag-and-drop |
 | `/admin/boards/positions` | Position Board editor (11 position groups) with drag-and-drop |
 | `/admin/corrections` | Name corrections manager + audit/merge system |
@@ -806,6 +837,7 @@ The Excel workbook uses a similar priority approach for bio data — separate sh
 |---|---|---|---|
 | `PFF Stats 2.15.26.xlsx` | Single sheet `PFF_Stats`, 173 columns | All positions in one flat table (metrics + alignment snaps) | `pff_scores` |
 | `NFL Profiles 2.15.26.xlsx` | Single sheet, 27 columns, ~50 rows | NFL.com top prospect profiles (grades, rankings, comps, scouting text) | `nfl_profiles` |
+| `Bleacher Profiles 2.14.26.xlsx` | Single sheet, 13 columns, ~225 rows | Bleacher Report prospect profiles (grades, rankings, comps, round projections, commentary) | `bleacher_profiles` |
 
 ---
 
@@ -816,8 +848,9 @@ The Excel workbook uses a similar priority approach for bio data — separate sh
 2. Select "Overall Rankings" or "Positional Rankings"
 3. Upload the CSV/Excel file
 4. Map columns (player_name → name column, rank → rank column)
-5. Enter source name (e.g. "CBS", "ESPN")
-6. Import — source date is auto-updated
+5. For Overall Rankings, optionally map `position_rank` to import positional rankings in the same pass
+6. Enter source name (e.g. "CBS", "ESPN")
+7. Import — source date is auto-updated, and `player_rankings` table is automatically synced for profile display
 
 ### Create a profile for a player
 1. Go to `/admin`
@@ -844,3 +877,9 @@ The Excel workbook uses a similar priority approach for bio data — separate sh
 2. Go to `/admin/upload` → "NFL.com Profiles"
 3. Upload, map columns, import
 4. Rankings, grades, comps, and scouting commentary are written (manual fields are never overwritten)
+
+### Import Bleacher Report Profiles
+1. Upload the Bleacher Profiles XLSX file
+2. Go to `/admin/upload` → "Bleacher Report Profiles"
+3. Upload, map columns (player_name required; overall_rank, grade, pro_comparison, projected_round, overall, positives, negatives optional)
+4. Import — rankings, grades, comps, round projections, and commentary are written (manual fields are never overwritten)
