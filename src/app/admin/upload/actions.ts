@@ -17,7 +17,8 @@ export type DataType =
   | "site_ratings"
   | "nfl_profiles"
   | "bleacher_profiles"
-  | "espn_profiles";
+  | "espn_profiles"
+  | "tdn_profiles";
 
 export type ColumnMapping = Record<string, string>; // csv_header → db_column
 
@@ -1687,6 +1688,99 @@ async function importBleacherProfiles(
   return result;
 }
 
+// ─── Import: TDN Profiles ───────────────────────────────────────────────────
+
+async function importTDNProfiles(
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  rows: Record<string, string>[],
+  mapping: ColumnMapping,
+): Promise<UploadResult> {
+  const result: UploadResult = { success: true, inserted: 0, updated: 0, skipped: 0, errors: [] };
+  const SOURCE = "The Draft Network";
+
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    const playerName = row[mapping["player_name"]];
+    const rawPos = row[mapping["position"]] || "";
+    const school = row[mapping["school"]] || "";
+
+    if (!playerName?.trim()) { result.skipped++; continue; }
+
+    const playerId = await resolvePlayerId(supabase, playerName, {
+      position: rawPos,
+      college: school,
+    });
+    if (!playerId) {
+      result.errors.push(`Row ${i + 1}: Could not resolve player "${playerName}"`);
+      result.skipped++;
+      continue;
+    }
+
+    // ── 1. Player Rankings (Rank + Pos Rank) ────────────────────────────
+    const rank = row[mapping["rank"]];
+    const posRank = row[mapping["pos_rank"]];
+    if (rank) {
+      const overallRank = parseInt(String(rank), 10);
+      const positionalRank = posRank ? parseInt(String(posRank), 10) : null;
+      if (!isNaN(overallRank)) {
+        await supabase
+          .from("player_rankings")
+          .upsert(
+            {
+              player_id: playerId,
+              source: SOURCE,
+              overall_rank: overallRank,
+              positional_rank: !isNaN(positionalRank ?? NaN) ? positionalRank : null,
+            },
+            { onConflict: "player_id,source" },
+          );
+      }
+    }
+
+    // ── 2. Projected Round ──────────────────────────────────────────────
+    const projRound = row[mapping["projected_round"]];
+    if (projRound && projRound.trim()) {
+      const { data: existingRound } = await supabase
+        .from("projected_rounds")
+        .select("id")
+        .eq("player_id", playerId)
+        .eq("source", SOURCE)
+        .maybeSingle();
+
+      if (existingRound) {
+        await supabase.from("projected_rounds").update({ round: projRound.trim() }).eq("id", existingRound.id);
+      } else {
+        await supabase.from("projected_rounds").insert({ player_id: playerId, source: SOURCE, round: projRound.trim() });
+      }
+    }
+
+    // ── 3. Commentary (Summary, Strengths, Concerns) ────────────────────
+    const summary = row[mapping["summary"]];
+    const strengths = row[mapping["strengths"]];
+    const concerns = row[mapping["concerns"]];
+
+    const sections: { title: string; text: string }[] = [];
+    if (summary?.trim()) sections.push({ title: "Summary", text: summary.trim() });
+    if (strengths?.trim()) sections.push({ title: "Strengths", text: strengths.trim() });
+    if (concerns?.trim()) sections.push({ title: "Concerns", text: concerns.trim() });
+
+    if (sections.length > 0) {
+      await supabase.from("commentary").delete().eq("player_id", playerId).eq("source", SOURCE);
+      await supabase.from("commentary").insert({
+        player_id: playerId,
+        source: SOURCE,
+        sections,
+      });
+    }
+
+    // NOTE: strengths, weaknesses, player_summary, projected_role are manually authored — never overwrite from imports
+
+    result.updated++;
+  }
+
+  return result;
+}
+
 // ─── Import: ESPN Profiles ──────────────────────────────────────────────────
 
 async function importESPNProfiles(
@@ -1836,6 +1930,10 @@ export async function importData(
       break;
     case "espn_profiles":
       result = await importESPNProfiles(supabase, rows, mapping);
+      autoDateType = "ranking";
+      break;
+    case "tdn_profiles":
+      result = await importTDNProfiles(supabase, rows, mapping);
       autoDateType = "ranking";
       break;
     default:

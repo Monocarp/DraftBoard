@@ -157,6 +157,22 @@ const DATA_TYPES: Record<DataType, DataTypeConfig> = {
     ],
     needsSource: false,
   },
+  tdn_profiles: {
+    label: "The Draft Network Profiles",
+    description: "TDN prospect profiles — rankings, pos ranks, projected round, summary, strengths, and concerns",
+    requiredColumns: [
+      { key: "player_name", label: "Player Name", required: true },
+      { key: "rank", label: "Rank", required: false },
+      { key: "pos_rank", label: "Pos Rank", required: false },
+      { key: "projected_round", label: "Projected Round", required: false },
+      { key: "position", label: "Position", required: false },
+      { key: "school", label: "School", required: false },
+      { key: "summary", label: "Summary", required: false },
+      { key: "strengths", label: "Strengths", required: false },
+      { key: "concerns", label: "Concerns", required: false },
+    ],
+    needsSource: false,
+  },
 };
 
 // ─── Step Enum ──────────────────────────────────────────────────────────────
