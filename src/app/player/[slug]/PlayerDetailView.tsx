@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import PositionBadge from "@/components/PositionBadge";
-import { getPercentileColor } from "@/lib/types";
 import type { PlayerProfile } from "@/lib/types";
 
 type Tab = "overview" | "scouting";
@@ -171,11 +170,24 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
             }).map(([metric, raw]) => {
               const isObj = typeof raw === "object" && raw !== null && "value" in raw;
               const displayVal = isObj ? (raw as { value: unknown }).value : raw;
-              const pct = isObj ? (raw as { percentile: number | null }).percentile : undefined;
+              // Color PFF values by the raw number on PFF's 0-100 scale
+              const num = typeof displayVal === "number" ? displayVal : parseFloat(String(displayVal));
+              let color = "text-white";
+              if (!isNaN(num)) {
+                const isGrade = /grade|^\d{4} grade$/i.test(metric);
+                if (isGrade) {
+                  // PFF grade scale: 90+ elite, 80+ great, 70+ good, 60+ avg, below 60 poor
+                  if (num >= 90) color = "text-green-400 font-bold";
+                  else if (num >= 80) color = "text-green-400/80";
+                  else if (num >= 70) color = "text-yellow-400";
+                  else if (num >= 60) color = "text-orange-400";
+                  else color = "text-red-400";
+                }
+              }
               return (
                 <div key={metric} className="flex items-center justify-between">
                   <span className="text-xs text-gray-400">{metric}</span>
-                  <span className={`text-xs font-semibold ${getPercentileColor(pct)}`}>
+                  <span className={`text-xs font-semibold ${color}`}>
                     {String(displayVal)}
                   </span>
                 </div>

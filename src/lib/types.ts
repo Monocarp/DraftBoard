@@ -137,14 +137,6 @@ export const ALL_POSITIONS = [
   "ALL", "QB", "RB", "WR", "TE", "OT", "OG", "C", "ED", "DT", "LB", "CB", "SAF", "K", "P",
 ] as const;
 
-export function getPercentileColor(pct: number | null | undefined): string {
-  if (pct == null) return "text-white";
-  if (pct >= 0.8) return "text-green-400 font-bold";
-  if (pct >= 0.6) return "text-green-400/80";
-  if (pct >= 0.4) return "text-yellow-400";
-  if (pct >= 0.2) return "text-orange-400";
-  return "text-red-400";
-}
 
 // ─── Position Colors (safe for client components) ───────────────────────────
 

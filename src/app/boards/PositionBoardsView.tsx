@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import PositionBadge from "@/components/PositionBadge";
-import { getPercentileColor } from "@/lib/types";
 import type { PositionBoardPlayer } from "@/lib/types";
 
 const BOARD_ORDER = ["CB", "DT", "ED", "LB", "IOL", "OT", "SAF", "TE", "WR"];
@@ -210,10 +209,23 @@ function StatBlock({
           // Handle {value, percentile} objects from PFF scores
           const isObj = typeof raw === "object" && raw !== null && "value" in (raw as Record<string, unknown>);
           const displayVal = isObj ? (raw as { value: string | number }).value : raw;
-          const pct = isObj ? (raw as { percentile: number | null }).percentile : undefined;
-          const colorClass = usePctColor && pct !== undefined
-            ? getPercentileColor(pct)
-            : getScoreColor(displayVal as string | number);
+          let colorClass: string;
+          if (usePctColor) {
+            // PFF scores: color grade metrics on absolute 0-100 scale
+            const num = typeof displayVal === "number" ? displayVal : parseFloat(String(displayVal));
+            const isGrade = /grade/i.test(label);
+            if (!isNaN(num) && isGrade) {
+              if (num >= 90) colorClass = "text-green-400 font-bold";
+              else if (num >= 80) colorClass = "text-green-400/80";
+              else if (num >= 70) colorClass = "text-yellow-400";
+              else if (num >= 60) colorClass = "text-orange-400";
+              else colorClass = "text-red-400";
+            } else {
+              colorClass = "text-white";
+            }
+          } else {
+            colorClass = getScoreColor(displayVal as string | number);
+          }
           return (
             <div key={label} className="flex items-center justify-between gap-2">
               <span className="text-xs text-gray-400">{label}</span>
