@@ -4,6 +4,34 @@ import { createSupabaseServer } from "@/lib/supabase-server";
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 
+// ─── Position Template Config ───────────────────────────────────────────────
+
+/** Normalize position string for template lookup */
+function normalizePosition(pos: string): string {
+  const p = pos.trim().toUpperCase();
+  if (["DE", "ED", "EDGE"].includes(p)) return "EDGE";
+  if (["IDL", "DT", "NT"].includes(p)) return "DT";
+  if (["S", "FS", "SS", "SAF"].includes(p)) return "SAF";
+  if (["OG", "C", "IOL"].includes(p)) return "IOL";
+  if (["OT", "T"].includes(p)) return "OT";
+  return p;
+}
+
+/** The 10 position templates available */
+const POSITION_TEMPLATES = [
+  "CB", "SAF", "DT", "EDGE", "LB", "OL", "OT", "IOL", "QB", "RB", "WR", "TE",
+] as const;
+
+type PositionTemplate = (typeof POSITION_TEMPLATES)[number];
+
+/** Map a normalized position to its template key.
+ *  Returns the position itself if it's a known template, otherwise null. */
+function resolveTemplate(pos: string): PositionTemplate | null {
+  const norm = normalizePosition(pos);
+  if ((POSITION_TEMPLATES as readonly string[]).includes(norm)) return norm as PositionTemplate;
+  return null;
+}
+
 function toSlug(name: string) {
   return name
     .toLowerCase()
@@ -110,4 +138,86 @@ export async function deletePlayer(playerId: string, slug: string) {
   revalidatePath("/players");
   revalidatePath("/");
   redirect("/admin");
+}
+
+// ─── Create Profile ─────────────────────────────────────────────────────────
+
+/**
+ * Explicitly create a profile for an existing player.
+ * Seeds the overview JSON from top-level player columns so the player
+ * appears as "having a profile" in the public Players page.
+ * Optionally accepts a position template override.
+ */
+export async function createProfile(
+  playerId: string,
+  templateOverride?: string,
+): Promise<{ error?: string; slug?: string }> {
+  const supabase = await createSupabaseServer();
+
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) throw new Error("Unauthorized");
+
+  // Fetch the player
+  const { data: player, error: fetchErr } = await supabase
+    .from("players")
+    .select("*")
+    .eq("id", playerId)
+    .single();
+
+  if (fetchErr || !player) return { error: "Player not found" };
+
+  // Already has a profile?
+  const existingOverview = player.overview as Record<string, unknown> || {};
+  if (Object.keys(existingOverview).length > 0) {
+    return { error: "Player already has a profile", slug: player.slug };
+  }
+
+  // Determine position template
+  const pos = templateOverride || player.position || "";
+  const template = resolveTemplate(pos);
+
+  // Seed overview from top-level columns
+  const overview: Record<string, string | null> = {};
+  if (player.position) overview["POS"] = player.position;
+  if (player.college) overview["College"] = player.college;
+  if (player.height) overview["Height"] = player.height;
+  if (player.weight) overview["Weight"] = String(player.weight);
+  if (player.age) overview["Age"] = String(player.age);
+  if (player.dob) overview["DOB"] = player.dob;
+  if (player.year) overview["Year"] = player.year;
+  if (player.games) overview["Games"] = String(player.games);
+  if (player.snaps) overview["Snaps"] = String(player.snaps);
+  if (player.projected_round) overview["Prj. Rd"] = player.projected_round;
+
+  // Ensure overview is never empty (the gate for "has profile")
+  if (Object.keys(overview).length === 0) {
+    overview["POS"] = pos || "Unknown";
+  }
+
+  // Merge any existing data from import-written overview keys
+  // (importers may have written overview fields like "Draft Buzz", "ESPN" etc
+  //  without seeding POS/College, so overview stayed as those partial keys
+  //  which stringify to something other than "{}" — but that's unlikely)
+  const finalOverview = { ...existingOverview, ...overview };
+
+  // Build update — just seed overview (profile data columns like pff_scores
+  // may already have data from importers, leave them as-is)
+  const { error: updateErr } = await supabase
+    .from("players")
+    .update({ overview: finalOverview })
+    .eq("id", playerId);
+
+  if (updateErr) return { error: updateErr.message };
+
+  revalidatePath("/admin");
+  revalidatePath(`/player/${player.slug}`);
+  revalidatePath("/players");
+  revalidatePath("/");
+
+  return { slug: player.slug };
+}
+
+/** Get the list of available position templates */
+export async function getPositionTemplates() {
+  return [...POSITION_TEMPLATES];
 }

@@ -985,10 +985,8 @@ async function importPFFScores(
     const mergedPff = { ...(existing?.pff_scores || {}), ...pffScores };
     const mergedAlign = { ...(existing?.alignments || {}), ...pr.alignments };
 
-    // Seed overview if empty, merge new overview keys
-    const mergedOverview = await ensureOverviewSeeded(
-      supabase, pr.playerId, existing?.overview, pr.overview,
-    );
+    // Merge overview keys without auto-seeding (profile must be created explicitly)
+    const mergedOverview = { ...(existing?.overview || {}), ...pr.overview };
 
     const updateData: Record<string, unknown> = {
       pff_scores: mergedPff,
@@ -1097,10 +1095,8 @@ async function importDraftBuzzGrades(
 
     const mergedGrades = { ...(existing?.draftbuzz_grades || {}), ...grades };
 
-    // Seed overview if empty, merge new overview keys
-    const mergedOverview = await ensureOverviewSeeded(
-      supabase, playerId, existing?.overview, overview,
-    );
+    // Merge overview keys without auto-seeding (profile must be created explicitly)
+    const mergedOverview = { ...(existing?.overview || {}), ...overview };
 
     const updateData: Record<string, unknown> = {
       draftbuzz_grades: mergedGrades,
@@ -1206,20 +1202,15 @@ async function importAthleticScores(
     // Fetch existing to merge
     const { data: existing } = await supabase
       .from("players")
-      .select("athletic_scores, overview")
+      .select("athletic_scores")
       .eq("id", playerId)
       .single();
 
     const merged = { ...(existing?.athletic_scores || {}), ...scores };
 
-    // Seed overview if empty so player appears as "having a profile"
-    const mergedOverview = await ensureOverviewSeeded(
-      supabase, playerId, existing?.overview,
-    );
-
     const { error } = await supabase
       .from("players")
-      .update({ athletic_scores: merged, overview: mergedOverview })
+      .update({ athletic_scores: merged })
       .eq("id", playerId);
 
     if (error) {
@@ -1285,15 +1276,13 @@ async function importSiteRatings(
 
     const merged = { ...(existing?.site_ratings || {}), ...ratings };
 
-    // Seed overview if empty so player appears as "having a profile"
-    const mergedOverview = await ensureOverviewSeeded(
-      supabase, playerId, existing?.overview,
-    );
+    // Merge overview keys without auto-seeding (profile must be created explicitly)
+    const mergedOverview = { ...(existing?.overview || {}) };
 
     // Also merge site ratings into overview (NFL.com, ESPN, etc.)
     for (const [, displayLabel] of ratingCols) {
       if (ratings[displayLabel]) {
-        (mergedOverview as Record<string, unknown>)[displayLabel] = ratings[displayLabel];
+        mergedOverview[displayLabel] = ratings[displayLabel];
       }
     }
 

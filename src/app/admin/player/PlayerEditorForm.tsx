@@ -1,8 +1,29 @@
 "use client";
 
 import { useState } from "react";
-import { savePlayer, deletePlayer } from "./actions";
+import { savePlayer, deletePlayer, createProfile } from "./actions";
 import { SkillsTraitsEditor } from "./SkillsTraitsEditor";
+
+const POSITION_TEMPLATES = [
+  "CB", "SAF", "DT", "EDGE", "LB", "OL", "OT", "IOL", "QB", "RB", "WR", "TE",
+] as const;
+
+/** Normalize position for template auto-detection */
+function normalizePosition(pos: string): string {
+  const p = pos.trim().toUpperCase();
+  if (["DE", "ED", "EDGE"].includes(p)) return "EDGE";
+  if (["IDL", "DT", "NT"].includes(p)) return "DT";
+  if (["S", "FS", "SS", "SAF"].includes(p)) return "SAF";
+  if (["OG", "C", "IOL"].includes(p)) return "IOL";
+  if (["OT", "T"].includes(p)) return "OT";
+  return p;
+}
+
+function resolveTemplate(pos: string): string | null {
+  const norm = normalizePosition(pos);
+  if ((POSITION_TEMPLATES as readonly string[]).includes(norm)) return norm;
+  return null;
+}
 
 interface PlayerData {
   id: string | null;
@@ -37,8 +58,14 @@ export function PlayerEditorForm({ player }: { player: PlayerData }) {
   const [error, setError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
   const [showDelete, setShowDelete] = useState(false);
+  const [creatingProfile, setCreatingProfile] = useState(false);
+  const [selectedTemplate, setSelectedTemplate] = useState<string>(
+    player.position ? (resolveTemplate(player.position) || player.position.toUpperCase()) : "",
+  );
 
   const isNew = !player.id;
+  const hasProfile = Object.keys(player.overview).length > 0;
+  const autoTemplate = player.position ? resolveTemplate(player.position) : null;
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -95,6 +122,59 @@ export function PlayerEditorForm({ player }: { player: PlayerData }) {
       {error && (
         <div className="rounded-lg bg-red-500/10 border border-red-500/30 px-4 py-3 text-sm text-red-400">
           {error}
+        </div>
+      )}
+
+      {/* Create Profile Banner — shown for existing players without a profile */}
+      {!isNew && !hasProfile && (
+        <div className="rounded-xl border border-orange-500/30 bg-orange-500/5 p-5">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <h2 className="text-lg font-semibold text-white flex items-center gap-2">
+                <svg className="h-5 w-5 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                </svg>
+                No Profile Yet
+              </h2>
+              <p className="text-sm text-gray-400 mt-1">
+                Create a profile to make this player visible on the public Players page.
+                {autoTemplate && (
+                  <span className="text-orange-400"> Auto-detected template: <strong>{autoTemplate}</strong></span>
+                )}
+              </p>
+            </div>
+            <div className="flex items-center gap-3">
+              <select
+                value={selectedTemplate}
+                onChange={(e) => setSelectedTemplate(e.target.value)}
+                className="rounded-lg border border-[#2a3a4e] bg-[#0d1320] px-3 py-2 text-sm text-white focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500 transition-colors"
+              >
+                <option value="">— Template —</option>
+                {POSITION_TEMPLATES.map((t) => (
+                  <option key={t} value={t}>{t}</option>
+                ))}
+              </select>
+              <button
+                type="button"
+                disabled={creatingProfile}
+                onClick={async () => {
+                  setCreatingProfile(true);
+                  setError(null);
+                  const result = await createProfile(player.id!, selectedTemplate || undefined);
+                  if (result?.error) {
+                    setError(result.error);
+                    setCreatingProfile(false);
+                  } else {
+                    // Redirect to refresh the page with new profile data
+                    window.location.reload();
+                  }
+                }}
+                className="rounded-lg bg-orange-500 px-5 py-2 text-sm font-medium text-white hover:bg-orange-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors whitespace-nowrap"
+              >
+                {creatingProfile ? "Creating…" : "Create Profile"}
+              </button>
+            </div>
+          </div>
         </div>
       )}
 

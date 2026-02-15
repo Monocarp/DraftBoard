@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { createProfile } from "./player/actions";
 
 interface AdminPlayer {
   id: string;
@@ -17,6 +18,7 @@ interface AdminPlayer {
 export function AdminPlayerList({ players }: { players: AdminPlayer[] }) {
   const [search, setSearch] = useState("");
   const [filterProfile, setFilterProfile] = useState<"all" | "with" | "without">("all");
+  const [creatingId, setCreatingId] = useState<string | null>(null);
 
   const filtered = players.filter((p) => {
     const matchesSearch =
@@ -130,12 +132,32 @@ export function AdminPlayerList({ players }: { players: AdminPlayer[] }) {
                     )}
                   </td>
                   <td className="px-4 py-3 text-right">
-                    <Link
-                      href={`/admin/player/${p.slug}`}
-                      className="rounded-md border border-[#2a3a4e] px-3 py-1 text-xs text-gray-400 hover:text-white hover:border-gray-500 transition-colors"
-                    >
-                      Edit
-                    </Link>
+                    <div className="flex items-center justify-end gap-2">
+                      {!p.hasProfile && (
+                        <button
+                          onClick={async () => {
+                            setCreatingId(p.id);
+                            const result = await createProfile(p.id);
+                            if (result?.error) {
+                              alert(result.error);
+                            } else {
+                              window.location.reload();
+                            }
+                            setCreatingId(null);
+                          }}
+                          disabled={creatingId === p.id}
+                          className="rounded-md bg-orange-500/10 border border-orange-500/30 px-3 py-1 text-xs text-orange-400 hover:bg-orange-500/20 hover:border-orange-500/50 disabled:opacity-50 transition-colors"
+                        >
+                          {creatingId === p.id ? "…" : "+ Profile"}
+                        </button>
+                      )}
+                      <Link
+                        href={`/admin/player/${p.slug}`}
+                        className="rounded-md border border-[#2a3a4e] px-3 py-1 text-xs text-gray-400 hover:text-white hover:border-gray-500 transition-colors"
+                      >
+                        Edit
+                      </Link>
+                    </div>
                   </td>
                 </tr>
               ))}
