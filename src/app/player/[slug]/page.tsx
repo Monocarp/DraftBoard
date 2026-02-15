@@ -1,12 +1,8 @@
-import { getPlayerProfile, getAllPlayerSlugs } from "@/lib/data";
+import { getPlayerProfile } from "@/lib/data";
 import { notFound } from "next/navigation";
 import PlayerDetailView from "./PlayerDetailView";
 
-// Generate static params for all players at build time
-export async function generateStaticParams() {
-  const slugs = await getAllPlayerSlugs();
-  return slugs.map((slug) => ({ slug }));
-}
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

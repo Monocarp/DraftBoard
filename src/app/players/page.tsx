@@ -1,6 +1,8 @@
 import { getPlayers } from "@/lib/data";
 import PlayerGrid from "@/components/PlayerGrid";
 
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "All Players — 2026 Draft Board",
   description: "Browse all 141 scouted players for the 2026 NFL Draft.",
