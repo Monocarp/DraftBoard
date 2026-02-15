@@ -17,6 +17,7 @@ export interface SourcePriorityEntry {
 const DEFAULT_SOURCE_PRIORITY: Record<string, number> = {
   manual: 0,
   draftbuzz: 1,
+  cbs: 2,
   nfl_com: 2,
   site_ratings: 3,
   pff: 4,

@@ -898,6 +898,31 @@ async function ensureOverviewSeeded(
 // ─── Bio Source Priority Resolution ─────────────────────────────────────────
 
 /**
+ * Map user-typed source names to canonical internal keys.
+ * Prevents duplicates like "PFF" vs "pff", "NFL.com" vs "nfl_com", etc.
+ */
+const BIO_SOURCE_ALIASES: Record<string, string> = {
+  pff: "pff",
+  "pff scores": "pff",
+  draftbuzz: "draftbuzz",
+  "draft buzz": "draftbuzz",
+  "nfl.com": "nfl_com",
+  nfl: "nfl_com",
+  nfl_com: "nfl_com",
+  manual: "manual",
+  site_ratings: "site_ratings",
+  "site ratings": "site_ratings",
+  cbs: "cbs",
+  "cbs sports": "cbs",
+  espn: "espn",
+};
+
+function normalizeBioSourceKey(source: string): string {
+  const lower = source.trim().toLowerCase();
+  return BIO_SOURCE_ALIASES[lower] ?? source;
+}
+
+/**
  * Default source priorities for bio fields (higher = higher priority).
  * These apply when no explicit __priority is stored in bio_sources.
  * Rankings-upload sources get their priority from the upload form.
@@ -905,6 +930,7 @@ async function ensureOverviewSeeded(
 const DEFAULT_SOURCE_PRIORITY: Record<string, number> = {
   manual: 0,
   draftbuzz: 1,
+  cbs: 2,
   nfl_com: 2,
   site_ratings: 3,
   pff: 4,
@@ -942,6 +968,9 @@ async function writeBioSources(
   values: Partial<Record<BioField, string | number | null>>,
   priority?: number,
 ): Promise<void> {
+  // Normalize source key to prevent case-variant duplicates
+  const srcKey = normalizeBioSourceKey(source);
+
   // Filter out null/empty values & normalise height/weight
   const clean: Record<string, string | number> = {};
   for (const [k, v] of Object.entries(values)) {
@@ -965,11 +994,11 @@ async function writeBioSources(
     (existing?.bio_sources as Record<string, Record<string, string | number>>) || {};
 
   // Merge this source's values
-  bioSources[source] = { ...(bioSources[source] || {}), ...clean };
+  bioSources[srcKey] = { ...(bioSources[srcKey] || {}), ...clean };
 
   // Store explicit priority if provided
   if (priority !== undefined) {
-    bioSources[source].__priority = priority;
+    bioSources[srcKey].__priority = priority;
   }
 
   // Helper: get priority for a source
