@@ -159,6 +159,15 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
               if (!v || v === "TBD") return false;
               if (typeof v === "object" && v !== null && "value" in v) return v.value != null && v.value !== "TBD";
               return true;
+            }).sort(([a], [b]) => {
+              // Grade keys always come first: 2025 Grade, 2024 Grade, 2023 Grade
+              const gradeOrder = ["2025 Grade", "2024 Grade", "2023 Grade", "25 Grade", "24 Grade", "23 Grade", "22 Grade", "21 Grade"];
+              const ai = gradeOrder.indexOf(a);
+              const bi = gradeOrder.indexOf(b);
+              if (ai !== -1 && bi !== -1) return ai - bi;
+              if (ai !== -1) return -1;
+              if (bi !== -1) return 1;
+              return 0;
             }).map(([metric, raw]) => {
               const isObj = typeof raw === "object" && raw !== null && "value" in raw;
               const displayVal = isObj ? (raw as { value: unknown }).value : raw;

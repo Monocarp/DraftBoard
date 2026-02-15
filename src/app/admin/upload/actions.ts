@@ -596,7 +596,7 @@ type PffColumnMapping = [string, string][]; // [templateLabel, csvColumnHeader]
 
 const PFF_POSITION_COLUMNS: Record<string, PffColumnMapping> = {
   CB: [
-    ["25 Grade", "25 Grade"], ["24 Grade", "24 Grade"], ["23 Grade", "23 Grade"],
+    ["2025 Grade", "25 Grade"], ["2024 Grade", "24 Grade"], ["2023 Grade", "23 Grade"],
     ["Coverage Grade", "Coverage Grade"], ["Passer Rating", "Passer Rating Against"],
     ["Interceptions", "Interceptions"], ["Forced Incom.", "Forced Incom."],
     ["Forced Inc. Rate", "Forced Incom. Rate"], ["Dropped Picks", "Dropped Picks"],
@@ -607,7 +607,7 @@ const PFF_POSITION_COLUMNS: Record<string, PffColumnMapping> = {
     ["Run Def Grade", "Run Def Grade"],
   ],
   SAF: [
-    ["25 Grade", "25 Grade"], ["24 Grade", "24 Grade"], ["23 Grade", "23 Grade"],
+    ["2025 Grade", "25 Grade"], ["2024 Grade", "24 Grade"], ["2023 Grade", "23 Grade"],
     ["Coverage Grade", "Coverage Grade"], ["Interceptions", "Interceptions"],
     ["Forced Inc. Rate", "Forced Incom. Rate"], ["Passer Rating Alwd", "Passer Rating Against"],
     ["TD Allowed/Ints", "TD Allowed/Ints"], ["Coverage Stops", "Coverage Stops"],
@@ -617,7 +617,7 @@ const PFF_POSITION_COLUMNS: Record<string, PffColumnMapping> = {
     ["Missed Tackle Rate", "Missed Tackle Rate"],
   ],
   DT: [
-    ["25 Grade", "25 Grade"], ["24 Grade", "24 Grade"], ["23 Grade", "23 Grade"],
+    ["2025 Grade", "25 Grade"], ["2024 Grade", "24 Grade"], ["2023 Grade", "23 Grade"],
     ["Pass Rush Grade", "Pass Rush Grade"], ["True Pass Rush", "True Pass Rush"],
     ["PR Win Rate", "PR Win Rate"], ["Run Def. Grade", "Run Def Grade"],
     ["Run Stop %", "Run Stop %"], ["Sacks", "Sacks"], ["Hits", "Hits"],
@@ -626,7 +626,7 @@ const PFF_POSITION_COLUMNS: Record<string, PffColumnMapping> = {
     ["Missed Tackle Rate", "Missed Tackle Rate2"], ["Total Pressures", "Total Pressures"],
   ],
   EDGE: [
-    ["25 Grade", "25 Grade"], ["24 Grade", "24 Grade"], ["23 Grade", "23 Grade"],
+    ["2025 Grade", "25 Grade"], ["2024 Grade", "24 Grade"], ["2023 Grade", "23 Grade"],
     ["Pass Rush Grade", "Pass Rush Grade"], ["True Pass Rush", "True Pass Rush"],
     ["PR Win Rate", "PR Win Rate"], ["Run Def. Grade", "Run Def Grade"],
     ["Run Stop %", "Run Stop %"], ["Sacks", "Sacks"], ["Hits", "Hits"],
@@ -635,7 +635,7 @@ const PFF_POSITION_COLUMNS: Record<string, PffColumnMapping> = {
     ["Missed Tackle Rate", "Missed Tackle Rate2"], ["Total Pressures", "Total Pressures"],
   ],
   LB: [
-    ["25 Grade", "25 Grade"], ["24 Grade", "24 Grade"], ["23 Grade", "23 Grade"],
+    ["2025 Grade", "25 Grade"], ["2024 Grade", "24 Grade"], ["2023 Grade", "23 Grade"],
     ["Pass Rush Grade", "Pass Rush Grade"], ["Run Def. Grade", "Run Def Grade"],
     ["Run Stop %", "Run Stop %"], ["Tackles", "Tackles"],
     ["Tackling Grade", "Tackling Grade"], ["Missed Tkl Rate", "Missed Tackle Rate"],
@@ -675,7 +675,7 @@ const PFF_POSITION_COLUMNS: Record<string, PffColumnMapping> = {
     ["Penalties", "Penalties"],
   ],
   QB: [
-    ["23 Grade", "25 Grade"], ["22 Grade", "24 Grade"], ["21 Grade", "23 Grade"],
+    ["2025 Grade", "25 Grade"], ["2024 Grade", "24 Grade"], ["2023 Grade", "23 Grade"],
     ["Passing Grade", "Passing Grade"], ["Intermediate Grade", "Intermediate Passing Grade"],
     ["Deep Grade", "Deep Passing Grade"], ["No Pressure Grade", "No Pressure Grade"],
     ["Pressure Grade", "Pressure Grade"], ["Adjusted Comp %", "Adjusted Comp %"],
@@ -686,7 +686,7 @@ const PFF_POSITION_COLUMNS: Record<string, PffColumnMapping> = {
     ["Touchdowns", "Touchdowns Thrown"], ["NFL Passer Rating", "NFL Passer Rating"],
   ],
   RB: [
-    ["23 Grade", "25 Grade"], ["22 Grade", "24 Grade"], ["21 Grade", "23 Grade"],
+    ["2025 Grade", "25 Grade"], ["2024 Grade", "24 Grade"], ["2023 Grade", "23 Grade"],
     ["Rushing Grade", "Rushing Grade"], ["Zone Grade", "Zone Grade Rushing"],
     ["Gap Grade", "Gap Grade Rushing"], ["Elusiveness", "Elusiveness"],
     ["YAC per Att.", "YAC per Rush Att"], ["Missed Tkls For", "Missed Tkls Forced Rushing"],
