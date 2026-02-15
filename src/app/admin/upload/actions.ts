@@ -1228,17 +1228,31 @@ async function importDraftBuzzGrades(
       }
     }
 
-    // Format DraftBuzz rating specially
+    // Format DraftBuzz rating: extract just the integer (e.g. "88.6 / 100" → "88")
     const rawRating = flexGet(row, "overall_rating", "Overall Rating");
     if (rawRating && rawRating !== "#N/A") {
-      // If it already contains "/ 100" don't double-wrap
-      overview["Draft Buzz"] = rawRating.includes("/") ? rawRating : `${rawRating} / 100`;
+      const numPart = parseFloat(rawRating);
+      overview["Draft Buzz"] = !isNaN(numPart) ? String(Math.round(numPart)) : rawRating;
+    }
+
+    // Build site_ratings from the rating fields
+    const siteRatings: Record<string, string> = {};
+    const ratingKeys: [string, string][] = [
+      ["Draft Buzz", "Draft Buzz"],
+      ["ESPN", "ESPN"],
+      ["24/7 Sports", "24/7 Sports"],
+      ["Rivals", "Rivals"],
+    ];
+    for (const [ovKey, srKey] of ratingKeys) {
+      if (overview[ovKey] && overview[ovKey] !== "#N/A") {
+        siteRatings[srKey] = overview[ovKey]!;
+      }
     }
 
     // Fetch existing to merge
     const { data: existing } = await supabase
       .from("players")
-      .select("draftbuzz_grades, overview")
+      .select("draftbuzz_grades, overview, site_ratings")
       .eq("id", playerId)
       .single();
 
@@ -1247,11 +1261,15 @@ async function importDraftBuzzGrades(
     // Merge overview keys without auto-seeding (profile must be created explicitly)
     const mergedOverview = { ...(existing?.overview || {}), ...overview };
 
+    // Merge site_ratings
+    const mergedSiteRatings = { ...(existing?.site_ratings || {}), ...siteRatings };
+
     const { error } = await supabase
       .from("players")
       .update({
         draftbuzz_grades: mergedGrades,
         overview: mergedOverview,
+        site_ratings: mergedSiteRatings,
       })
       .eq("id", playerId);
 
