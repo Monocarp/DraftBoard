@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { savePlayer, deletePlayer } from "./actions";
+import { SkillsTraitsEditor } from "./SkillsTraitsEditor";
 
 interface PlayerData {
   id: string | null;
@@ -127,6 +128,11 @@ export function PlayerEditorForm({ player }: { player: PlayerData }) {
         <TextArea label="Accolades" name="accolades" defaultValue={player.accolades ?? ""} rows={3} className="mt-4" />
       </Section>
 
+      {/* Skills & Traits */}
+      <Section title="Skills & Traits">
+        <SkillsTraitsEditor defaultValue={player.skills_traits as Record<string, { positives: string | null; negatives: string | null }>} />
+      </Section>
+
       {/* JSON Fields */}
       <Section title="Advanced Data (JSON)">
         <p className="text-xs text-gray-500 mb-4">
@@ -139,7 +145,6 @@ export function PlayerEditorForm({ player }: { player: PlayerData }) {
           <JsonField label="Athletic Scores" name="athletic_scores" defaultValue={player.athletic_scores} />
           <JsonField label="DraftBuzz Grades" name="draftbuzz_grades" defaultValue={player.draftbuzz_grades} />
           <JsonField label="Alignments" name="alignments" defaultValue={player.alignments} />
-          <JsonField label="Skills & Traits" name="skills_traits" defaultValue={player.skills_traits} />
         </div>
       </Section>
 
