@@ -201,6 +201,50 @@ function normalizeCompName(name: string): string {
   }).join(" ");
 }
 
+// ─── Height / Weight Normalisation ──────────────────────────────────────────
+
+/**
+ * Normalise height from various formats to canonical feet'inches" form.
+ * Accepts: 6'1", 6'1, 6-1, 6' 1", 6' 1, 6 1, 73 (raw inches), 6-01, etc.
+ * Returns: "6'1\"" or the original string if it can't be parsed.
+ */
+function normalizeHeight(raw: string): string {
+  const s = raw.trim();
+  if (!s) return s;
+
+  // Try "feet(sep)inches" patterns: 6'1", 6'1, 6-1, 6' 1", 6-01
+  const m = s.match(/^(\d)\s*['’\-]\s*(\d{1,2})\s*["\u201D]?$/);
+  if (m) return `${m[1]}'${parseInt(m[2], 10)}\"`;
+
+  // Try "feet space inches" without separator: "6 1" or "6 01"
+  const m2 = s.match(/^(\d)\s+(\d{1,2})$/);
+  if (m2) return `${m2[1]}'${parseInt(m2[2], 10)}\"`;
+
+  // Raw inches (60-84 range)
+  const n = parseInt(s, 10);
+  if (!isNaN(n) && n >= 60 && n <= 84 && String(n) === s) {
+    const feet = Math.floor(n / 12);
+    const inches = n % 12;
+    return `${feet}'${inches}\"`;
+  }
+
+  // Already in canonical form or unrecognised — return as-is
+  return s;
+}
+
+/**
+ * Normalise weight to a plain number string.
+ * Strips " lbs", " lb", "lbs", trailing whitespace.
+ */
+function normalizeWeight(raw: string): string {
+  const s = raw.trim();
+  if (!s) return s;
+  const cleaned = s.replace(/\s*lbs?\.?\s*$/i, "").trim();
+  const n = parseFloat(cleaned);
+  if (!isNaN(n)) return String(Math.round(n));
+  return s;
+}
+
 // ─── Import: Rankings ───────────────────────────────────────────────────────
 
 async function importRankings(
@@ -208,6 +252,7 @@ async function importRankings(
   rows: Record<string, string>[],
   mapping: ColumnMapping,
   sourceName: string,
+  bioPriority?: number,
 ): Promise<UploadResult> {
   const result: UploadResult = { success: true, inserted: 0, updated: 0, skipped: 0, errors: [] };
 
@@ -292,6 +337,22 @@ async function importRankings(
         },
         { onConflict: "player_id,source" },
       );
+
+    // ── Optional bio fields (height, weight, age, year) ──
+    const bioValues: Partial<Record<BioField, string | number | null>> = {};
+    const heightRaw = mapping["height"] ? row[mapping["height"]] : undefined;
+    const weightRaw = mapping["weight"] ? row[mapping["weight"]] : undefined;
+    const ageRaw    = mapping["age"]    ? row[mapping["age"]]    : undefined;
+    const yearRaw   = mapping["year"]   ? row[mapping["year"]]   : undefined;
+
+    if (heightRaw?.trim()) bioValues.height = heightRaw.trim();
+    if (weightRaw?.trim()) bioValues.weight = weightRaw.trim();
+    if (ageRaw?.trim())    bioValues.age    = ageRaw.trim();
+    if (yearRaw?.trim())   bioValues.year   = yearRaw.trim();
+
+    if (Object.keys(bioValues).length > 0) {
+      await writeBioSources(supabase, playerId, sourceName, bioValues, bioPriority);
+    }
   }
 
   return result;
@@ -836,17 +897,17 @@ async function ensureOverviewSeeded(
 // ─── Bio Source Priority Resolution ─────────────────────────────────────────
 
 /**
- * Source priority for bio fields (higher index = higher priority).
- * When multiple sources provide the same field (e.g. "age"),
- * the highest-priority source wins for the top-level column.
+ * Default source priorities for bio fields (higher = higher priority).
+ * These apply when no explicit __priority is stored in bio_sources.
+ * Rankings-upload sources get their priority from the upload form.
  */
-const SOURCE_PRIORITY: string[] = [
-  "manual",       // 0 – lowest: hand-entered fallback
-  "draftbuzz",    // 1 – comprehensive but less accurate
-  "nfl_com",      // 2 – NFL.com profiles
-  "site_ratings", // 3 – aggregated site grades
-  "pff",          // 4 – highest: premium source
-];
+const DEFAULT_SOURCE_PRIORITY: Record<string, number> = {
+  manual: 0,
+  draftbuzz: 1,
+  nfl_com: 2,
+  site_ratings: 3,
+  pff: 4,
+};
 
 /** The bio fields we track per-source */
 type BioField = "age" | "dob" | "games" | "snaps" | "height" | "weight" | "year" | "position" | "college" | "projected_round";
@@ -858,24 +919,36 @@ const BIO_FIELDS: BioField[] = [
 
 /**
  * Write bio values to `bio_sources` under a source key, then resolve
- * the best value per field to top-level columns using SOURCE_PRIORITY.
+ * the best value per field to top-level columns.
  *
- * @param supabase  - Supabase client
- * @param playerId - Player UUID
- * @param source   - Source key (e.g. "pff", "draftbuzz")
- * @param values   - Map of bio field → value from this source
+ * Priority is determined by:
+ *   1. Explicit `__priority` stored in bio_sources[source]
+ *   2. DEFAULT_SOURCE_PRIORITY lookup
+ *   3. Fallback 0
+ *
+ * Height and weight are normalised before storage.
+ *
+ * @param supabase   - Supabase client
+ * @param playerId   - Player UUID
+ * @param source     - Source key (e.g. "pff", "draftbuzz")
+ * @param values     - Map of bio field → value from this source
+ * @param priority   - Optional explicit priority (stored as __priority)
  */
 async function writeBioSources(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
   playerId: string,
   source: string,
   values: Partial<Record<BioField, string | number | null>>,
+  priority?: number,
 ): Promise<void> {
-  // Filter out null/empty values
+  // Filter out null/empty values & normalise height/weight
   const clean: Record<string, string | number> = {};
   for (const [k, v] of Object.entries(values)) {
     if (v !== null && v !== undefined && v !== "" && v !== "#N/A") {
-      clean[k] = v;
+      let val: string | number = v;
+      if (k === "height" && typeof val === "string") val = normalizeHeight(val);
+      if (k === "weight" && typeof val === "string") val = normalizeWeight(val);
+      clean[k] = val;
     }
   }
   if (Object.keys(clean).length === 0) return;
@@ -893,6 +966,18 @@ async function writeBioSources(
   // Merge this source's values
   bioSources[source] = { ...(bioSources[source] || {}), ...clean };
 
+  // Store explicit priority if provided
+  if (priority !== undefined) {
+    bioSources[source].__priority = priority;
+  }
+
+  // Helper: get priority for a source
+  const getPriority = (src: string): number => {
+    const stored = bioSources[src]?.__priority;
+    if (typeof stored === "number") return stored;
+    return DEFAULT_SOURCE_PRIORITY[src] ?? 0;
+  };
+
   // Resolve best value per field
   const resolved: Record<string, string | number | null> = {};
   for (const field of BIO_FIELDS) {
@@ -901,10 +986,9 @@ async function writeBioSources(
 
     for (const [src, vals] of Object.entries(bioSources)) {
       if (vals[field] !== undefined && vals[field] !== null) {
-        const priority = SOURCE_PRIORITY.indexOf(src);
-        const effectivePriority = priority === -1 ? 0 : priority;
-        if (effectivePriority > bestPriority) {
-          bestPriority = effectivePriority;
+        const p = getPriority(src);
+        if (p > bestPriority) {
+          bestPriority = p;
           bestValue = vals[field];
         }
       }
@@ -1946,6 +2030,7 @@ export async function importData(
   rows: Record<string, string>[],
   mapping: ColumnMapping,
   sourceName: string,
+  bioPriority?: number,
 ): Promise<UploadResult> {
   const supabase = await createSupabaseServer();
   const { data: { user } } = await supabase.auth.getUser();
@@ -1961,7 +2046,7 @@ export async function importData(
 
   switch (dataType) {
     case "rankings":
-      result = await importRankings(supabase, rows, mapping, sourceName);
+      result = await importRankings(supabase, rows, mapping, sourceName, bioPriority);
       autoDateType = "ranking";
       break;
     case "positional_rankings":

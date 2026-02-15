@@ -18,13 +18,17 @@ interface DataTypeConfig {
 const DATA_TYPES_UNSORTED: Record<DataType, DataTypeConfig> = {
   rankings: {
     label: "Overall Rankings",
-    description: "Per-source overall player rankings (e.g. NFL.com #1, PFF #3). Optionally include position rank to import both at once.",
+    description: "Per-source overall player rankings (e.g. NFL.com #1, PFF #3). Optionally include position rank to import both at once. Can also import bio data (height, weight, age, year) with a priority weight.",
     requiredColumns: [
       { key: "player_name", label: "Player Name", required: true },
       { key: "rank", label: "Rank", required: true },
       { key: "position_rank", label: "Position Rank", required: false },
       { key: "position", label: "Position", required: false },
       { key: "college", label: "College", required: false },
+      { key: "height", label: "Height", required: false },
+      { key: "weight", label: "Weight", required: false },
+      { key: "age", label: "Age", required: false },
+      { key: "year", label: "Year / Eligibility", required: false },
     ],
     needsSource: true,
   },
@@ -200,6 +204,7 @@ export function UploadManager() {
   const [importing, setImporting] = useState(false);
   const [deleteConfirm, setDeleteConfirm] = useState<string | null>(null);
   const [deleteResult, setDeleteResult] = useState<string | null>(null);
+  const [bioPriority, setBioPriority] = useState<number | undefined>(undefined);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const config = DATA_TYPES[dataType];
@@ -223,6 +228,7 @@ export function UploadManager() {
     setMapping({});
     setResult(null);
     setError("");
+    setBioPriority(undefined);
     await loadSources(dt);
   };
 
@@ -336,7 +342,7 @@ export function UploadManager() {
     setError("");
 
     try {
-      const res = await importData(dataType, csvRows, mapping, sourceName.trim());
+      const res = await importData(dataType, csvRows, mapping, sourceName.trim(), bioPriority);
       setResult(res);
       setStep("done");
     } catch (err) {
@@ -376,6 +382,7 @@ export function UploadManager() {
     setFileName("");
     setDeleteConfirm(null);
     setDeleteResult(null);
+    setBioPriority(undefined);
     if (fileInputRef.current) fileInputRef.current.value = "";
   };
 
@@ -465,6 +472,36 @@ export function UploadManager() {
                 <p className="mt-1 text-xs text-gray-600">
                   This identifies where the data came from. Use the same name for updates.
                 </p>
+              </div>
+            )}
+
+            {/* Bio Data Priority (rankings only) */}
+            {dataType === "rankings" && (
+              <div className="mb-4">
+                <label className="block text-sm font-medium text-gray-300 mb-1">
+                  Bio Data Priority <span className="text-gray-600">(optional)</span>
+                </label>
+                <p className="text-xs text-gray-500 mb-2">
+                  If this source includes height, weight, age, or year, set its priority for resolving conflicts.
+                  Higher = more trusted. Existing defaults: DraftBuzz (1), NFL.com (2), Site Ratings (3), PFF (4).
+                </p>
+                <select
+                  value={bioPriority ?? ""}
+                  onChange={(e) => setBioPriority(e.target.value ? parseInt(e.target.value, 10) : undefined)}
+                  className="w-full sm:w-48 rounded-lg border border-[#2a3a4e] bg-[#1a2535] px-3 py-2 text-sm text-white focus:border-orange-500 focus:outline-none"
+                >
+                  <option value="">— No bio data —</option>
+                  <option value="1">1 – Low</option>
+                  <option value="2">2</option>
+                  <option value="3">3 – Medium</option>
+                  <option value="4">4</option>
+                  <option value="5">5 – High</option>
+                  <option value="6">6</option>
+                  <option value="7">7 – Very High</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10 – Highest</option>
+                </select>
               </div>
             )}
 
