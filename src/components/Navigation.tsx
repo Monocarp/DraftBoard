@@ -51,6 +51,18 @@ export default function Navigation() {
                 </Link>
               );
             })}
+
+            {/* Admin link */}
+            <Link
+              href="/admin"
+              className={`ml-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors border ${
+                pathname.startsWith("/admin")
+                  ? "border-orange-500/40 bg-orange-500/15 text-orange-400"
+                  : "border-[#2a3a4e] text-gray-500 hover:text-gray-300 hover:border-gray-500"
+              }`}
+            >
+              Admin
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -89,6 +101,20 @@ export default function Navigation() {
                 </Link>
               );
             })}
+
+            <div className="border-t border-[#2a3a4e] mt-2 pt-2">
+              <Link
+                href="/admin"
+                onClick={() => setMobileOpen(false)}
+                className={`block px-4 py-2 rounded-lg text-sm font-medium ${
+                  pathname.startsWith("/admin")
+                    ? "bg-orange-500/15 text-orange-400"
+                    : "text-gray-500 hover:text-white"
+                }`}
+              >
+                Admin
+              </Link>
+            </div>
           </div>
         )}
       </div>
