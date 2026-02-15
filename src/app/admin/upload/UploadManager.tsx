@@ -15,7 +15,7 @@ interface DataTypeConfig {
   needsSource: boolean;
 }
 
-const DATA_TYPES: Record<DataType, DataTypeConfig> = {
+const DATA_TYPES_UNSORTED: Record<DataType, DataTypeConfig> = {
   rankings: {
     label: "Overall Rankings",
     description: "Per-source overall player rankings (e.g. NFL.com #1, PFF #3). Optionally include position rank to import both at once.",
@@ -174,6 +174,11 @@ const DATA_TYPES: Record<DataType, DataTypeConfig> = {
     needsSource: false,
   },
 };
+
+// Sort upload options alphabetically by label
+const DATA_TYPES = DATA_TYPES_UNSORTED;
+const DATA_TYPE_ENTRIES = (Object.entries(DATA_TYPES) as [DataType, DataTypeConfig][])
+  .sort((a, b) => a[1].label.localeCompare(b[1].label));
 
 // ─── Step Enum ──────────────────────────────────────────────────────────────
 
@@ -415,7 +420,7 @@ export function UploadManager() {
       {/* ──────── STEP 1: Select Data Type ──────── */}
       {step === "select-type" && (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {(Object.entries(DATA_TYPES) as [DataType, DataTypeConfig][]).map(([key, cfg]) => (
+          {DATA_TYPE_ENTRIES.map(([key, cfg]) => (
             <button
               key={key}
               onClick={() => handleTypeSelect(key)}

@@ -187,6 +187,20 @@ async function resolvePlayerId(
   return created.id;
 }
 
+// ─── Name Normalization ─────────────────────────────────────────────────────
+
+/** Convert "Bernhard RAIMANN" → "Bernhard Raimann" (title-case ALL-CAPS words, preserve Roman numerals) */
+function normalizeCompName(name: string): string {
+  const romanNumerals = new Set(["II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "JR", "SR"]);
+  return name.split(/\s+/).map(word => {
+    if (romanNumerals.has(word.toUpperCase())) return word.toUpperCase();
+    if (word === word.toUpperCase() && word.length > 1 && /^[A-Z]+$/.test(word)) {
+      return word.charAt(0) + word.slice(1).toLowerCase();
+    }
+    return word;
+  }).join(" ");
+}
+
 // ─── Import: Rankings ───────────────────────────────────────────────────────
 
 async function importRankings(
@@ -1285,6 +1299,41 @@ async function importDraftBuzzGrades(
     if (snapsVal && snapsVal !== "#N/A") bioValues.snaps = snapsVal;
     await writeBioSources(supabase, playerId, "draftbuzz", bioValues);
 
+    // ── Player Comp (Player Comparison) ──────────────────────────────
+    const comp = flexGet(row, "Player Comparison", "player_comparison", "Player_Comparison");
+    if (comp && comp.trim() && comp.trim() !== "N/A" && comp.trim() !== "TBD" && comp.trim() !== "0") {
+      const normalizedComp = normalizeCompName(comp.trim());
+      const { data: existingComp } = await supabase
+        .from("player_comps")
+        .select("id")
+        .eq("player_id", playerId)
+        .eq("source", "DraftBuzz")
+        .maybeSingle();
+
+      if (existingComp) {
+        await supabase.from("player_comps").update({ comp: normalizedComp }).eq("id", existingComp.id);
+      } else {
+        await supabase.from("player_comps").insert({ player_id: playerId, source: "DraftBuzz", comp: normalizedComp });
+      }
+    }
+
+    // ── Projected Round (Draft Projection) ───────────────────────────────
+    const projRound = flexGet(row, "Draft Projection", "draft_projection", "Draft_Projection");
+    if (projRound && projRound.trim() && projRound.trim() !== "N/A" && projRound.trim() !== "TBD") {
+      const { data: existingRound } = await supabase
+        .from("projected_rounds")
+        .select("id")
+        .eq("player_id", playerId)
+        .eq("source", "DraftBuzz")
+        .maybeSingle();
+
+      if (existingRound) {
+        await supabase.from("projected_rounds").update({ round: projRound.trim() }).eq("id", existingRound.id);
+      } else {
+        await supabase.from("projected_rounds").insert({ player_id: playerId, source: "DraftBuzz", round: projRound.trim() });
+      }
+    }
+
     if (error) {
       result.errors.push(`Row ${i + 1}: ${error.message}`);
     } else {
@@ -1531,7 +1580,7 @@ async function importNFLProfiles(
     // ── 3. Player Comps (NFL Comparison) ────────────────────────────────
     const comp = row[mapping["nfl_comparison"]] || row["NFL Comparison"];
     if (comp && comp.trim() && comp.trim() !== "N/A") {
-      // Upsert by player_id + source
+      const normalizedComp = normalizeCompName(comp.trim());
       const { data: existingComp } = await supabase
         .from("player_comps")
         .select("id")
@@ -1540,9 +1589,9 @@ async function importNFLProfiles(
         .maybeSingle();
 
       if (existingComp) {
-        await supabase.from("player_comps").update({ comp: comp.trim() }).eq("id", existingComp.id);
+        await supabase.from("player_comps").update({ comp: normalizedComp }).eq("id", existingComp.id);
       } else {
-        await supabase.from("player_comps").insert({ player_id: playerId, source: SOURCE, comp: comp.trim() });
+        await supabase.from("player_comps").insert({ player_id: playerId, source: SOURCE, comp: normalizedComp });
       }
     }
 
@@ -1648,6 +1697,7 @@ async function importBleacherProfiles(
     // ── 3. Player Comps (Pro Comparison) ────────────────────────────────
     const comp = row[mapping["pro_comparison"]];
     if (comp && comp.trim() && comp.trim() !== "N/A") {
+      const normalizedComp = normalizeCompName(comp.trim());
       const { data: existingComp } = await supabase
         .from("player_comps")
         .select("id")
@@ -1656,9 +1706,9 @@ async function importBleacherProfiles(
         .maybeSingle();
 
       if (existingComp) {
-        await supabase.from("player_comps").update({ comp: comp.trim() }).eq("id", existingComp.id);
+        await supabase.from("player_comps").update({ comp: normalizedComp }).eq("id", existingComp.id);
       } else {
-        await supabase.from("player_comps").insert({ player_id: playerId, source: SOURCE, comp: comp.trim() });
+        await supabase.from("player_comps").insert({ player_id: playerId, source: SOURCE, comp: normalizedComp });
       }
     }
 

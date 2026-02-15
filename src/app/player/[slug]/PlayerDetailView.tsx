@@ -201,7 +201,7 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
         <div className="rounded-xl border border-[#2a3a4e] bg-[#111827] p-4">
           <h3 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2">Overall Rankings</h3>
           <div className="space-y-1.5">
-            {p.rankings.map((r, i) => (
+            {[...p.rankings].sort((a, b) => a.source.localeCompare(b.source)).map((r, i) => (
               <div key={i} className="flex items-center justify-between">
                 <span className="text-xs text-gray-400">{r.source}</span>
                 <span className={`text-xs font-bold ${r.overall_rank && r.overall_rank <= 10 ? "text-green-400" : r.overall_rank && r.overall_rank <= 32 ? "text-yellow-400" : "text-white"}`}>
@@ -216,7 +216,7 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
         <div className="rounded-xl border border-[#2a3a4e] bg-[#111827] p-4">
           <h3 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2">POS Rankings</h3>
           <div className="space-y-1.5">
-            {p.rankings.map((r, i) => (
+            {[...p.rankings].sort((a, b) => a.source.localeCompare(b.source)).map((r, i) => (
               <div key={i} className="flex items-center justify-between">
                 <span className="text-xs text-gray-400">{r.source}</span>
                 <span className="text-xs font-bold text-white">
@@ -233,7 +233,7 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
           <div className="space-y-1.5">
             {Object.entries(p.adp_by_source)
               .filter(([, v]) => v != null)
-              .sort((a, b) => (a[1] || 999) - (b[1] || 999))
+              .sort((a, b) => a[0].localeCompare(b[0]))
               .map(([source, adp]) => (
               <div key={source} className="flex items-center justify-between">
                 <span className="text-xs text-gray-400">{source}</span>
@@ -254,7 +254,7 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
         <div className="rounded-xl border border-[#2a3a4e] bg-[#111827] p-4">
           <h3 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2">Site Ratings</h3>
           <div className="space-y-1.5">
-            {Object.entries(p.site_ratings).filter(([, v]) => v).map(([source, grade]) => (
+            {Object.entries(p.site_ratings).filter(([, v]) => v).sort((a, b) => a[0].localeCompare(b[0])).map(([source, grade]) => (
               <div key={source} className="flex items-center justify-between">
                 <span className="text-xs text-gray-400">{source}</span>
                 <span className="text-xs font-semibold text-white">{grade}</span>
@@ -308,7 +308,14 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
               </div>
             </div>
             <div className="space-y-1.5">
-              {Object.entries(p.alignments).map(([align, data]) => (
+              {Object.entries(p.alignments).sort((a, b) => {
+                const olOrder = ["LT", "LG", "C", "RG", "RT"];
+                const ai = olOrder.indexOf(a[0]), bi = olOrder.indexOf(b[0]);
+                if (ai !== -1 && bi !== -1) return ai - bi;
+                if (ai !== -1) return -1;
+                if (bi !== -1) return 1;
+                return a[0].localeCompare(b[0]);
+              }).map(([align, data]) => (
                 <div key={align} className="flex items-center justify-between">
                   <span className="text-xs text-gray-400">{align}</span>
                   <div className="flex items-center gap-3">
