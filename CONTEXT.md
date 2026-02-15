@@ -1,6 +1,6 @@
 # NFL Draft Board — Complete Technical Context
 
-> **Last Updated:** February 14, 2026
+> **Last Updated:** February 15, 2026
 > **Repository:** https://github.com/Monocarp/DraftBoard
 > **Live Site:** Auto-deploys to Vercel on push to `main`
 > **Supabase Project:** https://cmapsylsrsglhfdwquwe.supabase.co
@@ -51,6 +51,8 @@
 | `src/lib/supabase-browser.ts` | Client components (login form) | Anon key + browser cookies |
 
 > **Note:** The `SUPABASE_SERVICE_ROLE_KEY` is defined in `.env.local` but never used in code. All server operations use the anon key with Row Level Security disabled.
+
+> **Config:** `next.config.ts` sets `experimental.serverActions.bodySizeLimit = "10mb"` to handle large file uploads (e.g. PFF Stats with 173 columns).
 
 ---
 
@@ -105,7 +107,7 @@ src/
 │       │
 │       ├── upload/              # Data Import System
 │       │   ├── page.tsx         # Upload page with stats cards
-│       │   ├── actions.ts       # 10 importer functions + helpers
+│       │   ├── actions.ts       # 11 importer functions + helpers
 │       │   └── UploadManager.tsx # 5-step wizard UI
 │       │
 │       ├── corrections/         # Name Corrections
@@ -235,7 +237,7 @@ src/
         ▼                                   ▼
  ┌─────────────────────────────────────────────────┐
  │           Upload Manager (5-step wizard)         │
- │  1. Select data type (10 types)                 │
+ │  1. Select data type (11 types)                 │
  │  2. Upload file (CSV/TSV/XLSX)                  │
  │  3. Map columns (auto-detect + manual override) │
  │  4. Preview & Import                            │
@@ -254,7 +256,7 @@ src/
                        │
                        ▼
  ┌─────────────────────────────────────────────────┐
- │              10 Specialized Importers            │
+ │              11 Specialized Importers            │
  │                                                 │
  │  Relational importers → dedicated tables        │
  │  Profile importers → JSON columns on players    │
@@ -330,8 +332,9 @@ The `bio_sources` JSONB column on `players` stores per-field, per-source values:
 
 | Priority | Source | Notes |
 |---|---|---|
-| 3 (highest) | `pff` | Premium, most accurate |
-| 2 | `site_ratings` | Aggregated site grades |
+| 4 (highest) | `pff` | Premium, most accurate |
+| 3 | `site_ratings` | Aggregated site grades |
+| 2 | `nfl_com` | NFL.com profiles |
 | 1 | `draftbuzz` | Comprehensive coverage, less accurate |
 | 0 (lowest) | `manual` | Hand-entered fallback |
 
@@ -413,7 +416,7 @@ The corrections audit system can detect when both a variant and canonical player
 
 ## 8. Data Import System
 
-### The 10 Data Types
+### The 11 Data Types
 
 #### Relational Importers (write to dedicated tables)
 
@@ -434,6 +437,12 @@ The corrections audit system can detect when both a variant and canonical player
 | `draftbuzz_grades` | `draftbuzz_grades`, `overview` | Merge per position group | `"draftbuzz"` (age, dob, games, snaps) |
 | `athletic_scores` | `athletic_scores` | Merge RAS data | — |
 | `site_ratings` | `site_ratings`, `overview` | Merge + write to overview | — |
+
+#### Multi-Table Importers
+
+| Type | Target Tables | Strategy | Source Required |
+|---|---|---|---|
+| `nfl_profiles` | `player_rankings`, `site_ratings` JSON, `overview` JSON, `player_comps`, `commentary`, `bio_sources` | Writes rankings, grades, comps, scouting commentary, eligibility | ✗ (hardcoded "NFL.com") |
 
 ### PFF Import — 3-Phase Process
 
@@ -465,13 +474,27 @@ The PFF importer is the most complex:
 - OL: Pass Blocking Grade, Run Blocking Grade
 - etc.
 
+### NFL Profiles Import
+
+The `nfl_profiles` importer ingests data from the NFL.com Profiles Excel file (e.g. `NFL Profiles 2.15.26.xlsx`). It writes to **5 destinations** while carefully avoiding overwriting manually-authored fields:
+
+1. **`player_rankings`** — Overall Rank + Positional Rank (source "NFL.com")
+2. **`site_ratings` JSON + `overview` JSON** — Prospect Grade as "NFL.com" key
+3. **`player_comps`** — NFL Comparison (source "NFL.com", skips "N/A")
+4. **`commentary`** — Overview, Strengths, Weaknesses, Sources Tell Us as titled sections (source "NFL.com")
+5. **`bio_sources`** — Eligibility → year field via `writeBioSources("nfl_com", ...)`
+
+**Column mappings (13):** player_name, position, school, rank, pos_rank, prospect_grade, prospect_grade_indicator, overview, strengths, weaknesses, sources_tell_us, nfl_comparison, eligibility.
+
+**Does NOT write to:** `players.strengths`, `players.weaknesses`, `players.player_summary`, `players.projected_role` — these are manually authored (see Protected Fields).
+
 ### Source Date Auto-Update
 
 When importing `rankings` or `mocks`, the dispatcher automatically upserts a `source_dates` entry with today's date for that source name. This keeps the "Last Updated" dates current without manual intervention.
 
 ### Upload Manager UI (5 Steps)
 
-1. **Select Data Type** — Grid of 10 cards, each showing label and description
+1. **Select Data Type** — Grid of 11 cards, each showing label and description
 2. **Upload File** — Drag-and-drop or click to upload CSV/TSV/XLSX/XLS
 3. **Map Columns** — Auto-maps by fuzzy name matching. Manual dropdown override per required column. Shows unmapped columns.
 4. **Preview & Import** — 20-row table preview. Source name input (if required). Import button.
@@ -680,6 +703,27 @@ Different sources use different abbreviations. The codebase has two normalizatio
 
 These serve different purposes: the upload normalizer maps to data template keys, while the types normalizer maps to display abbreviations used in the UI.
 
+**Extended normalizations in `normalizePosition()`:**
+- `DI`, `DL` → `DT`
+- `DE/ED`, `LB/ED` (slash-separated) → `EDGE` (slashes stripped before matching)
+- `ILB`, `MLB` → `LB`
+- `HB`, `FB` → `RB`
+- `G` → `IOL`
+- `TBD` and empty positions are silently skipped (not treated as errors)
+
+### Protected Fields (Never Overwritten by Imports)
+
+Certain player fields are **manually authored** by the admin and must never be overwritten by automated data imports:
+
+| Field | Column | Reason |
+|---|---|---|
+| Strengths | `players.strengths` | Hand-written scouting analysis |
+| Weaknesses | `players.weaknesses` | Hand-written scouting analysis |
+| Player Summary | `players.player_summary` | Hand-written overview paragraph |
+| Projected Role | `players.projected_role` | Manual evaluation (e.g. "Day 1 Starter") |
+
+Import data that resembles these fields (e.g. NFL.com's Overview, Strengths, Weaknesses, Prospect Grade Indicator) goes into the `commentary` table or other non-destructive destinations instead. This separation ensures the admin's manual scouting work is preserved regardless of how many times data is re-imported.
+
 ### Percentile Color Coding
 
 PFF scores display with percentile-based colors via `getPercentileColor()`:
@@ -756,6 +800,13 @@ The Excel workbook is the original data source. Key sheet categories:
 
 The Excel workbook uses a similar priority approach for bio data — separate sheets per field pull from different sources, with a final column that prioritizes the most authoritative source. This pattern is now replicated in the `bio_sources` priority system.
 
+### Standalone Upload Files
+
+| File | Format | Contents | Imported As |
+|---|---|---|---|
+| `PFF Stats 2.15.26.xlsx` | Single sheet `PFF_Stats`, 173 columns | All positions in one flat table (metrics + alignment snaps) | `pff_scores` |
+| `NFL Profiles 2.15.26.xlsx` | Single sheet, 27 columns, ~50 rows | NFL.com top prospect profiles (grades, rankings, comps, scouting text) | `nfl_profiles` |
+
 ---
 
 ## Quick Reference: Common Operations
@@ -782,7 +833,14 @@ The Excel workbook uses a similar priority approach for bio data — separate sh
 5. Merge if duplicates found
 
 ### Update PFF data
-1. Export PFF Stats sheet as CSV (one per position group)
+1. Upload the combined PFF Stats XLSX file (all positions in one sheet)
 2. Go to `/admin/upload` → "PFF Scores + Alignments"
+3. Upload, verify column match stats (metrics: X/53, alignments: X/18), import
+4. Percentiles auto-computed per position, bio data (age) flows through priority resolver
+5. Unknown positions (DI, DL, TBD, etc.) are auto-normalized or silently skipped
+
+### Import NFL.com Profiles
+1. Upload the NFL Profiles XLSX file
+2. Go to `/admin/upload` → "NFL.com Profiles"
 3. Upload, map columns, import
-4. Percentiles auto-computed, bio data (age) flows through priority resolver
+4. Rankings, grades, comps, and scouting commentary are written (manual fields are never overwritten)
