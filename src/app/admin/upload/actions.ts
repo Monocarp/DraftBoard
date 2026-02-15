@@ -16,7 +16,8 @@ export type DataType =
   | "draftbuzz_grades"
   | "athletic_scores"
   | "site_ratings"
-  | "nfl_profiles";
+  | "nfl_profiles"
+  | "bleacher_profiles";
 
 export type ColumnMapping = Record<string, string>; // csv_header → db_column
 
@@ -1535,6 +1536,122 @@ async function importNFLProfiles(
   return result;
 }
 
+// ─── Import: Bleacher Report Profiles ───────────────────────────────────────
+
+async function importBleacherProfiles(
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  rows: Record<string, string>[],
+  mapping: ColumnMapping,
+): Promise<UploadResult> {
+  const result: UploadResult = { success: true, inserted: 0, updated: 0, skipped: 0, errors: [] };
+  const SOURCE = "Bleacher Report";
+
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    const playerName = row[mapping["player_name"]];
+
+    if (!playerName?.trim()) { result.skipped++; continue; }
+
+    const playerId = await resolvePlayerId(supabase, playerName, {});
+    if (!playerId) {
+      result.errors.push(`Row ${i + 1}: Could not resolve player "${playerName}"`);
+      result.skipped++;
+      continue;
+    }
+
+    // ── 1. Player Rankings (Overall Rank) ───────────────────────────────
+    const rank = row[mapping["overall_rank"]];
+    if (rank) {
+      const overallRank = parseInt(String(rank), 10);
+      if (!isNaN(overallRank)) {
+        await supabase
+          .from("player_rankings")
+          .upsert(
+            { player_id: playerId, source: SOURCE, overall_rank: overallRank, positional_rank: null },
+            { onConflict: "player_id,source" },
+          );
+      }
+    }
+
+    // ── 2. Site Ratings + Overview (Grade) ──────────────────────────────
+    const grade = row[mapping["grade"]];
+    if (grade && String(grade).trim()) {
+      const { data: existing } = await supabase
+        .from("players")
+        .select("site_ratings, overview")
+        .eq("id", playerId)
+        .single();
+
+      const merged = { ...(existing?.site_ratings || {}), [SOURCE]: String(grade) };
+      const mergedOverview = { ...(existing?.overview || {}), [SOURCE]: String(grade) };
+
+      await supabase
+        .from("players")
+        .update({ site_ratings: merged, overview: mergedOverview })
+        .eq("id", playerId);
+    }
+
+    // ── 3. Player Comps (Pro Comparison) ────────────────────────────────
+    const comp = row[mapping["pro_comparison"]];
+    if (comp && comp.trim() && comp.trim() !== "N/A") {
+      const { data: existingComp } = await supabase
+        .from("player_comps")
+        .select("id")
+        .eq("player_id", playerId)
+        .eq("source", SOURCE)
+        .maybeSingle();
+
+      if (existingComp) {
+        await supabase.from("player_comps").update({ comp: comp.trim() }).eq("id", existingComp.id);
+      } else {
+        await supabase.from("player_comps").insert({ player_id: playerId, source: SOURCE, comp: comp.trim() });
+      }
+    }
+
+    // ── 4. Projected Round ──────────────────────────────────────────────
+    const projRound = row[mapping["projected_round"]];
+    if (projRound && projRound.trim()) {
+      const { data: existingRound } = await supabase
+        .from("projected_rounds")
+        .select("id")
+        .eq("player_id", playerId)
+        .eq("source", SOURCE)
+        .maybeSingle();
+
+      if (existingRound) {
+        await supabase.from("projected_rounds").update({ round: projRound.trim() }).eq("id", existingRound.id);
+      } else {
+        await supabase.from("projected_rounds").insert({ player_id: playerId, source: SOURCE, round: projRound.trim() });
+      }
+    }
+
+    // ── 5. Commentary (Overall, Positives, Negatives) ───────────────────
+    const overall = row[mapping["overall"]];
+    const positives = row[mapping["positives"]];
+    const negatives = row[mapping["negatives"]];
+
+    const sections: { title: string; text: string }[] = [];
+    if (overall?.trim()) sections.push({ title: "Overview", text: overall.trim() });
+    if (positives?.trim()) sections.push({ title: "Positives", text: positives.trim() });
+    if (negatives?.trim()) sections.push({ title: "Negatives", text: negatives.trim() });
+
+    if (sections.length > 0) {
+      await supabase.from("commentary").delete().eq("player_id", playerId).eq("source", SOURCE);
+      await supabase.from("commentary").insert({
+        player_id: playerId,
+        source: SOURCE,
+        sections,
+      });
+    }
+
+    // NOTE: strengths, weaknesses, player_summary, projected_role are manually authored — never overwrite from imports
+
+    result.updated++;
+  }
+
+  return result;
+}
+
 // ─── Main Import Dispatcher ────────────────────────────────────────────────
 
 export async function importData(
@@ -1592,6 +1709,9 @@ export async function importData(
       break;
     case "nfl_profiles":
       result = await importNFLProfiles(supabase, rows, mapping);
+      break;
+    case "bleacher_profiles":
+      result = await importBleacherProfiles(supabase, rows, mapping);
       break;
     default:
       result = { success: false, inserted: 0, updated: 0, skipped: 0, errors: [`Unknown data type: ${dataType}`] };
@@ -1657,6 +1777,10 @@ export async function deleteSourceData(
     case "athletic_scores":
     case "site_ratings":
       return { success: false, deleted: 0, error: "Profile data cannot be deleted by source. Edit individual players instead." };
+    // Multi-table importers write to several tables — no simple source-based deletion
+    case "nfl_profiles":
+    case "bleacher_profiles":
+      return { success: false, deleted: 0, error: "Multi-table profile data cannot be deleted by source. Edit individual players instead." };
     default: return { success: false, deleted: 0, error: "Unknown data type" };
   }
 

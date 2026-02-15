@@ -139,6 +139,21 @@ const DATA_TYPES: Record<DataType, DataTypeConfig> = {
     ],
     needsSource: false,
   },
+  bleacher_profiles: {
+    label: "Bleacher Report Profiles",
+    description: "Bleacher Report prospect profiles — rankings, grades, round projections, pro comps, and scouting commentary",
+    requiredColumns: [
+      { key: "player_name", label: "Player Name", required: true },
+      { key: "overall_rank", label: "Overall Rank", required: false },
+      { key: "grade", label: "Grade", required: false },
+      { key: "pro_comparison", label: "Pro Comparison", required: false },
+      { key: "projected_round", label: "Projected Round", required: false },
+      { key: "overall", label: "Overall (Overview text)", required: false },
+      { key: "positives", label: "Positives", required: false },
+      { key: "negatives", label: "Negatives", required: false },
+    ],
+    needsSource: false,
+  },
 };
 
 // ─── Step Enum ──────────────────────────────────────────────────────────────
