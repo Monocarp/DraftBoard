@@ -565,13 +565,69 @@ export function UploadManager() {
       )}
 
       {/* ──────── STEP 4: Preview ──────── */}
-      {(step === "preview" || step === "importing") && (
+      {(step === "preview" || step === "importing") && (() => {
+        // For PFF/DraftBuzz, show extra sample metric columns in preview
+        const PFF_SAMPLE_COLS = ["25 Grade", "24 Grade", "23 Grade", "Coverage Grade", "Pass Rush Grade", "Passing Grade", "Receiving Grade", "Rushing Grade", "Run Block Grade", "Pass Block Grade", "Age", "Round Projection"];
+        const extraPreviewCols = (dataType === "pff_scores")
+          ? PFF_SAMPLE_COLS.filter((c) => csvHeaders.includes(c))
+          : [];
+
+        // Count how many known PFF metric columns are present
+        const ALL_PFF_METRIC_COLS = [
+          "25 Grade", "24 Grade", "23 Grade", "Coverage Grade", "Run Def Grade",
+          "Completion % Allowed", "Forced Incom.", "Forced Incom. Rate", "Dropped Picks",
+          "Coverage Stops", "Missed Tackles", "Missed Tackle Rate", "Passer Rating Against",
+          "Interceptions", "Man Coverage", "Zone Coverage", "Tackling Grade", "Man %", "Zone %",
+          "Pass Rush Grade", "True Pass Rush", "PR Win Rate", "Run Stop %", "Sacks", "Hits",
+          "Hurries", "Batted Balls", "Forced Fumbles", "Tackling Grade2", "Missed Tackle Rate2",
+          "Total Pressures", "Passing Grade", "Intermediate Passing Grade", "Deep Passing Grade",
+          "No Pressure Grade", "Pressure Grade", "Adjusted Comp %", "Passing Average Depth of Target",
+          "Big Time Throw", "TO Worthy Plays", "Receiving Grade", "Yards/ Routes Run", "Drop %",
+          "CCR", "Grade vs Man", "YAC/Reception", "Rushing Grade", "Run Block Grade", "Pass Block Grade",
+          "Age", "Summary", "Pros", "Cons", "Player Comp", "Bottom Line", "Round Projection",
+        ];
+        const ALL_PFF_ALIGN_COLS = [
+          "Coverage D-Line Allignment", "Coverage Slot Allignment", "Coverage Corner Allignment",
+          "Coverage Box Allignment", "Coverage Deep Allignment",
+          "Dline A Gap Allignment", "Dline B Gap Allignment", "Dline Over Tackle Allignment",
+          "Dline Outside Tackle Allignment", "Dline Off Ball Allignment",
+          "LT Snaps", "LG Snaps", "C Snaps", "RG Snaps", "RT Snaps",
+          "Slot Snaps", "Wide Snaps", "Inline Snaps",
+        ];
+        const matchedMetrics = (dataType === "pff_scores") ? ALL_PFF_METRIC_COLS.filter((c) => csvHeaders.includes(c)).length : 0;
+        const matchedAligns = (dataType === "pff_scores") ? ALL_PFF_ALIGN_COLS.filter((c) => csvHeaders.includes(c)).length : 0;
+
+        return (
         <div className="space-y-4">
           <div className="rounded-xl border border-[#2a3a4e] bg-[#0d1320] p-6">
             <h2 className="text-lg font-semibold text-white mb-1">Preview Import</h2>
             <p className="text-sm text-gray-400 mb-4">
               {config.label} — Source: <span className="text-white font-medium">{sourceName || "(none)"}</span> — {csvRows.length} rows
             </p>
+
+            {/* PFF: Show detected column stats */}
+            {dataType === "pff_scores" && (
+              <div className="mb-4 rounded-lg border border-[#2a3a4e] bg-[#1a2535] p-4">
+                <h3 className="text-sm font-semibold text-white mb-2">Detected PFF Columns</h3>
+                <div className="flex gap-6 text-sm">
+                  <div>
+                    <span className="text-gray-400">Total columns: </span>
+                    <span className="text-white font-medium">{csvHeaders.length}</span>
+                  </div>
+                  <div>
+                    <span className="text-gray-400">Metric columns matched: </span>
+                    <span className={`font-medium ${matchedMetrics > 0 ? "text-green-400" : "text-red-400"}`}>{matchedMetrics} / {ALL_PFF_METRIC_COLS.length}</span>
+                  </div>
+                  <div>
+                    <span className="text-gray-400">Alignment columns matched: </span>
+                    <span className={`font-medium ${matchedAligns > 0 ? "text-green-400" : "text-red-400"}`}>{matchedAligns} / {ALL_PFF_ALIGN_COLS.length}</span>
+                  </div>
+                </div>
+                {matchedMetrics === 0 && (
+                  <p className="mt-2 text-xs text-red-400">Warning: No PFF metric columns were detected. Check that your column headers match the expected PFF format.</p>
+                )}
+              </div>
+            )}
 
             {/* Preview table */}
             <div className="overflow-x-auto rounded-lg border border-[#2a3a4e]">
@@ -586,6 +642,11 @@ export function UploadManager() {
                         </th>
                       )
                     ))}
+                    {extraPreviewCols.map((col) => (
+                      <th key={col} className="px-3 py-2 text-left text-xs font-medium text-blue-400">
+                        {col}
+                      </th>
+                    ))}
                   </tr>
                 </thead>
                 <tbody>
@@ -598,6 +659,11 @@ export function UploadManager() {
                             {row[mapping[col.key]] || <span className="text-gray-600">—</span>}
                           </td>
                         )
+                      ))}
+                      {extraPreviewCols.map((col) => (
+                        <td key={col} className="px-3 py-1.5 text-blue-300">
+                          {row[col] || <span className="text-gray-600">—</span>}
+                        </td>
                       ))}
                     </tr>
                   ))}
@@ -634,7 +700,8 @@ export function UploadManager() {
             </div>
           </div>
         </div>
-      )}
+        );
+      })()}
 
       {/* ──────── STEP 5: Done ──────── */}
       {step === "done" && result && (
