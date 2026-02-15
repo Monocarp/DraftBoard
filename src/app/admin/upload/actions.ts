@@ -808,6 +808,116 @@ async function ensureOverviewSeeded(
   return merged;
 }
 
+// ─── Bio Source Priority Resolution ─────────────────────────────────────────
+
+/**
+ * Source priority for bio fields (higher index = higher priority).
+ * When multiple sources provide the same field (e.g. "age"),
+ * the highest-priority source wins for the top-level column.
+ */
+const SOURCE_PRIORITY: string[] = [
+  "manual",       // 0 – lowest: hand-entered fallback
+  "draftbuzz",    // 1 – comprehensive but less accurate
+  "site_ratings", // 2 – aggregated site grades
+  "pff",          // 3 – highest: premium source
+];
+
+/** The bio fields we track per-source */
+type BioField = "age" | "dob" | "games" | "snaps" | "height" | "weight" | "year" | "position" | "college" | "projected_round";
+
+const BIO_FIELDS: BioField[] = [
+  "age", "dob", "games", "snaps", "height", "weight",
+  "year", "position", "college", "projected_round",
+];
+
+/**
+ * Write bio values to `bio_sources` under a source key, then resolve
+ * the best value per field to top-level columns using SOURCE_PRIORITY.
+ *
+ * @param supabase  - Supabase client
+ * @param playerId - Player UUID
+ * @param source   - Source key (e.g. "pff", "draftbuzz")
+ * @param values   - Map of bio field → value from this source
+ */
+async function writeBioSources(
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  playerId: string,
+  source: string,
+  values: Partial<Record<BioField, string | number | null>>,
+): Promise<void> {
+  // Filter out null/empty values
+  const clean: Record<string, string | number> = {};
+  for (const [k, v] of Object.entries(values)) {
+    if (v !== null && v !== undefined && v !== "" && v !== "#N/A") {
+      clean[k] = v;
+    }
+  }
+  if (Object.keys(clean).length === 0) return;
+
+  // Fetch existing bio_sources
+  const { data: existing } = await supabase
+    .from("players")
+    .select("bio_sources")
+    .eq("id", playerId)
+    .single();
+
+  const bioSources: Record<string, Record<string, string | number>> =
+    (existing?.bio_sources as Record<string, Record<string, string | number>>) || {};
+
+  // Merge this source's values
+  bioSources[source] = { ...(bioSources[source] || {}), ...clean };
+
+  // Resolve best value per field
+  const resolved: Record<string, string | number | null> = {};
+  for (const field of BIO_FIELDS) {
+    let bestValue: string | number | null = null;
+    let bestPriority = -1;
+
+    for (const [src, vals] of Object.entries(bioSources)) {
+      if (vals[field] !== undefined && vals[field] !== null) {
+        const priority = SOURCE_PRIORITY.indexOf(src);
+        const effectivePriority = priority === -1 ? 0 : priority;
+        if (effectivePriority > bestPriority) {
+          bestPriority = effectivePriority;
+          bestValue = vals[field];
+        }
+      }
+    }
+
+    if (bestValue !== null) {
+      resolved[field] = bestValue;
+    }
+  }
+
+  // Build update for top-level columns
+  const updateData: Record<string, unknown> = { bio_sources: bioSources };
+
+  if (resolved.age !== undefined) {
+    const n = typeof resolved.age === "number" ? resolved.age : parseFloat(String(resolved.age));
+    if (!isNaN(n)) updateData.age = n;
+  }
+  if (resolved.dob !== undefined) updateData.dob = String(resolved.dob);
+  if (resolved.games !== undefined) {
+    const n = typeof resolved.games === "number" ? resolved.games : parseInt(String(resolved.games), 10);
+    if (!isNaN(n)) updateData.games = n;
+  }
+  if (resolved.snaps !== undefined) {
+    const n = typeof resolved.snaps === "number" ? resolved.snaps : parseInt(String(resolved.snaps), 10);
+    if (!isNaN(n)) updateData.snaps = n;
+  }
+  if (resolved.height !== undefined) updateData.height = String(resolved.height);
+  if (resolved.weight !== undefined) updateData.weight = String(resolved.weight);
+  if (resolved.year !== undefined) updateData.year = String(resolved.year);
+  if (resolved.position !== undefined) updateData.position = String(resolved.position);
+  if (resolved.college !== undefined) updateData.college = String(resolved.college);
+  if (resolved.projected_round !== undefined) updateData.projected_round = String(resolved.projected_round);
+
+  await supabase
+    .from("players")
+    .update(updateData)
+    .eq("id", playerId);
+}
+
 // ─── Import: PFF Scores ─────────────────────────────────────────────────────
 
 async function importPFFScores(
@@ -978,7 +1088,7 @@ async function importPFFScores(
     // Fetch existing player data to merge
     const { data: existing } = await supabase
       .from("players")
-      .select("pff_scores, alignments, overview, age")
+      .select("pff_scores, alignments, overview")
       .eq("id", pr.playerId)
       .single();
 
@@ -988,22 +1098,19 @@ async function importPFFScores(
     // Merge overview keys without auto-seeding (profile must be created explicitly)
     const mergedOverview = { ...(existing?.overview || {}), ...pr.overview };
 
-    const updateData: Record<string, unknown> = {
-      pff_scores: mergedPff,
-      alignments: mergedAlign,
-      overview: mergedOverview,
-    };
-
-    // Also write Age to top-level column if available and not already set
-    if (pr.overview["Age"] && !existing?.age) {
-      const ageNum = parseFloat(pr.overview["Age"]);
-      if (!isNaN(ageNum)) updateData.age = ageNum;
-    }
-
     const { error } = await supabase
       .from("players")
-      .update(updateData)
+      .update({
+        pff_scores: mergedPff,
+        alignments: mergedAlign,
+        overview: mergedOverview,
+      })
       .eq("id", pr.playerId);
+
+    // Write bio fields through priority-based resolver
+    const bioValues: Partial<Record<BioField, string | number | null>> = {};
+    if (pr.overview["Age"]) bioValues.age = pr.overview["Age"];
+    await writeBioSources(supabase, pr.playerId, "pff", bioValues);
 
     if (error) {
       result.errors.push(`${pr.playerId}: ${error.message}`);
@@ -1089,7 +1196,7 @@ async function importDraftBuzzGrades(
     // Fetch existing to merge
     const { data: existing } = await supabase
       .from("players")
-      .select("draftbuzz_grades, overview, age, dob, games, snaps")
+      .select("draftbuzz_grades, overview")
       .eq("id", playerId)
       .single();
 
@@ -1098,32 +1205,21 @@ async function importDraftBuzzGrades(
     // Merge overview keys without auto-seeding (profile must be created explicitly)
     const mergedOverview = { ...(existing?.overview || {}), ...overview };
 
-    const updateData: Record<string, unknown> = {
-      draftbuzz_grades: mergedGrades,
-      overview: mergedOverview,
-    };
-
-    // Write bio fields to top-level columns if available and not already set
-    if (row["age"] && !existing?.age) {
-      const ageNum = parseFloat(row["age"]);
-      if (!isNaN(ageNum)) updateData.age = ageNum;
-    }
-    if (row["DOB"] && !existing?.dob) {
-      updateData.dob = row["DOB"];
-    }
-    if (row["college_games"] && !existing?.games) {
-      const gamesNum = parseInt(row["college_games"], 10);
-      if (!isNaN(gamesNum)) updateData.games = gamesNum;
-    }
-    if (row["college_snaps"] && !existing?.snaps) {
-      const snapsNum = parseInt(row["college_snaps"], 10);
-      if (!isNaN(snapsNum)) updateData.snaps = snapsNum;
-    }
-
     const { error } = await supabase
       .from("players")
-      .update(updateData)
+      .update({
+        draftbuzz_grades: mergedGrades,
+        overview: mergedOverview,
+      })
       .eq("id", playerId);
+
+    // Write bio fields through priority-based resolver
+    const bioValues: Partial<Record<BioField, string | number | null>> = {};
+    if (row["age"] && row["age"] !== "#N/A") bioValues.age = row["age"];
+    if (row["DOB"] && row["DOB"] !== "#N/A") bioValues.dob = row["DOB"];
+    if (row["college_games"] && row["college_games"] !== "#N/A") bioValues.games = row["college_games"];
+    if (row["college_snaps"] && row["college_snaps"] !== "#N/A") bioValues.snaps = row["college_snaps"];
+    await writeBioSources(supabase, playerId, "draftbuzz", bioValues);
 
     if (error) {
       result.errors.push(`Row ${i + 1}: ${error.message}`);
