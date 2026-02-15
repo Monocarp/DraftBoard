@@ -119,6 +119,26 @@ const DATA_TYPES: Record<DataType, DataTypeConfig> = {
     ],
     needsSource: false,
   },
+  nfl_profiles: {
+    label: "NFL.com Profiles",
+    description: "NFL.com prospect profiles — imports rankings, grades, scouting reports, comps, and eligibility in one shot",
+    requiredColumns: [
+      { key: "player_name", label: "Player Name", required: true },
+      { key: "position", label: "Position", required: false },
+      { key: "school", label: "School", required: false },
+      { key: "rank", label: "Rank", required: false },
+      { key: "pos_rank", label: "Pos Rank", required: false },
+      { key: "prospect_grade", label: "Prospect Grade", required: false },
+      { key: "prospect_grade_indicator", label: "Grade Indicator", required: false },
+      { key: "overview", label: "Overview", required: false },
+      { key: "strengths", label: "Strengths", required: false },
+      { key: "weaknesses", label: "Weaknesses", required: false },
+      { key: "sources_tell_us", label: "Sources Tell Us", required: false },
+      { key: "nfl_comparison", label: "NFL Comparison", required: false },
+      { key: "eligibility", label: "Eligibility", required: false },
+    ],
+    needsSource: false,
+  },
 };
 
 // ─── Step Enum ──────────────────────────────────────────────────────────────

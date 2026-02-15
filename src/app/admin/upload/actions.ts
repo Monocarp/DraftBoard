@@ -15,7 +15,8 @@ export type DataType =
   | "pff_scores"
   | "draftbuzz_grades"
   | "athletic_scores"
-  | "site_ratings";
+  | "site_ratings"
+  | "nfl_profiles";
 
 export type ColumnMapping = Record<string, string>; // csv_header → db_column
 
@@ -820,8 +821,9 @@ async function ensureOverviewSeeded(
 const SOURCE_PRIORITY: string[] = [
   "manual",       // 0 – lowest: hand-entered fallback
   "draftbuzz",    // 1 – comprehensive but less accurate
-  "site_ratings", // 2 – aggregated site grades
-  "pff",          // 3 – highest: premium source
+  "nfl_com",      // 2 – NFL.com profiles
+  "site_ratings", // 3 – aggregated site grades
+  "pff",          // 4 – highest: premium source
 ];
 
 /** The bio fields we track per-source */
@@ -1404,6 +1406,151 @@ async function importSiteRatings(
   return result;
 }
 
+// ─── Import: NFL Profiles ───────────────────────────────────────────────────
+
+async function importNFLProfiles(
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  rows: Record<string, string>[],
+  mapping: ColumnMapping,
+): Promise<UploadResult> {
+  const result: UploadResult = { success: true, inserted: 0, updated: 0, skipped: 0, errors: [] };
+  const SOURCE = "NFL.com";
+
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    const playerName = row[mapping["player_name"]];
+    const rawPos = row[mapping["position"]] || "";
+    const school = row[mapping["school"]] || "";
+
+    if (!playerName?.trim()) { result.skipped++; continue; }
+
+    const playerId = await resolvePlayerId(supabase, playerName, {
+      position: rawPos,
+      college: school,
+    });
+    if (!playerId) {
+      result.errors.push(`Row ${i + 1}: Could not resolve player "${playerName}"`);
+      result.skipped++;
+      continue;
+    }
+
+    // ── 1. Player Rankings (Rank + Pos Rank) ────────────────────────────
+    const rank = row[mapping["rank"]] || row["Rank"];
+    const posRank = row[mapping["pos_rank"]] || row["Pos Rank"];
+    if (rank) {
+      const overallRank = parseInt(String(rank), 10);
+      const positionalRank = posRank ? parseInt(String(posRank), 10) : null;
+      if (!isNaN(overallRank)) {
+        await supabase
+          .from("player_rankings")
+          .upsert(
+            {
+              player_id: playerId,
+              source: SOURCE,
+              overall_rank: overallRank,
+              positional_rank: !isNaN(positionalRank ?? NaN) ? positionalRank : null,
+            },
+            { onConflict: "player_id,source" },
+          );
+      }
+    }
+
+    // ── 2. Site Ratings (Prospect Grade) ────────────────────────────────
+    const prospectGrade = row[mapping["prospect_grade"]] || row["Prospect Grade"];
+    if (prospectGrade && String(prospectGrade).trim()) {
+      const { data: existing } = await supabase
+        .from("players")
+        .select("site_ratings, overview")
+        .eq("id", playerId)
+        .single();
+
+      const merged = { ...(existing?.site_ratings || {}), [SOURCE]: String(prospectGrade) };
+      const mergedOverview = { ...(existing?.overview || {}), [SOURCE]: String(prospectGrade) };
+
+      await supabase
+        .from("players")
+        .update({ site_ratings: merged, overview: mergedOverview })
+        .eq("id", playerId);
+    }
+
+    // ── 3. Player Comps (NFL Comparison) ────────────────────────────────
+    const comp = row[mapping["nfl_comparison"]] || row["NFL Comparison"];
+    if (comp && comp.trim() && comp.trim() !== "N/A") {
+      // Upsert by player_id + source
+      const { data: existingComp } = await supabase
+        .from("player_comps")
+        .select("id")
+        .eq("player_id", playerId)
+        .eq("source", SOURCE)
+        .maybeSingle();
+
+      if (existingComp) {
+        await supabase.from("player_comps").update({ comp: comp.trim() }).eq("id", existingComp.id);
+      } else {
+        await supabase.from("player_comps").insert({ player_id: playerId, source: SOURCE, comp: comp.trim() });
+      }
+    }
+
+    // ── 4. Commentary (Overview, Strengths, Weaknesses, Sources Tell Us) ─
+    const overview = row[mapping["overview"]] || row["Overview"];
+    const strengths = row[mapping["strengths"]] || row["Strengths"];
+    const weaknesses = row[mapping["weaknesses"]] || row["Weaknesses"];
+    const sourcesTellUs = row[mapping["sources_tell_us"]] || row["Sources Tell Us"];
+
+    const sections: { title: string; text: string }[] = [];
+    if (overview?.trim()) sections.push({ title: "Overview", text: overview.trim() });
+    if (strengths?.trim()) sections.push({ title: "Strengths", text: strengths.trim() });
+    if (weaknesses?.trim()) sections.push({ title: "Weaknesses", text: weaknesses.trim() });
+    if (sourcesTellUs?.trim() && sourcesTellUs.trim() !== "N/A") {
+      sections.push({ title: "Sources Tell Us", text: sourcesTellUs.trim() });
+    }
+
+    if (sections.length > 0) {
+      // Delete existing commentary for this source, then insert fresh
+      await supabase.from("commentary").delete().eq("player_id", playerId).eq("source", SOURCE);
+      await supabase.from("commentary").insert({
+        player_id: playerId,
+        source: SOURCE,
+        sections,
+      });
+    }
+
+    // ── 5. Player columns (strengths, weaknesses, summary, year, projected_role) ─
+    const updateData: Record<string, unknown> = {};
+
+    // Convert pipe-delimited strengths/weaknesses into bullet lists
+    if (strengths?.trim()) {
+      updateData.strengths = strengths.split("|").map((s: string) => s.trim()).filter(Boolean).join("\n");
+    }
+    if (weaknesses?.trim()) {
+      updateData.weaknesses = weaknesses.split("|").map((s: string) => s.trim()).filter(Boolean).join("\n");
+    }
+    if (overview?.trim()) {
+      updateData.player_summary = overview.trim();
+    }
+
+    // Prospect Grade Indicator → projected_role
+    const indicator = row[mapping["prospect_grade_indicator"]] || row["Prospect Grade Indicator"];
+    if (indicator?.trim()) {
+      updateData.projected_role = indicator.trim();
+    }
+
+    // Eligibility → year via bio_sources
+    const eligibility = row[mapping["eligibility"]] || row["Eligibility"];
+    if (eligibility?.trim()) {
+      await writeBioSources(supabase, playerId, "nfl_com", { year: eligibility.trim() });
+    }
+
+    if (Object.keys(updateData).length > 0) {
+      await supabase.from("players").update(updateData).eq("id", playerId);
+    }
+
+    result.updated++;
+  }
+
+  return result;
+}
+
 // ─── Main Import Dispatcher ────────────────────────────────────────────────
 
 export async function importData(
@@ -1458,6 +1605,9 @@ export async function importData(
       break;
     case "site_ratings":
       result = await importSiteRatings(supabase, rows, mapping);
+      break;
+    case "nfl_profiles":
+      result = await importNFLProfiles(supabase, rows, mapping);
       break;
     default:
       result = { success: false, inserted: 0, updated: 0, skipped: 0, errors: [`Unknown data type: ${dataType}`] };
