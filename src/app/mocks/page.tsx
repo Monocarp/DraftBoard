@@ -6,7 +6,7 @@ export const metadata = {
   description: "Compare mock drafts from 17+ sources for the 2026 NFL Draft.",
 };
 
-export default function MocksPage() {
-  const { mocks, mock_dates } = getMocks();
+export default async function MocksPage() {
+  const { mocks, mock_dates } = await getMocks();
   return <MockDraftsView mocks={mocks} mockDates={mock_dates} />;
 }

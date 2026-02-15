@@ -6,7 +6,7 @@ export const metadata = {
   description: "Positional scouting boards with grades, PFF scores, and analysis.",
 };
 
-export default function PositionBoardsPage() {
-  const boards = getPositionBoards();
+export default async function PositionBoardsPage() {
+  const boards = await getPositionBoards();
   return <PositionBoardsView boards={boards} />;
 }

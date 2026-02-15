@@ -6,7 +6,7 @@ export const metadata = {
   description: "Multi-source consensus rankings for the 2026 NFL Draft.",
 };
 
-export default function RankingsPage() {
-  const data = getRankings();
+export default async function RankingsPage() {
+  const data = await getRankings();
   return <RankingsView rankings={data.players} sourceDates={data.source_dates} />;
 }

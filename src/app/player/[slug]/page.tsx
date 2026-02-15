@@ -4,13 +4,13 @@ import PlayerDetailView from "./PlayerDetailView";
 
 // Generate static params for all players at build time
 export async function generateStaticParams() {
-  const slugs = getAllPlayerSlugs();
+  const slugs = await getAllPlayerSlugs();
   return slugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const profile = getPlayerProfile(slug);
+  const profile = await getPlayerProfile(slug);
   if (!profile) return { title: "Player Not Found" };
   return {
     title: `${profile.name} — 2026 Draft Board`,
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function PlayerPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const profile = getPlayerProfile(slug);
+  const profile = await getPlayerProfile(slug);
   if (!profile) notFound();
   return <PlayerDetailView profile={profile} />;
 }

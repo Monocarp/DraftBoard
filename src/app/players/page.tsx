@@ -6,8 +6,8 @@ export const metadata = {
   description: "Browse all 141 scouted players for the 2026 NFL Draft.",
 };
 
-export default function PlayersPage() {
-  const players = getPlayers();
+export default async function PlayersPage() {
+  const players = await getPlayers();
   return (
     <div>
       <div className="mb-6">
