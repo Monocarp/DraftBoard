@@ -238,6 +238,31 @@ async function importRankings(
       if (error) result.errors.push(`Row ${i + 1}: ${error.message}`);
       else result.inserted++;
     }
+
+    // If position_rank column is mapped, also write to positional_rankings
+    const posRankRaw = mapping["position_rank"] ? row[mapping["position_rank"]] : undefined;
+    if (posRankRaw && String(posRankRaw).trim()) {
+      const posRankValue = parseFloat(posRankRaw);
+      if (!isNaN(posRankValue)) {
+        const { data: existingPos } = await supabase
+          .from("positional_rankings")
+          .select("id")
+          .eq("player_id", playerId)
+          .eq("source", sourceName)
+          .maybeSingle();
+
+        if (existingPos) {
+          await supabase
+            .from("positional_rankings")
+            .update({ rank_value: posRankValue, slug })
+            .eq("id", existingPos.id);
+        } else {
+          await supabase
+            .from("positional_rankings")
+            .insert({ player_id: playerId, source: sourceName, rank_value: posRankValue, slug });
+        }
+      }
+    }
   }
 
   return result;

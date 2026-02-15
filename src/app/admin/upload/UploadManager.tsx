@@ -18,10 +18,11 @@ interface DataTypeConfig {
 const DATA_TYPES: Record<DataType, DataTypeConfig> = {
   rankings: {
     label: "Overall Rankings",
-    description: "Per-source overall player rankings (e.g. NFL.com #1, PFF #3)",
+    description: "Per-source overall player rankings (e.g. NFL.com #1, PFF #3). Optionally include position rank to import both at once.",
     requiredColumns: [
       { key: "player_name", label: "Player Name", required: true },
       { key: "rank", label: "Rank", required: true },
+      { key: "position_rank", label: "Position Rank", required: false },
       { key: "position", label: "Position", required: false },
       { key: "college", label: "College", required: false },
     ],
