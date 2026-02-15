@@ -18,7 +18,8 @@ export type DataType =
   | "nfl_profiles"
   | "bleacher_profiles"
   | "espn_profiles"
-  | "tdn_profiles";
+  | "tdn_profiles"
+  | "bio_data";
 
 export type ColumnMapping = Record<string, string>; // csv_header → db_column
 
@@ -2025,6 +2026,61 @@ async function importESPNProfiles(
 
 // ─── Main Import Dispatcher ────────────────────────────────────────────────
 
+// ─── Import: Bio Data ───────────────────────────────────────────────────────
+
+async function importBioData(
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  rows: Record<string, string>[],
+  mapping: ColumnMapping,
+  sourceName: string,
+  bioPriority?: number,
+): Promise<UploadResult> {
+  const result: UploadResult = { success: true, inserted: 0, updated: 0, skipped: 0, errors: [] };
+
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    const playerName = row[mapping["player_name"]];
+
+    if (!playerName?.trim()) { result.skipped++; continue; }
+
+    const playerId = await resolvePlayerId(supabase, playerName, {
+      position: mapping["position"] ? row[mapping["position"]] : undefined,
+      college: mapping["college"] ? row[mapping["college"]] : undefined,
+    });
+
+    if (!playerId) {
+      result.errors.push(`Row ${i + 1}: Could not resolve player "${playerName}"`);
+      result.skipped++;
+      continue;
+    }
+
+    const bioValues: Partial<Record<BioField, string | number | null>> = {};
+    const heightRaw = mapping["height"] ? row[mapping["height"]] : undefined;
+    const weightRaw = mapping["weight"] ? row[mapping["weight"]] : undefined;
+    const ageRaw    = mapping["age"]    ? row[mapping["age"]]    : undefined;
+    const yearRaw   = mapping["year"]   ? row[mapping["year"]]   : undefined;
+    const posRaw    = mapping["position"] ? row[mapping["position"]] : undefined;
+    const collegeRaw = mapping["college"] ? row[mapping["college"]] : undefined;
+
+    if (heightRaw?.trim())  bioValues.height   = heightRaw.trim();
+    if (weightRaw?.trim())  bioValues.weight   = weightRaw.trim();
+    if (ageRaw?.trim())     bioValues.age      = ageRaw.trim();
+    if (yearRaw?.trim())    bioValues.year     = yearRaw.trim();
+    if (posRaw?.trim())     bioValues.position = posRaw.trim();
+    if (collegeRaw?.trim()) bioValues.college  = collegeRaw.trim();
+
+    if (Object.keys(bioValues).length === 0) {
+      result.skipped++;
+      continue;
+    }
+
+    await writeBioSources(supabase, playerId, sourceName, bioValues, bioPriority);
+    result.updated++;
+  }
+
+  return result;
+}
+
 export async function importData(
   dataType: DataType,
   rows: Record<string, string>[],
@@ -2088,6 +2144,9 @@ export async function importData(
     case "tdn_profiles":
       result = await importTDNProfiles(supabase, rows, mapping);
       autoDateType = "ranking";
+      break;
+    case "bio_data":
+      result = await importBioData(supabase, rows, mapping, sourceName, bioPriority);
       break;
     default:
       result = { success: false, inserted: 0, updated: 0, skipped: 0, errors: [`Unknown data type: ${dataType}`] };

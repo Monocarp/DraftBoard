@@ -161,6 +161,20 @@ const DATA_TYPES_UNSORTED: Record<DataType, DataTypeConfig> = {
     ],
     needsSource: false,
   },
+  bio_data: {
+    label: "Bio Data (Height / Weight / Age / Year)",
+    description: "Import player bio info from any source — height, weight, age, class/eligibility. Set Source Name and Bio Priority to control which source wins when data conflicts.",
+    requiredColumns: [
+      { key: "player_name", label: "Player Name", required: true },
+      { key: "height", label: "Height", required: false },
+      { key: "weight", label: "Weight", required: false },
+      { key: "age", label: "Age", required: false },
+      { key: "year", label: "Year / Eligibility", required: false },
+      { key: "position", label: "Position", required: false },
+      { key: "college", label: "College", required: false },
+    ],
+    needsSource: true,
+  },
   tdn_profiles: {
     label: "The Draft Network Profiles",
     description: "TDN prospect profiles — rankings, pos ranks, projected round, summary, strengths, and concerns",
@@ -475,8 +489,8 @@ export function UploadManager() {
               </div>
             )}
 
-            {/* Bio Data Priority (rankings only) */}
-            {dataType === "rankings" && (
+            {/* Bio Data Priority (rankings + bio_data) */}
+            {(dataType === "rankings" || dataType === "bio_data") && (
               <div className="mb-4">
                 <label className="block text-sm font-medium text-gray-300 mb-1">
                   Bio Data Priority <span className="text-gray-600">(optional)</span>
