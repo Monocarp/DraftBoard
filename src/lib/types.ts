@@ -134,7 +134,7 @@ export interface PositionBoardPlayer {
 // ─── Shared Constants ───────────────────────────────────────────────────────
 
 export const ALL_POSITIONS = [
-  "ALL", "QB", "RB", "WR", "TE", "OT", "OG", "C", "IOL", "ED", "DT", "LB", "CB", "SAF", "S",
+  "ALL", "QB", "RB", "WR", "TE", "OT", "OG", "C", "ED", "DT", "LB", "CB", "SAF", "K", "P",
 ] as const;
 
 export function getPercentileColor(pct: number | null | undefined): string {
@@ -150,39 +150,44 @@ export function getPercentileColor(pct: number | null | undefined): string {
 
 /** Map non-standard position abbreviations to their canonical forms. */
 const POS_ALIASES: Record<string, string> = {
-  HB: "RB",
+  // Edge rushers → ED
+  EDGE: "ED", DE: "ED", "DE/ED": "ED", "DL/ED": "ED", "LB/ED": "ED",
+  DEED: "ED", DLED: "ED", LBED: "ED",
+  // Interior DL → DT
+  IDL: "DT", DI: "DT", DL: "DT", NT: "DT",
+  // Backs
+  HB: "RB", FB: "RB",
+  // Offensive line
   T: "OT",
-  EDGE: "ED",
-  DL: "DT",
-  G: "OG",
-  DI: "DT",
+  G: "OG", IOL: "OG",
   OC: "C",
+  // Linebackers
+  ILB: "LB", MLB: "LB",
+  // Safeties
+  S: "SAF", FS: "SAF", SS: "SAF",
 };
 
 export function normalizePosition(pos: string | null): string | null {
   if (!pos) return null;
-  const upper = pos.toUpperCase();
+  const upper = pos.trim().toUpperCase();
   return POS_ALIASES[upper] || upper;
 }
 
 export const POSITION_COLORS: Record<string, string> = {
   QB: "bg-red-500/20 text-red-400 border-red-500/30",
-  HB: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
   RB: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
   WR: "bg-blue-500/20 text-blue-400 border-blue-500/30",
   TE: "bg-orange-500/20 text-orange-400 border-orange-500/30",
-  T: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
   OT: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
-  IOL: "bg-yellow-500/20 text-yellow-300 border-yellow-500/30",
   OG: "bg-yellow-500/20 text-yellow-300 border-yellow-500/30",
   C: "bg-yellow-500/20 text-yellow-300 border-yellow-500/30",
   ED: "bg-purple-500/20 text-purple-400 border-purple-500/30",
-  EDGE: "bg-purple-500/20 text-purple-400 border-purple-500/30",
   DT: "bg-pink-500/20 text-pink-400 border-pink-500/30",
-  DL: "bg-pink-500/20 text-pink-400 border-pink-500/30",
   LB: "bg-cyan-500/20 text-cyan-400 border-cyan-500/30",
   CB: "bg-indigo-500/20 text-indigo-400 border-indigo-500/30",
   SAF: "bg-teal-500/20 text-teal-400 border-teal-500/30",
+  K: "bg-gray-500/20 text-gray-400 border-gray-500/30",
+  P: "bg-gray-500/20 text-gray-400 border-gray-500/30",
   S: "bg-teal-500/20 text-teal-400 border-teal-500/30",
 };
 

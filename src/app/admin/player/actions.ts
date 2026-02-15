@@ -1,19 +1,23 @@
 "use server";
 
 import { createSupabaseServer } from "@/lib/supabase-server";
+import { normalizePosition as canonicalPosition } from "@/lib/types";
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 
 // ─── Position Template Config ───────────────────────────────────────────────
 
-/** Normalize position string for template lookup */
+/** Normalize position string for template lookup.
+ *  Maps to PFF template keys: EDGE, DT, SAF, IOL, OT, LB, RB, etc. */
 function normalizePosition(pos: string): string {
-  const p = pos.trim().toUpperCase();
-  if (["DE", "ED", "EDGE"].includes(p)) return "EDGE";
-  if (["IDL", "DT", "NT"].includes(p)) return "DT";
+  const p = pos.trim().toUpperCase().replace(/\//g, "");
+  if (["DE", "ED", "EDGE", "DEED", "DLED", "LBED"].includes(p)) return "EDGE";
+  if (["IDL", "DT", "NT", "DI", "DL"].includes(p)) return "DT";
   if (["S", "FS", "SS", "SAF"].includes(p)) return "SAF";
-  if (["OG", "C", "IOL"].includes(p)) return "IOL";
+  if (["OG", "G", "C", "IOL"].includes(p)) return "IOL";
   if (["OT", "T"].includes(p)) return "OT";
+  if (["ILB", "MLB"].includes(p)) return "LB";
+  if (["HB", "FB"].includes(p)) return "RB";
   return p;
 }
 
@@ -51,7 +55,7 @@ export async function savePlayer(formData: FormData) {
 
   const name = (formData.get("name") as string).trim();
   const slug = (formData.get("slug") as string)?.trim() || toSlug(name);
-  const position = (formData.get("position") as string)?.trim() || null;
+  const position = canonicalPosition((formData.get("position") as string)?.trim() || null) || null;
   const college = (formData.get("college") as string)?.trim() || null;
   const height = (formData.get("height") as string)?.trim() || null;
   const weight = (formData.get("weight") as string)?.trim() || null;

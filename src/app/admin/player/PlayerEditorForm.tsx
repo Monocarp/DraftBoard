@@ -8,14 +8,17 @@ const POSITION_TEMPLATES = [
   "CB", "SAF", "DT", "EDGE", "LB", "OL", "OT", "IOL", "QB", "RB", "WR", "TE",
 ] as const;
 
-/** Normalize position for template auto-detection */
+/** Normalize position for template auto-detection.
+ *  Maps to PFF template keys: EDGE, DT, SAF, IOL, OT, LB, RB, etc. */
 function normalizePosition(pos: string): string {
-  const p = pos.trim().toUpperCase();
-  if (["DE", "ED", "EDGE"].includes(p)) return "EDGE";
-  if (["IDL", "DT", "NT"].includes(p)) return "DT";
+  const p = pos.trim().toUpperCase().replace(/\//g, "");
+  if (["DE", "ED", "EDGE", "DEED", "DLED", "LBED"].includes(p)) return "EDGE";
+  if (["IDL", "DT", "NT", "DI", "DL"].includes(p)) return "DT";
   if (["S", "FS", "SS", "SAF"].includes(p)) return "SAF";
-  if (["OG", "C", "IOL"].includes(p)) return "IOL";
+  if (["OG", "G", "C", "IOL"].includes(p)) return "IOL";
   if (["OT", "T"].includes(p)) return "OT";
+  if (["ILB", "MLB"].includes(p)) return "LB";
+  if (["HB", "FB"].includes(p)) return "RB";
   return p;
 }
 

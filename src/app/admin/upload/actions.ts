@@ -1,6 +1,7 @@
 "use server";
 
 import { createSupabaseServer } from "@/lib/supabase-server";
+import { normalizePosition } from "@/lib/types";
 import { revalidatePath } from "next/cache";
 
 // ─── Types ──────────────────────────────────────────────────────────────────
@@ -169,7 +170,7 @@ async function resolvePlayerId(
     .insert({
       name: normalized,
       slug,
-      position: extras?.position || null,
+      position: normalizePosition(extras?.position ?? null) || null,
       college: extras?.college || null,
     })
     .select("id")
@@ -841,11 +842,11 @@ const DB_SHEET_POSITION_MAP: Record<string, string[]> = {
   WR: ["WR"],
 };
 
-/** Normalize position string for lookup in config maps */
-function normalizePosition(pos: string): string {
+/** Normalize position string for PFF template lookup.
+ *  Maps to PFF template keys: CB, SAF, DT, EDGE, LB, OL, OT, IOL, QB, RB, WR, TE */
+function normalizePffPosition(pos: string): string {
   const p = pos.trim().toUpperCase().replace(/\//g, "");
-  // Map variants to standard keys
-  if (["DE", "ED", "EDGE", "DEED", "LBED"].includes(p)) return "EDGE";
+  if (["DE", "ED", "EDGE", "DEED", "DLED", "LBED"].includes(p)) return "EDGE";
   if (["IDL", "DT", "NT", "DI", "DL"].includes(p)) return "DT";
   if (["S", "FS", "SS", "SAF"].includes(p)) return "SAF";
   if (["OG", "G", "C", "IOL"].includes(p)) return "IOL";
@@ -1048,7 +1049,7 @@ async function writeBioSources(
   if (resolved.height !== undefined) updateData.height = String(resolved.height);
   if (resolved.weight !== undefined) updateData.weight = String(resolved.weight);
   if (resolved.year !== undefined) updateData.year = String(resolved.year);
-  if (resolved.position !== undefined) updateData.position = String(resolved.position);
+  if (resolved.position !== undefined) updateData.position = normalizePosition(String(resolved.position)) || String(resolved.position);
   if (resolved.college !== undefined) updateData.college = String(resolved.college);
   if (resolved.projected_round !== undefined) updateData.projected_round = String(resolved.projected_round);
 
@@ -1084,7 +1085,7 @@ async function importPFFScores(
 
     if (!playerName?.trim()) { result.skipped++; continue; }
 
-    const pos = normalizePosition(rawPos);
+    const pos = normalizePffPosition(rawPos);
     if (!pos || pos === "TBD") {
       // No position assigned yet — can't determine which metrics to extract
       result.skipped++;
@@ -2095,7 +2096,7 @@ async function importBioData(
     if (weightRaw?.trim())  bioValues.weight   = weightRaw.trim();
     if (ageRaw?.trim())     bioValues.age      = ageRaw.trim();
     if (yearRaw?.trim())    bioValues.year     = yearRaw.trim();
-    if (posRaw?.trim())     bioValues.position = posRaw.trim();
+    if (posRaw?.trim())     bioValues.position = normalizePosition(posRaw.trim()) || posRaw.trim();
     if (collegeRaw?.trim()) bioValues.college  = collegeRaw.trim();
 
     if (Object.keys(bioValues).length === 0) {
