@@ -24,9 +24,13 @@ A Next.js web app built from a massive **2026 Draft Board 2.0.xlsx** workbook (2
 
 ### Critical Architecture Rule
 
-**`lib/data.ts`** uses `import "server-only"` and Node.js `fs` — it can ONLY be imported in server components (`page.tsx` files).
+**`lib/data.ts`** uses `import "server-only"` — it can ONLY be imported in server components (`page.tsx` files). All data is fetched from Supabase at request time.
 
 **`lib/types.ts`** is client-safe — contains all TypeScript interfaces and utility functions. Client components (`"use client"`) must import types from `@/lib/types`, NEVER from `@/lib/data`.
+
+**Two Supabase clients in `data.ts`:**
+- **Public data** (boards, rankings, players) → plain `supabase` client (no session needed)
+- **User data** (user_boards, user_position_ranks) → `createSupabaseServer()` (session-aware, required for RLS)
 
 ---
 
@@ -34,8 +38,10 @@ A Next.js web app built from a massive **2026 Draft Board 2.0.xlsx** workbook (2
 
 | Route | Server Page | Client View | Description |
 |-------|-------------|-------------|-------------|
-| `/` | `app/page.tsx` | `app/BigBoardPage.tsx` | 3 tabs: Consensus (100), Bengals (35), Expanded (35) boards |
-| `/boards` | `app/boards/page.tsx` | `app/boards/PositionBoardsView.tsx` | 9 position boards (CB, DT, ED, LB, IOL, OT, SAF, TE, WR) with collapsible detail rows |
+| `/` | `app/page.tsx` | `app/BigBoardPage.tsx` | 4 tabs: Consensus, Bengals, Expanded, My Board (logged-in users) |
+| `/boards` | `app/boards/page.tsx` | `app/boards/PositionBoardsView.tsx` | 9 position boards with collapsible detail rows + "My Rankings" toggle |
+| `/login` | `app/(auth)/login/page.tsx` | — | User login (email/password) |
+| `/register` | `app/(auth)/register/page.tsx` | — | User registration (email/password) |
 | `/rankings` | `app/rankings/page.tsx` | `app/rankings/RankingsView.tsx` | Multi-source sortable ranking table (682 players × 15+ sources) |
 | `/mocks` | `app/mocks/page.tsx` | `app/mocks/MockDraftsView.tsx` | 17 mock draft sources, single + side-by-side compare |
 | `/players` | `app/players/page.tsx` | `app/players/` (PlayerGrid) | Card grid of all 141 profiled players |
@@ -59,6 +65,7 @@ Every route follows the same pattern:
 | `ExpandedBoardTable` | `components/ExpandedBoardTable.tsx` | `BigBoardPage` | Board table with collapsible rows (grades, ranks, summary) |
 | `PositionBadge` | `components/PositionBadge.tsx` | Multiple | Color-coded position pill (colors defined in `types.ts`) |
 | `PlayerGrid` | `components/PlayerGrid.tsx` | `/players` page | Card grid with search + position filter |
+| `UserBoardEditor` | `components/UserBoardEditor.tsx` | My Board tab | Drag-to-reorder, search to add, copy consensus board |
 
 ---
 
@@ -89,6 +96,8 @@ All JSON lives in `draft-board-app/src/data/` (copied from `data/` after extract
 - `getMocks()` → `Record<string, MockPick[]>`
 - `getRankings()` → `RankingEntry[]`
 - `getADP()` → `ADPEntry[]`
+- `getUserBoard(userId)` → `BoardPlayer[]` (session-aware, RLS)
+- `getUserPositionRanks(userId)` → `Record<string, Array<...>>` (session-aware, RLS)
 
 ---
 
@@ -205,6 +214,7 @@ If the dev server is running (`npm run dev`), it hot-reloads — just refresh th
 - **Next.js 16** (App Router, Turbopack)
 - **React 19 + TypeScript**
 - **Tailwind CSS v4** (dark theme)
+- **Supabase** (PostgreSQL + Auth — multi-user with email/password registration)
 - **Python 3.14 + pandas + openpyxl** (ETL pipeline)
 - **Node.js v24.11.1, npm 11.6.2**
 
@@ -231,7 +241,7 @@ C:\Users\hetze\OneDrive\Desktop\DBs\
         ├── app/
         │   ├── layout.tsx        # Root layout (Navigation + dark bg)
         │   ├── page.tsx          # → BigBoardPage.tsx
-        │   ├── BigBoardPage.tsx  # Big Board (3 tabs: Consensus/Bengals/Expanded)
+        │   ├── BigBoardPage.tsx  # Big Board (4 tabs: Consensus/Bengals/Expanded/My Board)
         │   ├── boards/
         │   │   ├── page.tsx      # → PositionBoardsView.tsx
         │   │   └── PositionBoardsView.tsx  # 9 position boards with collapsible details
@@ -243,6 +253,12 @@ C:\Users\hetze\OneDrive\Desktop\DBs\
         │   │   └── MockDraftsView.tsx
         │   ├── players/
         │   │   └── page.tsx      # Uses PlayerGrid component
+        │   ├── (auth)/
+        │   │   ├── actions.ts      # Login/register/logout server actions
+        │   │   ├── login/page.tsx   # Login page
+        │   │   └── register/page.tsx # Registration page
+        │   ├── user-board/
+        │   │   └── actions.ts       # User board CRUD server actions
         │   └── player/[slug]/
         │       ├── page.tsx      # → PlayerDetailView.tsx (or not-found)
         │       ├── PlayerDetailView.tsx
@@ -252,17 +268,21 @@ C:\Users\hetze\OneDrive\Desktop\DBs\
         │   ├── BoardTable.tsx
         │   ├── ExpandedBoardTable.tsx
         │   ├── PlayerGrid.tsx
-        │   └── PositionBadge.tsx
+        │   ├── PositionBadge.tsx
+        │   └── UserBoardEditor.tsx  # Personal board editor (drag/add/remove)
         ├── data/                  # JSON (copied from ../../../data/)
         │   └── profiles/
         └── lib/
-            ├── data.ts            # Server-only data loaders (uses fs)
+            ├── data.ts            # Server-only data loaders (Supabase queries)
+            ├── supabase.ts        # Plain Supabase client (public reads)
+            ├── supabase-server.ts  # Session-aware Supabase client (user data + RLS)
             └── types.ts           # Client-safe types + POSITION_COLORS
 ```
 
 ## Known Gotchas
 
-1. **`fs` module error**: If a `"use client"` component imports from `@/lib/data`, you get a build error. Always import types from `@/lib/types` in client components.
+1. **`server-only` import error**: If a `"use client"` component imports from `@/lib/data`, you get a build error. Always import types from `@/lib/types` in client components.
+1. **RLS on user tables**: `user_boards` and `user_position_ranks` have Row Level Security. Queries MUST use `createSupabaseServer()` (session-aware), NOT the plain `supabase` client — otherwise `auth.uid()` is null and zero rows are returned.
 2. **Unicode encoding**: Windows terminal needs `$env:PYTHONIOENCODING="utf-8"` before running `extract.py` or it crashes on emoji/special chars.
 3. **RAS Data filtering**: `extract_ras_data()` filters to `Year in (2025, 2026, "TBD")` — stray 2024 records exist in the sheet.
 4. **Player profiles not found**: Not all 682 ranked players have profile sheets — only ~155 sheets exist, ~141 parse successfully. Players without profiles see the custom not-found page.

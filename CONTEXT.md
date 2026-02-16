@@ -1,6 +1,6 @@
 # NFL Draft Board — Complete Technical Context
 
-> **Last Updated:** February 16, 2026 (f)
+> **Last Updated:** February 16, 2026 (g)
 > **Repository:** https://github.com/Monocarp/DraftBoard
 > **Live Site:** Auto-deploys to Vercel on push to `main`
 > **Supabase Project:** https://cmapsylsrsglhfdwquwe.supabase.co
@@ -52,11 +52,11 @@
 
 | File | Usage | Auth Context |
 |---|---|---|
-| `src/lib/supabase.ts` | Server data reads (`data.ts`) | Anon key, no cookies |
-| `src/lib/supabase-server.ts` | Server actions (admin mutations) | Anon key + cookies (auth-aware) |
+| `src/lib/supabase.ts` | Server data reads (`data.ts` — public data) | Anon key, no cookies |
+| `src/lib/supabase-server.ts` | Server actions + user data reads (`data.ts` user queries) | Anon key + cookies (auth-aware) |
 | `src/lib/supabase-browser.ts` | Client components (login form) | Anon key + browser cookies |
 
-> **Note:** `SUPABASE_SERVICE_ROLE_KEY` is defined in `.env.local` but never used in code. All operations use the anon key with Row Level Security disabled.
+> **Note:** `SUPABASE_SERVICE_ROLE_KEY` is defined in `.env.local` but never used in code. Public data tables have RLS disabled. User tables (`user_boards`, `user_position_ranks`) have RLS enabled with `auth.uid() = user_id` policies — queries MUST use the session-aware `createSupabaseServer()` client.
 
 > **Config:** `next.config.ts` sets `experimental.serverActions.bodySizeLimit = "10mb"` for large file uploads.
 
@@ -75,11 +75,12 @@ src/
 │   └── supabase-browser.ts      # Supabase client (browser)
 │
 ├── components/                  # Shared UI components
-│   ├── Navigation.tsx           # Site-wide nav bar with active tab highlighting + mobile hamburger
+│   ├── Navigation.tsx           # Site-wide nav bar with active tab highlighting + mobile hamburger + auth state
 │   ├── BoardTable.tsx           # Big Board table (consensus & bengals boards)
 │   ├── ExpandedBoardTable.tsx   # Expanded board with expandable rows: grades, ranks, summary
 │   ├── PlayerGrid.tsx           # Players index card grid with search/filter
-│   └── PositionBadge.tsx        # Color-coded position pill (normalizes + colors via types.ts)
+│   ├── PositionBadge.tsx        # Color-coded position pill (normalizes + colors via types.ts)
+│   └── UserBoardEditor.tsx      # Personal board editor (search/add, remove, drag-to-reorder)
 │
 ├── app/                         # Next.js App Router pages
 │   ├── layout.tsx               # Root layout (Inter font, dark theme, navigation, analytics, PWA)
@@ -102,6 +103,14 @@ src/
 │   │   ├── page.tsx             # SSR with React cache() dedup for generateMetadata + page
 │   │   ├── PlayerDetailView.tsx # Client: Full profile (2 tabs: Overview + Scouting)
 │   │   └── not-found.tsx        # "Profile In Progress" placeholder
+│   │
+│   ├── (auth)/                  # Auth route group (login/register, no URL prefix)
+│   │   ├── actions.ts           # loginUser, registerUser, logoutUser server actions
+│   │   ├── login/page.tsx       # Public login form (email/password)
+│   │   └── register/page.tsx    # Public registration form (email/password/confirm)
+│   │
+│   ├── user-board/
+│   │   └── actions.ts           # User board CRUD: add, remove, reorder, search, populate, position ranks
 │   │
 │   └── admin/                   # Auth-protected admin backend (13 routes, see §12)
 │       ├── layout.tsx           # Admin chrome (nav tabs, auth gate, sign out)
@@ -210,6 +219,8 @@ src/
 | `ages` | player_id, age_final | FK → players.id |
 | `source_dates` | id, source, source_type, date | Standalone |
 | `name_corrections` | id, variant_name, canonical_slug | Standalone |
+| `user_boards` | id, user_id (FK auth.users), player_id (FK players), rank, UNIQUE(user_id, player_id) | Per-user big board |
+| `user_position_ranks` | id, user_id (FK auth.users), player_id (FK players), position_group, rank, UNIQUE(user_id, player_id, position_group) | Per-user position rankings |
 
 #### Table Relationships Diagram
 
@@ -230,6 +241,11 @@ src/
     ┌──────────┐  ┌──────────────────┐
     │ rankings │  │ positional_ranks │
     └──────────┘  └──────────────────┘
+
+    User-scoped (FK → auth.users + players, RLS-protected):
+    ┌──────────────┐  ┌──────────────────────┐
+    │ user_boards  │  │ user_position_ranks  │
+    └──────────────┘  └──────────────────────┘
 
     Standalone:
     ┌──────────────┐  ┌──────────────────┐
@@ -567,10 +583,12 @@ For IOL/OT position boards, bare metric names are renamed to avoid confusion wit
 
 | Route | Data Source | Key Feature |
 |---|---|---|
-| `/` (Home) | `getEnrichedBigBoard()` | Tabbed: Bengals (default) / Consensus / Expanded. Stats row. |
+| `/` (Home) | `getEnrichedBigBoard()` + `getUserBoard()` | Tabbed: Bengals (default) / Consensus / Expanded / My Board (logged in). Stats row. |
 | `/players` | `getPlayers()` + `getProfileCount()` | Card grid, search + position filter. Only profiled players. |
 | `/player/[slug]` | `getCachedProfile()` (React `cache()` dedup) | Full profile, Overview + Scouting tabs. `force-dynamic`. |
-| `/boards` | `getPositionBoards()` | 11 position group tabs. Expandable rows. |
+| `/boards` | `getPositionBoards()` + `getUserPositionRanks()` | 9 position group tabs. Expandable rows. "My Rankings" toggle (logged in). |
+| `/login` | — | Public login form (email/password). Redirects to `/` if already logged in. |
+| `/register` | — | Public registration form. Redirects to `/` if already logged in. |
 | `/rankings` | `getRankings()` + `getADP()` | Source tabs, position filters, source dates. |
 | `/mocks` | `getMocks()` | Single Source / Compare view with team filter. |
 
@@ -624,7 +642,8 @@ Cascading delete across all 13 child tables. Redirects to `/admin` on success.
 |-----------|-------|---------|
 | `BoardTable` | `players: BoardPlayer[]`, `title: string` | Ranked table with search + position pills. Links to `/player/[slug]`. |
 | `ExpandedBoardTable` | `players: ExpandedBoardPlayer[]`, `title: string` | Expandable rows: grades (color-coded), ranks, summary. `<React.Fragment key>`. Expand/collapse all. |
-| `Navigation` | (none) | Sticky top nav: Big Board, Position Boards, Rankings, Mock Drafts, All Players, Admin. Mobile hamburger. |
+| `Navigation` | `userEmail?: string`, `isAdmin?: boolean` | Sticky top nav: Big Board, Position Boards, Rankings, Mock Drafts, All Players. Admin link (admin only). User email + Sign Out or Sign In link. Mobile hamburger. |
+| `UserBoardEditor` | `initialPlayers: BoardPlayer[]`, `consensusBoard?: BoardPlayer[]` | My Board editor: search to add, drag to reorder, remove. "Copy Consensus Board" button. Empty state with seed prompt. |
 | `PlayerGrid` | `players: PlayerIndex[]` | Card grid with search + position filter. Name, badge, college, bio stats, projected round. |
 | `PositionBadge` | `position: string` | Colored pill via `normalizePosition()` + `getPositionColor()`. Shows "—" for null. |
 
@@ -632,20 +651,53 @@ Cascading delete across all 13 child tables. Redirects to `/admin` on success.
 
 ## 14. Authentication & Middleware
 
-- **Provider:** Supabase Auth (email/password only, single admin user)
-- **Middleware:** `src/middleware.ts` intercepts `/admin/*`
-- **Session refresh:** Calls `supabase.auth.getUser()` to refresh token
-- **No role check:** Any authenticated Supabase user can access admin (single-user app)
+- **Provider:** Supabase Auth (email/password, multi-user registration)
+- **Admin gate:** `ADMIN_EMAIL` env var — only this email can access `/admin/*`
+- **Middleware:** `src/middleware.ts` — catch-all matcher (excludes static files)
+- **Session refresh:** Calls `supabase.auth.getUser()` on every route to keep tokens alive
+
+### Route Rules
 
 | Route | Rule |
 |---|---|
-| `/admin/login` | Public. Redirects to `/admin` if already authenticated. |
-| `/admin/*` | Requires auth. Redirects to `/admin/login` if no user. |
-| All other routes | Public. |
+| `/admin/login` | Public. Redirects to `/admin` if user is admin. |
+| `/admin/*` | Requires `user.email === ADMIN_EMAIL`. Non-admin users → `/`. Unauthenticated → `/admin/login`. |
+| `/login`, `/register` | Public. Redirects to `/` if already logged in. |
+| All other routes | Public. Session refreshed via middleware. |
 
-```ts
-config = { matcher: ["/admin/:path*"] };
-```
+### Auth Files
+
+| File | Purpose |
+|---|---|
+| `middleware.ts` | Session refresh, admin gate (`ADMIN_EMAIL`), auth page redirects |
+| `src/app/(auth)/actions.ts` | `loginUser()`, `registerUser()`, `logoutUser()` server actions |
+| `src/app/(auth)/login/page.tsx` | Public login form (email/password) |
+| `src/app/(auth)/register/page.tsx` | Public registration form (email/password/confirm, min 6 chars) |
+| `src/app/user-board/actions.ts` | User board CRUD (all require `auth.uid()`) |
+
+### User Features (logged-in, non-admin)
+
+| Feature | Location | Description |
+|---|---|---|
+| **My Board** | Home page (`/`) → "My Board" tab | Personal big board. Search to add, drag to reorder, remove players. "Copy Consensus Board" to auto-populate. |
+| **My Rankings** | Position Boards (`/boards`) → "My Rankings" toggle | Per-position reordering. "Copy Default Order" to seed. Drag to reorder. Remove individual players. |
+
+### Navigation Auth Awareness
+
+- **Admin user:** Shows all nav + Admin link + email + Sign Out
+- **Regular user:** Shows all nav + email + Sign Out (no Admin link)
+- **Not logged in:** Shows all nav + Sign In link
+- Props: `userEmail` and `isAdmin` passed from root `layout.tsx`
+
+### RLS (Row Level Security)
+
+| Table | RLS | Policy |
+|---|---|---|
+| `user_boards` | ✅ Enabled | SELECT/INSERT/UPDATE/DELETE: `auth.uid() = user_id` |
+| `user_position_ranks` | ✅ Enabled | SELECT/INSERT/UPDATE/DELETE: `auth.uid() = user_id` |
+| All other tables | ❌ Disabled | Public read, admin-only write (enforced by middleware) |
+
+> **Critical:** User data queries (`getUserBoard`, `getUserPositionRanks`) MUST use `createSupabaseServer()` (session-aware), NOT the plain `supabase` client. The plain client has no session → `auth.uid()` is null → RLS returns zero rows.
 
 ---
 
@@ -710,8 +762,9 @@ After data mutations, `revalidatePath()` busts SSR cache on: `/admin`, `/players
 | `NEXT_PUBLIC_SUPABASE_URL` | All Supabase clients |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | All Supabase clients |
 | `SUPABASE_SERVICE_ROLE_KEY` | Defined but **unused** |
+| `ADMIN_EMAIL` | `middleware.ts` + `layout.tsx` — gates `/admin/*` access and Admin nav link |
 
-Both public vars must also be set in Vercel Environment Variables for production.
+All vars must also be set in Vercel Environment Variables for production.
 
 ### Deployment
 
@@ -834,6 +887,6 @@ See [`TECH_DEBT_FIXES.md`](TECH_DEBT_FIXES.md) for the full audit (29 items) wit
 | 19 | Athletic scores empty state cosmetic | No functional impact |
 | 20 | Inconsistent age typing (string vs number) | Works as-is |
 | 21 | Accessibility gaps (aria-labels, keyboard) | Large effort, no functional impact |
-| 22 | No admin role check | Single-user app |
+| 22 | ~~No admin role check~~ | ✅ **Fixed** — `ADMIN_EMAIL` env var gates `/admin/*` access |
 | 24 | fetchAll() no ORDER BY | No observed issues |
 | 27–29 | Slug collisions, form constraints, xlsx bundle | Low priority |

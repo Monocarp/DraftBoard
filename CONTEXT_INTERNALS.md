@@ -1,6 +1,6 @@
 # NFL Draft Board — Module Internals Reference
 
-> **Last Updated:** February 16, 2026
+> **Last Updated:** February 16, 2026 (b)
 > **Companion to:** [`CONTEXT.md`](CONTEXT.md)
 > This document lists function signatures, constant values, and implementation details for all core modules. Consult this before reading source files.
 
@@ -12,6 +12,7 @@
 2. [types.ts — Types, Position Constants, Interfaces](#2-typests--types-position-constants-interfaces)
 3. [data.ts — Server-Only Data Layer](#3-datats--server-only-data-layer)
 4. [actions.ts — Upload/Import Pipeline](#4-actionsts--uploadimport-pipeline)
+5. [user-board/actions.ts — User Board CRUD](#5-user-boardactionsts--user-board-crud)
 
 ---
 
@@ -322,6 +323,8 @@ async function fetchAll<T>(
 | `getPositionBoards()` | `Promise<Record<string, PositionBoardPlayer[]>>` | Grouped by position_group, with dynamic ranks + OL metric rename |
 | `getAges()` | `Promise<Array<{ player, slug, age_final }>>` | All age records |
 | `getProfileCount()` | `Promise<number>` | Count of profiled players |
+| `getUserBoard(userId)` | `Promise<BoardPlayer[]>` | User's personal big board. **Uses `createSupabaseServer()`** (RLS). |
+| `getUserPositionRanks(userId)` | `Promise<Record<string, Array<...>>>` | User's position rankings grouped by position_group. **Uses `createSupabaseServer()`** (RLS). |
 
 ### `getPlayerProfile()` — Parallel Query Pattern
 
@@ -527,6 +530,35 @@ Each lists ~5–10 position-specific grading categories.
 // NEVER write to: players.strengths, players.weaknesses,
 //                 players.player_summary, players.projected_role
 ```
+
+---
+
+## 5. user-board/actions.ts — User Board CRUD
+
+**File:** `src/app/user-board/actions.ts`
+
+All functions require authentication via `getAuthUser()` helper (throws if no session).
+
+### Exported Functions
+
+| Function | Signature | Purpose |
+|----------|-----------|--------|
+| `populateUserBoard` | `(orderedSlugs: string[])` | Replace entire user board (delete all + insert) |
+| `addToUserBoard` | `(playerSlug: string)` | Add one player at end of board |
+| `removeFromUserBoard` | `(playerSlug: string)` | Remove player + re-rank remaining |
+| `reorderUserBoard` | `(orderedSlugs: string[])` | Update ranks to match new order |
+| `searchPlayersForBoard` | `(query: string)` | Search players by name (ilike, limit 20) |
+| `setUserPositionRanks` | `(positionGroup: string, orderedSlugs: string[])` | Replace user's position ranking (delete + insert) |
+| `clearUserPositionRanks` | `(positionGroup: string)` | Delete all user ranks for position group |
+
+### Key Patterns
+
+- All mutations call `revalidatePath()` to bust SSR cache
+- `populateUserBoard` is used by "Copy Consensus Board" button — deletes existing board then bulk-inserts
+- `removeFromUserBoard` re-ranks remaining entries to keep ranks contiguous
+- `searchPlayersForBoard` does NOT require auth (uses plain supabase client)
+
+---
 
 ### Importer → Destination Summary
 
