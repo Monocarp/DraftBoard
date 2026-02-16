@@ -80,6 +80,12 @@ export default async function AdminLayout({
                   Colors
                 </Link>
                 <Link
+                  href="/admin/cleanup"
+                  className="px-3 py-1.5 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-white/5 transition-colors"
+                >
+                  Cleanup
+                </Link>
+                <Link
                   href="/"
                   className="px-3 py-1.5 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-white/5 transition-colors"
                 >
