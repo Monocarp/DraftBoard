@@ -96,6 +96,15 @@ export async function savePlayer(formData: FormData) {
   // Filter out empty entries
   injuries = injuries.filter((inj) => inj.detail?.trim());
 
+  // Parse media_links JSON array
+  const mediaLinksRaw = formData.get("media_links") as string | null;
+  let mediaLinks: { description: string; source: string | null; url: string }[] = [];
+  if (mediaLinksRaw?.trim()) {
+    try { mediaLinks = JSON.parse(mediaLinksRaw); } catch { mediaLinks = []; }
+  }
+  // Filter out entries without a URL
+  mediaLinks = mediaLinks.filter((m) => m.url?.trim());
+
   const playerData = {
     name, slug, position, college, height, weight, age, dob, year,
     projected_round, projected_role, ideal_scheme, games, snaps,
@@ -126,6 +135,21 @@ export async function savePlayer(formData: FormData) {
           detail: inj.detail.trim(),
           recovery_time: inj.recovery_time?.trim() || null,
           year: inj.year?.trim() || null,
+        }))
+      );
+    }
+  }
+
+  // Sync media_links (delete old + insert new)
+  if (resolvedId && mediaLinks.length >= 0) {
+    await supabase.from("media_links").delete().eq("player_id", resolvedId);
+    if (mediaLinks.length > 0) {
+      await supabase.from("media_links").insert(
+        mediaLinks.map((m) => ({
+          player_id: resolvedId,
+          description: m.description?.trim() || null,
+          source: m.source?.trim() || null,
+          url: m.url.trim(),
         }))
       );
     }

@@ -24,6 +24,12 @@ export default async function EditPlayerPage({
     .select("detail, recovery_time, year")
     .eq("player_id", player.id);
 
+  // Fetch media links for this player
+  const { data: mediaRows } = await supabase
+    .from("media_links")
+    .select("description, source, url")
+    .eq("player_id", player.id);
+
   return (
     <PlayerEditorForm
       player={{
@@ -57,6 +63,11 @@ export default async function EditPlayerPage({
           detail: r.detail,
           recovery_time: r.recovery_time ?? null,
           year: r.year ?? null,
+        })),
+        media_links: (mediaRows ?? []).map((r) => ({
+          description: r.description ?? "",
+          source: r.source ?? null,
+          url: r.url ?? "",
         })),
       }}
     />

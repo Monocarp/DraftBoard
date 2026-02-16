@@ -31,6 +31,7 @@ export default function NewPlayerPage() {
         alignments: {},
         skills_traits: {},
         injuries: [],
+        media_links: [],
       }}
     />
   );

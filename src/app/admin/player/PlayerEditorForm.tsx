@@ -56,6 +56,7 @@ interface PlayerData {
   alignments: Record<string, unknown>;
   skills_traits: Record<string, unknown>;
   injuries: { detail: string; recovery_time: string | null; year: string | null }[];
+  media_links: { description: string; source: string | null; url: string }[];
 }
 
 export function PlayerEditorForm({ player }: { player: PlayerData }) {
@@ -241,6 +242,11 @@ export function PlayerEditorForm({ player }: { player: PlayerData }) {
       {/* Injury History */}
       <Section title="Injury History">
         <InjuryHistoryEditor defaultValue={player.injuries} />
+      </Section>
+
+      {/* Media Links */}
+      <Section title="Media Links">
+        <MediaLinksEditor defaultValue={player.media_links} />
       </Section>
 
       {/* Skills & Traits */}
@@ -471,6 +477,89 @@ function InjuryHistoryEditor({
         className="rounded-lg border border-dashed border-[#2a3a4e] px-3 py-1.5 text-xs text-gray-400 hover:text-white hover:border-gray-400 transition-colors"
       >
         + Add Injury
+      </button>
+    </div>
+  );
+}
+
+function MediaLinksEditor({
+  defaultValue,
+}: {
+  defaultValue: { description: string; source: string | null; url: string }[];
+}) {
+  const [entries, setEntries] = useState(defaultValue.length > 0 ? defaultValue : []);
+
+  const addEntry = () =>
+    setEntries([...entries, { description: "", source: null, url: "" }]);
+
+  const removeEntry = (index: number) =>
+    setEntries(entries.filter((_, i) => i !== index));
+
+  const updateEntry = (index: number, field: string, value: string) => {
+    setEntries(entries.map((e, i) =>
+      i === index ? { ...e, [field]: value || null } : e
+    ));
+  };
+
+  return (
+    <div>
+      <input type="hidden" name="media_links" value={JSON.stringify(entries)} />
+
+      {entries.length === 0 ? (
+        <p className="text-xs text-gray-500 mb-3">No media links.</p>
+      ) : (
+        <div className="space-y-3 mb-3">
+          {entries.map((entry, i) => (
+            <div key={i} className="flex gap-2 items-start">
+              <div className="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-2">
+                <div>
+                  <label className="block text-[10px] font-medium text-gray-500 mb-0.5">Description</label>
+                  <input
+                    type="text"
+                    value={entry.description ?? ""}
+                    onChange={(e) => updateEntry(i, "description", e.target.value)}
+                    placeholder="e.g. 2025 Season Highlights"
+                    className="w-full rounded-lg border border-[#2a3a4e] bg-[#0d1320] px-2 py-1.5 text-xs text-white placeholder-gray-600 focus:border-orange-500 focus:outline-none"
+                  />
+                </div>
+                <div>
+                  <label className="block text-[10px] font-medium text-gray-500 mb-0.5">Source</label>
+                  <input
+                    type="text"
+                    value={entry.source ?? ""}
+                    onChange={(e) => updateEntry(i, "source", e.target.value)}
+                    placeholder="e.g. YouTube, ESPN"
+                    className="w-full rounded-lg border border-[#2a3a4e] bg-[#0d1320] px-2 py-1.5 text-xs text-white placeholder-gray-600 focus:border-orange-500 focus:outline-none"
+                  />
+                </div>
+                <div>
+                  <label className="block text-[10px] font-medium text-gray-500 mb-0.5">URL</label>
+                  <input
+                    type="text"
+                    value={entry.url ?? ""}
+                    onChange={(e) => updateEntry(i, "url", e.target.value)}
+                    placeholder="https://..."
+                    className="w-full rounded-lg border border-[#2a3a4e] bg-[#0d1320] px-2 py-1.5 text-xs text-white placeholder-gray-600 focus:border-orange-500 focus:outline-none"
+                  />
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => removeEntry(i)}
+                className="mt-4 text-red-400/60 hover:text-red-400 text-xs transition-colors"
+              >
+                ✕
+              </button>
+            </div>
+          ))}
+        </div>
+      )}
+      <button
+        type="button"
+        onClick={addEntry}
+        className="rounded-lg border border-dashed border-[#2a3a4e] px-3 py-1.5 text-xs text-gray-400 hover:text-white hover:border-gray-400 transition-colors"
+      >
+        + Add Media Link
       </button>
     </div>
   );
