@@ -1,5 +1,6 @@
 import "server-only";
 import { supabase } from "./supabase";
+import { createSupabaseServer } from "./supabase-server";
 
 // Re-export types so server pages can import everything from @/lib/data
 export type {
@@ -574,18 +575,21 @@ export async function getProfileCount(): Promise<number> {
 // ─── User Boards ────────────────────────────────────────────────────────────
 
 export async function getUserBoard(userId: string): Promise<BoardPlayer[]> {
-  const rows = await fetchAll<{
-    id: string;
-    rank: number;
-    players: { slug: string; name: string; position: string | null; college: string | null };
-  }>(
-    "user_boards",
-    "id, rank, players(slug, name, position, college)",
-    (q) => q.eq("user_id", userId).order("rank"),
-  );
+  // Must use session-aware client so RLS auth.uid() matches
+  const sb = await createSupabaseServer();
+  const { data: rows, error } = await sb
+    .from("user_boards")
+    .select("id, rank, players(slug, name, position, college)")
+    .eq("user_id", userId)
+    .order("rank");
 
-  return rows.map((r) => {
-    const p = r.players as unknown as { slug: string; name: string; position: string | null; college: string | null };
+  if (error) {
+    console.error("getUserBoard error:", error.message);
+    return [];
+  }
+
+  return (rows ?? []).map((r: any) => {
+    const p = r.players as { slug: string; name: string; position: string | null; college: string | null };
     return {
       rank: r.rank,
       player: p.name,
@@ -599,20 +603,22 @@ export async function getUserBoard(userId: string): Promise<BoardPlayer[]> {
 export async function getUserPositionRanks(
   userId: string,
 ): Promise<Record<string, Array<{ player_id: string; slug: string; rank: number }>>> {
-  const rows = await fetchAll<{
-    player_id: string;
-    position_group: string;
-    rank: number;
-    players: { slug: string };
-  }>(
-    "user_position_ranks",
-    "player_id, position_group, rank, players(slug)",
-    (q) => q.eq("user_id", userId).order("rank"),
-  );
+  // Must use session-aware client so RLS auth.uid() matches
+  const sb = await createSupabaseServer();
+  const { data: rows, error } = await sb
+    .from("user_position_ranks")
+    .select("player_id, position_group, rank, players(slug)")
+    .eq("user_id", userId)
+    .order("rank");
+
+  if (error) {
+    console.error("getUserPositionRanks error:", error.message);
+    return {};
+  }
 
   const result: Record<string, Array<{ player_id: string; slug: string; rank: number }>> = {};
-  for (const r of rows) {
-    const p = r.players as unknown as { slug: string };
+  for (const r of (rows ?? []) as any[]) {
+    const p = r.players as { slug: string };
     if (!result[r.position_group]) result[r.position_group] = [];
     result[r.position_group].push({ player_id: r.player_id, slug: p.slug, rank: r.rank });
   }
