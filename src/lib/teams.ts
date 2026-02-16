@@ -123,3 +123,28 @@ export function formatTeamWithTrade(team: string, tradeNote: string | null): str
   if (!tradeNote) return team;
   return `${team} (${tradeNote})`;
 }
+
+// ── Source name normalization ──────────────────────────────────────────────
+
+/**
+ * Map of common source-name variants → canonical name.
+ * Add entries here whenever a source gets uploaded under multiple names.
+ */
+const SOURCE_ALIASES: Record<string, string> = {
+  "nfl.com": "NFL",
+  "nfl com": "NFL",
+  // Add more as needed, e.g.:
+  // "cbs sports": "CBS",
+  // "pro football focus": "PFF",
+};
+
+/**
+ * Normalize a source name entered in the upload form.
+ * Strips whitespace, collapses case-insensitive aliases.
+ */
+export function normalizeSourceName(raw: string): string {
+  const trimmed = raw.trim();
+  if (!trimmed) return trimmed;
+  const lower = trimmed.toLowerCase();
+  return SOURCE_ALIASES[lower] ?? trimmed;
+}

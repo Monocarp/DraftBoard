@@ -2,7 +2,7 @@
 
 import { createSupabaseServer } from "@/lib/supabase-server";
 import { normalizePosition } from "@/lib/types";
-import { normalizeTeam, formatTeamWithTrade } from "@/lib/teams";
+import { normalizeTeam, formatTeamWithTrade, normalizeSourceName } from "@/lib/teams";
 import { revalidatePath } from "next/cache";
 
 // ─── Types ──────────────────────────────────────────────────────────────────
@@ -2147,6 +2147,9 @@ export async function importData(
   sourceName: string,
   bioPriority?: number,
 ): Promise<UploadResult> {
+  // Normalize source name (e.g. "NFL.com" → "NFL")
+  sourceName = normalizeSourceName(sourceName);
+
   const supabase = await createSupabaseServer();
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) throw new Error("Unauthorized");
