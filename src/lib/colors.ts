@@ -16,6 +16,51 @@
  * Solution: Detect the scale from the source/label name and apply correct thresholds.
  */
 
+// ── PFF stat direction sets ──────────────────────────────────────────────────
+// These stats are INVERTED: a lower raw value is better.
+// Derived from "PFF Stats Inversions or Neutral.xlsx".
+
+const PFF_LOWER_IS_BETTER = new Set([
+  // CB
+  "Comp. %", "Completion %",
+  "Passer Rating", "Passer Rating Alwd",
+  "Missed Tackles", "Missed Tkl Rate", "Missed Tackle Rate",
+  // DT / ED (shared with CB for Missed Tackle Rate)
+  // LB
+  "Pass Rat. All.", "Pass Rating All.",
+  // IOL / OT
+  "Penalties",
+  "Hits", "Hits Allowed",
+  "Sacks", "Sacks Allowed",
+  "Hurries", "Hurries Allowed",
+  "Pressures", "Pressures Allowed",
+  // TE / WR
+  "Drop %",
+  // SAF (Missed Tackles / Missed Tackle Rate already listed)
+  "Missed Tkls",
+]);
+
+// These stats are NEUTRAL: they provide context but no good/bad direction.
+const PFF_NEUTRAL = new Set([
+  // CB
+  "Dropped Picks",
+  "% In Man", "% In Zone",
+  // LB / ED
+  "ADORT", "ADOT",
+  "TD / INT", "TD Allowed/Ints",
+  "Recs/Tgts",
+  // Snap counts & raw counting stats without direction
+  "Tackles", "Assisted Tackles",
+  "TDs", "Touchdowns",
+  "Interceptions", "Picks",
+  "Forced Incom.",
+  "Coverage Stops", "Run Stops",
+  "Batted Balls", "Forced Fumbles",
+  "Total Pressures",
+  // TE / WR counting stats
+  "CCR", "Cont. Catch Ratio",
+]);
+
 // ── 5-tier color classes ────────────────────────────────────────────────────
 
 const ELITE  = "text-blue-400 font-bold";     // top tier
@@ -116,25 +161,47 @@ export function getGradeColor(label: string, value: number): string {
 /**
  * Color a PFF score using percentile data from position boards.
  * Position board percentiles are 0–1 where 1.0 = best in the group.
+ * These percentiles are already correctly oriented for all stats
+ * (including lower-is-better stats). Neutral stats get no color.
  */
-export function getPffColorByPercentile(percentile: number): string {
+export function getPffColorByPercentile(metric: string, percentile: number): string {
+  if (PFF_NEUTRAL.has(metric)) return PLAIN;
   return colorFromPercentile(percentile);
 }
 
 /**
  * Color a PFF score from the player profile page.
- * Player-table percentiles are INVERTED: 0.0 = best, 1.0 = worst.
- * We flip them before applying the standard color mapping.
+ *
+ * Player-table percentiles are NAIVE RANK: 0.0 = highest raw value, 1.0 = lowest.
+ * For "higher is better" stats, 0.0 = best → we flip with (1 - pct).
+ * For "lower is better" stats, 0.0 = highest value = WORST → keep as-is (pct).
+ * For neutral stats, return PLAIN (no color).
+ *
+ * @param metric - The PFF metric name (e.g. "Coverage Grade", "Drop %")
+ * @param percentile - The stored percentile (0 = highest raw value)
  */
-export function getPffColorByInvertedPercentile(percentile: number): string {
+export function getPffColorForProfile(metric: string, percentile: number): string {
+  if (PFF_NEUTRAL.has(metric)) return PLAIN;
+  if (PFF_LOWER_IS_BETTER.has(metric)) {
+    // Stored pct: 0 = highest value = worst → low pct = bad → use directly
+    return colorFromPercentile(percentile);
+  }
+  // Default: higher is better → 0 = best → flip
   return colorFromPercentile(1 - percentile);
 }
 
 /**
  * Color a PFF score by its raw value (0-100 scale).
  * Used as fallback when no percentile data is available.
+ * Respects stat direction: for inverted stats, flips the scale.
+ * For neutral stats, returns PLAIN.
  */
-export function getPffColorByValue(value: number): string {
+export function getPffColorByValue(metric: string, value: number): string {
+  if (PFF_NEUTRAL.has(metric)) return PLAIN;
+  if (PFF_LOWER_IS_BETTER.has(metric)) {
+    // Lower value = better → invert before mapping
+    return colorFromPercentile(1 - pct100(value));
+  }
   return colorFromPercentile(pct100(value));
 }
 

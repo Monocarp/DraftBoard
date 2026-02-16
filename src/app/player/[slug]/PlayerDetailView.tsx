@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import PositionBadge from "@/components/PositionBadge";
 import type { PlayerProfile } from "@/lib/types";
-import { getPffColorByInvertedPercentile, getPffColorByValue, getGradeColor, getDraftBuzzGradeColor, parseGradeValue, PLAIN } from "@/lib/colors";
+import { getPffColorForProfile, getPffColorByValue, getGradeColor, getDraftBuzzGradeColor, parseGradeValue, PLAIN } from "@/lib/colors";
 
 type Tab = "overview" | "scouting";
 
@@ -173,14 +173,14 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
               const displayVal = isObj ? (raw as { value: unknown }).value : raw;
               const percentile = isObj ? (raw as { percentile?: number }).percentile : undefined;
 
-              // Color using inverted percentile (player-table: 0 = best)
-              // Fall back to raw value color for all PFF metrics
+              // Color using direction-aware percentile
+              // (inverted stats and neutral stats handled automatically)
               let color = PLAIN;
               const num = typeof displayVal === "number" ? displayVal : parseFloat(String(displayVal));
               if (percentile != null && !isNaN(percentile)) {
-                color = getPffColorByInvertedPercentile(percentile);
+                color = getPffColorForProfile(metric, percentile);
               } else if (!isNaN(num)) {
-                color = getPffColorByValue(num);
+                color = getPffColorByValue(metric, num);
               }
 
               return (

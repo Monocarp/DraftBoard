@@ -206,7 +206,8 @@ function StatBlock({
 
           if (mode === "pff" && percentile != null && !isNaN(percentile)) {
             // PFF scores: use within-board percentile (0–1, 1.0 = best)
-            colorClass = getPffColorByPercentile(percentile);
+            // Neutral stats get no color
+            colorClass = getPffColorByPercentile(label, percentile);
           } else if (mode === "grades") {
             // Grades: detect scale from source name
             const num = parseGradeValue(displayVal);
