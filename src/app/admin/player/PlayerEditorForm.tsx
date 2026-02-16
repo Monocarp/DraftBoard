@@ -72,6 +72,23 @@ export function PlayerEditorForm({ player }: { player: PlayerData }) {
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
+    // Validate all JSON fields before submitting
+    const jsonFieldNames = ["overview", "site_ratings", "pff_scores", "athletic_scores", "draftbuzz_grades", "alignments"];
+    const form = e.currentTarget;
+    for (const fieldName of jsonFieldNames) {
+      const textarea = form.querySelector<HTMLTextAreaElement>(`textarea[name="${fieldName}"]`);
+      const val = textarea?.value?.trim();
+      if (val && val !== "") {
+        try {
+          JSON.parse(val);
+        } catch {
+          setError(`Invalid JSON in "${fieldName}" field. Please fix the syntax before saving.`);
+          return;
+        }
+      }
+    }
+
     setSaving(true);
     setError(null);
 
@@ -86,10 +103,19 @@ export function PlayerEditorForm({ player }: { player: PlayerData }) {
   async function handleDelete() {
     if (!player.id) return;
     setSaving(true);
-    const result = await deletePlayer(player.id, player.slug);
-    if (result?.error) {
-      setError(result.error);
-      setSaving(false);
+    try {
+      const result = await deletePlayer(player.id, player.slug);
+      if (result?.error) {
+        setError(result.error);
+        setSaving(false);
+      } else {
+        // Server action calls redirect(), but in case it doesn't:
+        window.location.href = "/admin";
+      }
+    } catch {
+      // redirect() throws NEXT_REDIRECT which propagates here—that's expected.
+      // If we get here and it's not a redirect, show a fallback.
+      window.location.href = "/admin";
     }
   }
 

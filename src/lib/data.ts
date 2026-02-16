@@ -198,16 +198,16 @@ export async function getPlayerProfile(slug: string): Promise<PlayerProfile | nu
     if (!HIDDEN_SOURCES.has(a.source)) adp_by_source[a.source] = a.adp_value;
   }
 
-  // Build projected_round_by_source map
+  // Build projected_round_by_source map (exclude hidden sources)
   const projected_round_by_source: Record<string, string | null> = {};
   for (const pr of projRounds ?? []) {
-    projected_round_by_source[pr.source] = pr.round;
+    if (!HIDDEN_SOURCES.has(pr.source)) projected_round_by_source[pr.source] = pr.round;
   }
 
-  // Build player_comps map
+  // Build player_comps map (exclude hidden sources)
   const player_comps: Record<string, string> = {};
   for (const c of comps ?? []) {
-    player_comps[c.source] = c.comp;
+    if (!HIDDEN_SOURCES.has(c.source)) player_comps[c.source] = c.comp;
   }
 
   const profile: PlayerProfile = {
@@ -249,7 +249,7 @@ export async function getPlayerProfile(slug: string): Promise<PlayerProfile | nu
       source: m.source ?? undefined,
       url: m.url ?? undefined,
     })),
-    commentary: (commentaryRows ?? []).map((c) => ({
+    commentary: (commentaryRows ?? []).filter((c) => !HIDDEN_SOURCES.has(c.source)).map((c) => ({
       source: c.source,
       sections: c.sections ?? [],
     })) as Commentary[],
@@ -285,6 +285,7 @@ export async function getMocks(): Promise<{ mocks: Record<string, MockPick[]>; m
 
   const mocks: Record<string, MockPick[]> = {};
   for (const r of rows) {
+    if (HIDDEN_SOURCES.has(r.source)) continue;
     if (!mocks[r.source]) mocks[r.source] = [];
     const pl = r.players as unknown as { slug: string } | null;
     mocks[r.source].push({

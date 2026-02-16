@@ -28,12 +28,12 @@ const PFF_LOWER_IS_BETTER = new Set([
   // DT / ED (shared with CB for Missed Tackle Rate)
   // LB
   "Pass Rat. All.", "Pass Rating All.",
-  // IOL / OT
+  // IOL / OT (only the "...Allowed" variants — bare names are DL/ED generated stats)
   "Penalties",
-  "Hits", "Hits Allowed",
-  "Sacks", "Sacks Allowed",
-  "Hurries", "Hurries Allowed",
-  "Pressures", "Pressures Allowed",
+  "Hits Allowed",
+  "Sacks Allowed",
+  "Hurries Allowed",
+  "Pressures Allowed",
   // TE / WR
   "Drop %",
   // SAF (Missed Tackles / Missed Tackle Rate already listed)
@@ -128,15 +128,12 @@ function pctBleacher(v: number): number {
 export function getGradeColor(label: string, value: number): string {
   const lc = label.toLowerCase();
 
-  // PFF year grades (e.g. "24 Grade", "25 Grade", "2025 Grade")
-  if (/\d+\s*grade/i.test(label) || /grade/i.test(label)) {
-    return colorFromPercentile(pct100(value));
-  }
+  // ── Source-specific scales (check BEFORE generic /grade/i) ──────────
   // ESPN
   if (lc.includes("espn")) return colorFromPercentile(pct100(value));
-  // NFL / NFL.com
-  if (lc === "nfl" || lc === "nfl.com") return colorFromPercentile(pctNfl(value));
-  // Gridiron
+  // NFL / NFL.com (including "NFL Grade")
+  if (lc.includes("nfl")) return colorFromPercentile(pctNfl(value));
+  // Gridiron (including "Gridiron Grade")
   if (lc.includes("gridiron")) return colorFromPercentile(pctGridiron(value));
   // DraftBuzz / Draftbuzz
   if (lc.includes("draftbuzz") || lc.includes("draft buzz")) return colorFromPercentile(pct100(value));
@@ -146,6 +143,9 @@ export function getGradeColor(label: string, value: number): string {
   if (lc.includes("24/7") || lc.includes("247")) return colorFromPercentile(pct247(value));
   // Bleacher Report / Bleacher
   if (lc.includes("bleacher")) return colorFromPercentile(pctBleacher(value));
+
+  // ── Generic grade label (PFF year grades: "24 Grade", "25 Grade", etc.) ─
+  if (/grade/i.test(label)) return colorFromPercentile(pct100(value));
 
   // Pass Blk / Run Blk (PFF 0-100 sub-grades stored directly in grades)
   if (lc.includes("blk") || lc.includes("block")) return colorFromPercentile(pct100(value));

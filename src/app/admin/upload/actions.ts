@@ -65,6 +65,8 @@ function compactSlug(name: string): string {
 
 // ─── Player cache + corrections cache (built once per import batch) ─────────
 
+// ─── Player cache + corrections cache (scoped per import batch) ─────────────
+
 interface PlayerCacheEntry {
   id: string;
   slug: string;
@@ -72,82 +74,75 @@ interface PlayerCacheEntry {
   compact: string; // compact slug for fuzzy matching
 }
 
-let playerCache: PlayerCacheEntry[] | null = null;
-let correctionsCache: Map<string, string> | null = null; // normalized variant → canonical_slug
-
-async function buildCaches(
-  supabase: Awaited<ReturnType<typeof createSupabaseServer>>
-) {
-  if (!playerCache) {
-    // Load all players once
-    const PAGE = 1000;
-    const allPlayers: PlayerCacheEntry[] = [];
-    let from = 0;
-    while (true) {
-      const { data } = await supabase
-        .from("players")
-        .select("id, slug, name")
-        .range(from, from + PAGE - 1);
-      if (!data || data.length === 0) break;
-      for (const p of data) {
-        allPlayers.push({
-          id: p.id,
-          slug: p.slug,
-          name: p.name,
-          compact: compactSlug(p.name),
-        });
-      }
-      if (data.length < PAGE) break;
-      from += PAGE;
-    }
-    playerCache = allPlayers;
-  }
-
-  if (!correctionsCache) {
-    // Load all name corrections
-    correctionsCache = new Map();
-    try {
-      const { data } = await supabase
-        .from("name_corrections")
-        .select("variant_name, canonical_slug")
-        .limit(5000);
-      if (data) {
-        for (const c of data) {
-          // Store with normalized key (lowercase, no periods)
-          correctionsCache.set(
-            normalizeName(c.variant_name).toLowerCase(),
-            c.canonical_slug
-          );
-        }
-      }
-    } catch {
-      // Table might not exist yet — that's fine
-    }
-  }
+interface ImportCaches {
+  playerCache: PlayerCacheEntry[];
+  correctionsCache: Map<string, string>;
 }
 
-function clearCaches() {
-  playerCache = null;
-  correctionsCache = null;
+/** Build fresh caches for a single import batch. NOT shared across requests. */
+async function buildCaches(
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>
+): Promise<ImportCaches> {
+  // Load all players
+  const PAGE = 1000;
+  const playerCache: PlayerCacheEntry[] = [];
+  let from = 0;
+  while (true) {
+    const { data } = await supabase
+      .from("players")
+      .select("id, slug, name")
+      .range(from, from + PAGE - 1);
+    if (!data || data.length === 0) break;
+    for (const p of data) {
+      playerCache.push({
+        id: p.id,
+        slug: p.slug,
+        name: p.name,
+        compact: compactSlug(p.name),
+      });
+    }
+    if (data.length < PAGE) break;
+    from += PAGE;
+  }
+
+  // Load all name corrections
+  const correctionsCache = new Map<string, string>();
+  try {
+    const { data } = await supabase
+      .from("name_corrections")
+      .select("variant_name, canonical_slug")
+      .limit(5000);
+    if (data) {
+      for (const c of data) {
+        correctionsCache.set(
+          normalizeName(c.variant_name).toLowerCase(),
+          c.canonical_slug
+        );
+      }
+    }
+  } catch {
+    // Table might not exist yet — that's fine
+  }
+
+  return { playerCache, correctionsCache };
 }
 
 /** Look up a player using the full normalization pipeline, create if not found */
 async function resolvePlayerId(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  caches: ImportCaches,
   playerName: string,
   extras?: { position?: string; college?: string }
 ): Promise<string | null> {
-  await buildCaches(supabase);
-
   // Step 0: Normalize the input name (strip periods, whitespace)
   const normalized = normalizeName(playerName);
   if (!normalized) return null;
 
   // Step 1: Check name_corrections table
   const correctionKey = normalized.toLowerCase();
-  const correctedSlug = correctionsCache?.get(correctionKey);
+  const correctedSlug = caches.correctionsCache.get(correctionKey);
   if (correctedSlug) {
-    const match = playerCache!.find((p) => p.slug === correctedSlug);
+    const match = caches.playerCache.find((p) => p.slug === correctedSlug);
     if (match) return match.id;
   }
 
@@ -155,13 +150,13 @@ async function resolvePlayerId(
   const slug = toSlug(normalized);
   if (!slug) return null;
 
-  const exactMatch = playerCache!.find((p) => p.slug === slug);
+  const exactMatch = caches.playerCache.find((p) => p.slug === slug);
   if (exactMatch) return exactMatch.id;
 
   // Step 3: Compact slug match (strips apostrophes/hyphens)
   // "JaKobi Lane" → "jakobilane" matches "Ja'Kobi Lane" → "jakobilane"
   const compact = compactSlug(normalized);
-  const compactMatch = playerCache!.find((p) => p.compact === compact);
+  const compactMatch = caches.playerCache.find((p) => p.compact === compact);
   if (compactMatch) return compactMatch.id;
 
   // Step 4: Auto-create a minimal player record
@@ -179,7 +174,7 @@ async function resolvePlayerId(
   if (error || !created) return null;
 
   // Add to cache so subsequent rows in the same batch can find it
-  playerCache!.push({
+  caches.playerCache.push({
     id: created.id,
     slug,
     name: normalized,
@@ -251,6 +246,7 @@ function normalizeWeight(raw: string): string {
 
 async function importRankings(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  caches: ImportCaches,
   rows: Record<string, string>[],
   mapping: ColumnMapping,
   sourceName: string,
@@ -265,7 +261,7 @@ async function importRankings(
 
     if (!playerName?.trim()) { result.skipped++; continue; }
 
-    const playerId = await resolvePlayerId(supabase, playerName, {
+    const playerId = await resolvePlayerId(supabase, caches, playerName, {
       position: mapping["position"] ? row[mapping["position"]] : undefined,
       college: mapping["college"] ? row[mapping["college"]] : undefined,
     });
@@ -364,6 +360,7 @@ async function importRankings(
 
 async function importPositionalRankings(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  caches: ImportCaches,
   rows: Record<string, string>[],
   mapping: ColumnMapping,
   sourceName: string,
@@ -377,7 +374,7 @@ async function importPositionalRankings(
 
     if (!playerName?.trim()) { result.skipped++; continue; }
 
-    const playerId = await resolvePlayerId(supabase, playerName, {
+    const playerId = await resolvePlayerId(supabase, caches, playerName, {
       position: mapping["position"] ? row[mapping["position"]] : undefined,
       college: mapping["college"] ? row[mapping["college"]] : undefined,
     });
@@ -441,6 +438,7 @@ async function importPositionalRankings(
 
 async function importADP(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  caches: ImportCaches,
   rows: Record<string, string>[],
   mapping: ColumnMapping,
   sourceName: string,
@@ -454,7 +452,7 @@ async function importADP(
 
     if (!playerName?.trim()) { result.skipped++; continue; }
 
-    const playerId = await resolvePlayerId(supabase, playerName, {
+    const playerId = await resolvePlayerId(supabase, caches, playerName, {
       position: mapping["position"] ? row[mapping["position"]] : undefined,
       college: mapping["college"] ? row[mapping["college"]] : undefined,
     });
@@ -497,14 +495,20 @@ async function importADP(
 
 async function importMocks(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  caches: ImportCaches,
   rows: Record<string, string>[],
   mapping: ColumnMapping,
   sourceName: string,
 ): Promise<UploadResult> {
   const result: UploadResult = { success: true, inserted: 0, updated: 0, skipped: 0, errors: [] };
 
-  // First, delete existing mock for this source (replace strategy)
-  await supabase.from("mock_picks").delete().eq("source", sourceName);
+  // Build all new rows first, then delete+insert atomically to avoid partial data loss
+  interface MockRow {
+    source: string; pick_number: number; team: string;
+    player_id: string | null; player_name: string;
+    position: string | null; college: string | null;
+  }
+  const newRows: MockRow[] = [];
 
   for (let i = 0; i < rows.length; i++) {
     const row = rows[i];
@@ -522,12 +526,12 @@ async function importMocks(
 
     // Use the normalization pipeline to find player ID
     const normalizedName = normalizeName(playerName);
-    const playerId = await resolvePlayerId(supabase, playerName, {
+    const playerId = await resolvePlayerId(supabase, caches, playerName, {
       position: position ?? undefined,
       college: college ?? undefined,
     });
 
-    const { error } = await supabase.from("mock_picks").insert({
+    newRows.push({
       source: sourceName,
       pick_number: pickNumber,
       team: team?.trim() || "TBD",
@@ -536,9 +540,19 @@ async function importMocks(
       position,
       college,
     });
+  }
 
-    if (error) result.errors.push(`Row ${i + 1}: ${error.message}`);
-    else result.inserted++;
+  // Only delete old data once all new rows are prepared successfully
+  if (newRows.length > 0) {
+    await supabase.from("mock_picks").delete().eq("source", sourceName);
+
+    // Insert in batches of 100
+    for (let i = 0; i < newRows.length; i += 100) {
+      const batch = newRows.slice(i, i + 100);
+      const { error } = await supabase.from("mock_picks").insert(batch);
+      if (error) result.errors.push(`Batch insert error at row ${i + 1}: ${error.message}`);
+      else result.inserted += batch.length;
+    }
   }
 
   return result;
@@ -1063,6 +1077,7 @@ async function writeBioSources(
 
 async function importPFFScores(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  caches: ImportCaches,
   rows: Record<string, string>[],
   mapping: ColumnMapping,
 ): Promise<UploadResult> {
@@ -1098,7 +1113,7 @@ async function importPFFScores(
       continue;
     }
 
-    const playerId = await resolvePlayerId(supabase, playerName, { position: rawPos });
+    const playerId = await resolvePlayerId(supabase, caches, playerName, { position: rawPos });
     if (!playerId) {
       result.errors.push(`Row ${i + 1}: Could not resolve player "${playerName}"`);
       result.skipped++;
@@ -1276,6 +1291,7 @@ function round3(n: number): number {
 
 async function importDraftBuzzGrades(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  caches: ImportCaches,
   rows: Record<string, string>[],
   mapping: ColumnMapping,
   sourceName: string,
@@ -1319,7 +1335,7 @@ async function importDraftBuzzGrades(
 
     if (!playerName?.trim()) { result.skipped++; continue; }
 
-    const playerId = await resolvePlayerId(supabase, playerName);
+    const playerId = await resolvePlayerId(supabase, caches, playerName);
     if (!playerId) {
       result.errors.push(`Row ${i + 1}: Could not resolve player "${playerName}"`);
       result.skipped++;
@@ -1463,6 +1479,7 @@ async function importDraftBuzzGrades(
 
 async function importAthleticScores(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  caches: ImportCaches,
   rows: Record<string, string>[],
   mapping: ColumnMapping,
 ): Promise<UploadResult> {
@@ -1497,7 +1514,7 @@ async function importAthleticScores(
 
     if (!playerName?.trim()) { result.skipped++; continue; }
 
-    const playerId = await resolvePlayerId(supabase, playerName, {
+    const playerId = await resolvePlayerId(supabase, caches, playerName, {
       position: row[mapping["position"]] || undefined,
     });
     if (!playerId) {
@@ -1551,6 +1568,7 @@ async function importAthleticScores(
 
 async function importSiteRatings(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  caches: ImportCaches,
   rows: Record<string, string>[],
   mapping: ColumnMapping,
 ): Promise<UploadResult> {
@@ -1570,7 +1588,7 @@ async function importSiteRatings(
 
     if (!playerName?.trim()) { result.skipped++; continue; }
 
-    const playerId = await resolvePlayerId(supabase, playerName, {
+    const playerId = await resolvePlayerId(supabase, caches, playerName, {
       position: row[mapping["position"]] || undefined,
       college: row[mapping["college"]] || undefined,
     });
@@ -1629,6 +1647,7 @@ async function importSiteRatings(
 
 async function importNFLProfiles(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  caches: ImportCaches,
   rows: Record<string, string>[],
   mapping: ColumnMapping,
 ): Promise<UploadResult> {
@@ -1643,7 +1662,7 @@ async function importNFLProfiles(
 
     if (!playerName?.trim()) { result.skipped++; continue; }
 
-    const playerId = await resolvePlayerId(supabase, playerName, {
+    const playerId = await resolvePlayerId(supabase, caches, playerName, {
       position: rawPos,
       college: school,
     });
@@ -1758,6 +1777,7 @@ async function importNFLProfiles(
 
 async function importBleacherProfiles(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  caches: ImportCaches,
   rows: Record<string, string>[],
   mapping: ColumnMapping,
 ): Promise<UploadResult> {
@@ -1770,7 +1790,7 @@ async function importBleacherProfiles(
 
     if (!playerName?.trim()) { result.skipped++; continue; }
 
-    const playerId = await resolvePlayerId(supabase, playerName, {});
+    const playerId = await resolvePlayerId(supabase, caches, playerName, {});
     if (!playerId) {
       result.errors.push(`Row ${i + 1}: Could not resolve player "${playerName}"`);
       result.skipped++;
@@ -1875,6 +1895,7 @@ async function importBleacherProfiles(
 
 async function importTDNProfiles(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  caches: ImportCaches,
   rows: Record<string, string>[],
   mapping: ColumnMapping,
 ): Promise<UploadResult> {
@@ -1889,7 +1910,7 @@ async function importTDNProfiles(
 
     if (!playerName?.trim()) { result.skipped++; continue; }
 
-    const playerId = await resolvePlayerId(supabase, playerName, {
+    const playerId = await resolvePlayerId(supabase, caches, playerName, {
       position: rawPos,
       college: school,
     });
@@ -1968,6 +1989,7 @@ async function importTDNProfiles(
 
 async function importESPNProfiles(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  caches: ImportCaches,
   rows: Record<string, string>[],
   mapping: ColumnMapping,
 ): Promise<UploadResult> {
@@ -1982,7 +2004,7 @@ async function importESPNProfiles(
 
     if (!playerName?.trim()) { result.skipped++; continue; }
 
-    const playerId = await resolvePlayerId(supabase, playerName, {
+    const playerId = await resolvePlayerId(supabase, caches, playerName, {
       position: rawPos,
       college: school,
     });
@@ -2060,6 +2082,7 @@ async function importESPNProfiles(
 
 async function importBioData(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  caches: ImportCaches,
   rows: Record<string, string>[],
   mapping: ColumnMapping,
   sourceName: string,
@@ -2073,7 +2096,7 @@ async function importBioData(
 
     if (!playerName?.trim()) { result.skipped++; continue; }
 
-    const playerId = await resolvePlayerId(supabase, playerName, {
+    const playerId = await resolvePlayerId(supabase, caches, playerName, {
       position: mapping["position"] ? row[mapping["position"]] : undefined,
       college: mapping["college"] ? row[mapping["college"]] : undefined,
     });
@@ -2122,8 +2145,8 @@ export async function importData(
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) throw new Error("Unauthorized");
 
-  // Clear caches so we get fresh data for this import batch
-  clearCaches();
+  // Build fresh caches scoped to this import batch (not shared across requests)
+  const caches = await buildCaches(supabase);
 
   let result: UploadResult;
 
@@ -2132,51 +2155,51 @@ export async function importData(
 
   switch (dataType) {
     case "rankings":
-      result = await importRankings(supabase, rows, mapping, sourceName, bioPriority);
+      result = await importRankings(supabase, caches, rows, mapping, sourceName, bioPriority);
       autoDateType = "ranking";
       break;
     case "positional_rankings":
-      result = await importPositionalRankings(supabase, rows, mapping, sourceName);
+      result = await importPositionalRankings(supabase, caches, rows, mapping, sourceName);
       autoDateType = "ranking";
       break;
     case "adp":
-      result = await importADP(supabase, rows, mapping, sourceName);
+      result = await importADP(supabase, caches, rows, mapping, sourceName);
       break;
     case "mocks":
-      result = await importMocks(supabase, rows, mapping, sourceName);
+      result = await importMocks(supabase, caches, rows, mapping, sourceName);
       autoDateType = "mock";
       break;
     case "source_dates":
       result = await importSourceDates(supabase, rows, mapping);
       break;
     case "pff_scores":
-      result = await importPFFScores(supabase, rows, mapping);
+      result = await importPFFScores(supabase, caches, rows, mapping);
       break;
     case "draftbuzz_grades":
-      result = await importDraftBuzzGrades(supabase, rows, mapping, sourceName);
+      result = await importDraftBuzzGrades(supabase, caches, rows, mapping, sourceName);
       break;
     case "athletic_scores":
-      result = await importAthleticScores(supabase, rows, mapping);
+      result = await importAthleticScores(supabase, caches, rows, mapping);
       break;
     case "site_ratings":
-      result = await importSiteRatings(supabase, rows, mapping);
+      result = await importSiteRatings(supabase, caches, rows, mapping);
       break;
     case "nfl_profiles":
-      result = await importNFLProfiles(supabase, rows, mapping);
+      result = await importNFLProfiles(supabase, caches, rows, mapping);
       break;
     case "bleacher_profiles":
-      result = await importBleacherProfiles(supabase, rows, mapping);
+      result = await importBleacherProfiles(supabase, caches, rows, mapping);
       break;
     case "espn_profiles":
-      result = await importESPNProfiles(supabase, rows, mapping);
+      result = await importESPNProfiles(supabase, caches, rows, mapping);
       autoDateType = "ranking";
       break;
     case "tdn_profiles":
-      result = await importTDNProfiles(supabase, rows, mapping);
+      result = await importTDNProfiles(supabase, caches, rows, mapping);
       autoDateType = "ranking";
       break;
     case "bio_data":
-      result = await importBioData(supabase, rows, mapping, sourceName, bioPriority);
+      result = await importBioData(supabase, caches, rows, mapping, sourceName, bioPriority);
       break;
     default:
       result = { success: false, inserted: 0, updated: 0, skipped: 0, errors: [`Unknown data type: ${dataType}`] };
@@ -2203,9 +2226,6 @@ export async function importData(
         .insert({ source: sourceName, source_type: autoDateType, date: now });
     }
   }
-
-  // Clear caches after import
-  clearCaches();
 
   // Revalidate all public paths after import
   revalidatePath("/");
