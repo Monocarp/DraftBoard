@@ -444,12 +444,18 @@ export async function getPositionBoards(): Promise<Record<string, PositionBoardP
 
     for (const rk of pRankings) {
       if (rk.overall_rank != null) {
-        overall_rankings[rk.source] = rk.overall_rank;
-        overallValues.push(rk.overall_rank);
+        const v = Number(rk.overall_rank);
+        if (!isNaN(v)) {
+          overall_rankings[rk.source] = v;
+          overallValues.push(v);
+        }
       }
       if (rk.positional_rank != null) {
-        pos_rankings[rk.source] = rk.positional_rank;
-        posValues.push(rk.positional_rank);
+        const v = Number(rk.positional_rank);
+        if (!isNaN(v)) {
+          pos_rankings[rk.source] = v;
+          posValues.push(v);
+        }
       }
     }
 
