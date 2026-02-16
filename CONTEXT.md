@@ -1,6 +1,6 @@
 # NFL Draft Board — Complete Technical Context
 
-> **Last Updated:** February 16, 2026 (c)
+> **Last Updated:** February 16, 2026 (d)
 > **Repository:** https://github.com/Monocarp/DraftBoard
 > **Live Site:** Auto-deploys to Vercel on push to `main`
 > **Supabase Project:** https://cmapsylsrsglhfdwquwe.supabase.co
@@ -63,6 +63,7 @@ src/
 ├── lib/                         # Shared utilities
 │   ├── types.ts                 # All TypeScript interfaces & constants
 │   ├── data.ts                  # Read-only data fetching layer (server-only, HIDDEN_SOURCES filter)
+│   ├── colors.ts                # Unified scale-aware color system for grades, PFF scores, ratings
 │   ├── supabase.ts              # Supabase client (server reads)
 │   ├── supabase-server.ts       # Supabase client (server actions, cookie-aware)
 │   └── supabase-browser.ts      # Supabase client (browser)
@@ -568,10 +569,10 @@ Two tabs:
 - Player Comps (from `player_comps` table)
 - Round Projections (from `projected_rounds` table)
 - Summary, Strengths, Weaknesses, Accolades (text fields)
-- PFF Scores grid with percentile color coding (green→yellow→red)
+- PFF Scores grid with direction-aware percentile color coding (see Color System below)
 - Athletic Testing (RAS data)
 - Overall Rankings, Positional Rankings, ADP by Source (from relational tables)
-- Site Ratings, DraftBuzz Grades, Injury History, Snap Alignments
+- Site Ratings (scale-aware coloring), DraftBuzz Grades (color-coded), Injury History, Snap Alignments
 
 **Scouting Tab:**
 - Skills & Traits Breakdown (categories with positives/negatives)
@@ -782,15 +783,69 @@ Certain player fields are **manually authored** by the admin and must never be o
 
 Import data that resembles these fields (e.g. NFL.com's Overview, Strengths, Weaknesses, Prospect Grade Indicator) goes into the `commentary` table or other non-destructive destinations instead. This separation ensures the admin's manual scouting work is preserved regardless of how many times data is re-imported.
 
-### Percentile Color Coding
+### Unified Color System (`colors.ts`)
 
-PFF scores display with percentile-based colors via `getPercentileColor()`:
-- ≥ 90th percentile → bright green
-- ≥ 75th → green
-- ≥ 60th → lime
-- ≥ 40th → yellow
-- ≥ 25th → orange
-- < 25th → red
+All grade, PFF score, and rating color coding flows through `src/lib/colors.ts`. This module solves the problem of heterogeneous grading scales — different sources use completely different numeric ranges, and some PFF stats are inverted (lower is better) or neutral (no direction).
+
+**5-Tier Color Scale:**
+
+| Tier | Color | Tailwind Class | Percentile |
+|------|-------|----------------|------------|
+| Elite | Blue bold | `text-blue-400 font-bold` | ≥ 90th |
+| Great | Green semi-bold | `text-green-400 font-semibold` | ≥ 70th |
+| Good | Yellow | `text-yellow-400` | ≥ 40th |
+| Below Avg | Orange | `text-orange-400` | ≥ 20th |
+| Poor | Red | `text-red-400` | < 20th |
+| Neutral | White | `text-white` | N/A |
+
+**Grade Scale Detection** (`getGradeColor(label, value)`):
+
+Each source is detected by label name and mapped to its own scale before normalizing to a percentile:
+
+| Source(s) | Raw Range | Normalizer |
+|-----------|-----------|------------|
+| PFF year grades, ESPN, DraftBuzz | 0–100 | `(v - 60) / 35` |
+| NFL.com | 5.0–7.2 | `(v - 5.8) / 1.4` |
+| Gridiron | 6.0–9.0 | `(v - 6.5) / 2.0` |
+| Rivals | 5.0–6.0 | `(v - 5.5) / 0.5` |
+| 24/7 Sports | 80–100 | `(v - 82) / 16` |
+| Bleacher Report | 6.0–8.0 | `(v - 6.0) / 2.0` |
+
+**PFF Score Direction Awareness:**
+
+PFF stats are categorized into three directions (from `PFF Stats Inversions or Neutral.xlsx`):
+
+*Lower is Better* (`PFF_LOWER_IS_BETTER` set):
+- CB: Comp. %, Passer Rating, Missed Tackles, Missed Tkl Rate
+- DT/ED: Missed Tackle Rate
+- LB: Completion %, Pass Rat. All., Missed Tkl Rate
+- IOL/OT: Penalties, Hits Allowed, Sacks Allowed, Hurries Allowed, Pressures Allowed
+- SAF: Missed Tackles, Missed Tackle Rate, Passer Rating Alwd
+- TE/WR: Drop %
+
+*Neutral* (`PFF_NEUTRAL` set — shown in plain white, no color):
+- Dropped Picks, % In Man, % In Zone, ADORT/ADOT, TD / INT, TD Allowed/Ints
+- Recs/Tgts, Tackles, Assisted Tackles, TDs, Touchdowns, Interceptions, Picks
+- Coverage Stops, Run Stops, Batted Balls, Forced Fumbles, Total Pressures, CCR
+
+*Higher is Better* (everything else — grades, Coverage Grade, Pass Rush, Receiving, etc.)
+
+**Context-Specific Percentile Handling:**
+
+| Context | Percentile Source | Orientation | Function |
+|---------|------------------|-------------|----------|
+| Position Boards | Stored in `{value, percentile}` on `position_board_entries.pff_scores` | Already corrected (1.0 = best, accounts for stat direction) | `getPffColorByPercentile(metric, pct)` |
+| Player Profiles | Stored in `{value, percentile}` on `players.pff_scores` | Naive rank (0.0 = highest raw value, does NOT account for direction) | `getPffColorForProfile(metric, pct)` |
+
+For player profiles, the function flips the percentile for higher-is-better stats (`1 - pct`), keeps it as-is for lower-is-better stats, and returns plain white for neutral stats.
+
+**Where Color Is Applied:**
+
+| Location | What Gets Colored |
+|----------|------------------|
+| `PositionBoardsView.tsx` (StatBlock) | Grades (scale-aware), PFF Scores (board percentile), Athletic (no color) |
+| `PlayerDetailView.tsx` (OverviewTab) | PFF Scores (direction-aware percentile), Site Ratings (scale-aware), DraftBuzz Grades (0–100) |
+| `ExpandedBoardTable.tsx` | Grades (scale-aware) |
 
 ### Revalidation
 
