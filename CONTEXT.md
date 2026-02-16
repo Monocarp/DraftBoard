@@ -1,6 +1,6 @@
 # NFL Draft Board — Complete Technical Context
 
-> **Last Updated:** February 16, 2026 (b)
+> **Last Updated:** February 16, 2026 (c)
 > **Repository:** https://github.com/Monocarp/DraftBoard
 > **Live Site:** Auto-deploys to Vercel on push to `main`
 > **Supabase Project:** https://cmapsylsrsglhfdwquwe.supabase.co
@@ -742,6 +742,16 @@ Filtering is applied in:
 - `getADP()` — computes consensus from "Con" then strips all hidden sources from `source_adps`
 
 The Site Ratings grade import maps the Excel "Bleacher" column to the display key `"Bleacher Report"` (in `site_ratings` and `overview` JSONB).
+
+### Position Board Dynamic Rankings (CONSENSUS_SOURCES)
+
+The position board's Overall Rank and POS Rank columns are **computed dynamically** at read time from the `player_rankings` table — not stored as static JSONB on `position_board_entries`. `getPositionBoards()` in `data.ts` fetches live rankings from these 5 sources:
+
+```
+CONSENSUS_SOURCES = ["Brugler", "NFL.com", "CBS", "PFF", "ESPN"]
+```
+
+For each board player, it builds `overall_rankings` and `pos_rankings` objects with per-source values plus an `"Avg"` key (simple average of available sources). Players missing from one or more sources are handled gracefully — the average is computed from whichever sources have data.
 
 ### Position Abbreviation Inconsistency
 

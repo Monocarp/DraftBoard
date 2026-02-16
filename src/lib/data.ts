@@ -400,8 +400,12 @@ export async function getADP(): Promise<{ players: ADPEntry[]; source_dates: Rec
 
 // ─── Position Boards ────────────────────────────────────────────────────────
 
+/** Sources used to compute consensus for position board ranking columns. */
+const CONSENSUS_SOURCES = ["Brugler", "NFL.com", "CBS", "PFF", "ESPN"];
+
 export async function getPositionBoards(): Promise<Record<string, PositionBoardPlayer[]>> {
   const rows = await fetchAll<{
+    player_id: string;
     position_group: string; pos_rank: number | null;
     height: string | null; weight: string | null; age: string | null;
     projected_role: string | null; projected_round: string | null;
@@ -409,14 +413,54 @@ export async function getPositionBoards(): Promise<Record<string, PositionBoardP
     pff_scores: Record<string, { value: string | number; percentile: number | null } | string | number>;
     athletic_scores: Record<string, string | number>;
     strengths: string | null; weaknesses: string | null;
-    overall_rankings: Record<string, string | number>;
-    pos_rankings: Record<string, string | number>;
     players: { slug: string; name: string; position: string | null; college: string | null };
-  }>("position_board_entries", "position_group, pos_rank, height, weight, age, projected_role, projected_round, grades, pff_scores, athletic_scores, strengths, weaknesses, overall_rankings, pos_rankings, players(slug, name, position, college)");
+  }>("position_board_entries", "player_id, position_group, pos_rank, height, weight, age, projected_role, projected_round, grades, pff_scores, athletic_scores, strengths, weaknesses, players(slug, name, position, college)");
+
+  // Fetch live rankings for all board players in one query
+  const playerIds = [...new Set(rows.map((r) => r.player_id))];
+  const rankingRows = await fetchAll<{
+    player_id: string; source: string; overall_rank: number | null; positional_rank: number | null;
+  }>("player_rankings", "player_id, source, overall_rank, positional_rank", (q) =>
+    q.in("player_id", playerIds).in("source", CONSENSUS_SOURCES)
+  );
+
+  // Index rankings by player_id
+  const rankingsByPlayer = new Map<string, { source: string; overall_rank: number | null; positional_rank: number | null }[]>();
+  for (const rk of rankingRows) {
+    if (!rankingsByPlayer.has(rk.player_id)) rankingsByPlayer.set(rk.player_id, []);
+    rankingsByPlayer.get(rk.player_id)!.push(rk);
+  }
 
   const boards: Record<string, PositionBoardPlayer[]> = {};
   for (const r of rows) {
     const p = r.players as unknown as { slug: string; name: string; position: string | null; college: string | null };
+    const pRankings = rankingsByPlayer.get(r.player_id) || [];
+
+    // Build overall_rankings and pos_rankings from live data
+    const overall_rankings: Record<string, string | number> = {};
+    const pos_rankings: Record<string, string | number> = {};
+    const overallValues: number[] = [];
+    const posValues: number[] = [];
+
+    for (const rk of pRankings) {
+      if (rk.overall_rank != null) {
+        overall_rankings[rk.source] = rk.overall_rank;
+        overallValues.push(rk.overall_rank);
+      }
+      if (rk.positional_rank != null) {
+        pos_rankings[rk.source] = rk.positional_rank;
+        posValues.push(rk.positional_rank);
+      }
+    }
+
+    // Compute consensus averages
+    if (overallValues.length > 0) {
+      overall_rankings["Avg"] = Math.round((overallValues.reduce((a, b) => a + b, 0) / overallValues.length) * 10) / 10;
+    }
+    if (posValues.length > 0) {
+      pos_rankings["Avg"] = Math.round((posValues.reduce((a, b) => a + b, 0) / posValues.length) * 10) / 10;
+    }
+
     if (!boards[r.position_group]) boards[r.position_group] = [];
     boards[r.position_group].push({
       name: p.name,
@@ -434,8 +478,8 @@ export async function getPositionBoards(): Promise<Record<string, PositionBoardP
       athletic_scores: r.athletic_scores ?? {},
       strengths: r.strengths,
       weaknesses: r.weaknesses,
-      overall_rankings: r.overall_rankings ?? {},
-      pos_rankings: r.pos_rankings ?? {},
+      overall_rankings,
+      pos_rankings,
     });
   }
 

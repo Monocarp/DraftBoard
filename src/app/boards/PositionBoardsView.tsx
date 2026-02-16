@@ -248,11 +248,21 @@ function RankingsBlock({
   const entries = Object.entries(data).filter(([, v]) => v != null && v !== "TBD" && v !== "#N/A");
   if (entries.length === 0) return null;
 
+  // Show Avg first, then individual sources sorted alphabetically
+  const avg = entries.find(([k]) => k === "Avg");
+  const rest = entries.filter(([k]) => k !== "Avg").sort((a, b) => a[0].localeCompare(b[0]));
+
   return (
-    <div className="w-full sm:w-24">
+    <div className="w-full sm:w-28">
       <h4 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2 whitespace-nowrap">{title}</h4>
       <div className="space-y-1">
-        {entries.map(([label, value]) => {
+        {avg && (
+          <div className="flex items-center justify-between gap-2 pb-1 mb-1 border-b border-[#2a3a4e]/50">
+            <span className="text-xs font-semibold text-orange-400">Avg</span>
+            <span className="text-xs font-bold text-orange-400 tabular-nums">{typeof avg[1] === "number" ? avg[1].toFixed(1) : avg[1]}</span>
+          </div>
+        )}
+        {rest.map(([label, value]) => {
           const displayValue = typeof value === "number" ? Math.round(value) : value;
           return (
             <div key={label} className="flex items-center justify-between gap-2">
