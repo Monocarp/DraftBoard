@@ -1,6 +1,6 @@
 # NFL Draft Board — Complete Technical Context
 
-> **Last Updated:** February 16, 2026
+> **Last Updated:** February 16, 2026 (b)
 > **Repository:** https://github.com/Monocarp/DraftBoard
 > **Live Site:** Auto-deploys to Vercel on push to `main`
 > **Supabase Project:** https://cmapsylsrsglhfdwquwe.supabase.co
@@ -83,7 +83,7 @@ src/
 │   ├── players/page.tsx         # Players index page (grid of all profiled players)
 │   ├── boards/                  # Position Boards page
 │   ├── rankings/                # Rankings & ADP aggregation page
-│   ├── mocks/                   # Mock Drafts page
+│   ├── mocks/                   # Mock Drafts page (single source + compare w/ team filter)
 │   │
 │   ├── player/[slug]/           # Individual player profile
 │   │   ├── page.tsx             # SSG with generateStaticParams + generateMetadata
@@ -654,7 +654,7 @@ The merge process:
 | `/player/[slug]` | `getPlayerProfile()` | SSG via `generateStaticParams()` |
 | `/boards` | `getPositionBoards()` | SSG — 11 position group tabs |
 | `/rankings` | `getRankings()` + `getADP()` | SSG — Source tabs with position filters |
-| `/mocks` | `getMockDrafts()` | SSG — Source tabs, round filter |
+| `/mocks` | `getMockDrafts()` | SSG — Single Source / Compare view with team filter |
 
 ### Big Board (Home Page)
 
