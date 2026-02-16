@@ -146,10 +146,12 @@ function CompareView({
 }) {
   const [teamFilter, setTeamFilter] = useState<string>("ALL");
 
+  const maxSources = teamFilter === "ALL" ? 5 : 10;
+
   const toggleSource = (src: string) => {
     if (compareSources.includes(src)) {
       setCompareSources(compareSources.filter((s) => s !== src));
-    } else if (compareSources.length < 5) {
+    } else if (compareSources.length < maxSources) {
       setCompareSources([...compareSources, src]);
     }
   };
@@ -221,7 +223,7 @@ function CompareView({
 
       {/* Controls row: instructions + team filter */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
-        <p className="text-xs text-gray-500">Select up to 5 sources to compare (first round).</p>
+        <p className="text-xs text-gray-500">Select up to {maxSources} sources to compare{teamFilter === "ALL" ? " (first round)" : ""}.</p>
         <div className="flex items-center gap-2">
           <label className="text-xs text-gray-500">Team:</label>
           <select
