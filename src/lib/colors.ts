@@ -160,12 +160,17 @@ export function getGradeColor(label: string, value: number): string {
 
 /**
  * Color a PFF score using percentile data from position boards.
- * Position board percentiles are 0–1 where 1.0 = best in the group.
- * These percentiles are already correctly oriented for all stats
- * (including lower-is-better stats). Neutral stats get no color.
+ * Position board percentiles are NAIVE RANK: 0–1 where 1.0 = highest raw value.
+ * For "higher is better" stats this is correct (1.0 = best).
+ * For "lower is better" stats (e.g. Sacks Allowed), we flip: 0.0 = best.
+ * Neutral stats get no color.
  */
 export function getPffColorByPercentile(metric: string, percentile: number): string {
   if (PFF_NEUTRAL.has(metric)) return PLAIN;
+  if (PFF_LOWER_IS_BETTER.has(metric)) {
+    // Stored percentile: 1.0 = highest raw value = WORST → flip
+    return colorFromPercentile(1 - percentile);
+  }
   return colorFromPercentile(percentile);
 }
 

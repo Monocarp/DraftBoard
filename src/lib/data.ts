@@ -469,6 +469,26 @@ export async function getPositionBoards(): Promise<Record<string, PositionBoardP
     }
 
     if (!boards[r.position_group]) boards[r.position_group] = [];
+
+    // For OL groups, rename bare pressure metrics to "...Allowed" to disambiguate
+    // from DL/ED generated stats (where higher is better).
+    // IOL/OT: "Hits" means "Hits Allowed" (lower is better)
+    // DT/ED:  "Hits" means "Hits Generated" (higher is better)
+    let pffScores = r.pff_scores ?? {};
+    if (r.position_group === "IOL" || r.position_group === "OT") {
+      const OL_RENAMES: Record<string, string> = {
+        "Hits": "Hits Allowed",
+        "Sacks": "Sacks Allowed",
+        "Hurries": "Hurries Allowed",
+        "Pressures": "Pressures Allowed",
+      };
+      const renamed: typeof pffScores = {};
+      for (const [key, val] of Object.entries(pffScores)) {
+        renamed[OL_RENAMES[key] ?? key] = val;
+      }
+      pffScores = renamed;
+    }
+
     boards[r.position_group].push({
       name: p.name,
       slug: p.slug,
@@ -481,7 +501,7 @@ export async function getPositionBoards(): Promise<Record<string, PositionBoardP
       projected_role: r.projected_role,
       projected_round: r.projected_round,
       grades: r.grades ?? {},
-      pff_scores: r.pff_scores ?? {},
+      pff_scores: pffScores,
       athletic_scores: r.athletic_scores ?? {},
       strengths: r.strengths,
       weaknesses: r.weaknesses,
