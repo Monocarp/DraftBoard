@@ -20,7 +20,7 @@ export default function MockDraftsView({
 }) {
   const sources = Object.keys(mocks).sort();
   const [selectedSource, setSelectedSource] = useState(sources[0] || "");
-  const [viewMode, setViewMode] = useState<"single" | "compare">("single");
+  const [viewMode, setViewMode] = useState<"single" | "compare" | "projection">("single");
   const [compareSources, setCompareSources] = useState<string[]>(sources.slice(0, 3));
 
   const picks = mocks[selectedSource] || [];
@@ -51,6 +51,14 @@ export default function MockDraftsView({
           }`}
         >
           Compare
+        </button>
+        <button
+          onClick={() => setViewMode("projection")}
+          className={`rounded-md px-4 py-2 text-sm font-medium transition-colors ${
+            viewMode === "projection" ? "bg-orange-500 text-white" : "text-gray-400 hover:text-white"
+          }`}
+        >
+          Pick Projection
         </button>
       </div>
 
@@ -123,9 +131,218 @@ export default function MockDraftsView({
             </table>
           </div>
         </>
-      ) : (
+      ) : viewMode === "compare" ? (
         /* Compare view */
         <CompareView mocks={mocks} sources={sources} compareSources={compareSources} setCompareSources={setCompareSources} mockDates={mockDates} />
+      ) : (
+        /* Pick Projection view */
+        <PickProjectionView mocks={mocks} sources={sources} />
+      )}
+    </div>
+  );
+}
+
+// ─── Pick Projection View ───────────────────────────────────────────────────
+
+interface ProjectionCandidate {
+  player: string;
+  slug: string | null;
+  position: string | null;
+  count: number;
+  percentage: number;
+  sources: string[];
+}
+
+interface ProjectionRow {
+  pickNum: number;
+  tradeNote: string | null;
+  top3: (ProjectionCandidate | null)[];
+}
+
+function PickProjectionView({
+  mocks,
+  sources,
+}: {
+  mocks: Record<string, MockPick[]>;
+  sources: string[];
+}) {
+  // Collect all unique teams across every source
+  const allTeams = Array.from(
+    new Set(
+      sources.flatMap((s) =>
+        (mocks[s] || []).map((p) => p.team).filter(Boolean) as string[]
+      )
+    )
+  ).sort();
+
+  const [selectedTeam, setSelectedTeam] = useState<string>(allTeams[0] || "");
+
+  // Build projection data for the selected team
+  const rows: ProjectionRow[] = (() => {
+    if (!selectedTeam) return [];
+
+    // Gather all picks for this team across every source
+    // pickNum → { player, slug, position, source }[]
+    const pickMap = new Map<
+      number,
+      { player: string; slug: string | null; position: string | null; source: string; tradeNote: string | null }[]
+    >();
+
+    for (const src of sources) {
+      for (const pk of mocks[src] || []) {
+        if (pk.team !== selectedTeam || pk.pick == null || !pk.player) continue;
+        if (!pickMap.has(pk.pick)) pickMap.set(pk.pick, []);
+        pickMap.get(pk.pick)!.push({
+          player: pk.player,
+          slug: pk.slug,
+          position: pk.position,
+          source: src,
+          tradeNote: pk.tradeNote,
+        });
+      }
+    }
+
+    // Sort by pick number
+    const sortedPicks = Array.from(pickMap.keys()).sort((a, b) => a - b);
+
+    return sortedPicks.map((pickNum) => {
+      const entries = pickMap.get(pickNum)!;
+      const totalSources = entries.length;
+      const tradeNote = entries[0]?.tradeNote ?? null;
+
+      // Count occurrences by player name
+      const countMap = new Map<string, { count: number; slug: string | null; position: string | null; sources: string[] }>();
+      for (const e of entries) {
+        const existing = countMap.get(e.player);
+        if (existing) {
+          existing.count++;
+          existing.sources.push(e.source);
+          if (!existing.slug && e.slug) existing.slug = e.slug;
+          if (!existing.position && e.position) existing.position = e.position;
+        } else {
+          countMap.set(e.player, { count: 1, slug: e.slug, position: e.position, sources: [e.source] });
+        }
+      }
+
+      // Sort by count desc, take top 3
+      const sorted = Array.from(countMap.entries())
+        .sort((a, b) => b[1].count - a[1].count)
+        .slice(0, 3);
+
+      const top3: (ProjectionCandidate | null)[] = [];
+      for (let i = 0; i < 3; i++) {
+        if (sorted[i]) {
+          const [player, data] = sorted[i];
+          top3.push({
+            player,
+            slug: data.slug,
+            position: data.position,
+            count: data.count,
+            percentage: Math.round((data.count / totalSources) * 100),
+            sources: data.sources,
+          });
+        } else {
+          top3.push(null);
+        }
+      }
+
+      return { pickNum, tradeNote, top3 };
+    });
+  })();
+
+  const totalSources = sources.length;
+
+  return (
+    <div>
+      {/* Team selector */}
+      <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-6">
+        <div className="flex items-center gap-2">
+          <label className="text-sm text-gray-400 font-medium">Team:</label>
+          <select
+            value={selectedTeam}
+            onChange={(e) => setSelectedTeam(e.target.value)}
+            className="rounded-lg border border-[#2a3a4e] bg-[#111827] px-4 py-2 text-sm text-white focus:outline-none focus:border-orange-500/50"
+          >
+            {allTeams.map((t) => (
+              <option key={t} value={t}>{t}</option>
+            ))}
+          </select>
+        </div>
+        <p className="text-xs text-gray-500">
+          Aggregated from {totalSources} mock drafts — showing top 3 most projected players at each pick.
+        </p>
+      </div>
+
+      {rows.length === 0 ? (
+        <div className="rounded-xl border border-[#2a3a4e] bg-[#111827] p-8 text-center">
+          <p className="text-sm text-gray-400">No mock draft data found for {selectedTeam}.</p>
+        </div>
+      ) : (
+        <div className="rounded-xl border border-[#2a3a4e] bg-[#111827] overflow-x-auto">
+          <table className="w-full">
+            <thead>
+              <tr className="border-b border-[#2a3a4e] text-left text-xs font-medium uppercase tracking-wider text-gray-500">
+                <th className="px-3 py-3 w-16">Pick</th>
+                <th className="px-3 py-3">Most Likely</th>
+                <th className="px-3 py-3">2nd Most Likely</th>
+                <th className="px-3 py-3">3rd Most Likely</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-[#2a3a4e]/50">
+              {rows.map((row) => (
+                <tr key={row.pickNum} className="board-row">
+                  <td className="px-3 py-3">
+                    <span className="text-sm font-bold text-gray-500">
+                      {row.pickNum}
+                    </span>
+                    {row.tradeNote && (
+                      <span className="block text-[10px] text-gray-600">{row.tradeNote}</span>
+                    )}
+                  </td>
+                  {row.top3.map((candidate, i) => (
+                    <td key={i} className="px-3 py-3">
+                      {candidate ? (
+                        <div>
+                          <div className="flex items-center gap-1.5">
+                            {candidate.slug ? (
+                              <Link
+                                href={`/player/${candidate.slug}`}
+                                className="text-sm font-semibold text-white hover:text-orange-400 transition-colors"
+                              >
+                                {candidate.player}
+                              </Link>
+                            ) : (
+                              <span className="text-sm font-semibold text-white">
+                                {candidate.player}
+                              </span>
+                            )}
+                            <PositionBadge position={candidate.position} />
+                          </div>
+                          <div className="mt-0.5 flex items-center gap-2">
+                            <span className={`text-xs font-bold ${
+                              candidate.percentage >= 50
+                                ? "text-green-400"
+                                : candidate.percentage >= 25
+                                ? "text-yellow-400"
+                                : "text-gray-400"
+                            }`}>
+                              {candidate.percentage}%
+                            </span>
+                            <span className="text-[10px] text-gray-500">
+                              ({candidate.count}/{totalSources} mocks)
+                            </span>
+                          </div>
+                        </div>
+                      ) : (
+                        <span className="text-xs text-gray-600">N/A</span>
+                      )}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       )}
     </div>
   );
