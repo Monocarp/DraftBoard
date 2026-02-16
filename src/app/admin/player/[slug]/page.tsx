@@ -18,6 +18,12 @@ export default async function EditPlayerPage({
 
   if (!player) notFound();
 
+  // Fetch injury history for this player
+  const { data: injuryRows } = await supabase
+    .from("injury_history")
+    .select("detail, recovery_time, year")
+    .eq("player_id", player.id);
+
   return (
     <PlayerEditorForm
       player={{
@@ -47,6 +53,11 @@ export default async function EditPlayerPage({
         draftbuzz_grades: player.draftbuzz_grades ?? {},
         alignments: player.alignments ?? {},
         skills_traits: player.skills_traits ?? {},
+        injuries: (injuryRows ?? []).map((r) => ({
+          detail: r.detail,
+          recovery_time: r.recovery_time ?? null,
+          year: r.year ?? null,
+        })),
       }}
     />
   );

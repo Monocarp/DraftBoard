@@ -55,6 +55,7 @@ interface PlayerData {
   draftbuzz_grades: Record<string, number | null>;
   alignments: Record<string, unknown>;
   skills_traits: Record<string, unknown>;
+  injuries: { detail: string; recovery_time: string | null; year: string | null }[];
 }
 
 export function PlayerEditorForm({ player }: { player: PlayerData }) {
@@ -237,6 +238,11 @@ export function PlayerEditorForm({ player }: { player: PlayerData }) {
         <TextArea label="Accolades" name="accolades" defaultValue={player.accolades ?? ""} rows={3} className="mt-4" />
       </Section>
 
+      {/* Injury History */}
+      <Section title="Injury History">
+        <InjuryHistoryEditor defaultValue={player.injuries} />
+      </Section>
+
       {/* Skills & Traits */}
       <Section title="Skills & Traits">
         <SkillsTraitsEditor defaultValue={player.skills_traits as Record<string, { positives: string | null; negatives: string | null }>} />
@@ -382,6 +388,90 @@ function JsonField({
         className="w-full rounded-lg border border-[#2a3a4e] bg-[#0d1320] px-3 py-2 text-xs text-white placeholder-gray-600 focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500 transition-colors font-mono"
         placeholder="{}"
       />
+    </div>
+  );
+}
+
+function InjuryHistoryEditor({
+  defaultValue,
+}: {
+  defaultValue: { detail: string; recovery_time: string | null; year: string | null }[];
+}) {
+  const [entries, setEntries] = useState(defaultValue.length > 0 ? defaultValue : []);
+
+  const addEntry = () =>
+    setEntries([...entries, { detail: "", recovery_time: null, year: null }]);
+
+  const removeEntry = (index: number) =>
+    setEntries(entries.filter((_, i) => i !== index));
+
+  const updateEntry = (index: number, field: string, value: string) => {
+    setEntries(entries.map((e, i) =>
+      i === index ? { ...e, [field]: value || null } : e
+    ));
+  };
+
+  return (
+    <div>
+      {/* Hidden field carries the JSON to the form submission */}
+      <input type="hidden" name="injuries" value={JSON.stringify(entries)} />
+
+      {entries.length === 0 ? (
+        <p className="text-xs text-gray-500 mb-3">No injuries recorded.</p>
+      ) : (
+        <div className="space-y-3 mb-3">
+          {entries.map((entry, i) => (
+            <div key={i} className="flex gap-2 items-start">
+              <div className="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-2">
+                <div className="sm:col-span-1">
+                  <label className="block text-[10px] font-medium text-gray-500 mb-0.5">Injury Detail</label>
+                  <input
+                    type="text"
+                    value={entry.detail}
+                    onChange={(e) => updateEntry(i, "detail", e.target.value)}
+                    placeholder="e.g. Torn ACL (Left Knee)"
+                    className="w-full rounded-lg border border-[#2a3a4e] bg-[#0d1320] px-2 py-1.5 text-xs text-white placeholder-gray-600 focus:border-orange-500 focus:outline-none"
+                  />
+                </div>
+                <div>
+                  <label className="block text-[10px] font-medium text-gray-500 mb-0.5">Recovery Time</label>
+                  <input
+                    type="text"
+                    value={entry.recovery_time ?? ""}
+                    onChange={(e) => updateEntry(i, "recovery_time", e.target.value)}
+                    placeholder="e.g. 6-9 months"
+                    className="w-full rounded-lg border border-[#2a3a4e] bg-[#0d1320] px-2 py-1.5 text-xs text-white placeholder-gray-600 focus:border-orange-500 focus:outline-none"
+                  />
+                </div>
+                <div>
+                  <label className="block text-[10px] font-medium text-gray-500 mb-0.5">Year</label>
+                  <input
+                    type="text"
+                    value={entry.year ?? ""}
+                    onChange={(e) => updateEntry(i, "year", e.target.value)}
+                    placeholder="e.g. 2024"
+                    className="w-full rounded-lg border border-[#2a3a4e] bg-[#0d1320] px-2 py-1.5 text-xs text-white placeholder-gray-600 focus:border-orange-500 focus:outline-none"
+                  />
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => removeEntry(i)}
+                className="mt-4 text-red-400/60 hover:text-red-400 text-xs transition-colors"
+              >
+                ✕
+              </button>
+            </div>
+          ))}
+        </div>
+      )}
+      <button
+        type="button"
+        onClick={addEntry}
+        className="rounded-lg border border-dashed border-[#2a3a4e] px-3 py-1.5 text-xs text-gray-400 hover:text-white hover:border-gray-400 transition-colors"
+      >
+        + Add Injury
+      </button>
     </div>
   );
 }

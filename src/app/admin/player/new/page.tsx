@@ -30,6 +30,7 @@ export default function NewPlayerPage() {
         draftbuzz_grades: {},
         alignments: {},
         skills_traits: {},
+        injuries: [],
       }}
     />
   );

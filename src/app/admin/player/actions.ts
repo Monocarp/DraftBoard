@@ -87,6 +87,15 @@ export async function savePlayer(formData: FormData) {
   const alignments = parseJSON("alignments");
   const skills_traits = parseJSON("skills_traits");
 
+  // Parse injuries JSON array
+  const injuriesRaw = formData.get("injuries") as string | null;
+  let injuries: { detail: string; recovery_time: string | null; year: string | null }[] = [];
+  if (injuriesRaw?.trim()) {
+    try { injuries = JSON.parse(injuriesRaw); } catch { injuries = []; }
+  }
+  // Filter out empty entries
+  injuries = injuries.filter((inj) => inj.detail?.trim());
+
   const playerData = {
     name, slug, position, college, height, weight, age, dob, year,
     projected_round, projected_role, ideal_scheme, games, snaps,
@@ -104,6 +113,22 @@ export async function savePlayer(formData: FormData) {
       .update(playerData)
       .eq("id", playerId);
     if (error) return { error: error.message };
+  }
+
+  // Sync injury_history (delete old + insert new)
+  const resolvedId = playerId || (await supabase.from("players").select("id").eq("slug", slug).single()).data?.id;
+  if (resolvedId && injuries.length >= 0) {
+    await supabase.from("injury_history").delete().eq("player_id", resolvedId);
+    if (injuries.length > 0) {
+      await supabase.from("injury_history").insert(
+        injuries.map((inj) => ({
+          player_id: resolvedId,
+          detail: inj.detail.trim(),
+          recovery_time: inj.recovery_time?.trim() || null,
+          year: inj.year?.trim() || null,
+        }))
+      );
+    }
   }
 
   revalidatePath("/admin");
