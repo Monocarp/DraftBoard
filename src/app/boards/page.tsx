@@ -1,4 +1,5 @@
-import { getPositionBoards } from "@/lib/data";
+import { getPositionBoards, getUserPositionRanks } from "@/lib/data";
+import { createSupabaseServer } from "@/lib/supabase-server";
 import PositionBoardsView from "./PositionBoardsView";
 
 export const dynamic = "force-dynamic";
@@ -9,6 +10,19 @@ export const metadata = {
 };
 
 export default async function PositionBoardsPage() {
-  const boards = await getPositionBoards();
-  return <PositionBoardsView boards={boards} />;
+  const [boards, supabase] = await Promise.all([
+    getPositionBoards(),
+    createSupabaseServer(),
+  ]);
+
+  const { data: { user } } = await supabase.auth.getUser();
+  const userRanks = user ? await getUserPositionRanks(user.id) : null;
+
+  return (
+    <PositionBoardsView
+      boards={boards}
+      userRanks={userRanks}
+      isLoggedIn={!!user}
+    />
+  );
 }

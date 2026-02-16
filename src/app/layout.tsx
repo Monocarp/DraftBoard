@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import { createSupabaseServer } from "@/lib/supabase-server";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -32,15 +33,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const supabase = await createSupabaseServer();
+  const { data: { user } } = await supabase.auth.getUser();
+
   return (
     <html lang="en" className="dark">
       <body className={`${inter.variable} antialiased bg-[#0a0f1a] text-gray-100`}>
-        <Navigation />
+        <Navigation userEmail={user?.email ?? null} />
         <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
           {children}
         </main>

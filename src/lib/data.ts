@@ -570,3 +570,51 @@ export async function getProfileCount(): Promise<number> {
   if (error) console.error("Failed to fetch profile count:", error.message);
   return count ?? 0;
 }
+
+// ─── User Boards ────────────────────────────────────────────────────────────
+
+export async function getUserBoard(userId: string): Promise<BoardPlayer[]> {
+  const rows = await fetchAll<{
+    id: string;
+    rank: number;
+    players: { slug: string; name: string; position: string | null; college: string | null };
+  }>(
+    "user_boards",
+    "id, rank, players(slug, name, position, college)",
+    (q) => q.eq("user_id", userId).order("rank"),
+  );
+
+  return rows.map((r) => {
+    const p = r.players as unknown as { slug: string; name: string; position: string | null; college: string | null };
+    return {
+      rank: r.rank,
+      player: p.name,
+      position: p.position ?? "",
+      school: p.college ?? "",
+      slug: p.slug,
+    };
+  });
+}
+
+export async function getUserPositionRanks(
+  userId: string,
+): Promise<Record<string, Array<{ player_id: string; slug: string; rank: number }>>> {
+  const rows = await fetchAll<{
+    player_id: string;
+    position_group: string;
+    rank: number;
+    players: { slug: string };
+  }>(
+    "user_position_ranks",
+    "player_id, position_group, rank, players(slug)",
+    (q) => q.eq("user_id", userId).order("rank"),
+  );
+
+  const result: Record<string, Array<{ player_id: string; slug: string; rank: number }>> = {};
+  for (const r of rows) {
+    const p = r.players as unknown as { slug: string };
+    if (!result[r.position_group]) result[r.position_group] = [];
+    result[r.position_group].push({ player_id: r.player_id, slug: p.slug, rank: r.rank });
+  }
+  return result;
+}

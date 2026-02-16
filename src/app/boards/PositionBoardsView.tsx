@@ -1,20 +1,42 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useTransition } from "react";
 import Link from "next/link";
-import PositionBadge from "@/components/PositionBadge";
 import type { PositionBoardPlayer } from "@/lib/types";
 import { getGradeColor, getPffColorByPercentile, parseGradeValue, PLAIN } from "@/lib/colors";
+import {
+  setUserPositionRanks,
+  clearUserPositionRanks,
+} from "@/app/user-board/actions";
 
 const BOARD_ORDER = ["CB", "DT", "ED", "LB", "IOL", "OT", "SAF", "TE", "WR"];
 
+type UserRanksMap = Record<string, Array<{ player_id: string; slug: string; rank: number }>> | null;
+
 export default function PositionBoardsView({
   boards,
+  userRanks,
+  isLoggedIn,
 }: {
   boards: Record<string, PositionBoardPlayer[]>;
+  userRanks?: UserRanksMap;
+  isLoggedIn?: boolean;
 }) {
   const [activeBoard, setActiveBoard] = useState(BOARD_ORDER[0]);
   const [expandedRows, setExpandedRows] = useState<Set<string>>(new Set());
+  const [myMode, setMyMode] = useState(false);
+  const [localUserOrder, setLocalUserOrder] = useState<Record<string, string[]>>(() => {
+    // Initialise from server-provided userRanks
+    if (!userRanks) return {};
+    const out: Record<string, string[]> = {};
+    for (const [group, entries] of Object.entries(userRanks)) {
+      out[group] = entries.sort((a, b) => a.rank - b.rank).map((e) => e.slug);
+    }
+    return out;
+  });
+  const [isPending, startTransition] = useTransition();
+  const [dragIdx, setDragIdx] = useState<number | null>(null);
+  const [dragOverIdx, setDragOverIdx] = useState<number | null>(null);
 
   const toggleRow = (slug: string) => {
     setExpandedRows((prev) => {
@@ -25,17 +47,90 @@ export default function PositionBoardsView({
     });
   };
 
-  const players = boards[activeBoard] || [];
-  
+  const defaultPlayers = boards[activeBoard] || [];
+
+  // Build ordered player list for "My Rankings" mode
+  const getUserOrderedPlayers = (): PositionBoardPlayer[] => {
+    const slugOrder = localUserOrder[activeBoard];
+    if (!slugOrder || slugOrder.length === 0) return [];
+    const bySlug = new Map(defaultPlayers.map((p) => [p.slug, p]));
+    return slugOrder
+      .map((slug) => bySlug.get(slug))
+      .filter(Boolean) as PositionBoardPlayer[];
+  };
+
+  const players = myMode && isLoggedIn ? getUserOrderedPlayers() : defaultPlayers;
+  const hasUserRanks = !!(localUserOrder[activeBoard]?.length);
+
   const toggleExpandAll = () => {
     if (expandedRows.size === players.length) {
       setExpandedRows(new Set());
     } else {
-      setExpandedRows(new Set(players.map(p => p.slug)));
+      setExpandedRows(new Set(players.map((p) => p.slug)));
     }
   };
-  
+
   const allExpanded = expandedRows.size === players.length && players.length > 0;
+
+  // ─── My Rankings: Copy from default ─────────────────────────────────────
+  const handleCopyDefault = () => {
+    const slugs = defaultPlayers.map((p) => p.slug);
+    setLocalUserOrder((prev) => ({ ...prev, [activeBoard]: slugs }));
+    startTransition(async () => {
+      await setUserPositionRanks(activeBoard, slugs);
+    });
+  };
+
+  // ─── My Rankings: Clear ─────────────────────────────────────────────────
+  const handleClear = () => {
+    setLocalUserOrder((prev) => ({ ...prev, [activeBoard]: [] }));
+    startTransition(async () => {
+      await clearUserPositionRanks(activeBoard);
+    });
+  };
+
+  // ─── Drag & Drop for My Rankings ────────────────────────────────────────
+  const handleDragStart = (idx: number) => setDragIdx(idx);
+
+  const handleDragOver = (e: React.DragEvent, idx: number) => {
+    e.preventDefault();
+    setDragOverIdx(idx);
+  };
+
+  const handleDrop = (dropIdx: number) => {
+    if (dragIdx === null || dragIdx === dropIdx) {
+      setDragIdx(null);
+      setDragOverIdx(null);
+      return;
+    }
+
+    const currentOrder = localUserOrder[activeBoard] || [];
+    const next = [...currentOrder];
+    const [moved] = next.splice(dragIdx, 1);
+    next.splice(dropIdx, 0, moved);
+
+    setLocalUserOrder((prev) => ({ ...prev, [activeBoard]: next }));
+    setDragIdx(null);
+    setDragOverIdx(null);
+
+    startTransition(async () => {
+      await setUserPositionRanks(activeBoard, next);
+    });
+  };
+
+  const handleDragEnd = () => {
+    setDragIdx(null);
+    setDragOverIdx(null);
+  };
+
+  // ─── My Rankings: Remove player ─────────────────────────────────────────
+  const handleRemoveFromRanks = (slug: string) => {
+    const next = (localUserOrder[activeBoard] || []).filter((s) => s !== slug);
+    setLocalUserOrder((prev) => ({ ...prev, [activeBoard]: next }));
+    startTransition(async () => {
+      await setUserPositionRanks(activeBoard, next);
+    });
+  };
 
   return (
     <div>
@@ -73,11 +168,66 @@ export default function PositionBoardsView({
         </button>
       </div>
 
+      {/* My Rankings toggle + controls */}
+      {isLoggedIn && (
+        <div className="mb-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
+          <button
+            onClick={() => setMyMode((v) => !v)}
+            className={`rounded-lg border px-4 py-2 text-sm font-medium transition-colors ${
+              myMode
+                ? "bg-blue-500/20 border-blue-500/50 text-blue-300"
+                : "border-[#2a3a4e] bg-[#111827] text-gray-400 hover:text-white hover:border-blue-500/50"
+            }`}
+          >
+            {myMode ? "✓ My Rankings" : "My Rankings"}
+          </button>
+
+          {myMode && (
+            <div className="flex gap-2">
+              <button
+                onClick={handleCopyDefault}
+                className="rounded-lg border border-[#2a3a4e] bg-[#111827] px-3 py-2 text-xs font-medium text-gray-400 hover:text-blue-300 hover:border-blue-500/50 transition-colors"
+              >
+                Copy Default Order
+              </button>
+              {hasUserRanks && (
+                <button
+                  onClick={handleClear}
+                  className="rounded-lg border border-[#2a3a4e] bg-[#111827] px-3 py-2 text-xs font-medium text-gray-400 hover:text-red-400 hover:border-red-500/50 transition-colors"
+                >
+                  Clear My Ranks
+                </button>
+              )}
+            </div>
+          )}
+
+          {isPending && (
+            <span className="text-xs text-blue-400 animate-pulse self-center">Saving...</span>
+          )}
+        </div>
+      )}
+
+      {/* Empty state for My Rankings */}
+      {myMode && isLoggedIn && !hasUserRanks && (
+        <div className="mb-4 rounded-xl border border-dashed border-blue-500/30 bg-blue-500/5 py-8 text-center">
+          <p className="text-sm text-gray-400 mb-2">You haven&apos;t ranked {activeBoard} players yet.</p>
+          <button
+            onClick={handleCopyDefault}
+            className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-500 transition-colors"
+          >
+            Start from Default Order
+          </button>
+        </div>
+      )}
+
       {/* Table */}
       <div className="overflow-x-auto rounded-xl border border-[#2a3a4e] bg-[#111827]">
         <table className="w-full">
           <thead className="sticky top-0 z-10 bg-[#111827]">
             <tr className="border-b border-[#2a3a4e] text-left text-xs font-medium uppercase tracking-wider text-gray-500">
+              {myMode && isLoggedIn && hasUserRanks && (
+                <th className="px-2 sm:px-3 py-2 sm:py-3 w-8"></th>
+              )}
               <th className="px-2 sm:px-3 py-2 sm:py-3 w-8 sm:w-10"></th>
               <th className="px-2 sm:px-3 py-2 sm:py-3 w-8 sm:w-10">#</th>
               <th className="px-2 sm:px-3 py-2 sm:py-3">Player</th>
@@ -86,11 +236,16 @@ export default function PositionBoardsView({
               <th className="px-2 sm:px-3 py-2 sm:py-3 hidden md:table-cell">Age</th>
               <th className="px-2 sm:px-3 py-2 sm:py-3 hidden lg:table-cell">Prj Round</th>
               <th className="px-2 sm:px-3 py-2 sm:py-3 hidden lg:table-cell">Role</th>
+              {myMode && isLoggedIn && hasUserRanks && (
+                <th className="px-2 sm:px-3 py-2 sm:py-3 w-8"></th>
+              )}
             </tr>
           </thead>
           <tbody>
             {players.map((p, idx) => {
               const isExpanded = expandedRows.has(p.slug);
+              const isDraggable = myMode && isLoggedIn && hasUserRanks;
+              const colSpan = isDraggable ? 10 : 8;
               return (
                 <PlayerRow
                   key={p.slug + idx}
@@ -98,17 +253,26 @@ export default function PositionBoardsView({
                   rank={idx + 1}
                   isExpanded={isExpanded}
                   onToggle={() => toggleRow(p.slug)}
+                  draggable={isDraggable}
+                  isDragging={dragIdx === idx}
+                  isDragOver={dragOverIdx === idx}
+                  onDragStart={() => handleDragStart(idx)}
+                  onDragOver={(e) => handleDragOver(e, idx)}
+                  onDrop={() => handleDrop(idx)}
+                  onDragEnd={handleDragEnd}
+                  onRemove={isDraggable ? () => handleRemoveFromRanks(p.slug) : undefined}
+                  colSpan={colSpan}
                 />
               );
             })}
           </tbody>
         </table>
-        {players.length === 0 && (
+        {players.length === 0 && !myMode && (
           <div className="py-12 text-center text-gray-500">No players on this board.</div>
         )}
       </div>
       <p className="mt-2 text-xs text-gray-600">
-        {players.length} players on the {activeBoard} board
+        {players.length} players on the {activeBoard} board{myMode && isLoggedIn ? " (your ranking)" : ""}
       </p>
     </div>
   );
@@ -119,15 +283,55 @@ function PlayerRow({
   rank,
   isExpanded,
   onToggle,
+  draggable,
+  isDragging,
+  isDragOver,
+  onDragStart,
+  onDragOver,
+  onDrop,
+  onDragEnd,
+  onRemove,
+  colSpan,
 }: {
   player: PositionBoardPlayer;
   rank: number;
   isExpanded: boolean;
   onToggle: () => void;
+  draggable?: boolean;
+  isDragging?: boolean;
+  isDragOver?: boolean;
+  onDragStart?: () => void;
+  onDragOver?: (e: React.DragEvent) => void;
+  onDrop?: () => void;
+  onDragEnd?: () => void;
+  onRemove?: () => void;
+  colSpan?: number;
 }) {
   return (
     <>
-      <tr className="border-b border-[#2a3a4e]/50 board-row">
+      <tr
+        draggable={draggable}
+        onDragStart={onDragStart}
+        onDragOver={onDragOver}
+        onDrop={onDrop}
+        onDragEnd={onDragEnd}
+        className={`border-b border-[#2a3a4e]/50 board-row ${
+          draggable ? "cursor-grab active:cursor-grabbing" : ""
+        } ${
+          isDragging
+            ? "opacity-40"
+            : isDragOver
+              ? "bg-blue-500/10 border-t-2 border-blue-500"
+              : ""
+        }`}
+      >
+        {draggable && (
+          <td className="px-2 sm:px-3 py-2 sm:py-3">
+            <svg className="h-4 w-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8h16M4 16h16" />
+            </svg>
+          </td>
+        )}
         <td className="px-2 sm:px-3 py-2 sm:py-3">
           <button
             onClick={onToggle}
@@ -144,7 +348,7 @@ function PlayerRow({
             </svg>
           </button>
         </td>
-        <td className="px-2 sm:px-3 py-2 sm:py-3 text-sm font-bold text-gray-500">{p.pos_rank ?? rank}</td>
+        <td className="px-2 sm:px-3 py-2 sm:py-3 text-sm font-bold text-gray-500">{draggable ? rank : (p.pos_rank ?? rank)}</td>
         <td className="px-2 sm:px-3 py-2 sm:py-3">
           <Link
             href={`/player/${p.slug}`}
@@ -168,10 +372,23 @@ function PlayerRow({
           )}
         </td>
         <td className="px-2 sm:px-3 py-2 sm:py-3 text-xs text-gray-400 hidden lg:table-cell">{p.projected_role || "—"}</td>
+        {draggable && (
+          <td className="px-2 sm:px-3 py-2 sm:py-3">
+            <button
+              onClick={onRemove}
+              className="text-gray-600 hover:text-red-400 transition-colors"
+              title="Remove from my rankings"
+            >
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </td>
+        )}
       </tr>
       {isExpanded && (
         <tr className="border-b border-[#2a3a4e]/50">
-          <td colSpan={8} className="p-0">
+          <td colSpan={colSpan ?? 8} className="p-0">
             <ExpandedDetails player={p} />
           </td>
         </tr>

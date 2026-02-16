@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { logoutUser } from "@/app/(auth)/actions";
 
 const NAV_ITEMS = [
   { href: "/", label: "Big Board" },
@@ -12,7 +13,7 @@ const NAV_ITEMS = [
   { href: "/players", label: "All Players" },
 ];
 
-export default function Navigation() {
+export default function Navigation({ userEmail }: { userEmail?: string | null }) {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -63,6 +64,26 @@ export default function Navigation() {
             >
               Admin
             </Link>
+
+            {/* User auth */}
+            {userEmail ? (
+              <div className="ml-2 flex items-center gap-2">
+                <span className="text-xs text-gray-500 max-w-[120px] truncate" title={userEmail}>{userEmail}</span>
+                <button
+                  onClick={() => logoutUser()}
+                  className="px-3 py-1.5 rounded-lg text-xs font-medium text-gray-400 hover:text-white border border-[#2a3a4e] hover:border-gray-500 transition-colors"
+                >
+                  Sign Out
+                </button>
+              </div>
+            ) : (
+              <Link
+                href="/login"
+                className="ml-2 px-3 py-2 rounded-lg text-sm font-medium text-gray-400 hover:text-white border border-[#2a3a4e] hover:border-orange-500/50 transition-colors"
+              >
+                Sign In
+              </Link>
+            )}
           </div>
 
           {/* Mobile menu button */}
@@ -114,6 +135,26 @@ export default function Navigation() {
               >
                 Admin
               </Link>
+
+              {userEmail ? (
+                <div className="px-4 py-2 flex items-center justify-between">
+                  <span className="text-xs text-gray-500 truncate max-w-[180px]" title={userEmail}>{userEmail}</span>
+                  <button
+                    onClick={() => { setMobileOpen(false); logoutUser(); }}
+                    className="text-xs text-gray-400 hover:text-white transition-colors"
+                  >
+                    Sign Out
+                  </button>
+                </div>
+              ) : (
+                <Link
+                  href="/login"
+                  onClick={() => setMobileOpen(false)}
+                  className="block px-4 py-2 rounded-lg text-sm font-medium text-gray-400 hover:text-white"
+                >
+                  Sign In
+                </Link>
+              )}
             </div>
           </div>
         )}
