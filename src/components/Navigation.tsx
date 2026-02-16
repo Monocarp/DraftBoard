@@ -13,7 +13,7 @@ const NAV_ITEMS = [
   { href: "/players", label: "All Players" },
 ];
 
-export default function Navigation({ userEmail }: { userEmail?: string | null }) {
+export default function Navigation({ userEmail, isAdmin }: { userEmail?: string | null; isAdmin?: boolean }) {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -53,7 +53,8 @@ export default function Navigation({ userEmail }: { userEmail?: string | null })
               );
             })}
 
-            {/* Admin link */}
+            {/* Admin link (admin only) */}
+            {isAdmin && (
             <Link
               href="/admin"
               className={`ml-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors border ${
@@ -64,6 +65,7 @@ export default function Navigation({ userEmail }: { userEmail?: string | null })
             >
               Admin
             </Link>
+            )}
 
             {/* User auth */}
             {userEmail ? (
@@ -124,6 +126,7 @@ export default function Navigation({ userEmail }: { userEmail?: string | null })
             })}
 
             <div className="border-t border-[#2a3a4e] mt-2 pt-2">
+              {isAdmin && (
               <Link
                 href="/admin"
                 onClick={() => setMobileOpen(false)}
@@ -135,6 +138,7 @@ export default function Navigation({ userEmail }: { userEmail?: string | null })
               >
                 Admin
               </Link>
+              )}
 
               {userEmail ? (
                 <div className="px-4 py-2 flex items-center justify-between">

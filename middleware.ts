@@ -31,18 +31,19 @@ export async function middleware(request: NextRequest) {
   } = await supabase.auth.getUser();
 
   // Protect /admin routes (except /admin/login)
-  if (
-    !user &&
-    request.nextUrl.pathname.startsWith("/admin") &&
-    !request.nextUrl.pathname.startsWith("/admin/login")
-  ) {
+  const isAdminRoute = request.nextUrl.pathname.startsWith("/admin") &&
+    !request.nextUrl.pathname.startsWith("/admin/login");
+  const adminEmail = process.env.ADMIN_EMAIL;
+  const isAdmin = !!user && !!adminEmail && user.email === adminEmail;
+
+  if (isAdminRoute && !isAdmin) {
     const url = request.nextUrl.clone();
-    url.pathname = "/admin/login";
+    url.pathname = user ? "/" : "/admin/login";
     return NextResponse.redirect(url);
   }
 
-  // If logged in and hitting /admin/login, redirect to /admin
-  if (user && request.nextUrl.pathname === "/admin/login") {
+  // If admin and hitting /admin/login, redirect to /admin
+  if (isAdmin && request.nextUrl.pathname === "/admin/login") {
     const url = request.nextUrl.clone();
     url.pathname = "/admin";
     return NextResponse.redirect(url);

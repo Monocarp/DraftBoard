@@ -40,11 +40,12 @@ export default async function RootLayout({
 }>) {
   const supabase = await createSupabaseServer();
   const { data: { user } } = await supabase.auth.getUser();
+  const isAdmin = !!user && user.email === process.env.ADMIN_EMAIL;
 
   return (
     <html lang="en" className="dark">
       <body className={`${inter.variable} antialiased bg-[#0a0f1a] text-gray-100`}>
-        <Navigation userEmail={user?.email ?? null} />
+        <Navigation userEmail={user?.email ?? null} isAdmin={isAdmin} />
         <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
           {children}
         </main>
