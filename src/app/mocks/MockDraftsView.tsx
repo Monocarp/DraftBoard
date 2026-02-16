@@ -175,7 +175,7 @@ function CompareView({
     const pickNums = new Set<number>();
     for (const src of compareSources) {
       for (const p of mocks[src] || []) {
-        if (p.team === teamFilter) pickNums.add(p.pick);
+        if (p.team === teamFilter && p.pick != null) pickNums.add(p.pick);
       }
     }
     const sortedPicks = Array.from(pickNums).sort((a, b) => a - b);
