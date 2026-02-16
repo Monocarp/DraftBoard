@@ -106,7 +106,7 @@ export default function BigBoardPage({
         ) : activeTab === "expanded" ? (
           <ExpandedBoardTable players={board.expanded} title="Expanded Big Board" />
         ) : activeTab === "myboard" && userBoard ? (
-          <UserBoardEditor initialPlayers={userBoard} />
+          <UserBoardEditor initialPlayers={userBoard} consensusBoard={board.consensus} />
         ) : null}
       </div>
     </div>

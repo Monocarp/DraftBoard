@@ -14,6 +14,41 @@ async function getAuthUser() {
 
 // ─── User Big Board ─────────────────────────────────────────────────────────
 
+export async function populateUserBoard(orderedSlugs: string[]) {
+  const { supabase, user } = await getAuthUser();
+
+  // Resolve slugs to player_ids
+  const { data: players } = await supabase
+    .from("players")
+    .select("id, slug")
+    .in("slug", orderedSlugs);
+
+  if (!players) return { error: "Failed to load players" };
+
+  const slugToId = new Map<string, string>();
+  for (const p of players) slugToId.set(p.slug as string, p.id as string);
+
+  // Delete existing board
+  await supabase.from("user_boards").delete().eq("user_id", user.id);
+
+  // Insert new board
+  const inserts = orderedSlugs
+    .map((slug, i) => {
+      const playerId = slugToId.get(slug);
+      if (!playerId) return null;
+      return { user_id: user.id, player_id: playerId, rank: i + 1 };
+    })
+    .filter(Boolean);
+
+  if (inserts.length > 0) {
+    const { error } = await supabase.from("user_boards").insert(inserts);
+    if (error) return { error: error.message };
+  }
+
+  revalidatePath("/");
+  return { success: true };
+}
+
 export async function addToUserBoard(playerSlug: string) {
   const { supabase, user } = await getAuthUser();
 

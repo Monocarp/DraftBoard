@@ -9,11 +9,18 @@ import {
   removeFromUserBoard,
   reorderUserBoard,
   searchPlayersForBoard,
+  populateUserBoard,
 } from "@/app/user-board/actions";
 
 type SearchResult = { slug: string; name: string; position: string | null; college: string | null };
 
-export default function UserBoardEditor({ initialPlayers }: { initialPlayers: BoardPlayer[] }) {
+export default function UserBoardEditor({
+  initialPlayers,
+  consensusBoard,
+}: {
+  initialPlayers: BoardPlayer[];
+  consensusBoard?: BoardPlayer[];
+}) {
   const [players, setPlayers] = useState(initialPlayers);
   const [search, setSearch] = useState("");
   const [searchResults, setSearchResults] = useState<SearchResult[]>([]);
@@ -23,6 +30,14 @@ export default function UserBoardEditor({ initialPlayers }: { initialPlayers: Bo
   const [dragIdx, setDragIdx] = useState<number | null>(null);
   const [dragOverIdx, setDragOverIdx] = useState<number | null>(null);
   const searchTimeout = useRef<NodeJS.Timeout | null>(null);
+
+  const handleCopyConsensus = () => {
+    if (!consensusBoard?.length) return;
+    setPlayers(consensusBoard.map((p, i) => ({ ...p, rank: i + 1 })));
+    startTransition(async () => {
+      await populateUserBoard(consensusBoard.map((p) => p.slug));
+    });
+  };
 
   const handleSearch = useCallback((value: string) => {
     setSearch(value);
@@ -192,6 +207,29 @@ export default function UserBoardEditor({ initialPlayers }: { initialPlayers: Bo
           )}
         </div>
 
+        {consensusBoard && consensusBoard.length > 0 && (
+          <button
+            onClick={handleCopyConsensus}
+            className="rounded-lg border border-[#2a3a4e] bg-[#111827] px-3 py-2 text-xs font-medium text-gray-400 hover:text-blue-300 hover:border-blue-500/50 transition-colors whitespace-nowrap"
+          >
+            Copy Consensus Board
+          </button>
+        )}
+
+        {players.length > 0 && (
+          <button
+            onClick={() => {
+              setPlayers([]);
+              startTransition(async () => {
+                await populateUserBoard([]);
+              });
+            }}
+            className="rounded-lg border border-[#2a3a4e] bg-[#111827] px-3 py-2 text-xs font-medium text-gray-400 hover:text-red-400 hover:border-red-500/50 transition-colors whitespace-nowrap"
+          >
+            Clear Board
+          </button>
+        )}
+
         <p className="text-xs text-gray-500 self-center">
           {players.length} player{players.length !== 1 ? "s" : ""} · Drag to reorder
         </p>
@@ -269,9 +307,17 @@ export default function UserBoardEditor({ initialPlayers }: { initialPlayers: Bo
         {players.length === 0 && (
           <div className="py-16 text-center">
             <p className="text-gray-500 mb-2">Your board is empty</p>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-gray-600 mb-4">
               Click &ldquo;Add Player&rdquo; above to start building your personal big board.
             </p>
+            {consensusBoard && consensusBoard.length > 0 && (
+              <button
+                onClick={handleCopyConsensus}
+                className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-500 transition-colors"
+              >
+                Start from Consensus Board
+              </button>
+            )}
           </div>
         )}
       </div>
