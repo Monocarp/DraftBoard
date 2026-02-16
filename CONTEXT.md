@@ -1,9 +1,10 @@
 # NFL Draft Board — Complete Technical Context
 
-> **Last Updated:** February 16, 2026 (e)
+> **Last Updated:** February 16, 2026 (f)
 > **Repository:** https://github.com/Monocarp/DraftBoard
 > **Live Site:** Auto-deploys to Vercel on push to `main`
 > **Supabase Project:** https://cmapsylsrsglhfdwquwe.supabase.co
+> **Companion doc:** [`CONTEXT_INTERNALS.md`](CONTEXT_INTERNALS.md) — module-level details (function signatures, constant values, color system, error handling)
 
 ---
 
@@ -18,29 +19,34 @@
 7. [Name Normalization Pipeline](#7-name-normalization-pipeline)
 8. [Data Import System](#8-data-import-system)
 9. [Profile System](#9-profile-system)
-10. [Admin Backend](#10-admin-backend)
+10. [Unified Color System](#10-unified-color-system)
 11. [Public-Facing Pages](#11-public-facing-pages)
-12. [Authentication & Middleware](#12-authentication--middleware)
-13. [Key Concepts & Gotchas](#13-key-concepts--gotchas)
-14. [Environment & Deployment](#14-environment--deployment)
-15. [Excel Workbook Reference](#15-excel-workbook-reference)
+12. [Admin Backend](#12-admin-backend)
+13. [Shared Components](#13-shared-components)
+14. [Authentication & Middleware](#14-authentication--middleware)
+15. [Key Concepts & Gotchas](#15-key-concepts--gotchas)
+16. [Environment & Deployment](#16-environment--deployment)
+17. [Dependencies](#17-dependencies)
+18. [Excel Workbook Reference](#18-excel-workbook-reference)
+19. [Operations Guide](#19-operations-guide)
+20. [Known Limitations & Deferred Items](#20-known-limitations--deferred-items)
 
 ---
 
 ## 1. Stack & Architecture
 
-| Layer | Technology |
-|---|---|
-| **Framework** | Next.js 16.1.6 (App Router) |
-| **Language** | TypeScript 5 |
-| **UI** | React 19.2.3, Tailwind CSS v4 |
-| **Database** | Supabase (PostgreSQL) |
-| **Auth** | Supabase Auth (email/password) |
-| **Hosting** | Vercel (auto-deploy from GitHub `main`) |
-| **Drag & Drop** | @dnd-kit/core + @dnd-kit/sortable |
-| **File Parsing** | PapaParse (CSV/TSV), SheetJS/xlsx (Excel) |
-| **Analytics** | @vercel/analytics |
-| **PWA** | Progressive Web App configured |
+| Layer | Technology | Version |
+|---|---|---|
+| **Framework** | Next.js (App Router) | 16.1.6 |
+| **Language** | TypeScript | 5 |
+| **UI** | React + Tailwind CSS | 19.2.3 / v4 |
+| **Database** | Supabase (PostgreSQL) | — |
+| **Auth** | Supabase Auth (email/password) | — |
+| **Hosting** | Vercel (auto-deploy from GitHub `main`) | — |
+| **Drag & Drop** | @dnd-kit/core + @dnd-kit/sortable | 6.3.1 / 10.0.0 |
+| **File Parsing** | PapaParse (CSV/TSV), SheetJS/xlsx (Excel) | 5.5.3 / 0.18.5 |
+| **Analytics** | @vercel/analytics | 1.6.1 |
+| **PWA** | Progressive Web App configured | — |
 
 ### Supabase Clients (3 variants)
 
@@ -50,9 +56,9 @@
 | `src/lib/supabase-server.ts` | Server actions (admin mutations) | Anon key + cookies (auth-aware) |
 | `src/lib/supabase-browser.ts` | Client components (login form) | Anon key + browser cookies |
 
-> **Note:** The `SUPABASE_SERVICE_ROLE_KEY` is defined in `.env.local` but never used in code. All server operations use the anon key with Row Level Security disabled.
+> **Note:** `SUPABASE_SERVICE_ROLE_KEY` is defined in `.env.local` but never used in code. All operations use the anon key with Row Level Security disabled.
 
-> **Config:** `next.config.ts` sets `experimental.serverActions.bodySizeLimit = "10mb"` to handle large file uploads (e.g. PFF Stats with 173 columns).
+> **Config:** `next.config.ts` sets `experimental.serverActions.bodySizeLimit = "10mb"` for large file uploads.
 
 ---
 
@@ -60,85 +66,87 @@
 
 ```
 src/
-├── lib/                         # Shared utilities
-│   ├── types.ts                 # All TypeScript interfaces & constants
-│   ├── data.ts                  # Read-only data fetching layer (server-only, HIDDEN_SOURCES filter)
-│   ├── colors.ts                # Unified scale-aware color system for grades, PFF scores, ratings
-│   ├── supabase.ts              # Supabase client (server reads)
+├── lib/                         # Shared utilities (see CONTEXT_INTERNALS.md for full API)
+│   ├── types.ts                 # All TypeScript interfaces, position constants, POS_ALIASES, POSITION_COLORS
+│   ├── data.ts                  # Read-only data fetching layer (server-only, HIDDEN_SOURCES, fetchAll pagination)
+│   ├── colors.ts                # Unified scale-aware color system (grades, PFF, ratings, DraftBuzz)
+│   ├── supabase.ts              # Supabase client (server reads, no cookies)
 │   ├── supabase-server.ts       # Supabase client (server actions, cookie-aware)
 │   └── supabase-browser.ts      # Supabase client (browser)
 │
 ├── components/                  # Shared UI components
-│   ├── Navigation.tsx           # Site-wide nav bar with active tab highlighting
-│   ├── BoardTable.tsx           # Big Board table (consensus & bengals)
-│   ├── ExpandedBoardTable.tsx   # Expanded board with grades, ranks, summary
-│   ├── PlayerGrid.tsx           # Players index grid with search/filter
-│   └── PositionBadge.tsx        # Color-coded position pill
+│   ├── Navigation.tsx           # Site-wide nav bar with active tab highlighting + mobile hamburger
+│   ├── BoardTable.tsx           # Big Board table (consensus & bengals boards)
+│   ├── ExpandedBoardTable.tsx   # Expanded board with expandable rows: grades, ranks, summary
+│   ├── PlayerGrid.tsx           # Players index card grid with search/filter
+│   └── PositionBadge.tsx        # Color-coded position pill (normalizes + colors via types.ts)
 │
 ├── app/                         # Next.js App Router pages
-│   ├── layout.tsx               # Root layout (dark theme, navigation, analytics)
-│   ├── page.tsx                 # Home: Big Board (tabbed: Bengals/Consensus/Expanded)
-│   ├── BigBoardPage.tsx         # Client component for tabbed board view
+│   ├── layout.tsx               # Root layout (Inter font, dark theme, navigation, analytics, PWA)
+│   ├── page.tsx                 # Home: Big Board (server component → BigBoardPage)
+│   ├── BigBoardPage.tsx         # Client: Tabbed board view (Bengals default / Consensus / Expanded)
 │   ├── globals.css              # Global styles + Tailwind
 │   │
-│   ├── players/page.tsx         # Players index page (grid of all profiled players)
-│   ├── boards/                  # Position Boards page
-│   ├── rankings/                # Rankings & ADP aggregation page
-│   ├── mocks/                   # Mock Drafts page (single source + compare w/ team filter)
+│   ├── players/page.tsx         # Players index (grid of all profiled players)
+│   ├── boards/                  # Position Boards
+│   │   ├── page.tsx             # Server component → PositionBoardsView
+│   │   └── PositionBoardsView.tsx # Client: Tabbed by position group (CB, DT, ED, etc.)
+│   ├── rankings/                # Rankings & ADP aggregation
+│   │   ├── page.tsx             # Server component → RankingsView
+│   │   └── RankingsView.tsx     # Client: Source tabs with position filters
+│   ├── mocks/                   # Mock Drafts
+│   │   ├── page.tsx             # Server component → MockDraftsView
+│   │   └── MockDraftsView.tsx   # Client: Single source + compare view with team filter
 │   │
 │   ├── player/[slug]/           # Individual player profile
-│   │   ├── page.tsx             # SSG with generateStaticParams + generateMetadata
-│   │   ├── PlayerDetailView.tsx # Full profile view (2 tabs: Overview + Scouting)
+│   │   ├── page.tsx             # SSR with React cache() dedup for generateMetadata + page
+│   │   ├── PlayerDetailView.tsx # Client: Full profile (2 tabs: Overview + Scouting)
 │   │   └── not-found.tsx        # "Profile In Progress" placeholder
 │   │
-│   └── admin/                   # Auth-protected admin backend
-│       ├── layout.tsx           # Admin chrome (nav, auth gate)
-│       ├── page.tsx             # Player Management (list all players)
-│       ├── AdminPlayerList.tsx  # Searchable/filterable player table
+│   └── admin/                   # Auth-protected admin backend (13 routes, see §12)
+│       ├── layout.tsx           # Admin chrome (nav tabs, auth gate, sign out)
+│       ├── page.tsx             # Player Management (search, profile filter, quick actions)
+│       ├── AdminPlayerList.tsx  # Client: Searchable/filterable player table
 │       ├── actions.ts           # Login/logout server actions
 │       ├── LogoutButton.tsx     # Sign out button
 │       ├── login/page.tsx       # Admin login form
 │       │
 │       ├── player/              # Player CRUD
 │       │   ├── actions.ts       # savePlayer, deletePlayer, createProfile
-│       │   ├── PlayerEditorForm.tsx   # Full player edit form
-│       │   ├── SkillsTraitsEditor.tsx # Visual skills/traits card editor
+│       │   ├── PlayerEditorForm.tsx   # Full edit form (14 fields + 6 JSON textareas + validation)
+│       │   ├── SkillsTraitsEditor.tsx # Visual skills/traits card editor (~30 autocomplete categories)
 │       │   ├── [slug]/page.tsx  # Edit existing player
 │       │   └── new/page.tsx     # Create new player
 │       │
 │       ├── upload/              # Data Import System
-│       │   ├── page.tsx         # Upload page with stats cards (5 stat cards)
-│       │   ├── actions.ts       # 11 importer functions + helpers
-│       │   └── UploadManager.tsx # 5-step wizard UI (11 data type cards)
+│       │   ├── page.tsx         # Upload page with 5 stats cards
+│       │   ├── actions.ts       # 14 importer functions + helpers (2,322 lines)
+│       │   └── UploadManager.tsx # 5-step wizard UI (14 data type cards, 10MB limit)
 │       │
 │       ├── corrections/         # Name Corrections
-│       │   ├── page.tsx         # Corrections page
-│       │   ├── actions.ts       # CRUD + audit/merge actions
-│       │   └── CorrectionsManager.tsx # Search, add, import, audit UI
+│       │   ├── page.tsx, actions.ts, CorrectionsManager.tsx
 │       │
-│       ├── colors/              # Color System Reference
-│       │   └── page.tsx         # Visual reference for all color thresholds, PFF stat directions
-│       │
+│       ├── colors/page.tsx      # Color System Reference (static visual reference)
+│       ├── cleanup/             # Data Cleanup (players with missing pos/college)
+│       │   ├── page.tsx, CleanupManager.tsx
+│       ├── positions/           # Position Audit (non-canonical position strings)
+│       │   ├── page.tsx, PositionAudit.tsx
+│       ├── priorities/          # Bio Priority Manager
+│       │   ├── page.tsx, PriorityManager.tsx
 │       ├── dates/               # Source Date Management
-│       │   ├── page.tsx         # Dates page
-│       │   ├── actions.ts       # CRUD for source_dates
-│       │   └── SourceDatesManager.tsx # Split Rankings/Mocks date editor
+│       │   ├── page.tsx, actions.ts, SourceDatesManager.tsx
 │       │
 │       └── boards/              # Board Editor (drag-and-drop)
-│           ├── page.tsx         # Big Board editor page
-│           ├── actions.ts       # Board CRUD actions
-│           ├── BigBoardEditor.tsx     # Tabbed board editor
-│           ├── SortableBoardEditor.tsx # Reusable DnD list (used by both)
+│           ├── page.tsx, actions.ts, BigBoardEditor.tsx, SortableBoardEditor.tsx
 │           └── positions/
-│               ├── page.tsx           # Position Board editor page
-│               └── PositionBoardEditor.tsx # Tabbed by position group
+│               ├── page.tsx, PositionBoardEditor.tsx
 │
-├── data/                        # Legacy JSON files (no longer primary source)
+├── data/                        # Legacy JSON files (no longer primary source, kept in repo)
 │   ├── adp.json, ages.json, big_board.json, mocks.json, players.json,
 │   ├── position_boards.json, positional_rankings.json, rankings.json, ras.json
 │   └── profiles/               # 141 player profile JSON files (legacy)
 │
-└── middleware.ts                # Auth middleware (protects /admin/*)
+└── middleware.ts                # Auth middleware (protects /admin/*, refreshes session)
 ```
 
 ---
@@ -158,45 +166,45 @@ src/
 | `slug` | text (unique) | URL-friendly identifier |
 | `position` | text | Position abbreviation (QB, WR, ED, CB, etc.) |
 | `college` | text | School name |
-| `height` | text | e.g. `6'2"` |
-| `weight` | text | e.g. `215 lbs` |
+| `height` | text | e.g. `6'2"` (canonicalized by normalizeHeight) |
+| `weight` | text | e.g. `215` (stripped of "lbs" by normalizeWeight) |
 | `age` | numeric | Current age |
 | `dob` | text | Date of birth string |
 | `year` | text | Eligibility (Jr, Sr, rSr, etc.) |
 | `projected_round` | text | e.g. `1`, `2`, `3-4` |
-| `projected_role` | text | e.g. `Day 1 Starter` |
+| `projected_role` | text | e.g. `Day 1 Starter` (**manually authored — never overwritten by imports**) |
 | `ideal_scheme` | text | e.g. `Zone`, `Power` |
 | `games` | integer | College games played |
 | `snaps` | integer | College snap count |
-| `strengths` | text | Freeform scouting text |
-| `weaknesses` | text | Freeform scouting text |
+| `strengths` | text | **Manually authored** scouting text |
+| `weaknesses` | text | **Manually authored** scouting text |
 | `accolades` | text | Awards, honors |
-| `player_summary` | text | Overview paragraph |
-| **`overview`** | **jsonb** | **Key-value bio/ratings (GATES profile visibility)** |
+| `player_summary` | text | **Manually authored** overview paragraph |
+| **`overview`** | **jsonb** | **Key-value bio/ratings — GATES profile visibility** |
 | `site_ratings` | jsonb | `{ "NFL.com": "6.5", "ESPN": "92", ... }` |
 | `pff_scores` | jsonb | `{ "Coverage Grade": { "value": "89.2", "percentile": 0.95 }, ... }` |
 | `athletic_scores` | jsonb | `{ "40 Time": { "result": "4.42", "grade": "9.1" }, ... }` |
 | `draftbuzz_grades` | jsonb | `{ "Tackling": 85, "Coverage": 72, ... }` |
 | `alignments` | jsonb | `{ "Slot": { "2025": 45, "career": 120 }, ... }` |
 | `skills_traits` | jsonb | `{ "Ball Skills": { "positives": "...", "negatives": "..." }, ... }` |
-| **`bio_sources`** | **jsonb** | **Per-source bio values for priority resolution** |
+| **`bio_sources`** | **jsonb** | **Per-source bio values for priority resolution** (see §6) |
 
-> **Critical:** A player "has a profile" if and only if `overview != '{}'`. This is the gate that controls visibility on the public `/players` page and in `getPlayers()`.
+> **Critical:** A player "has a profile" if and only if `overview != '{}'`. This gates visibility on `/players`, profile page generation, and admin profile counts.
 
 #### Relational Tables
 
 | Table | Key Columns | Relationship |
 |---|---|---|
 | `board_entries` | player_id, board_type, rank, grades, ranks, summary | FK → players.id |
-| `position_board_entries` | player_id, position_group, rank | FK → players.id |
-| `rankings` | slug, source, rank, position, position_rank, college, source_type | Keyed by slug |
-| `positional_rankings` | slug, source, rank, position, college, source_type | Keyed by slug |
+| `position_board_entries` | player_id, position_group, pos_rank, pff_scores, grades, athletic_scores, strengths, weaknesses | FK → players.id |
+| `rankings` | slug, source, rank_value, position, position_rank | Keyed by slug |
+| `positional_rankings` | slug, source, rank, position | Keyed by slug |
 | `player_rankings` | player_id, source, overall_rank, positional_rank | FK → players.id |
 | `adp_entries` | player_id, source, adp_value | FK → players.id |
-| `mock_picks` | player_id, source, pick_number, team, college | FK → players.id |
+| `mock_picks` | player_id, source, pick_number, team, player_name, position, college | FK → players.id |
 | `player_comps` | player_id, source, comp | FK → players.id |
 | `projected_rounds` | player_id, source, round | FK → players.id |
-| `commentary` | player_id, source, sections (jsonb) | FK → players.id |
+| `commentary` | player_id, source, sections (jsonb array of {title, text}) | FK → players.id |
 | `media_links` | player_id, description, source, url | FK → players.id |
 | `injury_history` | player_id, detail, recovery_time, year | FK → players.id |
 | `ages` | player_id, age_final | FK → players.id |
@@ -234,58 +242,61 @@ src/
 ## 4. Data Flow Overview
 
 ```
- Excel Workbook                      CSV/XLSX Upload
- (2026 Draft Board 2.0.xlsx)         via /admin/upload
-        │                                   │
-        │  (exported as CSV per sheet)      │
-        ▼                                   ▼
- ┌─────────────────────────────────────────────────┐
- │           Upload Manager (5-step wizard)         │
- │  1. Select data type (11 types)                 │
- │  2. Upload file (CSV/TSV/XLSX)                  │
- │  3. Map columns (auto-detect + manual override) │
- │  4. Preview & Import                            │
- │  5. Done (results summary)                      │
- └─────────────────────┬───────────────────────────┘
-                       │
-                       ▼
- ┌─────────────────────────────────────────────────┐
- │           Name Normalization Pipeline            │
- │  1. Strip periods, collapse whitespace          │
- │  2. Check name_corrections table                │
- │  3. Match by slug                               │
- │  4. Fuzzy match by compact slug                 │
- │  5. Auto-create player if no match              │
- └─────────────────────┬───────────────────────────┘
-                       │
-                       ▼
- ┌─────────────────────────────────────────────────┐
- │              11 Specialized Importers            │
- │                                                 │
- │  Relational importers → dedicated tables        │
- │  Profile importers → JSON columns on players    │
- │  Bio data → bio_sources + priority resolution   │
- └─────────────────────┬───────────────────────────┘
-                       │
-                       ▼
- ┌─────────────────────────────────────────────────┐
- │              Supabase (PostgreSQL)               │
- │         17 tables, 700+ player records           │
- └─────────────────────┬───────────────────────────┘
-                       │
-                       ▼
- ┌─────────────────────────────────────────────────┐
- │          data.ts (server-only read layer)        │
- │  getPlayers(), getPlayerProfile(), getBigBoard() │
- │  getRankings(), getMockDrafts(), getADP(), etc.  │
- └─────────────────────┬───────────────────────────┘
-                       │
-                       ▼
- ┌─────────────────────────────────────────────────┐
- │           Public Next.js Pages (SSG/SSR)         │
- │  / (Big Board), /players, /player/[slug],       │
- │  /boards, /rankings, /mocks                     │
- └─────────────────────────────────────────────────┘
+ Excel Workbook / Standalone Files        CSV/XLSX Upload
+ (2026 Draft Board 2.0.xlsx,              via /admin/upload
+  PFF Stats, NFL Profiles, etc.)
+        │                                        │
+        │  (exported as CSV per sheet)           │
+        ▼                                        ▼
+ ┌──────────────────────────────────────────────────────┐
+ │           Upload Manager (5-step wizard)              │
+ │  1. Select data type (14 types)                      │
+ │  2. Upload file (CSV/TSV/XLSX, ≤ 10 MB)             │
+ │  3. Map columns (auto-detect + manual override)      │
+ │  4. Preview & Import                                 │
+ │  5. Done (results summary)                           │
+ └──────────────────────┬───────────────────────────────┘
+                        │
+                        ▼
+ ┌──────────────────────────────────────────────────────┐
+ │           Name Normalization Pipeline                 │
+ │  1. Strip periods, collapse whitespace               │
+ │  2. Check name_corrections table                     │
+ │  3. Match by slug                                    │
+ │  4. Fuzzy match by compact slug                      │
+ │  5. Auto-create player if no match                   │
+ └──────────────────────┬───────────────────────────────┘
+                        │
+                        ▼
+ ┌──────────────────────────────────────────────────────┐
+ │             14 Specialized Importers                  │
+ │                                                      │
+ │  Relational importers → dedicated tables             │
+ │  Profile importers → JSON columns on players         │
+ │  Multi-table importers → rankings + grades + comps   │
+ │  Bio data → bio_sources + priority resolution        │
+ └──────────────────────┬───────────────────────────────┘
+                        │
+                        ▼
+ ┌──────────────────────────────────────────────────────┐
+ │              Supabase (PostgreSQL)                    │
+ │         17 tables, 700+ player records                │
+ └──────────────────────┬───────────────────────────────┘
+                        │
+                        ▼
+ ┌──────────────────────────────────────────────────────┐
+ │          data.ts (server-only read layer)             │
+ │  fetchAll() pagination (1000-row pages)              │
+ │  HIDDEN_SOURCES filtering on all public queries      │
+ │  Error logging on all Supabase calls                 │
+ └──────────────────────┬───────────────────────────────┘
+                        │
+                        ▼
+ ┌──────────────────────────────────────────────────────┐
+ │           Public Next.js Pages (SSR)                  │
+ │  / (Big Board), /players, /player/[slug],            │
+ │  /boards, /rankings, /mocks                          │
+ └──────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -294,246 +305,171 @@ src/
 
 ### States
 
-1. **No record** — Player doesn't exist in the database
-2. **Record exists, no profile** — Player has a row in `players` with basic info (name, slug, position, college) but `overview = {}`. They appear in the admin list but NOT on the public site's `/players` page.
-3. **Record exists, has profile** — Player has `overview != {}`. They appear publicly and have a full profile page at `/player/[slug]`.
+1. **No record** — Player doesn't exist in the database.
+2. **Record exists, no profile** — Has a row in `players` with basic info but `overview = {}`. Appears in admin list but NOT on the public site.
+3. **Record exists, has profile** — Has `overview != {}`. Appears publicly on `/players` and has a profile page at `/player/[slug]`.
 
 ### How players get created
 
-- **Auto-created by importers** — When uploading rankings, mocks, ADP, etc., if a player name can't be resolved to an existing record, `resolvePlayerId()` auto-creates a minimal player record (name + slug + position + college if available).
-- **Manually via /admin/player/new** — Admin can create a player with full form fields.
+- **Auto-created by importers** — When uploading rankings, mocks, ADP, etc., if a player name can't be resolved, `resolvePlayerId()` auto-creates a minimal player record.
+- **Manually via /admin/player/new** — Admin creates with full form fields.
 
 ### How profiles get activated
 
 Profiles are **NOT** auto-created by data importers. They must be explicitly activated:
 
-1. **From the admin player list** (`/admin`) — Click the **"+ Profile"** button next to any player without a profile. This calls `createProfile()` which seeds `overview` from the player's top-level columns.
-2. **From the player editor** (`/admin/player/[slug]`) — A prominent orange **"Create Profile"** banner appears for profile-less players, with a position template dropdown.
-3. **By manually editing `overview` JSON** — Setting it to anything non-empty via the editor activates the profile.
+1. **From `/admin`** — Click **"+ Profile"**. Calls `createProfile()` which seeds `overview` from top-level columns.
+2. **From `/admin/player/[slug]`** — Orange **"Create Profile"** banner with position template dropdown.
+3. **By manually editing `overview` JSON** — Setting it to anything non-empty activates the profile.
 
 ### How profile data accumulates
 
-Data importers (PFF, DraftBuzz, Athletic, Site Ratings) write to JSON columns on the player record (`pff_scores`, `draftbuzz_grades`, `athletic_scores`, `site_ratings`, `alignments`) **regardless of whether the player has a profile**. When the profile is later activated, all that pre-imported data is immediately visible.
+Data importers write to JSON columns (`pff_scores`, `draftbuzz_grades`, `athletic_scores`, etc.) **regardless of whether the player has a profile**. When the profile is later activated, all pre-imported data is immediately visible.
 
 ---
 
 ## 6. Bio Data & Source Priority
 
-The system tracks biographical data (age, DOB, height, weight, games, snaps, etc.) from multiple sources with a priority-based resolution system, modeled after the original Excel workbook's approach.
-
-### How it works
-
-The `bio_sources` JSONB column on `players` stores per-field, per-source values:
+The `bio_sources` JSONB column stores per-field, per-source values:
 
 ```json
 {
   "draftbuzz": { "age": "21", "dob": "3/15/2004", "games": "36", "snaps": "2100" },
-  "pff": { "age": "22" }
+  "pff": { "age": "22" },
+  "__priority": { "pff": 4, "draftbuzz": 1 }
 }
 ```
 
-### Source Priority (highest wins)
+### Default Source Priority (highest wins)
 
-| Priority | Source | Notes |
+| Priority | Source Key | Aliases |
 |---|---|---|
-| 4 (highest) | `pff` | Premium, most accurate |
-| 3 | `site_ratings` | Aggregated site grades |
-| 2 | `nfl_com` | NFL.com profiles |
-| 1 | `draftbuzz` | Comprehensive coverage, less accurate |
-| 0 (lowest) | `manual` | Hand-entered fallback |
+| 4 (highest) | `pff` | "PFF", "pff scores" |
+| 3 | `site_ratings` | "site ratings" |
+| 2 | `nfl_com` | "NFL.com", "nfl", "NFL" |
+| 2 | `cbs` | "CBS", "cbs sports" |
+| 1 | `draftbuzz` | "DraftBuzz", "draft buzz" |
+| 0 (lowest) | `manual` | — |
+
+Priorities are customizable at runtime via `/admin/priorities`.
 
 ### Resolution flow
 
-When any importer writes bio data, it calls `writeBioSources()` which:
-
+When any importer writes bio data, `writeBioSources()`:
 1. Writes values under the source's key in `bio_sources` JSON
-2. Iterates all bio fields: `age`, `dob`, `games`, `snaps`, `height`, `weight`, `year`, `position`, `college`, `projected_round`
+2. Iterates all 10 bio fields: `age`, `dob`, `games`, `snaps`, `height`, `weight`, `year`, `position`, `college`, `projected_round`
 3. For each field, finds the value from the highest-priority source
 4. Writes the winning value to the top-level column
-
-**Example:** DraftBuzz says age = 21, then PFF imports age = 22. PFF (priority 3) beats DraftBuzz (priority 1), so `players.age` becomes 22. If DraftBuzz is re-imported, PFF's value still holds.
-
-### Bio fields tracked
-
-| Field | Top-level Column | Type |
-|---|---|---|
-| `age` | `players.age` | numeric |
-| `dob` | `players.dob` | text |
-| `games` | `players.games` | integer |
-| `snaps` | `players.snaps` | integer |
-| `height` | `players.height` | text |
-| `weight` | `players.weight` | text |
-| `year` | `players.year` | text |
-| `position` | `players.position` | text |
-| `college` | `players.college` | text |
-| `projected_round` | `players.projected_round` | text |
+5. Logs errors on failure (does not throw)
 
 ---
 
 ## 7. Name Normalization Pipeline
 
-Player names come from many external sources with inconsistent formatting. The system uses a multi-layer normalization pipeline (in `upload/actions.ts`) to resolve names to player records.
-
 ### Steps (in order)
 
 1. **`normalizeName()`** — Strip periods, collapse whitespace. `"D.J. Smith Jr."` → `"DJ Smith Jr"`
-2. **`compactSlug()`** — Strip ALL non-alphanumeric chars for fuzzy matching. `"D'Andre O'Neal"` → `"dandresoneal"`
+2. **`compactSlug()`** — Strip ALL non-alphanumeric chars. `"D'Andre O'Neal"` → `"dandresoneal"`
 3. **`toSlug()`** — Standard URL slug. `"Cam Ward"` → `"cam-ward"`
 
 ### `resolvePlayerId()` — 4-step resolution
 
 ```
-Input: raw player name (+ optional position, college hints)
+Input: raw player name (+ optional position, college)
   │
   ▼
-Step 1: Check `name_corrections` table
-        If variant_name matches → use canonical_slug → find player by slug
+Step 1: Check name_corrections table (cached in ImportCaches)
   │
   ▼
-Step 2: Exact slug match
-        toSlug(normalizeName(input)) → find in player cache
+Step 2: Exact slug match via toSlug(normalizeName(input))
   │
   ▼
-Step 3: Compact slug match (fuzzy)
-        compactSlug(input) → match against compactSlug(all player names)
-        Handles apostrophes, hyphens, periods, Jr/Sr suffixes
+Step 3: Compact slug match (fuzzy — handles apostrophes, hyphens, periods)
   │
   ▼
-Step 4: Auto-create
-        No match found → insert new player record
-        Uses position/college from the import row if available
+Step 4: Auto-create new player record (uses position/college from import row)
 ```
 
-### The `name_corrections` Table
+### ImportCaches Pattern
 
-Managed at `/admin/corrections`. Maps known variant spellings to canonical slugs:
-
-| variant_name | canonical_slug |
-|---|---|
-| `Tetairoa McMillan` | `tetaiora-mcmillan` |
-| `AJ Haulcy` | `aj-haulcy` |
-| `Cam Ward` | `cam-ward` |
-
-The corrections audit system can detect when both a variant and canonical player record exist, then merge all related data from the variant into the canonical record.
+Each import batch builds a fresh `ImportCaches` object (NOT shared across requests):
+- `playerCache`: All players loaded with `{id, slug, name, compact}`
+- `correctionsCache`: All `name_corrections` rows as `Map<normalizedVariant, canonicalSlug>`
 
 ---
 
 ## 8. Data Import System
 
-### The 11 Data Types
+### The 14 Data Types
 
 #### Relational Importers (write to dedicated tables)
 
 | Type | Target Table(s) | Strategy | Source Required |
 |---|---|---|---|
-| `rankings` | `rankings` + `player_rankings` (+ `positional_rankings` if position_rank mapped) | Upsert by slug + source; auto-syncs overall_rank & positional_rank to `player_rankings` | ✓ |
-| `positional_rankings` | `positional_rankings` + `player_rankings` | Upsert by slug + source; auto-syncs positional_rank to `player_rankings` | ✓ |
+| `rankings` | `rankings` + `player_rankings` (+ `positional_rankings` if position_rank mapped) | Upsert by slug + source | ✓ |
+| `positional_rankings` | `positional_rankings` + `player_rankings` | Upsert by slug + source | ✓ |
 | `adp` | `adp_entries` | Upsert by player_id + source | ✓ |
-| `mocks` | `mock_picks` | Delete-all + reinsert per source | ✓ |
+| `mocks` | `mock_picks` | Build-all-then-delete-old pattern (safety) | ✓ |
 | `source_dates` | `source_dates` | Upsert by source + source_type | ✗ |
+| `bio_data` | `bio_sources` JSON → top-level columns | Priority-based resolution via `writeBioSources()` | ✓ |
 
 #### Profile Importers (write to JSON columns on `players`)
 
 | Type | JSON Column(s) | Strategy | Bio Source |
 |---|---|---|---|
-| `pff_scores` | `pff_scores`, `alignments`, `overview` | 3-phase: extract → percentile-rank → merge | `"pff"` (age) |
+| `pff_scores` | `pff_scores`, `alignments`, `overview` | 3-phase: extract → percentile-rank → merge (12 position templates) | `"pff"` (age) |
 | `draftbuzz_grades` | `draftbuzz_grades`, `overview` | Merge per position group | `"draftbuzz"` (age, dob, games, snaps) |
 | `athletic_scores` | `athletic_scores` | Merge RAS data | — |
 | `site_ratings` | `site_ratings`, `overview` | Merge + write to overview | — |
 
-#### Multi-Table Importers
+#### Multi-Table Importers (write to multiple destinations)
 
-| Type | Target Tables | Strategy | Source Required |
-|---|---|---|---|
-| `nfl_profiles` | `player_rankings`, `site_ratings` JSON, `overview` JSON, `player_comps`, `commentary`, `bio_sources` | Writes rankings, grades, comps, scouting commentary, eligibility | ✗ (hardcoded "NFL.com") |
-| `bleacher_profiles` | `player_rankings`, `site_ratings` JSON, `overview` JSON, `player_comps`, `projected_rounds`, `commentary` | Writes rankings, grades, comps, round projections, commentary | ✗ (hardcoded "Bleacher Report") |
+| Type | Destinations | Source Name |
+|---|---|---|
+| `nfl_profiles` | `player_rankings`, `site_ratings` JSON, `overview` JSON, `player_comps`, `commentary`, `bio_sources` (eligibility→year) | "NFL.com" |
+| `bleacher_profiles` | `player_rankings`, `site_ratings` JSON, `overview` JSON, `player_comps`, `projected_rounds`, `commentary` | "Bleacher Report" |
+| `espn_profiles` | `player_rankings`, `site_ratings` JSON, `overview` JSON, `commentary` (Analysis) | "ESPN" |
+| `tdn_profiles` | `player_rankings`, `projected_rounds`, `commentary` (Summary, Strengths, Concerns) | "The Draft Network" |
 
-### PFF Import — 3-Phase Process
+**All multi-table importers respect Protected Fields** — they never overwrite `players.strengths`, `players.weaknesses`, `players.player_summary`, or `players.projected_role`.
 
-The PFF importer is the most complex:
+### Mock Import Safety Pattern
 
-1. **Phase 1: Extract** — Parse CSV rows, map columns per position template (12 templates: CB, SAF, DT, EDGE, LB, OL, OT, IOL, QB, RB, WR, TE). Each template defines 12–18 metrics with CSV column → display label mapping. Also extracts alignment data (2025 snaps vs career snaps per alignment slot).
-
-2. **Phase 2: Percentile Rank** — Groups all players by position group. For each metric, ranks all players and computes percentile (0.0–1.0). The result is `{ value: "89.2", percentile: 0.95 }` per metric.
-
-3. **Phase 3: Write** — Merges PFF scores, alignments, and overview into existing player data. Writes bio data (age) through `writeBioSources()`.
-
-### Position-Specific Column Mappings
-
-**PFF_POSITION_COLUMNS** — Maps display labels to CSV column headers for each of 12 positions. Example for CB:
-- `"Coverage Grade"` → CSV column `"Coverage Grade"`
-- `"Passer Rating"` → CSV column `"Passer Rating Against"`
-- `"Forced Inc. Rate"` → CSV column `"Forced Incom. Rate"`
-
-**ALIGNMENT_COLUMNS** — Position-specific snap alignment slots:
-- CB/SAF/LB: D-Line, Slot, Corner, Box, Deep (coverage alignments)
-- DT/EDGE: A Gap, B Gap, Over Tackle, Outside Tackle, Off Ball (D-line alignments)
-- OL/OT/IOL: LT, LG, C, RG, RT (O-line snap positions)
-- WR: Slot, Wide
-- TE: Slot, Inline
-
-**DRAFTBUZZ_GRADE_COLUMNS** — Position-specific grade categories:
-- CB: QBR Allowed, Tackling, Run Defense, Coverage, Zone, Man/Press
-- QB: Short Passing, Medium Passing, Long Passing, Rush/Scramble
-- OL: Pass Blocking Grade, Run Blocking Grade
-- etc.
-
-### NFL Profiles Import
-
-The `nfl_profiles` importer ingests data from the NFL.com Profiles Excel file (e.g. `NFL Profiles 2.15.26.xlsx`). It writes to **5 destinations** while carefully avoiding overwriting manually-authored fields:
-
-1. **`player_rankings`** — Overall Rank + Positional Rank (source "NFL.com")
-2. **`site_ratings` JSON + `overview` JSON** — Prospect Grade as "NFL.com" key
-3. **`player_comps`** — NFL Comparison (source "NFL.com", skips "N/A")
-4. **`commentary`** — Overview, Strengths, Weaknesses, Sources Tell Us as titled sections (source "NFL.com")
-5. **`bio_sources`** — Eligibility → year field via `writeBioSources("nfl_com", ...)`
-
-**Column mappings (13):** player_name, position, school, rank, pos_rank, prospect_grade, prospect_grade_indicator, overview, strengths, weaknesses, sources_tell_us, nfl_comparison, eligibility.
-
-**Does NOT write to:** `players.strengths`, `players.weaknesses`, `players.player_summary`, `players.projected_role` — these are manually authored (see Protected Fields).
-
-### Bleacher Report Profiles Import
-
-The `bleacher_profiles` importer ingests data from the Bleacher Report Profiles Excel file (e.g. `Bleacher Profiles 2.14.26.xlsx`). It writes to **5 destinations** while respecting protected fields:
-
-1. **`player_rankings`** — Overall Rank (source "Bleacher Report")
-2. **`site_ratings` JSON + `overview` JSON** — Grade as "Bleacher Report" key
-3. **`player_comps`** — Pro Comparison (source "Bleacher Report", skips "N/A")
-4. **`projected_rounds`** — Projected Round (source "Bleacher Report")
-5. **`commentary`** — Overall, Positives, Negatives as titled sections (source "Bleacher Report")
-
-**Column mappings (8):** player_name, overall_rank, grade, pro_comparison, projected_round, overall, positives, negatives.
-
-**Does NOT write to:** `players.strengths`, `players.weaknesses`, `players.player_summary`, `players.projected_role` — these are manually authored (see Protected Fields).
+1. Build ALL new `mock_picks` rows into an array
+2. Only after full array is built: delete existing rows for that source
+3. Batch-insert new rows (100 at a time)
+4. If step 1 fails, no data is deleted
 
 ### Ranking Table Consolidation
 
-Three tables store ranking data, each consumed by different public pages:
+Three tables store ranking data, consumed by different pages:
 
 | Table | Primary Consumer | Key Columns |
 |---|---|---|
-| `rankings` | `/rankings` page | slug, source, rank, position_rank |
+| `rankings` | `/rankings` page | slug, source, rank_value |
 | `positional_rankings` | `/boards` position boards | slug, source, rank, position |
 | `player_rankings` | `/player/[slug]` profiles | player_id, source, overall_rank, positional_rank |
 
-To keep these in sync, the ranking importers automatically cascade writes:
-
-- **`importRankings()`** writes to `rankings` table, then upserts `player_rankings` with overall_rank. If `position_rank` is mapped and present, also writes to `positional_rankings` and includes positional_rank in the `player_rankings` upsert.
-- **`importPositionalRankings()`** writes to `positional_rankings` table, then upserts/updates `player_rankings` with just the positional_rank field.
-
-This means uploading via either Overall Rankings or Positional Rankings will automatically populate the profile page's ranking display.
+Ranking importers auto-cascade writes to keep these in sync.
 
 ### Source Date Auto-Update
 
-When importing `rankings` or `mocks`, the dispatcher automatically upserts a `source_dates` entry with today's date for that source name. This keeps the "Last Updated" dates current without manual intervention.
+When importing `rankings` or `mocks`, the dispatcher auto-upserts `source_dates` with today's date.
 
-### Upload Manager UI (5 Steps)
+### PFF Import — 3-Phase Process
 
-1. **Select Data Type** — Grid of 11 data type cards, each showing label and description
-2. **Upload File** — Drag-and-drop or click to upload CSV/TSV/XLSX/XLS
-3. **Map Columns** — Auto-maps by fuzzy name matching. Manual dropdown override per required column. Shows unmapped columns.
-4. **Preview & Import** — 20-row table preview. Source name input (if required). Import button.
-5. **Done** — Inserted/Updated/Skipped counts + error list. Option to import another.
+1. **Extract** — Parse CSV, map columns per position template (12 templates: CB, SAF, DT, EDGE, LB, OL, OT, IOL, QB, RB, WR, TE). Each defines 12–18 metrics. Also extracts alignment data.
+2. **Percentile Rank** — Groups by position, ranks all players per metric, computes percentile (0.0–1.0). Result: `{ value: "89.2", percentile: 0.95 }`.
+3. **Write** — Merges PFF scores, alignments, and overview. Writes bio data (age) through `writeBioSources()`.
+
+### Upload Manager UI
+
+5-step wizard: Select Type → Upload File → Map Columns → Preview → Done
+
+- **10 MB file size limit** enforced before parsing
+- **Auto-mapping** via fuzzy column name matching
+- **File formats**: CSV, TSV, TXT (PapaParse), XLSX, XLS (SheetJS)
+- **Bio Priority selector** for `rankings` and `bio_data` types
 
 ---
 
@@ -541,260 +477,47 @@ When importing `rankings` or `mocks`, the dispatcher automatically upserts a `so
 
 ### What makes a "profile"
 
-A player has a profile when their `overview` JSON column is non-empty (`!= {}`). This single field gates:
-
-- Visibility on `/players` page (`getPlayers()` filters `overview != '{}'`)
-- Profile page at `/player/[slug]` (via `generateStaticParams()`)
+A player has a profile when `overview != '{}'`. This gates:
+- Visibility on `/players` page
+- Profile page at `/player/[slug]`
 - Profile count display in admin header
 
-### Profile data structure (on `players` table)
-
-All profile data lives as JSON columns on the player row:
-
-```
-overview:          { "POS": "CB", "College": "Ohio State", "Height": "6'1\"", "Weight": "195", ... }
-pff_scores:        { "Coverage Grade": { "value": "89.2", "percentile": 0.95 }, ... }
-draftbuzz_grades:  { "Tackling": 85, "Coverage": 72, ... }
-athletic_scores:   { "40 Time": { "result": "4.42", "grade": "9.1" }, ... }
-site_ratings:      { "NFL.com": "6.5", "ESPN": "92", ... }
-alignments:        { "Slot": { "2025": 45, "career": 120 }, ... }
-skills_traits:     { "Ball Skills": { "positives": "...", "negatives": "..." }, ... }
-bio_sources:       { "pff": { "age": "22" }, "draftbuzz": { "age": "21", "dob": "..." }, ... }
-```
-
 ### Profile Detail View (`PlayerDetailView.tsx`)
-
-Two tabs:
 
 **Overview Tab:**
 - Header: name, position badge, college, projected round card
 - Key Stats Row: Height, Weight, Age, Year, Games, Snaps, Scheme, Role
-- Player Comps (from `player_comps` table)
-- Round Projections (from `projected_rounds` table)
-- Summary, Strengths, Weaknesses, Accolades (text fields)
-- PFF Scores grid with direction-aware percentile color coding (see Color System below)
+- Player Comps row (from `player_comps`, hidden sources filtered)
+- Round Projections row (from `projected_rounds`, hidden sources filtered)
+- Summary, Strengths, Weaknesses, Accolades
+- PFF Scores grid — direction-aware percentile coloring, values rounded to 1 decimal
 - Athletic Testing (RAS data)
-- Overall Rankings, Positional Rankings, ADP by Source (from relational tables)
-- Site Ratings (scale-aware coloring), DraftBuzz Grades (color-coded), Injury History, Snap Alignments
+- Overall Rankings, Positional Rankings, ADP by Source
+- Site Ratings (scale-aware), DraftBuzz Grades, Injury History, Snap Alignments
 
 **Scouting Tab:**
 - Skills & Traits Breakdown (categories with positives/negatives)
-- Commentary accordion (per source, with titled sections)
+- Commentary accordion (per source, titled sections, hidden sources filtered)
 
 ### Position Templates
 
-12 templates define which PFF metrics, DraftBuzz grades, and alignment slots are relevant per position. Used by the `createProfile()` action and the position template dropdown in the editor.
-
+12 templates define position-specific metrics:
 ```
 CB, SAF, DT, EDGE, LB, OL, OT, IOL, QB, RB, WR, TE
 ```
 
-Position normalization maps variants to standard keys:
-- `DE`, `ED`, `EDGE` → `EDGE`
-- `IDL`, `DT`, `NT` → `DT`
-- `S`, `FS`, `SS`, `SAF` → `SAF`
-- `OG`, `C`, `IOL` → `IOL`
-- `OT`, `T` → `OT`
-
 ---
 
-## 10. Admin Backend
+## 10. Unified Color System
 
-### Access
+> Full constant values, function signatures, and PFF stat member lists: see [`CONTEXT_INTERNALS.md`](CONTEXT_INTERNALS.md) §1
 
-All `/admin/*` routes are protected by middleware. Auth is Supabase email/password. The login page is at `/admin/login`.
+All grade and PFF color coding flows through `src/lib/colors.ts`.
 
-### Pages
+### 5-Tier Color Scale
 
-| Route | Purpose |
-|---|---|
-| `/admin` | Player list with search, profile filter, Edit links, + Profile buttons |
-| `/admin/player/new` | Create new player form |
-| `/admin/player/[slug]` | Edit player — full form + Create Profile banner if no profile |
-| `/admin/upload` | Data import wizard (11 types) with 5 stats cards |
-| `/admin/boards` | Big Board editor (Consensus, Bengals, Expanded) with drag-and-drop |
-| `/admin/boards/positions` | Position Board editor (11 position groups) with drag-and-drop |
-| `/admin/corrections` | Name corrections manager + audit/merge system |
-| `/admin/dates` | Source date editor (rankings + mock drafts) |
-| `/admin/colors` | Color system reference — tier swatches, per-source grade breakpoints, per-position PFF stat tables with direction/range, metric name variants |
-
-### Player Editor Features
-
-- **Basic Information** — 14 fields (name, slug, position, college, height, weight, age, DOB, year, projected round, projected role, ideal scheme, games, snaps)
-- **Scouting Notes** — Summary, strengths, weaknesses, accolades (textareas)
-- **Skills & Traits** — Visual card editor with 30 autocomplete categories, per-category positives/negatives, reorder/add/delete
-- **Advanced Data (JSON)** — Raw JSON textareas for overview, site_ratings, pff_scores, athletic_scores, draftbuzz_grades, alignments
-- **Create Profile Banner** — Appears for players without profiles, with position template auto-detection and dropdown override
-- **Delete Player** — Cascading delete across 13 related tables
-
-### Board Editor Features
-
-- Drag-and-drop reordering via @dnd-kit
-- Player search to add (ILIKE search)
-- Remove with optimistic updates
-- Auto re-ranking on save
-- Three big board types: Consensus, Bengals, Expanded
-- Eleven position board groups
-
-### Corrections Audit & Merge
-
-The audit system detects when:
-1. A correction maps `variant_name` → `canonical_slug`
-2. Both the variant player AND canonical player exist as separate records
-3. Both have data in various tables
-
-The merge process:
-1. Moves all `player_id` references from variant → canonical across 10 tables
-2. Updates slug references in `rankings` and `positional_rankings`
-3. Deletes the variant player record
-
----
-
-## 11. Public-Facing Pages
-
-| Route | Data Source | Rendering |
-|---|---|---|
-| `/` (Home) | `getEnrichedBigBoard()` | SSG — Tabbed: Bengals (default) / Consensus / Expanded |
-| `/players` | `getPlayers()` + `getProfileCount()` | SSG — Searchable grid, filters by position |
-| `/player/[slug]` | `getPlayerProfile()` | SSG via `generateStaticParams()` |
-| `/boards` | `getPositionBoards()` | SSG — 11 position group tabs |
-| `/rankings` | `getRankings()` + `getADP()` | SSG — Source tabs with position filters |
-| `/mocks` | `getMockDrafts()` | SSG — Single Source / Compare view with team filter |
-
-### Big Board (Home Page)
-
-Three board types in tabs:
-- **Bengals Board** (default tab) — Team-specific prospect rankings
-- **Consensus Board** — Aggregated overall rankings
-- **Expanded Board** — Includes grade breakdowns, source ranks, and summaries per player
-
-### Data Layer (`data.ts`)
-
-Server-only module that fetches from Supabase. Key pattern: uses `fetchAll()` helper to paginate past Supabase's 1000-row limit.
-
-Important functions:
-- `getPlayers()` — Filters on `overview != '{}'` (profile gate)
-- `getPlayerProfile()` — Assembles full profile: player row + 7 parallel queries
-- `getBigBoard()` / `getEnrichedBigBoard()` — Board entries with joined player data
-- `getRankings()` — Grouped by slug with source dates
-- `getMockDrafts()` — Grouped by source with source dates
-- `getADP()` — Grouped by slug with consensus calculation
-- `getPositionBoards()` — Position-specific boards with full stats
-
----
-
-## 12. Authentication & Middleware
-
-### Setup
-
-- **Provider:** Supabase Auth (email/password only)
-- **Middleware:** `src/middleware.ts` intercepts all `/admin/*` requests
-- **Session refresh:** Middleware calls `supabase.auth.getUser()` to refresh the session token
-- **Login:** `/admin/login` — email + password form → `signInWithPassword()`
-- **Logout:** Server action calling `signOut()` → redirect to `/admin/login`
-
-### Protection rules
-
-| Route | Rule |
-|---|---|
-| `/admin/login` | Public. Redirects TO `/admin` if already authenticated. |
-| `/admin/*` (everything else) | Requires auth. Redirects to `/admin/login` if no user. |
-| All other routes | Public, no auth required. |
-
-### Middleware matcher
-
-```ts
-config = { matcher: ["/admin/:path*"] }
-```
-
----
-
-## 13. Key Concepts & Gotchas
-
-### The Overview Gate
-
-**The single most important concept:** A player "has a profile" if and only if `JSON.stringify(player.overview) !== '{}'`. This gates:
-- Public visibility on `/players`
-- Static generation of `/player/[slug]` pages
-- Profile count in admin header
-
-If you write data to `pff_scores`, `draftbuzz_grades`, etc. but leave `overview` empty, the player has data but no visible profile. The profile must be explicitly activated via the "Create Profile" action.
-
-### JSON Column Architecture
-
-Profile-specific data is stored as JSON columns on the `players` table rather than in separate relational tables. This was a deliberate design choice because:
-- Each position has different metrics (CB has coverage grades, OL has pass blocking grades)
-- The data is always read/written as a complete unit per player
-- It avoids complex position-specific table schemas
-
-### Legacy JSON Files
-
-The `src/data/` directory contains the original JSON files from before the Supabase migration. These are **no longer used as the primary data source** but remain in the repo. All data is now read from and written to Supabase.
-
-### Hidden Sources (HIDDEN_SOURCES)
-
-`data.ts` defines a `HIDDEN_SOURCES` set of source names excluded from all public display. These are legacy migration artifacts that would otherwise duplicate or pollute real data:
-
-| Source | Reason |
-|---|---|
-| `"Bleacher"` | Legacy migration name — superseded by `"Bleacher Report"` (properly named by the `bleacher_profiles` importer) |
-| `"Con"` | Consensus ADP value — used internally to compute `consensus_adp` but hidden from the ADP source list |
-| `"Premier Con."` | Legacy computed consensus from the original Excel migration — no longer maintained |
-
-Filtering is applied in:
-- `getRankings()` — skips hidden sources when grouping ranking rows
-- `getPlayerProfile()` — filters `player_rankings` and `adp_by_source`
-- `getADP()` — computes consensus from "Con" then strips all hidden sources from `source_adps`
-
-The Site Ratings grade import maps the Excel "Bleacher" column to the display key `"Bleacher Report"` (in `site_ratings` and `overview` JSONB).
-
-### Position Board Dynamic Rankings (CONSENSUS_SOURCES)
-
-The position board's Overall Rank and POS Rank columns are **computed dynamically** at read time from the `player_rankings` table — not stored as static JSONB on `position_board_entries`. `getPositionBoards()` in `data.ts` fetches live rankings from these 5 sources:
-
-```
-CONSENSUS_SOURCES = ["Brugler", "NFL.com", "CBS", "PFF", "ESPN"]
-```
-
-For each board player, it builds `overall_rankings` and `pos_rankings` objects with per-source values plus an `"Avg"` key (simple average of available sources). Players missing from one or more sources are handled gracefully — the average is computed from whichever sources have data.
-
-### Position Abbreviation Inconsistency
-
-Different sources use different abbreviations. The codebase has two normalization systems:
-1. **`normalizePosition()` in `upload/actions.ts`** — Maps to template keys (EDGE, DT, SAF, IOL, OT)
-2. **`POSITION_ALIASES` in `types.ts`** — Maps display abbreviations (HB→RB, EDGE→ED, WDE→ED, etc.)
-
-These serve different purposes: the upload normalizer maps to data template keys, while the types normalizer maps to display abbreviations used in the UI.
-
-**Extended normalizations in `normalizePosition()`:**
-- `DI`, `DL` → `DT`
-- `DE/ED`, `LB/ED` (slash-separated) → `EDGE` (slashes stripped before matching)
-- `ILB`, `MLB` → `LB`
-- `HB`, `FB` → `RB`
-- `G` → `IOL`
-- `TBD` and empty positions are silently skipped (not treated as errors)
-
-### Protected Fields (Never Overwritten by Imports)
-
-Certain player fields are **manually authored** by the admin and must never be overwritten by automated data imports:
-
-| Field | Column | Reason |
-|---|---|---|
-| Strengths | `players.strengths` | Hand-written scouting analysis |
-| Weaknesses | `players.weaknesses` | Hand-written scouting analysis |
-| Player Summary | `players.player_summary` | Hand-written overview paragraph |
-| Projected Role | `players.projected_role` | Manual evaluation (e.g. "Day 1 Starter") |
-
-Import data that resembles these fields (e.g. NFL.com's Overview, Strengths, Weaknesses, Prospect Grade Indicator) goes into the `commentary` table or other non-destructive destinations instead. This separation ensures the admin's manual scouting work is preserved regardless of how many times data is re-imported.
-
-### Unified Color System (`colors.ts`)
-
-All grade, PFF score, and rating color coding flows through `src/lib/colors.ts`. This module solves the problem of heterogeneous grading scales — different sources use completely different numeric ranges, and some PFF stats are inverted (lower is better) or neutral (no direction).
-
-**5-Tier Color Scale:**
-
-| Tier | Color | Tailwind Class | Percentile |
-|------|-------|----------------|------------|
+| Tier | Color | Tailwind Class | Percentile Threshold |
+|------|-------|----------------|---------------------|
 | Elite | Blue bold | `text-blue-400 font-bold` | ≥ 90th |
 | Great | Green semi-bold | `text-green-400 font-semibold` | ≥ 70th |
 | Good | Yellow | `text-yellow-400` | ≥ 40th |
@@ -802,9 +525,11 @@ All grade, PFF score, and rating color coding flows through `src/lib/colors.ts`.
 | Poor | Red | `text-red-400` | < 20th |
 | Neutral | White | `text-white` | N/A |
 
-**Grade Scale Detection** (`getGradeColor(label, value)`):
+Only `PLAIN` ("text-white") is exported. Tier constants are internal-only.
 
-Each source is detected by label name and mapped to its own scale before normalizing to a percentile:
+### Grade Scale Detection (`getGradeColor`)
+
+Detection order: ESPN → NFL → Gridiron → DraftBuzz → Rivals → 24/7 → Bleacher → `/grade/i` regex → `/blk|block/i` → fallback by value range.
 
 | Source(s) | Raw Range | Normalizer |
 |-----------|-----------|------------|
@@ -815,157 +540,300 @@ Each source is detected by label name and mapped to its own scale before normali
 | 24/7 Sports | 80–100 | `(v - 82) / 16` |
 | Bleacher Report | 6.0–8.0 | `(v - 6.0) / 2.0` |
 
-**PFF Score Direction Awareness:**
+### PFF Stat Direction Awareness
 
-PFF stats are categorized into three directions (from `PFF Stats Inversions or Neutral.xlsx`):
+- **Lower is Better**: Comp. %, Passer Rating, Missed Tackles, Missed Tkl Rate, Pass Rat. All., Penalties, Hits/Sacks/Hurries/Pressures Allowed, Drop %, Missed Tkls
+- **Neutral** (plain white): Dropped Picks, % In Man/Zone, ADORT, TD/INT, Tackles, Interceptions, Coverage/Run Stops, Batted Balls, Forced Fumbles, Total Pressures, CCR
+- **Higher is Better**: Everything else (grades, Coverage Grade, Pass Rush, Receiving, etc.)
 
-*Lower is Better* (`PFF_LOWER_IS_BETTER` set):
-- CB: Comp. %, Passer Rating, Missed Tackles, Missed Tkl Rate
-- DT/ED: Missed Tackle Rate
-- LB: Completion %, Pass Rat. All., Missed Tkl Rate
-- IOL/OT: Penalties, Hits Allowed, Sacks Allowed, Hurries Allowed, Pressures Allowed
-- SAF: Missed Tackles, Missed Tackle Rate, Passer Rating Alwd
-- TE/WR: Drop %
+### Context-Specific Percentile Handling
 
-*Neutral* (`PFF_NEUTRAL` set — shown in plain white, no color):
-- Dropped Picks, % In Man, % In Zone, ADORT/ADOT, TD / INT, TD Allowed/Ints
-- Recs/Tgts, Tackles, Assisted Tackles, TDs, Touchdowns, Interceptions, Picks
-- Coverage Stops, Run Stops, Batted Balls, Forced Fumbles, Total Pressures, CCR
+| Context | Function | Behavior |
+|---------|----------|----------|
+| Position Boards | `getPffColorByPercentile(metric, pct)` | Trusts stored percentile (1.0 = best). Neutral → PLAIN. |
+| Player Profiles | `getPffColorForProfile(metric, pct)` | Naive rank: 0.0 = highest raw. Flips higher-is-better with `1 - pct`. |
+| Fallback | `getPffColorByValue(metric, value)` | Colors by raw 0–100 value, respects direction. |
 
-*Higher is Better* (everything else — grades, Coverage Grade, Pass Rush, Receiving, etc.)
+### OL Metric Disambiguation (in `data.ts`)
 
-**Context-Specific Percentile Handling:**
-
-| Context | Percentile Source | Orientation | Function |
-|---------|------------------|-------------|----------|
-| Position Boards | Stored in `{value, percentile}` on `position_board_entries.pff_scores` | Already corrected (1.0 = best, accounts for stat direction) | `getPffColorByPercentile(metric, pct)` |
-| Player Profiles | Stored in `{value, percentile}` on `players.pff_scores` | Naive rank (0.0 = highest raw value, does NOT account for direction) | `getPffColorForProfile(metric, pct)` |
-
-For player profiles, the function flips the percentile for higher-is-better stats (`1 - pct`), keeps it as-is for lower-is-better stats, and returns plain white for neutral stats.
-
-**Where Color Is Applied:**
-
-| Location | What Gets Colored |
-|----------|------------------|
-| `PositionBoardsView.tsx` (StatBlock) | Grades (scale-aware), PFF Scores (board percentile), Athletic (no color) |
-| `PlayerDetailView.tsx` (OverviewTab) | PFF Scores (direction-aware percentile), Site Ratings (scale-aware), DraftBuzz Grades (0–100) |
-| `ExpandedBoardTable.tsx` | Grades (scale-aware) |
-
-### Revalidation
-
-After any data mutation (import, save, delete), the system calls `revalidatePath()` on affected routes to bust the ISR/SSG cache. Common paths revalidated: `/admin`, `/players`, `/`, `/rankings`, `/mocks`, `/player/[slug]`.
+For IOL/OT position boards, bare metric names are renamed to avoid confusion with DL/ED stats:
+- `"Hits"` → `"Hits Allowed"`, `"Sacks"` → `"Sacks Allowed"`, `"Hurries"` → `"Hurries Allowed"`, `"Pressures"` → `"Pressures Allowed"`
+- Their naive percentiles are flipped (`1 - pct`) since for OL these are "lower is better"
+- DT/EDGE keep bare names where higher = better
 
 ---
 
-## 14. Environment & Deployment
+## 11. Public-Facing Pages
+
+| Route | Data Source | Key Feature |
+|---|---|---|
+| `/` (Home) | `getEnrichedBigBoard()` | Tabbed: Bengals (default) / Consensus / Expanded. Stats row. |
+| `/players` | `getPlayers()` + `getProfileCount()` | Card grid, search + position filter. Only profiled players. |
+| `/player/[slug]` | `getCachedProfile()` (React `cache()` dedup) | Full profile, Overview + Scouting tabs. `force-dynamic`. |
+| `/boards` | `getPositionBoards()` | 11 position group tabs. Expandable rows. |
+| `/rankings` | `getRankings()` + `getADP()` | Source tabs, position filters, source dates. |
+| `/mocks` | `getMocks()` | Single Source / Compare view with team filter. |
+
+### Data Layer (`data.ts`)
+
+Server-only module. Key patterns:
+- **`fetchAll()`** — Paginates past Supabase's 1000-row limit. **Throws** on errors.
+- **`HIDDEN_SOURCES`** — `Set(["Bleacher", "Con", "Premier Con."])`. Filtered from all public queries.
+- **`CONSENSUS_SOURCES`** — `["Brugler", "NFL.com", "CBS", "PFF", "ESPN"]`. Used to compute "Avg" on position boards.
+- **Error handling** — All Supabase calls log errors via `console.error`. `fetchAll()` throws; others log and fall back to empty data.
+
+---
+
+## 12. Admin Backend
+
+### Admin Pages (13 routes)
+
+| Route | Purpose | Key Actions |
+|---|---|---|
+| `/admin` | Player management | Search, profile status filter, Edit links, Create Profile |
+| `/admin/login` | Auth | Email/password login form |
+| `/admin/player/new` | Create player | Full 14-field form |
+| `/admin/player/[slug]` | Edit player | 14 fields + 6 validated JSON textareas + Skills/Traits editor + Create Profile banner |
+| `/admin/upload` | Data import | 5-step wizard, 14 data types, 5 stats cards, 10MB limit |
+| `/admin/boards` | Big Board editor | Drag-and-drop for Consensus/Bengals/Expanded |
+| `/admin/boards/positions` | Position Board editor | Drag-and-drop for 11 position groups |
+| `/admin/corrections` | Name corrections | Variant→canonical mappings. Audit + merge for duplicates. |
+| `/admin/positions` | Position audit | Finds non-canonical positions. Fix-one or fix-all. |
+| `/admin/dates` | Source dates | View/edit "last updated" for ranking and mock sources |
+| `/admin/priorities` | Bio priorities | View/change source priorities. Re-resolves fields on change. |
+| `/admin/cleanup` | Data cleanup | Players with missing position/college. Cascading delete. |
+| `/admin/colors` | Color reference | Static visual: tier swatches, scale breakpoints, PFF stat directions. |
+
+### Admin Layout Navigation
+
+Top nav: Players · Boards · Upload · Corrections · Positions · Dates · Priorities · Colors · Cleanup · Back to Site
+
+### Player Editor JSON Validation
+
+All 6 JSON textareas (`overview`, `site_ratings`, `pff_scores`, `athletic_scores`, `draftbuzz_grades`, `alignments`) are validated with `JSON.parse()` before submit. Invalid JSON shows an error and prevents save.
+
+### Delete Player
+
+Cascading delete across all 13 child tables. Redirects to `/admin` on success.
+
+---
+
+## 13. Shared Components
+
+| Component | Props | Purpose |
+|-----------|-------|---------|
+| `BoardTable` | `players: BoardPlayer[]`, `title: string` | Ranked table with search + position pills. Links to `/player/[slug]`. |
+| `ExpandedBoardTable` | `players: ExpandedBoardPlayer[]`, `title: string` | Expandable rows: grades (color-coded), ranks, summary. `<React.Fragment key>`. Expand/collapse all. |
+| `Navigation` | (none) | Sticky top nav: Big Board, Position Boards, Rankings, Mock Drafts, All Players, Admin. Mobile hamburger. |
+| `PlayerGrid` | `players: PlayerIndex[]` | Card grid with search + position filter. Name, badge, college, bio stats, projected round. |
+| `PositionBadge` | `position: string` | Colored pill via `normalizePosition()` + `getPositionColor()`. Shows "—" for null. |
+
+---
+
+## 14. Authentication & Middleware
+
+- **Provider:** Supabase Auth (email/password only, single admin user)
+- **Middleware:** `src/middleware.ts` intercepts `/admin/*`
+- **Session refresh:** Calls `supabase.auth.getUser()` to refresh token
+- **No role check:** Any authenticated Supabase user can access admin (single-user app)
+
+| Route | Rule |
+|---|---|
+| `/admin/login` | Public. Redirects to `/admin` if already authenticated. |
+| `/admin/*` | Requires auth. Redirects to `/admin/login` if no user. |
+| All other routes | Public. |
+
+```ts
+config = { matcher: ["/admin/:path*"] };
+```
+
+---
+
+## 15. Key Concepts & Gotchas
+
+### The Overview Gate
+
+A player "has a profile" iff `overview != '{}'`. Data importers write to `pff_scores` etc. but leave `overview` empty — the player has data but no visible profile until explicitly activated.
+
+### JSON Column Architecture
+
+Profile data is stored as JSON columns rather than relational tables because each position has different metrics and data is always read/written as a unit per player.
+
+### Hidden Sources
+
+`HIDDEN_SOURCES = Set(["Bleacher", "Con", "Premier Con."])`:
+
+| Source | Reason |
+|---|---|
+| `"Bleacher"` | Superseded by `"Bleacher Report"` from bleacher_profiles importer |
+| `"Con"` | Internal consensus ADP — used to compute `consensus_adp` then hidden |
+| `"Premier Con."` | Legacy computed consensus from original Excel migration |
+
+### Protected Fields (Never Overwritten by Imports)
+
+| Field | Column |
+|---|---|
+| Strengths | `players.strengths` |
+| Weaknesses | `players.weaknesses` |
+| Player Summary | `players.player_summary` |
+| Projected Role | `players.projected_role` |
+
+Import data goes to `commentary` table instead.
+
+### Position Board Dynamic Rankings
+
+Overall Rank and POS Rank on position boards are computed at read time from `player_rankings` using `CONSENSUS_SOURCES`, not stored on `position_board_entries`. "Avg" = simple average of available sources.
+
+### Two Position Normalization Systems
+
+| System | Location | Purpose | Examples |
+|--------|----------|---------|---------|
+| `normalizePffPosition()` | upload/actions.ts | Maps to PFF template keys | DI→DT, DE→EDGE, G→IOL |
+| `POS_ALIASES` / `normalizePosition()` | types.ts | Maps to display abbreviations | EDGE→ED, OLB→ED, WDE→ED, DB→CB, OL→OT |
+
+### Revalidation
+
+After data mutations, `revalidatePath()` busts SSR cache on: `/admin`, `/players`, `/`, `/rankings`, `/mocks`, `/player/[slug]`, admin layout.
+
+### Legacy JSON Files
+
+`src/data/` contains original JSON files from before the Supabase migration. **No longer used as primary data source** but remain in the repo.
+
+---
+
+## 16. Environment & Deployment
 
 ### Environment Variables
 
-| Variable | Where Used | Value |
-|---|---|---|
-| `NEXT_PUBLIC_SUPABASE_URL` | All Supabase clients | `https://cmapsylsrsglhfdwquwe.supabase.co` |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | All Supabase clients | `eyJhbGci...` (anon key) |
-| `SUPABASE_SERVICE_ROLE_KEY` | Defined but unused | `eyJhbGci...` (service role key) |
+| Variable | Where Used |
+|---|---|
+| `NEXT_PUBLIC_SUPABASE_URL` | All Supabase clients |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | All Supabase clients |
+| `SUPABASE_SERVICE_ROLE_KEY` | Defined but **unused** |
 
-> Both keys must also be set in Vercel Environment Variables for production.
+Both public vars must also be set in Vercel Environment Variables for production.
 
 ### Deployment
 
-1. Push to `main` on GitHub
-2. Vercel auto-detects the push and builds
-3. `next build` runs, generating static pages for all profiled players
-4. Deploy completes, site is live
+1. Push to `main` on GitHub → Vercel auto-builds → site is live
+2. All pages server-render on demand (`force-dynamic` on player pages)
 
 ### Local Development
 
 ```bash
 cd draft-board-app
-npm run dev          # Starts Next.js dev server on port 3000
+npm run dev          # Next.js dev server on port 3000
 ```
 
-### Python Environment (for migration scripts)
+### Python Environment (migration scripts only)
 
 ```bash
 cd C:\Users\hetze\OneDrive\Desktop\DBs
 .venv\Scripts\Activate.ps1   # Python 3.14 venv
 ```
 
-Used for one-off migration scripts, not part of the running application.
+---
+
+## 17. Dependencies
+
+### Production
+
+| Package | Version | Purpose |
+|---------|---------|---------|
+| `next` | 16.1.6 | Next.js framework |
+| `react` / `react-dom` | 19.2.3 | React |
+| `@supabase/supabase-js` | ^2.95.3 | Supabase client |
+| `@supabase/ssr` | ^0.8.0 | Supabase SSR helpers (cookie auth) |
+| `@dnd-kit/core` | ^6.3.1 | Drag-and-drop |
+| `@dnd-kit/sortable` | ^10.0.0 | Sortable lists |
+| `@dnd-kit/utilities` | ^3.2.2 | CSS transform utilities |
+| `@vercel/analytics` | ^1.6.1 | Analytics |
+| `papaparse` | ^5.5.3 | CSV/TSV parser |
+| `xlsx` | ^0.18.5 | Excel parser (~1MB bundle) |
+| `server-only` | ^0.0.1 | Prevents data.ts client import |
+
+### Dev
+
+| Package | Version |
+|---------|---------|
+| `tailwindcss` / `@tailwindcss/postcss` | ^4 |
+| `typescript` | ^5 |
+| `eslint` / `eslint-config-next` | ^9 / 16.1.6 |
+| `@types/node`, `@types/react`, `@types/react-dom`, `@types/papaparse` | Various |
 
 ---
 
-## 15. Excel Workbook Reference
+## 18. Excel Workbook Reference
 
-**File:** `C:\Users\hetze\OneDrive\Desktop\DBs\2026 Draft Board 2.0.xlsx`
-**Sheets:** 255+
-
-The Excel workbook is the original data source. Key sheet categories:
+**File:** `C:\Users\hetze\OneDrive\Desktop\DBs\2026 Draft Board 2.0.xlsx` (255+ sheets)
 
 | Category | Example Sheets | Imported As |
 |---|---|---|
-| Big Board | `Consensus Board`, `Bengals Board`, `Expanded Board` | Initial migration only |
-| Rankings | `CBS`, `ESPN`, `PFF`, `NFL`, `Dane Brugler`, etc. | `rankings` type |
-| Positional Rankings | `CBS QB`, `ESPN WR`, etc. | `positional_rankings` type |
-| Mock Drafts | `CBS Mock`, `ESPN Mock`, etc. | `mocks` type |
-| ADP | `ADP` sheet | `adp` type |
-| PFF Stats | `PFF_Stats CB`, `PFF_Stats QB`, etc. (per position) | `pff_scores` type |
-| DraftBuzz | `DB CB`, `DB QB`, etc. (per position) | `draftbuzz_grades` type |
-| Athletic | `RAS Data` | `athletic_scores` type |
-| Grades | `Grades` sheet with NFL/ESPN/Gridiron/Bleacher columns | `site_ratings` type |
-| Bio Data | `Age`, `Weight`, `Height`, `Name`, `Position`, `Eligibility` sheets | Via bio_sources priority system |
-| Player Profiles | Per-player sheets with scouting data | Initial migration only |
-
-The Excel workbook uses a similar priority approach for bio data — separate sheets per field pull from different sources, with a final column that prioritizes the most authoritative source. This pattern is now replicated in the `bio_sources` priority system.
+| Big Board | Consensus Board, Bengals Board, Expanded Board | Initial migration only |
+| Rankings | CBS, ESPN, PFF, NFL, Dane Brugler, etc. | `rankings` |
+| Positional Rankings | CBS QB, ESPN WR, etc. | `positional_rankings` |
+| Mock Drafts | CBS Mock, ESPN Mock, etc. | `mocks` |
+| ADP | ADP sheet | `adp` |
+| PFF Stats | PFF_Stats CB, PFF_Stats QB, etc. | `pff_scores` |
+| DraftBuzz | DB CB, DB QB, etc. | `draftbuzz_grades` |
+| Athletic | RAS Data | `athletic_scores` |
+| Grades | Grades sheet (NFL/ESPN/Gridiron/Bleacher columns) | `site_ratings` |
 
 ### Standalone Upload Files
 
-| File | Format | Contents | Imported As |
-|---|---|---|---|
-| `PFF Stats 2.15.26.xlsx` | Single sheet `PFF_Stats`, 173 columns | All positions in one flat table (metrics + alignment snaps) | `pff_scores` |
-| `NFL Profiles 2.15.26.xlsx` | Single sheet, 27 columns, ~50 rows | NFL.com top prospect profiles (grades, rankings, comps, scouting text) | `nfl_profiles` |
-| `Bleacher Profiles 2.14.26.xlsx` | Single sheet, 13 columns, ~225 rows | Bleacher Report prospect profiles (grades, rankings, comps, round projections, commentary) | `bleacher_profiles` |
+| File | Contents | Imported As |
+|---|---|---|
+| `PFF Stats *.xlsx` | All positions, 173 columns | `pff_scores` |
+| `NFL Profiles *.xlsx` | Top ~50 prospects | `nfl_profiles` |
+| `Bleacher Profiles *.xlsx` | ~225 prospects | `bleacher_profiles` |
 
 ---
 
-## Quick Reference: Common Operations
+## 19. Operations Guide
 
 ### Import new ranking data
-1. Go to `/admin/upload`
-2. Select "Overall Rankings" or "Positional Rankings"
-3. Upload the CSV/Excel file
-4. Map columns (player_name → name column, rank → rank column)
-5. For Overall Rankings, optionally map `position_rank` to import positional rankings in the same pass
-6. Enter source name (e.g. "CBS", "ESPN")
-7. Import — source date is auto-updated, and `player_rankings` table is automatically synced for profile display
+1. `/admin/upload` → "Overall Rankings" → upload → map columns → enter source name → import
+2. Source date auto-updates. `player_rankings` auto-syncs.
 
-### Create a profile for a player
-1. Go to `/admin`
-2. Find the player (filter "No Profile" helps)
-3. Click **"+ Profile"** for quick creation, or **"Edit"** then **"Create Profile"** for template selection
-4. Player immediately appears on public `/players` page
+### Create a profile
+1. `/admin` → find player (filter "No Profile") → **"+ Profile"**
+2. Player immediately appears on `/players`
 
 ### Add a name correction
-1. Go to `/admin/corrections`
-2. Search for the canonical player
-3. Add the variant spelling
-4. Run audit to check for duplicate records
-5. Merge if duplicates found
+1. `/admin/corrections` → search canonical player → add variant → audit → merge if duplicates
 
 ### Update PFF data
-1. Upload the combined PFF Stats XLSX file (all positions in one sheet)
-2. Go to `/admin/upload` → "PFF Scores + Alignments"
-3. Upload, verify column match stats (metrics: X/53, alignments: X/18), import
-4. Percentiles auto-computed per position, bio data (age) flows through priority resolver
-5. Unknown positions (DI, DL, TBD, etc.) are auto-normalized or silently skipped
+1. `/admin/upload` → "PFF Scores + Alignments" → upload combined XLSX → verify match stats → import
 
-### Import NFL.com Profiles
-1. Upload the NFL Profiles XLSX file
-2. Go to `/admin/upload` → "NFL.com Profiles"
-3. Upload, map columns, import
-4. Rankings, grades, comps, and scouting commentary are written (manual fields are never overwritten)
+### Import source profiles (NFL.com / Bleacher / ESPN / TDN)
+1. `/admin/upload` → select profile type → upload → map columns → import
+2. Rankings, grades, comps, commentary written. Manual fields never overwritten.
 
-### Import Bleacher Report Profiles
-1. Upload the Bleacher Profiles XLSX file
-2. Go to `/admin/upload` → "Bleacher Report Profiles"
-3. Upload, map columns (player_name required; overall_rank, grade, pro_comparison, projected_round, overall, positives, negatives optional)
-4. Import — rankings, grades, comps, round projections, and commentary are written (manual fields are never overwritten)
+### Fix non-canonical positions
+1. `/admin/positions` → review → fix-one or fix-all
+
+### Clean up orphan players
+1. `/admin/cleanup` → review → remove or skip
+
+---
+
+## 20. Known Limitations & Deferred Items
+
+See [`TECH_DEBT_FIXES.md`](TECH_DEBT_FIXES.md) for the full audit (29 items) with status tracking.
+
+**Completed:** #1–10, #12, #15, #17, #18, #23, #25, #26 (19 of 29)
+
+**Deferred (10 items):**
+
+| # | Issue | Reason |
+|---|-------|--------|
+| 11 | No ISR / generateStaticParams | Current traffic fine; ensures fresh data |
+| 13 | PFF percentiles semantically inverted for lower-is-better stats | Display layer compensates correctly |
+| 14 | Source names not case-normalized | Single admin, consistent workflow |
+| 16 | Only first Excel sheet parsed | Not yet needed |
+| 19 | Athletic scores empty state cosmetic | No functional impact |
+| 20 | Inconsistent age typing (string vs number) | Works as-is |
+| 21 | Accessibility gaps (aria-labels, keyboard) | Large effort, no functional impact |
+| 22 | No admin role check | Single-user app |
+| 24 | fetchAll() no ORDER BY | No observed issues |
+| 27–29 | Slug collisions, form constraints, xlsx bundle | Low priority |
