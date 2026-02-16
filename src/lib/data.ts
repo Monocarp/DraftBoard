@@ -276,6 +276,8 @@ export async function getAllPlayerSlugs(): Promise<string[]> {
 
 // ─── Mocks ──────────────────────────────────────────────────────────────────
 
+import { normalizeTeam } from "@/lib/teams";
+
 export async function getMocks(): Promise<{ mocks: Record<string, MockPick[]>; mock_dates: Record<string, string> }> {
   const rows = await fetchAll<{
     source: string; pick_number: number; team: string;
@@ -288,9 +290,11 @@ export async function getMocks(): Promise<{ mocks: Record<string, MockPick[]>; m
     if (HIDDEN_SOURCES.has(r.source)) continue;
     if (!mocks[r.source]) mocks[r.source] = [];
     const pl = r.players as unknown as { slug: string } | null;
+    const { team, tradeNote } = normalizeTeam(r.team || "");
     mocks[r.source].push({
       pick: r.pick_number,
-      team: r.team,
+      team,
+      tradeNote,
       player: r.player_name,
       position: r.position,
       college: r.college,

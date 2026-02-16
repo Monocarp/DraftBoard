@@ -2,6 +2,7 @@
 
 import { createSupabaseServer } from "@/lib/supabase-server";
 import { normalizePosition } from "@/lib/types";
+import { normalizeTeam, formatTeamWithTrade } from "@/lib/teams";
 import { revalidatePath } from "next/cache";
 
 // ─── Types ──────────────────────────────────────────────────────────────────
@@ -531,10 +532,11 @@ async function importMocks(
       college: college ?? undefined,
     });
 
+    const { team: normalizedTeam, tradeNote } = normalizeTeam(team || "");
     newRows.push({
       source: sourceName,
       pick_number: pickNumber,
-      team: team?.trim() || "TBD",
+      team: formatTeamWithTrade(normalizedTeam, tradeNote),
       player_id: playerId,
       player_name: normalizedName,
       position,

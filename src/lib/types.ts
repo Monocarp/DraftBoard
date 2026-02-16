@@ -84,6 +84,7 @@ export interface PlayerProfile {
 export interface MockPick {
   pick: number | null;
   team: string | null;
+  tradeNote: string | null;
   player: string | null;
   position: string | null;
   college: string | null;

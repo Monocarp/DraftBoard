@@ -98,7 +98,12 @@ export default function MockDraftsView({
                     <td className="px-2 sm:px-4 py-2 sm:py-3">
                       <span className="text-sm font-bold text-gray-500">{pk.pick}</span>
                     </td>
-                    <td className="px-2 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium text-white">{pk.team}</td>
+                    <td className="px-2 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium text-white">
+                      {pk.team}
+                      {pk.tradeNote && (
+                        <span className="text-[10px] sm:text-xs text-gray-500 ml-1">({pk.tradeNote})</span>
+                      )}
+                    </td>
                     <td className="px-2 sm:px-4 py-2 sm:py-3">
                       {pk.slug ? (
                         <Link href={`/player/${pk.slug}`} className="text-xs sm:text-sm font-semibold text-white hover:text-orange-400 transition-colors">
@@ -149,7 +154,7 @@ function CompareView({
     }
   };
 
-  // Collect all unique teams from selected sources
+  // Collect all unique teams from selected sources (normalized, no trade notes)
   const allTeams = Array.from(
     new Set(
       compareSources.flatMap((s) => (mocks[s] || []).map((p) => p.team).filter(Boolean) as string[])
@@ -175,6 +180,7 @@ function CompareView({
     const pickNums = new Set<number>();
     for (const src of compareSources) {
       for (const p of mocks[src] || []) {
+        // Match on normalized team name (trade note is separate)
         if (p.team === teamFilter && p.pick != null) pickNums.add(p.pick);
       }
     }
@@ -276,7 +282,12 @@ function CompareView({
                                 )}
                                 <PositionBadge position={pick.position} />
                               </div>
-                              <p className="text-xs text-gray-500">{pick.team}</p>
+                              <p className="text-xs text-gray-500">
+                                {pick.team}
+                                {pick.tradeNote && (
+                                  <span className="text-[10px] text-gray-600 ml-1">({pick.tradeNote})</span>
+                                )}
+                              </p>
                             </div>
                           ) : (
                             <span className="text-xs text-gray-600">—</span>
