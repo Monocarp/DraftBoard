@@ -4,18 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import PositionBadge from "@/components/PositionBadge";
 import type { PositionBoardPlayer } from "@/lib/types";
+import { getGradeColor, getPffColorByPercentile, parseGradeValue, PLAIN } from "@/lib/colors";
 
 const BOARD_ORDER = ["CB", "DT", "ED", "LB", "IOL", "OT", "SAF", "TE", "WR"];
-
-function getScoreColor(value: string | number): string {
-  const num = typeof value === "string" ? parseFloat(value) : value;
-  if (isNaN(num)) return "text-white";
-  if (num >= 90) return "text-blue-400 font-bold";
-  if (num >= 80) return "text-green-400 font-semibold";
-  if (num >= 70) return "text-yellow-400";
-  if (num >= 60) return "text-orange-400";
-  return "text-red-400";
-}
 
 export default function PositionBoardsView({
   boards,
@@ -192,11 +183,11 @@ function PlayerRow({
 function StatBlock({
   title,
   data,
-  usePctColor,
+  mode,
 }: {
   title: string;
   data: Record<string, unknown>;
-  usePctColor?: boolean;
+  mode: "grades" | "pff" | "athletic";
 }) {
   const entries = Object.entries(data).filter(([, v]) => v != null && v !== "TBD" && v !== "#N/A");
   if (entries.length === 0) return null;
@@ -209,23 +200,22 @@ function StatBlock({
           // Handle {value, percentile} objects from PFF scores
           const isObj = typeof raw === "object" && raw !== null && "value" in (raw as Record<string, unknown>);
           const displayVal = isObj ? (raw as { value: string | number }).value : raw;
-          let colorClass: string;
-          if (usePctColor) {
-            // PFF scores: color grade metrics on absolute 0-100 scale
-            const num = typeof displayVal === "number" ? displayVal : parseFloat(String(displayVal));
-            const isGrade = /grade/i.test(label);
-            if (!isNaN(num) && isGrade) {
-              if (num >= 90) colorClass = "text-green-400 font-bold";
-              else if (num >= 80) colorClass = "text-green-400/80";
-              else if (num >= 70) colorClass = "text-yellow-400";
-              else if (num >= 60) colorClass = "text-orange-400";
-              else colorClass = "text-red-400";
-            } else {
-              colorClass = "text-white";
-            }
-          } else {
-            colorClass = getScoreColor(displayVal as string | number);
+          const percentile = isObj ? (raw as { percentile?: number }).percentile : undefined;
+
+          let colorClass = PLAIN;
+
+          if (mode === "pff" && percentile != null && !isNaN(percentile)) {
+            // PFF scores: use within-board percentile (0–1, 1.0 = best)
+            colorClass = getPffColorByPercentile(percentile);
+          } else if (mode === "grades") {
+            // Grades: detect scale from source name
+            const num = parseGradeValue(displayVal);
+            if (num != null) colorClass = getGradeColor(label, num);
+          } else if (mode === "athletic") {
+            // Athletic scores: no coloring (all TBD currently)
+            colorClass = PLAIN;
           }
+
           return (
             <div key={label} className="flex items-center justify-between gap-2">
               <span className="text-xs text-gray-400">{label}</span>
@@ -306,13 +296,13 @@ function ExpandedDetails({ player: p }: { player: PositionBoardPlayer }) {
     <div className="bg-[#0d1117] px-3 sm:px-6 py-4 sm:py-5">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-8 gap-4">
         {/* Grades */}
-        <StatBlock title="Grades" data={p.grades} />
+        <StatBlock title="Grades" data={p.grades} mode="grades" />
 
         {/* PFF Scores */}
-        <StatBlock title="PFF Scores" data={p.pff_scores} usePctColor />
+        <StatBlock title="PFF Scores" data={p.pff_scores} mode="pff" />
 
         {/* Athletic Scores */}
-        <StatBlock title="Athletic Scores" data={p.athletic_scores} />
+        <StatBlock title="Athletic Scores" data={p.athletic_scores} mode="athletic" />
 
         {/* Strengths */}
         {p.strengths && <div className="lg:col-span-2"><BulletList title="Strengths" text={p.strengths} variant="strength" /></div>}

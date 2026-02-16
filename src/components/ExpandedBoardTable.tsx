@@ -5,6 +5,7 @@ import Link from "next/link";
 import PositionBadge from "./PositionBadge";
 import { normalizePosition, ALL_POSITIONS } from "@/lib/types";
 import type { ExpandedBoardPlayer } from "@/lib/types";
+import { getGradeColor, parseGradeValue, PLAIN } from "@/lib/colors";
 
 export default function ExpandedBoardTable({
   players,
@@ -177,14 +178,18 @@ export default function ExpandedBoardTable({
                                 Grades
                               </h4>
                               <div className="space-y-0.5">
-                                {Object.entries(p.grades).map(([source, grade]) => (
-                                  <div key={source} className="flex items-center justify-between">
-                                    <span className="text-xs text-gray-400 text-left">{source}</span>
-                                    <span className="text-xs font-semibold text-white text-right">
-                                      {grade === "TBD" ? "—" : grade}
-                                    </span>
-                                  </div>
-                                ))}
+                                {Object.entries(p.grades).map(([source, grade]) => {
+                                  const num = parseGradeValue(grade);
+                                  const color = num != null ? getGradeColor(source, num) : PLAIN;
+                                  return (
+                                    <div key={source} className="flex items-center justify-between">
+                                      <span className="text-xs text-gray-400 text-left">{source}</span>
+                                      <span className={`text-xs font-semibold text-right ${color}`}>
+                                        {grade === "TBD" ? "—" : grade}
+                                      </span>
+                                    </div>
+                                  );
+                                })}
                               </div>
                             </div>
                           )}

@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import PositionBadge from "@/components/PositionBadge";
 import type { PlayerProfile } from "@/lib/types";
+import { getPffColorByInvertedPercentile, getPffColorByValue, getGradeColor, getDraftBuzzGradeColor, parseGradeValue, PLAIN } from "@/lib/colors";
 
 type Tab = "overview" | "scouting";
 
@@ -170,20 +171,18 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
             }).map(([metric, raw]) => {
               const isObj = typeof raw === "object" && raw !== null && "value" in raw;
               const displayVal = isObj ? (raw as { value: unknown }).value : raw;
-              // Color PFF values by the raw number on PFF's 0-100 scale
+              const percentile = isObj ? (raw as { percentile?: number }).percentile : undefined;
+
+              // Color using inverted percentile (player-table: 0 = best)
+              // Fall back to raw value color for all PFF metrics
+              let color = PLAIN;
               const num = typeof displayVal === "number" ? displayVal : parseFloat(String(displayVal));
-              let color = "text-white";
-              if (!isNaN(num)) {
-                const isGrade = /grade|^\d{4} grade$/i.test(metric);
-                if (isGrade) {
-                  // PFF grade scale: 90+ elite, 80+ great, 70+ good, 60+ avg, below 60 poor
-                  if (num >= 90) color = "text-green-400 font-bold";
-                  else if (num >= 80) color = "text-green-400/80";
-                  else if (num >= 70) color = "text-yellow-400";
-                  else if (num >= 60) color = "text-orange-400";
-                  else color = "text-red-400";
-                }
+              if (percentile != null && !isNaN(percentile)) {
+                color = getPffColorByInvertedPercentile(percentile);
+              } else if (!isNaN(num)) {
+                color = getPffColorByValue(num);
               }
+
               return (
                 <div key={metric} className="flex items-center justify-between">
                   <span className="text-xs text-gray-400">{metric}</span>
@@ -275,12 +274,16 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
         <div className="rounded-xl border border-[#2a3a4e] bg-[#111827] p-4">
           <h3 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2">Site Ratings</h3>
           <div className="space-y-1.5">
-            {Object.entries(p.site_ratings).filter(([, v]) => v).sort((a, b) => a[0].localeCompare(b[0])).map(([source, grade]) => (
-              <div key={source} className="flex items-center justify-between">
-                <span className="text-xs text-gray-400">{source}</span>
-                <span className="text-xs font-semibold text-white">{grade}</span>
-              </div>
-            ))}
+            {Object.entries(p.site_ratings).filter(([, v]) => v).sort((a, b) => a[0].localeCompare(b[0])).map(([source, grade]) => {
+              const num = parseGradeValue(grade);
+              const color = num != null ? getGradeColor(source, num) : PLAIN;
+              return (
+                <div key={source} className="flex items-center justify-between">
+                  <span className="text-xs text-gray-400">{source}</span>
+                  <span className={`text-xs font-semibold ${color}`}>{grade}</span>
+                </div>
+              );
+            })}
             {Object.keys(p.site_ratings).filter(k => p.site_ratings[k]).length === 0 && (
               <p className="text-xs text-gray-600">No ratings yet.</p>
             )}
@@ -291,12 +294,15 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
           <div className="rounded-xl border border-[#2a3a4e] bg-[#111827] p-4">
             <h3 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2">DraftBuzz Grades</h3>
             <div className="space-y-1.5">
-              {Object.entries(p.draftbuzz_grades).filter(([, v]) => v != null).map(([cat, grade]) => (
-                <div key={cat} className="flex items-center justify-between">
-                  <span className="text-xs text-gray-400">{cat}</span>
-                  <span className="text-xs font-semibold text-white">{grade?.toFixed(2)}</span>
-                </div>
-              ))}
+              {Object.entries(p.draftbuzz_grades).filter(([, v]) => v != null).map(([cat, grade]) => {
+                const color = grade != null ? getDraftBuzzGradeColor(grade) : PLAIN;
+                return (
+                  <div key={cat} className="flex items-center justify-between">
+                    <span className="text-xs text-gray-400">{cat}</span>
+                    <span className={`text-xs font-semibold ${color}`}>{grade?.toFixed(2)}</span>
+                  </div>
+                );
+              })}
             </div>
           </div>
         )}
