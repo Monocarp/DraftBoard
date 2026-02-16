@@ -13,6 +13,11 @@ import type {
   Ranking, Commentary,
 } from "./types";
 
+// ─── Source Filtering ────────────────────────────────────────────────────────
+
+/** Sources excluded from public display (legacy migration artifacts). */
+const HIDDEN_SOURCES = new Set(["Bleacher", "Con", "Premier Con."]);
+
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
 /** Supabase caps `.select()` at 1 000 rows by default.
@@ -187,10 +192,10 @@ export async function getPlayerProfile(slug: string): Promise<PlayerProfile | nu
     supabase.from("adp_entries").select("source, adp_value").eq("player_id", pid),
   ]);
 
-  // Build adp_by_source map
+  // Build adp_by_source map (exclude hidden sources)
   const adp_by_source: Record<string, number | null> = {};
   for (const a of adpEntries ?? []) {
-    adp_by_source[a.source] = a.adp_value;
+    if (!HIDDEN_SOURCES.has(a.source)) adp_by_source[a.source] = a.adp_value;
   }
 
   // Build projected_round_by_source map
@@ -222,7 +227,7 @@ export async function getPlayerProfile(slug: string): Promise<PlayerProfile | nu
     site_ratings: player.site_ratings ?? {},
     pff_scores: player.pff_scores ?? {},
     athletic_scores: player.athletic_scores ?? {},
-    rankings: (rankings ?? []).map((r) => ({
+    rankings: (rankings ?? []).filter((r) => !HIDDEN_SOURCES.has(r.source)).map((r) => ({
       source: r.source,
       overall_rank: r.overall_rank,
       positional_rank: r.positional_rank,
@@ -319,9 +324,10 @@ export async function getRankings(): Promise<{ players: RankingEntry[]; source_d
     players: { name: string; position: string | null; college: string | null; height: string | null; weight: string | null; eligibility: string | null };
   }>("rankings", "source, rank_value, slug, players(name, position, college, height, weight, eligibility)");
 
-  // Group by slug
+  // Group by slug (exclude hidden sources)
   const playerMap = new Map<string, RankingEntry>();
   for (const r of rows) {
+    if (HIDDEN_SOURCES.has(r.source)) continue;
     const p = r.players as unknown as { name: string; position: string | null; college: string | null; height: string | null; weight: string | null; eligibility: string | null };
     if (!playerMap.has(r.slug)) {
       playerMap.set(r.slug, {
@@ -381,11 +387,12 @@ export async function getADP(): Promise<{ players: ADPEntry[]; source_dates: Rec
     entry.source_adps[r.source] = r.adp_value;
   }
 
-  // Compute consensus from "Con" source
+  // Compute consensus from "Con" source, then strip hidden sources from display
   for (const entry of playerMap.values()) {
     if (entry.source_adps["Con"] != null) {
       entry.consensus_adp = entry.source_adps["Con"] as number;
     }
+    for (const src of HIDDEN_SOURCES) delete entry.source_adps[src];
   }
 
   return { players: [...playerMap.values()], source_dates: {} };

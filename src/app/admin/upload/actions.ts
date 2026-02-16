@@ -1561,7 +1561,7 @@ async function importSiteRatings(
     ["NFL", "NFL.com"],
     ["ESPN", "ESPN"],
     ["Gridiron", "Gridiron"],
-    ["Bleacher", "Bleacher"],
+    ["Bleacher", "Bleacher Report"],
   ];
 
   for (let i = 0; i < rows.length; i++) {

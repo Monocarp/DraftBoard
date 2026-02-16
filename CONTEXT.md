@@ -1,6 +1,6 @@
 # NFL Draft Board — Complete Technical Context
 
-> **Last Updated:** February 15, 2026
+> **Last Updated:** February 16, 2026
 > **Repository:** https://github.com/Monocarp/DraftBoard
 > **Live Site:** Auto-deploys to Vercel on push to `main`
 > **Supabase Project:** https://cmapsylsrsglhfdwquwe.supabase.co
@@ -62,7 +62,7 @@
 src/
 ├── lib/                         # Shared utilities
 │   ├── types.ts                 # All TypeScript interfaces & constants
-│   ├── data.ts                  # Read-only data fetching layer (server-only)
+│   ├── data.ts                  # Read-only data fetching layer (server-only, HIDDEN_SOURCES filter)
 │   ├── supabase.ts              # Supabase client (server reads)
 │   ├── supabase-server.ts       # Supabase client (server actions, cookie-aware)
 │   └── supabase-browser.ts      # Supabase client (browser)
@@ -725,6 +725,23 @@ Profile-specific data is stored as JSON columns on the `players` table rather th
 ### Legacy JSON Files
 
 The `src/data/` directory contains the original JSON files from before the Supabase migration. These are **no longer used as the primary data source** but remain in the repo. All data is now read from and written to Supabase.
+
+### Hidden Sources (HIDDEN_SOURCES)
+
+`data.ts` defines a `HIDDEN_SOURCES` set of source names excluded from all public display. These are legacy migration artifacts that would otherwise duplicate or pollute real data:
+
+| Source | Reason |
+|---|---|
+| `"Bleacher"` | Legacy migration name — superseded by `"Bleacher Report"` (properly named by the `bleacher_profiles` importer) |
+| `"Con"` | Consensus ADP value — used internally to compute `consensus_adp` but hidden from the ADP source list |
+| `"Premier Con."` | Legacy computed consensus from the original Excel migration — no longer maintained |
+
+Filtering is applied in:
+- `getRankings()` — skips hidden sources when grouping ranking rows
+- `getPlayerProfile()` — filters `player_rankings` and `adp_by_source`
+- `getADP()` — computes consensus from "Con" then strips all hidden sources from `source_adps`
+
+The Site Ratings grade import maps the Excel "Bleacher" column to the display key `"Bleacher Report"` (in `site_ratings` and `overview` JSONB).
 
 ### Position Abbreviation Inconsistency
 

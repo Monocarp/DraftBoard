@@ -20,7 +20,7 @@ export default function RankingsView({ rankings, sourceDates }: { rankings: Rank
 
   // Default sources
   const defaultSources = useMemo(() => {
-    const defaults = ["Bleacher", "ESPN", "Brugler", "CBS", "Walter", "PFF", "NFL.com"];
+    const defaults = ["Bleacher Report", "ESPN", "Brugler", "CBS", "Walter", "PFF", "NFL.com"];
     return new Set(defaults.filter(s => sources.includes(s)));
   }, [sources]);
 
