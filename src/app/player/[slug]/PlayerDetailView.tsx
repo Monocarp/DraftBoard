@@ -187,7 +187,7 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
                 <div key={metric} className="flex items-center justify-between">
                   <span className="text-xs text-gray-400">{metric}</span>
                   <span className={`text-xs font-semibold ${color}`}>
-                    {String(displayVal)}
+                    {typeof displayVal === "number" ? (Number.isInteger(displayVal) ? displayVal : displayVal.toFixed(1)) : String(displayVal)}
                   </span>
                 </div>
               );

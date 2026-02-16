@@ -208,14 +208,6 @@ export function getPffColorByValue(metric: string, value: number): string {
 }
 
 /**
- * Color a site rating value given the source name.
- * Site ratings use heterogeneous scales per source.
- */
-export function getSiteRatingColor(source: string, value: number): string {
-  return getGradeColor(source, value);
-}
-
-/**
  * Color a DraftBuzz category grade (0–100 scale).
  */
 export function getDraftBuzzGradeColor(value: number): string {
@@ -236,4 +228,4 @@ export function parseGradeValue(raw: unknown): number | null {
 }
 
 // ── Re-exports for convenience ──────────────────────────────────────────────
-export { ELITE, GREAT, GOOD, BELOW, POOR, PLAIN };
+export { PLAIN };

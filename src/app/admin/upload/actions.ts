@@ -1067,10 +1067,14 @@ async function writeBioSources(
   if (resolved.college !== undefined) updateData.college = String(resolved.college);
   if (resolved.projected_round !== undefined) updateData.projected_round = String(resolved.projected_round);
 
-  await supabase
+  const { error: updateError } = await supabase
     .from("players")
     .update(updateData)
     .eq("id", playerId);
+
+  if (updateError) {
+    console.error(`writeBioSources failed for player ${playerId}:`, updateError.message);
+  }
 }
 
 // ─── Import: PFF Scores ─────────────────────────────────────────────────────

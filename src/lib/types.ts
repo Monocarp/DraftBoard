@@ -145,18 +145,22 @@ const POS_ALIASES: Record<string, string> = {
   // Edge rushers → ED
   EDGE: "ED", DE: "ED", "DE/ED": "ED", "DL/ED": "ED", "LB/ED": "ED",
   DEED: "ED", DLED: "ED", LBED: "ED",
+  OLB: "ED", WDE: "ED", SDE: "ED",
   // Interior DL → DT
   IDL: "DT", DI: "DT", DL: "DT", NT: "DT",
   // Backs
   HB: "RB", FB: "RB",
   // Offensive line
-  T: "OT",
+  T: "OT", OL: "OT",
   G: "OG", IOL: "OG",
   OC: "C",
   // Linebackers
   ILB: "LB", MLB: "LB",
   // Safeties
   S: "SAF", FS: "SAF", SS: "SAF",
+  // Generic secondary
+  DB: "CB",
+  // Athlete → leave as-is (handled below)
 };
 
 export function normalizePosition(pos: string | null): string | null {
@@ -181,6 +185,7 @@ export const POSITION_COLORS: Record<string, string> = {
   K: "bg-gray-500/20 text-gray-400 border-gray-500/30",
   P: "bg-gray-500/20 text-gray-400 border-gray-500/30",
   S: "bg-teal-500/20 text-teal-400 border-teal-500/30",
+  ATH: "bg-amber-500/20 text-amber-400 border-amber-500/30",
 };
 
 export function getPositionColor(pos: string | null): string {

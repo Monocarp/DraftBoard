@@ -252,6 +252,13 @@ export function UploadManager() {
     setFileName(file.name);
     setError("");
 
+    // Reject files larger than 10 MB to prevent browser freeze
+    const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10 MB
+    if (file.size > MAX_FILE_SIZE) {
+      setError(`File is too large (${(file.size / 1024 / 1024).toFixed(1)} MB). Maximum allowed size is 10 MB.`);
+      return;
+    }
+
     const ext = file.name.split(".").pop()?.toLowerCase();
 
     if (ext === "csv" || ext === "tsv" || ext === "txt") {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import PositionBadge from "./PositionBadge";
 import { normalizePosition, ALL_POSITIONS } from "@/lib/types";
@@ -129,8 +129,8 @@ export default function ExpandedBoardTable({
             {filtered.map((p, idx) => {
               const isExpanded = expandedRows.has(p.slug);
               return (
-                <>
-                  <tr key={p.slug + idx} className="border-b border-[#2a3a4e]/50 board-row">
+                <React.Fragment key={p.slug + idx}>
+                  <tr className="border-b border-[#2a3a4e]/50 board-row">
                     <td className="px-2 sm:px-4 py-2 sm:py-3">
                       <button
                         onClick={() => toggleRow(p.slug)}
@@ -228,7 +228,7 @@ export default function ExpandedBoardTable({
                       </td>
                     </tr>
                   )}
-                </>
+                </React.Fragment>
               );
             })}
           </tbody>
