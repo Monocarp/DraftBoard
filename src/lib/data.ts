@@ -474,6 +474,10 @@ export async function getPositionBoards(): Promise<Record<string, PositionBoardP
     // from DL/ED generated stats (where higher is better).
     // IOL/OT: "Hits" means "Hits Allowed" (lower is better)
     // DT/ED:  "Hits" means "Hits Generated" (higher is better)
+    //
+    // These 4 counting stats also have NAIVE percentiles (higher raw = higher pct)
+    // unlike Penalties/Comp.% which were pre-flipped at migration time.
+    // We flip them here so all position board percentiles mean 1.0 = best.
     let pffScores = r.pff_scores ?? {};
     if (r.position_group === "IOL" || r.position_group === "OT") {
       const OL_RENAMES: Record<string, string> = {
@@ -484,7 +488,14 @@ export async function getPositionBoards(): Promise<Record<string, PositionBoardP
       };
       const renamed: typeof pffScores = {};
       for (const [key, val] of Object.entries(pffScores)) {
-        renamed[OL_RENAMES[key] ?? key] = val;
+        const newKey = OL_RENAMES[key] ?? key;
+        if (OL_RENAMES[key] && typeof val === "object" && val !== null && "percentile" in val) {
+          // Flip the naive percentile: 0 hits allowed should be 1.0 (best)
+          const obj = val as { value: string | number; percentile: number | null };
+          renamed[newKey] = { ...obj, percentile: obj.percentile != null ? 1 - obj.percentile : null };
+        } else {
+          renamed[newKey] = val;
+        }
       }
       pffScores = renamed;
     }
