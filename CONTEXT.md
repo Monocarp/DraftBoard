@@ -1,6 +1,6 @@
 # NFL Draft Board — Complete Technical Context
 
-> **Last Updated:** February 16, 2026 (d)
+> **Last Updated:** February 16, 2026 (e)
 > **Repository:** https://github.com/Monocarp/DraftBoard
 > **Live Site:** Auto-deploys to Vercel on push to `main`
 > **Supabase Project:** https://cmapsylsrsglhfdwquwe.supabase.co
@@ -115,6 +115,9 @@ src/
 │       │   ├── page.tsx         # Corrections page
 │       │   ├── actions.ts       # CRUD + audit/merge actions
 │       │   └── CorrectionsManager.tsx # Search, add, import, audit UI
+│       │
+│       ├── colors/              # Color System Reference
+│       │   └── page.tsx         # Visual reference for all color thresholds, PFF stat directions
 │       │
 │       ├── dates/               # Source Date Management
 │       │   ├── page.tsx         # Dates page
@@ -613,6 +616,7 @@ All `/admin/*` routes are protected by middleware. Auth is Supabase email/passwo
 | `/admin/boards/positions` | Position Board editor (11 position groups) with drag-and-drop |
 | `/admin/corrections` | Name corrections manager + audit/merge system |
 | `/admin/dates` | Source date editor (rankings + mock drafts) |
+| `/admin/colors` | Color system reference — tier swatches, per-source grade breakpoints, per-position PFF stat tables with direction/range, metric name variants |
 
 ### Player Editor Features
 
