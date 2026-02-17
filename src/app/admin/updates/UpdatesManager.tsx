@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { createUpdate, deleteUpdate } from "./actions";
+import { createUpdate, deleteUpdate, togglePin, updateDate } from "./actions";
 
 interface SiteUpdate {
   id: string;
   title: string;
   body: string;
   category: string;
+  pinned: boolean;
   created_at: string;
 }
 
@@ -23,10 +24,19 @@ function categoryBadge(cat: string) {
   return <span className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-medium ${c.color}`}>{c.label}</span>;
 }
 
+/** Format an ISO date to local YYYY-MM-DDTHH:mm for datetime-local inputs */
+function toLocalInput(iso: string) {
+  const d = new Date(iso);
+  const offset = d.getTimezoneOffset();
+  const local = new Date(d.getTime() - offset * 60000);
+  return local.toISOString().slice(0, 16);
+}
+
 export default function UpdatesManager({ updates: initial }: { updates: SiteUpdate[] }) {
   const [updates, setUpdates] = useState(initial);
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
+  const [editingDate, setEditingDate] = useState<string | null>(null);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -42,15 +52,24 @@ export default function UpdatesManager({ updates: initial }: { updates: SiteUpda
     } else {
       setMessage("Update posted!");
       form.reset();
-      // Optimistically add to top of list
+      const dateVal = fd.get("date") as string;
       const newUpdate: SiteUpdate = {
         id: crypto.randomUUID(),
         title: fd.get("title") as string,
         body: fd.get("body") as string,
         category: fd.get("category") as string,
-        created_at: new Date().toISOString(),
+        pinned: fd.get("pinned") === "on",
+        created_at: dateVal ? new Date(dateVal).toISOString() : new Date().toISOString(),
       };
-      setUpdates([newUpdate, ...updates]);
+      // Insert pinned at top, otherwise before first non-pinned
+      if (newUpdate.pinned) {
+        setUpdates([newUpdate, ...updates]);
+      } else {
+        const pinnedCount = updates.filter((u) => u.pinned).length;
+        const next = [...updates];
+        next.splice(pinnedCount, 0, newUpdate);
+        setUpdates(next);
+      }
     }
     setSaving(false);
   }
@@ -62,6 +81,41 @@ export default function UpdatesManager({ updates: initial }: { updates: SiteUpda
       alert(result.error);
     } else {
       setUpdates(updates.filter((u) => u.id !== id));
+    }
+  }
+
+  async function handleTogglePin(id: string, currentPinned: boolean) {
+    const result = await togglePin(id, !currentPinned);
+    if (result.error) {
+      alert(result.error);
+    } else {
+      const updated = updates.map((u) =>
+        u.id === id ? { ...u, pinned: !currentPinned } : u
+      );
+      // Re-sort: pinned first, then by date desc
+      updated.sort((a, b) => {
+        if (a.pinned !== b.pinned) return a.pinned ? -1 : 1;
+        return new Date(b.created_at).getTime() - new Date(a.created_at).getTime();
+      });
+      setUpdates(updated);
+    }
+  }
+
+  async function handleDateChange(id: string, newDate: string) {
+    if (!newDate) return;
+    const result = await updateDate(id, newDate);
+    if (result.error) {
+      alert(result.error);
+    } else {
+      const updated = updates.map((u) =>
+        u.id === id ? { ...u, created_at: new Date(newDate).toISOString() } : u
+      );
+      updated.sort((a, b) => {
+        if (a.pinned !== b.pinned) return a.pinned ? -1 : 1;
+        return new Date(b.created_at).getTime() - new Date(a.created_at).getTime();
+      });
+      setUpdates(updated);
+      setEditingDate(null);
     }
   }
 
@@ -92,17 +146,33 @@ export default function UpdatesManager({ updates: initial }: { updates: SiteUpda
           />
         </div>
 
-        <div>
-          <label className="block text-xs font-medium text-gray-400 mb-1">Category</label>
-          <select
-            name="category"
-            defaultValue="announcement"
-            className="rounded-lg border border-[#2a3a4e] bg-[#0a0f1a] px-3 py-2 text-sm text-white focus:border-orange-500 focus:outline-none"
-          >
-            {CATEGORIES.map((c) => (
-              <option key={c.value} value={c.value}>{c.label}</option>
-            ))}
-          </select>
+        <div className="flex flex-wrap items-end gap-4">
+          <div>
+            <label className="block text-xs font-medium text-gray-400 mb-1">Category</label>
+            <select
+              name="category"
+              defaultValue="announcement"
+              className="rounded-lg border border-[#2a3a4e] bg-[#0a0f1a] px-3 py-2 text-sm text-white focus:border-orange-500 focus:outline-none"
+            >
+              {CATEGORIES.map((c) => (
+                <option key={c.value} value={c.value}>{c.label}</option>
+              ))}
+            </select>
+          </div>
+
+          <div>
+            <label className="block text-xs font-medium text-gray-400 mb-1">Date (optional, defaults to now)</label>
+            <input
+              name="date"
+              type="datetime-local"
+              className="rounded-lg border border-[#2a3a4e] bg-[#0a0f1a] px-3 py-2 text-sm text-white focus:border-orange-500 focus:outline-none"
+            />
+          </div>
+
+          <label className="flex items-center gap-2 cursor-pointer pb-1">
+            <input name="pinned" type="checkbox" className="rounded border-[#2a3a4e] bg-[#0a0f1a] text-orange-500 focus:ring-orange-500" />
+            <span className="text-xs text-gray-400">📌 Pin to top</span>
+          </label>
         </div>
 
         <div className="flex items-center gap-3">
@@ -134,29 +204,72 @@ export default function UpdatesManager({ updates: initial }: { updates: SiteUpda
             {updates.map((u) => (
               <div
                 key={u.id}
-                className="flex items-start justify-between rounded-lg border border-[#2a3a4e] bg-[#0d1320] px-4 py-3"
+                className={`flex items-start justify-between rounded-lg border px-4 py-3 ${
+                  u.pinned
+                    ? "border-orange-500/40 bg-orange-500/5"
+                    : "border-[#2a3a4e] bg-[#0d1320]"
+                }`}
               >
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 mb-1">
+                  <div className="flex items-center gap-2 mb-1 flex-wrap">
+                    {u.pinned && (
+                      <span className="inline-flex items-center rounded-full bg-orange-500/20 px-2 py-0.5 text-[10px] font-medium text-orange-300">
+                        📌 Pinned
+                      </span>
+                    )}
                     {categoryBadge(u.category)}
-                    <span className="text-xs text-gray-500">
-                      {new Date(u.created_at).toLocaleDateString("en-US", {
-                        month: "short",
-                        day: "numeric",
-                        year: "numeric",
-                      })}
-                    </span>
+                    {editingDate === u.id ? (
+                      <input
+                        type="datetime-local"
+                        defaultValue={toLocalInput(u.created_at)}
+                        onBlur={(e) => handleDateChange(u.id, e.target.value)}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter") {
+                            e.preventDefault();
+                            handleDateChange(u.id, (e.target as HTMLInputElement).value);
+                          }
+                          if (e.key === "Escape") setEditingDate(null);
+                        }}
+                        autoFocus
+                        className="rounded border border-[#2a3a4e] bg-[#0a0f1a] px-1.5 py-0.5 text-[11px] text-white focus:border-orange-500 focus:outline-none"
+                      />
+                    ) : (
+                      <button
+                        onClick={() => setEditingDate(u.id)}
+                        className="text-xs text-gray-500 hover:text-orange-400 transition-colors"
+                        title="Click to edit date"
+                      >
+                        {new Date(u.created_at).toLocaleDateString("en-US", {
+                          month: "short",
+                          day: "numeric",
+                          year: "numeric",
+                          hour: "numeric",
+                          minute: "2-digit",
+                        })}
+                      </button>
+                    )}
                   </div>
                   <p className="text-sm font-medium text-white">{u.title}</p>
                   <p className="text-xs text-gray-400 mt-0.5 line-clamp-2">{u.body}</p>
                 </div>
-                <button
-                  onClick={() => handleDelete(u.id)}
-                  className="ml-3 text-red-400/50 hover:text-red-400 text-xs transition-colors flex-shrink-0"
-                  title="Delete"
-                >
-                  ✕
-                </button>
+                <div className="ml-3 flex items-center gap-2 flex-shrink-0">
+                  <button
+                    onClick={() => handleTogglePin(u.id, u.pinned)}
+                    className={`text-sm transition-colors ${
+                      u.pinned ? "text-orange-400 hover:text-orange-300" : "text-gray-600 hover:text-orange-400"
+                    }`}
+                    title={u.pinned ? "Unpin" : "Pin to top"}
+                  >
+                    📌
+                  </button>
+                  <button
+                    onClick={() => handleDelete(u.id)}
+                    className="text-red-400/50 hover:text-red-400 text-xs transition-colors"
+                    title="Delete"
+                  >
+                    ✕
+                  </button>
+                </div>
               </div>
             ))}
           </div>

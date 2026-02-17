@@ -37,9 +37,13 @@ function timeAgo(iso: string) {
 }
 
 export default async function UpdatesPage() {
-  const updates = await getSiteUpdates();
+  const allUpdates = await getSiteUpdates();
 
-  // Group by date
+  // Separate pinned from the rest
+  const pinned = allUpdates.filter((u) => u.pinned);
+  const updates = allUpdates.filter((u) => !u.pinned);
+
+  // Group unpinned by date
   const grouped: { date: string; items: typeof updates }[] = [];
   for (const u of updates) {
     const dk = dateKey(u.created_at);
@@ -58,12 +62,44 @@ export default async function UpdatesPage() {
         <p className="text-sm text-gray-400 mt-1">Latest updates, features, and data changes throughout the 2026 draft cycle.</p>
       </div>
 
-      {updates.length === 0 ? (
+      {allUpdates.length === 0 ? (
         <div className="text-center py-16">
           <p className="text-gray-500 text-sm">No updates yet. Check back soon!</p>
         </div>
       ) : (
-        <div className="relative">
+        <>
+          {/* Pinned Updates */}
+          {pinned.length > 0 && (
+            <div className="mb-8 space-y-3">
+              {pinned.map((u) => {
+                const cat = getCat(u.category);
+                return (
+                  <div
+                    key={u.id}
+                    className="rounded-xl border border-orange-500/30 bg-orange-500/5 backdrop-blur-sm p-4 relative"
+                  >
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="inline-flex items-center rounded-full bg-orange-500/20 px-2 py-0.5 text-[11px] font-medium text-orange-300">
+                        📌 Pinned
+                      </span>
+                      <span className={`inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-[11px] font-medium ${cat.color}`}>
+                        {cat.emoji} {cat.label}
+                      </span>
+                      <span className="text-[11px] text-gray-500">
+                        {timeAgo(u.created_at) ?? formatDate(u.created_at)}
+                      </span>
+                    </div>
+                    <h3 className="text-sm font-semibold text-white mb-1">{u.title}</h3>
+                    <p className="text-sm text-gray-400 leading-relaxed whitespace-pre-line">{u.body}</p>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
+          {/* Timeline */}
+          {grouped.length > 0 && (
+          <div className="relative">
           {/* Vertical timeline line */}
           <div className="absolute left-[19px] top-0 bottom-0 w-px bg-gradient-to-b from-orange-500/40 via-[#2a3a4e] to-transparent" />
 
@@ -108,6 +144,8 @@ export default async function UpdatesPage() {
             ))}
           </div>
         </div>
+          )}
+        </>
       )}
     </div>
   );

@@ -636,13 +636,15 @@ export interface SiteUpdate {
   title: string;
   body: string;
   category: string;
+  pinned: boolean;
   created_at: string;
 }
 
 export async function getSiteUpdates(): Promise<SiteUpdate[]> {
   const { data, error } = await supabase
     .from("site_updates")
-    .select("id, title, body, category, created_at")
+    .select("id, title, body, category, pinned, created_at")
+    .order("pinned", { ascending: false })
     .order("created_at", { ascending: false });
   if (error) throw new Error(`getSiteUpdates: ${error.message}`);
   return (data ?? []) as SiteUpdate[];
