@@ -628,3 +628,34 @@ export async function getUserPositionRanks(
   }
   return result;
 }
+
+// ─── Site Updates ───────────────────────────────────────────────────────────
+
+export interface SiteUpdate {
+  id: string;
+  title: string;
+  body: string;
+  category: string;
+  created_at: string;
+}
+
+export async function getSiteUpdates(): Promise<SiteUpdate[]> {
+  const { data, error } = await supabase
+    .from("site_updates")
+    .select("id, title, body, category, created_at")
+    .order("created_at", { ascending: false });
+  if (error) throw new Error(`getSiteUpdates: ${error.message}`);
+  return (data ?? []) as SiteUpdate[];
+}
+
+/** Returns the ISO timestamp of the most recent update, or null. */
+export async function getLatestUpdateDate(): Promise<string | null> {
+  const { data, error } = await supabase
+    .from("site_updates")
+    .select("created_at")
+    .order("created_at", { ascending: false })
+    .limit(1)
+    .single();
+  if (error || !data) return null;
+  return data.created_at;
+}

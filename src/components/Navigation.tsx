@@ -11,9 +11,10 @@ const NAV_ITEMS = [
   { href: "/rankings", label: "Rankings" },
   { href: "/mocks", label: "Mock Drafts" },
   { href: "/players", label: "All Players" },
+  { href: "/updates", label: "Updates" },
 ];
 
-export default function Navigation({ userEmail, isAdmin }: { userEmail?: string | null; isAdmin?: boolean }) {
+export default function Navigation({ userEmail, isAdmin, hasRecentUpdate }: { userEmail?: string | null; isAdmin?: boolean; hasRecentUpdate?: boolean }) {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -42,13 +43,19 @@ export default function Navigation({ userEmail, isAdmin }: { userEmail?: string 
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                  className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive
                       ? "bg-orange-500/15 text-orange-400"
                       : "text-gray-400 hover:text-white hover:bg-white/5"
                   }`}
                 >
                   {item.label}
+                  {item.href === "/updates" && hasRecentUpdate && !isActive && (
+                    <span className="absolute top-1.5 right-1.5 flex h-2 w-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75" />
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500" />
+                    </span>
+                  )}
                 </Link>
               );
             })}
@@ -114,13 +121,19 @@ export default function Navigation({ userEmail, isAdmin }: { userEmail?: string 
                   key={item.href}
                   href={item.href}
                   onClick={() => setMobileOpen(false)}
-                  className={`block px-4 py-2 rounded-lg text-sm font-medium ${
+                  className={`relative block px-4 py-2 rounded-lg text-sm font-medium ${
                     isActive
                       ? "bg-orange-500/15 text-orange-400"
                       : "text-gray-400 hover:text-white"
                   }`}
                 >
                   {item.label}
+                  {item.href === "/updates" && hasRecentUpdate && !isActive && (
+                    <span className="ml-1.5 inline-flex h-2 w-2 align-middle">
+                      <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-orange-400 opacity-75" />
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500" />
+                    </span>
+                  )}
                 </Link>
               );
             })}
