@@ -155,10 +155,30 @@ export async function savePlayer(formData: FormData) {
     }
   }
 
+  // Sync position_board_entries with updated player data
+  if (resolvedId) {
+    await supabase
+      .from("position_board_entries")
+      .update({
+        height: height || null,
+        weight: weight || null,
+        age: age != null ? String(age) : null,
+        projected_round: projected_round || null,
+        projected_role: projected_role || null,
+        strengths: strengths || null,
+        weaknesses: weaknesses || null,
+        grades: draftbuzz_grades ?? {},
+        pff_scores: pff_scores ?? {},
+        athletic_scores: athletic_scores ?? {},
+      })
+      .eq("player_id", resolvedId);
+  }
+
   revalidatePath("/admin");
   revalidatePath(`/player/${slug}`);
   revalidatePath("/players");
   revalidatePath("/");
+  revalidatePath("/boards");
   redirect(`/admin/player/${slug}`);
 }
 
