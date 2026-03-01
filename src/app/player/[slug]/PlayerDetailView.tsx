@@ -201,7 +201,7 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
         <div className="rounded-xl border border-[#2a3a4e] bg-[#111827] p-4">
           <h3 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2">Athletic Testing</h3>
           {(() => {
-            const entries = Object.entries(p.athletic_scores).filter(([k]) => !["Result", "Grade"].includes(k));
+            const entries = Object.entries(p.athletic_scores).filter(([k]) => !["Result", "Grade", "Gridiron"].includes(k));
             if (entries.length === 0) return <p className="text-xs text-gray-600">No athletic data yet.</p>;
 
             // Separate composites / standalone from metrics with scores
@@ -224,7 +224,7 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
 
                 {/* Measurements */}
                 {standaloneEntries.length > 0 && (
-                  <div className="grid grid-cols-2 gap-x-3 gap-y-1 pb-1.5 border-b border-[#2a3a4e]">
+                  <div className="space-y-1 pb-1.5 border-b border-[#2a3a4e]">
                     {standaloneEntries.map(([metric, data]) => (
                       <div key={metric} className="flex items-center justify-between">
                         <span className="text-xs text-gray-400">{metric}</span>
