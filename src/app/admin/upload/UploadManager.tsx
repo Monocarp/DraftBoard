@@ -191,6 +191,20 @@ const DATA_TYPES_UNSORTED: Record<DataType, DataTypeConfig> = {
     ],
     needsSource: false,
   },
+  walter_reports: {
+    label: "Walter Football Scouting Reports",
+    description: "Walter Football scouting reports — summary, strengths, weaknesses, and player comps",
+    requiredColumns: [
+      { key: "player_name", label: "Player Name", required: true },
+      { key: "summary", label: "Summary / Overview", required: false },
+      { key: "strengths", label: "Strengths", required: false },
+      { key: "weaknesses", label: "Weaknesses", required: false },
+      { key: "player_comp", label: "Player Comp", required: false },
+      { key: "position", label: "Position", required: false },
+      { key: "school", label: "School", required: false },
+    ],
+    needsSource: false,
+  },
 };
 
 // Sort upload options alphabetically by label

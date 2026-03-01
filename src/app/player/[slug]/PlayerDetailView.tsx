@@ -200,21 +200,76 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
 
         <div className="rounded-xl border border-[#2a3a4e] bg-[#111827] p-4">
           <h3 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2">Athletic Testing</h3>
-          <div className="space-y-1.5">
-            {Object.entries(p.athletic_scores)
-              .filter(([k]) => !["Result", "Grade"].includes(k))
-              .map(([metric, data]) => (
-              <div key={metric} className="flex items-center justify-between">
-                <span className="text-xs text-gray-400">{metric}</span>
-                <div className="flex items-center gap-2">
-                  <span className="text-xs font-semibold text-white">{data.result || "TBD"}</span>
-                  {data.grade && (
-                    <span className="text-xs text-gray-500">({data.grade})</span>
-                  )}
-                </div>
+          {(() => {
+            const entries = Object.entries(p.athletic_scores).filter(([k]) => !["Result", "Grade"].includes(k));
+            if (entries.length === 0) return <p className="text-xs text-gray-600">No athletic data yet.</p>;
+
+            // Separate composites / standalone from metrics with scores
+            const composites = ["RAS", "Size", "Speed", "Explosive", "Agility"];
+            const standalone = ["Hand Size", "Arm Length"];
+            const ras = entries.find(([k]) => k === "RAS");
+            const compositeEntries = entries.filter(([k]) => composites.includes(k) && k !== "RAS");
+            const standaloneEntries = entries.filter(([k]) => standalone.includes(k));
+            const metricEntries = entries.filter(([k]) => !composites.includes(k) && !standalone.includes(k));
+
+            return (
+              <div className="space-y-2">
+                {/* RAS overall */}
+                {ras && (
+                  <div className="flex items-center justify-between pb-1.5 border-b border-[#2a3a4e]">
+                    <span className="text-xs font-semibold text-orange-400">RAS</span>
+                    <span className="text-sm font-bold text-white">{ras[1].result || "—"}</span>
+                  </div>
+                )}
+
+                {/* Measurements */}
+                {standaloneEntries.length > 0 && (
+                  <div className="grid grid-cols-2 gap-x-3 gap-y-1 pb-1.5 border-b border-[#2a3a4e]">
+                    {standaloneEntries.map(([metric, data]) => (
+                      <div key={metric} className="flex items-center justify-between">
+                        <span className="text-xs text-gray-400">{metric}</span>
+                        <span className="text-xs font-semibold text-white">{data.result || "—"}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {/* Metric rows: label | result | score */}
+                {metricEntries.length > 0 && (
+                  <div>
+                    <div className="grid grid-cols-[1fr_auto_auto] gap-x-3 items-center mb-1">
+                      <span className="text-[10px] text-gray-600 uppercase">Metric</span>
+                      <span className="text-[10px] text-gray-600 uppercase text-right w-16">Result</span>
+                      <span className="text-[10px] text-gray-600 uppercase text-right w-12">Score</span>
+                    </div>
+                    <div className="space-y-1">
+                      {metricEntries.map(([metric, data]) => (
+                        <div key={metric} className="grid grid-cols-[1fr_auto_auto] gap-x-3 items-center">
+                          <span className="text-xs text-gray-400">{metric}</span>
+                          <span className="text-xs font-semibold text-white text-right w-16">{data.result || "—"}</span>
+                          <span className={`text-xs text-right w-12 font-semibold ${data.grade ? (parseFloat(data.grade) >= 8 ? "text-green-400" : parseFloat(data.grade) >= 5 ? "text-yellow-400" : "text-red-400") : "text-gray-600"}`}>{data.grade || "—"}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Composite grades */}
+                {compositeEntries.length > 0 && (
+                  <div className="pt-1.5 border-t border-[#2a3a4e]">
+                    <div className="grid grid-cols-2 gap-x-3 gap-y-1">
+                      {compositeEntries.map(([metric, data]) => (
+                        <div key={metric} className="flex items-center justify-between">
+                          <span className="text-xs text-gray-400">{metric}</span>
+                          <span className={`text-xs font-bold ${data.result ? (parseFloat(data.result) >= 8 ? "text-green-400" : parseFloat(data.result) >= 5 ? "text-yellow-400" : "text-red-400") : "text-gray-600"}`}>{data.result || "—"}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
-            ))}
-          </div>
+            );
+          })()}
         </div>
 
         {/* Overall Rankings */}

@@ -21,7 +21,8 @@ export type DataType =
   | "bleacher_profiles"
   | "espn_profiles"
   | "tdn_profiles"
-  | "bio_data";
+  | "bio_data"
+  | "walter_reports";
 
 export type ColumnMapping = Record<string, string>; // csv_header → db_column
 
@@ -1491,8 +1492,9 @@ async function importAthleticScores(
 ): Promise<UploadResult> {
   const result: UploadResult = { success: true, inserted: 0, updated: 0, skipped: 0, errors: [] };
 
-  // RAS Data column mapping: [csvHeader, displayLabel]
+  // RAS Data column mapping: [resultCol, gradeCol, displayLabel]
   // Each becomes { result: value, grade: gradeValue }
+  // Supports both "Yd"/"Score" (RAS scraper) and "Yard"/"Grade" (legacy) column names
   const athleticFields: [string, string, string][] = [
     // [resultCol, gradeCol, displayLabel]
     ["RAS", "", "RAS"],
@@ -1503,16 +1505,30 @@ async function importAthleticScores(
     ["Composite Speed Grade", "", "Speed"],
     ["Composite Explosion Grade", "", "Explosive"],
     ["Composite Agility Grade", "", "Agility"],
-    ["40 Yard Dash", "40 Yard Dash Grade", "40 Time"],
-    ["20 Yard Split", "20 Yard Split Grade", "20 Split"],
-    ["10 Yard Split", "10 Yard Split Grade", "10 Split"],
-    ["Vertical", "Vertical Grade", "Vertical"],
-    ["Broad", "Broad Grade", "Broad"],
-    ["Shuttle", "Shuttle Grade", "Shuttle"],
-    ["3-Cone", "3-Cone Grade", "3 Cone"],
+    ["40 Yd Dash", "40 Yd Dash Score", "40 Time"],
+    ["20 Yd Split", "20 Yd Split Score", "20 Split"],
+    ["10 Yd Split", "10 Yd Split Score", "10 Split"],
+    ["Vertical", "Vertical Score", "Vertical"],
+    ["Broad", "Broad Score", "Broad"],
+    ["Shuttle", "Shuttle Score", "Shuttle"],
+    ["3-Cone", "3-Cone Score", "3 Cone"],
     ["Hand Size", "", "Hand Size"],
     ["Arm Length", "", "Arm Length"],
   ];
+
+  // Also check legacy column names (e.g. "40 Yard Dash" / "40 Yard Dash Grade")
+  const legacyAliases: Record<string, string> = {
+    "40 Yd Dash": "40 Yard Dash",
+    "40 Yd Dash Score": "40 Yard Dash Grade",
+    "20 Yd Split": "20 Yard Split",
+    "20 Yd Split Score": "20 Yard Split Grade",
+    "10 Yd Split": "10 Yard Split",
+    "10 Yd Split Score": "10 Yard Split Grade",
+    "Vertical Score": "Vertical Grade",
+    "Broad Score": "Broad Grade",
+    "Shuttle Score": "Shuttle Grade",
+    "3-Cone Score": "3-Cone Grade",
+  };
 
   for (let i = 0; i < rows.length; i++) {
     const row = rows[i];
@@ -1532,8 +1548,11 @@ async function importAthleticScores(
     // Build athletic_scores object
     const scores: Record<string, { result: string | null; grade: string | null }> = {};
     for (const [resultCol, gradeCol, label] of athleticFields) {
-      const resultVal = row[resultCol];
-      const gradeVal = gradeCol ? row[gradeCol] : undefined;
+      // Try primary column name first, then legacy alias
+      const resultVal = row[resultCol] || (legacyAliases[resultCol] ? row[legacyAliases[resultCol]] : undefined);
+      const gradeVal = gradeCol
+        ? (row[gradeCol] || (legacyAliases[gradeCol] ? row[legacyAliases[gradeCol]] : undefined))
+        : undefined;
 
       // Only include if at least one value exists
       if ((resultVal && resultVal !== "") || (gradeVal && gradeVal !== "")) {
@@ -2082,6 +2101,84 @@ async function importESPNProfiles(
   return result;
 }
 
+// ─── Import: Walter Football Scouting Reports ──────────────────────────────
+
+async function importWalterReports(
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  caches: ImportCaches,
+  rows: Record<string, string>[],
+  mapping: ColumnMapping,
+): Promise<UploadResult> {
+  const result: UploadResult = { success: true, inserted: 0, updated: 0, skipped: 0, errors: [] };
+  const SOURCE = "Walter Football";
+
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    const playerName = row[mapping["player_name"]];
+
+    if (!playerName?.trim()) { result.skipped++; continue; }
+
+    const playerId = await resolvePlayerId(supabase, caches, playerName, {
+      position: mapping["position"] ? row[mapping["position"]] : undefined,
+      college: mapping["school"] ? row[mapping["school"]] : undefined,
+    });
+
+    if (!playerId) {
+      result.errors.push(`Row ${i + 1}: Could not resolve player "${playerName}"`);
+      result.skipped++;
+      continue;
+    }
+
+    // ── 1. walter_profile on players table (player_comp) ────────────────
+    const playerComp = row[mapping["player_comp"]];
+    if (playerComp?.trim()) {
+      await supabase
+        .from("players")
+        .update({ walter_profile: { player_comp: playerComp.trim() } })
+        .eq("id", playerId);
+
+      // Also upsert into player_comps table
+      const normalizedComp = normalizeCompName(playerComp.trim());
+      const { data: existingComp } = await supabase
+        .from("player_comps")
+        .select("id")
+        .eq("player_id", playerId)
+        .eq("source", SOURCE)
+        .maybeSingle();
+
+      if (existingComp) {
+        await supabase.from("player_comps").update({ comp: normalizedComp }).eq("id", existingComp.id);
+      } else {
+        await supabase.from("player_comps").insert({ player_id: playerId, source: SOURCE, comp: normalizedComp });
+      }
+    }
+
+    // ── 2. Commentary (Overview, Strengths, Weaknesses, Player Comp) ────
+    const summary = row[mapping["summary"]];
+    const strengths = row[mapping["strengths"]];
+    const weaknesses = row[mapping["weaknesses"]];
+
+    const sections: { title: string; text: string }[] = [];
+    if (summary?.trim()) sections.push({ title: "Overview", text: summary.trim() });
+    if (strengths?.trim()) sections.push({ title: "Strengths", text: strengths.trim() });
+    if (weaknesses?.trim()) sections.push({ title: "Weaknesses", text: weaknesses.trim() });
+    if (playerComp?.trim()) sections.push({ title: "Player Comp", text: playerComp.trim() });
+
+    if (sections.length > 0) {
+      await supabase.from("commentary").delete().eq("player_id", playerId).eq("source", SOURCE);
+      await supabase.from("commentary").insert({
+        player_id: playerId,
+        source: SOURCE,
+        sections,
+      });
+    }
+
+    result.updated++;
+  }
+
+  return result;
+}
+
 // ─── Main Import Dispatcher ────────────────────────────────────────────────
 
 // ─── Import: Bio Data ───────────────────────────────────────────────────────
@@ -2210,6 +2307,9 @@ export async function importData(
     case "bio_data":
       result = await importBioData(supabase, caches, rows, mapping, sourceName, bioPriority);
       break;
+    case "walter_reports":
+      result = await importWalterReports(supabase, caches, rows, mapping);
+      break;
     default:
       result = { success: false, inserted: 0, updated: 0, skipped: 0, errors: [`Unknown data type: ${dataType}`] };
   }
@@ -2273,6 +2373,7 @@ export async function deleteSourceData(
     // Multi-table importers write to several tables — no simple source-based deletion
     case "nfl_profiles":
     case "bleacher_profiles":
+    case "walter_reports":
       return { success: false, deleted: 0, error: "Multi-table profile data cannot be deleted by source. Edit individual players instead." };
     default: return { success: false, deleted: 0, error: "Unknown data type" };
   }
