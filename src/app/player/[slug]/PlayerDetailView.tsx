@@ -258,12 +258,22 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
                 {compositeEntries.length > 0 && (
                   <div className="pt-1.5 border-t border-[#2a3a4e]">
                     <div className="grid grid-cols-2 gap-x-3 gap-y-1">
-                      {compositeEntries.map(([metric, data]) => (
-                        <div key={metric} className="flex items-center justify-between">
-                          <span className="text-xs text-gray-400">{metric}</span>
-                          <span className={`text-xs font-bold ${data.result ? (parseFloat(data.result) >= 8 ? "text-green-400" : parseFloat(data.result) >= 5 ? "text-yellow-400" : "text-red-400") : "text-gray-600"}`}>{data.result || "—"}</span>
-                        </div>
-                      ))}
+                      {compositeEntries.map(([metric, data]) => {
+                        const val = (data.result || "").toUpperCase();
+                        const color = val === "ELITE" ? "text-blue-400"
+                          : val === "GREAT" ? "text-green-400"
+                          : val === "GOOD" ? "text-yellow-400"
+                          : val === "OKAY" ? "text-orange-400"
+                          : val === "POOR" ? "text-red-500"
+                          : val === "VERY POOR" ? "text-red-700"
+                          : "text-gray-600";
+                        return (
+                          <div key={metric} className="flex items-center justify-between">
+                            <span className="text-xs text-gray-400">{metric}</span>
+                            <span className={`text-xs font-bold ${color}`}>{data.result || "—"}</span>
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 )}
