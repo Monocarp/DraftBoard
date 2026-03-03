@@ -241,6 +241,7 @@ export async function getPlayerProfile(slug: string): Promise<PlayerProfile | nu
     player_summary: player.player_summary,
     draftbuzz_grades: player.draftbuzz_grades ?? {},
     projected_role: player.projected_role,
+    nfl_profile: (player.nfl_profile as Record<string, string | number | null>) ?? null,
     ideal_scheme: player.ideal_scheme,
     alignments: player.alignments ?? {},
     skills_traits: player.skills_traits ?? {},

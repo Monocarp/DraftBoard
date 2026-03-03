@@ -79,6 +79,7 @@ export interface PlayerProfile {
   media_links: { description: string; source?: string; url?: string }[];
   commentary: Commentary[];
   injury_history: { detail: string; recovery_time: string | null; year: string | null }[];
+  nfl_profile: Record<string, string | number | null> | null;
 }
 
 export interface MockPick {

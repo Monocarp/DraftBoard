@@ -355,6 +355,32 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
           </div>
         </div>
 
+        {p.nfl_profile && (p.nfl_profile.production_score || p.nfl_profile.athleticism_score || p.nfl_profile.total_score) && (
+          <div className="rounded-xl border border-[#2a3a4e] bg-[#111827] p-4">
+            <h3 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2">NFL Score Breakdown</h3>
+            <div className="space-y-2">
+              {(["Production", "Athleticism", "Total"] as const).map((label) => {
+                const scoreKey = `${label.toLowerCase()}_score`;
+                const rankKey = `${label.toLowerCase()}_score_rank`;
+                const score = p.nfl_profile?.[scoreKey];
+                const rank = p.nfl_profile?.[rankKey];
+                if (!score) return null;
+                const num = typeof score === "number" ? score : parseFloat(String(score));
+                const color = !isNaN(num) ? (num >= 90 ? "text-blue-400" : num >= 75 ? "text-green-400" : num >= 60 ? "text-yellow-400" : "text-orange-400") : "text-white";
+                return (
+                  <div key={label}>
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs text-gray-400">{label}</span>
+                      <span className={`text-sm font-bold ${color}`}>{score}</span>
+                    </div>
+                    {rank && <p className="text-[10px] text-gray-500 text-right leading-tight">{String(rank)}</p>}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         {Object.keys(p.draftbuzz_grades).length > 0 && (
           <div className="rounded-xl border border-[#2a3a4e] bg-[#111827] p-4">
             <h3 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2">DraftBuzz Grades</h3>
