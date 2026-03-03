@@ -1769,8 +1769,9 @@ async function importNFLProfiles(
     }
 
     if (sections.length > 0) {
-      // Delete existing commentary for this source, then insert fresh
+      // Delete existing commentary for this source and legacy source name, then insert fresh
       await supabase.from("commentary").delete().eq("player_id", playerId).eq("source", SOURCE);
+      await supabase.from("commentary").delete().eq("player_id", playerId).eq("source", "Lance Zierlein (NFL.com)");
       await supabase.from("commentary").insert({
         player_id: playerId,
         source: SOURCE,
@@ -1792,7 +1793,8 @@ async function importNFLProfiles(
       await supabase.from("players").update(updateData).eq("id", playerId);
     }
 
-    // ── 6. NFL Score Breakdown (Production / Athleticism / Total) ────────────
+    // ── 6. NFL Score Breakdown (Production / Athleticism / Total) + Grade ────
+    const prospectGradeIndicator = row[mapping["prospect_grade_indicator"]] || row["Prospect_Grade_Indicator"] || row["Prospect Grade Indicator"];
     const productionScore = row[mapping["production_score"]] || row["Production_Score"];
     const productionScoreRank = row[mapping["production_score_rank"]] || row["Production_Score_Rank"];
     const athleticismScore = row[mapping["athleticism_score"]] || row["Athleticism_Score"];
@@ -1800,7 +1802,7 @@ async function importNFLProfiles(
     const totalScore = row[mapping["total_score"]] || row["Total_Score"];
     const totalScoreRank = row[mapping["total_score_rank"]] || row["Total_Score_Rank"];
 
-    const hasScores = [productionScore, athleticismScore, totalScore].some(v => v?.trim());
+    const hasScores = [productionScore, athleticismScore, totalScore, prospectGrade, prospectGradeIndicator].some(v => v?.trim());
     if (hasScores) {
       const { data: existingPlayer } = await supabase
         .from("players")
@@ -1811,6 +1813,8 @@ async function importNFLProfiles(
       const existingNflProfile = (existingPlayer?.nfl_profile as Record<string, unknown>) || {};
       const updatedNflProfile = {
         ...existingNflProfile,
+        ...(prospectGrade?.trim() ? { prospect_grade: prospectGrade.trim() } : {}),
+        ...(prospectGradeIndicator?.trim() ? { prospect_grade_indicator: prospectGradeIndicator.trim() } : {}),
         ...(productionScore?.trim() ? { production_score: productionScore.trim() } : {}),
         ...(productionScoreRank?.trim() ? { production_score_rank: productionScoreRank.trim() } : {}),
         ...(athleticismScore?.trim() ? { athleticism_score: athleticismScore.trim() } : {}),

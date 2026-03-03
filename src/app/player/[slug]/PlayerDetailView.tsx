@@ -355,10 +355,25 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
           </div>
         </div>
 
-        {p.nfl_profile && (p.nfl_profile.production_score || p.nfl_profile.athleticism_score || p.nfl_profile.total_score) && (
+        {p.nfl_profile && (p.nfl_profile.production_score || p.nfl_profile.athleticism_score || p.nfl_profile.total_score || p.nfl_profile.prospect_grade) && (
           <div className="rounded-xl border border-[#2a3a4e] bg-[#111827] p-4">
             <h3 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2">NFL Score Breakdown</h3>
             <div className="space-y-2">
+              {p.nfl_profile.prospect_grade && (() => {
+                const num = parseGradeValue(String(p.nfl_profile!.prospect_grade));
+                const color = num != null ? getGradeColor("NFL.com", num) : PLAIN;
+                return (
+                  <div className="pb-2 mb-1 border-b border-[#2a3a4e]">
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs text-gray-400">Prospect Grade</span>
+                      <span className={`text-sm font-bold ${color}`}>{String(p.nfl_profile!.prospect_grade)}</span>
+                    </div>
+                    {p.nfl_profile!.prospect_grade_indicator && (
+                      <p className="text-[10px] text-gray-500 text-right leading-tight mt-0.5">{String(p.nfl_profile!.prospect_grade_indicator)}</p>
+                    )}
+                  </div>
+                );
+              })()}
               {(["Production", "Athleticism", "Total"] as const).map((label) => {
                 const scoreKey = `${label.toLowerCase()}_score`;
                 const rankKey = `${label.toLowerCase()}_score_rank`;
