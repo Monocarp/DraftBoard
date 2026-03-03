@@ -1792,6 +1792,39 @@ async function importNFLProfiles(
       await supabase.from("players").update(updateData).eq("id", playerId);
     }
 
+    // ── 6. NFL Score Breakdown (Production / Athleticism / Total) ────────────
+    const productionScore = row[mapping["production_score"]] || row["Production_Score"];
+    const productionScoreRank = row[mapping["production_score_rank"]] || row["Production_Score_Rank"];
+    const athleticismScore = row[mapping["athleticism_score"]] || row["Athleticism_Score"];
+    const athleticismScoreRank = row[mapping["athleticism_score_rank"]] || row["Athleticism_Score_Rank"];
+    const totalScore = row[mapping["total_score"]] || row["Total_Score"];
+    const totalScoreRank = row[mapping["total_score_rank"]] || row["Total_Score_Rank"];
+
+    const hasScores = [productionScore, athleticismScore, totalScore].some(v => v?.trim());
+    if (hasScores) {
+      const { data: existingPlayer } = await supabase
+        .from("players")
+        .select("nfl_profile")
+        .eq("id", playerId)
+        .single();
+
+      const existingNflProfile = (existingPlayer?.nfl_profile as Record<string, unknown>) || {};
+      const updatedNflProfile = {
+        ...existingNflProfile,
+        ...(productionScore?.trim() ? { production_score: productionScore.trim() } : {}),
+        ...(productionScoreRank?.trim() ? { production_score_rank: productionScoreRank.trim() } : {}),
+        ...(athleticismScore?.trim() ? { athleticism_score: athleticismScore.trim() } : {}),
+        ...(athleticismScoreRank?.trim() ? { athleticism_score_rank: athleticismScoreRank.trim() } : {}),
+        ...(totalScore?.trim() ? { total_score: totalScore.trim() } : {}),
+        ...(totalScoreRank?.trim() ? { total_score_rank: totalScoreRank.trim() } : {}),
+      };
+
+      await supabase
+        .from("players")
+        .update({ nfl_profile: updatedNflProfile })
+        .eq("id", playerId);
+    }
+
     result.updated++;
   }
 
