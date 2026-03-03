@@ -1737,6 +1737,9 @@ async function importNFLProfiles(
     }
 
     // ── 3. Player Comps (NFL Comparison) ────────────────────────────────
+    // Remove legacy "NFL" comp (old spreadsheet key) — "NFL.com" is the canonical upload source
+    await supabase.from("player_comps").delete().eq("player_id", playerId).eq("source", "NFL");
+
     const comp = row[mapping["nfl_comparison"]] || row["NFL Comparison"];
     if (comp && comp.trim() && comp.trim() !== "N/A") {
       const normalizedComp = normalizeCompName(comp.trim());
