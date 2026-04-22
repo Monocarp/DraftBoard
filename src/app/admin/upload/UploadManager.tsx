@@ -211,6 +211,26 @@ const DATA_TYPES_UNSORTED: Record<DataType, DataTypeConfig> = {
     ],
     needsSource: false,
   },
+  pff_big_board: {
+    label: "PFF Big Board",
+    description: "PFF Big Board scrape — ranking (source: PFF Big Board), bio (H/W/Age/Class via pff priority 4), and scouting content (Bottom Line, Summary, Pros, Cons, Player Comp — source: PFF)",
+    requiredColumns: [
+      { key: "player_name",  label: "Player Name",  required: true },
+      { key: "rank",         label: "PFF Big Board Rank", required: false },
+      { key: "position",     label: "Position",     required: false },
+      { key: "college",      label: "College / School", required: false },
+      { key: "height",       label: "Height",       required: false },
+      { key: "weight",       label: "Weight",       required: false },
+      { key: "year",         label: "Year / Class", required: false },
+      { key: "age",          label: "Age",          required: false },
+      { key: "bottom_line",  label: "Bottom Line",  required: false },
+      { key: "summary",      label: "Summary",      required: false },
+      { key: "pros",         label: "Pros",         required: false },
+      { key: "cons",         label: "Cons",         required: false },
+      { key: "player_comp",  label: "Player Comp",  required: false },
+    ],
+    needsSource: false,
+  },
 };
 
 // Sort upload options alphabetically by label

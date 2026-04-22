@@ -22,7 +22,8 @@ export type DataType =
   | "espn_profiles"
   | "tdn_profiles"
   | "bio_data"
-  | "walter_reports";
+  | "walter_reports"
+  | "pff_big_board";
 
 export type ColumnMapping = Record<string, string>; // csv_header → db_column
 
@@ -933,6 +934,8 @@ const BIO_SOURCE_ALIASES: Record<string, string> = {
   cbs: "cbs",
   "cbs sports": "cbs",
   espn: "espn",
+  "pff big board": "pff",
+  "pff_big_board": "pff",
 };
 
 function normalizeBioSourceKey(source: string): string {
@@ -2277,6 +2280,145 @@ async function importBioData(
   return result;
 }
 
+// ─── Import: PFF Big Board ──────────────────────────────────────────────────
+
+async function importPFFBigBoard(
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  caches: ImportCaches,
+  rows: Record<string, string>[],
+  mapping: ColumnMapping,
+): Promise<UploadResult> {
+  const result: UploadResult = { success: true, inserted: 0, updated: 0, skipped: 0, errors: [] };
+  const RANKING_SOURCE = "PFF Big Board";
+  const SCOUTING_SOURCE = "PFF";
+  const BIO_SOURCE = "pff";
+  const BIO_PRIORITY = 4;
+
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    const playerName = row[mapping["player_name"]];
+
+    if (!playerName?.trim()) { result.skipped++; continue; }
+
+    const playerId = await resolvePlayerId(supabase, caches, playerName, {
+      position: mapping["position"] ? row[mapping["position"]] : undefined,
+      college: mapping["college"] ? row[mapping["college"]] : undefined,
+    });
+
+    if (!playerId) {
+      result.errors.push(`Row ${i + 1}: Could not resolve player "${playerName}"`);
+      result.skipped++;
+      continue;
+    }
+
+    const slug = toSlug(playerName);
+
+    // ── 1. Overall ranking ──────────────────────────────────────────────────
+    const rankRaw = mapping["rank"] ? row[mapping["rank"]] : undefined;
+    if (rankRaw?.trim()) {
+      const rankValue = parseFloat(rankRaw);
+      if (!isNaN(rankValue)) {
+        const { data: existingRank } = await supabase
+          .from("rankings")
+          .select("id")
+          .eq("player_id", playerId)
+          .eq("source", RANKING_SOURCE)
+          .maybeSingle();
+
+        if (existingRank) {
+          await supabase.from("rankings").update({ rank_value: rankValue, slug }).eq("id", existingRank.id);
+        } else {
+          await supabase.from("rankings").insert({ player_id: playerId, source: RANKING_SOURCE, rank_value: rankValue, slug });
+        }
+
+        // Sync to player_rankings so profile pages show it
+        await supabase
+          .from("player_rankings")
+          .upsert(
+            { player_id: playerId, source: RANKING_SOURCE, overall_rank: rankValue, positional_rank: null },
+            { onConflict: "player_id,source" },
+          );
+      }
+    }
+
+    // ── 2. Bio data (height, weight, age, year/class) ───────────────────────
+    const bioValues: Partial<Record<BioField, string | number | null>> = {};
+    const heightRaw = mapping["height"] ? row[mapping["height"]] : undefined;
+    const weightRaw = mapping["weight"] ? row[mapping["weight"]] : undefined;
+    const ageRaw    = mapping["age"]    ? row[mapping["age"]]    : undefined;
+    const yearRaw   = mapping["year"]   ? row[mapping["year"]]   : undefined;
+
+    if (heightRaw?.trim()) bioValues.height = heightRaw.trim();
+    if (weightRaw?.trim()) bioValues.weight = weightRaw.trim();
+    // Skip em-dash and any non-numeric age values
+    if (ageRaw?.trim() && ageRaw.trim() !== "—" && !isNaN(parseFloat(ageRaw.trim()))) {
+      bioValues.age = ageRaw.trim();
+    }
+    if (yearRaw?.trim()) bioValues.year = yearRaw.trim();
+
+    if (Object.keys(bioValues).length > 0) {
+      await writeBioSources(supabase, playerId, BIO_SOURCE, bioValues, BIO_PRIORITY);
+    }
+
+    // ── 3. Scouting commentary ──────────────────────────────────────────────
+    const bottomLine  = mapping["bottom_line"]  ? row[mapping["bottom_line"]]  : undefined;
+    const summary     = mapping["summary"]      ? row[mapping["summary"]]      : undefined;
+    const pros        = mapping["pros"]         ? row[mapping["pros"]]         : undefined;
+    const cons        = mapping["cons"]         ? row[mapping["cons"]]         : undefined;
+    const playerComp  = mapping["player_comp"]  ? row[mapping["player_comp"]]  : undefined;
+
+    const sections: { title: string; text: string }[] = [];
+    if (bottomLine?.trim())  sections.push({ title: "Bottom Line", text: bottomLine.trim() });
+    if (summary?.trim())     sections.push({ title: "Summary",     text: summary.trim() });
+    if (pros?.trim())        sections.push({ title: "Pros",        text: pros.trim() });
+    if (cons?.trim())        sections.push({ title: "Cons",        text: cons.trim() });
+    if (playerComp?.trim())  sections.push({ title: "Player Comp", text: playerComp.trim() });
+
+    if (sections.length > 0) {
+      await supabase.from("commentary").delete().eq("player_id", playerId).eq("source", SCOUTING_SOURCE);
+      await supabase.from("commentary").insert({ player_id: playerId, source: SCOUTING_SOURCE, sections });
+    }
+
+    // ── 4. Player comp table ────────────────────────────────────────────────
+    if (playerComp?.trim()) {
+      const normalizedComp = normalizeCompName(playerComp.trim());
+      const { data: existingComp } = await supabase
+        .from("player_comps")
+        .select("id")
+        .eq("player_id", playerId)
+        .eq("source", SCOUTING_SOURCE)
+        .maybeSingle();
+
+      if (existingComp) {
+        await supabase.from("player_comps").update({ comp: normalizedComp }).eq("id", existingComp.id);
+      } else {
+        await supabase.from("player_comps").insert({ player_id: playerId, source: SCOUTING_SOURCE, comp: normalizedComp });
+      }
+    }
+
+    result.updated++;
+  }
+
+  // Auto-record source date for this explicit rank upload
+  if (result.inserted + result.updated > 0) {
+    const now = new Date().toISOString();
+    const { data: existing } = await supabase
+      .from("source_dates")
+      .select("id")
+      .eq("source", RANKING_SOURCE)
+      .eq("source_type", "ranking")
+      .maybeSingle();
+      
+    if (existing) {
+      await supabase.from("source_dates").update({ date: now }).eq("id", existing.id);
+    } else {
+      await supabase.from("source_dates").insert({ source: RANKING_SOURCE, source_type: "ranking", date: now });
+    }
+  }
+
+  return result;
+}
+
 export async function importData(
   dataType: DataType,
   rows: Record<string, string>[],
@@ -2350,6 +2492,10 @@ export async function importData(
     case "walter_reports":
       result = await importWalterReports(supabase, caches, rows, mapping);
       break;
+    case "pff_big_board":
+      result = await importPFFBigBoard(supabase, caches, rows, mapping);
+      // autoDateType omitted because we manually update the date in importPFFBigBoard using the specific valid RANKING_SOURCE.
+      break;
     default:
       result = { success: false, inserted: 0, updated: 0, skipped: 0, errors: [`Unknown data type: ${dataType}`] };
   }
@@ -2414,6 +2560,7 @@ export async function deleteSourceData(
     case "nfl_profiles":
     case "bleacher_profiles":
     case "walter_reports":
+    case "pff_big_board":
       return { success: false, deleted: 0, error: "Multi-table profile data cannot be deleted by source. Edit individual players instead." };
     default: return { success: false, deleted: 0, error: "Unknown data type" };
   }
