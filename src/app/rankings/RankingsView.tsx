@@ -102,10 +102,10 @@ export default function RankingsView({ rankings, sourceDates }: { rankings: Rank
   // Dynamic column width and truncation based on number of sources
   const getSourceDisplay = (source: string) => {
     const count = displaySources.length;
-    if (count <= 4) return source; // Show full name
-    if (count <= 8) return source.length > 10 ? source.slice(0, 9) + "." : source;
-    if (count <= 12) return source.length > 7 ? source.slice(0, 6) + "." : source;
-    return source.length > 5 ? source.slice(0, 4) + "." : source;
+    if (count <= 4) return source;
+    if (count <= 8) return source.length > 10 ? source.slice(0, 9) : source;
+    if (count <= 12) return source.length > 7 ? source.slice(0, 6) : source;
+    return source.length > 5 ? source.slice(0, 4) : source;
   };
 
   const getSourceWidth = () => {
