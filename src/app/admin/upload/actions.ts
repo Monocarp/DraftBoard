@@ -1870,12 +1870,26 @@ async function importBleacherProfiles(
     if (rank) {
       const overallRank = parseInt(String(rank), 10);
       if (!isNaN(overallRank)) {
+        // Write to player_rankings (profile pages)
         await supabase
           .from("player_rankings")
           .upsert(
             { player_id: playerId, source: SOURCE, overall_rank: overallRank, positional_rank: null },
             { onConflict: "player_id,source" },
           );
+        // Also write to rankings (Rankings Tab)
+        const slug = toSlug(playerName);
+        const { data: existingRank } = await supabase
+          .from("rankings")
+          .select("id")
+          .eq("player_id", playerId)
+          .eq("source", SOURCE)
+          .maybeSingle();
+        if (existingRank) {
+          await supabase.from("rankings").update({ rank_value: overallRank, slug }).eq("id", existingRank.id);
+        } else {
+          await supabase.from("rankings").insert({ player_id: playerId, source: SOURCE, rank_value: overallRank, slug });
+        }
       }
     }
 
