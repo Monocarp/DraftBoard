@@ -10,6 +10,7 @@ export default function RankingsView({ rankings, sourceDates }: { rankings: Rank
   const [search, setSearch] = useState("");
   const [posFilter, setPosFilter] = useState("ALL");
   const [sortSource, setSortSource] = useState("Consensus");
+  const [showAll, setShowAll] = useState(false);
 
   // Get all available sources
   const sources = useMemo(() => {
@@ -87,8 +88,8 @@ export default function RankingsView({ rankings, sourceDates }: { rankings: Rank
         const bVal = typeof b.source_rankings[sortSource] === "number" ? (b.source_rankings[sortSource] as number) : 9999;
         return aVal - bVal;
       })
-      .slice(0, 150); // show top 150 for performance
-  }, [rankings, search, posFilter, sortSource, selectedSources]);
+      .slice(0, showAll ? undefined : 300);
+  }, [rankings, search, posFilter, sortSource, selectedSources, showAll]);
 
   const presentPositions = new Set(rankings.map((r) => normalizePosition(r.position)));
   const visiblePositions = ALL_POSITIONS.filter((p) => p === "ALL" || presentPositions.has(p));
@@ -263,7 +264,15 @@ export default function RankingsView({ rankings, sourceDates }: { rankings: Rank
         </table>
       </div>
 
-      <p className="mt-2 text-xs text-gray-600">Showing top {processed.length} players</p>
+      <div className="mt-3 flex items-center justify-between">
+        <p className="text-xs text-gray-600">Showing {processed.length} players</p>
+        <button
+          onClick={() => setShowAll((v) => !v)}
+          className="text-xs text-orange-400 hover:text-orange-300 transition-colors"
+        >
+          {showAll ? "Show top 300" : `Show all ${rankings.length}`}
+        </button>
+      </div>
     </div>
   );
 }
