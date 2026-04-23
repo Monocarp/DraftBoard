@@ -220,7 +220,7 @@ export default function RankingsView({ rankings, sourceDates }: { rankings: Rank
               {displaySources.map((s) => (
                 <th
                   key={s}
-                  className={`px-1.5 sm:px-3 py-2 sm:py-3 ${getSourceWidth()} text-center cursor-pointer hover:text-orange-400 transition-colors ${sortSource === s ? "text-orange-400" : ""}`}
+                  className={`px-1.5 sm:px-3 py-2 sm:py-3 ${getSourceWidth()} text-center cursor-pointer hover:text-orange-400 transition-colors whitespace-nowrap overflow-hidden ${sortSource === s ? "text-orange-400" : ""}`}
                   onClick={() => setSortSource(s)}
                   title={s}
                 >
