@@ -69,9 +69,10 @@ export async function fetchWFPlayerList(cutoffDate: string): Promise<WFFetchResu
       totalMatches++;
       const href = match[1];
       const fullText = match[2].trim();
-      // Format: "Drew Allar 6-4/225, Quarterback, Penn State"
-      const parts = fullText.split(",").map((s) => s.trim());
-      const name = (parts[0] ?? "").replace(/\s+\d+-\d+\/\d+$/, "").trim();
+      // Format: "Drew Allar, 6-4/225, Quarterback, Penn State"
+      // Strip any token that is purely a height/weight (e.g. "6-4/225")
+      const parts = fullText.split(",").map((s) => s.trim()).filter((s) => !/^\d+[-']\d+\/\d+$/.test(s));
+      const name = parts[0] ?? "";
       const position = parts[1] ?? "";
       const school = parts.slice(2).join(",").trim();
       const rawDate = match[3]
