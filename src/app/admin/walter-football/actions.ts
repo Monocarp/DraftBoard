@@ -7,6 +7,8 @@ import { buildCaches, resolvePlayerId } from "../upload/actions";
 
 export interface WFPlayerEntry {
   name: string;
+  position: string;
+  school: string;
   url: string;
   last_updated: string;
   last_updated_date: string; // ISO "2026-03-15" for easy comparison
@@ -67,7 +69,10 @@ export async function fetchWFPlayerList(cutoffDate: string): Promise<WFFetchResu
       totalMatches++;
       const href = match[1];
       const fullText = match[2].trim();
-      const name = fullText.split(",")[0].trim();
+      const parts = fullText.split(",").map((s) => s.trim());
+      const name = parts[0] ?? "";
+      const position = parts[1] ?? "";
+      const school = parts.slice(2).join(",").trim();
       const rawDate = match[3]
         .replace(/&#8211;/g, "")
         .replace(/â€"/g, "")
@@ -94,7 +99,7 @@ export async function fetchWFPlayerList(cutoffDate: string): Promise<WFFetchResu
         continue;
       }
 
-      players.push({ name, url, last_updated: rawDate, last_updated_date });
+      players.push({ name, position, school, url, last_updated: rawDate, last_updated_date });
     }
 
     console.log(`[WF] Total regex matches: ${totalMatches}, filtered out: ${filteredOut}, kept: ${players.length}`);

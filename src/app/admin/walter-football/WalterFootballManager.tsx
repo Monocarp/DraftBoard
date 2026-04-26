@@ -184,14 +184,16 @@ export function WalterFootballManager() {
 
           {players.length > 0 && (
             <div className="rounded-xl border border-[#2a3a4e] overflow-hidden">
-              <div className="grid grid-cols-[1fr_auto] gap-0 text-xs font-medium text-gray-500 uppercase tracking-wide px-4 py-2 bg-[#0d1320] border-b border-[#2a3a4e]">
+              <div className="grid grid-cols-[1fr_auto_auto_auto] gap-0 text-xs font-medium text-gray-500 uppercase tracking-wide px-4 py-2 bg-[#0d1320] border-b border-[#2a3a4e]">
                 <span>Player</span>
+                <span className="text-right pr-4">Pos</span>
+                <span className="text-right pr-4">School</span>
                 <span>Last Updated</span>
               </div>
               <div className="divide-y divide-[#2a3a4e] max-h-[600px] overflow-y-auto">
                 {players.map((p) => (
                   <div key={p.url}>
-                    <div className="grid grid-cols-[1fr_auto_auto] gap-3 px-4 py-2.5 items-center hover:bg-white/5">
+                    <div className="grid grid-cols-[1fr_auto_auto_auto] gap-3 px-4 py-2.5 items-center hover:bg-white/5">
                       <a
                         href={p.url}
                         target="_blank"
@@ -200,13 +202,17 @@ export function WalterFootballManager() {
                       >
                         {p.name}
                       </a>
-                      <span className="text-xs text-gray-500 whitespace-nowrap">{p.last_updated}</span>
-                      <button
-                        onClick={() => handlePreview(p.url)}
-                        className="text-xs text-blue-400 hover:text-blue-300 whitespace-nowrap"
-                      >
-                        {previewUrl === p.url ? "▲ hide" : "▼ preview"}
-                      </button>
+                      <span className="text-xs text-gray-400 whitespace-nowrap pr-1">{p.position}</span>
+                      <span className="text-xs text-gray-500 whitespace-nowrap pr-1">{p.school}</span>
+                      <div className="flex items-center gap-3">
+                        <span className="text-xs text-gray-500 whitespace-nowrap">{p.last_updated}</span>
+                        <button
+                          onClick={() => handlePreview(p.url)}
+                          className="text-xs text-blue-400 hover:text-blue-300 whitespace-nowrap"
+                        >
+                          {previewUrl === p.url ? "▲ hide" : "▼ preview"}
+                        </button>
+                      </div>
                     </div>
 
                     {/* Inline preview panel */}
