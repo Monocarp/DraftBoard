@@ -18,9 +18,7 @@ export type DataType =
   | "nfl_profiles"
   | "bleacher_profiles"
   | "espn_profiles"
-  | "tdn_profiles"
   | "bio_data"
-  | "walter_reports"
   | "pff_big_board";
 
 export type ColumnMapping = Record<string, string>; // csv_header → db_column
@@ -2385,15 +2383,8 @@ export async function importData(
       result = await importESPNProfiles(supabase, caches, rows, mapping);
       autoDateType = "ranking";
       break;
-    case "tdn_profiles":
-      result = await importTDNProfiles(supabase, caches, rows, mapping);
-      autoDateType = "ranking";
-      break;
     case "bio_data":
       result = await importBioData(supabase, caches, rows, mapping, sourceName, bioPriority);
-      break;
-    case "walter_reports":
-      result = await importWalterReports(supabase, caches, rows, mapping);
       break;
     case "pff_big_board":
       result = await importPFFBigBoard(supabase, caches, rows, mapping);
@@ -2447,7 +2438,6 @@ export async function deleteSourceData(
     // Multi-table importers write to several tables — no simple source-based deletion
     case "nfl_profiles":
     case "bleacher_profiles":
-    case "walter_reports":
     case "pff_big_board":
       return { success: false, deleted: 0, error: "Multi-table profile data cannot be deleted by source. Edit individual players instead." };
     default: return { success: false, deleted: 0, error: "Unknown data type" };
