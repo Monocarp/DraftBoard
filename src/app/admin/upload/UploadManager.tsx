@@ -20,11 +20,11 @@ interface DataTypeConfig {
 
 const DATA_TYPES_UNSORTED: Record<DataType, DataTypeConfig> = {
   rankings: {
-    label: "Overall Rankings",
-    description: "Per-source overall player rankings. Source must be one of the 12 canonical ranking sources. Optionally include position rank, bio data (height, weight, age, year).",
+    label: "Rankings",
+    description: "Per-source overall and positional rankings. Source must be one of the 12 canonical ranking sources. Map 'Rank' for overall, 'Position Rank' for positional — both write to all three ranking tables. Optionally include bio data (height, weight, age, year).",
     requiredColumns: [
       { key: "player_name", label: "Player Name", required: true },
-      { key: "rank", label: "Rank", required: true },
+      { key: "rank", label: "Overall Rank", required: true },
       { key: "position_rank", label: "Position Rank", required: false },
       { key: "position", label: "Position", required: false },
       { key: "college", label: "College", required: false },
@@ -32,18 +32,6 @@ const DATA_TYPES_UNSORTED: Record<DataType, DataTypeConfig> = {
       { key: "weight", label: "Weight", required: false },
       { key: "age", label: "Age", required: false },
       { key: "year", label: "Year / Eligibility", required: false },
-    ],
-    needsSource: true,
-    allowedSources: RANKING_SOURCES,
-  },
-  positional_rankings: {
-    label: "Positional Rankings",
-    description: "Per-source positional rankings. Source must be one of the 12 canonical ranking sources.",
-    requiredColumns: [
-      { key: "player_name", label: "Player Name", required: true },
-      { key: "rank", label: "Rank", required: true },
-      { key: "position", label: "Position", required: false },
-      { key: "college", label: "College", required: false },
     ],
     needsSource: true,
     allowedSources: RANKING_SOURCES,

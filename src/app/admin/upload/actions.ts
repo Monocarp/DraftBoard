@@ -9,7 +9,6 @@ import { revalidatePath } from "next/cache";
 
 export type DataType =
   | "rankings"
-  | "positional_rankings"
   | "adp"
   | "mocks"
   | "source_dates"
@@ -2285,7 +2284,7 @@ export async function importData(
   sourceName = normalizeSourceName(sourceName);
 
   // Validate source is in the canonical list for ranking data types
-  if (dataType === "rankings" || dataType === "positional_rankings") {
+  if (dataType === "rankings") {
     if (!RANKING_SOURCES.includes(sourceName as (typeof RANKING_SOURCES)[number])) {
       return {
         success: false,
@@ -2313,10 +2312,6 @@ export async function importData(
   switch (dataType) {
     case "rankings":
       result = await importRankings(supabase, caches, rows, mapping, sourceName, bioPriority);
-      autoDateType = "ranking";
-      break;
-    case "positional_rankings":
-      result = await importPositionalRankings(supabase, caches, rows, mapping, sourceName);
       autoDateType = "ranking";
       break;
     case "adp":
@@ -2402,7 +2397,6 @@ export async function deleteSourceData(
   let table: string;
   switch (dataType) {
     case "rankings": table = "rankings"; break;
-    case "positional_rankings": table = "positional_rankings"; break;
     case "adp": table = "adp_entries"; break;
     case "mocks": table = "mock_picks"; break;
     case "source_dates": table = "source_dates"; break;
@@ -2451,7 +2445,6 @@ export async function getExistingSources(dataType: DataType): Promise<string[]> 
   let table: string;
   switch (dataType) {
     case "rankings": table = "rankings"; break;
-    case "positional_rankings": table = "positional_rankings"; break;
     case "adp": table = "adp_entries"; break;
     case "mocks": table = "mock_picks"; break;
     case "source_dates": table = "source_dates"; break;
