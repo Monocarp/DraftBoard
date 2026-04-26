@@ -69,9 +69,8 @@ export async function fetchWFPlayerList(cutoffDate: string): Promise<WFFetchResu
       totalMatches++;
       const href = match[1];
       const fullText = match[2].trim();
-      // Format: "Drew Allar, 6-4/225, Quarterback, Penn State"
-      // Strip any token that is purely a height/weight (e.g. "6-4/225")
-      const parts = fullText.split(",").map((s) => s.trim()).filter((s) => !/^\d+[-']\d+\/\d+$/.test(s));
+      // Index page format: "Drew Allar, QB, Penn State" (no height/weight here)
+      const parts = fullText.split(",").map((s) => s.trim());
       const name = parts[0] ?? "";
       const position = parts[1] ?? "";
       const school = parts.slice(2).join(",").trim();
@@ -158,7 +157,7 @@ export async function importWFProfiles(
 
       if (bioMatch) {
         const liMatches = [...bioMatch[1].matchAll(/<li[^>]*>([\s\S]*?)<\/li>/gi)];
-        if (liMatches[0]) parsedName = stripTags(liMatches[0][1]).trim() || player.name;
+        if (liMatches[0]) parsedName = stripTags(liMatches[0][1]).replace(/,\s*\d+[-']\d+\/\d+.*$/, "").trim() || player.name;
         if (liMatches[1]) position = stripTags(liMatches[1][1]).trim();
         if (liMatches[2]) school = stripTags(liMatches[2][1]).trim();
       }
@@ -257,7 +256,7 @@ export async function previewWFProfile(url: string): Promise<WFProfilePreview> {
     let name = "", position = "", school = "";
     if (bioMatch) {
       const liMatches = [...bioMatch[1].matchAll(/<li[^>]*>([\s\S]*?)<\/li>/gi)];
-      if (liMatches[0]) name = stripTags(liMatches[0][1]).trim();
+      if (liMatches[0]) name = stripTags(liMatches[0][1]).replace(/,\s*\d+[-']\d+\/\d+.*$/, "").trim();
       if (liMatches[1]) position = stripTags(liMatches[1][1]).trim();
       if (liMatches[2]) school = stripTags(liMatches[2][1]).trim();
     }
