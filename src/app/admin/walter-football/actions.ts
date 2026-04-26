@@ -46,10 +46,9 @@ export async function fetchWFPlayerList(cutoffDate: string): Promise<WFFetchResu
     const html = await res.text();
     console.log("[WF] Page length:", html.length);
 
-    const STOP = "2026 NFL Draft Scouting Reports";
-    const stopIdx = html.indexOf(STOP);
-    console.log("[WF] STOP marker index:", stopIdx);
-    const searchHtml = stopIdx > -1 ? html.slice(0, stopIdx) : html;
+    // Search the full page; we no longer use a STOP marker since it was matching the page title too early
+    const stopIdx = -1;
+    const searchHtml = html;
     console.log("[WF] searchHtml length:", searchHtml.length);
 
     // Log a raw sample so we can see the actual structure
