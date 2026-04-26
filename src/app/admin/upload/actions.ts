@@ -1959,13 +1959,27 @@ async function importESPNProfiles(
       continue;
     }
 
-    // ── 1. Player Rankings (Rank + Pos Rank) ────────────────────────────
+    // ── 1. Rankings (Rankings page + profile page) ──────────────────────
     const rank = row[mapping["rank"]];
     const posRank = row[mapping["pos_rank"]];
+    const slug = toSlug(playerName);
     if (rank) {
       const overallRank = parseInt(String(rank), 10);
       const positionalRank = posRank ? parseInt(String(posRank), 10) : null;
       if (!isNaN(overallRank)) {
+        // rankings table — drives the Rankings page
+        await supabase
+          .from("rankings")
+          .upsert({ player_id: playerId, source: SOURCE, rank_value: overallRank, slug }, { onConflict: "player_id,source" });
+
+        // positional_rankings table
+        if (!isNaN(positionalRank ?? NaN) && positionalRank !== null) {
+          await supabase
+            .from("positional_rankings")
+            .upsert({ player_id: playerId, source: SOURCE, rank_value: positionalRank, slug }, { onConflict: "player_id,source" });
+        }
+
+        // player_rankings table — drives profile pages
         await supabase
           .from("player_rankings")
           .upsert(
