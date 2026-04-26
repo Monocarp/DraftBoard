@@ -47,18 +47,21 @@ export async function fetchWFPlayerList(cutoffDate: string): Promise<{
     const stopIdx = html.indexOf(STOP);
     const searchHtml = stopIdx > -1 ? html.slice(0, stopIdx) : html;
 
-    const boldRegex = /<b>(<a\s[^>]*href="([^"]+)"[^>]*>([^<]+)<\/a>)([^<]*)<\/b>/gi;
+    // HTML structure: <b><a href="/scoutXYZ.php">Name, Pos, School</a></b> â€" M/D/YYYY
+    // The date text is a sibling AFTER </b>, not inside it.
+    const boldRegex = /<b><a[^>]*href="([^"]+)"[^>]*>([^<]+)<\/a><\/b>([^<\n]*)/gi;
     const players: WFPlayerEntry[] = [];
     let match: RegExpExecArray | null;
 
     while ((match = boldRegex.exec(searchHtml)) !== null) {
-      const href = match[2];
-      const name = match[3].trim();
-      // raw date text — strip mojibake artifacts and em/en dashes, normalize whitespace
-      const rawDate = match[4]
+      const href = match[1];
+      // Anchor text is "Name, Pos, School" — take only the part before the first comma
+      const fullText = match[2].trim();
+      const name = fullText.split(",")[0].trim();
+      // Date text: strip mojibake â€", real en/em dashes, and whitespace
+      const rawDate = match[3]
         .replace(/â€"/g, "")
-        .replace(/â€"/g, "")
-        .replace(/[–—]/g, "")
+        .replace(/[–—\-]/g, "")
         .replace(/\s+/g, " ")
         .trim();
 
@@ -238,15 +241,22 @@ function parseDivSection(
 }
 
 /**
- * Parse "March 15, 2026" style date strings into ISO "2026-03-15".
+ * Parse date strings into ISO "YYYY-MM-DD".
+ * Handles "M/D/YYYY" (e.g. "2/18/2026") and "Month D, YYYY" (e.g. "March 15, 2026").
  * Returns "" on failure.
  */
 function parseDateToISO(raw: string): string {
-  try {
-    const d = new Date(raw);
-    if (isNaN(d.getTime())) return "";
-    return d.toISOString().slice(0, 10);
-  } catch {
-    return "";
+  if (!raw) return "";
+  // M/D/YYYY or MM/DD/YYYY
+  const slashMatch = raw.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  if (slashMatch) {
+    const [, m, d, y] = slashMatch;
+    return `${y}-${m.padStart(2, "0")}-${d.padStart(2, "0")}`;
   }
+  // Try generic Date parse as fallback
+  try {
+    const dt = new Date(raw);
+    if (!isNaN(dt.getTime())) return dt.toISOString().slice(0, 10);
+  } catch { /* ignore */ }
+  return "";
 }
