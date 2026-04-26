@@ -8,8 +8,14 @@ import { buildCaches, resolvePlayerId } from "../upload/actions";
 export interface WFPlayerEntry {
   name: string;
   url: string;
-  last_updated: string; // e.g. "March 15, 2026"
+  last_updated: string;
   last_updated_date: string; // ISO "2026-03-15" for easy comparison
+}
+
+export interface WFFetchResult {
+  players: WFPlayerEntry[];
+  debug?: string;
+  error?: string;
 }
 
 export interface WFImportResult {
@@ -22,10 +28,7 @@ export interface WFImportResult {
 
 // ─── Step 1: Fetch & parse player list from WF index ──────────────────────
 
-export async function fetchWFPlayerList(cutoffDate: string): Promise<{
-  players: WFPlayerEntry[];
-  error?: string;
-}> {
+export async function fetchWFPlayerList(cutoffDate: string): Promise<WFFetchResult> {
   // Auth check
   const supabase = await createSupabaseServer();
   const { data: { user } } = await supabase.auth.getUser();
@@ -37,28 +40,35 @@ export async function fetchWFPlayerList(cutoffDate: string): Promise<{
       headers: { "User-Agent": "Mozilla/5.0" },
       next: { revalidate: 0 },
     });
+    console.log("[WF] HTTP status:", res.status);
     if (!res.ok) throw new Error(`HTTP ${res.status} from walterfootball.com`);
 
     const html = await res.text();
+    console.log("[WF] Page length:", html.length);
 
-    // Parse with regex — look for <b><a href="...">Name</a> – Date</b> pattern
-    // The mojibake â€" is a UTF-8 misread of em dash (–), normalised below.
     const STOP = "2026 NFL Draft Scouting Reports";
     const stopIdx = html.indexOf(STOP);
+    console.log("[WF] STOP marker index:", stopIdx);
     const searchHtml = stopIdx > -1 ? html.slice(0, stopIdx) : html;
+    console.log("[WF] searchHtml length:", searchHtml.length);
+
+    // Log a raw sample so we can see the actual structure
+    const firstBIdx = searchHtml.indexOf("<b>");
+    console.log("[WF] First <b> context:", JSON.stringify(searchHtml.slice(firstBIdx, firstBIdx + 300)));
 
     // HTML structure: <b><a href="/scoutXYZ.php">Name, Pos, School</a></b> â€" M/D/YYYY
     // The date text is a sibling AFTER </b>, not inside it.
     const boldRegex = /<b><a[^>]*href="([^"]+)"[^>]*>([^<]+)<\/a><\/b>([^<\n]*)/gi;
     const players: WFPlayerEntry[] = [];
     let match: RegExpExecArray | null;
+    let totalMatches = 0;
+    let filteredOut = 0;
 
     while ((match = boldRegex.exec(searchHtml)) !== null) {
+      totalMatches++;
       const href = match[1];
-      // Anchor text is "Name, Pos, School" — take only the part before the first comma
       const fullText = match[2].trim();
       const name = fullText.split(",")[0].trim();
-      // Date text: strip mojibake â€", real en/em dashes, and whitespace
       const rawDate = match[3]
         .replace(/â€"/g, "")
         .replace(/[–—\-]/g, "")
@@ -73,14 +83,25 @@ export async function fetchWFPlayerList(cutoffDate: string): Promise<{
 
       const last_updated_date = parseDateToISO(rawDate);
 
+      if (totalMatches <= 3) {
+        console.log(`[WF] Sample match #${totalMatches}: name="${name}" rawDate="${rawDate}" iso="${last_updated_date}" cutoff="${cutoffDate}"`);
+      }
+
       // Filter by cutoff
-      if (cutoffDate && last_updated_date && last_updated_date < cutoffDate) continue;
+      if (cutoffDate && last_updated_date && last_updated_date < cutoffDate) {
+        filteredOut++;
+        continue;
+      }
 
       players.push({ name, url, last_updated: rawDate, last_updated_date });
     }
 
-    return { players };
+    console.log(`[WF] Total regex matches: ${totalMatches}, filtered out: ${filteredOut}, kept: ${players.length}`);
+
+    const debug = `HTTP OK · page ${html.length} bytes · STOP at ${stopIdx} · search ${searchHtml.length} bytes · ${totalMatches} regex matches · ${filteredOut} before cutoff · ${players.length} kept`;
+    return { players, debug };
   } catch (err) {
+    console.error("[WF] fetchWFPlayerList error:", err);
     return { players: [], error: err instanceof Error ? err.message : "Unknown error" };
   }
 }

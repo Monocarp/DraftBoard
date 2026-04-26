@@ -9,15 +9,18 @@ export function WalterFootballManager() {
   const [importing, setImporting] = useState(false);
   const [players, setPlayers] = useState<WFPlayerEntry[] | null>(null);
   const [fetchError, setFetchError] = useState<string | null>(null);
+  const [fetchDebug, setFetchDebug] = useState<string | null>(null);
   const [importResult, setImportResult] = useState<WFImportResult | null>(null);
 
   async function handleFetch() {
     setFetching(true);
     setFetchError(null);
+    setFetchDebug(null);
     setPlayers(null);
     setImportResult(null);
     try {
       const res = await fetchWFPlayerList(cutoff);
+      if (res.debug) setFetchDebug(res.debug);
       if (res.error) {
         setFetchError(res.error);
       } else {
@@ -99,6 +102,13 @@ export function WalterFootballManager() {
       {fetchError && (
         <div className="rounded-lg border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-400">
           {fetchError}
+        </div>
+      )}
+
+      {/* Debug info */}
+      {fetchDebug && (
+        <div className="rounded-lg border border-[#2a3a4e] bg-[#0d1320] px-4 py-3 text-xs text-gray-500 font-mono">
+          {fetchDebug}
         </div>
       )}
 
