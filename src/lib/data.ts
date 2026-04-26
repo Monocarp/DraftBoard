@@ -13,6 +13,7 @@ import type {
   MockPick, RankingEntry, ADPEntry, PositionBoardPlayer,
   Ranking, Commentary,
 } from "./types";
+import { SOURCE_WEIGHTS, RANKING_SOURCES } from "./types";
 
 // ─── Source Filtering ────────────────────────────────────────────────────────
 
@@ -420,8 +421,8 @@ export async function getADP(): Promise<{ players: ADPEntry[]; source_dates: Rec
 
 // ─── Position Boards ────────────────────────────────────────────────────────
 
-/** Sources used to compute consensus for position board ranking columns. */
-const CONSENSUS_SOURCES = ["Brugler", "NFL.com", "CBS", "PFF", "ESPN"];
+/** All 12 canonical ranking sources used for position board consensus columns. */
+const CONSENSUS_SOURCES = [...RANKING_SOURCES];
 
 export async function getPositionBoards(): Promise<Record<string, PositionBoardPlayer[]>> {
   const rows = await fetchAll<{
@@ -443,6 +444,12 @@ export async function getPositionBoards(): Promise<Record<string, PositionBoardP
   }>("player_rankings", "player_id, source, overall_rank, positional_rank", (q) =>
     q.in("player_id", playerIds).in("source", CONSENSUS_SOURCES)
   );
+
+  // Compute per-source list sizes (needed for percentile normalisation)
+  const listSizes: Record<string, number> = {};
+  for (const rk of rankingRows) {
+    if (rk.overall_rank != null) listSizes[rk.source] = (listSizes[rk.source] ?? 0) + 1;
+  }
 
   // Index rankings by player_id
   const rankingsByPlayer = new Map<string, { source: string; overall_rank: number | null; positional_rank: number | null }[]>();
@@ -479,12 +486,33 @@ export async function getPositionBoards(): Promise<Record<string, PositionBoardP
       }
     }
 
-    // Compute consensus averages
+    // Compute weighted-percentile consensus scores
+    // percentile_i = 1 - (rank_i - 1) / (list_size_i - 1);  score = Σ(w*pct) / Σ(w)
     if (overallValues.length > 0) {
-      overall_rankings["Avg"] = Math.round((overallValues.reduce((a, b) => a + b, 0) / overallValues.length) * 10) / 10;
+      let totalW = 0, totalS = 0;
+      for (const rk of pRankings) {
+        if (rk.overall_rank == null) continue;
+        const v = Number(rk.overall_rank);
+        if (isNaN(v)) continue;
+        const n = listSizes[rk.source] ?? 1;
+        const pct = n < 2 ? 1 : Math.max(0, Math.min(1, 1 - (v - 1) / (n - 1)));
+        const w = SOURCE_WEIGHTS[rk.source] ?? 0.5;
+        totalW += w; totalS += w * pct;
+      }
+      if (totalW > 0) overall_rankings["Avg"] = Math.round((totalS / totalW) * 1000) / 1000;
     }
     if (posValues.length > 0) {
-      pos_rankings["Avg"] = Math.round((posValues.reduce((a, b) => a + b, 0) / posValues.length) * 10) / 10;
+      let totalW = 0, totalS = 0;
+      for (const rk of pRankings) {
+        if (rk.positional_rank == null) continue;
+        const v = Number(rk.positional_rank);
+        if (isNaN(v)) continue;
+        const n = listSizes[rk.source] ?? 1;
+        const pct = n < 2 ? 1 : Math.max(0, Math.min(1, 1 - (v - 1) / (n - 1)));
+        const w = SOURCE_WEIGHTS[rk.source] ?? 0.5;
+        totalW += w; totalS += w * pct;
+      }
+      if (totalW > 0) pos_rankings["Avg"] = Math.round((totalS / totalW) * 1000) / 1000;
     }
 
     if (!boards[r.position_group]) boards[r.position_group] = [];

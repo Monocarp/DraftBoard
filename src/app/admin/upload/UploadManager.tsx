@@ -5,6 +5,7 @@ import Papa from "papaparse";
 import * as XLSX from "xlsx";
 import { importData, deleteSourceData, getExistingSources } from "./actions";
 import type { DataType, ColumnMapping, UploadResult } from "./actions";
+import { RANKING_SOURCES } from "@/lib/types";
 
 // ─── Data Type Config ───────────────────────────────────────────────────────
 
@@ -13,12 +14,14 @@ interface DataTypeConfig {
   description: string;
   requiredColumns: { key: string; label: string; required: boolean }[];
   needsSource: boolean;
+  /** When set, source name must be chosen from this list (renders a dropdown). */
+  allowedSources?: readonly string[];
 }
 
 const DATA_TYPES_UNSORTED: Record<DataType, DataTypeConfig> = {
   rankings: {
     label: "Overall Rankings",
-    description: "Per-source overall player rankings (e.g. NFL.com #1, PFF #3). Optionally include position rank to import both at once. Can also import bio data (height, weight, age, year) with a priority weight.",
+    description: "Per-source overall player rankings. Source must be one of the 12 canonical ranking sources. Optionally include position rank, bio data (height, weight, age, year).",
     requiredColumns: [
       { key: "player_name", label: "Player Name", required: true },
       { key: "rank", label: "Rank", required: true },
@@ -31,10 +34,11 @@ const DATA_TYPES_UNSORTED: Record<DataType, DataTypeConfig> = {
       { key: "year", label: "Year / Eligibility", required: false },
     ],
     needsSource: true,
+    allowedSources: RANKING_SOURCES,
   },
   positional_rankings: {
     label: "Positional Rankings",
-    description: "Per-source positional rankings (e.g. PFF WR #1, CBS WR #2)",
+    description: "Per-source positional rankings. Source must be one of the 12 canonical ranking sources.",
     requiredColumns: [
       { key: "player_name", label: "Player Name", required: true },
       { key: "rank", label: "Rank", required: true },
@@ -42,6 +46,7 @@ const DATA_TYPES_UNSORTED: Record<DataType, DataTypeConfig> = {
       { key: "college", label: "College", required: false },
     ],
     needsSource: true,
+    allowedSources: RANKING_SOURCES,
   },
   adp: {
     label: "Average Draft Position (ADP)",
@@ -517,22 +522,54 @@ export function UploadManager() {
             <h2 className="text-lg font-semibold text-white mb-1">{config.label}</h2>
             <p className="text-sm text-gray-400 mb-4">{config.description}</p>
 
-            {/* Source name input */}
+            {/* Source name input — dropdown if allowedSources set, free text otherwise */}
             {config.needsSource && (
               <div className="mb-4">
                 <label className="block text-sm font-medium text-gray-300 mb-1">
                   Source Name <span className="text-red-400">*</span>
                 </label>
-                <input
-                  type="text"
-                  value={sourceName}
-                  onChange={(e) => setSourceName(e.target.value)}
-                  placeholder="e.g. PFF, NFL.com, CBS, ESPN"
-                  className="w-full sm:w-80 rounded-lg border border-[#2a3a4e] bg-[#1a2535] px-3 py-2 text-sm text-white placeholder-gray-600 focus:border-orange-500 focus:outline-none"
-                />
-                <p className="mt-1 text-xs text-gray-600">
-                  This identifies where the data came from. Use the same name for updates.
-                </p>
+                {config.allowedSources ? (
+                  <>
+                    <select
+                      value={sourceName}
+                      onChange={(e) => setSourceName(e.target.value)}
+                      className="w-full sm:w-80 rounded-lg border border-[#2a3a4e] bg-[#1a2535] px-3 py-2 text-sm text-white focus:border-orange-500 focus:outline-none"
+                    >
+                      <option value="">— Select source —</option>
+                      <optgroup label="Tier 1 (weight ×2.0)">
+                        {(["PFF", "ESPN", "Brugler", "NFL.com"] as const).map((s) => (
+                          <option key={s} value={s}>{s}</option>
+                        ))}
+                      </optgroup>
+                      <optgroup label="Tier 2 (weight ×1.0)">
+                        {(["Bleacher Report", "CBS", "Walter Football"] as const).map((s) => (
+                          <option key={s} value={s}>{s}</option>
+                        ))}
+                      </optgroup>
+                      <optgroup label="Tier 3 (weight ×0.5)">
+                        {(["DraftBuzz", "Tankathon", "Kiper", "Yates", "DraftTek"] as const).map((s) => (
+                          <option key={s} value={s}>{s}</option>
+                        ))}
+                      </optgroup>
+                    </select>
+                    <p className="mt-1 text-xs text-gray-600">
+                      Only the 12 canonical ranking sources are allowed. Tier 1 carries more weight in consensus.
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <input
+                      type="text"
+                      value={sourceName}
+                      onChange={(e) => setSourceName(e.target.value)}
+                      placeholder="e.g. PFF, NFL.com, CBS, ESPN"
+                      className="w-full sm:w-80 rounded-lg border border-[#2a3a4e] bg-[#1a2535] px-3 py-2 text-sm text-white placeholder-gray-600 focus:border-orange-500 focus:outline-none"
+                    />
+                    <p className="mt-1 text-xs text-gray-600">
+                      This identifies where the data came from. Use the same name for updates.
+                    </p>
+                  </>
+                )}
               </div>
             )}
 

@@ -1,175 +1,156 @@
 # 2026 NFL Draft Board App
 
-A Next.js web app built from a massive **2026 Draft Board 2.0.xlsx** workbook (255 sheets, ~10MB). A Python ETL pipeline (`extract.py`) converts the Excel data into JSON, which the Next.js app consumes at build/request time via server components.
+A Next.js 15 web app backed by **Supabase** (PostgreSQL + Auth). Data is ingested via Python scraping scripts and a CSV upload admin panel. All pages are server-rendered and query Supabase directly at request time.
 
 ---
 
 ## Architecture Overview
 
 ```
-2026 Draft Board 2.0.xlsx   (255 sheets — source of truth)
+Python scrapers / CSV uploads
         │
         ▼
-   extract.py               (Python ETL — reads Excel, writes JSON)
+   Supabase (PostgreSQL)        ← source of truth
         │
         ▼
-     data/                   (JSON output — intermediate)
-        │
-        ▼  (copy step)
- draft-board-app/src/data/   (JSON consumed by Next.js)
+   lib/data.ts                  (server-only Supabase queries)
         │
         ▼
-   Next.js App               (server components read JSON via fs)
+   Next.js Server Components    (page.tsx files)
+        │
+        ▼
+   "use client" View Components (interactivity, no DB access)
 ```
 
-### Critical Architecture Rule
+### Critical Architecture Rules
 
-**`lib/data.ts`** uses `import "server-only"` — it can ONLY be imported in server components (`page.tsx` files). All data is fetched from Supabase at request time.
-
-**`lib/types.ts`** is client-safe — contains all TypeScript interfaces and utility functions. Client components (`"use client"`) must import types from `@/lib/types`, NEVER from `@/lib/data`.
-
-**Two Supabase clients in `data.ts`:**
-- **Public data** (boards, rankings, players) → plain `supabase` client (no session needed)
-- **User data** (user_boards, user_position_ranks) → `createSupabaseServer()` (session-aware, required for RLS)
+- **`lib/data.ts`** uses `import "server-only"` — ONLY importable in server components. Never import it from a `"use client"` component.
+- **`lib/types.ts`** is client-safe — all TypeScript interfaces live here. Client components import types from `@/lib/types`, never `@/lib/data`.
+- **Two Supabase clients:**
+  - Plain `supabase` (public reads — boards, rankings, players)
+  - `createSupabaseServer()` (session-aware — user boards, admin actions, RLS-protected tables)
+- **Admin actions** require both a valid session AND `user.email === process.env.ADMIN_EMAIL`.
 
 ---
 
 ## Pages
 
-| Route | Server Page | Client View | Description |
-|-------|-------------|-------------|-------------|
-| `/` | `app/page.tsx` | `app/BigBoardPage.tsx` | 4 tabs: Consensus, Bengals, Expanded, My Board (logged-in users) |
-| `/boards` | `app/boards/page.tsx` | `app/boards/PositionBoardsView.tsx` | 9 position boards with collapsible detail rows + "My Rankings" toggle |
-| `/login` | `app/(auth)/login/page.tsx` | — | User login (email/password) |
-| `/register` | `app/(auth)/register/page.tsx` | — | User registration (email/password) |
-| `/rankings` | `app/rankings/page.tsx` | `app/rankings/RankingsView.tsx` | Multi-source sortable ranking table (682 players × 15+ sources) |
-| `/mocks` | `app/mocks/page.tsx` | `app/mocks/MockDraftsView.tsx` | 17 mock draft sources, single + side-by-side compare |
-| `/players` | `app/players/page.tsx` | `app/players/` (PlayerGrid) | Card grid of all 141 profiled players |
-| `/player/[slug]` | `app/player/[slug]/page.tsx` | `app/player/[slug]/PlayerDetailView.tsx` | Full player profile — overview, rankings, scouting, commentary tabs |
-| `/player/[slug]` (404) | — | `app/player/[slug]/not-found.tsx` | "Profile In Progress" page for players without profiles |
+| Route | Description | Caching |
+|-------|-------------|---------|
+| `/` | Big Board — 4 tabs: Consensus, Bengals, Expanded, My Board | `force-dynamic` (user board) |
+| `/boards` | 9 position boards with collapsible detail rows + My Rankings toggle | `revalidate=3600` |
+| `/rankings` | Multi-source sortable ranking table (15+ sources, top-300 default with show-all toggle) | `revalidate=3600` |
+| `/mocks` | 17+ mock draft sources, single + side-by-side compare | `revalidate=3600` |
+| `/player/[slug]` | Full player profile — overview, rankings, scouting, commentary, media tabs | `revalidate=3600` |
+| `/login` | User login (email/password) | — |
+| `/register` | User registration (email/password) | — |
+| `/admin/upload` | CSV upload panel for all data types | admin-only |
+| `/admin/cleanup` | Audit + delete incomplete player records | admin-only |
+| `/admin/boards` | Manage consensus board entries | admin-only |
+
+Every public route has a co-located `error.tsx` (error boundary with retry) and `loading.tsx` (skeleton UI).
 
 ### Page Pattern
 
-Every route follows the same pattern:
-1. **`page.tsx`** — server component, imports from `@/lib/data`, loads JSON, passes data as props
-2. **`*View.tsx`** — `"use client"` component, receives data via props, handles interactivity
+1. **`page.tsx`** — server component, imports from `@/lib/data`, fetches from Supabase, passes data as props
+2. **`*View.tsx`** — `"use client"` component, receives data via props, handles all interactivity
 
 ---
 
 ## Components
 
-| Component | File | Used By | Notes |
-|-----------|------|---------|-------|
-| `Navigation` | `components/Navigation.tsx` | `app/layout.tsx` | Sticky top nav, mobile hamburger menu |
-| `BoardTable` | `components/BoardTable.tsx` | `BigBoardPage` | Simple board table with search + position filter |
-| `ExpandedBoardTable` | `components/ExpandedBoardTable.tsx` | `BigBoardPage` | Board table with collapsible rows (grades, ranks, summary) |
-| `PositionBadge` | `components/PositionBadge.tsx` | Multiple | Color-coded position pill (colors defined in `types.ts`) |
-| `PlayerGrid` | `components/PlayerGrid.tsx` | `/players` page | Card grid with search + position filter |
-| `UserBoardEditor` | `components/UserBoardEditor.tsx` | My Board tab | Drag-to-reorder, search to add, copy consensus board |
+| Component | File | Notes |
+|-----------|------|-------|
+| `Navigation` | `components/Navigation.tsx` | Sticky top nav, mobile hamburger |
+| `BoardTable` | `components/BoardTable.tsx` | Simple board table with search + position filter |
+| `ExpandedBoardTable` | `components/ExpandedBoardTable.tsx` | Board table with collapsible grade/summary rows |
+| `PositionBadge` | `components/PositionBadge.tsx` | Color-coded position pill (colors in `types.ts`) |
+| `PlayerGrid` | `components/PlayerGrid.tsx` | Card grid with search + position filter |
+| `UserBoardEditor` | `components/UserBoardEditor.tsx` | Drag-to-reorder personal board; add/remove players; copy consensus; inline save-error feedback |
 
 ---
 
-## Data Files
+## Database (Supabase)
 
-All JSON lives in `draft-board-app/src/data/` (copied from `data/` after extraction).
+### Key Tables
 
-| File | Records | Description |
-|------|---------|-------------|
-| `big_board.json` | 100 + 35 + 35 | Consensus, Bengals, and Expanded boards |
-| `position_boards.json` | 122 total | 9 position boards with grades, PFF scores, athletic data, strengths/weaknesses |
-| `rankings.json` | 682 | Multi-source overall rankings |
-| `positional_rankings.json` | 684 | Multi-source positional rankings |
-| `adp.json` | 685 | Average draft position by source |
-| `mocks.json` | 17 sources | Mock draft picks from each source |
-| `players.json` | 141 | Player index (name, pos, school, etc.) |
-| `profiles/*.json` | 141 files | Full detailed player profiles |
-| `ras.json` | 0 (pre-Combine) | Athletic/RAS data (populates post-Combine) |
-| `ages.json` | 845 | Player age data |
+| Table | Description |
+|-------|-------------|
+| `players` | Core player records (name, slug, position, college, bio, overview JSON, profile data) |
+| `rankings` | Overall rankings by source (slug + source + rank_value) |
+| `positional_rankings` | Positional rankings by source |
+| `player_rankings` | Per-player overall + positional rank per source |
+| `board_entries` | Consensus / named board entries (rank + board_label) |
+| `adp_entries` | ADP values by source |
+| `mock_picks` | Mock draft picks by source |
+| `commentary` | Scouting commentary sections by source |
+| `player_comps` | Player comparisons by source |
+| `projected_rounds` | Projected draft round by source |
+| `position_board_entries` | Position board data with grades and athletic scores |
+| `source_dates` | Last-updated date per source (ranking / mock) |
+| `user_boards` | User personal big board (RLS — user sees only own rows) |
+| `user_position_ranks` | User personal position rankings (RLS) |
 
 ### Data Loader Functions (`lib/data.ts`)
 
-- `getBigBoard()` → `BigBoard` (consensus + bengals + expanded)
-- `getPositionBoards()` → `Record<string, PositionBoardPlayer[]>`
-- `getPlayers()` → `PlayerIndex[]`
-- `getPlayerProfile(slug)` → `PlayerProfile | null`
-- `getAllPlayerSlugs()` → `string[]`
-- `getMocks()` → `Record<string, MockPick[]>`
-- `getRankings()` → `RankingEntry[]`
-- `getADP()` → `ADPEntry[]`
-- `getUserBoard(userId)` → `BoardPlayer[]` (session-aware, RLS)
-- `getUserPositionRanks(userId)` → `Record<string, Array<...>>` (session-aware, RLS)
+- `getBigBoard()` → consensus + bengals + expanded boards
+- `getPositionBoards()` → 9 position boards
+- `getPlayers()` → player index for grid/search
+- `getPlayerProfile(slug)` → full profile with all related data
+- `getAllPlayerSlugs()` → for `generateStaticParams` (players with profiles only)
+- `getMocks()` → mock picks grouped by source
+- `getRankings()` → multi-source ranking table with source dates
+- `getADP()` → ADP table with consensus ADP
+- `getUserBoard()` → session-aware personal board (RLS)
+- `getUserPositionRanks()` → session-aware position ranks (RLS)
+
+### Hidden Sources
+
+Sources in `HIDDEN_SOURCES = new Set(["Bleacher", "Con", "Premier Con."])` are filtered from all public views — used internally for consensus computation only.
 
 ---
 
-## ETL Pipeline (`extract.py`)
+## Data Ingestion
 
-Located at **`C:\Users\hetze\OneDrive\Desktop\DBs\extract.py`**. Requires the `.venv` in the same directory.
+Data is loaded into Supabase via two methods:
 
-### Python Environment
+### 1. Admin CSV Upload (`/admin/upload`)
 
-- **Python 3.14** (venv at `.venv/`)
-- **Packages**: `pandas`, `openpyxl`
-- **CRITICAL**: Must set `$env:PYTHONIOENCODING="utf-8"` on Windows before running (emoji/unicode in player data)
+Upload CSVs with column mapping for:
+- Overall rankings, positional rankings, ADP
+- Mock drafts, source dates
+- PFF scores, DraftBuzz grades, Athletic scores, site ratings
+- NFL profiles, Bleacher profiles, ESPN profiles, TDN profiles
+- Bio data, Walter scouting reports, PFF big board
 
-### Excel Sheet Layout (255 sheets)
+Each import auto-updates `source_dates` and calls `revalidatePath()` on all public routes.
 
-The workbook contains these categories of sheets:
+### 2. Python Scraping Scripts (root of DBs folder)
 
-| Category | Count | Examples |
-|----------|-------|---------|
-| Boards | 14 | Big Board, Expanded Big Board, CB Board, ED Board, etc. |
-| Mocks | 19 | Bleacher Mock, Kiper Mock Draft, Walter Mock, etc. |
-| Rankings | 24 | Overall_Ranking, CB_Ranking, ED_Ranking, ESPN Rankings, etc. |
-| Data | 21 | RAS Data, Age Sheet, NFL Profiles, Bleacher Profiles, etc. |
-| Templates | 14 | Template, Comp sheets |
-| Player Profiles | ~155 | One sheet per player (form-like, 339 rows × 32 cols) |
-| Skipped | 8 | Cover Sheet, How To Use, etc. |
-
-### Extraction Functions
-
-| Function | Source Sheet(s) | Output | Notes |
-|----------|----------------|--------|-------|
-| `extract_big_board()` | Big Board | consensus + bengals arrays | Bengals side has no rank column (col 7=player) |
-| `extract_expanded_board()` | Expanded Big Board | expanded array | Uses openpyxl directly; 6 rows per player |
-| `extract_position_boards()` | CB/DT/ED/LB/IOL/OT/SAF/TE/WR Board | dict of position → players | Uses openpyxl; 7 rows per player |
-| `extract_overall_rankings()` | Overall_Ranking | rankings array | Sources in cols 7+ |
-| `extract_positional_rankings()` | *_Ranking sheets | positional rankings | |
-| `extract_adp()` | ADP sheet | ADP array | |
-| `extract_all_mocks()` | *Mock* sheets | dict of source → picks | |
-| `extract_ras_data()` | RAS Data | athletic profiles | Filtered to Year 2025/2026/TBD only |
-| `extract_age_data()` | Age Sheet | age records | |
-| `extract_nfl_profiles()` | NFL Profiles | 50 profiles by slug | Tabular; overwrites NFL.com commentary |
-| `extract_bleacher_profiles()` | Bleacher Profiles | 225 profiles by slug | Tabular; overwrites Bleacher commentary |
-| `extract_walter_scouting()` | Walter Scouting Reports | 24 profiles by slug | Tabular; overwrites Walter commentary |
-| `extract_espn_analysis()` | ESPN Rankings | 100 entries by slug | Col 8 has analysis text (16 have text) |
-| `extract_ringer_rankings()` | Ringer Rankings | 32 profiles by slug | Replaces Ringer commentary; also enriches player_comps |
-| `extract_player_profile()` | Individual player sheets | Full profile JSON | Form-like layout; merges source data from above |
-| `extract_skills_traits()` | (within player sheet) | skills/traits dict | 5 categories at cols 0, 5, 11, 17, 23 |
-| `extract_commentary()` | (within player sheet) | commentary array | Skips "kiper" and "the ringer" entries |
-
-### Key Extraction Details
-
-- **Player profile sheets** are form-like (not tabular): data is at fixed row/col positions
-- **Commentary merging**: Source-specific sheets (NFL Profiles, Bleacher Profiles, Walter Scouting, ESPN Rankings, Ringer Rankings) provide cleaner data than what's scraped from the embedded forms — the pipeline replaces form-scraped commentary with these
-- **Player comps enrichment**: `player_comps` dict is enriched from Ringer (strips "SHADES OF..."), NFL.com, and Bleacher comparison fields
-- **Skills & Traits**: 5 categories at columns 0 (Character), 5 (Tackling), 11 (Coverage Skills), 17 (Mental/Discipline), 23 (Athleticism)
-- **`DATA_SHEETS` list**: Sheets listed here are excluded from being treated as player profile sheets
-- **Slugs**: Generated via `slugify()` — lowercase, strip `'.'`, replace non-alphanumeric with `-`
+| Script | Purpose |
+|--------|---------|
+| `migrate_to_supabase.py` | Initial bulk migration from JSON files |
+| `fix_beast_rankings.py` | Sync Brugler Beast overall + positional ranks |
+| `rebuild_consensus_board.py` | Rebuild top-300 consensus from ESPN, Bleacher, Brugler, PFF |
+| `remove_no_profile.py` | Delete all players with empty `overview` (no profile data) |
+| `PFF_Com.py` | Scrape PFF commentary |
+| `WF_profiles2.py` | Scrape Walter Football player profiles |
+| `BR_Rank_Selenium.py` | Scrape Bleacher Report rankings |
+| `BR_Reports_Selenium.py` | Scrape Bleacher Report scouting reports |
 
 ---
 
 ## Styling
 
-- **Dark theme** with custom CSS variables in `globals.css`
-  - `--bg-primary: #0a0f1a`, `--accent: #f97316` (orange)
-  - Background panels: `#111827`, borders: `#2a3a4e`
-- **Ranking number colors** (used in RankingsView):
-  - Top 15: Purple (`text-purple-400`)
-  - 16–50: Green (`text-green-400`)
-  - 51–100: Yellow (`text-yellow-400`)
-  - 101–200: Gray (`text-gray-400`)
-  - 200+: Red (`text-red-400`)
-- **Position badge colors**: Defined in `POSITION_COLORS` map in `lib/types.ts`
+- **Dark theme**: `bg-[#0a0f1a]` (root), `bg-[#111827]` (cards), `bg-[#1a2332]` (hover/skeleton), `border-[#2a3a4e]`
+- **Accent**: `orange-500` for CTAs and highlights
+- **Ranking number colors** (RankingsView):
+  - Top 15: `text-purple-400`
+  - 16–50: `text-green-400`
+  - 51–100: `text-yellow-400`
+  - 101–200: `text-gray-400`
+  - 200+: `text-red-400`
+- **Position badge colors**: `POSITION_COLORS` map in `lib/types.ts`
 
 ---
 
@@ -183,108 +164,104 @@ npm run dev
 
 Open **http://localhost:3000**
 
----
-
-## Update Workflow
-
-When the Excel file is updated, run these 3 steps:
-
-### 1. Re-extract the data
-
-```powershell
-cd "C:\Users\hetze\OneDrive\Desktop\DBs"
-$env:PYTHONIOENCODING = "utf-8"
-.venv\Scripts\python.exe extract.py
+Requires `.env.local` with:
 ```
-
-### 2. Copy data into the app
-
-```powershell
-Copy-Item -Recurse -Force "data\*" "draft-board-app\src\data\"
+NEXT_PUBLIC_SUPABASE_URL=...
+NEXT_PUBLIC_SUPABASE_ANON_KEY=...
+SUPABASE_SERVICE_ROLE_KEY=...
+ADMIN_EMAIL=...
 ```
-
-### 3. Verify
-
-If the dev server is running (`npm run dev`), it hot-reloads — just refresh the browser.
 
 ---
 
 ## Tech Stack
 
-- **Next.js 16** (App Router, Turbopack)
+- **Next.js 15** (App Router, Turbopack)
 - **React 19 + TypeScript**
 - **Tailwind CSS v4** (dark theme)
-- **Supabase** (PostgreSQL + Auth — multi-user with email/password registration)
-- **Python 3.14 + pandas + openpyxl** (ETL pipeline)
-- **Node.js v24.11.1, npm 11.6.2**
+- **Supabase** (PostgreSQL + Auth — RLS, service role for admin actions)
+- **Python 3.x + pandas + supabase-py + selenium** (scraping + migration scripts)
+- **Node.js + npm**
+
+---
 
 ## Project Structure
 
 ```
 C:\Users\hetze\OneDrive\Desktop\DBs\
-├── 2026 Draft Board 2.0.xlsx    # Source Excel workbook (255 sheets)
-├── extract.py                    # Python ETL pipeline
 ├── .venv/                        # Python virtual environment
-├── data/                         # ETL output (JSON)
-│   ├── big_board.json
-│   ├── position_boards.json
-│   ├── rankings.json
-│   ├── positional_rankings.json
-│   ├── adp.json
-│   ├── mocks.json
-│   ├── ras.json
-│   ├── ages.json
-│   ├── players.json
-│   └── profiles/                 # 141 individual player JSONs
+├── data/                         # Intermediate JSON (legacy / reference)
+│   └── profiles/
+├── migrate_to_supabase.py        # Bulk JSON → Supabase migration
+├── fix_beast_rankings.py         # Brugler Beast rank sync
+├── rebuild_consensus_board.py    # Consensus board rebuild
+├── remove_no_profile.py          # Remove profileless players
+├── PFF_Com.py                    # PFF commentary scraper
+├── WF_profiles2.py               # Walter Football profile scraper
 └── draft-board-app/              # Next.js application
+    ├── middleware.ts              # Admin route protection
     └── src/
         ├── app/
-        │   ├── layout.tsx        # Root layout (Navigation + dark bg)
-        │   ├── page.tsx          # → BigBoardPage.tsx
-        │   ├── BigBoardPage.tsx  # Big Board (4 tabs: Consensus/Bengals/Expanded/My Board)
+        │   ├── layout.tsx
+        │   ├── error.tsx          # Root error boundary
+        │   ├── loading.tsx        # Root skeleton
+        │   ├── page.tsx           # Big Board (force-dynamic)
+        │   ├── BigBoardPage.tsx
         │   ├── boards/
-        │   │   ├── page.tsx      # → PositionBoardsView.tsx
-        │   │   └── PositionBoardsView.tsx  # 9 position boards with collapsible details
+        │   │   ├── page.tsx       # revalidate=3600
+        │   │   ├── error.tsx
+        │   │   ├── loading.tsx
+        │   │   └── PositionBoardsView.tsx
         │   ├── rankings/
-        │   │   ├── page.tsx      # → RankingsView.tsx
+        │   │   ├── page.tsx       # revalidate=3600
+        │   │   ├── error.tsx
+        │   │   ├── loading.tsx
         │   │   └── RankingsView.tsx
         │   ├── mocks/
-        │   │   ├── page.tsx      # → MockDraftsView.tsx
+        │   │   ├── page.tsx       # revalidate=3600
+        │   │   ├── error.tsx
+        │   │   ├── loading.tsx
         │   │   └── MockDraftsView.tsx
-        │   ├── players/
-        │   │   └── page.tsx      # Uses PlayerGrid component
+        │   ├── player/[slug]/
+        │   │   ├── page.tsx       # revalidate=3600
+        │   │   ├── error.tsx
+        │   │   ├── loading.tsx
+        │   │   ├── PlayerDetailView.tsx
+        │   │   └── not-found.tsx
         │   ├── (auth)/
-        │   │   ├── actions.ts      # Login/register/logout server actions
-        │   │   ├── login/page.tsx   # Login page
-        │   │   └── register/page.tsx # Registration page
+        │   │   ├── actions.ts
+        │   │   ├── login/page.tsx
+        │   │   └── register/page.tsx
         │   ├── user-board/
-        │   │   └── actions.ts       # User board CRUD server actions
-        │   └── player/[slug]/
-        │       ├── page.tsx      # → PlayerDetailView.tsx (or not-found)
-        │       ├── PlayerDetailView.tsx
-        │       └── not-found.tsx  # "Profile In Progress" fallback
+        │   │   └── actions.ts     # User board CRUD (RLS)
+        │   └── admin/
+        │       ├── upload/
+        │       │   └── actions.ts # All data import server actions
+        │       ├── cleanup/
+        │       │   └── actions.ts # Player audit + delete
+        │       └── boards/
+        │           └── actions.ts # Board entry management
         ├── components/
         │   ├── Navigation.tsx
         │   ├── BoardTable.tsx
         │   ├── ExpandedBoardTable.tsx
         │   ├── PlayerGrid.tsx
         │   ├── PositionBadge.tsx
-        │   └── UserBoardEditor.tsx  # Personal board editor (drag/add/remove)
-        ├── data/                  # JSON (copied from ../../../data/)
-        │   └── profiles/
+        │   └── UserBoardEditor.tsx
         └── lib/
-            ├── data.ts            # Server-only data loaders (Supabase queries)
-            ├── supabase.ts        # Plain Supabase client (public reads)
-            ├── supabase-server.ts  # Session-aware Supabase client (user data + RLS)
+            ├── data.ts            # Server-only Supabase data loaders
+            ├── supabase.ts        # Plain public client
+            ├── supabase-server.ts # Session-aware client (RLS)
+            ├── teams.ts           # Team name normalization
             └── types.ts           # Client-safe types + POSITION_COLORS
 ```
+
+---
 
 ## Known Gotchas
 
 1. **`server-only` import error**: If a `"use client"` component imports from `@/lib/data`, you get a build error. Always import types from `@/lib/types` in client components.
-1. **RLS on user tables**: `user_boards` and `user_position_ranks` have Row Level Security. Queries MUST use `createSupabaseServer()` (session-aware), NOT the plain `supabase` client — otherwise `auth.uid()` is null and zero rows are returned.
-2. **Unicode encoding**: Windows terminal needs `$env:PYTHONIOENCODING="utf-8"` before running `extract.py` or it crashes on emoji/special chars.
-3. **RAS Data filtering**: `extract_ras_data()` filters to `Year in (2025, 2026, "TBD")` — stray 2024 records exist in the sheet.
-4. **Player profiles not found**: Not all 682 ranked players have profile sheets — only ~155 sheets exist, ~141 parse successfully. Players without profiles see the custom not-found page.
-5. **Expanded Big Board** uses `openpyxl` directly (not pandas) because the merged-cell layout doesn't parse well with `pd.read_excel`.
-6. **Position boards** also use `openpyxl` directly for the same reason. Layout is 7 rows per player.
+2. **RLS on user tables**: `user_boards` and `user_position_ranks` have Row Level Security. Queries MUST use `createSupabaseServer()` — the plain `supabase` client returns zero rows because `auth.uid()` is null.
+3. **Admin auth**: Middleware protects `/admin` routes by redirecting non-admins. Server actions additionally check `user.email === process.env.ADMIN_EMAIL` — both guards must pass.
+4. **Bracket paths in PowerShell**: The `player/[slug]` directory name contains brackets. Use `[IO.File]::WriteAllText()` or `-LiteralPath` instead of `Set-Content` when writing files to that directory.
+5. **Home page is `force-dynamic`**: It fetches the user's personal board via session — it cannot be statically cached. All other public pages use `revalidate=3600`.

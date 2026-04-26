@@ -139,6 +139,35 @@ export const ALL_POSITIONS = [
   "ALL", "QB", "RB", "WR", "TE", "OT", "OG", "C", "ED", "DT", "LB", "CB", "SAF", "K", "P",
 ] as const;
 
+/**
+ * The 12 canonical ranking sources. All rank uploads must use exactly one of
+ * these names. Tier 1 = highest signal; Tier 3 = supplemental.
+ */
+export const RANKING_SOURCES = [
+  // Tier 1
+  "PFF", "ESPN", "Brugler", "NFL.com",
+  // Tier 2
+  "Bleacher Report", "CBS", "Walter Football",
+  // Tier 3
+  "DraftBuzz", "Tankathon", "Kiper", "Yates", "DraftTek",
+] as const;
+
+export type RankingSource = (typeof RANKING_SOURCES)[number];
+
+/**
+ * Weights used for the weighted-percentile consensus formula.
+ * Score = Σ(weight_i × percentile_i) / Σ(weight_i) — missing sources are skipped.
+ * Tier 1 = 2.0, Tier 2 = 1.0, Tier 3 = 0.5
+ */
+export const SOURCE_WEIGHTS: Record<string, number> = {
+  // Tier 1 (2.0)
+  "PFF": 2.0, "ESPN": 2.0, "Brugler": 2.0, "NFL.com": 2.0,
+  // Tier 2 (1.0)
+  "Bleacher Report": 1.0, "CBS": 1.0, "Walter Football": 1.0,
+  // Tier 3 (0.5)
+  "DraftBuzz": 0.5, "Tankathon": 0.5, "Kiper": 0.5, "Yates": 0.5, "DraftTek": 0.5,
+};
+
 
 // ─── Position Colors (safe for client components) ───────────────────────────
 

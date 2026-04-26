@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import PositionBadge from "@/components/PositionBadge";
-import { normalizePosition, ALL_POSITIONS } from "@/lib/types";
+import { normalizePosition, ALL_POSITIONS, SOURCE_WEIGHTS } from "@/lib/types";
 import type { RankingEntry } from "@/lib/types";
 
 export default function RankingsView({ rankings, sourceDates }: { rankings: RankingEntry[]; sourceDates: Record<string, string> }) {
@@ -19,10 +19,21 @@ export default function RankingsView({ rankings, sourceDates }: { rankings: Rank
     return Array.from(srcSet).sort();
   }, [rankings]);
 
-  // Default sources
+  // Compute per-source list sizes (non-null entries) for percentile normalisation
+  const listSizes = useMemo(() => {
+    const sizes: Record<string, number> = {};
+    rankings.forEach((r) =>
+      Object.entries(r.source_rankings).forEach(([src, v]) => {
+        if (typeof v === "number") sizes[src] = (sizes[src] ?? 0) + 1;
+      })
+    );
+    return sizes;
+  }, [rankings]);
+
+  // Default: Tier 1 + Tier 2 sources checked; Tier 3 unchecked
   const defaultSources = useMemo(() => {
-    const defaults = ["Bleacher Report", "ESPN", "Brugler", "CBS", "Walter", "PFF", "NFL.com"];
-    return new Set(defaults.filter(s => sources.includes(s)));
+    const tier1and2 = ["PFF", "ESPN", "Brugler", "NFL.com", "Bleacher Report", "CBS", "Walter Football"];
+    return new Set(tier1and2.filter(s => sources.includes(s)));
   }, [sources]);
 
   const [selectedSources, setSelectedSources] = useState<Set<string>>(defaultSources);
@@ -63,15 +74,21 @@ export default function RankingsView({ rankings, sourceDates }: { rankings: Rank
   const processed = useMemo(() => {
     return rankings
       .map((r) => {
-        // Only use selected sources for consensus calculation
-        const numericRanks = Object.entries(r.source_rankings)
-          .filter(([src, v]) => selectedSources.has(src) && typeof v === "number")
-          .map(([, v]) => v as number);
-        const consensus =
-          numericRanks.length > 0
-            ? numericRanks.reduce((a, b) => a + b, 0) / numericRanks.length
-            : 9999;
-        return { ...r, consensus, sourceCount: numericRanks.length };
+        // Weighted-percentile consensus using only selected sources
+        let totalWeight = 0;
+        let totalScore = 0;
+        let sourceCount = 0;
+        Object.entries(r.source_rankings).forEach(([src, v]) => {
+          if (!selectedSources.has(src) || typeof v !== "number") return;
+          const n = listSizes[src] ?? 1;
+          const pct = n < 2 ? 1 : Math.max(0, Math.min(1, 1 - (v - 1) / (n - 1)));
+          const w = SOURCE_WEIGHTS[src] ?? 0.5;
+          totalWeight += w;
+          totalScore += w * pct;
+          sourceCount++;
+        });
+        const consensus = totalWeight > 0 ? totalScore / totalWeight : -1;
+        return { ...r, consensus, sourceCount };
       })
       .filter((r) => {
         const matchesSearch =
@@ -83,7 +100,7 @@ export default function RankingsView({ rankings, sourceDates }: { rankings: Rank
         return matchesSearch && matchesPos;
       })
       .sort((a, b) => {
-        if (sortSource === "Consensus") return a.consensus - b.consensus;
+        if (sortSource === "Consensus") return b.consensus - a.consensus; // higher score = better
         const aVal = typeof a.source_rankings[sortSource] === "number" ? (a.source_rankings[sortSource] as number) : 9999;
         const bVal = typeof b.source_rankings[sortSource] === "number" ? (b.source_rankings[sortSource] as number) : 9999;
         return aVal - bVal;

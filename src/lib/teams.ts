@@ -131,8 +131,8 @@ export function formatTeamWithTrade(team: string, tradeNote: string | null): str
  * Add entries here whenever a source gets uploaded under multiple names.
  */
 const SOURCE_ALIASES: Record<string, string> = {
-  "nfl.com": "NFL",
-  "nfl com": "NFL",
+  "nfl.com": "NFL.com",
+  "nfl com": "NFL.com",
   // Add more as needed, e.g.:
   // "cbs sports": "CBS",
   // "pro football focus": "PFF",

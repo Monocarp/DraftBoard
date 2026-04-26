@@ -86,6 +86,12 @@ export default async function AdminLayout({
                   Cleanup
                 </Link>
                 <Link
+                  href="/admin/walter-football"
+                  className="px-3 py-1.5 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-white/5 transition-colors"
+                >
+                  Walter&nbsp;Football
+                </Link>
+                <Link
                   href="/admin/updates"
                   className="px-3 py-1.5 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-white/5 transition-colors"
                 >

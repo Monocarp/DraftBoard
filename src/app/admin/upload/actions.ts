@@ -1,7 +1,7 @@
 "use server";
 
 import { createSupabaseServer } from "@/lib/supabase-server";
-import { normalizePosition } from "@/lib/types";
+import { normalizePosition, RANKING_SOURCES } from "@/lib/types";
 import { normalizeTeam, formatTeamWithTrade, normalizeSourceName } from "@/lib/teams";
 import { revalidatePath } from "next/cache";
 
@@ -77,13 +77,13 @@ interface PlayerCacheEntry {
   compact: string; // compact slug for fuzzy matching
 }
 
-interface ImportCaches {
+export interface ImportCaches {
   playerCache: PlayerCacheEntry[];
   correctionsCache: Map<string, string>;
 }
 
 /** Build fresh caches for a single import batch. NOT shared across requests. */
-async function buildCaches(
+export async function buildCaches(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>
 ): Promise<ImportCaches> {
   // Load all players
@@ -131,7 +131,7 @@ async function buildCaches(
 }
 
 /** Look up a player using the full normalization pipeline, create if not found */
-async function resolvePlayerId(
+export async function resolvePlayerId(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
   caches: ImportCaches,
   playerName: string,
@@ -190,7 +190,7 @@ async function resolvePlayerId(
 // ─── Name Normalization ─────────────────────────────────────────────────────
 
 /** Convert "Bernhard RAIMANN" → "Bernhard Raimann" (title-case ALL-CAPS words, preserve Roman numerals) */
-function normalizeCompName(name: string): string {
+export function normalizeCompName(name: string): string {
   const romanNumerals = new Set(["II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "JR", "SR"]);
   return name.split(/\s+/).map(word => {
     if (romanNumerals.has(word.toUpperCase())) return word.toUpperCase();
@@ -2303,7 +2303,7 @@ async function importPFFBigBoard(
   mapping: ColumnMapping,
 ): Promise<UploadResult> {
   const result: UploadResult = { success: true, inserted: 0, updated: 0, skipped: 0, errors: [] };
-  const RANKING_SOURCE = "PFF Big Board";
+  const RANKING_SOURCE = "PFF";
   const SCOUTING_SOURCE = "PFF";
   const BIO_SOURCE = "pff";
   const BIO_PRIORITY = 4;
@@ -2440,8 +2440,21 @@ export async function importData(
   sourceName: string,
   bioPriority?: number,
 ): Promise<UploadResult> {
-  // Normalize source name (e.g. "NFL.com" → "NFL")
+  // Normalize source name (e.g. "nfl.com" → "NFL.com")
   sourceName = normalizeSourceName(sourceName);
+
+  // Validate source is in the canonical list for ranking data types
+  if (dataType === "rankings" || dataType === "positional_rankings") {
+    if (!RANKING_SOURCES.includes(sourceName as (typeof RANKING_SOURCES)[number])) {
+      return {
+        success: false,
+        inserted: 0,
+        updated: 0,
+        skipped: 0,
+        errors: [`Invalid source "${sourceName}". Must be one of: ${RANKING_SOURCES.join(", ")}`],
+      };
+    }
+  }
 
   const supabase = await createSupabaseServer();
   const { data: { user } } = await supabase.auth.getUser();
