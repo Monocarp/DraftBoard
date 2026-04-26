@@ -1,7 +1,7 @@
 "use server";
 
 import { createSupabaseServer } from "@/lib/supabase-server";
-import { normalizeCompName, buildCaches, resolvePlayerId } from "../upload/actions";
+import { buildCaches, resolvePlayerId } from "../upload/actions";
 
 // ─── Types ─────────────────────────────────────────────────────────────────
 
@@ -194,6 +194,18 @@ export async function importWFProfiles(
 }
 
 // ─── Helpers ───────────────────────────────────────────────────────────────
+
+/** Convert "BERNHARD RAIMANN" → "Bernhard Raimann" (title-case ALL-CAPS, preserve Roman numerals) */
+function normalizeCompName(name: string): string {
+  const preserve = new Set(["II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "JR", "SR"]);
+  return name.split(/\s+/).map(word => {
+    if (preserve.has(word.toUpperCase())) return word.toUpperCase();
+    if (word === word.toUpperCase() && word.length > 1) {
+      return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    }
+    return word;
+  }).join(" ");
+}
 
 /** Strip HTML tags from a string */
 function stripTags(html: string): string {

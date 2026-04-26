@@ -190,7 +190,7 @@ export async function resolvePlayerId(
 // ─── Name Normalization ─────────────────────────────────────────────────────
 
 /** Convert "Bernhard RAIMANN" → "Bernhard Raimann" (title-case ALL-CAPS words, preserve Roman numerals) */
-export function normalizeCompName(name: string): string {
+function normalizeCompName(name: string): string {
   const romanNumerals = new Set(["II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "JR", "SR"]);
   return name.split(/\s+/).map(word => {
     if (romanNumerals.has(word.toUpperCase())) return word.toUpperCase();
