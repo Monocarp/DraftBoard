@@ -9,7 +9,6 @@ import { revalidatePath } from "next/cache";
 
 export type DataType =
   | "rankings"
-  | "adp"
   | "mocks"
   | "source_dates"
   | "pff_scores"
@@ -492,12 +491,55 @@ async function importMocks(
       if (error) result.errors.push(`Batch insert error at row ${i + 1}: ${error.message}`);
       else result.inserted += batch.length;
     }
+
+    // Recompute ADP from all mocks now that this source is updated
+    await recomputeADPFromMocks(supabase);
   }
 
   return result;
 }
 
-// ─── Import: Player Rankings (profile page) ─────────────────────────────────
+// ─── Recompute ADP from Mock Picks ──────────────────────────────────────────
+
+/** Recomputes adp_entries from scratch based on all mock_picks.
+ *  Per-source ADP = each analyst's pick number for that player.
+ *  Consensus ADP (source "Con") = average pick across all mocks.
+ *  Called automatically after every mock import or deletion. */
+async function recomputeADPFromMocks(
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+): Promise<void> {
+  const { data: picks } = await supabase
+    .from("mock_picks")
+    .select("player_id, source, pick_number")
+    .not("player_id", "is", null)
+    .not("pick_number", "is", null);
+
+  if (!picks?.length) return;
+
+  // Group by player_id
+  const byPlayer = new Map<string, { source: string; pick: number }[]>();
+  for (const p of picks) {
+    if (!byPlayer.has(p.player_id)) byPlayer.set(p.player_id, []);
+    byPlayer.get(p.player_id)!.push({ source: p.source, pick: p.pick_number });
+  }
+
+  // Build upserts: per-source pick + consensus average
+  const upserts: { player_id: string; source: string; adp_value: number }[] = [];
+  for (const [playerId, entries] of byPlayer) {
+    for (const e of entries) {
+      upserts.push({ player_id: playerId, source: e.source, adp_value: e.pick });
+    }
+    const avg = entries.reduce((s, e) => s + e.pick, 0) / entries.length;
+    upserts.push({ player_id: playerId, source: "Con", adp_value: Math.round(avg * 10) / 10 });
+  }
+
+  // Upsert in batches of 500
+  for (let i = 0; i < upserts.length; i += 500) {
+    await supabase
+      .from("adp_entries")
+      .upsert(upserts.slice(i, i + 500), { onConflict: "player_id,source" });
+  }
+}
 
 // ─── Import: Source Dates ───────────────────────────────────────────────────
 
@@ -2314,9 +2356,6 @@ export async function importData(
       result = await importRankings(supabase, caches, rows, mapping, sourceName, bioPriority);
       autoDateType = "ranking";
       break;
-    case "adp":
-      result = await importADP(supabase, caches, rows, mapping, sourceName);
-      break;
     case "mocks":
       result = await importMocks(supabase, caches, rows, mapping, sourceName);
       autoDateType = "mock";
@@ -2397,7 +2436,6 @@ export async function deleteSourceData(
   let table: string;
   switch (dataType) {
     case "rankings": table = "rankings"; break;
-    case "adp": table = "adp_entries"; break;
     case "mocks": table = "mock_picks"; break;
     case "source_dates": table = "source_dates"; break;
     // Profile importers write to players table JSON fields — no source-based deletion
@@ -2428,6 +2466,11 @@ export async function deleteSourceData(
 
   if (error) return { success: false, deleted: 0, error: error.message };
 
+  // If a mock source was deleted, recompute ADP from remaining mocks
+  if (dataType === "mocks") {
+    await recomputeADPFromMocks(supabase);
+  }
+
   revalidatePath("/");
   revalidatePath("/rankings");
   revalidatePath("/mocks");
@@ -2445,7 +2488,6 @@ export async function getExistingSources(dataType: DataType): Promise<string[]> 
   let table: string;
   switch (dataType) {
     case "rankings": table = "rankings"; break;
-    case "adp": table = "adp_entries"; break;
     case "mocks": table = "mock_picks"; break;
     case "source_dates": table = "source_dates"; break;
     default: return [];

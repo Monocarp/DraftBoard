@@ -36,17 +36,6 @@ const DATA_TYPES_UNSORTED: Record<DataType, DataTypeConfig> = {
     needsSource: true,
     allowedSources: RANKING_SOURCES,
   },
-  adp: {
-    label: "Average Draft Position (ADP)",
-    description: "ADP values by source",
-    requiredColumns: [
-      { key: "player_name", label: "Player Name", required: true },
-      { key: "adp_value", label: "ADP Value", required: true },
-      { key: "position", label: "Position", required: false },
-      { key: "college", label: "College", required: false },
-    ],
-    needsSource: true,
-  },
   mocks: {
     label: "Mock Drafts",
     description: "Full mock draft (replaces existing mock for this source)",
