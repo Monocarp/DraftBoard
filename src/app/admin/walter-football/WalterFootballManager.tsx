@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { fetchWFPlayerList, importWFProfiles, type WFPlayerEntry, type WFImportResult } from "./actions";
+import { fetchWFPlayerList, importWFProfiles, previewWFProfile, type WFPlayerEntry, type WFImportResult, type WFProfilePreview } from "./actions";
 
 export function WalterFootballManager() {
   const [cutoff, setCutoff] = useState("2025-10-01");
@@ -11,6 +11,9 @@ export function WalterFootballManager() {
   const [fetchError, setFetchError] = useState<string | null>(null);
   const [fetchDebug, setFetchDebug] = useState<string | null>(null);
   const [importResult, setImportResult] = useState<WFImportResult | null>(null);
+  const [previewUrl, setPreviewUrl] = useState<string | null>(null);
+  const [previewData, setPreviewData] = useState<WFProfilePreview | null>(null);
+  const [previewLoading, setPreviewLoading] = useState(false);
 
   async function handleFetch() {
     setFetching(true);
@@ -50,6 +53,23 @@ export function WalterFootballManager() {
       });
     } finally {
       setImporting(false);
+    }
+  }
+
+  async function handlePreview(url: string) {
+    if (previewUrl === url) {
+      setPreviewUrl(null);
+      setPreviewData(null);
+      return;
+    }
+    setPreviewUrl(url);
+    setPreviewData(null);
+    setPreviewLoading(true);
+    try {
+      const data = await previewWFProfile(url);
+      setPreviewData(data);
+    } finally {
+      setPreviewLoading(false);
     }
   }
 
@@ -168,10 +188,10 @@ export function WalterFootballManager() {
                 <span>Player</span>
                 <span>Last Updated</span>
               </div>
-              <div className="divide-y divide-[#2a3a4e] max-h-96 overflow-y-auto">
+              <div className="divide-y divide-[#2a3a4e] max-h-[600px] overflow-y-auto">
                 {players.map((p) => (
-                  <div key={p.url} className="grid grid-cols-[1fr_auto] gap-4 px-4 py-2.5 items-center hover:bg-white/5">
-                    <div className="flex items-center gap-2 min-w-0">
+                  <div key={p.url}>
+                    <div className="grid grid-cols-[1fr_auto_auto] gap-3 px-4 py-2.5 items-center hover:bg-white/5">
                       <a
                         href={p.url}
                         target="_blank"
@@ -180,8 +200,57 @@ export function WalterFootballManager() {
                       >
                         {p.name}
                       </a>
+                      <span className="text-xs text-gray-500 whitespace-nowrap">{p.last_updated}</span>
+                      <button
+                        onClick={() => handlePreview(p.url)}
+                        className="text-xs text-blue-400 hover:text-blue-300 whitespace-nowrap"
+                      >
+                        {previewUrl === p.url ? "▲ hide" : "▼ preview"}
+                      </button>
                     </div>
-                    <span className="text-xs text-gray-500 whitespace-nowrap">{p.last_updated}</span>
+
+                    {/* Inline preview panel */}
+                    {previewUrl === p.url && (
+                      <div className="px-4 pb-4 bg-[#0d1320] text-xs text-gray-300 space-y-3 border-t border-[#2a3a4e]">
+                        {previewLoading ? (
+                          <p className="py-3 text-gray-500">Loading preview…</p>
+                        ) : previewData?.error ? (
+                          <p className="py-3 text-red-400">{previewData.error}</p>
+                        ) : previewData ? (
+                          <>
+                            <p className="pt-3 font-medium text-white">
+                              {previewData.name}
+                              {previewData.position && <span className="ml-2 text-gray-400">· {previewData.position}</span>}
+                              {previewData.school && <span className="ml-2 text-gray-400">· {previewData.school}</span>}
+                            </p>
+                            {previewData.summary && (
+                              <div>
+                                <p className="font-semibold text-gray-400 uppercase tracking-wide mb-1">Overview</p>
+                                <p className="whitespace-pre-wrap">{previewData.summary}</p>
+                              </div>
+                            )}
+                            {previewData.strengths && (
+                              <div>
+                                <p className="font-semibold text-green-500 uppercase tracking-wide mb-1">Strengths</p>
+                                <p className="whitespace-pre-wrap">{previewData.strengths}</p>
+                              </div>
+                            )}
+                            {previewData.weaknesses && (
+                              <div>
+                                <p className="font-semibold text-red-400 uppercase tracking-wide mb-1">Weaknesses</p>
+                                <p className="whitespace-pre-wrap">{previewData.weaknesses}</p>
+                              </div>
+                            )}
+                            {previewData.playerComp && (
+                              <div>
+                                <p className="font-semibold text-orange-400 uppercase tracking-wide mb-1">Player Comp</p>
+                                <p className="whitespace-pre-wrap">{previewData.playerComp}</p>
+                              </div>
+                            )}
+                          </>
+                        ) : null}
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>

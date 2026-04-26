@@ -75,7 +75,8 @@ export async function fetchWFPlayerList(cutoffDate: string): Promise<WFFetchResu
         .replace(/\s+/g, " ")
         .trim();
 
-      if (!name || !href) continue;
+      // Only keep actual scouting report URLs (e.g. /scoutingreports2026dallar.php)
+      if (!name || !href || !/scoutingreports\d{4}/i.test(href)) continue;
 
       const url = href.startsWith("http")
         ? href
@@ -215,6 +216,57 @@ export async function importWFProfiles(
   }
 
   return result;
+}
+
+// ─── Step 1b: Preview a single scouting report ────────────────────────────
+
+export interface WFProfilePreview {
+  name: string;
+  position: string;
+  school: string;
+  summary: string;
+  strengths: string;
+  weaknesses: string;
+  playerComp: string;
+  error?: string;
+}
+
+export async function previewWFProfile(url: string): Promise<WFProfilePreview> {
+  const supabase = await createSupabaseServer();
+  const { data: { user } } = await supabase.auth.getUser();
+  const adminEmail = process.env.ADMIN_EMAIL;
+  if (!user || !adminEmail || user.email !== adminEmail) throw new Error("Unauthorized");
+
+  try {
+    const res = await fetch(url, {
+      headers: { "User-Agent": "Mozilla/5.0" },
+      next: { revalidate: 0 },
+    });
+    if (!res.ok) return { name: "", position: "", school: "", summary: "", strengths: "", weaknesses: "", playerComp: "", error: `HTTP ${res.status}` };
+
+    const html = await res.text();
+
+    const bioMatch = html.match(/<ul[^>]*class="card-bio-data"[^>]*>([\s\S]*?)<\/ul>/i);
+    let name = "", position = "", school = "";
+    if (bioMatch) {
+      const liMatches = [...bioMatch[1].matchAll(/<li[^>]*>([\s\S]*?)<\/li>/gi)];
+      if (liMatches[0]) name = stripTags(liMatches[0][1]).trim();
+      if (liMatches[1]) position = stripTags(liMatches[1][1]).trim();
+      if (liMatches[2]) school = stripTags(liMatches[2][1]).trim();
+    }
+
+    return {
+      name,
+      position,
+      school,
+      strengths:  parseDivSection(html, "SR-Strengths replace-break", "li"),
+      weaknesses: parseDivSection(html, "SR-Weaknesses replace-break", "li"),
+      summary:    parseDivSection(html, "SR-Prospect-Sum replace-break", "p"),
+      playerComp: parseDivSection(html, "SR-Prospect-Comp replace-break", "p"),
+    };
+  } catch (err) {
+    return { name: "", position: "", school: "", summary: "", strengths: "", weaknesses: "", playerComp: "", error: err instanceof Error ? err.message : "Unknown error" };
+  }
 }
 
 // ─── Helpers ───────────────────────────────────────────────────────────────
