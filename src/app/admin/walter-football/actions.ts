@@ -55,9 +55,9 @@ export async function fetchWFPlayerList(cutoffDate: string): Promise<WFFetchResu
     const firstBIdx = searchHtml.indexOf("<b>");
     console.log("[WF] First <b> context:", JSON.stringify(searchHtml.slice(firstBIdx, firstBIdx + 300)));
 
-    // HTML structure: <b><a href="/scoutXYZ.php">Name, Pos, School</a></b> â€" M/D/YYYY
-    // The date text is a sibling AFTER </b>, not inside it.
-    const boldRegex = /<b><a[^>]*href="([^"]+)"[^>]*>([^<]+)<\/a><\/b>([^<\n]*)/gi;
+    // HTML structure: <b> <a href="/scoutXYZ.php"> Name, Pos, School</a></b>  &#8211; M/D/YYYY
+    // There is optional whitespace between <b> and <a>; date uses HTML entity &#8211;
+    const boldRegex = /<b>\s*<a[^>]*href="([^"]+)"[^>]*>([^<]+)<\/a><\/b>([^<\n]*)/gi;
     const players: WFPlayerEntry[] = [];
     let match: RegExpExecArray | null;
     let totalMatches = 0;
@@ -69,6 +69,7 @@ export async function fetchWFPlayerList(cutoffDate: string): Promise<WFFetchResu
       const fullText = match[2].trim();
       const name = fullText.split(",")[0].trim();
       const rawDate = match[3]
+        .replace(/&#8211;/g, "")
         .replace(/â€"/g, "")
         .replace(/[–—\-]/g, "")
         .replace(/\s+/g, " ")
