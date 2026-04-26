@@ -16,6 +16,16 @@ export default async function AdminLayout({
     return <>{children}</>;
   }
 
+  // Pending players count for nav badge (best-effort — ignore if table doesn't exist yet)
+  let pendingCount = 0;
+  try {
+    const { count } = await supabase
+      .from("pending_players")
+      .select("id", { count: "exact", head: true })
+      .eq("status", "pending");
+    pendingCount = count ?? 0;
+  } catch { /* table may not exist yet */ }
+
   return (
     <div className="min-h-screen bg-[#0a0f1a]">
       {/* Admin top bar */}
@@ -90,6 +100,17 @@ export default async function AdminLayout({
                   className="px-3 py-1.5 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-white/5 transition-colors"
                 >
                   Walter&nbsp;Football
+                </Link>
+                <Link
+                  href="/admin/pending-players"
+                  className="relative px-3 py-1.5 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-white/5 transition-colors"
+                >
+                  Pending
+                  {pendingCount > 0 && (
+                    <span className="absolute -top-1 -right-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-yellow-500 px-1 text-[10px] font-bold text-black">
+                      {pendingCount > 99 ? "99+" : pendingCount}
+                    </span>
+                  )}
                 </Link>
                 <Link
                   href="/admin/updates"

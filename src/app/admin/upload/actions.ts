@@ -80,6 +80,7 @@ interface PlayerCacheEntry {
 export interface ImportCaches {
   playerCache: PlayerCacheEntry[];
   correctionsCache: Map<string, string>;
+  pendingVariants: Set<string>; // tracks variants already queued this batch
 }
 
 /** Build fresh caches for a single import batch. NOT shared across requests. */
@@ -127,15 +128,16 @@ export async function buildCaches(
     // Table might not exist yet — that's fine
   }
 
-  return { playerCache, correctionsCache };
+  return { playerCache, correctionsCache, pendingVariants: new Set<string>() };
 }
 
-/** Look up a player using the full normalization pipeline, create if not found */
+/** Look up a player using the full normalization pipeline.
+ *  Returns null on miss and queues the name into pending_players for admin review. */
 export async function resolvePlayerId(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
   caches: ImportCaches,
   playerName: string,
-  extras?: { position?: string; college?: string }
+  extras?: { position?: string; college?: string; source?: string }
 ): Promise<string | null> {
   // Step 0: Normalize the input name (strip periods, whitespace)
   const normalized = normalizeName(playerName);
@@ -162,29 +164,25 @@ export async function resolvePlayerId(
   const compactMatch = caches.playerCache.find((p) => p.compact === compact);
   if (compactMatch) return compactMatch.id;
 
-  // Step 4: Auto-create a minimal player record
-  const { data: created, error } = await supabase
-    .from("players")
-    .insert({
-      name: normalized,
-      slug,
-      position: normalizePosition(extras?.position ?? null) || null,
-      college: extras?.college || null,
-    })
-    .select("id")
-    .single();
+  // Step 4: No match — queue into pending_players for admin review (no auto-create)
+  try {
+    const variantKey = normalized.toLowerCase();
+    // Only insert if this variant isn't already pending
+    if (!caches.pendingVariants.has(variantKey)) {
+      caches.pendingVariants.add(variantKey);
+      await supabase.from("pending_players").insert({
+        variant_name: normalized,
+        source: extras?.source ?? null,
+        position: normalizePosition(extras?.position ?? null) || null,
+        college: extras?.college || null,
+        status: "pending",
+      });
+    }
+  } catch {
+    // Best-effort — don't fail the whole upload if this insert fails
+  }
 
-  if (error || !created) return null;
-
-  // Add to cache so subsequent rows in the same batch can find it
-  caches.playerCache.push({
-    id: created.id,
-    slug,
-    name: normalized,
-    compact: compactSlug(normalized),
-  });
-
-  return created.id;
+  return null;
 }
 
 // ─── Name Normalization ─────────────────────────────────────────────────────
