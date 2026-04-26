@@ -69,7 +69,8 @@ export async function fetchWFPlayerList(cutoffDate: string): Promise<WFFetchResu
       totalMatches++;
       const href = match[1];
       const fullText = match[2].trim();
-      const parts = fullText.split(",").map((s) => s.trim());
+      // Format: "Name, 6-4/225, Position, School" — strip the height/weight token
+      const parts = fullText.split(",").map((s) => s.trim()).filter((s) => !/^\d+-\d+\/\d+$/.test(s));
       const name = parts[0] ?? "";
       const position = parts[1] ?? "";
       const school = parts.slice(2).join(",").trim();
