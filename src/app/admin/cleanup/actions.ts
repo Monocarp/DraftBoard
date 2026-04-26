@@ -30,7 +30,8 @@ export async function auditIncompletePlayers(): Promise<IncompletPlayer[]> {
   const supabase = await createSupabaseServer();
 
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) throw new Error("Unauthorized");
+  const adminEmail = process.env.ADMIN_EMAIL;
+  if (!user || !adminEmail || user.email !== adminEmail) throw new Error("Unauthorized");
 
   const { data: players } = await supabase
     .from("players")
@@ -104,7 +105,8 @@ export async function removeIncompletePlayer(
   const supabase = await createSupabaseServer();
 
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) throw new Error("Unauthorized");
+  const adminEmail = process.env.ADMIN_EMAIL;
+  if (!user || !adminEmail || user.email !== adminEmail) throw new Error("Unauthorized");
 
   // Cascading delete across all child tables
   await supabase.from("board_entries").delete().eq("player_id", playerId);

@@ -29,6 +29,7 @@ export default function UserBoardEditor({
   const [isPending, startTransition] = useTransition();
   const [dragIdx, setDragIdx] = useState<number | null>(null);
   const [dragOverIdx, setDragOverIdx] = useState<number | null>(null);
+  const [saveError, setSaveError] = useState<string | null>(null);
   const searchTimeout = useRef<NodeJS.Timeout | null>(null);
 
   const handleCopyConsensus = () => {
@@ -130,7 +131,12 @@ export default function UserBoardEditor({
     })();
 
     startTransition(async () => {
-      await reorderUserBoard(reordered.map((p) => p.slug));
+      const res = await reorderUserBoard(reordered.map((p) => p.slug));
+      if (res?.error) {
+        setSaveError("Failed to save order. Changes reverted.");
+        setPlayers(players); // revert to pre-drag state
+        setTimeout(() => setSaveError(null), 4000);
+      }
     });
 
     setDragIdx(null);
@@ -324,6 +330,9 @@ export default function UserBoardEditor({
 
       {isPending && (
         <div className="mt-2 text-xs text-blue-400 animate-pulse">Saving...</div>
+      )}
+      {saveError && (
+        <div className="mt-2 text-xs text-red-400">{saveError}</div>
       )}
     </div>
   );

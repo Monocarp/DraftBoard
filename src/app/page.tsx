@@ -2,7 +2,7 @@ import { getEnrichedBigBoard, getProfileCount, getUserBoard } from "@/lib/data";
 import { createSupabaseServer } from "@/lib/supabase-server";
 import BigBoardPage from "./BigBoardPage";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-dynamic"; // User board requires session — cannot cache
 
 export default async function Home() {
   const [board, profileCount, supabase] = await Promise.all([

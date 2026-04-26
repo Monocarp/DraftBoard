@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { cache } from "react";
 import PlayerDetailView from "./PlayerDetailView";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 // Deduplicate getPlayerProfile between generateMetadata and page component
 const getCachedProfile = cache((slug: string) => getPlayerProfile(slug));

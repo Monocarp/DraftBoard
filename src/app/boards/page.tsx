@@ -2,7 +2,7 @@ import { getPositionBoards, getUserPositionRanks } from "@/lib/data";
 import { createSupabaseServer } from "@/lib/supabase-server";
 import PositionBoardsView from "./PositionBoardsView";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 export const metadata = {
   title: "Position Boards — 2026 Draft Board",

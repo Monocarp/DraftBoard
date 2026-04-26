@@ -2445,7 +2445,8 @@ export async function importData(
 
   const supabase = await createSupabaseServer();
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) throw new Error("Unauthorized");
+  const adminEmail = process.env.ADMIN_EMAIL;
+  if (!user || !adminEmail || user.email !== adminEmail) throw new Error("Unauthorized");
 
   // Build fresh caches scoped to this import batch (not shared across requests)
   const caches = await buildCaches(supabase);
@@ -2555,7 +2556,8 @@ export async function deleteSourceData(
 ): Promise<{ success: boolean; deleted: number; error?: string }> {
   const supabase = await createSupabaseServer();
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) throw new Error("Unauthorized");
+  const adminEmail = process.env.ADMIN_EMAIL;
+  if (!user || !adminEmail || user.email !== adminEmail) throw new Error("Unauthorized");
 
   let table: string;
   switch (dataType) {

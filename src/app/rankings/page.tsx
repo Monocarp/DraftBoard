@@ -1,7 +1,7 @@
 import { getRankings } from "@/lib/data";
 import RankingsView from "./RankingsView";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 export const metadata = {
   title: "Rankings — 2026 Draft Board",

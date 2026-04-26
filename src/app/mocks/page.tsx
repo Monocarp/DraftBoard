@@ -1,7 +1,7 @@
 import { getMocks } from "@/lib/data";
 import MockDraftsView from "./MockDraftsView";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 export const metadata = {
   title: "Mock Drafts — 2026 Draft Board",
