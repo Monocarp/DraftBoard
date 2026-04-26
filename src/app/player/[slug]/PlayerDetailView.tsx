@@ -70,7 +70,7 @@ export default function PlayerDetailView({ profile }: { profile: PlayerProfile }
             <span className="text-xs font-semibold text-orange-400 uppercase tracking-wider">Comps</span>
             {Object.entries(p.player_comps).map(([source, comp]) => (
               <span key={source} className="text-sm text-gray-300">
-                <span className="text-gray-500">{source}:</span> <span className="font-medium text-white">{comp}</span>
+                <span className="text-gray-500">{source}:</span> <span className="font-medium text-white">{comp.split(/[.,]|\s+with\s+/)[0].trim()}</span>
               </span>
             ))}
           </div>
