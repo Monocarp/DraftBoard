@@ -276,50 +276,20 @@ async function importRankings(
     const slug = toSlug(playerName);
     const rankValue = rankRaw ? parseFloat(rankRaw) : null;
 
-    const { data: existing } = await supabase
+    const { error: rankError } = await supabase
       .from("rankings")
-      .select("id")
-      .eq("player_id", playerId)
-      .eq("source", sourceName)
-      .maybeSingle();
-
-    if (existing) {
-      const { error } = await supabase
-        .from("rankings")
-        .update({ rank_value: rankValue, slug })
-        .eq("id", existing.id);
-      if (error) result.errors.push(`Row ${i + 1}: ${error.message}`);
-      else result.updated++;
-    } else {
-      const { error } = await supabase
-        .from("rankings")
-        .insert({ player_id: playerId, source: sourceName, rank_value: rankValue, slug });
-      if (error) result.errors.push(`Row ${i + 1}: ${error.message}`);
-      else result.inserted++;
-    }
+      .upsert({ player_id: playerId, source: sourceName, rank_value: rankValue, slug }, { onConflict: "player_id,source" });
+    if (rankError) result.errors.push(`Row ${i + 1}: ${rankError.message}`);
+    else result.updated++;
 
     // If position_rank column is mapped, also write to positional_rankings
     const posRankRaw = mapping["position_rank"] ? row[mapping["position_rank"]] : undefined;
     if (posRankRaw && String(posRankRaw).trim()) {
       const posRankValue = parseFloat(posRankRaw);
       if (!isNaN(posRankValue)) {
-        const { data: existingPos } = await supabase
+        await supabase
           .from("positional_rankings")
-          .select("id")
-          .eq("player_id", playerId)
-          .eq("source", sourceName)
-          .maybeSingle();
-
-        if (existingPos) {
-          await supabase
-            .from("positional_rankings")
-            .update({ rank_value: posRankValue, slug })
-            .eq("id", existingPos.id);
-        } else {
-          await supabase
-            .from("positional_rankings")
-            .insert({ player_id: playerId, source: sourceName, rank_value: posRankValue, slug });
-        }
+          .upsert({ player_id: playerId, source: sourceName, rank_value: posRankValue, slug }, { onConflict: "player_id,source" });
       }
     }
 
@@ -389,27 +359,11 @@ async function importPositionalRankings(
     const slug = toSlug(playerName);
     const rankValue = rankRaw ? parseFloat(rankRaw) : null;
 
-    const { data: existing } = await supabase
+    const { error: posRankError } = await supabase
       .from("positional_rankings")
-      .select("id")
-      .eq("player_id", playerId)
-      .eq("source", sourceName)
-      .maybeSingle();
-
-    if (existing) {
-      const { error } = await supabase
-        .from("positional_rankings")
-        .update({ rank_value: rankValue, slug })
-        .eq("id", existing.id);
-      if (error) result.errors.push(`Row ${i + 1}: ${error.message}`);
-      else result.updated++;
-    } else {
-      const { error } = await supabase
-        .from("positional_rankings")
-        .insert({ player_id: playerId, source: sourceName, rank_value: rankValue, slug });
-      if (error) result.errors.push(`Row ${i + 1}: ${error.message}`);
-      else result.inserted++;
-    }
+      .upsert({ player_id: playerId, source: sourceName, rank_value: rankValue, slug }, { onConflict: "player_id,source" });
+    if (posRankError) result.errors.push(`Row ${i + 1}: ${posRankError.message}`);
+    else result.updated++;
 
     // Also sync positional_rank to player_rankings so profile pages show it
     const posRankStr = rankValue != null ? String(Math.round(rankValue)) : null;
@@ -466,27 +420,11 @@ async function importADP(
 
     const adpValue = adpRaw ? parseFloat(adpRaw) : null;
 
-    const { data: existing } = await supabase
+    const { error: adpError } = await supabase
       .from("adp_entries")
-      .select("id")
-      .eq("player_id", playerId)
-      .eq("source", sourceName)
-      .maybeSingle();
-
-    if (existing) {
-      const { error } = await supabase
-        .from("adp_entries")
-        .update({ adp_value: adpValue })
-        .eq("id", existing.id);
-      if (error) result.errors.push(`Row ${i + 1}: ${error.message}`);
-      else result.updated++;
-    } else {
-      const { error } = await supabase
-        .from("adp_entries")
-        .insert({ player_id: playerId, source: sourceName, adp_value: adpValue });
-      if (error) result.errors.push(`Row ${i + 1}: ${error.message}`);
-      else result.inserted++;
-    }
+      .upsert({ player_id: playerId, source: sourceName, adp_value: adpValue }, { onConflict: "player_id,source" });
+    if (adpError) result.errors.push(`Row ${i + 1}: ${adpError.message}`);
+    else result.updated++;
   }
 
   return result;
@@ -579,27 +517,14 @@ async function importSourceDates(
 
     if (!source?.trim() || !sourceType?.trim()) { result.skipped++; continue; }
 
-    const { data: existing } = await supabase
+    const { error: sdError } = await supabase
       .from("source_dates")
-      .select("id")
-      .eq("source", source.trim())
-      .eq("source_type", sourceType.trim())
-      .maybeSingle();
-
-    if (existing) {
-      const { error } = await supabase
-        .from("source_dates")
-        .update({ date: date || null })
-        .eq("id", existing.id);
-      if (error) result.errors.push(`Row ${i + 1}: ${error.message}`);
-      else result.updated++;
-    } else {
-      const { error } = await supabase
-        .from("source_dates")
-        .insert({ source: source.trim(), source_type: sourceType.trim(), date: date || null });
-      if (error) result.errors.push(`Row ${i + 1}: ${error.message}`);
-      else result.inserted++;
-    }
+      .upsert(
+        { source: source.trim(), source_type: sourceType.trim(), date: date || null },
+        { onConflict: "source,source_type" },
+      );
+    if (sdError) result.errors.push(`Row ${i + 1}: ${sdError.message}`);
+    else result.updated++;
   }
 
   return result;
@@ -1251,15 +1176,17 @@ async function importPFFScores(
   }
 
   // Phase 3: Write to database (merge with existing data)
+  // Bulk-fetch all player JSON in one query instead of N individual selects
+  const pffPlayerIds = playerRows.map(pr => pr.playerId);
+  const { data: pffExistingRaw } = await supabase
+    .from("players")
+    .select("id, pff_scores, alignments, overview")
+    .in("id", pffPlayerIds);
+  const pffExistingMap = new Map((pffExistingRaw ?? []).map(p => [p.id, p]));
+
   for (const pr of playerRows) {
     const pffScores = playerPffFinal.get(pr.playerId) || {};
-
-    // Fetch existing player data to merge
-    const { data: existing } = await supabase
-      .from("players")
-      .select("pff_scores, alignments, overview")
-      .eq("id", pr.playerId)
-      .single();
+    const existing = pffExistingMap.get(pr.playerId);
 
     const mergedPff = { ...(existing?.pff_scores || {}), ...pffScores };
     const mergedAlign = { ...(existing?.alignments || {}), ...pr.alignments };
@@ -1442,35 +1369,17 @@ async function importDraftBuzzGrades(
     const comp = flexGet(row, "Player Comparison", "player_comparison", "Player_Comparison");
     if (comp && comp.trim() && comp.trim() !== "N/A" && comp.trim() !== "TBD" && comp.trim() !== "0") {
       const normalizedComp = normalizeCompName(comp.trim());
-      const { data: existingComp } = await supabase
+      await supabase
         .from("player_comps")
-        .select("id")
-        .eq("player_id", playerId)
-        .eq("source", "DraftBuzz")
-        .maybeSingle();
-
-      if (existingComp) {
-        await supabase.from("player_comps").update({ comp: normalizedComp }).eq("id", existingComp.id);
-      } else {
-        await supabase.from("player_comps").insert({ player_id: playerId, source: "DraftBuzz", comp: normalizedComp });
-      }
+        .upsert({ player_id: playerId, source: "DraftBuzz", comp: normalizedComp }, { onConflict: "player_id,source" });
     }
 
     // ── Projected Round (Draft Projection) ───────────────────────────────
     const projRound = flexGet(row, "Draft Projection", "draft_projection", "Draft_Projection");
     if (projRound && projRound.trim() && projRound.trim() !== "N/A" && projRound.trim() !== "TBD") {
-      const { data: existingRound } = await supabase
+      await supabase
         .from("projected_rounds")
-        .select("id")
-        .eq("player_id", playerId)
-        .eq("source", "DraftBuzz")
-        .maybeSingle();
-
-      if (existingRound) {
-        await supabase.from("projected_rounds").update({ round: projRound.trim() }).eq("id", existingRound.id);
-      } else {
-        await supabase.from("projected_rounds").insert({ player_id: playerId, source: "DraftBuzz", round: projRound.trim() });
-      }
+        .upsert({ player_id: playerId, source: "DraftBuzz", round: projRound.trim() }, { onConflict: "player_id,source" });
     }
 
     if (error) {
@@ -1744,18 +1653,9 @@ async function importNFLProfiles(
     const comp = row[mapping["nfl_comparison"]] || row["NFL Comparison"];
     if (comp && comp.trim() && comp.trim() !== "N/A") {
       const normalizedComp = normalizeCompName(comp.trim());
-      const { data: existingComp } = await supabase
+      await supabase
         .from("player_comps")
-        .select("id")
-        .eq("player_id", playerId)
-        .eq("source", SOURCE)
-        .maybeSingle();
-
-      if (existingComp) {
-        await supabase.from("player_comps").update({ comp: normalizedComp }).eq("id", existingComp.id);
-      } else {
-        await supabase.from("player_comps").insert({ player_id: playerId, source: SOURCE, comp: normalizedComp });
-      }
+        .upsert({ player_id: playerId, source: SOURCE, comp: normalizedComp }, { onConflict: "player_id,source" });
     }
 
     // ── 4. Commentary (Overview, Strengths, Weaknesses, Sources Tell Us) ─
@@ -1877,17 +1777,9 @@ async function importBleacherProfiles(
           );
         // Also write to rankings (Rankings Tab)
         const slug = toSlug(playerName);
-        const { data: existingRank } = await supabase
+        await supabase
           .from("rankings")
-          .select("id")
-          .eq("player_id", playerId)
-          .eq("source", SOURCE)
-          .maybeSingle();
-        if (existingRank) {
-          await supabase.from("rankings").update({ rank_value: overallRank, slug }).eq("id", existingRank.id);
-        } else {
-          await supabase.from("rankings").insert({ player_id: playerId, source: SOURCE, rank_value: overallRank, slug });
-        }
+          .upsert({ player_id: playerId, source: SOURCE, rank_value: overallRank, slug }, { onConflict: "player_id,source" });
       }
     }
 
@@ -1913,35 +1805,17 @@ async function importBleacherProfiles(
     const comp = row[mapping["pro_comparison"]];
     if (comp && comp.trim() && comp.trim() !== "N/A") {
       const normalizedComp = normalizeCompName(comp.trim());
-      const { data: existingComp } = await supabase
+      await supabase
         .from("player_comps")
-        .select("id")
-        .eq("player_id", playerId)
-        .eq("source", SOURCE)
-        .maybeSingle();
-
-      if (existingComp) {
-        await supabase.from("player_comps").update({ comp: normalizedComp }).eq("id", existingComp.id);
-      } else {
-        await supabase.from("player_comps").insert({ player_id: playerId, source: SOURCE, comp: normalizedComp });
-      }
+        .upsert({ player_id: playerId, source: SOURCE, comp: normalizedComp }, { onConflict: "player_id,source" });
     }
 
     // ── 4. Projected Round ──────────────────────────────────────────────
     const projRound = row[mapping["projected_round"]];
     if (projRound && projRound.trim()) {
-      const { data: existingRound } = await supabase
+      await supabase
         .from("projected_rounds")
-        .select("id")
-        .eq("player_id", playerId)
-        .eq("source", SOURCE)
-        .maybeSingle();
-
-      if (existingRound) {
-        await supabase.from("projected_rounds").update({ round: projRound.trim() }).eq("id", existingRound.id);
-      } else {
-        await supabase.from("projected_rounds").insert({ player_id: playerId, source: SOURCE, round: projRound.trim() });
-      }
+        .upsert({ player_id: playerId, source: SOURCE, round: projRound.trim() }, { onConflict: "player_id,source" });
     }
 
     // ── 5. Commentary (Overall, Positives, Negatives) ───────────────────
@@ -2024,18 +1898,9 @@ async function importTDNProfiles(
     // ── 2. Projected Round ──────────────────────────────────────────────
     const projRound = row[mapping["projected_round"]];
     if (projRound && projRound.trim()) {
-      const { data: existingRound } = await supabase
+      await supabase
         .from("projected_rounds")
-        .select("id")
-        .eq("player_id", playerId)
-        .eq("source", SOURCE)
-        .maybeSingle();
-
-      if (existingRound) {
-        await supabase.from("projected_rounds").update({ round: projRound.trim() }).eq("id", existingRound.id);
-      } else {
-        await supabase.from("projected_rounds").insert({ player_id: playerId, source: SOURCE, round: projRound.trim() });
-      }
+        .upsert({ player_id: playerId, source: SOURCE, round: projRound.trim() }, { onConflict: "player_id,source" });
     }
 
     // ── 3. Commentary (Summary, Strengths, Concerns) ────────────────────
@@ -2194,18 +2059,9 @@ async function importWalterReports(
 
       // Also upsert into player_comps table
       const normalizedComp = normalizeCompName(playerComp.trim());
-      const { data: existingComp } = await supabase
+      await supabase
         .from("player_comps")
-        .select("id")
-        .eq("player_id", playerId)
-        .eq("source", SOURCE)
-        .maybeSingle();
-
-      if (existingComp) {
-        await supabase.from("player_comps").update({ comp: normalizedComp }).eq("id", existingComp.id);
-      } else {
-        await supabase.from("player_comps").insert({ player_id: playerId, source: SOURCE, comp: normalizedComp });
-      }
+        .upsert({ player_id: playerId, source: SOURCE, comp: normalizedComp }, { onConflict: "player_id,source" });
     }
 
     // ── 2. Commentary (Overview, Strengths, Weaknesses, Player Comp) ────
@@ -2330,18 +2186,9 @@ async function importPFFBigBoard(
     if (rankRaw?.trim()) {
       const rankValue = parseFloat(rankRaw);
       if (!isNaN(rankValue)) {
-        const { data: existingRank } = await supabase
+        await supabase
           .from("rankings")
-          .select("id")
-          .eq("player_id", playerId)
-          .eq("source", RANKING_SOURCE)
-          .maybeSingle();
-
-        if (existingRank) {
-          await supabase.from("rankings").update({ rank_value: rankValue, slug }).eq("id", existingRank.id);
-        } else {
-          await supabase.from("rankings").insert({ player_id: playerId, source: RANKING_SOURCE, rank_value: rankValue, slug });
-        }
+          .upsert({ player_id: playerId, source: RANKING_SOURCE, rank_value: rankValue, slug }, { onConflict: "player_id,source" });
 
         // Sync to player_rankings so profile pages show it
         await supabase
@@ -2394,18 +2241,9 @@ async function importPFFBigBoard(
     // ── 4. Player comp table ────────────────────────────────────────────────
     if (playerComp?.trim()) {
       const normalizedComp = normalizeCompName(playerComp.trim());
-      const { data: existingComp } = await supabase
+      await supabase
         .from("player_comps")
-        .select("id")
-        .eq("player_id", playerId)
-        .eq("source", SCOUTING_SOURCE)
-        .maybeSingle();
-
-      if (existingComp) {
-        await supabase.from("player_comps").update({ comp: normalizedComp }).eq("id", existingComp.id);
-      } else {
-        await supabase.from("player_comps").insert({ player_id: playerId, source: SCOUTING_SOURCE, comp: normalizedComp });
-      }
+        .upsert({ player_id: playerId, source: SCOUTING_SOURCE, comp: normalizedComp }, { onConflict: "player_id,source" });
     }
 
     result.updated++;
@@ -2414,18 +2252,9 @@ async function importPFFBigBoard(
   // Auto-record source date for this explicit rank upload
   if (result.inserted + result.updated > 0) {
     const now = new Date().toISOString();
-    const { data: existing } = await supabase
+    await supabase
       .from("source_dates")
-      .select("id")
-      .eq("source", RANKING_SOURCE)
-      .eq("source_type", "ranking")
-      .maybeSingle();
-      
-    if (existing) {
-      await supabase.from("source_dates").update({ date: now }).eq("id", existing.id);
-    } else {
-      await supabase.from("source_dates").insert({ source: RANKING_SOURCE, source_type: "ranking", date: now });
-    }
+      .upsert({ source: RANKING_SOURCE, source_type: "ranking", date: now }, { onConflict: "source,source_type" });
   }
 
   return result;
@@ -2529,23 +2358,9 @@ export async function importData(
   // Auto-update source_dates when importing rankings or mocks
   if (autoDateType && sourceName && result.inserted + result.updated > 0) {
     const now = new Date().toISOString();
-    const { data: existing } = await supabase
+    await supabase
       .from("source_dates")
-      .select("id")
-      .eq("source", sourceName)
-      .eq("source_type", autoDateType)
-      .maybeSingle();
-
-    if (existing) {
-      await supabase
-        .from("source_dates")
-        .update({ date: now })
-        .eq("id", existing.id);
-    } else {
-      await supabase
-        .from("source_dates")
-        .insert({ source: sourceName, source_type: autoDateType, date: now });
-    }
+      .upsert({ source: sourceName, source_type: autoDateType, date: now }, { onConflict: "source,source_type" });
   }
 
   // Revalidate all public paths after import
