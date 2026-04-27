@@ -1,6 +1,7 @@
 import "server-only";
 import { supabase } from "./supabase";
 import { createSupabaseServer } from "./supabase-server";
+import { getActiveDraftYear } from "./draft-year";
 
 // Re-export types so server pages can import everything from @/lib/data
 export type {
@@ -50,6 +51,7 @@ async function fetchAll<T>(
 // ─── Big Board ──────────────────────────────────────────────────────────────
 
 export async function getBigBoard(): Promise<BigBoard> {
+  const year = await getActiveDraftYear();
   const rows = await fetchAll<{
     board_type: string;
     rank: number;
@@ -57,7 +59,7 @@ export async function getBigBoard(): Promise<BigBoard> {
     ranks: Record<string, string | number>;
     summary: string | null;
     players: { slug: string; name: string; position: string | null; college: string | null };
-  }>("board_entries", "board_type, rank, grades, ranks, summary, players(slug, name, position, college)");
+  }>("board_entries", "board_type, rank, grades, ranks, summary, players!inner(slug, name, position, college)", (q) => q.eq("players.draft_year", year));
 
   const consensus: BoardPlayer[] = [];
   const bengals: BoardPlayer[] = [];
@@ -137,6 +139,7 @@ export async function getEnrichedBigBoard(): Promise<BigBoard> {
 // ─── Players Index ──────────────────────────────────────────────────────────
 
 export async function getPlayers(): Promise<PlayerIndex[]> {
+  const year = await getActiveDraftYear();
   // Only return players that have profiles (non-empty overview)
   const rows = await fetchAll<{
     name: string; slug: string; position: string | null; college: string | null;
@@ -145,7 +148,7 @@ export async function getPlayers(): Promise<PlayerIndex[]> {
   }>(
     "players",
     "name, slug, position, college, height, weight, age, year, projected_round, games",
-    (q) => q.not("overview", "eq", "{}"),
+    (q) => q.not("overview", "eq", "{}").eq("draft_year", year),
   );
 
   return rows.map((r) => ({
@@ -281,11 +284,12 @@ export async function getAllPlayerSlugs(): Promise<string[]> {
 import { normalizeTeam } from "@/lib/teams";
 
 export async function getMocks(): Promise<{ mocks: Record<string, MockPick[]>; mock_dates: Record<string, string> }> {
+  const year = await getActiveDraftYear();
   const rows = await fetchAll<{
     source: string; pick_number: number; team: string;
     player_name: string; position: string | null; college: string | null;
     players: { slug: string } | null;
-  }>("mock_picks", "source, pick_number, team, player_name, position, college, players(slug)");
+  }>("mock_picks", "source, pick_number, team, player_name, position, college, players(slug)", (q) => q.eq("draft_year", year));
 
   const mocks: Record<string, MockPick[]> = {};
   for (const r of rows) {
@@ -312,7 +316,8 @@ export async function getMocks(): Promise<{ mocks: Record<string, MockPick[]>; m
   const { data: dateRows, error: dateError } = await supabase
     .from("source_dates")
     .select("source, date")
-    .eq("source_type", "mock");
+    .eq("source_type", "mock")
+    .eq("draft_year", year);
   if (dateError) console.error("Failed to fetch mock source_dates:", dateError.message);
 
   const mock_dates: Record<string, string> = {};
@@ -326,11 +331,12 @@ export async function getMocks(): Promise<{ mocks: Record<string, MockPick[]>; m
 // ─── Rankings ───────────────────────────────────────────────────────────────
 
 export async function getRankings(): Promise<{ players: RankingEntry[]; source_dates: Record<string, string> }> {
+  const year = await getActiveDraftYear();
   // Fetch all ranking rows with player info
   const rows = await fetchAll<{
     source: string; rank_value: number | null; slug: string;
     players: { name: string; position: string | null; college: string | null; height: string | null; weight: string | null; eligibility: string | null };
-  }>("rankings", "source, rank_value, slug, players(name, position, college, height, weight, eligibility)");
+  }>("rankings", "source, rank_value, slug, players!inner(name, position, college, height, weight, eligibility)", (q) => q.eq("players.draft_year", year));
 
   // Group by slug (exclude hidden sources)
   const playerMap = new Map<string, RankingEntry>();
@@ -360,7 +366,8 @@ export async function getRankings(): Promise<{ players: RankingEntry[]; source_d
   const { data: dateRows, error: dateError } = await supabase
     .from("source_dates")
     .select("source, date")
-    .eq("source_type", "ranking");
+    .eq("source_type", "ranking")
+    .eq("draft_year", year);
   if (dateError) console.error("Failed to fetch ranking source_dates:", dateError.message);
 
   const source_dates: Record<string, string> = {};
@@ -374,10 +381,11 @@ export async function getRankings(): Promise<{ players: RankingEntry[]; source_d
 // ─── ADP ────────────────────────────────────────────────────────────────────
 
 export async function getADP(): Promise<{ players: ADPEntry[]; source_dates: Record<string, string> }> {
+  const year = await getActiveDraftYear();
   const rows = await fetchAll<{
     source: string; adp_value: number | null;
     players: { slug: string; name: string; position: string | null; college: string | null };
-  }>("adp_entries", "source, adp_value, players(slug, name, position, college)");
+  }>("adp_entries", "source, adp_value, players!inner(slug, name, position, college)", (q) => q.eq("players.draft_year", year));
 
   const playerMap = new Map<string, ADPEntry>();
   for (const r of rows) {
@@ -408,7 +416,8 @@ export async function getADP(): Promise<{ players: ADPEntry[]; source_dates: Rec
   const { data: dateRows, error: dateError } = await supabase
     .from("source_dates")
     .select("source, date")
-    .eq("source_type", "adp");
+    .eq("source_type", "adp")
+    .eq("draft_year", year);
   if (dateError) console.error("Failed to fetch ADP source_dates:", dateError.message);
 
   const source_dates: Record<string, string> = {};
@@ -425,6 +434,7 @@ export async function getADP(): Promise<{ players: ADPEntry[]; source_dates: Rec
 const CONSENSUS_SOURCES = [...RANKING_SOURCES];
 
 export async function getPositionBoards(): Promise<Record<string, PositionBoardPlayer[]>> {
+  const year = await getActiveDraftYear();
   const rows = await fetchAll<{
     player_id: string;
     position_group: string; pos_rank: number | null;
@@ -435,7 +445,7 @@ export async function getPositionBoards(): Promise<Record<string, PositionBoardP
     athletic_scores: Record<string, string | number>;
     strengths: string | null; weaknesses: string | null;
     players: { slug: string; name: string; position: string | null; college: string | null };
-  }>("position_board_entries", "player_id, position_group, pos_rank, height, weight, age, projected_role, projected_round, grades, pff_scores, athletic_scores, strengths, weaknesses, players(slug, name, position, college)");
+  }>("position_board_entries", "player_id, position_group, pos_rank, height, weight, age, projected_role, projected_round, grades, pff_scores, athletic_scores, strengths, weaknesses, players!inner(slug, name, position, college)", (q) => q.eq("players.draft_year", year));
 
   // Fetch live rankings for all board players in one query
   const playerIds = [...new Set(rows.map((r) => r.player_id))];
@@ -597,10 +607,12 @@ export async function getAges(): Promise<Array<{ player: string; slug: string; a
 // ─── Profile Count ──────────────────────────────────────────────────────────
 
 export async function getProfileCount(): Promise<number> {
+  const year = await getActiveDraftYear();
   const { count, error } = await supabase
     .from("players")
     .select("id", { count: "exact", head: true })
-    .not("overview", "eq", "{}");
+    .not("overview", "eq", "{}")
+    .eq("draft_year", year);
   if (error) console.error("Failed to fetch profile count:", error.message);
   return count ?? 0;
 }

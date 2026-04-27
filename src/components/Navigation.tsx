@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { logoutUser } from "@/app/(auth)/actions";
+import type { DraftYear } from "@/lib/draft-year";
 
 const NAV_ITEMS = [
   { href: "/", label: "Big Board" },
@@ -14,9 +15,27 @@ const NAV_ITEMS = [
   { href: "/updates", label: "Updates" },
 ];
 
-export default function Navigation({ userEmail, isAdmin, hasRecentUpdate }: { userEmail?: string | null; isAdmin?: boolean; hasRecentUpdate?: boolean }) {
+export default function Navigation({
+  userEmail, isAdmin, hasRecentUpdate, activeDraftYear, setActiveDraftYear,
+}: {
+  userEmail?: string | null;
+  isAdmin?: boolean;
+  hasRecentUpdate?: boolean;
+  activeDraftYear?: DraftYear;
+  setActiveDraftYear?: (year: DraftYear) => Promise<void>;
+}) {
   const pathname = usePathname();
+  const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [yearPending, setYearPending] = useState(false);
+
+  const handleYearSwitch = async (year: DraftYear) => {
+    if (!setActiveDraftYear || year === activeDraftYear) return;
+    setYearPending(true);
+    await setActiveDraftYear(year);
+    router.refresh();
+    setYearPending(false);
+  };
 
   return (
     <nav className="sticky top-0 z-50 border-b border-[#2a3a4e] bg-[#0d1320]/95 backdrop-blur-md">
@@ -28,7 +47,7 @@ export default function Navigation({ userEmail, isAdmin, hasRecentUpdate }: { us
               DB
             </div>
             <div>
-              <span className="text-lg font-bold text-white">2026 Draft Board</span>
+              <span className="text-lg font-bold text-white">{activeDraftYear ?? 2026} Draft Board</span>
             </div>
           </Link>
 
@@ -72,6 +91,26 @@ export default function Navigation({ userEmail, isAdmin, hasRecentUpdate }: { us
             >
               Admin
             </Link>
+            )}
+
+            {/* Draft year toggle */}
+            {setActiveDraftYear && (
+              <div className="ml-2 flex rounded-lg border border-[#2a3a4e] overflow-hidden opacity-90">
+                {([2026, 2027] as DraftYear[]).map((y) => (
+                  <button
+                    key={y}
+                    disabled={yearPending}
+                    onClick={() => handleYearSwitch(y)}
+                    className={`px-3 py-1.5 text-xs font-bold transition-colors ${
+                      activeDraftYear === y
+                        ? "bg-orange-500 text-white"
+                        : "bg-[#0d1320] text-gray-400 hover:text-white"
+                    }`}
+                  >
+                    {y}
+                  </button>
+                ))}
+              </div>
             )}
 
             {/* User auth */}

@@ -123,7 +123,7 @@ export async function importWFProfiles(
   const adminEmail = process.env.ADMIN_EMAIL;
   if (!user || !adminEmail || user.email !== adminEmail) throw new Error("Unauthorized");
 
-  const caches = await buildCaches(supabase);
+  const caches = await buildCaches(supabase, 2026);
   const SOURCE = "Walter Football";
 
   const result: WFImportResult = {

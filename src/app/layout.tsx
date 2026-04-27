@@ -5,6 +5,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import { getLatestUpdateDate } from "@/lib/data";
 import { createSupabaseServer } from "@/lib/supabase-server";
+import { getActiveDraftYear, setActiveDraftYear } from "@/lib/draft-year";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -47,10 +48,12 @@ export default async function RootLayout({
   const latestUpdate = await getLatestUpdateDate();
   const hasRecentUpdate = !!latestUpdate && (Date.now() - new Date(latestUpdate).getTime()) < 24 * 60 * 60 * 1000;
 
+  const activeDraftYear = await getActiveDraftYear();
+
   return (
     <html lang="en" className="dark">
       <body className={`${inter.variable} antialiased bg-[#0a0f1a] text-gray-100`}>
-        <Navigation userEmail={user?.email ?? null} isAdmin={isAdmin} hasRecentUpdate={hasRecentUpdate} />
+        <Navigation userEmail={user?.email ?? null} isAdmin={isAdmin} hasRecentUpdate={hasRecentUpdate} activeDraftYear={activeDraftYear} setActiveDraftYear={setActiveDraftYear} />
         <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
           {children}
         </main>

@@ -198,6 +198,7 @@ type Step = "select-type" | "upload-file" | "map-columns" | "preview" | "importi
 
 export function UploadManager() {
   const [step, setStep] = useState<Step>("select-type");
+  const [draftYear, setDraftYear] = useState<number>(2027);
   const [dataType, setDataType] = useState<DataType>("rankings");
   const [sourceName, setSourceName] = useState("");
   const [existingSources, setExistingSources] = useState<string[]>([]);
@@ -218,10 +219,10 @@ export function UploadManager() {
   // Load existing sources when data type changes
   const loadSources = useCallback(async (dt: DataType) => {
     try {
-      const sources = await getExistingSources(dt);
+      const sources = await getExistingSources(dt, draftYear);
       setExistingSources(sources);
     } catch { setExistingSources([]); }
-  }, []);
+  }, [draftYear]);
 
   // ─── Step 1: Select data type ───────────────────────────────────────────
 
@@ -355,7 +356,7 @@ export function UploadManager() {
     setError("");
 
     try {
-      const res = await importData(dataType, csvRows, mapping, sourceName.trim(), bioPriority);
+      const res = await importData(dataType, csvRows, mapping, sourceName.trim(), bioPriority, draftYear);
       setResult(res);
       setStep("done");
     } catch (err) {
@@ -369,7 +370,7 @@ export function UploadManager() {
 
   const handleDeleteSource = async (src: string) => {
     try {
-      const res = await deleteSourceData(dataType, src);
+      const res = await deleteSourceData(dataType, src, draftYear);
       if (res.success) {
         setDeleteResult(`Deleted ${res.deleted} entries for "${src}".`);
         setDeleteConfirm(null);
@@ -439,7 +440,27 @@ export function UploadManager() {
 
       {/* ──────── STEP 1: Select Data Type ──────── */}
       {step === "select-type" && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="space-y-6">
+          {/* Draft year toggle */}
+          <div className="flex items-center gap-3">
+            <span className="text-sm font-medium text-gray-400">Draft Class:</span>
+            <div className="flex rounded-lg border border-[#2a3a4e] overflow-hidden">
+              {[2026, 2027].map((y) => (
+                <button
+                  key={y}
+                  onClick={() => setDraftYear(y)}
+                  className={`px-4 py-1.5 text-sm font-semibold transition-colors ${
+                    draftYear === y
+                      ? "bg-orange-500 text-white"
+                      : "bg-[#0d1320] text-gray-400 hover:text-white"
+                  }`}
+                >
+                  {y}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {DATA_TYPE_ENTRIES.map(([key, cfg]) => (
             <button
               key={key}
@@ -459,6 +480,7 @@ export function UploadManager() {
               </div>
             </button>
           ))}
+          </div>
         </div>
       )}
 

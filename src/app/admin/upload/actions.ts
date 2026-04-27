@@ -77,13 +77,15 @@ export interface ImportCaches {
   playerCache: PlayerCacheEntry[];
   correctionsCache: Map<string, string>;
   pendingVariants: Set<string>; // tracks variants already queued this batch
+  draftYear: number;
 }
 
 /** Build fresh caches for a single import batch. NOT shared across requests. */
 export async function buildCaches(
-  supabase: Awaited<ReturnType<typeof createSupabaseServer>>
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  draftYear: number,
 ): Promise<ImportCaches> {
-  // Load all players
+  // Load all players for this draft year
   const PAGE = 1000;
   const playerCache: PlayerCacheEntry[] = [];
   let from = 0;
@@ -91,6 +93,7 @@ export async function buildCaches(
     const { data } = await supabase
       .from("players")
       .select("id, slug, name")
+      .eq("draft_year", draftYear)
       .range(from, from + PAGE - 1);
     if (!data || data.length === 0) break;
     for (const p of data) {
@@ -124,7 +127,7 @@ export async function buildCaches(
     // Table might not exist yet — that's fine
   }
 
-  return { playerCache, correctionsCache, pendingVariants: new Set<string>() };
+  return { playerCache, correctionsCache, pendingVariants: new Set<string>(), draftYear };
 }
 
 /** Look up a player using the full normalization pipeline.
@@ -172,6 +175,7 @@ export async function resolvePlayerId(
         position: normalizePosition(extras?.position ?? null) || null,
         college: extras?.college || null,
         status: "pending",
+        draft_year: caches.draftYear,
       });
     }
   } catch {
@@ -442,6 +446,7 @@ async function importMocks(
     source: string; pick_number: number; team: string;
     player_id: string | null; player_name: string;
     position: string | null; college: string | null;
+    draft_year: number;
   }
   const newRows: MockRow[] = [];
 
@@ -475,12 +480,13 @@ async function importMocks(
       player_name: normalizedName,
       position,
       college,
+      draft_year: caches.draftYear,
     });
   }
 
   // Only delete old data once all new rows are prepared successfully
   if (newRows.length > 0) {
-    await supabase.from("mock_picks").delete().eq("source", sourceName);
+    await supabase.from("mock_picks").delete().eq("source", sourceName).eq("draft_year", caches.draftYear);
 
     // Insert in batches of 100
     for (let i = 0; i < newRows.length; i += 100) {
@@ -545,6 +551,7 @@ async function importSourceDates(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
   rows: Record<string, string>[],
   mapping: ColumnMapping,
+  draftYear: number,
 ): Promise<UploadResult> {
   const result: UploadResult = { success: true, inserted: 0, updated: 0, skipped: 0, errors: [] };
 
@@ -559,8 +566,8 @@ async function importSourceDates(
     const { error: sdError } = await supabase
       .from("source_dates")
       .upsert(
-        { source: source.trim(), source_type: sourceType.trim(), date: date || null },
-        { onConflict: "source,source_type" },
+        { source: source.trim(), source_type: sourceType.trim(), date: date || null, draft_year: draftYear },
+        { onConflict: "source,source_type,draft_year" },
       );
     if (sdError) result.errors.push(`Row ${i + 1}: ${sdError.message}`);
     else result.updated++;
@@ -2319,6 +2326,7 @@ export async function importData(
   mapping: ColumnMapping,
   sourceName: string,
   bioPriority?: number,
+  draftYear: number = 2026,
 ): Promise<UploadResult> {
   // Normalize source name (e.g. "nfl.com" → "NFL.com")
   sourceName = normalizeSourceName(sourceName);
@@ -2342,7 +2350,7 @@ export async function importData(
   if (!user || !adminEmail || user.email !== adminEmail) throw new Error("Unauthorized");
 
   // Build fresh caches scoped to this import batch (not shared across requests)
-  const caches = await buildCaches(supabase);
+  const caches = await buildCaches(supabase, draftYear);
 
   let result: UploadResult;
 
@@ -2359,7 +2367,7 @@ export async function importData(
       autoDateType = "mock";
       break;
     case "source_dates":
-      result = await importSourceDates(supabase, rows, mapping);
+      result = await importSourceDates(supabase, rows, mapping, draftYear);
       break;
     case "pff_scores":
       result = await importPFFScores(supabase, caches, rows, mapping);
@@ -2399,7 +2407,7 @@ export async function importData(
     const now = new Date().toISOString();
     await supabase
       .from("source_dates")
-      .upsert({ source: sourceName, source_type: autoDateType, date: now }, { onConflict: "source,source_type" });
+      .upsert({ source: sourceName, source_type: autoDateType, date: now, draft_year: draftYear }, { onConflict: "source,source_type,draft_year" });
   }
 
   // Revalidate all public paths after import
@@ -2418,6 +2426,7 @@ export async function importData(
 export async function deleteSourceData(
   dataType: DataType,
   sourceName: string,
+  draftYear: number = 2026,
 ): Promise<{ success: boolean; deleted: number; error?: string }> {
   const supabase = await createSupabaseServer();
   const { data: { user } } = await supabase.auth.getUser();
@@ -2443,16 +2452,20 @@ export async function deleteSourceData(
     default: return { success: false, deleted: 0, error: "Unknown data type" };
   }
 
+  // Year-scoped tables (have draft_year column directly)
+  const yearScoped = table === "mock_picks" || table === "source_dates";
+
   // Count first
-  const { count } = await supabase
+  let countQuery = supabase
     .from(table)
     .select("id", { count: "exact", head: true })
     .eq("source", sourceName);
+  if (yearScoped) countQuery = (countQuery as any).eq("draft_year", draftYear);
+  const { count } = await countQuery;
 
-  const { error } = await supabase
-    .from(table)
-    .delete()
-    .eq("source", sourceName);
+  let deleteQuery = supabase.from(table).delete().eq("source", sourceName);
+  if (yearScoped) deleteQuery = (deleteQuery as any).eq("draft_year", draftYear);
+  const { error } = await deleteQuery;
 
   if (error) return { success: false, deleted: 0, error: error.message };
 
@@ -2472,7 +2485,7 @@ export async function deleteSourceData(
 
 // ─── Get Existing Sources ───────────────────────────────────────────────────
 
-export async function getExistingSources(dataType: DataType): Promise<string[]> {
+export async function getExistingSources(dataType: DataType, draftYear: number = 2026): Promise<string[]> {
   const supabase = await createSupabaseServer();
 
   let table: string;
@@ -2483,10 +2496,10 @@ export async function getExistingSources(dataType: DataType): Promise<string[]> 
     default: return [];
   }
 
-  const { data } = await supabase
-    .from(table)
-    .select("source")
-    .limit(1000);
+  const yearScoped = table === "mock_picks" || table === "source_dates";
+  let query = supabase.from(table).select("source").limit(1000);
+  if (yearScoped) query = (query as any).eq("draft_year", draftYear);
+  const { data } = await query;
 
   if (!data) return [];
 
