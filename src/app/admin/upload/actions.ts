@@ -3,6 +3,7 @@
 import { createSupabaseServer } from "@/lib/supabase-server";
 import { normalizePosition, RANKING_SOURCES } from "@/lib/types";
 import { normalizeTeam, formatTeamWithTrade, normalizeSourceName } from "@/lib/teams";
+import { normalizeCollege, type CollegeCorrectionsCache, type PendingCollegesMap } from "@/lib/normalize-college";
 import { revalidatePath } from "next/cache";
 
 // ─── Types ──────────────────────────────────────────────────────────────────
@@ -78,6 +79,8 @@ export interface ImportCaches {
   correctionsCache: Map<string, string>;
   pendingVariants: Set<string>; // tracks variants already queued this batch
   draftYear: number;
+  collegeCorrections: CollegeCorrectionsCache; // lowercased variant → canonical
+  pendingColleges: PendingCollegesMap;         // rawName → source, flushed after each importer
 }
 
 /** Build fresh caches for a single import batch. NOT shared across requests. */
@@ -127,7 +130,50 @@ export async function buildCaches(
     // Table might not exist yet — that's fine
   }
 
-  return { playerCache, correctionsCache, pendingVariants: new Set<string>(), draftYear };
+  // Load college corrections
+  const collegeCorrections: CollegeCorrectionsCache = new Map();
+  try {
+    const { data: ccData } = await supabase
+      .from("college_corrections")
+      .select("variant, canonical")
+      .limit(5000);
+    if (ccData) {
+      for (const cc of ccData) {
+        collegeCorrections.set(cc.variant.toLowerCase(), cc.canonical);
+      }
+    }
+  } catch {
+    // Table may not exist yet
+  }
+
+  return {
+    playerCache,
+    correctionsCache,
+    pendingVariants: new Set<string>(),
+    draftYear,
+    collegeCorrections,
+    pendingColleges: new Map(),
+  };
+}
+
+/** Flush any pending colleges queued during an import batch to the DB. Best-effort. */
+async function flushPendingColleges(
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  pendingColleges: PendingCollegesMap,
+): Promise<void> {
+  if (pendingColleges.size === 0) return;
+  const rows = Array.from(pendingColleges.entries()).map(([raw_name, source]) => ({
+    raw_name,
+    source: source ?? null,
+  }));
+  try {
+    await supabase
+      .from("pending_colleges")
+      .upsert(rows, { onConflict: "raw_name", ignoreDuplicates: true });
+  } catch {
+    // Best-effort
+  }
+  pendingColleges.clear();
 }
 
 /** Look up a player using the full normalization pipeline.
@@ -462,7 +508,10 @@ async function importMocks(
     if (isNaN(pickNumber)) { result.skipped++; continue; }
 
     const position = mapping["position"] ? row[mapping["position"]] || null : null;
-    const college = mapping["college"] ? row[mapping["college"]] || null : null;
+    const collegeRawMock = mapping["college"] ? row[mapping["college"]] || null : null;
+    const college = collegeRawMock
+      ? normalizeCollege(collegeRawMock, caches.collegeCorrections, caches.pendingColleges, sourceName)
+      : null;
 
     // Use the normalization pipeline to find player ID
     const normalizedName = normalizeName(playerName);
@@ -2194,7 +2243,12 @@ async function importBioData(
     if (ageRaw?.trim())     bioValues.age      = ageRaw.trim();
     if (yearRaw?.trim())    bioValues.year     = yearRaw.trim();
     if (posRaw?.trim())     bioValues.position = normalizePosition(posRaw.trim()) || posRaw.trim();
-    if (collegeRaw?.trim()) bioValues.college  = collegeRaw.trim();
+    if (collegeRaw?.trim()) bioValues.college  = normalizeCollege(
+      collegeRaw.trim(),
+      caches.collegeCorrections,
+      caches.pendingColleges,
+      sourceName,
+    );
 
     if (Object.keys(bioValues).length === 0) {
       result.skipped++;
@@ -2401,6 +2455,9 @@ export async function importData(
     default:
       result = { success: false, inserted: 0, updated: 0, skipped: 0, errors: [`Unknown data type: ${dataType}`] };
   }
+
+  // Flush any pending colleges queued during this import batch
+  await flushPendingColleges(supabase, caches.pendingColleges);
 
   // Auto-update source_dates when importing rankings or mocks
   if (autoDateType && sourceName && result.inserted + result.updated > 0) {
