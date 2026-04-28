@@ -11,7 +11,7 @@
  *   Flagged entries are queued in pendingColleges for later DB flush.
  */
 
-// ─── Canonical list (148 schools) ───────────────────────────────────────────
+// ─── Canonical list (151 schools) ───────────────────────────────────────────
 
 export const CANONICAL_COLLEGES: string[] = [
   "Air Force",
@@ -36,6 +36,7 @@ export const CANONICAL_COLLEGES: string[] = [
   "Charlotte",
   "Cincinnati",
   "Clemson",
+  "Coastal Carolina",
   "Colorado",
   "Colorado State",
   "Delaware",
@@ -71,6 +72,7 @@ export const CANONICAL_COLLEGES: string[] = [
   "Louisville",
   "LSU",
   "Maryland",
+  "Marshall",
   "Memphis",
   "Miami (FL)",
   "Miami (OH)",
@@ -120,7 +122,6 @@ export const CANONICAL_COLLEGES: string[] = [
   "SMU",
   "South Alabama",
   "South Carolina",
-  "South Florida",
   "Southern Miss",
   "Stanford",
   "Stephen F. Austin",
@@ -144,6 +145,7 @@ export const CANONICAL_COLLEGES: string[] = [
   "Umass",
   "UNLV",
   "USC",
+  "USF",
   "Utah",
   "Utah State",
   "UTEP",
