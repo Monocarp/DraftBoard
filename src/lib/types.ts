@@ -156,7 +156,12 @@ export type RankingSource = (typeof RANKING_SOURCES)[number];
 
 /** Approved sources for bio data uploads (height/weight/age/year/position/college). */
 export const BIO_SOURCES = [
-  "PFF", "NFL.com", "CBS", "ESPN", "DraftBuzz", "Walter Football",
+  // Tier 1
+  "PFF", "ESPN", "Brugler", "NFL.com",
+  // Tier 2
+  "Bleacher Report", "CBS", "Walter Football", "PFSN",
+  // Tier 3
+  "DraftBuzz", "Tankathon", "Kiper", "Yates", "DraftTek",
 ] as const;
 
 export type BioSource = (typeof BIO_SOURCES)[number];

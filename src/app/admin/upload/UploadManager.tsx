@@ -506,19 +506,19 @@ export function UploadManager() {
                       className="w-full sm:w-80 rounded-lg border border-[#2a3a4e] bg-[#1a2535] px-3 py-2 text-sm text-white focus:border-orange-500 focus:outline-none"
                     >
                       <option value="">— Select source —</option>
-                      {dataType === "rankings" ? (
+                      {(dataType === "rankings" || dataType === "bio_data") ? (
                         <>
-                          <optgroup label="Tier 1 (weight ×2.0)">
+                          <optgroup label="Tier 1">
                             {(["PFF", "ESPN", "Brugler", "NFL.com"] as const).map((s) => (
                               <option key={s} value={s}>{s}</option>
                             ))}
                           </optgroup>
-                          <optgroup label="Tier 2 (weight ×1.0)">
+                          <optgroup label="Tier 2">
                             {(["Bleacher Report", "CBS", "Walter Football", "PFSN"] as const).map((s) => (
                               <option key={s} value={s}>{s}</option>
                             ))}
                           </optgroup>
-                          <optgroup label="Tier 3 (weight ×0.5)">
+                          <optgroup label="Tier 3">
                             {(["DraftBuzz", "Tankathon", "Kiper", "Yates", "DraftTek"] as const).map((s) => (
                               <option key={s} value={s}>{s}</option>
                             ))}
@@ -533,7 +533,7 @@ export function UploadManager() {
                     <p className="mt-1 text-xs text-gray-600">
                       {dataType === "rankings"
                         ? "Only the 13 canonical ranking sources are allowed. Tier 1 carries more weight in consensus."
-                        : "Only approved bio sources are allowed."}
+                        : "Only the 13 canonical sources are allowed."}
                     </p>
                   </>
                 ) : (
