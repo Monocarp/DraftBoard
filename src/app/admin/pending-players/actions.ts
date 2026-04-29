@@ -1,8 +1,16 @@
 "use server";
 
+import { createClient } from "@supabase/supabase-js";
 import { createSupabaseServer } from "@/lib/supabase-server";
 import { normalizePosition } from "@/lib/types";
 import { revalidatePath } from "next/cache";
+
+function createServiceClient() {
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!,
+  );
+}
 
 // ─── Types ─────────────────────────────────────────────────────────────────
 
@@ -33,28 +41,38 @@ export interface PendingPageData {
 // ─── Load ───────────────────────────────────────────────────────────────────
 
 export async function getPendingData(): Promise<PendingPageData> {
-  const supabase = await createSupabaseServer();
-  const { data: { user } } = await supabase.auth.getUser();
+  const authClient = await createSupabaseServer();
+  const { data: { user } } = await authClient.auth.getUser();
   const adminEmail = process.env.ADMIN_EMAIL;
   if (!user || !adminEmail || user.email !== adminEmail) throw new Error("Unauthorized");
 
-  const [pendingRes, playersRes] = await Promise.all([
-    supabase
-      .from("pending_players")
-      .select("id, variant_name, source, position, college, status, created_at")
-      .eq("status", "pending")
-      .order("created_at", { ascending: false })
-      .limit(500),
-    supabase
+  const db = createServiceClient();
+
+  // Paginate through all players (can exceed 1000)
+  const allPlayers: PlayerOption[] = [];
+  let page = 0;
+  while (true) {
+    const { data } = await db
       .from("players")
       .select("id, name, slug, position, college")
-      .order("name"),
-  ]);
+      .order("name")
+      .range(page * 1000, page * 1000 + 999);
+    if (!data || data.length === 0) break;
+    allPlayers.push(...(data as PlayerOption[]));
+    if (data.length < 1000) break;
+    page++;
+  }
 
-  const pending = (pendingRes.data ?? []) as PendingPlayer[];
-  const players = (playersRes.data ?? []) as PlayerOption[];
+  const { data: pendingData } = await db
+    .from("pending_players")
+    .select("id, variant_name, source, position, college, status, created_at")
+    .eq("status", "pending")
+    .order("created_at", { ascending: false })
+    .limit(500);
 
-  return { pending, players, pendingCount: pending.length };
+  const pending = (pendingData ?? []) as PendingPlayer[];
+
+  return { pending, players: allPlayers, pendingCount: pending.length };
 }
 
 export async function getPendingCount(): Promise<number> {
