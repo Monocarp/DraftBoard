@@ -2252,19 +2252,27 @@ async function importBioData(
     }
 
     const bioValues: Partial<Record<BioField, string | number | null>> = {};
-    const heightRaw = mapping["height"] ? row[mapping["height"]] : undefined;
-    const weightRaw = mapping["weight"] ? row[mapping["weight"]] : undefined;
-    const ageRaw    = mapping["age"]    ? row[mapping["age"]]    : undefined;
-    const yearRaw   = mapping["year"]   ? row[mapping["year"]]   : undefined;
-    const posRaw    = mapping["position"] ? row[mapping["position"]] : undefined;
-    const collegeRaw = mapping["college"] ? row[mapping["college"]] : undefined;
+    const heightRaw        = mapping["height"]          ? row[mapping["height"]]          : undefined;
+    const weightRaw        = mapping["weight"]          ? row[mapping["weight"]]          : undefined;
+    const ageRaw           = mapping["age"]             ? row[mapping["age"]]             : undefined;
+    const dobRaw           = mapping["dob"]             ? row[mapping["dob"]]             : undefined;
+    const yearRaw          = mapping["year"]            ? row[mapping["year"]]            : undefined;
+    const gamesRaw         = mapping["games"]           ? row[mapping["games"]]           : undefined;
+    const snapsRaw         = mapping["snaps"]           ? row[mapping["snaps"]]           : undefined;
+    const posRaw           = mapping["position"]        ? row[mapping["position"]]        : undefined;
+    const collegeRaw       = mapping["college"]         ? row[mapping["college"]]         : undefined;
+    const projRoundRaw     = mapping["projected_round"] ? row[mapping["projected_round"]] : undefined;
 
-    if (heightRaw?.trim())  bioValues.height   = heightRaw.trim();
-    if (weightRaw?.trim())  bioValues.weight   = weightRaw.trim();
-    if (ageRaw?.trim())     bioValues.age      = ageRaw.trim();
-    if (yearRaw?.trim())    bioValues.year     = yearRaw.trim();
-    if (posRaw?.trim())     bioValues.position = normalizePosition(posRaw.trim()) || posRaw.trim();
-    if (collegeRaw?.trim()) bioValues.college  = normalizeCollege(
+    if (heightRaw?.trim())    bioValues.height          = heightRaw.trim();
+    if (weightRaw?.trim())    bioValues.weight          = weightRaw.trim();
+    if (ageRaw?.trim())       bioValues.age             = ageRaw.trim();
+    if (dobRaw?.trim())       bioValues.dob             = dobRaw.trim();
+    if (yearRaw?.trim())      bioValues.year            = yearRaw.trim();
+    if (gamesRaw?.trim())     bioValues.games           = gamesRaw.trim();
+    if (snapsRaw?.trim())     bioValues.snaps           = snapsRaw.trim();
+    if (posRaw?.trim())       bioValues.position        = normalizePosition(posRaw.trim()) || posRaw.trim();
+    if (projRoundRaw?.trim()) bioValues.projected_round = projRoundRaw.trim();
+    if (collegeRaw?.trim())   bioValues.college         = normalizeCollege(
       collegeRaw.trim(),
       caches.collegeCorrections,
       caches.pendingColleges,
