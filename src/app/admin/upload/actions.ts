@@ -999,6 +999,7 @@ const BIO_FIELDS: BioField[] = [
  * @param source     - Source key (e.g. "pff", "draftbuzz")
  * @param values     - Map of bio field → value from this source
  * @param priority   - Optional explicit priority (stored as __priority)
+ * @returns          - Array of conflict descriptions if upload data conflicts with curated locked values
  */
 async function writeBioSources(
   supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
@@ -1006,7 +1007,8 @@ async function writeBioSources(
   source: string,
   values: Partial<Record<BioField, string | number | null>>,
   priority?: number,
-): Promise<void> {
+): Promise<string[]> {
+  const conflicts: string[] = [];
   // Normalize source key to prevent case-variant duplicates
   const srcKey = normalizeBioSourceKey(source);
 
@@ -1020,7 +1022,7 @@ async function writeBioSources(
       clean[k] = val;
     }
   }
-  if (Object.keys(clean).length === 0) return;
+  if (Object.keys(clean).length === 0) return conflicts;
 
   // Fetch existing bio_sources
   const { data: existing } = await supabase
@@ -1038,6 +1040,24 @@ async function writeBioSources(
   // Store explicit priority if provided
   if (priority !== undefined) {
     bioSources[srcKey].__priority = priority;
+  }
+
+  // Detect conflicts with curated locked values (post-normalization)
+  const curatedPos = bioSources["curated"]?.position as string | undefined;
+  const curatedCollege = bioSources["curated"]?.college as string | undefined;
+  if (srcKey !== "curated") {
+    if (curatedPos && clean.position !== undefined && clean.position !== null) {
+      const uploadNorm = normalizePosition(String(clean.position)) || String(clean.position);
+      if (uploadNorm !== curatedPos) {
+        conflicts.push(`position conflict on player ${playerId}: upload "${uploadNorm}" vs curated "${curatedPos}"`);
+      }
+    }
+    if (curatedCollege && clean.college !== undefined && clean.college !== null) {
+      const uploadCollege = String(clean.college);
+      if (uploadCollege !== curatedCollege) {
+        conflicts.push(`college conflict on player ${playerId}: upload "${uploadCollege}" vs curated "${curatedCollege}"`);
+      }
+    }
   }
 
   // Helper: get priority for a source
@@ -1099,6 +1119,7 @@ async function writeBioSources(
   if (updateError) {
     console.error(`writeBioSources failed for player ${playerId}:`, updateError.message);
   }
+  return conflicts;
 }
 
 // ─── Import: PFF Scores ─────────────────────────────────────────────────────
@@ -2255,7 +2276,8 @@ async function importBioData(
       continue;
     }
 
-    await writeBioSources(supabase, playerId, sourceName, bioValues, bioPriority);
+    const bioConflicts = await writeBioSources(supabase, playerId, sourceName, bioValues, bioPriority);
+    result.errors.push(...bioConflicts);
     result.updated++;
   }
 
