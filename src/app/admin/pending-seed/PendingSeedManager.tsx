@@ -30,7 +30,7 @@ function compact(name: string): string {
   return name.toLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
-function topSuggestions(name: string, players: SeedPlayerOption[], n = 5): SeedPlayerOption[] {
+function topSuggestions(name: string, players: SeedPlayerOption[], n = 10): SeedPlayerOption[] {
   const key = compact(name);
   return [...players]
     .map((p) => ({ p, dist: levenshtein(key, compact(p.name)) }))
@@ -57,7 +57,7 @@ function SeedRow({
   const [isPending, startTransition] = useTransition();
 
   const suggestions = useMemo(
-    () => topSuggestions(entry.name, players),
+    () => topSuggestions(entry.name, players, 10),
     [entry.name, players]
   );
 
@@ -167,21 +167,12 @@ function SeedRow({
                 disabled={isPending}
                 className="flex-1 min-w-0 rounded-lg border border-[#2a3a4e] bg-[#111827] px-3 py-1.5 text-sm text-white focus:border-orange-500 focus:outline-none disabled:opacity-50"
               >
-                <option value="">— pick player —</option>
-                <optgroup label="Closest matches">
-                  {suggestions.map((p) => (
-                    <option key={p.id} value={p.id}>
-                      {p.name}{p.position ? ` · ${p.position}` : ""}{p.college ? ` · ${p.college}` : ""}
-                    </option>
-                  ))}
-                </optgroup>
-                <optgroup label="All 2027 players">
-                  {players.map((p) => (
-                    <option key={p.id} value={p.id}>
-                      {p.name}{p.position ? ` · ${p.position}` : ""}
-                    </option>
-                  ))}
-                </optgroup>
+                <option value="">— Top 10 closest matches —</option>
+                {suggestions.map((p) => (
+                  <option key={p.id} value={p.id}>
+                    {p.name}{p.position ? ` · ${p.position}` : ""}{p.college ? ` · ${p.college}` : ""}
+                  </option>
+                ))}
               </select>
               <button
                 onClick={handleMap}

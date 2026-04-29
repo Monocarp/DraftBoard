@@ -31,7 +31,7 @@ function compact(name: string): string {
   return name.toLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
-function topSuggestions(variant: string, players: PlayerOption[], n = 5): PlayerOption[] {
+function topSuggestions(variant: string, players: PlayerOption[], n = 10): PlayerOption[] {
   const key = compact(variant);
   return [...players]
     .map((p) => ({ p, dist: levenshtein(key, compact(p.name)) }))
@@ -56,7 +56,7 @@ function PendingRow({
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
 
-  const suggestions = useMemo(() => topSuggestions(entry.variant_name, players), [entry.variant_name, players]);
+  const suggestions = useMemo(() => topSuggestions(entry.variant_name, players, 10), [entry.variant_name, players]);
 
   async function handleMap() {
     if (!selectedId) return;
@@ -131,21 +131,12 @@ function PendingRow({
                 onChange={(e) => setSelectedId(e.target.value)}
                 className="flex-1 min-w-0 rounded-lg border border-[#2a3a4e] bg-[#111827] px-3 py-1.5 text-sm text-white focus:border-orange-500 focus:outline-none"
               >
-                <option value="">— Suggestions (top 5) —</option>
-                <optgroup label="Suggested matches">
-                  {suggestions.map((p) => (
-                    <option key={p.id} value={p.id}>
-                      {p.name}{p.position ? ` · ${p.position}` : ""}{p.college ? ` · ${p.college}` : ""}
-                    </option>
-                  ))}
-                </optgroup>
-                <optgroup label="All players">
-                  {players.map((p) => (
-                    <option key={p.id} value={p.id}>
-                      {p.name}{p.position ? ` · ${p.position}` : ""}
-                    </option>
-                  ))}
-                </optgroup>
+                <option value="">— Top 10 closest matches —</option>
+                {suggestions.map((p) => (
+                  <option key={p.id} value={p.id}>
+                    {p.name}{p.position ? ` · ${p.position}` : ""}{p.college ? ` · ${p.college}` : ""}
+                  </option>
+                ))}
               </select>
               <button
                 onClick={handleMap}
