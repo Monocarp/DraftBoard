@@ -109,19 +109,32 @@ export async function createSeedPlayer(
   if (!pending) return { error: "Pending entry not found" };
 
   const finalName = overrideName?.trim() || pending.name;
-  const finalSlug = finalName
+  let finalSlug = finalName
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 
-  // Check the new slug isn't taken either
-  const { data: existing } = await db
+  // Check the new slug isn't taken. If taken by a different draft year, auto-suffix.
+  const { data: existingSlug } = await db
     .from("players")
-    .select("id")
+    .select("id, draft_year")
     .eq("slug", finalSlug)
     .maybeSingle();
 
-  if (existing) return { error: `Slug '${finalSlug}' already exists` };
+  if (existingSlug) {
+    if (existingSlug.draft_year !== 2027) {
+      // Slug belongs to another year — append draft year to disambiguate
+      finalSlug = `${finalSlug}-2027`;
+      const { data: suffixTaken } = await db
+        .from("players")
+        .select("id")
+        .eq("slug", finalSlug)
+        .maybeSingle();
+      if (suffixTaken) return { error: `Slug '${finalSlug}' is also taken` };
+    } else {
+      return { error: `Slug '${finalSlug}' already exists` };
+    }
+  }
 
   const { error } = await db.from("players").insert({
     name: finalName,
@@ -130,6 +143,13 @@ export async function createSeedPlayer(
     college: pending.college,
     draft_year: 2027,
     overview: {},
+    bio_sources: {
+      curated: {
+        position: pending.position,
+        college: pending.college,
+        __priority: 99,
+      },
+    },
   });
 
   if (error) return { error: error.message };
