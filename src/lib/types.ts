@@ -147,7 +147,7 @@ export const RANKING_SOURCES = [
   // Tier 1
   "PFF", "ESPN", "Brugler", "NFL.com",
   // Tier 2
-  "Bleacher Report", "CBS", "Walter Football",
+  "Bleacher Report", "CBS", "Walter Football", "PFSN",
   // Tier 3
   "DraftBuzz", "Tankathon", "Kiper", "Yates", "DraftTek",
 ] as const;
@@ -163,7 +163,7 @@ export const SOURCE_WEIGHTS: Record<string, number> = {
   // Tier 1 (2.0)
   "PFF": 2.0, "ESPN": 2.0, "Brugler": 2.0, "NFL.com": 2.0,
   // Tier 2 (1.0)
-  "Bleacher Report": 1.0, "CBS": 1.0, "Walter Football": 1.0,
+  "Bleacher Report": 1.0, "CBS": 1.0, "Walter Football": 1.0, "PFSN": 1.0,
   // Tier 3 (0.5)
   "DraftBuzz": 0.5, "Tankathon": 0.5, "Kiper": 0.5, "Yates": 0.5, "DraftTek": 0.5,
 };
