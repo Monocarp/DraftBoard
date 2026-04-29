@@ -1,7 +1,15 @@
 "use server";
 
+import { createClient } from "@supabase/supabase-js";
 import { createSupabaseServer } from "@/lib/supabase-server";
 import { revalidatePath } from "next/cache";
+
+function createServiceClient() {
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!,
+  );
+}
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -32,22 +40,25 @@ export interface PendingSeedData {
 // ─── Load ─────────────────────────────────────────────────────────────────────
 
 export async function getPendingSeedData(): Promise<PendingSeedData> {
-  const supabase = await createSupabaseServer();
-  const { data: { user } } = await supabase.auth.getUser();
+  const authClient = await createSupabaseServer();
+  const { data: { user } } = await authClient.auth.getUser();
   const adminEmail = process.env.ADMIN_EMAIL;
   if (!user || !adminEmail || user.email !== adminEmail) throw new Error("Unauthorized");
 
+  const db = createServiceClient();
+
   const [pendingRes, playersRes] = await Promise.all([
-    supabase
+    db
       .from("pending_seed_players")
       .select("id, name, slug, position, college, conflict_reason, created_at")
       .order("created_at", { ascending: false })
       .limit(500),
-    supabase
+    db
       .from("players")
       .select("id, name, slug, position, college")
       .eq("draft_year", 2027)
-      .order("name"),
+      .order("name")
+      .limit(2000),
   ]);
 
   const pending = (pendingRes.data ?? []) as PendingSeedPlayer[];
@@ -57,8 +68,8 @@ export async function getPendingSeedData(): Promise<PendingSeedData> {
 }
 
 export async function getPendingSeedCount(): Promise<number> {
-  const supabase = await createSupabaseServer();
-  const { count } = await supabase
+  const db = createServiceClient();
+  const { count } = await db
     .from("pending_seed_players")
     .select("id", { count: "exact", head: true });
   return count ?? 0;
@@ -74,12 +85,14 @@ export async function createSeedPlayer(
   pendingId: string,
   overrideName?: string,
 ): Promise<{ error?: string }> {
-  const supabase = await createSupabaseServer();
-  const { data: { user } } = await supabase.auth.getUser();
+  const authClient = await createSupabaseServer();
+  const { data: { user } } = await authClient.auth.getUser();
   const adminEmail = process.env.ADMIN_EMAIL;
   if (!user || !adminEmail || user.email !== adminEmail) throw new Error("Unauthorized");
 
-  const { data: pending } = await supabase
+  const db = createServiceClient();
+
+  const { data: pending } = await db
     .from("pending_seed_players")
     .select("name, slug, position, college")
     .eq("id", pendingId)
@@ -93,16 +106,15 @@ export async function createSeedPlayer(
     .replace(/^-+|-+$/g, "");
 
   // Check the new slug isn't taken either
-  const { data: existing } = await supabase
+  const { data: existing } = await db
     .from("players")
     .select("id")
     .eq("slug", finalSlug)
-    .eq("draft_year", 2027)
     .maybeSingle();
 
-  if (existing) return { error: `Slug '${finalSlug}' already exists in 2027 players` };
+  if (existing) return { error: `Slug '${finalSlug}' already exists` };
 
-  const { error } = await supabase.from("players").insert({
+  const { error } = await db.from("players").insert({
     name: finalName,
     slug: finalSlug,
     position: pending.position,
@@ -113,7 +125,7 @@ export async function createSeedPlayer(
 
   if (error) return { error: error.message };
 
-  await supabase.from("pending_seed_players").delete().eq("id", pendingId);
+  await db.from("pending_seed_players").delete().eq("id", pendingId);
 
   revalidatePath("/admin/pending-seed");
   return {};
@@ -127,19 +139,21 @@ export async function mapSeedPlayer(
   pendingId: string,
   targetPlayerId: string,
 ): Promise<{ error?: string }> {
-  const supabase = await createSupabaseServer();
-  const { data: { user } } = await supabase.auth.getUser();
+  const authClient = await createSupabaseServer();
+  const { data: { user } } = await authClient.auth.getUser();
   const adminEmail = process.env.ADMIN_EMAIL;
   if (!user || !adminEmail || user.email !== adminEmail) throw new Error("Unauthorized");
 
-  const { data: pending } = await supabase
+  const db = createServiceClient();
+
+  const { data: pending } = await db
     .from("pending_seed_players")
     .select("name")
     .eq("id", pendingId)
     .single();
   if (!pending) return { error: "Pending entry not found" };
 
-  const { data: player } = await supabase
+  const { data: player } = await db
     .from("players")
     .select("slug")
     .eq("id", targetPlayerId)
@@ -147,11 +161,11 @@ export async function mapSeedPlayer(
   if (!player) return { error: "Target player not found" };
 
   // Write name correction so future uploads match this name to the existing player
-  await supabase
+  await db
     .from("name_corrections")
     .upsert({ variant_name: pending.name, canonical_slug: player.slug }, { onConflict: "variant_name" });
 
-  await supabase.from("pending_seed_players").delete().eq("id", pendingId);
+  await db.from("pending_seed_players").delete().eq("id", pendingId);
 
   revalidatePath("/admin/pending-seed");
   return {};
@@ -161,12 +175,13 @@ export async function mapSeedPlayer(
  * Dismiss without creating — for entries that are genuinely not needed.
  */
 export async function dismissSeedPlayer(pendingId: string): Promise<{ error?: string }> {
-  const supabase = await createSupabaseServer();
-  const { data: { user } } = await supabase.auth.getUser();
+  const authClient = await createSupabaseServer();
+  const { data: { user } } = await authClient.auth.getUser();
   const adminEmail = process.env.ADMIN_EMAIL;
   if (!user || !adminEmail || user.email !== adminEmail) throw new Error("Unauthorized");
 
-  await supabase.from("pending_seed_players").delete().eq("id", pendingId);
+  const db = createServiceClient();
+  await db.from("pending_seed_players").delete().eq("id", pendingId);
 
   revalidatePath("/admin/pending-seed");
   return {};

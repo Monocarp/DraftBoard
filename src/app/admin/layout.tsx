@@ -1,6 +1,14 @@
 import Link from "next/link";
+import { createClient } from "@supabase/supabase-js";
 import { createSupabaseServer } from "@/lib/supabase-server";
 import { LogoutButton } from "./LogoutButton";
+
+function createServiceClient() {
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!,
+  );
+}
 
 export default async function AdminLayout({
   children,
@@ -17,9 +25,10 @@ export default async function AdminLayout({
   }
 
   // Pending players count for nav badge (best-effort — ignore if table doesn't exist yet)
+  const db = createServiceClient();
   let pendingCount = 0;
   try {
-    const { count } = await supabase
+    const { count } = await db
       .from("pending_players")
       .select("id", { count: "exact", head: true })
       .eq("status", "pending");
@@ -28,7 +37,7 @@ export default async function AdminLayout({
 
   let pendingCollegesCount = 0;
   try {
-    const { count } = await supabase
+    const { count } = await db
       .from("pending_colleges")
       .select("id", { count: "exact", head: true });
     pendingCollegesCount = count ?? 0;
@@ -36,7 +45,7 @@ export default async function AdminLayout({
 
   let pendingSeedCount = 0;
   try {
-    const { count } = await supabase
+    const { count } = await db
       .from("pending_seed_players")
       .select("id", { count: "exact", head: true });
     pendingSeedCount = count ?? 0;
