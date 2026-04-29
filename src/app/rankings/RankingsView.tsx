@@ -72,24 +72,35 @@ export default function RankingsView({ rankings, sourceDates }: { rankings: Rank
 
   // Compute consensus rank + sort
   const processed = useMemo(() => {
-    return rankings
-      .map((r) => {
-        // Weighted-percentile consensus using only selected sources
-        let totalWeight = 0;
-        let totalScore = 0;
-        let sourceCount = 0;
-        Object.entries(r.source_rankings).forEach(([src, v]) => {
-          if (!selectedSources.has(src) || typeof v !== "number") return;
-          const n = listSizes[src] ?? 1;
-          const pct = n < 2 ? 1 : Math.max(0, Math.min(1, 1 - (v - 1) / (n - 1)));
-          const w = SOURCE_WEIGHTS[src] ?? 0.5;
-          totalWeight += w;
-          totalScore += w * pct;
-          sourceCount++;
-        });
-        const consensus = totalWeight > 0 ? totalScore / totalWeight : -1;
-        return { ...r, consensus, sourceCount };
-      })
+    // Step 1: compute weighted-percentile score for every player
+    const withScores = rankings.map((r) => {
+      let totalWeight = 0;
+      let totalScore = 0;
+      let sourceCount = 0;
+      Object.entries(r.source_rankings).forEach(([src, v]) => {
+        if (!selectedSources.has(src) || typeof v !== "number") return;
+        const n = listSizes[src] ?? 1;
+        const pct = n < 2 ? 1 : Math.max(0, Math.min(1, 1 - (v - 1) / (n - 1)));
+        const w = SOURCE_WEIGHTS[src] ?? 0.5;
+        totalWeight += w;
+        totalScore += w * pct;
+        sourceCount++;
+      });
+      const consensusScore = totalWeight > 0 ? totalScore / totalWeight : -1;
+      return { ...r, consensusScore, sourceCount };
+    });
+
+    // Step 2: rank all players by score (before filtering) so rank numbers are stable
+    const sorted = [...withScores].sort((a, b) => b.consensusScore - a.consensusScore);
+    const rankMap = new Map<string, number>();
+    let rank = 1;
+    for (const p of sorted) {
+      if (p.consensusScore >= 0) rankMap.set(p.slug, rank++);
+    }
+
+    // Step 3: attach consensus rank, filter, then sort for display
+    return withScores
+      .map((r) => ({ ...r, consensus: rankMap.get(r.slug) ?? null }))
       .filter((r) => {
         const matchesSearch =
           !search ||
@@ -100,7 +111,13 @@ export default function RankingsView({ rankings, sourceDates }: { rankings: Rank
         return matchesSearch && matchesPos;
       })
       .sort((a, b) => {
-        if (sortSource === "Consensus") return b.consensus - a.consensus; // higher score = better
+        if (sortSource === "Consensus") {
+          // unranked players sink to bottom
+          if (a.consensus === null && b.consensus === null) return 0;
+          if (a.consensus === null) return 1;
+          if (b.consensus === null) return -1;
+          return a.consensus - b.consensus; // lower rank number = better
+        }
         const aVal = typeof a.source_rankings[sortSource] === "number" ? (a.source_rankings[sortSource] as number) : 9999;
         const bVal = typeof b.source_rankings[sortSource] === "number" ? (b.source_rankings[sortSource] as number) : 9999;
         return aVal - bVal;
@@ -231,7 +248,7 @@ export default function RankingsView({ rankings, sourceDates }: { rankings: Rank
         <table className="w-full">
           <thead>
             <tr className="border-b border-[#2a3a4e] text-left text-xs font-medium uppercase tracking-wider text-gray-500">
-              <th className="px-2 sm:px-3 py-2 sm:py-3 w-12">Score</th>
+              <th className="px-2 sm:px-3 py-2 sm:py-3 w-12">Rank</th>
               <th className="px-2 sm:px-3 py-2 sm:py-3">Player</th>
               <th className="px-2 sm:px-3 py-2 sm:py-3 w-16">Pos</th>
               <th className="px-2 sm:px-3 py-2 sm:py-3 hidden sm:table-cell">School</th>
@@ -251,20 +268,9 @@ export default function RankingsView({ rankings, sourceDates }: { rankings: Rank
             {processed.map((r, i) => (
               <tr key={r.slug + i} className="board-row">
                 <td className="px-2 sm:px-3 py-2">
-                  {(() => {
-                    const score = r.consensus >= 0 ? r.consensus * 100 : null;
-                    const color = score === null ? "text-gray-600"
-                      : score >= 90 ? "text-purple-400"
-                      : score >= 70 ? "text-green-400"
-                      : score >= 40 ? "text-yellow-400"
-                      : score >= 20 ? "text-gray-400"
-                      : "text-red-400";
-                    return (
-                      <span className={`text-xs font-bold ${color}`}>
-                        {score !== null ? score.toFixed(1) : "—"}
-                      </span>
-                    );
-                  })()}
+                  <span className={`text-xs font-bold ${r.consensus === null ? "text-gray-600" : r.consensus <= 15 ? "text-purple-400" : r.consensus <= 50 ? "text-green-400" : r.consensus <= 100 ? "text-yellow-400" : r.consensus <= 200 ? "text-gray-400" : "text-red-400"}`}>
+                    {r.consensus !== null ? r.consensus : "—"}
+                  </span>
                 </td>
                 <td className="px-2 sm:px-3 py-2">
                   <Link href={`/player/${r.slug}`} className="text-xs sm:text-sm font-semibold text-white hover:text-orange-400 transition-colors">
