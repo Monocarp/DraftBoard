@@ -231,7 +231,7 @@ export default function RankingsView({ rankings, sourceDates }: { rankings: Rank
         <table className="w-full">
           <thead>
             <tr className="border-b border-[#2a3a4e] text-left text-xs font-medium uppercase tracking-wider text-gray-500">
-              <th className="px-2 sm:px-3 py-2 sm:py-3 w-12">Avg</th>
+              <th className="px-2 sm:px-3 py-2 sm:py-3 w-12">Score</th>
               <th className="px-2 sm:px-3 py-2 sm:py-3">Player</th>
               <th className="px-2 sm:px-3 py-2 sm:py-3 w-16">Pos</th>
               <th className="px-2 sm:px-3 py-2 sm:py-3 hidden sm:table-cell">School</th>
@@ -251,9 +251,20 @@ export default function RankingsView({ rankings, sourceDates }: { rankings: Rank
             {processed.map((r, i) => (
               <tr key={r.slug + i} className="board-row">
                 <td className="px-2 sm:px-3 py-2">
-                  <span className={`text-xs font-bold ${r.consensus <= 15 ? "text-purple-400" : r.consensus <= 50 ? "text-green-400" : r.consensus <= 100 ? "text-yellow-400" : r.consensus <= 200 ? "text-gray-400" : "text-red-400"}`}>
-                    {r.consensus < 9999 ? r.consensus.toFixed(1) : "—"}
-                  </span>
+                  {(() => {
+                    const score = r.consensus >= 0 ? r.consensus * 100 : null;
+                    const color = score === null ? "text-gray-600"
+                      : score >= 90 ? "text-purple-400"
+                      : score >= 70 ? "text-green-400"
+                      : score >= 40 ? "text-yellow-400"
+                      : score >= 20 ? "text-gray-400"
+                      : "text-red-400";
+                    return (
+                      <span className={`text-xs font-bold ${color}`}>
+                        {score !== null ? score.toFixed(1) : "—"}
+                      </span>
+                    );
+                  })()}
                 </td>
                 <td className="px-2 sm:px-3 py-2">
                   <Link href={`/player/${r.slug}`} className="text-xs sm:text-sm font-semibold text-white hover:text-orange-400 transition-colors">
