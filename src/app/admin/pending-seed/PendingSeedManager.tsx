@@ -52,9 +52,14 @@ function SeedRow({
 }) {
   const [expanded, setExpanded] = useState(false);
   const [overrideName, setOverrideName] = useState(entry.name);
+  const [overrideSlug, setOverrideSlug] = useState("");
   const [selectedId, setSelectedId] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
+
+  const derivedSlug = overrideSlug.trim()
+    ? overrideSlug.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")
+    : overrideName.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 
   const suggestions = useMemo(
     () => topSuggestions(entry.name, players, 10),
@@ -64,7 +69,11 @@ function SeedRow({
   function handleCreate() {
     setError(null);
     startTransition(async () => {
-      const res = await createSeedPlayer(entry.id, overrideName !== entry.name ? overrideName : undefined);
+      const res = await createSeedPlayer(
+        entry.id,
+        overrideName !== entry.name ? overrideName : undefined,
+        overrideSlug.trim() || undefined,
+      );
       if (res.error) setError(res.error);
       else onResolved(entry.id);
     });
@@ -137,8 +146,15 @@ function SeedRow({
                 type="text"
                 value={overrideName}
                 onChange={(e) => setOverrideName(e.target.value)}
-                placeholder="Player name (edit to resolve slug conflict)"
+                placeholder="Display name"
                 className="flex-1 min-w-0 rounded-lg border border-[#2a3a4e] bg-[#111827] px-3 py-1.5 text-sm text-white focus:border-orange-500 focus:outline-none"
+              />
+              <input
+                type="text"
+                value={overrideSlug}
+                onChange={(e) => setOverrideSlug(e.target.value)}
+                placeholder={`Slug (default: ${overrideName.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")})`}
+                className="flex-1 min-w-0 rounded-lg border border-[#2a3a4e] bg-[#111827] px-3 py-1.5 text-sm text-white font-mono focus:border-orange-500 focus:outline-none"
               />
               <button
                 onClick={handleCreate}
@@ -148,11 +164,9 @@ function SeedRow({
                 {isPending ? "Creating…" : "Create player"}
               </button>
             </div>
-            {overrideName !== entry.name && (
-              <p className="mt-1 text-xs text-gray-500">
-                Will create slug: <span className="text-gray-300 font-mono">{overrideName.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")}</span>
-              </p>
-            )}
+            <p className="mt-1 text-xs text-gray-500">
+              Slug: <span className="text-gray-300 font-mono">{derivedSlug}</span>
+            </p>
           </div>
 
           {/* Option B: Map to existing 2027 player */}

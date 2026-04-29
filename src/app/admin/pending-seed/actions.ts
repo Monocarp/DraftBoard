@@ -88,11 +88,12 @@ export async function getPendingSeedCount(): Promise<number> {
 
 /**
  * Create a new 2027 player from a pending seed entry, optionally overriding
- * the name (to resolve slug conflicts between two real players).
+ * the display name and/or slug independently.
  */
 export async function createSeedPlayer(
   pendingId: string,
   overrideName?: string,
+  overrideSlug?: string,
 ): Promise<{ error?: string }> {
   const authClient = await createSupabaseServer();
   const { data: { user } } = await authClient.auth.getUser();
@@ -109,10 +110,10 @@ export async function createSeedPlayer(
   if (!pending) return { error: "Pending entry not found" };
 
   const finalName = overrideName?.trim() || pending.name;
-  let finalSlug = finalName
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
+  // Slug can be set independently of display name (e.g. jordan-hall-dt with name "Jordan Hall")
+  let finalSlug = overrideSlug?.trim()
+    ? overrideSlug.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")
+    : finalName.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 
   // Check the new slug isn't taken. If taken by a different draft year, auto-suffix.
   const { data: existingSlug } = await db
