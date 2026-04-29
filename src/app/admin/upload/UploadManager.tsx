@@ -5,7 +5,7 @@ import Papa from "papaparse";
 import * as XLSX from "xlsx";
 import { importData, deleteSourceData, getExistingSources } from "./actions";
 import type { DataType, ColumnMapping, UploadResult } from "./actions";
-import { RANKING_SOURCES } from "@/lib/types";
+import { RANKING_SOURCES, BIO_SOURCES } from "@/lib/types";
 
 // ─── Data Type Config ───────────────────────────────────────────────────────
 
@@ -151,7 +151,7 @@ const DATA_TYPES_UNSORTED: Record<DataType, DataTypeConfig> = {
   },
   bio_data: {
     label: "Bio Data (Height / Weight / Age / Year)",
-    description: "Import player bio info from any source — height, weight, age, class/eligibility. Set Source Name and Bio Priority to control which source wins when data conflicts.",
+    description: "Import player bio info — height, weight, age, class/eligibility, position, college. Source must be one of the approved bio sources. Set Bio Priority to control which source wins when data conflicts.",
     requiredColumns: [
       { key: "player_name", label: "Player Name", required: true },
       { key: "height", label: "Height", required: false },
@@ -162,6 +162,7 @@ const DATA_TYPES_UNSORTED: Record<DataType, DataTypeConfig> = {
       { key: "college", label: "College", required: false },
     ],
     needsSource: true,
+    allowedSources: BIO_SOURCES,
   },
   pff_big_board: {
     label: "PFF Big Board",
@@ -505,24 +506,34 @@ export function UploadManager() {
                       className="w-full sm:w-80 rounded-lg border border-[#2a3a4e] bg-[#1a2535] px-3 py-2 text-sm text-white focus:border-orange-500 focus:outline-none"
                     >
                       <option value="">— Select source —</option>
-                      <optgroup label="Tier 1 (weight ×2.0)">
-                        {(["PFF", "ESPN", "Brugler", "NFL.com"] as const).map((s) => (
+                      {dataType === "rankings" ? (
+                        <>
+                          <optgroup label="Tier 1 (weight ×2.0)">
+                            {(["PFF", "ESPN", "Brugler", "NFL.com"] as const).map((s) => (
+                              <option key={s} value={s}>{s}</option>
+                            ))}
+                          </optgroup>
+                          <optgroup label="Tier 2 (weight ×1.0)">
+                            {(["Bleacher Report", "CBS", "Walter Football", "PFSN"] as const).map((s) => (
+                              <option key={s} value={s}>{s}</option>
+                            ))}
+                          </optgroup>
+                          <optgroup label="Tier 3 (weight ×0.5)">
+                            {(["DraftBuzz", "Tankathon", "Kiper", "Yates", "DraftTek"] as const).map((s) => (
+                              <option key={s} value={s}>{s}</option>
+                            ))}
+                          </optgroup>
+                        </>
+                      ) : (
+                        config.allowedSources.map((s) => (
                           <option key={s} value={s}>{s}</option>
-                        ))}
-                      </optgroup>
-                      <optgroup label="Tier 2 (weight ×1.0)">
-                        {(["Bleacher Report", "CBS", "Walter Football", "PFSN"] as const).map((s) => (
-                          <option key={s} value={s}>{s}</option>
-                        ))}
-                      </optgroup>
-                      <optgroup label="Tier 3 (weight ×0.5)">
-                        {(["DraftBuzz", "Tankathon", "Kiper", "Yates", "DraftTek"] as const).map((s) => (
-                          <option key={s} value={s}>{s}</option>
-                        ))}
-                      </optgroup>
+                        ))
+                      )}
                     </select>
                     <p className="mt-1 text-xs text-gray-600">
-                      Only the 13 canonical ranking sources are allowed. Tier 1 carries more weight in consensus.
+                      {dataType === "rankings"
+                        ? "Only the 13 canonical ranking sources are allowed. Tier 1 carries more weight in consensus."
+                        : "Only approved bio sources are allowed."}
                     </p>
                   </>
                 ) : (

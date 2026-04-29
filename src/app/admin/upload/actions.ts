@@ -1,7 +1,7 @@
 "use server";
 
 import { createSupabaseServer } from "@/lib/supabase-server";
-import { normalizePosition, RANKING_SOURCES } from "@/lib/types";
+import { normalizePosition, RANKING_SOURCES, BIO_SOURCES } from "@/lib/types";
 import { normalizeTeam, formatTeamWithTrade, normalizeSourceName } from "@/lib/teams";
 import { normalizeCollege, type CollegeCorrectionsCache, type PendingCollegesMap } from "@/lib/normalize-college";
 import { revalidatePath } from "next/cache";
@@ -2416,6 +2416,18 @@ export async function importData(
         updated: 0,
         skipped: 0,
         errors: [`Invalid source "${sourceName}". Must be one of: ${RANKING_SOURCES.join(", ")}`],
+      };
+    }
+  }
+
+  if (dataType === "bio_data") {
+    if (!BIO_SOURCES.includes(sourceName as (typeof BIO_SOURCES)[number])) {
+      return {
+        success: false,
+        inserted: 0,
+        updated: 0,
+        skipped: 0,
+        errors: [`Invalid source "${sourceName}". Must be one of: ${BIO_SOURCES.join(", ")}`],
       };
     }
   }

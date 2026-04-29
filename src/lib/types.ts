@@ -154,6 +154,13 @@ export const RANKING_SOURCES = [
 
 export type RankingSource = (typeof RANKING_SOURCES)[number];
 
+/** Approved sources for bio data uploads (height/weight/age/year/position/college). */
+export const BIO_SOURCES = [
+  "PFF", "NFL.com", "CBS", "ESPN", "DraftBuzz", "Walter Football",
+] as const;
+
+export type BioSource = (typeof BIO_SOURCES)[number];
+
 /**
  * Weights used for the weighted-percentile consensus formula.
  * Score = Σ(weight_i × percentile_i) / Σ(weight_i) — missing sources are skipped.
