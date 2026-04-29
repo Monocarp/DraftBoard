@@ -281,19 +281,27 @@ export function UploadManager() {
       const reader = new FileReader();
       reader.onload = (e) => {
         try {
-          const wb = XLSX.read(e.target?.result, { type: "array" });
+          const wb = XLSX.read(e.target?.result, { type: "array", cellDates: true });
           const ws = wb.Sheets[wb.SheetNames[0]];
-          const jsonData = XLSX.utils.sheet_to_json<Record<string, string>>(ws, { defval: "" });
+          const jsonData = XLSX.utils.sheet_to_json<Record<string, unknown>>(ws, { defval: "" });
           if (jsonData.length === 0) {
             setError("No data found in the Excel file.");
             return;
           }
           const headers = Object.keys(jsonData[0]);
-          // Convert all values to strings
+          // Convert all values to strings; format JS Date objects as YYYY-MM-DD
           const rows = jsonData.map((row) => {
             const cleaned: Record<string, string> = {};
             for (const key of headers) {
-              cleaned[key] = String(row[key] ?? "");
+              const v = row[key];
+              if (v instanceof Date) {
+                const y = v.getFullYear();
+                const m = String(v.getMonth() + 1).padStart(2, "0");
+                const d = String(v.getDate()).padStart(2, "0");
+                cleaned[key] = `${y}-${m}-${d}`;
+              } else {
+                cleaned[key] = String(v ?? "");
+              }
             }
             return cleaned;
           });
