@@ -47,24 +47,33 @@ export async function getPendingSeedData(): Promise<PendingSeedData> {
 
   const db = createServiceClient();
 
-  const [pendingRes, playersRes] = await Promise.all([
+  // Paginate through all 2027 players (10k+ rows, can't use a single .limit())
+  const allPlayers: SeedPlayerOption[] = [];
+  let page = 0;
+  while (true) {
+    const { data } = await db
+      .from("players")
+      .select("id, name, slug, position, college")
+      .eq("draft_year", 2027)
+      .order("name")
+      .range(page * 1000, page * 1000 + 999);
+    if (!data || data.length === 0) break;
+    allPlayers.push(...(data as SeedPlayerOption[]));
+    if (data.length < 1000) break;
+    page++;
+  }
+
+  const [pendingRes] = await Promise.all([
     db
       .from("pending_seed_players")
       .select("id, name, slug, position, college, conflict_reason, created_at")
       .order("created_at", { ascending: false })
       .limit(500),
-    db
-      .from("players")
-      .select("id, name, slug, position, college")
-      .eq("draft_year", 2027)
-      .order("name")
-      .limit(2000),
   ]);
 
   const pending = (pendingRes.data ?? []) as PendingSeedPlayer[];
-  const players = (playersRes.data ?? []) as SeedPlayerOption[];
 
-  return { pending, players, pendingCount: pending.length };
+  return { pending, players: allPlayers, pendingCount: pending.length };
 }
 
 export async function getPendingSeedCount(): Promise<number> {
