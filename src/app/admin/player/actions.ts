@@ -28,13 +28,47 @@ const POSITION_TEMPLATES = [
 
 type PositionTemplate = (typeof POSITION_TEMPLATES)[number];
 
-/** Map a normalized position to its template key.
- *  Returns the position itself if it's a known template, otherwise null. */
+/** Map a normalized position to its template key. OT and IOL both use OL. */
 function resolveTemplate(pos: string): PositionTemplate | null {
   const norm = normalizePosition(pos);
+  if (norm === "IOL" || norm === "OT") return "OL" as PositionTemplate;
   if ((POSITION_TEMPLATES as readonly string[]).includes(norm)) return norm as PositionTemplate;
   return null;
 }
+
+// ─── Per-Position Skills & Traits Categories ────────────────────────────
+
+const SKILLS_TRAITS_TEMPLATE: Record<PositionTemplate, string[]> = {
+  EDGE: ["Instincts/Processing/Production", "Physical Traits", "Athletic Ability", "Pass Rush Skills", "Run Defense Skills"],
+  DT:   ["Instincts/Processing/Production", "Physical Traits", "Athletic Ability", "Pass Rush Skills", "Run Defense Skills"],
+  CB:   ["Character/Mentality", "Tackling", "Coverage Skills", "Athleticism", "Physical Traits"],
+  SAF:  ["Character/Mentality", "Tackling", "Coverage Skills", "Athleticism", "Physical Traits"],
+  LB:   ["Instincts/Processing/Production", "Physical/Athletic Traits", "Coverage Ability", "Pass Rush Skills", "Run Defense/Tackling"],
+  WR:   ["Character/Mentality", "Receiving Skills", "Technique", "Physical Traits", "Blocking"],
+  TE:   ["Receiving Skills", "Blocking", "Athletic Traits", "Physical Traits", "Character/Mentality"],
+  OL:   ["Character Traits", "Upper Body", "Lower Body", "Technical Ability", "Physical Ability"],
+  OT:   ["Character Traits", "Upper Body", "Lower Body", "Technical Ability", "Physical Ability"],
+  IOL:  ["Character Traits", "Upper Body", "Lower Body", "Technical Ability", "Physical Ability"],
+  QB:   [],
+  RB:   [],
+};
+
+// ─── Per-Position DraftBuzz Grade Keys ──────────────────────────────────
+
+const DRAFTBUZZ_TEMPLATE: Record<PositionTemplate, string[]> = {
+  QB:   ["Short Passing", "Medium Passing", "Long Passing", "Rush/Scramble"],
+  RB:   ["Rushing", "Break Tackles", "Receiving/Hands", "Pass Blocking", "Run Blocking"],
+  WR:   ["QBR When Tgtd", "Hands", "Short Receiving", "Med Routes", "Deep Threat", "Blocking"],
+  TE:   ["QBR When Tgtd", "Hands", "Short Receiving", "Med Routes", "Deep Threat", "Blocking"],
+  SAF:  ["QBR When Targeted", "Tackling", "Run Defense", "Coverage Grade", "Zone Coverage", "Man/Press"],
+  OL:   ["Pass Blocking Grade", "Run Blocking Grade"],
+  OT:   ["Pass Blocking Grade", "Run Blocking Grade"],
+  IOL:  ["Pass Blocking Grade", "Run Blocking Grade"],
+  LB:   ["Tackling", "Pass Rush", "Run Defense", "Coverage"],
+  EDGE: ["Tackling", "Pass Rush", "Run Defense"],
+  DT:   ["Tackling", "Pass Rush", "Run Defense"],
+  CB:   ["QBR Allowed", "Tackling", "Run Defense", "Cov Grade", "Zone Coverage", "Man/Press"],
+};
 
 function toSlug(name: string) {
   return name
@@ -273,11 +307,34 @@ export async function createProfile(
   //  which stringify to something other than "{}" — but that's unlikely)
   const finalOverview = { ...existingOverview, ...overview };
 
-  // Build update — just seed overview (profile data columns like pff_scores
-  // may already have data from importers, leave them as-is)
+  // Seed skills_traits and draftbuzz_grades from position template (only if currently empty)
+  const existingSkillsTraits = (player.skills_traits as Record<string, unknown>) || {};
+  const existingDraftbuzzGrades = (player.draftbuzz_grades as Record<string, unknown>) || {};
+
+  const skillsTraitsUpdate =
+    Object.keys(existingSkillsTraits).length === 0 && template
+      ? Object.fromEntries(
+          (SKILLS_TRAITS_TEMPLATE[template] ?? []).map((cat) => [cat, { positives: null, negatives: null }])
+        )
+      : null;
+
+  const draftbuzzUpdate =
+    Object.keys(existingDraftbuzzGrades).length === 0 && template
+      ? Object.fromEntries(
+          (DRAFTBUZZ_TEMPLATE[template] ?? []).map((key) => [key, null])
+        )
+      : null;
+
+  // Build update payload — overview always; template fields only when seeding fresh
+  const updatePayload: Record<string, unknown> = { overview: finalOverview };
+  if (skillsTraitsUpdate && Object.keys(skillsTraitsUpdate).length > 0)
+    updatePayload.skills_traits = skillsTraitsUpdate;
+  if (draftbuzzUpdate && Object.keys(draftbuzzUpdate).length > 0)
+    updatePayload.draftbuzz_grades = draftbuzzUpdate;
+
   const { error: updateErr } = await supabase
     .from("players")
-    .update({ overview: finalOverview })
+    .update(updatePayload)
     .eq("id", playerId);
 
   if (updateErr) return { error: updateErr.message };
