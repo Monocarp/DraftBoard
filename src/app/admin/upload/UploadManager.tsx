@@ -188,6 +188,17 @@ const DATA_TYPES_UNSORTED: Record<DataType, DataTypeConfig> = {
     ],
     needsSource: false,
   },
+  pff_preseason: {
+    label: "PFF Preseason Commentary",
+    description: "PFF Preseason scouting commentary — one commentary blob per player, written as source \"PFF Preseason\" on the player profile Scouting tab.",
+    requiredColumns: [
+      { key: "player_name", label: "Player Name", required: true },
+      { key: "position",    label: "Position",    required: false },
+      { key: "college",     label: "College / School", required: false },
+      { key: "commentary",  label: "Commentary",  required: true },
+    ],
+    needsSource: false,
+  },
 };
 
 // Sort upload options alphabetically by label

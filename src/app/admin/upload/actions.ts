@@ -20,7 +20,8 @@ export type DataType =
   | "bleacher_profiles"
   | "espn_profiles"
   | "bio_data"
-  | "pff_big_board";
+  | "pff_big_board"
+  | "pff_preseason";
 
 export type ColumnMapping = Record<string, string>; // csv_header → db_column
 
@@ -2404,6 +2405,51 @@ async function importPFFBigBoard(
   return result;
 }
 
+// ─── Import: PFF Preseason Commentary ─────────────────────────────────────
+
+async function importPFFPreseason(
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  caches: ImportCaches,
+  rows: Record<string, string>[],
+  mapping: ColumnMapping,
+): Promise<UploadResult> {
+  const result: UploadResult = { success: true, inserted: 0, updated: 0, skipped: 0, errors: [] };
+  const SCOUTING_SOURCE = "PFF Preseason";
+
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    const playerName = row[mapping["player_name"]];
+
+    if (!playerName?.trim()) { result.skipped++; continue; }
+
+    const playerId = await resolvePlayerId(supabase, caches, playerName, {
+      position: mapping["position"] ? row[mapping["position"]] : undefined,
+      college: mapping["college"] ? row[mapping["college"]] : undefined,
+    });
+
+    if (!playerId) {
+      result.errors.push(`Row ${i + 1}: Could not resolve player "${playerName}"`);
+      result.skipped++;
+      continue;
+    }
+
+    const commentaryRaw = mapping["commentary"] ? row[mapping["commentary"]] : undefined;
+
+    if (!commentaryRaw?.trim()) {
+      result.skipped++;
+      continue;
+    }
+
+    const sections = [{ title: null as string | null, text: commentaryRaw.trim() }];
+    await supabase.from("commentary").delete().eq("player_id", playerId).eq("source", SCOUTING_SOURCE);
+    await supabase.from("commentary").insert({ player_id: playerId, source: SCOUTING_SOURCE, sections });
+
+    result.updated++;
+  }
+
+  return result;
+}
+
 export async function importData(
   dataType: DataType,
   rows: Record<string, string>[],
@@ -2494,6 +2540,9 @@ export async function importData(
       result = await importPFFBigBoard(supabase, caches, rows, mapping);
       // autoDateType omitted because we manually update the date in importPFFBigBoard using the specific valid RANKING_SOURCE.
       break;
+    case "pff_preseason":
+      result = await importPFFPreseason(supabase, caches, rows, mapping);
+      break;
     default:
       result = { success: false, inserted: 0, updated: 0, skipped: 0, errors: [`Unknown data type: ${dataType}`] };
   }
@@ -2547,6 +2596,7 @@ export async function deleteSourceData(
     case "nfl_profiles":
     case "bleacher_profiles":
     case "pff_big_board":
+    case "pff_preseason":
       return { success: false, deleted: 0, error: "Multi-table profile data cannot be deleted by source. Edit individual players instead." };
     default: return { success: false, deleted: 0, error: "Unknown data type" };
   }
