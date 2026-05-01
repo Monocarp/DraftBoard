@@ -1,6 +1,7 @@
 "use server";
 
 import { createSupabaseServer } from "@/lib/supabase-server";
+import { CANONICAL_COLLEGES } from "@/lib/normalize-college";
 import { revalidatePath } from "next/cache";
 
 export interface IncompletPlayer {
@@ -132,4 +133,123 @@ export async function removeIncompletePlayer(
   revalidatePath("/");
 
   return { success: true };
+}
+
+// ─── School Audit ────────────────────────────────────────────────────────────
+
+export interface SchoolVariant {
+  /** Raw value stored in players.college */
+  raw: string;
+  /** Player IDs that have this value */
+  playerIds: string[];
+  /** Player names for display */
+  playerNames: string[];
+  /** True if an exact canonical match exists */
+  isCanonical: boolean;
+  /** True if a correction already exists in college_corrections */
+  hasCorrection: boolean;
+  /** The canonical value from correction, if any */
+  correctionTarget: string | null;
+}
+
+/**
+ * Scan all player college values and return those that are not already
+ * canonical or covered by an existing correction.
+ */
+export async function auditSchoolNames(): Promise<SchoolVariant[]> {
+  const supabase = await createSupabaseServer();
+  const { data: { user } } = await supabase.auth.getUser();
+  const adminEmail = process.env.ADMIN_EMAIL;
+  if (!user || !adminEmail || user.email !== adminEmail) throw new Error("Unauthorized");
+
+  const canonicalSet = new Set(CANONICAL_COLLEGES.map((c) => c.toLowerCase()));
+
+  // Load all players with a non-null college
+  const { data: players } = await supabase
+    .from("players")
+    .select("id, name, college")
+    .not("college", "is", null)
+    .order("college");
+
+  if (!players) return [];
+
+  // Load all existing corrections
+  const { data: corrections } = await supabase
+    .from("college_corrections")
+    .select("variant, canonical");
+
+  const correctionMap = new Map<string, string>(
+    (corrections ?? []).map((c: { variant: string; canonical: string }) => [c.variant.toLowerCase(), c.canonical])
+  );
+
+  // Group by raw college value
+  const grouped = new Map<string, { ids: string[]; names: string[] }>();
+  for (const p of players) {
+    const raw = (p.college as string).trim();
+    if (!raw) continue;
+    if (!grouped.has(raw)) grouped.set(raw, { ids: [], names: [] });
+    grouped.get(raw)!.ids.push(p.id as string);
+    grouped.get(raw)!.names.push(p.name as string);
+  }
+
+  const results: SchoolVariant[] = [];
+  for (const [raw, { ids, names }] of grouped) {
+    const lower = raw.toLowerCase();
+    const isCanonical = canonicalSet.has(lower);
+    const correctionTarget = correctionMap.get(lower) ?? null;
+    const hasCorrection = correctionTarget !== null;
+
+    // Only surface entries that are NOT already canonical and NOT already corrected
+    if (!isCanonical && !hasCorrection) {
+      results.push({ raw, playerIds: ids, playerNames: names, isCanonical, hasCorrection, correctionTarget });
+    }
+  }
+
+  // Sort by number of affected players descending, then alphabetically
+  results.sort((a, b) => b.playerIds.length - a.playerIds.length || a.raw.localeCompare(b.raw));
+
+  return results;
+}
+
+/**
+ * Apply a school correction: write to college_corrections and back-fill players.college.
+ */
+export async function applySchoolCorrection(
+  raw: string,
+  canonical: string,
+): Promise<{ error?: string }> {
+  const supabase = await createSupabaseServer();
+  const { data: { user } } = await supabase.auth.getUser();
+  const adminEmail = process.env.ADMIN_EMAIL;
+  if (!user || !adminEmail || user.email !== adminEmail) throw new Error("Unauthorized");
+
+  const { error: ccErr } = await supabase
+    .from("college_corrections")
+    .upsert({ variant: raw.toLowerCase(), canonical }, { onConflict: "variant" });
+  if (ccErr) return { error: ccErr.message };
+
+  await supabase.from("players").update({ college: canonical }).eq("college", raw);
+
+  revalidatePath("/admin/cleanup");
+  revalidatePath("/players");
+  return {};
+}
+
+/**
+ * Dismiss a raw school value by adding it to college_corrections mapping to itself
+ * (treated as acceptable as-is / effectively canonical).
+ */
+export async function dismissSchoolVariant(raw: string): Promise<{ error?: string }> {
+  const supabase = await createSupabaseServer();
+  const { data: { user } } = await supabase.auth.getUser();
+  const adminEmail = process.env.ADMIN_EMAIL;
+  if (!user || !adminEmail || user.email !== adminEmail) throw new Error("Unauthorized");
+
+  const { error } = await supabase
+    .from("college_corrections")
+    .upsert({ variant: raw.toLowerCase(), canonical: raw }, { onConflict: "variant" });
+  if (error) return { error: error.message };
+
+  revalidatePath("/admin/cleanup");
+  return {};
 }

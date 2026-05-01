@@ -1,4 +1,5 @@
 import { CleanupManager } from "./CleanupManager";
+import { SchoolAuditTab } from "./SchoolAuditTab";
 
 export default function CleanupPage() {
   return (
@@ -6,11 +7,14 @@ export default function CleanupPage() {
       <div className="mb-6">
         <h1 className="text-2xl font-bold text-white">Player Cleanup</h1>
         <p className="text-sm text-gray-400 mt-1">
-          Find and remove players with missing position or school data.
+          Audit and fix player data quality issues.
         </p>
       </div>
 
-      <CleanupManager />
+      <CleanupTabs />
     </div>
   );
 }
+
+// Tabs are rendered client-side via a wrapper so we can keep the page as a server component
+import { CleanupTabs } from "./CleanupTabs";
