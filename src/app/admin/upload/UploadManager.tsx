@@ -548,7 +548,7 @@ export function UploadManager() {
                             ))}
                           </optgroup>
                           <optgroup label="Tier 2">
-                            {(["Bleacher Report", "CBS", "Walter Football", "PFSN"] as const).map((s) => (
+                            {(["Bleacher Report", "CBS", "Walter Football", "PFSN", "Matt Miller"] as const).map((s) => (
                               <option key={s} value={s}>{s}</option>
                             ))}
                           </optgroup>
@@ -566,8 +566,8 @@ export function UploadManager() {
                     </select>
                     <p className="mt-1 text-xs text-gray-600">
                       {dataType === "rankings"
-                        ? "Only the 13 canonical ranking sources are allowed. Tier 1 carries more weight in consensus."
-                        : "Only the 13 canonical sources are allowed."}
+                        ? "Only the 14 canonical ranking sources are allowed. Tier 1 carries more weight in consensus."
+                        : "Only the 14 canonical sources are allowed."}
                     </p>
                   </>
                 ) : (
