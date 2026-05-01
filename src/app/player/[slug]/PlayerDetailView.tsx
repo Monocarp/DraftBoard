@@ -529,48 +529,27 @@ function ScoutingTab({ profile: p, isAdmin = false }: { profile: PlayerProfile; 
       {Object.keys(p.skills_traits).length > 0 && (
         <div>
           <h3 className="text-lg font-bold text-white mb-4">Skills & Traits Breakdown</h3>
-          <div className="space-y-3">
-            {Object.entries(p.skills_traits).map(([category, data]) => {
-              const positives = (data.positives ?? "").split("\n").map(s => s.trim()).filter(Boolean);
-              const negatives = (data.negatives ?? "").split("\n").map(s => s.trim()).filter(Boolean);
-              const hasContent = positives.length > 0 || negatives.length > 0;
-              return (
-                <div key={category} className="rounded-xl border border-[#2a3a4e] bg-[#111827] overflow-hidden">
-                  <div className="px-5 py-3 border-b border-[#2a3a4e] bg-[#0d1520]">
-                    <h4 className="text-sm font-semibold text-orange-400">{category}</h4>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {Object.entries(p.skills_traits).map(([category, data]) => (
+              <div key={category} className="rounded-xl border border-[#2a3a4e] bg-[#111827] p-5">
+                <h4 className="text-sm font-semibold text-orange-400 mb-3">{category}</h4>
+                {data.positives && (
+                  <div className="mb-3">
+                    <p className="text-xs font-medium text-green-400 mb-1">Positives</p>
+                    <p className="text-xs text-gray-300 commentary-text">{data.positives}</p>
                   </div>
-                  <div className="p-5">
-                    {!hasContent && <p className="text-xs text-gray-600">No data yet.</p>}
-                    {positives.length > 0 && (
-                      <div className={negatives.length > 0 ? "mb-4" : ""}>
-                        <p className="text-xs font-semibold text-green-400 uppercase tracking-wider mb-2">Positives</p>
-                        <ul className="space-y-2">
-                          {positives.map((line, i) => (
-                            <li key={i} className="flex gap-2.5 items-start">
-                              <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-green-500/60" />
-                              <span className="text-sm text-gray-300 leading-relaxed">{line}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-                    {negatives.length > 0 && (
-                      <div>
-                        <p className="text-xs font-semibold text-red-400 uppercase tracking-wider mb-2">Negatives</p>
-                        <ul className="space-y-2">
-                          {negatives.map((line, i) => (
-                            <li key={i} className="flex gap-2.5 items-start">
-                              <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500/60" />
-                              <span className="text-sm text-gray-300 leading-relaxed">{line}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
+                )}
+                {data.negatives && (
+                  <div>
+                    <p className="text-xs font-medium text-red-400 mb-1">Negatives</p>
+                    <p className="text-xs text-gray-300 commentary-text">{data.negatives}</p>
                   </div>
-                </div>
-              );
-            })}
+                )}
+                {!data.positives && !data.negatives && (
+                  <p className="text-xs text-gray-600">No data yet.</p>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       )}

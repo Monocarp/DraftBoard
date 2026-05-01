@@ -323,10 +323,15 @@ function SkillCard({
           </label>
           <textarea
             value={entry.positives}
-            onChange={(e) => onUpdate("positives", e.target.value)}
+            onChange={(e) => {
+              onUpdate("positives", e.target.value);
+              e.target.style.height = "auto";
+              e.target.style.height = e.target.scrollHeight + "px";
+            }}
+            ref={(el) => { if (el) { el.style.height = "auto"; el.style.height = el.scrollHeight + "px"; } }}
             rows={3}
             placeholder="e.g. Great ball skills, explosive off the line (WF)"
-            className="w-full rounded-lg border border-[#2a3a4e] bg-[#141e2e] px-3 py-2 text-sm text-white placeholder-gray-600 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 transition-colors resize-y"
+            className="w-full rounded-lg border border-[#2a3a4e] bg-[#141e2e] px-3 py-2 text-sm text-white placeholder-gray-600 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 transition-colors resize-none overflow-hidden"
           />
         </div>
 
@@ -340,10 +345,15 @@ function SkillCard({
           </label>
           <textarea
             value={entry.negatives}
-            onChange={(e) => onUpdate("negatives", e.target.value)}
+            onChange={(e) => {
+              onUpdate("negatives", e.target.value);
+              e.target.style.height = "auto";
+              e.target.style.height = e.target.scrollHeight + "px";
+            }}
+            ref={(el) => { if (el) { el.style.height = "auto"; el.style.height = el.scrollHeight + "px"; } }}
             rows={3}
             placeholder="e.g. Lacks strength to re-route receivers (BR)"
-            className="w-full rounded-lg border border-[#2a3a4e] bg-[#141e2e] px-3 py-2 text-sm text-white placeholder-gray-600 focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500 transition-colors resize-y"
+            className="w-full rounded-lg border border-[#2a3a4e] bg-[#141e2e] px-3 py-2 text-sm text-white placeholder-gray-600 focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500 transition-colors resize-none overflow-hidden"
           />
         </div>
       </div>
