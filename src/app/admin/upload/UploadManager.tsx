@@ -21,10 +21,10 @@ interface DataTypeConfig {
 const DATA_TYPES_UNSORTED: Record<DataType, DataTypeConfig> = {
   rankings: {
     label: "Rankings",
-    description: "Per-source overall and positional rankings. Source must be one of the 13 canonical ranking sources. Map 'Rank' for overall, 'Position Rank' for positional — both write to all three ranking tables. Optionally include bio data (height, weight, age, year).",
+    description: "Per-source overall and positional rankings. Source must be one of the 14 canonical ranking sources. Map 'Rank' for overall, 'Position Rank' for positional — both write to all three ranking tables. Either or both can be omitted. Optionally include bio data (height, weight, age, year).",
     requiredColumns: [
       { key: "player_name", label: "Player Name", required: true },
-      { key: "rank", label: "Overall Rank", required: true },
+      { key: "rank", label: "Overall Rank", required: false },
       { key: "position_rank", label: "Position Rank", required: false },
       { key: "position", label: "Position", required: false },
       { key: "college", label: "College", required: false },

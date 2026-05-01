@@ -427,11 +427,13 @@ async function importRankings(
     const slug = toSlug(playerName);
     const rankValue = rankRaw ? parseFloat(rankRaw) : null;
 
-    const { error: rankError } = await supabase
-      .from("rankings")
-      .upsert({ player_id: playerId, source: sourceName, rank_value: rankValue, slug }, { onConflict: "player_id,source" });
-    if (rankError) result.errors.push(`Row ${i + 1}: ${rankError.message}`);
-    else result.updated++;
+    // Only write to rankings / player_rankings if an overall rank is present
+    if (rankValue !== null && !isNaN(rankValue)) {
+      const { error: rankError } = await supabase
+        .from("rankings")
+        .upsert({ player_id: playerId, source: sourceName, rank_value: rankValue, slug }, { onConflict: "player_id,source" });
+      if (rankError) result.errors.push(`Row ${i + 1}: ${rankError.message}`);
+    }
 
     // If position_rank column is mapped, also write to positional_rankings
     const posRankRaw = mapping["position_rank"] ? row[mapping["position_rank"]] : undefined;
@@ -444,19 +446,25 @@ async function importRankings(
       }
     }
 
-    // Always sync to player_rankings so profile pages show these ranks
+    // Sync to player_rankings when either overall or positional rank is present
     const posRankValueForProfile = posRankRaw && String(posRankRaw).trim() ? String(Math.round(parseFloat(posRankRaw))) : null;
-    await supabase
-      .from("player_rankings")
-      .upsert(
-        {
-          player_id: playerId,
-          source: sourceName,
-          overall_rank: rankValue,
-          positional_rank: posRankValueForProfile,
-        },
-        { onConflict: "player_id,source" },
-      );
+    if (rankValue !== null && !isNaN(rankValue) || posRankValueForProfile !== null) {
+      await supabase
+        .from("player_rankings")
+        .upsert(
+          {
+            player_id: playerId,
+            source: sourceName,
+            overall_rank: (rankValue !== null && !isNaN(rankValue)) ? rankValue : null,
+            positional_rank: posRankValueForProfile,
+          },
+          { onConflict: "player_id,source" },
+        );
+    }
+
+    // Count the row as updated if anything was written
+    if (rankValue !== null && !isNaN(rankValue) || posRankValueForProfile !== null) result.updated++;
+    else result.skipped++;
 
     // ── Optional bio fields (height, weight, age, year) ──
     const bioValues: Partial<Record<BioField, string | number | null>> = {};
