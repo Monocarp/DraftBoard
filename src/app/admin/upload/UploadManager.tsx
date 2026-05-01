@@ -199,6 +199,17 @@ const DATA_TYPES_UNSORTED: Record<DataType, DataTypeConfig> = {
     ],
     needsSource: false,
   },
+  miller_profiles: {
+    label: "Matt Miller Profiles",
+    description: "Matt Miller scouting commentary — one commentary blob per player, written as source \"Matt Miller\" on the player profile Scouting tab.",
+    requiredColumns: [
+      { key: "player_name", label: "Player Name", required: true },
+      { key: "position",    label: "Position",    required: false },
+      { key: "college",     label: "College / School", required: false },
+      { key: "commentary",  label: "Commentary",  required: true },
+    ],
+    needsSource: false,
+  },
 };
 
 // Sort upload options alphabetically by label
