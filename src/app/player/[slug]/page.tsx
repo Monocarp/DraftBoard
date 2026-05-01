@@ -1,6 +1,7 @@
 import { getPlayerProfile } from "@/lib/data";
 import { notFound } from "next/navigation";
 import { cache } from "react";
+import { createSupabaseServer } from "@/lib/supabase-server";
 import PlayerDetailView from "./PlayerDetailView";
 
 export const revalidate = 3600;
@@ -20,7 +21,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function PlayerPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const profile = await getCachedProfile(slug);
+  const [profile, supabase] = await Promise.all([getCachedProfile(slug), createSupabaseServer()]);
   if (!profile) notFound();
-  return <PlayerDetailView profile={profile} />;
+
+  const { data: { user } } = await supabase.auth.getUser();
+  const isAdmin = !!(user && user.email === process.env.ADMIN_EMAIL);
+
+  return <PlayerDetailView profile={profile} isAdmin={isAdmin} />;
 }

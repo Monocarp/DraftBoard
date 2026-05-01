@@ -249,6 +249,7 @@ export async function getPlayerProfile(slug: string): Promise<PlayerProfile | nu
     ideal_scheme: player.ideal_scheme,
     alignments: player.alignments ?? {},
     skills_traits: player.skills_traits ?? {},
+    analyzed_sources: (player.analyzed_sources as string[]) ?? [],
     media_links: (mediaLinks ?? []).map((m) => ({
       description: m.description ?? "",
       source: m.source ?? undefined,

@@ -1,14 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import PositionBadge from "@/components/PositionBadge";
 import type { PlayerProfile } from "@/lib/types";
 import { getPffColorForProfile, getPffColorByValue, getGradeColor, getDraftBuzzGradeColor, parseGradeValue, PLAIN } from "@/lib/colors";
+import { analyzeCommentary } from "@/app/admin/player/analyzeCommentary";
 
 type Tab = "overview" | "scouting";
 
-export default function PlayerDetailView({ profile }: { profile: PlayerProfile }) {
+export default function PlayerDetailView({ profile, isAdmin = false }: { profile: PlayerProfile; isAdmin?: boolean }) {
   const [activeTab, setActiveTab] = useState<Tab>("overview");
   const p = profile;
 
@@ -110,7 +112,7 @@ export default function PlayerDetailView({ profile }: { profile: PlayerProfile }
 
       {/* Tab content */}
       {activeTab === "overview" && <OverviewTab profile={p} />}
-      {activeTab === "scouting" && <ScoutingTab profile={p} />}
+      {activeTab === "scouting" && <ScoutingTab profile={p} isAdmin={isAdmin} />}
     </div>
   );
 }
@@ -498,8 +500,12 @@ function OverviewTab({ profile: p }: { profile: PlayerProfile }) {
 
 // ─── Scouting Tab ────────────────────────────────────────────────────────────
 
-function ScoutingTab({ profile: p }: { profile: PlayerProfile }) {
+function ScoutingTab({ profile: p, isAdmin = false }: { profile: PlayerProfile; isAdmin?: boolean }) {
+  const router = useRouter();
   const [expanded, setExpanded] = useState<string | null>(null);
+  const [analyzing, setAnalyzing] = useState<string | null>(null);
+  const [statusMap, setStatusMap] = useState<Record<string, "success" | "error">>({});
+  const analyzedSources = new Set<string>(p.analyzed_sources ?? []);
 
   const sourcesWithContent = p.commentary.filter(
     (c) => c.sections.length > 0 && c.sections.some((s) => s.text && s.text.trim().length > 0)
@@ -546,23 +552,55 @@ function ScoutingTab({ profile: p }: { profile: PlayerProfile }) {
               const isOpen = expanded === source.source;
               return (
                 <div key={source.source} className="rounded-xl border border-[#2a3a4e] bg-[#111827] overflow-hidden">
-                  <button
-                    onClick={() => setExpanded(isOpen ? null : source.source)}
-                    className="w-full flex items-center justify-between p-5 text-left hover:bg-[#1a2332] transition-colors"
-                  >
-                    <div>
+                  <div className="w-full flex items-center justify-between p-5 hover:bg-[#1a2332] transition-colors">
+                    <button
+                      onClick={() => setExpanded(isOpen ? null : source.source)}
+                      className="flex-1 text-left"
+                    >
                       <h3 className="text-sm font-semibold text-white">{source.source}</h3>
                       <p className="text-xs text-gray-500 mt-0.5">
                         {source.sections.length} section{source.sections.length !== 1 ? "s" : ""}
                       </p>
+                    </button>
+                    <div className="flex items-center gap-3 ml-3">
+                      {isAdmin && (
+                        analyzedSources.has(source.source) || statusMap[source.source] === "success" ? (
+                          <span className="text-xs text-green-500/70 font-medium">&#10003; Analyzed</span>
+                        ) : (
+                          <button
+                            onClick={async (e) => {
+                              e.stopPropagation();
+                              setAnalyzing(source.source);
+                              const result = await analyzeCommentary(p.slug, source.source, source.sections);
+                              setAnalyzing(null);
+                              if ("error" in result) {
+                                setStatusMap((prev) => ({ ...prev, [source.source]: "error" }));
+                                alert(`Analysis failed: ${result.error}`);
+                              } else {
+                                setStatusMap((prev) => ({ ...prev, [source.source]: "success" }));
+                                router.refresh();
+                              }
+                            }}
+                            disabled={analyzing !== null}
+                            className="text-xs px-2.5 py-1 rounded-md bg-orange-500/10 text-orange-400 border border-orange-500/20 hover:bg-orange-500/20 transition-colors disabled:opacity-40 disabled:cursor-not-allowed whitespace-nowrap"
+                          >
+                            {analyzing === source.source ? "Analyzing..." : "Analyze"}
+                          </button>
+                        )
+                      )}
+                      <button
+                        onClick={() => setExpanded(isOpen ? null : source.source)}
+                        className="text-gray-500 hover:text-gray-300 transition-colors"
+                      >
+                        <svg
+                          className={`h-5 w-5 transition-transform ${isOpen ? "rotate-180" : ""}`}
+                          fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </button>
                     </div>
-                    <svg
-                      className={`h-5 w-5 text-gray-500 transition-transform ${isOpen ? "rotate-180" : ""}`}
-                      fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
+                  </div>
 
                   {isOpen && (
                     <div className="border-t border-[#2a3a4e] p-5 space-y-4">

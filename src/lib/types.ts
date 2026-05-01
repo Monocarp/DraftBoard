@@ -80,6 +80,7 @@ export interface PlayerProfile {
   commentary: Commentary[];
   injury_history: { detail: string; recovery_time: string | null; year: string | null }[];
   nfl_profile: Record<string, string | number | null> | null;
+  analyzed_sources: string[];
 }
 
 export interface MockPick {
