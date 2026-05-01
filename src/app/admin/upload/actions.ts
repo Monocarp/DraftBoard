@@ -55,6 +55,14 @@ function normalizeName(name: string): string {
 }
 
 /**
+ * Strip diacritics for comparison only — never modifies stored data.
+ * "Ángel" → "Angel", "Zürich" → "Zurich"
+ */
+function stripDiacritics(s: string): string {
+  return s.normalize("NFD").replace(/\p{M}/gu, "");
+}
+
+/**
  * Create a "compact" slug that also strips apostrophes and hyphens
  * for fuzzy matching: "Ja'Kobi" and "JaKobi" both → "jakobi"
  */
@@ -62,6 +70,66 @@ function compactSlug(name: string): string {
   return name
     .toLowerCase()
     .replace(/[^a-z0-9]/g, ""); // Strip everything non-alphanumeric
+}
+
+/**
+ * Jaro-Winkler similarity (0.0–1.0). Prefix-sensitive, better than
+ * Levenshtein for proper names. No external dependency.
+ */
+function jaroWinkler(s1: string, s2: string): number {
+  if (s1 === s2) return 1.0;
+  const len1 = s1.length, len2 = s2.length;
+  if (len1 === 0 || len2 === 0) return 0.0;
+  const matchDist = Math.max(Math.floor(Math.max(len1, len2) / 2) - 1, 0);
+  const s1m = new Array(len1).fill(false);
+  const s2m = new Array(len2).fill(false);
+  let matches = 0;
+  for (let i = 0; i < len1; i++) {
+    const lo = Math.max(0, i - matchDist);
+    const hi = Math.min(i + matchDist + 1, len2);
+    for (let j = lo; j < hi; j++) {
+      if (s2m[j] || s1[i] !== s2[j]) continue;
+      s1m[i] = s2m[j] = true;
+      matches++;
+      break;
+    }
+  }
+  if (matches === 0) return 0.0;
+  let k = 0, transpositions = 0;
+  for (let i = 0; i < len1; i++) {
+    if (!s1m[i]) continue;
+    while (!s2m[k]) k++;
+    if (s1[i] !== s2[k]) transpositions++;
+    k++;
+  }
+  const jaro =
+    (matches / len1 + matches / len2 + (matches - transpositions / 2) / matches) / 3;
+  let prefix = 0;
+  for (let i = 0; i < Math.min(4, len1, len2); i++) {
+    if (s1[i] === s2[i]) prefix++; else break;
+  }
+  return jaro + prefix * 0.1 * (1 - jaro);
+}
+
+/**
+ * Score how well position + college from the upload row confirm a cache candidate.
+ * Position match = 2 pts, college first-word match = 1 pt.
+ */
+function extrasScore(
+  candidate: PlayerCacheEntry,
+  extras?: { position?: string; college?: string }
+): number {
+  let score = 0;
+  if (extras?.position && candidate.position) {
+    const normIn = normalizePosition(extras.position.trim())?.toUpperCase() ?? "";
+    if (normIn && normIn === candidate.position.toUpperCase()) score += 2;
+  }
+  if (extras?.college && candidate.college) {
+    const inFirst = extras.college.trim().split(/\s+/)[0].toLowerCase();
+    const candFirst = candidate.college.trim().split(/\s+/)[0].toLowerCase();
+    if (inFirst.length > 2 && inFirst === candFirst) score += 1;
+  }
+  return score;
 }
 
 // ─── Player cache + corrections cache (built once per import batch) ─────────
@@ -72,7 +140,10 @@ interface PlayerCacheEntry {
   id: string;
   slug: string;
   name: string;
-  compact: string; // compact slug for fuzzy matching
+  compact: string;    // compact slug for matching
+  compactNfd: string; // diacritic-stripped compact slug
+  position: string | null;
+  college: string | null;
 }
 
 export interface ImportCaches {
@@ -96,7 +167,7 @@ export async function buildCaches(
   while (true) {
     const { data } = await supabase
       .from("players")
-      .select("id, slug, name")
+      .select("id, slug, name, position, college")
       .eq("draft_year", draftYear)
       .range(from, from + PAGE - 1);
     if (!data || data.length === 0) break;
@@ -106,6 +177,9 @@ export async function buildCaches(
         slug: p.slug,
         name: p.name,
         compact: compactSlug(p.name),
+        compactNfd: compactSlug(stripDiacritics(p.name)),
+        position: p.position ?? null,
+        college: p.college ?? null,
       });
     }
     if (data.length < PAGE) break;
@@ -204,13 +278,42 @@ export async function resolvePlayerId(
   const exactMatch = caches.playerCache.find((p) => p.slug === slug);
   if (exactMatch) return exactMatch.id;
 
-  // Step 3: Compact slug match (strips apostrophes/hyphens)
-  // "JaKobi Lane" → "jakobilane" matches "Ja'Kobi Lane" → "jakobilane"
+  // Step 3: Compact slug match (strips apostrophes/hyphens + diacritics)
   const compact = compactSlug(normalized);
-  const compactMatch = caches.playerCache.find((p) => p.compact === compact);
-  if (compactMatch) return compactMatch.id;
+  const compactNfd = compactSlug(stripDiacritics(normalized));
 
-  // Step 4: No match — queue into pending_players for admin review (no auto-create)
+  const compactCandidates = caches.playerCache.filter(
+    (p) => p.compact === compact || p.compactNfd === compactNfd
+  );
+  if (compactCandidates.length === 1) {
+    return compactCandidates[0].id;
+  }
+  if (compactCandidates.length > 1) {
+    // Multiple compact matches (e.g. suffixes like Jr.) — tiebreak by position + college
+    const scored = compactCandidates
+      .map((p) => ({ p, score: extrasScore(p, extras) }))
+      .sort((a, b) => b.score - a.score);
+    // Accept only if top candidate has confirmation and clearly leads
+    if (scored[0].score > 0 && (scored.length === 1 || scored[0].score > scored[1].score)) {
+      return scored[0].p.id;
+    }
+    // Tied or unconfirmed — fall through rather than guess
+  }
+
+  // Step 4: Jaro-Winkler fuzzy match (handles typos like "Walkar" → "Walker")
+  // Requires ≥0.92 similarity AND position or college must confirm the match.
+  const inputFuzzy = compactNfd;
+  let bestSim = 0;
+  let bestFuzzy: PlayerCacheEntry | null = null;
+  for (const p of caches.playerCache) {
+    const sim = jaroWinkler(inputFuzzy, p.compactNfd);
+    if (sim > bestSim) { bestSim = sim; bestFuzzy = p; }
+  }
+  if (bestSim >= 0.92 && bestFuzzy !== null && extrasScore(bestFuzzy, extras) > 0) {
+    return bestFuzzy.id;
+  }
+
+  // Step 5: No match — queue into pending_players for admin review (no auto-create)
   try {
     const variantKey = normalized.toLowerCase();
     // Only insert if this variant isn't already pending
