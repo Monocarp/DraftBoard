@@ -21,11 +21,22 @@ export default function PlayerDetailView({ profile, isAdmin = false }: { profile
 
   return (
     <div>
-      {/* Back link */}
-      <Link href="/" className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-orange-400 mb-4 transition-colors">
-        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
-        Back to Board
-      </Link>
+      {/* Back link + admin edit */}
+      <div className="flex items-center justify-between mb-4">
+        <Link href="/" className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-orange-400 transition-colors">
+          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+          Back to Board
+        </Link>
+        {isAdmin && (
+          <Link
+            href={`/admin/player/${p.slug}`}
+            className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md bg-orange-500/10 text-orange-400 border border-orange-500/20 hover:bg-orange-500/20 transition-colors"
+          >
+            <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>
+            Edit Profile
+          </Link>
+        )}
+      </div>
 
       {/* Player Header */}
       <div className="rounded-xl border border-[#2a3a4e] bg-[#111827] p-4 sm:p-6 mb-4">
