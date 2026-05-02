@@ -3,8 +3,9 @@
 import { useState } from "react";
 import { CleanupManager } from "./CleanupManager";
 import { SchoolAuditTab } from "./SchoolAuditTab";
+import { DuplicatePlayersTab } from "./DuplicatePlayersTab";
 
-type Tab = "incomplete" | "schools";
+type Tab = "incomplete" | "schools" | "duplicates";
 
 export function CleanupTabs() {
   const [tab, setTab] = useState<Tab>("incomplete");
@@ -17,6 +18,7 @@ export function CleanupTabs() {
           [
             { id: "incomplete", label: "Incomplete Players" },
             { id: "schools", label: "School Names" },
+            { id: "duplicates", label: "Duplicate Players" },
           ] as { id: Tab; label: string }[]
         ).map((t) => (
           <button
@@ -35,6 +37,7 @@ export function CleanupTabs() {
 
       {tab === "incomplete" && <CleanupManager />}
       {tab === "schools" && <SchoolAuditTab />}
+      {tab === "duplicates" && <DuplicatePlayersTab />}
     </div>
   );
 }

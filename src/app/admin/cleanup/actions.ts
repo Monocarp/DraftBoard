@@ -253,3 +253,167 @@ export async function dismissSchoolVariant(raw: string): Promise<{ error?: strin
   revalidatePath("/admin/cleanup");
   return {};
 }
+
+// ─── Duplicate Players Audit ─────────────────────────────────────────────────
+
+export interface DuplicatePlayer {
+  id: string;
+  name: string;
+  slug: string;
+  position: string | null;
+  college: string | null;
+  draftYear: number;
+  hasProfile: boolean;
+  dataCounts: Record<string, number>;
+}
+
+export interface DuplicatePair {
+  pairKey: string;
+  playerA: DuplicatePlayer;
+  playerB: DuplicatePlayer;
+  reason: string;
+}
+
+function compactName(s: string) {
+  return s.toLowerCase().replace(/[^a-z0-9]/g, "");
+}
+
+const PLAYER_ID_TABLES = [
+  "board_entries", "player_rankings", "adp_entries", "mock_picks",
+  "position_board_entries", "player_comps", "projected_rounds",
+  "commentary", "media_links", "injury_history", "ages",
+] as const;
+
+async function getPlayerDataCounts(
+  supabase: Awaited<ReturnType<typeof createSupabaseServer>>,
+  playerId: string,
+  slug: string,
+): Promise<Record<string, number>> {
+  const counts: Record<string, number> = {};
+  for (const t of PLAYER_ID_TABLES) {
+    const { count } = await supabase
+      .from(t).select("*", { count: "exact", head: true }).eq("player_id", playerId);
+    if (count && count > 0) counts[t] = count;
+  }
+  for (const t of ["rankings", "positional_rankings"] as const) {
+    const { count } = await supabase
+      .from(t).select("*", { count: "exact", head: true }).eq("slug", slug);
+    if (count && count > 0) counts[t] = count;
+  }
+  return counts;
+}
+
+/**
+ * Find potential duplicate players by comparing compact (alphanumeric-only) names.
+ * Returns pairs where two players share the same compact name.
+ */
+export async function auditDuplicatePlayers(): Promise<DuplicatePair[]> {
+  const supabase = await createSupabaseServer();
+  const { data: { user } } = await supabase.auth.getUser();
+  const adminEmail = process.env.ADMIN_EMAIL;
+  if (!user || !adminEmail || user.email !== adminEmail) throw new Error("Unauthorized");
+
+  const { data: players } = await supabase
+    .from("players")
+    .select("id, name, slug, position, college, draft_year, overview")
+    .order("name");
+  if (!players) return [];
+
+  // Group by compact name
+  const grouped = new Map<string, typeof players>();
+  for (const p of players) {
+    const key = compactName(p.name as string);
+    if (!grouped.has(key)) grouped.set(key, []);
+    grouped.get(key)!.push(p);
+  }
+
+  const pairs: DuplicatePair[] = [];
+
+  for (const [, group] of grouped) {
+    if (group.length < 2) continue;
+
+    // Generate all pairs within the group
+    for (let i = 0; i < group.length; i++) {
+      for (let j = i + 1; j < group.length; j++) {
+        const a = group[i];
+        const b = group[j];
+
+        const [aCounts, bCounts] = await Promise.all([
+          getPlayerDataCounts(supabase, a.id as string, a.slug as string),
+          getPlayerDataCounts(supabase, b.id as string, b.slug as string),
+        ]);
+
+        const aHasProfile = a.overview != null && JSON.stringify(a.overview) !== "{}";
+        const bHasProfile = b.overview != null && JSON.stringify(b.overview) !== "{}";
+
+        const reasons: string[] = [];
+        if ((a.slug as string) === (b.slug as string)) reasons.push("identical slug");
+        else if (compactName(a.name as string) === compactName(b.name as string)) reasons.push("same name (different format)");
+        if ((a.draft_year as number) === (b.draft_year as number)) reasons.push("same draft year");
+
+        pairs.push({
+          pairKey: `${a.id}__${b.id}`,
+          playerA: {
+            id: a.id as string,
+            name: a.name as string,
+            slug: a.slug as string,
+            position: (a.position as string) ?? null,
+            college: (a.college as string) ?? null,
+            draftYear: a.draft_year as number,
+            hasProfile: aHasProfile,
+            dataCounts: aCounts,
+          },
+          playerB: {
+            id: b.id as string,
+            name: b.name as string,
+            slug: b.slug as string,
+            position: (b.position as string) ?? null,
+            college: (b.college as string) ?? null,
+            draftYear: b.draft_year as number,
+            hasProfile: bHasProfile,
+            dataCounts: bCounts,
+          },
+          reason: reasons.join(", ") || "same compact name",
+        });
+      }
+    }
+  }
+
+  return pairs;
+}
+
+/**
+ * Merge two players: move all data from `deleteId` to `keepId`, then delete `deleteId`.
+ */
+export async function mergeDuplicatePlayers(
+  keepId: string,
+  keepSlug: string,
+  deleteId: string,
+  deleteSlug: string,
+): Promise<{ error?: string }> {
+  const supabase = await createSupabaseServer();
+  const { data: { user } } = await supabase.auth.getUser();
+  const adminEmail = process.env.ADMIN_EMAIL;
+  if (!user || !adminEmail || user.email !== adminEmail) throw new Error("Unauthorized");
+
+  // Move player_id-keyed rows
+  for (const t of PLAYER_ID_TABLES) {
+    await supabase.from(t).update({ player_id: keepId }).eq("player_id", deleteId);
+  }
+
+  // Update slug-keyed rows (only if slugs differ)
+  if (keepSlug !== deleteSlug) {
+    await supabase.from("rankings").update({ slug: keepSlug }).eq("slug", deleteSlug);
+    await supabase.from("positional_rankings").update({ slug: keepSlug }).eq("slug", deleteSlug);
+  }
+
+  // Delete the duplicate player record
+  const { error } = await supabase.from("players").delete().eq("id", deleteId);
+  if (error) return { error: error.message };
+
+  revalidatePath("/admin");
+  revalidatePath("/admin/cleanup");
+  revalidatePath("/players");
+  revalidatePath("/");
+  return {};
+}
