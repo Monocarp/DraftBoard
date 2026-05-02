@@ -28,7 +28,7 @@ export default function BigBoardPage({
     <div className="flex flex-col items-center w-full">
       {/* Header */}
       <div className="mb-4 sm:mb-6 w-full max-w-3xl mx-auto">
-        <h1 className="text-2xl sm:text-3xl font-bold text-white">2026 NFL Draft Board</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold text-white">2027 NFL Draft Board</h1>
         <p className="mt-1 text-sm sm:text-base text-gray-400">
           Comprehensive big board aggregating rankings from 15+ sources.
         </p>

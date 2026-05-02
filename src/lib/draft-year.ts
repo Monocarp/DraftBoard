@@ -2,7 +2,7 @@ import "server-only";
 import { cookies } from "next/headers";
 
 const COOKIE_NAME = "draft_year";
-const DEFAULT_YEAR = 2026;
+const DEFAULT_YEAR = 2027;
 const VALID_YEARS = [2026, 2027] as const;
 export type DraftYear = (typeof VALID_YEARS)[number];
 
