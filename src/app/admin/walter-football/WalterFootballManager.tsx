@@ -3,8 +3,12 @@
 import { useState } from "react";
 import { fetchWFPlayerList, importWFProfiles, previewWFProfile, type WFPlayerEntry, type WFImportResult, type WFProfilePreview } from "./actions";
 
+/** Draft classes the WF index currently publishes reports for. Newest first. */
+const WF_DRAFT_YEARS = [2027, 2026];
+
 export function WalterFootballManager() {
   const [cutoff, setCutoff] = useState("2025-10-01");
+  const [draftYear, setDraftYear] = useState<number>(WF_DRAFT_YEARS[0]);
   const [fetching, setFetching] = useState(false);
   const [importing, setImporting] = useState(false);
   const [players, setPlayers] = useState<WFPlayerEntry[] | null>(null);
@@ -22,7 +26,7 @@ export function WalterFootballManager() {
     setPlayers(null);
     setImportResult(null);
     try {
-      const res = await fetchWFPlayerList(cutoff);
+      const res = await fetchWFPlayerList(cutoff, draftYear);
       if (res.debug) setFetchDebug(res.debug);
       if (res.error) {
         setFetchError(res.error);
@@ -81,6 +85,21 @@ export function WalterFootballManager() {
         <div className="flex flex-wrap items-end gap-4">
           <div>
             <label className="block text-xs font-medium text-gray-400 mb-1">
+              Draft class
+            </label>
+            <select
+              value={draftYear}
+              onChange={(e) => { setDraftYear(Number(e.target.value)); setPlayers(null); setImportResult(null); }}
+              className="rounded-lg border border-[#2a3a4e] bg-[#0d1320] px-3 py-2 text-sm text-white focus:border-orange-500 focus:outline-none"
+            >
+              {WF_DRAFT_YEARS.map((y) => (
+                <option key={y} value={y}>{y}</option>
+              ))}
+            </select>
+          </div>
+
+          <div>
+            <label className="block text-xs font-medium text-gray-400 mb-1">
               Cutoff date — only profiles updated on or after this date
             </label>
             <input
@@ -113,8 +132,14 @@ export function WalterFootballManager() {
         </div>
 
         <p className="text-xs text-gray-500">
-          Step 1 fetches the Walter Football scouting report index and filters by date.
-          Step 2 visits each player URL, scrapes their profile, and saves it to Supabase.
+          Step 1 fetches the Walter Football scouting report index, keeps only the
+          selected draft class, and filters by date. Step 2 visits each player URL,
+          scrapes their profile, and saves it to Supabase.
+        </p>
+        <p className="text-xs text-gray-600">
+          The WF index lists several draft classes on one page. Reports are matched
+          against players in the same class, so pick the class that matches the
+          prospects you want to update.
         </p>
       </div>
 
@@ -178,8 +203,8 @@ export function WalterFootballManager() {
         <div className="space-y-3">
           <p className="text-sm text-gray-400">
             {players.length === 0
-              ? "No profiles found after the cutoff date."
-              : `${players.length} profiles found — updated on or after ${cutoff}`}
+              ? `No ${draftYear} profiles found on or after ${cutoff}.`
+              : `${players.length} profiles in the ${draftYear} class — updated on or after ${cutoff}`}
           </p>
 
           {players.length > 0 && (
