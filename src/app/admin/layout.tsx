@@ -51,6 +51,16 @@ export default async function AdminLayout({
     pendingSeedCount = count ?? 0;
   } catch { /* table may not exist yet */ }
 
+  // Podcast extracts awaiting review or publishing
+  let podcastReviewCount = 0;
+  try {
+    const { count } = await db
+      .from("podcast_extracts")
+      .select("id", { count: "exact", head: true })
+      .in("status", ["pending", "approved"]);
+    podcastReviewCount = count ?? 0;
+  } catch { /* table may not exist yet */ }
+
   return (
     <div className="min-h-screen bg-[#0a0f1a]">
       {/* Admin top bar */}
@@ -125,6 +135,17 @@ export default async function AdminLayout({
                   className="px-3 py-1.5 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-white/5 transition-colors"
                 >
                   Walter&nbsp;Football
+                </Link>
+                <Link
+                  href="/admin/podcasts"
+                  className="relative px-3 py-1.5 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-white/5 transition-colors"
+                >
+                  Podcasts
+                  {podcastReviewCount > 0 && (
+                    <span className="absolute -top-1 -right-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-yellow-500 px-1 text-[10px] font-bold text-black">
+                      {podcastReviewCount > 99 ? "99+" : podcastReviewCount}
+                    </span>
+                  )}
                 </Link>
                 <Link
                   href="/admin/pending-players"
