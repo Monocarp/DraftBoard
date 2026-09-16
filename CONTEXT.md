@@ -203,6 +203,8 @@ src/
         │   └── page.tsx, actions.ts, PendingSeedManager.tsx
         ├── walter-football/      # Walter Football scraper trigger
         │   └── page.tsx, actions.ts, WalterFootballManager.tsx
+        ├── podcasts/             # Podcast pipeline: process, review/publish, reconcile (badge count)
+        │   └── page.tsx, actions.ts, PodcastsManager.tsx, EpisodesTab.tsx, ReviewTab.tsx, ReconcileTab.tsx
         └── updates/              # Site update log
             └── page.tsx, actions.ts, UpdatesManager.tsx
 ```
@@ -273,6 +275,9 @@ Every player has exactly one row. The `overview` column gates public visibility.
 | `user_boards` | id, user_id (FK auth.users), player_id (FK players), rank | RLS: `auth.uid() = user_id` |
 | `user_position_ranks` | id, user_id, player_id, position_group, rank | RLS: `auth.uid() = user_id` |
 | `site_updates` | id, date, title, body, draft_year | Site update log |
+| `podcast_episodes` | id, podcast_slug, guid (unique), title, episode_date, status, transcript, progress columns | Podcast pipeline state (`transcribing` → `extracting` → `review` → `published`). RLS on, no policies — service role only |
+| `podcast_extracts` | id, episode_id, player_id, slug, text, raw_text, via, status | Per-player podcast commentary awaiting review (`pending` → `approved` → `published`). RLS on, service role only |
+| `unmatched_commentary` | id, slug, name, source, episode_title, episode_date, episode_guid, text | Podcast mentions of players not on the board; resolved in `/admin/podcasts` → Reconcile |
 
 ### RLS (Row-Level Security)
 
@@ -812,6 +817,7 @@ Every public route has `error.tsx` (retry boundary) and `loading.tsx` (skeleton 
 | `/admin/pending-players` | Resolve unmatched upload names: map to existing player or create new (badge count) |
 | `/admin/pending-seed` | Resolve 2027 players blocked by slug conflicts (badge count) |
 | `/admin/walter-football` | Trigger Walter Football scraper |
+| `/admin/podcasts` | Podcast pipeline (replaces the old local `podcast_pipeline/` Python + Streamlit app): transcribe episodes, review/publish extracts, reconcile unmatched names (badge count) |
 | `/admin/updates` | Site update log entries |
 | `/admin/colors` | Static color system visual reference |
 
@@ -948,7 +954,9 @@ After any data mutation, `revalidatePath()` is called on:
 | `ADMIN_EMAIL` | `middleware.ts` + `layout.tsx` — gates `/admin/*` |
 | `ANTHROPIC_API_KEY` | `analyzeCommentary.ts` — Claude Haiku AI analysis |
 
-All 5 must be set in both `.env.local` (local dev) and Vercel Environment Variables (production).
+| `OPENAI_API_KEY` | `lib/podcast` — Whisper transcription + GPT-4o-mini extraction for `/admin/podcasts` |
+
+All 6 must be set in both `.env.local` (local dev) and Vercel Environment Variables (production).
 
 ### Deployment
 
@@ -1037,3 +1045,10 @@ npm run dev       # http://localhost:3000
 
 ### Update Walter Football scouting reports
 1. `/admin/walter-football` → trigger scrape or upload
+
+### Process podcast episodes (First Draft, NFL Stock Exchange, McShay Show)
+1. `/admin/podcasts` → **Episodes** → **Process** on a new episode. Runs as short resumable steps: transcription (audio fetched in overlapping byte ranges, no ffmpeg), player discovery, then per-player extraction + GM filter. Stopping or closing the tab keeps progress; **Resume** continues.
+2. **Review & Publish** → approve / edit / delete each extract (cards flag name-scan and misspelling matches) → **Publish all approved**. Appends a `"YYYY-MM-DD — Episode title"` section to the player's commentary for that podcast's source; an existing title is skipped, so publishing is idempotent.
+3. **Reconcile Unmatched** → match names that weren't on the board (text is GM-filtered on match) or dismiss.
+4. Code: `src/lib/podcast/` (`pipeline.ts` orchestration, `audio.ts`, `extract.ts`, `rss.ts`, `config.ts`) — no Next.js imports, so it can be tested outside the app. Schema: `supabase/migrations/20260916_podcast_pipeline.sql`.
+5. An episode's stored title never refreshes from the feed — publishers rename episodes, and the title is what prevents duplicate sections.
