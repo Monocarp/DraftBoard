@@ -37,6 +37,7 @@ const GROUPS: { title: string; items: NavItem[] }[] = [
     items: [
       { href: "/admin/upload", label: "Upload" },
       { href: "/admin/walter-football", label: "Walter Football" },
+      { href: "/admin/draftbuzz", label: "DraftBuzz" },
     ],
   },
   {

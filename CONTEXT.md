@@ -205,6 +205,8 @@ src/
         │   └── page.tsx, actions.ts, WalterFootballManager.tsx
         ├── podcasts/             # Podcast pipeline: process, review/publish, reconcile (badge count)
         │   └── page.tsx, actions.ts, PodcastsManager.tsx, EpisodesTab.tsx, ReviewTab.tsx, ReconcileTab.tsx
+        ├── draftbuzz/            # DraftBuzz collector: run codes, collection report, import
+        │   └── page.tsx, actions.ts, DraftBuzzManager.tsx
         └── updates/              # Site update log
             └── page.tsx, actions.ts, UpdatesManager.tsx
 ```
@@ -277,6 +279,8 @@ Every player has exactly one row. The `overview` column gates public visibility.
 | `site_updates` | id, date, title, body, draft_year | Site update log |
 | `podcast_episodes` | id, podcast_slug, guid (unique), title, episode_date, status, transcript, progress columns | Podcast pipeline state (`transcribing` → `extracting` → `review` → `published`). RLS on, no policies — service role only |
 | `podcast_extracts` | id, episode_id, player_id, slug, text, raw_text, via, status | Per-player podcast commentary awaiting review (`pending` → `approved` → `published`). RLS on, service role only |
+| `draftbuzz_runs` | id, code_hash, draft_year, status, expires_at, manifest, profiles_expected/received, import_result | DraftBuzz collection runs (`collecting` → `collected` → `imported`). Run code stored only as SHA-256. RLS on, service role only |
+| `draftbuzz_profiles` | id, run_id, url, list_code, data (raw parse), import_status, import_note | Staged DraftBuzz profiles; nothing touches `players` until imported. RLS on, service role only |
 | `unmatched_commentary` | id, slug, name, source, episode_title, episode_date, episode_guid, text | Podcast mentions of players not on the board; resolved in `/admin/podcasts` → Reconcile |
 
 ### RLS (Row-Level Security)
@@ -818,6 +822,7 @@ Every public route has `error.tsx` (retry boundary) and `loading.tsx` (skeleton 
 | `/admin/pending-seed` | Resolve 2027 players blocked by slug conflicts (badge count) |
 | `/admin/walter-football` | Trigger Walter Football scraper |
 | `/admin/podcasts` | Podcast pipeline (replaces the old local `podcast_pipeline/` Python + Streamlit app): transcribe episodes, review/publish extracts, reconcile unmatched names (badge count) |
+| `/admin/draftbuzz` | DraftBuzz collector (replaces `Site Data Procurement/DraftBuzz_Selenium.py`): bookmarklet, run codes, data-quality report, import |
 | `/admin/updates` | Site update log entries |
 | `/admin/colors` | Static color system visual reference |
 
@@ -1045,6 +1050,15 @@ npm run dev       # http://localhost:3000
 
 ### Update Walter Football scouting reports
 1. `/admin/walter-football` → trigger scrape or upload
+
+### Collect DraftBuzz grades
+1. `/admin/draftbuzz` → drag the **DraftBuzz collector** button to the bookmarks bar (once).
+2. **Create run code** (draft class defaults to the upcoming draft; codes last 24 h).
+3. Open nfldraftbuzz.com in Chrome, click the bookmark, paste the code. It reads the ALL list (~30 pages) and every profile (~350) at ~1 request/sec in **your** browser, posting to `/api/draftbuzz/collect`. Keep the tab in front (~8 min). If Cloudflare re-challenges or you stop, click the bookmark again with the same code — it resumes.
+4. Back on the admin page: review the report (per-field fill rates, grade fill by position group, unmapped labels, unrecognized layouts), then **Import**. Import calls `importData("draftbuzz_grades", …)` — the same path as a DraftBuzz spreadsheet upload — plus optionally replaces "NFL Draft Buzz Comments" scouting text.
+5. Why a bookmarklet: DraftBuzz sits behind Cloudflare, which challenges any server/non-browser request (verified HTTP 403 `cf-mitigated: challenge`). The collector never solves challenges; it stops and asks you to.
+6. Code: `public/draftbuzz-collector.js` (browser: label-based parsing, sends labels as shown) · `src/lib/draftbuzz/mapping.ts` (label → importer column, position group, report) · `src/lib/draftbuzz/importStep.ts` (import orchestration) · `src/app/api/draftbuzz/collect/route.ts` (CORS: nfldraftbuzz.com only). If DraftBuzz renames a grade label, the report flags it and the fix is one line in `GRADE_HEADERS`.
+7. Known data quirk (pre-existing, unchanged): DraftBuzz ages are years.months ("21.10" = 21 y 10 m) but are stored as decimals.
 
 ### Process podcast episodes (First Draft, NFL Stock Exchange, McShay Show)
 1. `/admin/podcasts` → **Episodes** → **Process** on a new episode. Runs as short resumable steps: transcription (audio fetched in overlapping byte ranges, no ffmpeg), player discovery, then per-player extraction + GM filter. Stopping or closing the tab keeps progress; **Resume** continues.
