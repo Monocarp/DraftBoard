@@ -15,6 +15,17 @@ export async function getActiveDraftYear(): Promise<DraftYear> {
     : DEFAULT_YEAR;
 }
 
+/**
+ * Page title for <title> / og:title, following the viewer's selected draft year
+ * so the browser tab matches the year shown in the nav.
+ *   siteTitle()            → "2027 NFL Draft Board"
+ *   siteTitle("Rankings")  → "Rankings — 2027 Draft Board"
+ */
+export async function siteTitle(page?: string): Promise<string> {
+  const year = await getActiveDraftYear();
+  return page ? `${page} — ${year} Draft Board` : `${year} NFL Draft Board`;
+}
+
 export async function setActiveDraftYear(year: DraftYear): Promise<void> {
   "use server";
   const store = await cookies();

@@ -59,7 +59,7 @@ export default async function UpdatesPage() {
     <div className="max-w-3xl mx-auto">
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-white">Draft Wire</h1>
-        <p className="text-sm text-gray-400 mt-1">Latest updates, features, and data changes throughout the 2026 draft cycle.</p>
+        <p className="text-sm text-gray-400 mt-1">Latest updates, features, and data changes throughout the draft cycle.</p>
       </div>
 
       {allUpdates.length === 0 ? (

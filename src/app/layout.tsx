@@ -20,20 +20,23 @@ export const viewport: Viewport = {
   themeColor: "#0a0f1a",
 };
 
-export const metadata: Metadata = {
-  title: "2026 NFL Draft Board",
-  description: "Comprehensive 2026 NFL Draft Board — rankings, player profiles, mock drafts, and scouting reports.",
-  manifest: "/manifest.json",
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: "black-translucent",
-    title: "Draft Board",
-  },
-  icons: {
-    icon: "/icons/icon-192.png",
-    apple: "/icons/icon-512.png",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const year = await getActiveDraftYear();
+  return {
+    title: `${year} NFL Draft Board`,
+    description: `Comprehensive ${year} NFL Draft Board — rankings, player profiles, mock drafts, and scouting reports.`,
+    manifest: "/manifest.json",
+    appleWebApp: {
+      capable: true,
+      statusBarStyle: "black-translucent",
+      title: "Draft Board",
+    },
+    icons: {
+      icon: "/icons/icon-192.png",
+      apple: "/icons/icon-512.png",
+    },
+  };
+}
 
 export default async function RootLayout({
   children,

@@ -2,6 +2,7 @@ import { getPlayerProfile } from "@/lib/data";
 import { notFound } from "next/navigation";
 import { cache } from "react";
 import { createSupabaseServer } from "@/lib/supabase-server";
+import { siteTitle } from "@/lib/draft-year";
 import PlayerDetailView from "./PlayerDetailView";
 
 export const revalidate = 3600;
@@ -14,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const profile = await getCachedProfile(slug);
   if (!profile) return { title: "Player Not Found" };
   return {
-    title: `${profile.name} — 2026 Draft Board`,
+    title: await siteTitle(profile.name),
     description: `${profile.name} (${profile.position}) — ${profile.college}. Scouting report, rankings, and analysis.`,
   };
 }

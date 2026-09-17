@@ -1,12 +1,15 @@
 import { getRankings } from "@/lib/data";
 import RankingsView from "./RankingsView";
+import { getActiveDraftYear, siteTitle } from "@/lib/draft-year";
 
 export const revalidate = 3600;
 
-export const metadata = {
-  title: "Rankings — 2026 Draft Board",
-  description: "Multi-source consensus rankings for the 2026 NFL Draft.",
-};
+export async function generateMetadata() {
+  return {
+    title: await siteTitle("Rankings"),
+    description: `Multi-source consensus rankings for the ${await getActiveDraftYear()} NFL Draft.`,
+  };
+}
 
 export default async function RankingsPage() {
   const data = await getRankings();

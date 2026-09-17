@@ -1,7 +1,7 @@
 {
-  "name": "2026 NFL Draft Board",
+  "name": "NFL Draft Board",
   "short_name": "Draft Board",
-  "description": "Comprehensive 2026 NFL Draft Board — rankings, player profiles, mock drafts, and scouting reports.",
+  "description": "Comprehensive NFL Draft Board — rankings, player profiles, mock drafts, and scouting reports.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0f1a",

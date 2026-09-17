@@ -72,7 +72,7 @@ async function notifyAdminOfRegistration(email: string) {
       from: "Draft Board <onboarding@resend.dev>",
       to: adminEmail,
       subject: `New Draft Board Registration: ${email}`,
-      html: `<p>A new user just registered on the 2026 Draft Board:</p>
+      html: `<p>A new user just registered on the Draft Board:</p>
              <p><strong>${email}</strong></p>
              <p style="color:#888;font-size:12px">${new Date().toLocaleString("en-US", { timeZone: "America/New_York" })}</p>`,
     }),

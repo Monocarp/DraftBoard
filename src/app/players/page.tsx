@@ -1,12 +1,15 @@
 import { getPlayers } from "@/lib/data";
 import PlayerGrid from "@/components/PlayerGrid";
+import { getActiveDraftYear, siteTitle } from "@/lib/draft-year";
 
 export const dynamic = "force-dynamic";
 
-export const metadata = {
-  title: "All Players — 2026 Draft Board",
-  description: "Browse all 141 scouted players for the 2026 NFL Draft.",
-};
+export async function generateMetadata() {
+  return {
+    title: await siteTitle("All Players"),
+    description: `Browse every scouted player for the ${await getActiveDraftYear()} NFL Draft.`,
+  };
+}
 
 export default async function PlayersPage() {
   const players = await getPlayers();
